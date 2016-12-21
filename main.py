@@ -64,6 +64,8 @@ def main():
     run = 0
     jump = False
 
+    pause = 0
+
     # Loop until the window is closed
     game_exit = False
 
@@ -121,14 +123,15 @@ def main():
                 player.reset()
 
         # Playing running and jumping
-        if abs(run) > 0:
-            if run == 1:
-                player.walk_right()
-            elif run == -1:
-                player.walk_left()
+        if not pause:
+            if abs(run) > 0:
+                if run == 1:
+                    player.walk_right()
+                elif run == -1:
+                    player.walk_left()
 
-        if jump:
-            player.jump()
+            if jump:
+                player.jump()
 
         # Update entities
         active_sprite_list.update()
