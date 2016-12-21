@@ -34,10 +34,10 @@ def main():
 
     # Create the levels
     level_list = list()
-    level_list.append(level.Level01(player))
-    level_list.append(level.Level02(player))
-    level_list.append(level.Level03(player))
-    level_list.append(level.Level04(player))
+    #level_list.append(level.Level01(player))
+    #level_list.append(level.Level02(player))
+    #level_list.append(level.Level03(player))
+    #level_list.append(level.Level04(player))
     level_list.append(level.Level05(player))
     level_list.append(level.Level06(player))
     level_list.append(level.Level07(player))
@@ -104,6 +104,9 @@ def main():
                 if event.key == K_UP or event.key == K_w:
                     jump = False
 
+        if pause > 0:
+            pause -= 1
+
         # Level progression
         if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
 
@@ -120,6 +123,7 @@ def main():
         hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
         for hit in hit_list:
             if isinstance(hit, torches.Torch):
+                pause = 120
                 player.reset()
 
         # Playing running and jumping
