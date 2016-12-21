@@ -11,8 +11,12 @@ class Blackout(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/blackout.png")
-        self.image = self.sprite_sheet.get_image(0, 0, 2000, 1500)
+        # Set the image
+        self.image_file = pygame.image.load("resources/blackout.png")
+
+        self.image = pygame.Surface([2000, 1500], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
 
         self.rect = self.image.get_rect()
 
@@ -33,7 +37,12 @@ class LoadingScreen(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = spritesheet.SpriteSheet("resources/loading_screen.png").get_image(0, 0, 960, 720)
+        # Set the image
+        self.image_file = pygame.image.load("resources/loading_screen.png")
+
+        self.image = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
 
         self.rect = self.image.get_rect()
 
