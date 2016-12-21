@@ -1,5 +1,4 @@
 import pygame
-import spritesheet
 
 
 class Blackout(pygame.sprite.Sprite):
