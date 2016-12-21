@@ -65,6 +65,7 @@ def main():
     jump = False
 
     pause = 0
+    reset = False
 
     # Loop until the window is closed
     game_exit = False
@@ -107,6 +108,10 @@ def main():
         if pause > 0:
             pause -= 1
 
+        if pause == 0 and reset:
+            player.reset()
+            reset = False
+
         # Level progression
         if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
 
@@ -119,15 +124,15 @@ def main():
             player.level = current_level
             current_level.player = player
 
-        # Check if the guards got the players
-        hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
-        for hit in hit_list:
-            if isinstance(hit, torches.Torch):
-                pause = 120
-                player.reset()
-
-        # Playing running and jumping
         if not pause:
+            # Check if the guards got the players
+            hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
+            for hit in hit_list:
+                if isinstance(hit, torches.Torch):
+                    pause = 120
+                    reset = True
+
+            # Playing running and jumping
             if abs(run) > 0:
                 if run == 1:
                     player.walk_right()
@@ -137,10 +142,10 @@ def main():
             if jump:
                 player.jump()
 
-        # Update entities
-        active_sprite_list.update()
-        current_level.update()
-        blackout.update()
+            # Update entities
+            active_sprite_list.update()
+            current_level.update()
+            blackout.update()
 
         # All drawing goes here
         current_level.draw(game_display)
