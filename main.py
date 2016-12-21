@@ -20,6 +20,11 @@ def main():
 
     game_display = pygame.display.set_mode(constants.SIZE)
 
+    # Show the loading screen
+    loading_screen = covers.LoadingScreen()
+    loading_screen.draw(game_display)
+    pygame.display.flip()
+
     # Used to manage update frequency
     clock = pygame.time.Clock()
 

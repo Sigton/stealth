@@ -24,3 +24,19 @@ class Blackout(pygame.sprite.Sprite):
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class LoadingScreen(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        self.image = spritesheet.SpriteSheet("resources/loading_screen.png").get_image(0, 0, 960, 720)
+
+        self.rect = self.image.get_rect()
+
+    def draw(self, display):
+
+        display.blit(self.image, (0, 0))
