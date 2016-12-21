@@ -28,8 +28,15 @@ def main():
     # Used to manage update frequency
     clock = pygame.time.Clock()
 
-    # Set the window caption
+    # Set the window caption and icon
     pygame.display.set_caption("Stealth")
+
+    icon_img = pygame.image.load("resources/icon.ico")
+
+    icon = pygame.Surface([32, 32], flags=pygame.SRCALPHA)
+    icon = icon.convert_alpha()
+    icon.blit(icon_img, (0, 0))
+    pygame.display.set_icon(icon)
 
     # Create the player
     player = p.Player()

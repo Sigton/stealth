@@ -1,7 +1,6 @@
 import pygame
 
 
-
 class SpriteSheet(object):
 
     sprite_sheet = None
