@@ -102,9 +102,17 @@ class ProgressBar(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+        self.timer = 30
+
     def update(self):
 
         self.rect.x = self.parent.rect.x + (self.parent.rect.width/2 - self.rect.width/2)
         self.rect.y = self.parent.rect.y - 20
 
         self.image = self.images[self.parent.progress]
+
+        if self.parent.progress >= 10 and self.timer:
+            self.timer -= 1
+
+        if not self.timer and self.parent.progress >= 10:
+            self.level.entities.remove(self)
