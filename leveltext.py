@@ -91,4 +91,4 @@ class Level04(LevelText):
         self.image = self.image.convert_alpha()
         self.image.blit(self.image_file, (0, 0))
 
-        sefl.rect = self.image.get_rect()
+        self.rect = self.image.get_rect()
