@@ -53,6 +53,8 @@ class HealthBar(pygame.sprite.Sprite):
 
 class ProgressBar(pygame.sprite.Sprite):
 
+    parent = None
+
     def __init__(self):
 
         # Call the parents constructor
@@ -95,8 +97,13 @@ class ProgressBar(pygame.sprite.Sprite):
         image = self.sprite_sheet.get_image(32, 64, 32, 16)
         self.images.append(image)
 
-        self.image = self.images[10]
+        self.image = self.images[0]
 
         self.rect = self.image.get_rect()
 
         self.progress = 0
+
+    def update(self):
+
+        self.rect.x = self.parent.rect.x + (self.parent.rect.width/2 - self.rect.width/2)
+        self.rect.y = self.parent.rect.y - 20

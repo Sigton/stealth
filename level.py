@@ -2,6 +2,7 @@ import pygame
 import platforms
 import guards
 import entities
+import healthbar
 import constants
 import terrain
 import os
@@ -82,6 +83,10 @@ class Level:
 
         new_keypad.rect.x = x
         new_keypad.rect.y = y
+
+        new_keypad.progress_bar = healthbar.ProgressBar()
+        new_keypad.progress_bar.parent = new_keypad
+        self.entities.add(new_keypad.progress_bar)
 
         self.keypads.add(new_keypad)
         self.keypad_array.append(new_keypad)
