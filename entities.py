@@ -31,6 +31,8 @@ class Door(pygame.sprite.Sprite):
 
 class Keypad(pygame.sprite.Sprite):
 
+    progress_bar = None
+
     def __init__(self):
 
         # Call the parents constructor
