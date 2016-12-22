@@ -86,6 +86,7 @@ class Level:
 
         new_keypad.progress_bar = healthbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
+        new_keypad.progress_bar.level = self
         self.entities.add(new_keypad.progress_bar)
 
         self.keypads.add(new_keypad)

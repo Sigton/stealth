@@ -54,6 +54,7 @@ class HealthBar(pygame.sprite.Sprite):
 class ProgressBar(pygame.sprite.Sprite):
 
     parent = None
+    level = None
 
     def __init__(self):
 
