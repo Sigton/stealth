@@ -47,15 +47,15 @@ def main():
     # Create the levels
     level_list = list()
     level_list.append(level.Level01(player))
-    level_list.append(level.Level02(player))
-    level_list.append(level.Level03(player))
-    level_list.append(level.Level04(player))
-    level_list.append(level.Level05(player))
-    level_list.append(level.Level06(player))
-    level_list.append(level.Level07(player))
-    level_list.append(level.Level08(player))
-    level_list.append(level.Level09(player))
-    level_list.append(level.Level10(player))
+    # level_list.append(level.Level02(player))
+    # level_list.append(level.Level03(player))
+    # level_list.append(level.Level04(player))
+    # level_list.append(level.Level05(player))
+    # level_list.append(level.Level06(player))
+    # level_list.append(level.Level07(player))
+    # level_list.append(level.Level08(player))
+    # level_list.append(level.Level09(player))
+    # level_list.append(level.Level10(player))
 
     # Set the current level
     current_level_no = 0
@@ -163,6 +163,7 @@ def main():
         current_level.draw(game_display)
         active_sprite_list.draw(game_display)
         blackout.draw(game_display)
+        current_level.level_text.draw(game_display)
 
         # Limit to 60 fps
         clock.tick(60)

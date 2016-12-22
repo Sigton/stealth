@@ -3,6 +3,7 @@ import platforms
 import guards
 import entities
 import healthbar
+import leveltext
 import constants
 import terrain
 import os
@@ -19,6 +20,7 @@ class Level:
     doors = None
     guards = None
     entities = None
+    level_text = None
 
     player = None
 
@@ -51,6 +53,7 @@ class Level:
         self.bombs.update()
         self.guards.update()
         self.entities.update()
+        self.level_text.update()
 
     def draw(self, display):
 
@@ -180,6 +183,9 @@ class Level01(Level):
 
         # Then render
         self.render(level_data)
+
+        self.level_text = leveltext.Level01()
+        self.level_text.player = self.player
 
 
 class Level02(Level):
