@@ -2,22 +2,13 @@ import pygame
 import constants
 
 
-class Level01(pygame.sprite.Sprite):
+class LevelText(pygame.sprite.Sprite):
 
     player = None
 
     def __init__(self):
 
         pygame.sprite.Sprite.__init__(self)
-
-        # Set the image
-        self.image_file = pygame.image.load("resources/text/level1.png")
-
-        self.image = pygame.Surface([362, 84], flags=pygame.SRCALPHA)
-        self.image = self.image.convert_alpha()
-        self.image.blit(self.image_file, (0, 0))
-
-        self.rect = self.image.get_rect()
 
     def update(self):
 
@@ -37,3 +28,35 @@ class Level01(pygame.sprite.Sprite):
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class Level01(LevelText):
+
+    def __init__(self):
+
+        LevelText.__init__(self)
+
+        # Set the image
+        self.image_file = pygame.image.load("resources/text/level1.png")
+
+        self.image = pygame.Surface([362, 84], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
+
+        self.rect = self.image.get_rect()
+
+
+class Level02(LevelText):
+
+    def __init__(self):
+
+        LevelText.__init__(self)
+
+        # Set the image
+        self.image_file = pygame.image.load("resources/text/level2.png")
+
+        self.image = pygame.Surface([310, 126], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
+
+        self.rect = self.image.get_rect()

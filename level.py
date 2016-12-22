@@ -211,6 +211,9 @@ class Level02(Level):
         # Then render
         self.render(level_data)
 
+        self.level_text = leveltext.Level02()
+        self.level_text.player = self.player
+
 
 class Level03(Level):
 
