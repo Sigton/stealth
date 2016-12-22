@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/healthbar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="786">
-              <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+              <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -434,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482392016965</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Progress now changes">
+      <created>1482392121837</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1482392121837</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -455,7 +462,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3386924" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3386924" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -504,7 +511,8 @@
     <MESSAGE value="Created ProgressBar Class" />
     <MESSAGE value="Added progress bar attribute to keypads" />
     <MESSAGE value="Progress bars now render" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress bars now render" />
+    <MESSAGE value="Progress now changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress now changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -856,7 +864,7 @@
     <entry file="file://$PROJECT_DIR$/healthbar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
-          <caret line="108" column="62" lean-forward="true" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+          <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

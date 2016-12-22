@@ -106,4 +106,4 @@ class ProgressBar(pygame.sprite.Sprite):
         self.rect.x = self.parent.rect.x + (self.parent.rect.width/2 - self.rect.width/2)
         self.rect.y = self.parent.rect.y - 20
 
-        self.image = self.images[abs(self.parent.progress-10)]
+        self.image = self.images[self.parent.progress]
