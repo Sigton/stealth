@@ -155,9 +155,10 @@ def main():
                 player.jump()
 
             # Update entities
-            active_sprite_list.update()
+        active_sprite_list.update()
+        if not pause:
             current_level.update()
-            blackout.update()
+        blackout.update()
 
         # All drawing goes here
         current_level.draw(game_display)
