@@ -13,6 +13,8 @@ In the game currently are:
 - Keypads and doors
 - Guards with torches
 - Level text
+- Sound effects
+- Background Music
 
 ## Planned features
 Coming soon is:
@@ -20,5 +22,3 @@ Coming soon is:
 - Armed guards
 - Levels 11-13
 - Animations and intros/outros
-- Sound effects
-- Background Music
