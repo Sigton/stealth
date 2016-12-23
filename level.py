@@ -504,3 +504,6 @@ class Level10(Level):
         self.render(level_data)
         for door in self.doors.sprites():
             door.set_keypad()
+
+        self.level_text = leveltext.Level10()
+        self.level_text.player = self.player
