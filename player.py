@@ -63,7 +63,7 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
         self.footstep = pygame.mixer.Sound("resources/step.wav")
-        self.footstep.set_volume(0.25)
+        self.footstep.set_volume(0.5)
 
         self.walk_dist = 0
 
