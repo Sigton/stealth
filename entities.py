@@ -86,6 +86,10 @@ class Bomb(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+        self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
+        self.beep_sound.set_volume(0.25)
+        self.played_sound = True
+
         # How much is required for the bomb to be activated
         self.progress = 0
 
@@ -94,3 +98,6 @@ class Bomb(pygame.sprite.Sprite):
         # Update the image if the bomb is activated
         if self.progress >= 10:
             self.image = self.image_on
+            if not self.played_sound:
+                pygame.mixer.Sound.play(self.beep_sound)
+                self.played_sound = True

@@ -36,8 +36,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="820">
+              <caret line="102" column="40" lean-forward="false" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -564,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482487259245</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added sound effects for keypads and doors">
+      <created>1482498621089</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1482498621089</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -622,7 +629,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unused module" />
     <MESSAGE value="Added healthbar.py" />
     <MESSAGE value="Created ProgressBar Class" />
     <MESSAGE value="Added progress bar attribute to keypads" />
@@ -647,7 +653,8 @@
     <MESSAGE value="Bombs now have progress bars" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Added background music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added background music" />
+    <MESSAGE value="Added sound effects for keypads and doors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sound effects for keypads and doors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -995,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="820">
+          <caret line="102" column="40" lean-forward="false" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
           <folding />
         </state>
       </provider>
