@@ -62,6 +62,11 @@ class Player(pygame.sprite.Sprite):
         # Set a reference to the image rectangle
         self.rect = self.image.get_rect()
 
+        self.footstep = pygame.mixer.Sound("resources/step.wav")
+        self.footstep.set_volume(0.25)
+
+        self.walk_dist = 0
+
     def update(self):
 
         # Calculate gravity
@@ -78,6 +83,9 @@ class Player(pygame.sprite.Sprite):
         self.xv *= self.friction
         if abs(self.xv) <= 0.5:
             self.xv = 0
+            self.walk_dist = 0
+        else:
+            self.walk_dist += 1
 
         # Move left/right
         self.rect.x += self.xv
@@ -88,6 +96,9 @@ class Player(pygame.sprite.Sprite):
         else:
             frame = (self.rect.x // 30) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
+
+        if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0:
+            pygame.mixer.Sound.play(self.footstep)
 
         if self.xv == 0:
             if self.direction == "R":
@@ -102,11 +113,13 @@ class Player(pygame.sprite.Sprite):
                 self.rect.right = block.rect.left
             elif self.xv < 0:
                 self.rect.left = block.rect.right
+            self.walk_dist = 0
 
         # So the player can't walk off the left side of the screen
         if self.rect.x <= 0:
             self.rect.x = 0
             self.xv = 0
+            self.walk_dist = 0
 
         # Move up/down
         self.rect.y += self.yv
