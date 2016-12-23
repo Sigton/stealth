@@ -59,6 +59,8 @@ class Keypad(pygame.sprite.Sprite):
 
 class Bomb(pygame.sprite.Sprite):
 
+    progress_bar = None
+
     def __init__(self):
 
         # Call the parents constructor

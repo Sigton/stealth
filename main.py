@@ -46,15 +46,15 @@ def main():
 
     # Create the levels
     level_list = list()
-    # level_list.append(level.Level01(player))
-    # level_list.append(level.Level02(player))
-    # level_list.append(level.Level03(player))
-    # level_list.append(level.Level04(player))
-    # level_list.append(level.Level05(player))
-    # level_list.append(level.Level06(player))
-    # level_list.append(level.Level07(player))
-    # level_list.append(level.Level08(player))
-    # level_list.append(level.Level09(player))
+    level_list.append(level.Level01(player))
+    level_list.append(level.Level02(player))
+    level_list.append(level.Level03(player))
+    level_list.append(level.Level04(player))
+    level_list.append(level.Level05(player))
+    level_list.append(level.Level06(player))
+    level_list.append(level.Level07(player))
+    level_list.append(level.Level08(player))
+    level_list.append(level.Level09(player))
     level_list.append(level.Level10(player))
 
     # Set the current level
@@ -131,7 +131,10 @@ def main():
             player.reset()
 
             current_level_no += 1
-            current_level = level_list[current_level_no]
+            if current_level_no >= len(level_list):
+                break
+            else:
+                current_level = level_list[current_level_no]
 
             player.level = current_level
             current_level.player = player

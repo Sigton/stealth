@@ -101,6 +101,11 @@ class Level:
         new_bomb.rect.x = x
         new_bomb.rect.y = y
 
+        new_bomb.progress_bar = healthbar.ProgressBar()
+        new_bomb.progress_bar.parent = new_bomb
+        new_bomb.progress_bar.level = self
+        self.entities.add(new_bomb.progress_bar)
+
         self.bombs.add(new_bomb)
 
     def create_door(self, x, y):
