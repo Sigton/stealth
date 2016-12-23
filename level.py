@@ -460,6 +460,9 @@ class Level09(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        self.level_text = leveltext.Level09()
+        self.level_text.player = self.player
+
 
 class Level10(Level):
 
