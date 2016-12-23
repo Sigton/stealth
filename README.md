@@ -12,13 +12,13 @@ In the game currently are:
 - Levels 1-10
 - Keypads and doors
 - Guards with torches
+- Level text
 
 ## Planned features
 Coming soon is:
 - A menu
 - Armed guards
 - Levels 11-13
-- Level text
 - Animations and intros/outros
 - Sound effects
 - Background Music
