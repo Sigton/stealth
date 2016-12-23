@@ -82,6 +82,11 @@ def main():
     pause = 0
     reset = False
 
+    light_sound = pygame.mixer.Sound("resources/lights.wav")
+    light_sound.set_volume(0.25)
+    if len(current_level.guards.sprites()):
+        pygame.mixer.Sound.play(light_sound, -1)
+
     # Loop until the window is closed
     game_exit = False
 
@@ -133,6 +138,8 @@ def main():
             # Reset the player and move on the level
             player.reset()
 
+            light_sound.stop()
+
             current_level_no += 1
             if current_level_no >= len(level_list):
                 break
@@ -141,6 +148,9 @@ def main():
 
             player.level = current_level
             current_level.player = player
+
+            if len(current_level.guards.sprites()):
+                pygame.mixer.Sound.play(light_sound, -1)
 
         if not pause:
             # Check if the guards got the players
