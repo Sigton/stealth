@@ -124,3 +124,19 @@ class Level06(LevelText):
         self.image.blit(self.image_file, (0, 0))
 
         self.rect = self.image.get_rect()
+
+
+class Level07(LevelText):
+
+    def __init__(self):
+
+        LevelText.__init__(self)
+
+        # Set the image
+        self.image_file = pygame.image.load("resources/text/level7.png")
+
+        self.image = pygame.Surface([431, 84], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
+
+        self.rect = self.image.get_rect()

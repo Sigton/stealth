@@ -390,6 +390,9 @@ class Level07(Level):
         # Then render
         self.render(level_data)
 
+        self.level_text = leveltext.Level07()
+        self.level_text.player = self.player
+
 
 class Level08(Level):
 
