@@ -97,7 +97,7 @@ class Player(pygame.sprite.Sprite):
             frame = (self.rect.x // 30) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
 
-        if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0:
+        if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
             pygame.mixer.Sound.play(self.footstep)
 
         if self.xv == 0:
