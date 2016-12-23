@@ -25,6 +25,9 @@ def main():
     loading_screen.draw(game_display)
     pygame.display.flip()
 
+    pygame.mixer.music.load("resources/music.wav")
+    pygame.mixer.music.play(-1)
+
     # Used to manage update frequency
     clock = pygame.time.Clock()
 
