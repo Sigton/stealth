@@ -29,6 +29,11 @@ def main():
     icon.blit(icon_img, (0, 0))
     pygame.display.set_icon(icon)
 
+    dark_background = covers.DarkScreen()
+    dark_background.draw(game_display)
+    pygame.display.flip()
+    pygame.time.wait(2000)
+
     # Show the loading screen
     loading_screen = covers.LoadingScreen()
     loading_screen.draw(game_display)
