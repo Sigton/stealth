@@ -1,5 +1,6 @@
 import pygame
 import constants
+from spritesheet import blit_alpha
 
 
 def run_intro(display):
@@ -10,7 +11,11 @@ def run_intro(display):
 
     title_x = (constants.SCREEN_WIDTH / 2) - (title_rect.width / 2)
     title_y = (constants.SCREEN_HEIGHT / 2) - (title_rect.height / 2)
-    display.blit(title, (title_x, title_y))
 
-    pygame.display.flip()
-    pygame.time.wait(4000)
+    # Fade the text in
+    for n in range(255):
+
+        blit_alpha(display, title, (title_x, title_y), n)
+
+        pygame.display.flip()
+        pygame.time.wait(25)
