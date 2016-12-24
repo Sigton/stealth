@@ -22,7 +22,6 @@ def run_intro(display):
 
         display.fill(constants.BLACK)
         dark_background.draw(display)
-        pygame.display.flip()
 
         blit_alpha(display, title, (title_x, title_y), n*4)
 
