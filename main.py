@@ -6,6 +6,7 @@ import player as p
 import level
 import torches
 import covers
+import intro
 
 
 def main():
@@ -32,7 +33,9 @@ def main():
     dark_background = covers.DarkScreen()
     dark_background.draw(game_display)
     pygame.display.flip()
-    pygame.time.wait(2000)
+
+    intro.run_intro(game_display)
+    pygame.time.wait(4000)
 
     # Show the loading screen
     loading_screen = covers.LoadingScreen()
