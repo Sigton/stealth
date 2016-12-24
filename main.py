@@ -7,6 +7,7 @@ import level
 import torches
 import covers
 import intro
+from spritesheet import blit_alpha
 
 
 def main():
@@ -34,8 +35,10 @@ def main():
 
     # Show the loading screen
     loading_screen = covers.LoadingScreen()
-    loading_screen.draw(game_display)
-    pygame.display.flip()
+
+    for n in range(63):
+        blit_alpha(game_display, loading_screen.image, (0, 0), n*4)
+        pygame.display.flip()
 
     pygame.mixer.music.load("resources/music.wav")
     pygame.mixer.music.play(-1)

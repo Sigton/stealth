@@ -28,4 +28,4 @@ def run_intro(display):
         pygame.display.flip()
         pygame.time.wait(25)
 
-    pygame.time.wait(2000)
+    pygame.time.wait(1000)
