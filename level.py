@@ -536,3 +536,6 @@ class Level11(Level):
 
         # Then render
         self.render(level_data)
+
+        self.level_text = leveltext.Level11()
+        self.level_text.player = self.player
