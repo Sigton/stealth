@@ -512,3 +512,27 @@ class Level10(Level):
 
         self.level_text = leveltext.Level10()
         self.level_text.player = self.player
+
+
+class Level11(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+        save_file = os.path.join("level_data", "level11.json")
+        tile_file = os.path.join("level_data", "layouts", "level11.png")
+        type_file = os.path.join("level_data", "tile_types", "level11.png")
+
+        level = terrain.LevelData(save_file, tile_file, type_file)
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render
+        self.render(level_data)
