@@ -48,3 +48,22 @@ class LoadingScreen(pygame.sprite.Sprite):
     def draw(self, display):
 
         display.blit(self.image, (0, 0))
+
+
+class DarkScreen(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        # Set the image
+        self.image_file = pygame.image.load("resources/darkscreen.png")
+
+        self.image = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
+        self.image = self.image.convert_alpha()
+        self.image.blit(self.image_file, (0, 0))
+
+    def draw(self, display):
+
+        display.blit(self.image, (0, 0))
