@@ -11,4 +11,6 @@ def run_intro(display):
     title_x = (constants.SCREEN_WIDTH / 2) - (title_rect.width / 2)
     title_y = (constants.SCREEN_HEIGHT / 2) - (title_rect.height / 2)
     display.blit(title, (title_x, title_y))
+
     pygame.display.flip()
+    pygame.time.wait(4000)
