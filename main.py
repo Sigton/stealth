@@ -30,10 +30,6 @@ def main():
     icon.blit(icon_img, (0, 0))
     pygame.display.set_icon(icon)
 
-    dark_background = covers.DarkScreen()
-    dark_background.draw(game_display)
-    pygame.display.flip()
-
     intro.run_intro(game_display)
 
     # Show the loading screen

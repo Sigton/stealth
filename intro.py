@@ -1,6 +1,7 @@
 import pygame
 import constants
 from spritesheet import blit_alpha
+import covers
 
 
 def run_intro(display):
@@ -16,6 +17,11 @@ def run_intro(display):
 
     # Fade the text in
     for n in range(255):
+
+        display.fill(constants.BLACK)
+        dark_background = covers.DarkScreen()
+        dark_background.draw(display)
+        pygame.display.flip()
 
         blit_alpha(display, title, (title_x, title_y), n)
 
