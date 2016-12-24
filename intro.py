@@ -12,6 +12,8 @@ def run_intro(display):
     title_x = (constants.SCREEN_WIDTH / 2) - (title_rect.width / 2)
     title_y = (constants.SCREEN_HEIGHT / 2) - (title_rect.height / 2)
 
+    pygame.time.wait(500)
+
     # Fade the text in
     for n in range(255):
 
@@ -19,3 +21,5 @@ def run_intro(display):
 
         pygame.display.flip()
         pygame.time.wait(25)
+
+    pygame.time.wait(2000)

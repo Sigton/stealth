@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Updates to intro">
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro.py" afterPath="$PROJECT_DIR$/intro.py" />
     </list>
@@ -36,8 +36,8 @@
       <file leaf-file-name="intro.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/intro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -669,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482569322635</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Text fades in">
+      <created>1482569504443</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1482569504443</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -727,7 +734,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Level text for level 2 added" />
     <MESSAGE value="Level text for level 3 added" />
     <MESSAGE value="Level text for level 4 added" />
     <MESSAGE value="Gotta hate those spelling mistakes" />
@@ -752,7 +758,8 @@
     <MESSAGE value="Dark background displays before loading - to become intro" />
     <MESSAGE value="Added text" />
     <MESSAGE value="Updates to intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to intro" />
+    <MESSAGE value="Text fades in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Text fades in" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/intro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
