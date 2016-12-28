@@ -15,3 +15,5 @@ PLAYER_JUMP_HEIGHT = 10.5
 
 # Guard attributes
 GUARD_SPEED = 1.5
+
+HGUARD_SPEED = 2.5

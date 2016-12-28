@@ -144,3 +144,46 @@ class Guard(pygame.sprite.Sprite):
                 return True
             else:
                 return False
+
+
+class HostileGuard(pygame.sprite.Sprite):
+
+    xv = 0
+    direction = "R"
+
+    speed = constants.HGUARD_SPEED
+
+    player = None
+    level = None
+    arm = None
+
+    sprite_sheet = None
+
+    def __init__(self):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
+
+        self.stand_img_r = self.sprite_sheet.get_image(0, 0, 24, 48)
+        self.stand_img_l = pygame.transform.flip(self.stand_img_r, True, False)
+
+        self.walking_frames_r = []
+        self.walking_frames_l = []
+
+        image = self.sprite_sheet.get_image(0, 0, 24, 48)
+        self.walking_frames_r.append(image)
+        image = self.sprite_sheet.get_image(24, 0, 24, 48)
+        self.walking_frames_r.append(image)
+        image = self.sprite_sheet.get_image(48, 0, 24, 48)
+        self.walking_frames_r.append(image)
+        image = self.sprite_sheet.get_image(72, 0, 24, 48)
+        self.walking_frames_r.append(image)
+
+        for frame in self.walking_frames_r:
+            image = pygame.transform.flip(frame, True, False)
+            self.walking_frames_l.append(image)
+
+        self.image = self.stand_img_r
+
+        self.rect = self.image.get_rect()
