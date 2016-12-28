@@ -132,6 +132,17 @@ class Level:
 
         self.guards.add(new_guard)
 
+    def create_hguard(self, x, y):
+        new_hguard = guards.HostileGuard()
+
+        new_hguard.rect.x = x
+        new_hguard.rect.y = y
+
+        new_hguard.level = self
+        new_hguard.player = self.player
+
+        self.guards.add(new_hguard)
+
     def render(self, data):
 
         self.door_no = 0
@@ -158,6 +169,9 @@ class Level:
 
                 elif tile_data['tile'] == 25:
                     self.create_bomb(position[0]*24, position[1]*24)
+
+                elif tile_data['tile'] == 27:
+                    self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
                 self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
