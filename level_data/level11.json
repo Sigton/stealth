@@ -5,8 +5,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -15,8 +15,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -25,8 +25,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -35,8 +35,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -45,8 +45,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -55,8 +55,8 @@
       5
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -65,8 +65,8 @@
       6
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -75,8 +75,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -85,8 +85,8 @@
       8
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -95,8 +95,8 @@
       9
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -105,8 +105,8 @@
       10
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -115,8 +115,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -125,8 +125,8 @@
       12
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -135,8 +135,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -145,8 +145,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -155,8 +155,8 @@
       15
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -165,8 +165,8 @@
       16
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -175,8 +175,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -185,8 +185,8 @@
       18
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -195,8 +195,8 @@
       19
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -205,8 +205,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -215,8 +215,8 @@
       21
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -225,8 +225,8 @@
       22
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -235,8 +235,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -245,8 +245,8 @@
       24
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -255,8 +255,8 @@
       25
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -265,8 +265,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -275,8 +275,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -285,8 +285,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -295,8 +295,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -305,8 +305,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -315,8 +315,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -325,8 +325,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -335,8 +335,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -345,8 +345,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -355,8 +355,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -365,8 +365,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -375,8 +375,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -385,8 +385,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -395,8 +395,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -405,8 +405,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -415,8 +415,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -425,8 +425,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -435,8 +435,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -445,8 +445,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -455,8 +455,8 @@
       15
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -465,8 +465,8 @@
       16
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -475,8 +475,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -485,8 +485,8 @@
       18
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -495,8 +495,8 @@
       19
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -505,8 +505,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -515,8 +515,8 @@
       21
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -525,8 +525,8 @@
       22
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -535,8 +535,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -545,8 +545,8 @@
       24
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -555,8 +555,8 @@
       25
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -565,8 +565,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -575,8 +575,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -585,8 +585,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -595,8 +595,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -605,8 +605,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -615,8 +615,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -625,8 +625,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -635,8 +635,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -645,8 +645,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -655,8 +655,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -665,8 +665,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -675,8 +675,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -685,8 +685,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -695,8 +695,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -705,8 +705,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -715,8 +715,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -725,8 +725,8 @@
       12
     ],
     {
-      "type": "Entity",
-      "tile": 27
+      "tile": 27,
+      "type": "Entity"
     }
   ],
   [
@@ -735,8 +735,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -745,8 +745,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -755,8 +755,8 @@
       15
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -765,8 +765,8 @@
       16
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -775,8 +775,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -785,8 +785,8 @@
       18
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -795,8 +795,8 @@
       19
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -805,8 +805,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -815,8 +815,8 @@
       21
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -825,8 +825,8 @@
       22
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -835,8 +835,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -845,8 +845,8 @@
       24
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -855,8 +855,8 @@
       25
     ],
     {
-      "type": "Solid",
-      "tile": 12
+      "tile": 12,
+      "type": "Solid"
     }
   ],
   [
@@ -865,8 +865,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -875,8 +875,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -885,8 +885,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -895,8 +895,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -905,8 +905,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -915,8 +915,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -925,8 +925,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -935,8 +935,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -945,8 +945,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -955,8 +955,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -965,8 +965,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -975,8 +975,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -985,8 +985,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -995,8 +995,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1005,8 +1005,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1015,8 +1015,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1025,8 +1025,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1035,8 +1035,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -1045,8 +1045,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1055,8 +1055,8 @@
       15
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -1065,8 +1065,8 @@
       16
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -1075,8 +1075,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -1085,8 +1085,8 @@
       18
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -1095,8 +1095,8 @@
       19
     ],
     {
-      "type": "Solid",
-      "tile": 12
+      "tile": 12,
+      "type": "Solid"
     }
   ],
   [
@@ -1105,8 +1105,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1115,8 +1115,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1125,8 +1125,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1135,8 +1135,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1145,8 +1145,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1155,8 +1155,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1165,8 +1165,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1175,8 +1175,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1185,8 +1185,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -1195,8 +1195,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1205,8 +1205,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1215,8 +1215,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1225,8 +1225,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1235,8 +1235,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1245,8 +1245,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -1255,8 +1255,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1265,8 +1265,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1275,8 +1275,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1285,8 +1285,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1295,8 +1295,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1305,8 +1305,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1315,8 +1315,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1325,8 +1325,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1335,8 +1335,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 10
+      "tile": 10,
+      "type": "Solid"
     }
   ],
   [
@@ -1345,8 +1345,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -1355,8 +1355,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1365,8 +1365,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1375,8 +1375,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1385,8 +1385,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1395,8 +1395,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1405,8 +1405,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1415,8 +1415,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1425,8 +1425,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1435,8 +1435,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1445,8 +1445,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1455,8 +1455,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1465,8 +1465,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1475,8 +1475,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1485,8 +1485,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -1495,8 +1495,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1505,8 +1505,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1515,8 +1515,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1525,8 +1525,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1535,8 +1535,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1545,8 +1545,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -1555,8 +1555,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1565,8 +1565,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1575,8 +1575,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1585,8 +1585,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1595,8 +1595,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1605,8 +1605,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1615,8 +1615,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1625,8 +1625,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1635,8 +1635,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1645,8 +1645,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -1655,8 +1655,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1665,8 +1665,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1675,8 +1675,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1685,8 +1685,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1695,8 +1695,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1705,8 +1705,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1715,8 +1715,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1725,8 +1725,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1735,8 +1735,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1745,8 +1745,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1755,8 +1755,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1765,8 +1765,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1775,8 +1775,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 9
+      "tile": 9,
+      "type": "Solid"
     }
   ],
   [
@@ -1785,8 +1785,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1795,8 +1795,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1805,8 +1805,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1815,8 +1815,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1825,8 +1825,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1835,8 +1835,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -1845,8 +1845,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -1855,8 +1855,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1865,8 +1865,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1875,8 +1875,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1885,8 +1885,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1895,8 +1895,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1905,8 +1905,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1915,8 +1915,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1925,8 +1925,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1935,8 +1935,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1945,8 +1945,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 5
+      "tile": 5,
+      "type": "Solid"
     }
   ],
   [
@@ -1955,8 +1955,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1965,8 +1965,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1975,8 +1975,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1985,8 +1985,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -1995,8 +1995,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2005,8 +2005,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2015,8 +2015,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2025,8 +2025,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2035,8 +2035,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2045,8 +2045,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2055,8 +2055,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2065,8 +2065,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2075,8 +2075,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -2085,8 +2085,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2095,8 +2095,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2105,8 +2105,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2115,8 +2115,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2125,8 +2125,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2135,8 +2135,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2145,8 +2145,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -2155,8 +2155,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2165,8 +2165,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2175,8 +2175,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2185,8 +2185,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2195,8 +2195,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2205,8 +2205,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2215,8 +2215,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2225,8 +2225,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2235,8 +2235,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2245,8 +2245,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2255,8 +2255,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2265,8 +2265,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2275,8 +2275,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2285,8 +2285,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2295,8 +2295,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2305,8 +2305,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2315,8 +2315,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2325,8 +2325,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2335,8 +2335,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2345,8 +2345,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2355,8 +2355,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2365,8 +2365,8 @@
       26
     ],
     {
-      "type": "Solid",
-      "tile": 9
+      "tile": 9,
+      "type": "Solid"
     }
   ],
   [
@@ -2375,8 +2375,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2385,8 +2385,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2395,8 +2395,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2405,8 +2405,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2415,8 +2415,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2425,8 +2425,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2435,8 +2435,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2445,8 +2445,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -2455,8 +2455,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2465,8 +2465,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2475,8 +2475,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2485,8 +2485,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2495,8 +2495,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2505,8 +2505,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2515,8 +2515,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2525,8 +2525,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2535,8 +2535,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2545,8 +2545,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2555,8 +2555,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2565,8 +2565,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2575,8 +2575,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2585,8 +2585,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2595,8 +2595,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2605,8 +2605,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2615,8 +2615,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2625,8 +2625,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2635,8 +2635,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2645,8 +2645,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2655,8 +2655,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2665,8 +2665,8 @@
       26
     ],
     {
-      "type": "Solid",
-      "tile": 10
+      "tile": 10,
+      "type": "Solid"
     }
   ],
   [
@@ -2675,8 +2675,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 13
+      "tile": 13,
+      "type": "Solid"
     }
   ],
   [
@@ -2685,8 +2685,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2695,8 +2695,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2705,8 +2705,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2715,8 +2715,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2725,8 +2725,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2735,8 +2735,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -2745,8 +2745,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -2755,8 +2755,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2765,8 +2765,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2775,8 +2775,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2785,8 +2785,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2795,8 +2795,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2805,8 +2805,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2815,8 +2815,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2825,8 +2825,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2835,8 +2835,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2845,8 +2845,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2855,8 +2855,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2865,8 +2865,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2875,8 +2875,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2885,8 +2885,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2895,8 +2895,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2905,8 +2905,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2915,8 +2915,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2925,8 +2925,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2935,8 +2935,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2945,8 +2945,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2955,8 +2955,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2965,8 +2965,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2975,8 +2975,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -2985,8 +2985,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -2995,8 +2995,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3005,8 +3005,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3015,8 +3015,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3025,8 +3025,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3035,8 +3035,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3045,8 +3045,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -3055,8 +3055,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3065,8 +3065,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3075,8 +3075,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3085,8 +3085,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3095,8 +3095,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3105,8 +3105,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3115,8 +3115,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3125,8 +3125,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3135,8 +3135,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3145,8 +3145,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3155,8 +3155,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3165,8 +3165,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3175,8 +3175,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3185,8 +3185,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3195,8 +3195,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3205,8 +3205,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3215,8 +3215,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3225,8 +3225,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3235,8 +3235,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3245,8 +3245,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3255,8 +3255,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3265,8 +3265,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3275,8 +3275,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3285,8 +3285,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -3295,8 +3295,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3305,8 +3305,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3315,8 +3315,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3325,8 +3325,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3335,8 +3335,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3345,8 +3345,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -3355,8 +3355,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3365,8 +3365,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3375,8 +3375,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3385,8 +3385,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3395,8 +3395,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3405,8 +3405,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3415,8 +3415,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 20
+      "tile": 20,
+      "type": "Solid"
     }
   ],
   [
@@ -3425,8 +3425,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3435,8 +3435,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3445,8 +3445,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3455,8 +3455,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3465,8 +3465,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3475,8 +3475,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 20
+      "tile": 20,
+      "type": "Solid"
     }
   ],
   [
@@ -3485,8 +3485,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3495,8 +3495,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3505,8 +3505,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3515,8 +3515,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3525,8 +3525,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3535,8 +3535,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 20
+      "tile": 20,
+      "type": "Solid"
     }
   ],
   [
@@ -3545,8 +3545,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3555,8 +3555,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3565,8 +3565,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3575,8 +3575,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3585,8 +3585,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -3595,8 +3595,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3605,8 +3605,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3615,8 +3615,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3625,8 +3625,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3635,8 +3635,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3645,8 +3645,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -3655,8 +3655,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3665,8 +3665,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3675,8 +3675,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3685,8 +3685,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3695,8 +3695,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3705,8 +3705,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3715,8 +3715,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -3725,8 +3725,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3735,8 +3735,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3745,8 +3745,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3755,8 +3755,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3765,8 +3765,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3775,8 +3775,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -3785,8 +3785,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3795,8 +3795,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3805,8 +3805,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3815,8 +3815,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3825,8 +3825,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3835,8 +3835,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -3845,8 +3845,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3855,8 +3855,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3865,8 +3865,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3875,8 +3875,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3885,8 +3885,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -3895,8 +3895,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3905,8 +3905,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3915,8 +3915,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3925,8 +3925,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3935,8 +3935,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3945,8 +3945,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -3955,8 +3955,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3965,8 +3965,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3975,8 +3975,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3985,8 +3985,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -3995,8 +3995,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4005,8 +4005,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4015,8 +4015,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4025,8 +4025,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4035,8 +4035,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4045,8 +4045,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4055,8 +4055,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4065,8 +4065,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4075,8 +4075,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4085,8 +4085,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4095,8 +4095,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4105,8 +4105,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4115,8 +4115,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4125,8 +4125,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4135,8 +4135,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4145,8 +4145,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4155,8 +4155,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4165,8 +4165,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4175,8 +4175,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4185,8 +4185,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -4195,8 +4195,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4205,8 +4205,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4215,8 +4215,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4225,8 +4225,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4235,8 +4235,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4245,8 +4245,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -4255,8 +4255,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4265,8 +4265,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4275,8 +4275,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4285,8 +4285,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4295,8 +4295,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4305,8 +4305,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4315,8 +4315,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4325,8 +4325,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4335,8 +4335,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4345,8 +4345,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4355,8 +4355,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4365,8 +4365,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4375,8 +4375,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4385,8 +4385,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4395,8 +4395,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4405,8 +4405,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4415,8 +4415,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4425,8 +4425,8 @@
       22
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -4435,8 +4435,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4445,8 +4445,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4455,8 +4455,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4465,8 +4465,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4475,8 +4475,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4485,8 +4485,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -4495,8 +4495,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4505,8 +4505,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4515,8 +4515,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4525,8 +4525,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4535,8 +4535,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4545,8 +4545,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -4555,8 +4555,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4565,8 +4565,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4575,8 +4575,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4585,8 +4585,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4595,8 +4595,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4605,8 +4605,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4615,8 +4615,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4625,8 +4625,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4635,8 +4635,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4645,8 +4645,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4655,8 +4655,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4665,8 +4665,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4675,8 +4675,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4685,8 +4685,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4695,8 +4695,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4705,8 +4705,8 @@
       20
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -4715,8 +4715,8 @@
       21
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -4725,8 +4725,8 @@
       22
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -4735,8 +4735,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4745,8 +4745,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4755,8 +4755,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4765,8 +4765,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4775,8 +4775,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4785,8 +4785,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -4795,8 +4795,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4805,8 +4805,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4815,8 +4815,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4825,8 +4825,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4835,8 +4835,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4845,8 +4845,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -4855,8 +4855,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4865,8 +4865,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4875,8 +4875,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4885,8 +4885,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4895,8 +4895,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4905,8 +4905,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4915,8 +4915,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4925,8 +4925,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4935,8 +4935,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4945,8 +4945,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4955,8 +4955,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4965,8 +4965,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4975,8 +4975,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -4985,8 +4985,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -4995,8 +4995,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5005,8 +5005,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5015,8 +5015,8 @@
       21
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -5025,8 +5025,8 @@
       22
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -5035,8 +5035,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5045,8 +5045,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5055,8 +5055,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5065,8 +5065,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5075,8 +5075,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5085,8 +5085,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -5095,8 +5095,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5105,8 +5105,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5115,8 +5115,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5125,8 +5125,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5135,8 +5135,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5145,8 +5145,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -5155,8 +5155,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5165,8 +5165,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5175,8 +5175,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5185,8 +5185,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5195,8 +5195,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5205,8 +5205,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5215,8 +5215,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5225,8 +5225,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5235,8 +5235,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5245,8 +5245,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5255,8 +5255,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5265,8 +5265,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5275,8 +5275,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5285,8 +5285,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5295,8 +5295,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5305,8 +5305,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5315,8 +5315,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5325,8 +5325,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5335,8 +5335,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5345,8 +5345,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5355,8 +5355,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5365,8 +5365,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5375,8 +5375,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5385,8 +5385,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -5395,8 +5395,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5405,8 +5405,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5415,8 +5415,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5425,8 +5425,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5435,8 +5435,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5445,8 +5445,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -5455,8 +5455,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5465,8 +5465,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5475,8 +5475,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5485,8 +5485,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5495,8 +5495,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5505,8 +5505,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5515,8 +5515,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5525,8 +5525,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5535,8 +5535,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5545,8 +5545,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5555,8 +5555,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5565,8 +5565,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5575,8 +5575,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5585,8 +5585,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5595,8 +5595,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5605,8 +5605,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5615,8 +5615,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5625,8 +5625,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5635,8 +5635,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5645,8 +5645,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5655,8 +5655,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5665,8 +5665,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5675,8 +5675,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5685,8 +5685,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -5695,8 +5695,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5705,8 +5705,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5715,8 +5715,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5725,8 +5725,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5735,8 +5735,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5745,8 +5745,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -5755,8 +5755,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5765,8 +5765,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5775,8 +5775,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5785,8 +5785,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5795,8 +5795,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5805,8 +5805,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5815,8 +5815,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5825,8 +5825,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5835,8 +5835,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5845,8 +5845,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5855,8 +5855,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5865,8 +5865,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5875,8 +5875,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5885,8 +5885,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5895,8 +5895,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5905,8 +5905,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5915,8 +5915,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5925,8 +5925,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5935,8 +5935,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -5945,8 +5945,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5955,8 +5955,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5965,8 +5965,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5975,8 +5975,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -5985,8 +5985,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -5995,8 +5995,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6005,8 +6005,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6015,8 +6015,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6025,8 +6025,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6035,8 +6035,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6045,8 +6045,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -6055,8 +6055,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6065,8 +6065,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6075,8 +6075,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6085,8 +6085,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6095,8 +6095,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6105,8 +6105,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6115,8 +6115,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6125,8 +6125,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6135,8 +6135,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6145,8 +6145,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6155,8 +6155,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6165,8 +6165,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6175,8 +6175,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6185,8 +6185,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6195,8 +6195,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6205,8 +6205,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6215,8 +6215,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6225,8 +6225,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6235,8 +6235,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6245,8 +6245,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6255,8 +6255,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6265,8 +6265,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6275,8 +6275,8 @@
       27
     ],
     {
-      "type": "Entity",
-      "tile": 27
+      "tile": 27,
+      "type": "Entity"
     }
   ],
   [
@@ -6285,8 +6285,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -6295,8 +6295,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6305,8 +6305,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6315,8 +6315,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6325,8 +6325,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6335,8 +6335,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6345,8 +6345,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -6355,8 +6355,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6365,8 +6365,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6375,8 +6375,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6385,8 +6385,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6395,8 +6395,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6405,8 +6405,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6415,8 +6415,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6425,8 +6425,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6435,8 +6435,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6445,8 +6445,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6455,8 +6455,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6465,8 +6465,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6475,8 +6475,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6485,8 +6485,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6495,8 +6495,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6505,8 +6505,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6515,8 +6515,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6525,8 +6525,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6535,8 +6535,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6545,8 +6545,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6555,8 +6555,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6565,8 +6565,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6575,8 +6575,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6585,8 +6585,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -6595,8 +6595,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6605,8 +6605,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6615,8 +6615,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6625,8 +6625,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6635,8 +6635,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6645,8 +6645,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -6655,8 +6655,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6665,8 +6665,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6675,8 +6675,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6685,8 +6685,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6695,8 +6695,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6705,8 +6705,8 @@
       10
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -6715,8 +6715,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6725,8 +6725,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6735,8 +6735,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6745,8 +6745,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6755,8 +6755,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6765,8 +6765,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6775,8 +6775,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6785,8 +6785,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6795,8 +6795,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6805,8 +6805,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6815,8 +6815,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6825,8 +6825,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6835,8 +6835,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -6845,8 +6845,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6855,8 +6855,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6865,8 +6865,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6875,8 +6875,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6885,8 +6885,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -6895,8 +6895,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6905,8 +6905,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6915,8 +6915,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6925,8 +6925,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6935,8 +6935,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6945,8 +6945,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -6955,8 +6955,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6965,8 +6965,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6975,8 +6975,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6985,8 +6985,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -6995,8 +6995,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7005,8 +7005,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7015,8 +7015,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7025,8 +7025,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7035,8 +7035,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7045,8 +7045,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7055,8 +7055,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7065,8 +7065,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7075,8 +7075,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7085,8 +7085,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7095,8 +7095,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7105,8 +7105,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7115,8 +7115,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7125,8 +7125,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7135,8 +7135,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7145,8 +7145,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7155,8 +7155,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7165,8 +7165,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7175,8 +7175,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7185,8 +7185,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -7195,8 +7195,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7205,8 +7205,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7215,8 +7215,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7225,8 +7225,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7235,8 +7235,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7245,8 +7245,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -7255,8 +7255,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7265,8 +7265,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7275,8 +7275,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7285,8 +7285,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7295,8 +7295,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7305,8 +7305,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7315,8 +7315,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7325,8 +7325,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7335,8 +7335,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7345,8 +7345,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7355,8 +7355,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7365,8 +7365,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7375,8 +7375,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7385,8 +7385,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7395,8 +7395,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7405,8 +7405,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7415,8 +7415,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7425,8 +7425,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7435,8 +7435,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7445,8 +7445,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7455,8 +7455,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7465,8 +7465,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7475,8 +7475,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7485,8 +7485,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -7495,8 +7495,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7505,8 +7505,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7515,8 +7515,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7525,8 +7525,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7535,8 +7535,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7545,8 +7545,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -7555,8 +7555,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7565,8 +7565,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7575,8 +7575,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7585,8 +7585,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7595,8 +7595,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7605,8 +7605,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7615,8 +7615,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7625,8 +7625,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7635,8 +7635,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7645,8 +7645,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7655,8 +7655,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7665,8 +7665,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7675,8 +7675,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7685,8 +7685,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7695,8 +7695,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7705,8 +7705,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7715,8 +7715,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7725,8 +7725,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7735,8 +7735,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7745,8 +7745,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7755,8 +7755,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7765,8 +7765,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7775,8 +7775,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7785,8 +7785,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -7795,8 +7795,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7805,8 +7805,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7815,8 +7815,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7825,8 +7825,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7835,8 +7835,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7845,8 +7845,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -7855,8 +7855,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7865,8 +7865,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7875,8 +7875,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7885,8 +7885,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7895,8 +7895,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7905,8 +7905,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7915,8 +7915,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7925,8 +7925,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7935,8 +7935,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7945,8 +7945,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7955,8 +7955,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7965,8 +7965,8 @@
       16
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -7975,8 +7975,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -7985,8 +7985,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -7995,8 +7995,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8005,8 +8005,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8015,8 +8015,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8025,8 +8025,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8035,8 +8035,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8045,8 +8045,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8055,8 +8055,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8065,8 +8065,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8075,8 +8075,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8085,8 +8085,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -8095,8 +8095,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8105,8 +8105,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8115,8 +8115,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8125,8 +8125,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8135,8 +8135,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8145,8 +8145,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -8155,8 +8155,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8165,8 +8165,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8175,8 +8175,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8185,8 +8185,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8195,8 +8195,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8205,8 +8205,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8215,8 +8215,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8225,8 +8225,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8235,8 +8235,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8245,8 +8245,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8255,8 +8255,8 @@
       15
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -8265,8 +8265,8 @@
       16
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -8275,8 +8275,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8285,8 +8285,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8295,8 +8295,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8305,8 +8305,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8315,8 +8315,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8325,8 +8325,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8335,8 +8335,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8345,8 +8345,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8355,8 +8355,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8365,8 +8365,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8375,8 +8375,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8385,8 +8385,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -8395,8 +8395,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8405,8 +8405,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8415,8 +8415,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8425,8 +8425,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8435,8 +8435,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8445,8 +8445,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -8455,8 +8455,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8465,8 +8465,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8475,8 +8475,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8485,8 +8485,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8495,8 +8495,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8505,8 +8505,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8515,8 +8515,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8525,8 +8525,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8535,8 +8535,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8545,8 +8545,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8555,8 +8555,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8565,8 +8565,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8575,8 +8575,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8585,8 +8585,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8595,8 +8595,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8605,8 +8605,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8615,8 +8615,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8625,8 +8625,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8635,8 +8635,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 18
+      "tile": 18,
+      "type": "Solid"
     }
   ],
   [
@@ -8645,8 +8645,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8655,8 +8655,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8665,8 +8665,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8675,8 +8675,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8685,8 +8685,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -8695,8 +8695,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8705,8 +8705,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8715,8 +8715,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8725,8 +8725,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8735,8 +8735,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8745,8 +8745,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -8755,8 +8755,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8765,8 +8765,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8775,8 +8775,8 @@
       7
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8785,8 +8785,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8795,8 +8795,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8805,8 +8805,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8815,8 +8815,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 19
+      "tile": 19,
+      "type": "Solid"
     }
   ],
   [
@@ -8825,8 +8825,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8835,8 +8835,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8845,8 +8845,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8855,8 +8855,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8865,8 +8865,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8875,8 +8875,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 19
+      "tile": 19,
+      "type": "Solid"
     }
   ],
   [
@@ -8885,8 +8885,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8895,8 +8895,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8905,8 +8905,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8915,8 +8915,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8925,8 +8925,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8935,8 +8935,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 19
+      "tile": 19,
+      "type": "Solid"
     }
   ],
   [
@@ -8945,8 +8945,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8955,8 +8955,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8965,8 +8965,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8975,8 +8975,8 @@
       27
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -8985,8 +8985,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -8995,8 +8995,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9005,8 +9005,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9015,8 +9015,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9025,8 +9025,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9035,8 +9035,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9045,8 +9045,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -9055,8 +9055,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9065,8 +9065,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9075,8 +9075,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 6
+      "tile": 6,
+      "type": "Solid"
     }
   ],
   [
@@ -9085,8 +9085,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9095,8 +9095,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9105,8 +9105,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9115,8 +9115,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9125,8 +9125,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9135,8 +9135,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9145,8 +9145,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9155,8 +9155,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9165,8 +9165,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9175,8 +9175,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9185,8 +9185,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9195,8 +9195,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9205,8 +9205,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9215,8 +9215,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9225,8 +9225,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9235,8 +9235,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9245,8 +9245,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9255,8 +9255,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9265,8 +9265,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9275,8 +9275,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 9
+      "tile": 9,
+      "type": "Solid"
     }
   ],
   [
@@ -9285,8 +9285,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9295,8 +9295,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9305,8 +9305,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9315,8 +9315,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9325,8 +9325,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9335,8 +9335,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9345,8 +9345,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -9355,8 +9355,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9365,8 +9365,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9375,8 +9375,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -9385,8 +9385,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9395,8 +9395,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9405,8 +9405,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9415,8 +9415,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9425,8 +9425,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9435,8 +9435,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9445,8 +9445,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9455,8 +9455,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9465,8 +9465,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9475,8 +9475,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9485,8 +9485,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9495,8 +9495,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9505,8 +9505,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9515,8 +9515,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9525,8 +9525,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9535,8 +9535,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9545,8 +9545,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9555,8 +9555,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9565,8 +9565,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9575,8 +9575,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -9585,8 +9585,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9595,8 +9595,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9605,8 +9605,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9615,8 +9615,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9625,8 +9625,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9635,8 +9635,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9645,8 +9645,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -9655,8 +9655,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9665,8 +9665,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9675,8 +9675,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -9685,8 +9685,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9695,8 +9695,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9705,8 +9705,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9715,8 +9715,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9725,8 +9725,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9735,8 +9735,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9745,8 +9745,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9755,8 +9755,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9765,8 +9765,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9775,8 +9775,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9785,8 +9785,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9795,8 +9795,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9805,8 +9805,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9815,8 +9815,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9825,8 +9825,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9835,8 +9835,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9845,8 +9845,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9855,8 +9855,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9865,8 +9865,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9875,8 +9875,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -9885,8 +9885,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9895,8 +9895,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9905,8 +9905,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9915,8 +9915,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9925,8 +9925,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9935,8 +9935,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9945,8 +9945,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -9955,8 +9955,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9965,8 +9965,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9975,8 +9975,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -9985,8 +9985,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -9995,8 +9995,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10005,8 +10005,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10015,8 +10015,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10025,8 +10025,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10035,8 +10035,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10045,8 +10045,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10055,8 +10055,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10065,8 +10065,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10075,8 +10075,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10085,8 +10085,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10095,8 +10095,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10105,8 +10105,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10115,8 +10115,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10125,8 +10125,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10135,8 +10135,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10145,8 +10145,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10155,8 +10155,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10165,8 +10165,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10175,8 +10175,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -10185,8 +10185,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10195,8 +10195,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10205,8 +10205,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10215,8 +10215,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10225,8 +10225,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10235,8 +10235,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10245,8 +10245,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -10255,8 +10255,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10265,8 +10265,8 @@
       6
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -10275,8 +10275,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -10285,8 +10285,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10295,8 +10295,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10305,8 +10305,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10315,8 +10315,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10325,8 +10325,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10335,8 +10335,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10345,8 +10345,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10355,8 +10355,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10365,8 +10365,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10375,8 +10375,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10385,8 +10385,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10395,8 +10395,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10405,8 +10405,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 6
+      "tile": 6,
+      "type": "Solid"
     }
   ],
   [
@@ -10415,8 +10415,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10425,8 +10425,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10435,8 +10435,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10445,8 +10445,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10455,8 +10455,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10465,8 +10465,8 @@
       26
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10475,8 +10475,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -10485,8 +10485,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10495,8 +10495,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10505,8 +10505,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10515,8 +10515,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10525,8 +10525,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10535,8 +10535,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10545,8 +10545,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -10555,8 +10555,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10565,8 +10565,8 @@
       6
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -10575,8 +10575,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -10585,8 +10585,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10595,8 +10595,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10605,8 +10605,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10615,8 +10615,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10625,8 +10625,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10635,8 +10635,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10645,8 +10645,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10655,8 +10655,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10665,8 +10665,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10675,8 +10675,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10685,8 +10685,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10695,8 +10695,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10705,8 +10705,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 5
+      "tile": 5,
+      "type": "Solid"
     }
   ],
   [
@@ -10715,8 +10715,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10725,8 +10725,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10735,8 +10735,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10745,8 +10745,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10755,8 +10755,8 @@
       25
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10765,8 +10765,8 @@
       26
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -10775,8 +10775,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -10785,8 +10785,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10795,8 +10795,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10805,8 +10805,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10815,8 +10815,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10825,8 +10825,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10835,8 +10835,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10845,8 +10845,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -10855,8 +10855,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10865,8 +10865,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10875,8 +10875,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -10885,8 +10885,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10895,8 +10895,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10905,8 +10905,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10915,8 +10915,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10925,8 +10925,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10935,8 +10935,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10945,8 +10945,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10955,8 +10955,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10965,8 +10965,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10975,8 +10975,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10985,8 +10985,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -10995,8 +10995,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11005,8 +11005,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11015,8 +11015,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11025,8 +11025,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11035,8 +11035,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11045,8 +11045,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11055,8 +11055,8 @@
       25
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11065,8 +11065,8 @@
       26
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11075,8 +11075,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -11085,8 +11085,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11095,8 +11095,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11105,8 +11105,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11115,8 +11115,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11125,8 +11125,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11135,8 +11135,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11145,8 +11145,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -11155,8 +11155,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11165,8 +11165,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11175,8 +11175,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -11185,8 +11185,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11195,8 +11195,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11205,8 +11205,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11215,8 +11215,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11225,8 +11225,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11235,8 +11235,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11245,8 +11245,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11255,8 +11255,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11265,8 +11265,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11275,8 +11275,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11285,8 +11285,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11295,8 +11295,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11305,8 +11305,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11315,8 +11315,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11325,8 +11325,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11335,8 +11335,8 @@
       23
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11345,8 +11345,8 @@
       24
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11355,8 +11355,8 @@
       25
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11365,8 +11365,8 @@
       26
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11375,8 +11375,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -11385,8 +11385,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11395,8 +11395,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11405,8 +11405,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11415,8 +11415,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11425,8 +11425,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11435,8 +11435,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11445,8 +11445,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -11455,8 +11455,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11465,8 +11465,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11475,8 +11475,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 8
+      "tile": 8,
+      "type": "Solid"
     }
   ],
   [
@@ -11485,8 +11485,8 @@
       8
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11495,8 +11495,8 @@
       9
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11505,8 +11505,8 @@
       10
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11515,8 +11515,8 @@
       11
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11525,8 +11525,8 @@
       12
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11535,8 +11535,8 @@
       13
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11545,8 +11545,8 @@
       14
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11555,8 +11555,8 @@
       15
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11565,8 +11565,8 @@
       16
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11575,8 +11575,8 @@
       17
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11585,8 +11585,8 @@
       18
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11595,8 +11595,8 @@
       19
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11605,8 +11605,8 @@
       20
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11615,8 +11615,8 @@
       21
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11625,8 +11625,8 @@
       22
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11635,8 +11635,8 @@
       23
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11645,8 +11645,8 @@
       24
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11655,8 +11655,8 @@
       25
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11665,8 +11665,8 @@
       26
     ],
     {
-      "type": "Cosmetic",
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -11675,8 +11675,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -11685,8 +11685,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11695,8 +11695,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11705,8 +11705,8 @@
       0
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11715,8 +11715,8 @@
       1
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11725,8 +11725,8 @@
       2
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11735,8 +11735,8 @@
       3
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11745,8 +11745,8 @@
       4
     ],
     {
-      "type": "Solid",
-      "tile": 16
+      "tile": 16,
+      "type": "Solid"
     }
   ],
   [
@@ -11755,8 +11755,8 @@
       5
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11765,8 +11765,8 @@
       6
     ],
     {
-      "type": null,
-      "tile": 0
+      "tile": 0,
+      "type": null
     }
   ],
   [
@@ -11775,8 +11775,8 @@
       7
     ],
     {
-      "type": "Solid",
-      "tile": 14
+      "tile": 14,
+      "type": "Solid"
     }
   ],
   [
@@ -11785,8 +11785,8 @@
       8
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11795,8 +11795,8 @@
       9
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11805,8 +11805,8 @@
       10
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11815,8 +11815,8 @@
       11
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11825,8 +11825,8 @@
       12
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11835,8 +11835,8 @@
       13
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11845,8 +11845,8 @@
       14
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11855,8 +11855,8 @@
       15
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11865,8 +11865,8 @@
       16
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11875,8 +11875,8 @@
       17
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11885,8 +11885,8 @@
       18
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11895,8 +11895,8 @@
       19
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11905,8 +11905,8 @@
       20
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11915,8 +11915,8 @@
       21
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11925,8 +11925,8 @@
       22
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11935,8 +11935,8 @@
       23
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11945,8 +11945,8 @@
       24
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11955,8 +11955,8 @@
       25
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11965,8 +11965,8 @@
       26
     ],
     {
-      "type": "Solid",
-      "tile": 15
+      "tile": 15,
+      "type": "Solid"
     }
   ],
   [
@@ -11975,8 +11975,8 @@
       27
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11985,8 +11985,8 @@
       28
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -11995,8 +11995,8 @@
       29
     ],
     {
-      "type": "Solid",
-      "tile": 1
+      "tile": 1,
+      "type": "Solid"
     }
   ]
 ]

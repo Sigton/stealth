@@ -4,6 +4,7 @@ from pygame.locals import *
 import constants
 import player as p
 import level
+import guards
 import torches
 import covers
 import intro
@@ -155,8 +156,12 @@ def main():
             player.level = current_level
             current_level.player = player
 
-            if len(current_level.guards.sprites()):
-                pygame.mixer.Sound.play(light_sound, -1)
+            has_guard = False
+            for guard in current_level.guards.sprites():
+                if guard is isinstance(guards.Guard):
+                    has_guard = True
+            if has_guard:
+                light_sound.play(-1)
 
         if not pause:
             # Check if the guards got the players
