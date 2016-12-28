@@ -158,7 +158,7 @@ def main():
 
             has_guard = False
             for guard in current_level.guards.sprites():
-                if guard is isinstance(guards.Guard):
+                if isinstance(guard, guards.Guard):
                     has_guard = True
             if has_guard:
                 light_sound.play(-1)
