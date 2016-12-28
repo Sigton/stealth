@@ -91,8 +91,13 @@ def main():
 
     light_sound = pygame.mixer.Sound("resources/lights.wav")
     light_sound.set_volume(0.25)
-    if len(current_level.guards.sprites()):
-        pygame.mixer.Sound.play(light_sound, -1)
+
+    has_guard = False
+    for guard in current_level.guards.sprites():
+        if isinstance(guard, guards.Guard):
+            has_guard = True
+    if has_guard:
+        light_sound.play(-1)
 
     # Loop until the window is closed
     game_exit = False
