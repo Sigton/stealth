@@ -32,7 +32,8 @@ def main():
     icon.blit(icon_img, (0, 0))
     pygame.display.set_icon(icon)
 
-    intro.run_intro(game_display)
+    if intro.run_intro(game_display):
+        return
 
     # Show the loading screen
     loading_screen = covers.LoadingScreen()
@@ -203,7 +204,6 @@ def main():
         # Update the display
         pygame.display.flip()
 
-    pygame.quit()
-
 if __name__ == "__main__":
     main()
+    pygame.quit()

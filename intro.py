@@ -35,4 +35,8 @@ def run_intro(display):
         pygame.display.flip()
         pygame.time.wait(25)
 
-    return game_exit if game_exit else pygame.time.wait(1000)
+    if game_exit:
+        return True
+
+    pygame.time.wait(1000)
+    return False
