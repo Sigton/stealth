@@ -17,9 +17,16 @@ def run_intro(display):
 
     pygame.time.wait(500)
 
+    game_exit = False
+
     # Fade the text in
     for n in range(63):
 
+        gen = (x for x in pygame.event.get() if x.type == pygame.QUIT)
+        for x in gen:
+            game_exit = True
+        if game_exit:
+            break
         display.fill(constants.BLACK)
         dark_background.draw(display)
 
@@ -28,4 +35,4 @@ def run_intro(display):
         pygame.display.flip()
         pygame.time.wait(25)
 
-    pygame.time.wait(1000)
+    return game_exit if game_exit else pygame.time.wait(1000)
