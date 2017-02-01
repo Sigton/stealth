@@ -23,3 +23,8 @@ class Arm(pygame.sprite.Sprite):
 
         # Set a reference to the images rectangle
         self.rect = self.image.get_rect()
+
+    def update(self):
+
+        self.rect.x = self.guard.rect.x
+        self.rect.y = self.guard.rect.y
