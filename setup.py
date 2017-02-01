@@ -7,7 +7,7 @@ cx_Freeze.setup(
     options={
         "build_exe": {
             "packages": ["pygame", "json", "os"],
-            "excludes": ["tkinter"],
+            "excludes": ["tkinter", "OpenGL"],
             "include_files": [
                 "level_data/",
                 "resources/",
