@@ -22,7 +22,8 @@ cx_Freeze.setup(
                 "player.py",
                 "spritesheet.py",
                 "terrain.py",
-                "torches.py"
+                "torches.py",
+                "arms.py"
             ]
         }
     },
