@@ -140,6 +140,7 @@ class Level:
 
         new_hguard.level = self
         new_hguard.player = self.player
+        self.entities.add(new_hguard.arm)
 
         self.guards.add(new_hguard)
 
