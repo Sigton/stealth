@@ -39,7 +39,7 @@ def main():
         pygame.display.flip()
 
     pygame.mixer.music.load("resources/music.wav")
-    pygame.mixer.music.set_volume(0.1)
+    pygame.mixer.music.set_volume(0.15)
     pygame.mixer.music.play(-1)
 
     # Used to manage update frequency
@@ -89,7 +89,7 @@ def main():
     reset = False
 
     light_sound = pygame.mixer.Sound("resources/lights.wav")
-    light_sound.set_volume(0.25)
+    light_sound.set_volume(0.15)
 
     has_guard = False
     for guard in current_level.guards.sprites():
