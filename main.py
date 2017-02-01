@@ -19,7 +19,7 @@ def main():
     pygame.init()
 
     # Set the display size
-    game_display = pygame.display.set_mode(constants.SIZE, flags=FULLSCREEN)
+    game_display = pygame.display.set_mode(constants.SIZE)
 
     # Set the window caption and icon
     pygame.display.set_caption("Stealth")
