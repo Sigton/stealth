@@ -7,7 +7,6 @@ import level
 import guards
 import torches
 import covers
-import intro
 from spritesheet import blit_alpha
 
 
@@ -31,9 +30,6 @@ def main():
     icon = icon.convert_alpha()
     icon.blit(icon_img, (0, 0))
     pygame.display.set_icon(icon)
-
-    if intro.run_intro(game_display):
-        return
 
     # Show the loading screen
     loading_screen = covers.LoadingScreen()
