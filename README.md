@@ -19,6 +19,11 @@ In the game currently are:
 ## Planned features
 Coming soon is:
 - A menu
+  * With main screen
+  * level select menu
+  * options menu
 - Armed guards
-- Levels 11-13
-- Animations and intros/outros
+- Reworking of levels
+- Animations
+- Pause menu
+
