@@ -39,6 +39,7 @@ def main():
         pygame.display.flip()
 
     pygame.mixer.music.load("resources/music.wav")
+    pygame.mixer.music.set_volume(0.25)
     pygame.mixer.music.play(-1)
 
     # Used to manage update frequency
@@ -52,6 +53,7 @@ def main():
 
     # Create the levels
     level_list = list()
+
     level_list.append(level.Level01(player))
     level_list.append(level.Level02(player))
     level_list.append(level.Level03(player))

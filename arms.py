@@ -1,5 +1,6 @@
 import pygame
 import spritesheet
+import math
 
 
 class Arm(pygame.sprite.Sprite):
@@ -26,5 +27,5 @@ class Arm(pygame.sprite.Sprite):
 
     def update(self):
 
-        self.rect.x = self.guard.rect.x
-        self.rect.y = self.guard.rect.y
+        self.rect.x = self.guard.rect.x + self.guard.rect.width / 4
+        self.rect.y = self.guard.rect.y + self.guard.rect.height / 4
