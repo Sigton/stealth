@@ -39,7 +39,7 @@ def main():
         pygame.display.flip()
 
     pygame.mixer.music.load("resources/music.wav")
-    pygame.mixer.music.set_volume(0.25)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
 
     # Used to manage update frequency
