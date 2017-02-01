@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guards.py" afterPath="$PROJECT_DIR$/guards.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,12 +33,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guards.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="guards.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="216" column="27" lean-forward="true" selection-start-line="216" selection-start-column="27" selection-end-line="216" selection-end-column="27" />
+            <state relative-caret-position="-493">
+              <caret line="201" column="17" lean-forward="true" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/arms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +111,7 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/guards.py" />
+        <option value="$PROJECT_DIR$/arms.py" />
       </list>
     </option>
   </component>
@@ -323,13 +335,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added level 6 text">
-      <created>1482439712172</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1482439712172</updated>
     </task>
     <task id="LOCAL-00028" summary="Added level 7 text">
       <created>1482484435685</created>
@@ -667,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485972718635</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Fixed bug where guards walk to fast when moving left&#10;">
+      <created>1485972894770</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1485972894770</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -725,7 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Background now blits every frame" />
     <MESSAGE value="Slight performance increase" />
     <MESSAGE value="Removed extra display flip" />
     <MESSAGE value="Smoothed out intro transition" />
@@ -750,7 +761,8 @@
     <MESSAGE value="Now runs in fullscreen&#10;" />
     <MESSAGE value="setup now excludes OpenGL" />
     <MESSAGE value="Aborted fullscreen due to the bugs it was causing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aborted fullscreen due to the bugs it was causing" />
+    <MESSAGE value="Fixed bug where guards walk to fast when moving left&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where guards walk to fast when moving left&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,13 +771,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="65" column="76" lean-forward="false" selection-start-line="65" selection-start-column="76" selection-end-line="65" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1087,9 +1092,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="216" column="27" lean-forward="true" selection-start-line="216" selection-start-column="27" selection-end-line="216" selection-end-column="27" />
+        <state relative-caret-position="-493">
+          <caret line="201" column="17" lean-forward="true" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
