@@ -29,3 +29,8 @@ class Arm(pygame.sprite.Sprite):
 
         self.rect.x = self.guard.rect.x + self.guard.rect.width / 4
         self.rect.y = self.guard.rect.y + self.guard.rect.height / 4
+
+        if self.guard.direction == "R":
+            self.image = self.arm_right
+        else:
+            self.image = self.arm_left
