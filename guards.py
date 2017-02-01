@@ -200,7 +200,7 @@ class HostileGuard(pygame.sprite.Sprite):
             if self.direction == "R":
                 self.xv = self.speed
             else:
-                self.xv = -self.speed
+                self.xv = -self.speed / 2
 
         if not abs(self.player.rect.x - self.rect.x) <= 5:
             self.rect.x += self.xv
