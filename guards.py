@@ -1,6 +1,7 @@
 import pygame
 import spritesheet
 import torches
+import arms
 import constants
 import math
 
@@ -188,6 +189,9 @@ class HostileGuard(pygame.sprite.Sprite):
         self.image = self.stand_img_r
 
         self.rect = self.image.get_rect()
+
+        self.arm = arms.Arm()
+        self.arm.guard = self
 
     def update(self):
 
