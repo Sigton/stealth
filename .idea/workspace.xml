@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/arms.py" afterPath="$PROJECT_DIR$/source/arms.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +20,20 @@
     <favorites_list name="Stealth" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="arms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/arms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,16 +90,16 @@
         <option value="$PROJECT_DIR$/arms.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/source/torches.py" />
-        <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/guards.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
-        <option value="$PROJECT_DIR$/source/arms.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
         <option value="$PROJECT_DIR$/source/leveltext.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/arms.py" />
       </list>
     </option>
   </component>
@@ -111,6 +125,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -133,18 +149,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exe.win-amd64-3.4" />
+              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,606 +168,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Stealth\resources" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/constants.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/covers.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/entities.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/guards.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/level.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/platforms.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/player.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/spritesheet.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/terrain.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/torches.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/arms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/constants.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/covers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/entities.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/guards.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/healthbar.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level1.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level10.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level11.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level12.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level13.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level2.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level3.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level4.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level5.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level6.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level7.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level8.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level9.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/leveltext.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/main.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/platforms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/player.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/arms.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/background.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/beep.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/blackout.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/bomb.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/darkscreen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/guard.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/healthbar.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/hguard.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/hiss.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/icon.ico</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/keypad.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/light.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/lights.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/loading_screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/music.mp3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/music2.mp3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/orionpax.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/player.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/step.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/terrain.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/text/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/spritesheet.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/terrain.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/torches.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/constants.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/covers.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/entities.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/guards.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/level.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/platforms.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/player.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/spritesheet.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/terrain.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/torches.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/arms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/constants.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/covers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/entities.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/guards.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/healthbar.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/layouts/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level1.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level10.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level11.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level12.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level13.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level2.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level3.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level4.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level5.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level6.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level7.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level8.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/level9.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/level_data/tile_types/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/leveltext.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/player.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/LGPL</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/SDL.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/SDL_image.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/SDL_mixer.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/SDL_ttf.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/__init__.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/_numpysndarray.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/_numpysurfarray.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/colordict.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/compat.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/cursors.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/locals.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/pkgdata.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/sndarray.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/sprite.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/surfarray.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/sysfont.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/__pycache__/version.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_camera.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_camera_opencv_highgui.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_camera_vidcapture.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_dummybackend.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_freetype.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_numpysndarray.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/_numpysurfarray.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/base.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/bufferproxy.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/camera.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/cdrom.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/color.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/colordict.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/constants.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/cursors.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/display.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/__main__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/logos.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/pygame_logo.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/pygame_powered.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/pygame_small.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/pygame_tiny.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/docs/ref/docscomments.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/draw.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/event.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/aacircle.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/aliens.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/arraydemo.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/blend_fill.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/blit_blends.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/camera.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/chimp.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/cursors.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien1.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien2.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien3.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/alien3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/arraydemo.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/asprite.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/background.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/blue.mpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/bomb.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/boom.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/brick.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/car_door.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/chimp.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/city.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/danger.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/explosion1.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/fist.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/house_lo.mp3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/house_lo.ogg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/house_lo.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/liquid.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/midikeys.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/oldplayer.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/player1.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/punch.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/sans.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/secosmic_lo.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/shot.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/static.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/whiff.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/data/yuv_1.pgm</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/eventlist.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/fastevents.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/fonty.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/freetype_misc.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/glcube.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/headless_no_windows_needed.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/liquid.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/JavaCompiling.plist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/_MainMenu_EOArchive_English.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/classes.nib</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/info.nib</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/keyedobjects.nib</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/English.lproj/aliens.icns</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/README.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/aliens.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/aliens_app_example/setup.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/macosx/macfont.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/mask.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/midi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/moveit.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/oldalien.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/overlay.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/pixelarray.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/playmus.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/prevent_display_stretching.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/scaletest.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/scrap_clipboard.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/scroll.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/sound.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/sound_array_demos.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/stars.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/testsprite.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/examples/vgrade.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/fastevent.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/font.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/freesansbold.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/freetype.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/ftfont.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/gfxdraw.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/gp2x/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/gp2x/constants.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/gp2x/locals.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/image.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/imageext.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/install.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/joystick.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/key.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/libogg.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/libvorbis.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/libvorbisfile.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/locals.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/macosx.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/mask.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/math.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/midi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/mikmod.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/mixer.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/mixer_music.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/mouse.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/movie.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/newbuffer.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/overlay.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pixelarray.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pixelcopy.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pkgdata.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pygame.ico</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pygame_icon.bmp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pygame_icon.icns</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pygame_icon.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pygame_icon.tiff</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/pypm.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/readme.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/rect.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/rwobject.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/scrap.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/smpeg.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/sndarray.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/sprite.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/surface.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/surfarray.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/surflock.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/sysfont.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/__main__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/base_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/blit_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/bufferproxy_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/camera_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/cdrom_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/cdrom_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/color_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/compat_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/cursors_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/display_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/draw_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/event_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fastevent_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/A_PyGameMono-8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/PyGameMono-18-100dpi.bdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/PyGameMono-18-75dpi.bdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/PyGameMono-8.bdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/PyGameMono.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/test_fixed.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/test_sans.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/fonts/u13079_PyGameMono-8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/xbm_cursors/white_sizing.xbm</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/fixtures/xbm_cursors/white_sizing_mask.xbm</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/font_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/font_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/freetype_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/freetype_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/ftfont_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/ftfont_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/gfxdraw_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/image__save_gl_surface_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/image_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/image_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/imageext_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/imageext_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/joystick_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/key_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mask_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/math_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/midi_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/midi_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mixer_music_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mixer_music_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mixer_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mixer_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/mouse_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/overlay_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/pixelarray_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/pixelcopy_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/rect_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/fake_4_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/fake_5_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/fake_6_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/no_assertions__ret_code_of_1__test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/all_ok/zero_tests_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/everything/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/everything/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/everything/incomplete_todo_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/everything/magic_tag_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/everything/sleep_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/exclude/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/exclude/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/exclude/invisible_tag_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/exclude/magic_tag_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/failures1/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/failures1/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/failures1/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/failures1/fake_4_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete_todo/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete_todo/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/incomplete_todo/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/infinite_loop/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/infinite_loop/fake_1_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/infinite_loop/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stderr/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stderr/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stderr/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stderr/fake_4_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stdout/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stdout/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stdout/fake_3_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/print_stdout/fake_4_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/run_tests__test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/timeout/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/timeout/fake_2_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/run_tests__tests/timeout/sleep_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/rwobject_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/scrap_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/scrap_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/sndarray_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/sndarray_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/sprite_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/surface_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/surfarray_tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/surfarray_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/surflock_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/sysfont_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_test_.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/arrinter.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/async_sub.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/buftools.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/endian.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/png.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/run_tests.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/test_machinery.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/test_utils/test_runner.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/threads_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/time_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/tests/transform_test.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/threads/Py25Queue.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/threads/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/threads/__pycache__/__init__.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/time.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/transform.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/version.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pygame/zlib1.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/arms.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/background.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/beep.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/blackout.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/bomb.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/darkscreen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/guard.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/healthbar.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/hguard.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/hiss.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/icon.ico</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/keypad.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/light.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/lights.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/loading_screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/music.mp3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/music2.mp3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/orionpax.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/player.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/step.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/terrain.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level10.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level11.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level12.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level13.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level3.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level4.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level5.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level6.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level7.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level8.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/text/level9.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/spritesheet.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/terrain.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/torches.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -933,13 +343,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Text fades in">
-      <created>1482569504443</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1482569504443</updated>
     </task>
     <task id="LOCAL-00050" summary="Added more waiting">
       <created>1482569611323</created>
@@ -1277,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486064269024</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Commented out levels 1-10 for the time being">
+      <created>1486064514205</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1486064514205</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1291,51 +701,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3386924" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finished setup.py" />
     <MESSAGE value="Now runs in fullscreen&#10;" />
     <MESSAGE value="setup now excludes OpenGL" />
     <MESSAGE value="Aborted fullscreen due to the bugs it was causing" />
@@ -1360,7 +750,8 @@
     <MESSAGE value="Going for a different approach" />
     <MESSAGE value="Hopefully this works" />
     <MESSAGE value="Updated setup.py to include more excludes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated setup.py to include more excludes" />
+    <MESSAGE value="Commented out levels 1-10 for the time being" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commented out levels 1-10 for the time being" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,27 +760,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/player.py" />
+    <entry file="file://$PROJECT_DIR$/level.py" />
+    <entry file="file://$PROJECT_DIR$/constants.py" />
     <entry file="file://D:/Legend-Rush/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1428,13 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/platforms.py" />
     <entry file="file://$PROJECT_DIR$/temp.py" />
-    <entry file="file://$PROJECT_DIR$/level_data/level1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29762">
-          <caret line="3710" column="4" lean-forward="true" selection-start-line="3710" selection-start-column="4" selection-end-line="3710" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/level_data/level1.json" />
     <entry file="file://$PROJECT_DIR$/keypad.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1442825926/pygame/time.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1443,117 +810,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms.py" />
     <entry file="file://$PROJECT_DIR$/collision.py" />
-    <entry file="file://$PROJECT_DIR$/resources/player.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/loading_screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/blackout.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/player.png" />
+    <entry file="file://$PROJECT_DIR$/resources/loading_screen.png" />
+    <entry file="file://$PROJECT_DIR$/resources/blackout.png" />
+    <entry file="file://$PROJECT_DIR$/healthbar.py" />
     <entry file="file://$PROJECT_DIR$/teddybears.py" />
-    <entry file="file://$PROJECT_DIR$/spritesheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spritesheet.py" />
+    <entry file="file://$PROJECT_DIR$/terrain.py" />
+    <entry file="file://$PROJECT_DIR$/player.py" />
     <entry file="file://$PROJECT_DIR$/intro.py" />
-    <entry file="file://$PROJECT_DIR$/leveltext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/covers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/torches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="141" column="39" lean-forward="true" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guards.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/leveltext.py" />
+    <entry file="file://$PROJECT_DIR$/entities.py" />
+    <entry file="file://$PROJECT_DIR$/covers.py" />
+    <entry file="file://$PROJECT_DIR$/constants.py" />
+    <entry file="file://$PROJECT_DIR$/torches.py" />
+    <entry file="file://$PROJECT_DIR$/level.py" />
+    <entry file="file://$PROJECT_DIR$/guards.py" />
+    <entry file="file://$PROJECT_DIR$/arms.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="476">
@@ -1562,25 +843,12 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1596,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1604,9 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1622,15 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1638,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1646,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1654,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1662,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1670,17 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/arms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1688,9 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1698,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1707,6 +941,23 @@
         <state relative-caret-position="408">
           <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/arms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
