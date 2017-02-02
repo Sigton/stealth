@@ -38,7 +38,7 @@ def main():
         blit_alpha(game_display, loading_screen.image, (0, 0), n*4)
         pygame.display.flip()
 
-    pygame.mixer.music.load("resources/music.wav")
+    pygame.mixer.music.load("resources/music.mp3")
     pygame.mixer.music.set_volume(0.15)
     pygame.mixer.music.play(-1)
 
