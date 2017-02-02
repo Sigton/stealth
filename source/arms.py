@@ -30,7 +30,7 @@ class Arm(pygame.sprite.Sprite):
         if self.guard.direction == "R":
             self.rect.x = self.guard.rect.x + self.guard.rect.width / 4
         else:
-            self.rect.x = self.guard.rect.x + self.guard.rect.width * 0.6
+            self.rect.x = self.guard.rect.x + self.guard.rect.width * -0.4
         self.rect.y = self.guard.rect.y + self.guard.rect.height / 4
 
         if self.guard.direction == "R":
@@ -46,4 +46,6 @@ class Arm(pygame.sprite.Sprite):
         rads = math.atan2(-dy, dx)
         rads %= 2 * math.pi
         degrees = math.degrees(rads)
-        print(degrees)
+        degrees = (degrees + 180) % 360
+
+        self.image = pygame.transform.rotate(self.image, degrees)
