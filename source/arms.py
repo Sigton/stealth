@@ -1,8 +1,5 @@
 import pygame
-try:
-    import spritesheet
-except ImportError:
-    from source import *
+import spritesheet
 import math
 
 

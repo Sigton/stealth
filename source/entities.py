@@ -1,8 +1,6 @@
 import pygame
-try:
-    import spritesheet
-except ImportError:
-    from source import *
+
+import spritesheet
 
 
 class Door(pygame.sprite.Sprite):

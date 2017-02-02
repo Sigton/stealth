@@ -8,7 +8,7 @@ try:
     import constants
     import terrain
 except ImportError:
-    import source
+    from source import *
 import os
 
 

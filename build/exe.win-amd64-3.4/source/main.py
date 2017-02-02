@@ -10,7 +10,7 @@ try:
     import covers
     from spritesheet import blit_alpha
 except ImportError:
-    import source
+    from source import *
     from source.spritesheet import blit_alpha
 
 

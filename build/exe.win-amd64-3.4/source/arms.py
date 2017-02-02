@@ -2,7 +2,7 @@ import pygame
 try:
     import spritesheet
 except ImportError:
-    import source.spritesheet
+    from source import *
 import math
 
 

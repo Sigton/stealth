@@ -2,7 +2,7 @@ import pygame
 try:
     import spritesheet, torches, arms, constants
 except ImportError:
-    import source
+    from source import *
 import math
 
 

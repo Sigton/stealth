@@ -1,8 +1,5 @@
 import pygame
-try:
-    import constants
-except ImportError:
-    from source import *
+import constants
 
 
 class LevelText(pygame.sprite.Sprite):

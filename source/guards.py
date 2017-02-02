@@ -1,8 +1,9 @@
 import pygame
-try:
-    import spritesheet, torches, arms, constants
-except ImportError:
-    from source import *
+
+import spritesheet
+import torches
+import arms
+import constants
 import math
 
 
