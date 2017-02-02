@@ -3,8 +3,7 @@ try:
     import spritesheet
     import constants
 except ImportError:
-    import source.spritesheet
-    import source.constants
+    import source
 
 
 class Player(pygame.sprite.Sprite):

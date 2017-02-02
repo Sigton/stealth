@@ -2,7 +2,7 @@ import pygame
 try:
     import constants
 except ImportError:
-    import source
+    from source import *
 
 
 class LevelText(pygame.sprite.Sprite):

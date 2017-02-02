@@ -2,7 +2,7 @@ import pygame
 try:
     import spritesheet
 except ImportError:
-    import source.spritesheet
+    import source
 
 GROUND1 = (0, 0, 24, 24)
 GROUND2 = (24, 0, 24, 24)
