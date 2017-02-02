@@ -39,8 +39,11 @@ class Arm(pygame.sprite.Sprite):
             self.image = self.arm_left
 
         # Calculate the angle at which to point at
-        x_diff = self.guard.rect.x - self.guard.player.rect.x
-        y_diff = self.guard.rect.x - self.guard.player.rect.x
 
-        angle = math.atan(x_diff/y_diff)
-        print(angle)
+        dx = self.guard.rect.x - self.guard.player.rect.x
+        dy = self.guard.rect.y - self.guard.player.rect.y
+
+        rads = math.atan2(-dy, dx)
+        rads %= 2 * math.pi
+        degrees = math.degrees(rads)
+        print(degrees)
