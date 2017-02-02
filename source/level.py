@@ -8,13 +8,7 @@ try:
     import constants
     import terrain
 except ImportError:
-    import source.platforms
-    import source.guards
-    import source.entities
-    import source.healthbar
-    import source.leveltext
-    import source.constants
-    import source.terrain
+    import source
 import os
 
 

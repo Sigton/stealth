@@ -1,13 +1,22 @@
 import pygame
 from pygame.locals import *
 
-import constants
-import player as p
-import level
-import guards
-import torches
-import covers
-from spritesheet import blit_alpha
+try:
+    import constants
+    import player as p
+    import level
+    import guards
+    import torches
+    import covers
+    from spritesheet import blit_alpha
+except ImportError:
+    import source.constants
+    import source.player as p
+    import source.level
+    import source.guards
+    import source.torches
+    import source.covers
+    from source.spritesheet import blit_alpha
 
 
 def main():

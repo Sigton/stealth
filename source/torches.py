@@ -2,7 +2,7 @@ import pygame
 try:
     import spritesheet
 except ImportError:
-    import source.spritesheet
+    import source
 
 
 class Torch(pygame.sprite.Sprite):

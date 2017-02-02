@@ -1,11 +1,20 @@
 import pygame
-import platforms
-import guards
-import entities
-import healthbar
-import leveltext
-import constants
-import terrain
+try:
+    import platforms
+    import guards
+    import entities
+    import healthbar
+    import leveltext
+    import constants
+    import terrain
+except ImportError:
+    import source.platforms
+    import source.guards
+    import source.entities
+    import source.healthbar
+    import source.leveltext
+    import source.constants
+    import source.terrain
 import os
 
 

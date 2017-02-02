@@ -10,12 +10,7 @@ try:
     import covers
     from spritesheet import blit_alpha
 except ImportError:
-    import source.constants
-    import source.player as p
-    import source.level
-    import source.guards
-    import source.torches
-    import source.covers
+    import source
     from source.spritesheet import blit_alpha
 
 

@@ -1,6 +1,10 @@
 import pygame
-import spritesheet
-import constants
+try:
+    import spritesheet
+    import constants
+except ImportError:
+    import source.spritesheet
+    import source.constants
 
 
 class Player(pygame.sprite.Sprite):
