@@ -1,5 +1,8 @@
 import pygame
-import spritesheet
+try:
+    import spritesheet
+except ImportError:
+    import source.spritesheet
 
 
 class HealthBar(pygame.sprite.Sprite):
