@@ -61,10 +61,10 @@ def main():
     level_list.append(level.Level03(player))
     level_list.append(level.Level04(player))
     level_list.append(level.Level05(player))
+    '''
     level_list.append(level.Level06(player))
     level_list.append(level.Level07(player))
     level_list.append(level.Level08(player))
-    '''
     level_list.append(level.Level09(player))
     level_list.append(level.Level10(player))
     level_list.append(level.Level11(player))
@@ -175,7 +175,7 @@ def main():
             hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
             for hit in hit_list:
                 if isinstance(hit, torches.Torch):
-                    if pixel_perfect_collision(player, hit):
+                    if pixel_perfect_collision(player, hit) is not None:
                         pause = 120
                         reset = True
 

@@ -1,9 +1,7 @@
 import pygame
-try:
-    import spritesheet
-except ImportError:
-    from source import *
 
+import spritesheet
+import funcs
 
 class Torch(pygame.sprite.Sprite):
 
@@ -24,7 +22,7 @@ class Torch(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
-        self.hitmask = pygame.mask.from_surface(self.image)
+        self.hitmask = funcs.create_mask(self.image)
 
     def update(self):
 
@@ -35,11 +33,11 @@ class Torch(pygame.sprite.Sprite):
             self.image = self.image_r
             self.rect.x = self.guard.rect.x + self.guard.rect.width / 2
 
-            self.hitmask = pygame.mask.from_surface(self.image)
+            self.hitmask = funcs.create_mask(self.image)
         else:
             self.image = self.image_l
             self.rect.x = (self.guard.rect.x + self.guard.rect.width / 2) - self.rect.width
 
-            self.hitmask = pygame.mask.from_surface(self.image)
+            self.hitmask = funcs.create_mask(self.image)
 
         self.rect.y = self.guard.rect.y - self.guard.rect.height / 2

@@ -1,4 +1,6 @@
-# Various functions for various purposes
+import pygame
+
+# Various functions for various pru
 
 
 def pixel_perfect_collision(obj1, obj2):
@@ -19,6 +21,7 @@ def pixel_perfect_collision(obj1, obj2):
 
     # get the overlapping area
     clip = rect1.clip(rect2)
+    print(clip)
 
     # find where clip's top-left point is in both rectangles
     x1 = clip.left - rect1.left
@@ -30,9 +33,25 @@ def pixel_perfect_collision(obj1, obj2):
     for x in range(clip.width):
         for y in range(clip.height):
             # returns True if neither pixel is blank
-            if mask1[x1 + x][y1 + y] is not 0 and \
-                            mask2[x2 + x][y2 + y] is not 0:
+            print(x1, x2, y1, y2, x, y)
+            if mask1[x-1][y-1] is not 0 and mask2[x-1][y-1] is not 0:
                 return True
 
     # if there was neither collision nor error
     return False
+
+
+def create_mask(surface):
+
+    temp_mask = pygame.mask.from_surface(surface)
+
+    temp_mask_size = temp_mask.get_size()
+
+    new_mask = []
+    for y in range(temp_mask_size[1]):
+        row = []
+        for x in range(temp_mask_size[0]):
+            row += [temp_mask.get_at((x, y))]
+        new_mask += [row]
+
+    return new_mask
