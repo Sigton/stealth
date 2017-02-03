@@ -8,6 +8,7 @@ import guards
 import torches
 import covers
 from spritesheet import blit_alpha
+from funcs import pixel_perfect_collision
 
 
 def main():
