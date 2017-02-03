@@ -64,9 +64,9 @@ def main():
     level_list.append(level.Level06(player))
     level_list.append(level.Level07(player))
     level_list.append(level.Level08(player))
+    '''
     level_list.append(level.Level09(player))
     level_list.append(level.Level10(player))
-    '''
     level_list.append(level.Level11(player))
 
     # Set the current level
@@ -175,8 +175,9 @@ def main():
             hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
             for hit in hit_list:
                 if isinstance(hit, torches.Torch):
-                    pause = 120
-                    reset = True
+                    if pixel_perfect_collision(player, hit):
+                        pause = 120
+                        reset = True
 
             # Playing running and jumping
             if abs(run) > 0:
