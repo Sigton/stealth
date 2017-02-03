@@ -64,7 +64,7 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
         # Create a hitmask
-        self.hitmask = pygame.Mask.from_surface(self.image)
+        self.hitmask = pygame.mask.from_surface(self.image)
 
         self.footstep = pygame.mixer.Sound("resources/step.wav")
         self.footstep.set_volume(0.5)
