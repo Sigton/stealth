@@ -23,24 +23,23 @@ class Torch(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
-        self.hitmask = funcs.create_mask(self.image)
+        self.hitmask_r = funcs.create_mask(self.image_r)
+        self.hitmask_l = funcs.create_mask(self.image_l)
+
+        self.hitmask = self.hitmask_r
 
     def update(self):
-
-        # save old direction
-        old_dir = self.direction
 
         # Move to guards position
         self.direction = self.guard.direction
 
-        if self.direction != old_dir:
-            self.hitmask = funcs.create_mask(self.image)
-
         if self.direction == "R":
             self.image = self.image_r
             self.rect.x = self.guard.rect.x + self.guard.rect.width / 2
+            self.hitmask = self.hitmask_r
         else:
             self.image = self.image_l
             self.rect.x = (self.guard.rect.x + self.guard.rect.width / 2) - self.rect.width
+            self.hitmask = self.hitmask_l
 
         self.rect.y = self.guard.rect.y - self.guard.rect.height / 2

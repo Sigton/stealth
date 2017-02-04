@@ -175,7 +175,7 @@ def main():
             hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
             for hit in hit_list:
                 if isinstance(hit, torches.Torch):
-                    if pixel_perfect_collision(player, hit) is not None:
+                    if pixel_perfect_collision(player, hit):
                         pause = 120
                         reset = True
 

@@ -28,11 +28,13 @@ def pixel_perfect_collision(obj1, obj2):
     x2 = clip.left - rect2.left
     y2 = clip.top - rect2.top
 
+    print(mask2)
+
     # cycle through clip's area of the hitmasks
     for y in range(clip.height):
         for x in range(clip.width):
             # returns True if neither pixel is blank
-            if mask1[y1+y][x1+x] is not 0 and mask2[y2+y][x2+x] is not 0:
+            if mask1[y1+y][x1+x] != 0 and mask2[y2+y][x2+x] != 0:
                 return True
 
     # if there was neither collision nor error
