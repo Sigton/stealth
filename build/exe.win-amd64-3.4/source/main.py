@@ -11,7 +11,7 @@ try:
     from spritesheet import blit_alpha
 except ImportError:
     from source import *
-    from source.spritesheet import blit_alpha
+    from source.funcs import blit_alpha
 
 
 def main():
