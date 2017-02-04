@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/funcs.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/funcs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/main.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/torches.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/torches.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +24,8 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+            <state relative-caret-position="680">
+              <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -336,20 +331,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Intro is now quit-able">
-      <created>1483008350240</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1483008350240</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Now quits properly">
-      <created>1483008689846</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1483008689846</updated>
     </task>
     <task id="LOCAL-00066" summary="Added levels 1-10 back in">
       <created>1483010337099</created>
@@ -680,7 +661,21 @@
       <option name="project" value="LOCAL" />
       <updated>1486201201977</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Updated setup.py">
+      <created>1486202380440</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1486202380440</updated>
+    </task>
+    <task id="LOCAL-00114" summary="now compresses exe">
+      <created>1486202627731</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1486202627731</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TodoView">
@@ -719,8 +714,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated README" />
-    <MESSAGE value="Updated arms.py" />
     <MESSAGE value="updated setup.py&#10;" />
     <MESSAGE value="Fixed a bug in setup.py" />
     <MESSAGE value="Fixed import errors" />
@@ -744,7 +737,9 @@
     <MESSAGE value="Fixed some lag" />
     <MESSAGE value="Fixed some things" />
     <MESSAGE value="And pixel perfect collision is now completely working!" />
-    <option name="LAST_COMMIT_MESSAGE" value="And pixel perfect collision is now completely working!" />
+    <MESSAGE value="Updated setup.py" />
+    <MESSAGE value="now compresses exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="now compresses exe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -969,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        <state relative-caret-position="680">
+          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
           <folding />
         </state>
       </provider>
