@@ -26,4 +26,5 @@ Coming soon is:
 - Reworking of levels
 - Animations
 - Pause menu
-
+- Security guards
+- Laser beams
