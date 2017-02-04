@@ -60,6 +60,7 @@ def main():
     # Set the current level
     current_level_no = 0
     current_level = level_list[current_level_no]
+    print(len(current_level.platform_list.sprites()))
 
     player.level = current_level
     current_level.player = player
@@ -138,6 +139,7 @@ def main():
         if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
 
             # Reset the player and move on the level
+            current_level.reset_world()
             player.reset()
 
             light_sound.stop()
@@ -182,6 +184,17 @@ def main():
         if not pause:
             current_level.update()
         blackout.update()
+
+        # Scrolling
+        if player.rect.x >= 864:
+            diff = player.rect.x - 864
+            player.rect.x = 864
+            current_level.shift_world(-diff)
+
+        if player.rect.x <= 48:
+            diff = player.rect.x - 48
+            player.rect.x = 48
+            current_level.shift_world(-diff)
 
         # All drawing goes here
         current_level.draw(game_display)

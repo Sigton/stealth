@@ -81,8 +81,8 @@ class Level:
         # Set boundaries
         if self.world_shift >= 0:
             self.world_shift = 0
-        elif self.world_shift <= -1920:
-            self.world_shift = -1920
+        elif self.world_shift <= -960:
+            self.world_shift = -960
         else:
             # Move everything in the level
             for platform in self.platform_list:
