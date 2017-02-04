@@ -3,6 +3,7 @@ import pygame
 import spritesheet
 import funcs
 
+
 class Torch(pygame.sprite.Sprite):
 
     direction = "R"
@@ -26,18 +27,20 @@ class Torch(pygame.sprite.Sprite):
 
     def update(self):
 
+        # save old direction
+        old_dir = self.direction
+
         # Move to guards position
         self.direction = self.guard.direction
+
+        if self.direction != old_dir:
+            self.hitmask = funcs.create_mask(self.image)
 
         if self.direction == "R":
             self.image = self.image_r
             self.rect.x = self.guard.rect.x + self.guard.rect.width / 2
-
-            self.hitmask = funcs.create_mask(self.image)
         else:
             self.image = self.image_l
             self.rect.x = (self.guard.rect.x + self.guard.rect.width / 2) - self.rect.width
-
-            self.hitmask = funcs.create_mask(self.image)
 
         self.rect.y = self.guard.rect.y - self.guard.rect.height / 2
