@@ -38,7 +38,8 @@ cx_Freeze.setup(
         "build_exe": {
             "packages": ["pygame", "json", "os"],
             "excludes": excludes,
-            "include_files": include_files
+            "include_files": include_files,
+            "compressed": True
         }
     },
     executables=executables
