@@ -28,8 +28,6 @@ def pixel_perfect_collision(obj1, obj2):
     x2 = clip.left - rect2.left
     y2 = clip.top - rect2.top
 
-    print(mask2)
-
     # cycle through clip's area of the hitmasks
     for y in range(clip.height):
         for x in range(clip.width):
@@ -43,7 +41,7 @@ def pixel_perfect_collision(obj1, obj2):
 
 def create_mask(surface):
 
-    temp_mask = pygame.mask.from_surface(surface)
+    temp_mask = pygame.mask.from_surface(surface, 63)
 
     temp_mask_size = temp_mask.get_size()
 
