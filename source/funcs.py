@@ -21,7 +21,6 @@ def pixel_perfect_collision(obj1, obj2):
 
     # get the overlapping area
     clip = rect1.clip(rect2)
-    print(clip)
 
     # find where clip's top-left point is in both rectangles
     x1 = clip.left - rect1.left
@@ -29,12 +28,14 @@ def pixel_perfect_collision(obj1, obj2):
     x2 = clip.left - rect2.left
     y2 = clip.top - rect2.top
 
+    print(len(mask1), len(mask1[0]), len(mask2), len(mask2[0]))
+
     # cycle through clip's area of the hitmasks
-    for x in range(clip.width):
-        for y in range(clip.height):
+    for y in range(clip.height):
+        for x in range(clip.width):
             # returns True if neither pixel is blank
-            print(x1, x2, y1, y2, x, y)
-            if mask1[x-1][y-1] is not 0 and mask2[x-1][y-1] is not 0:
+            print(x1+x, y1+y)
+            if mask1[y1+y][x1+x] is not 0 and mask2[y2+y][x2+x] is not 0:
                 return True
 
     # if there was neither collision nor error
