@@ -110,8 +110,6 @@ class Level:
                 obstacle.rect.x += shift_x
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
-            for door in self.doors:
-                door.rect.x += shift_x
             for bomb in self.bombs:
                 bomb.rect.x += shift_x
             for guard in self.guards:
@@ -142,8 +140,6 @@ class Level:
                 obstacle.rect.y -= shift_y
             for keypad in self.keypads:
                 keypad.rect.y -= shift_y
-            for door in self.doors:
-                door.rect.y -= shift_y
             for bomb in self.bombs:
                 bomb.rect.y -= shift_y
             for guard in self.guards:
@@ -171,10 +167,6 @@ class Level:
         for keypad in self.keypads:
             keypad.rect.x -= self.world_shift_x
             keypad.rect.y += self.world_shift_y
-
-        for door in self.doors:
-            door.rect.x -= self.world_shift_x
-            door.rect.y += self.world_shift_y
 
         for bomb in self.bombs:
             bomb.rect.x -= self.world_shift_x
