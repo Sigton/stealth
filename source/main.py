@@ -39,10 +39,9 @@ def main():
         blit_alpha(game_display, loading_screen.image, (0, 0), n*4)
         pygame.display.flip()
 
-    # Load and play the music
+    # Load the music
     pygame.mixer.music.load("resources/music.mp3")
     pygame.mixer.music.set_volume(0.25)
-    pygame.mixer.music.play(-1)
 
     # Used to manage update frequency
     clock = pygame.time.Clock()
@@ -89,6 +88,9 @@ def main():
             has_guard = True
     if has_guard:
         light_sound.play(-1)
+
+    # Play the music
+    pygame.mixer.music.play(-1)
 
     # Loop until the window is closed
     game_exit = False
