@@ -60,7 +60,6 @@ def main():
     # Set the current level
     current_level_no = 0
     current_level = level_list[current_level_no]
-    print(len(current_level.platform_list.sprites()))
 
     player.level = current_level
     current_level.player = player
