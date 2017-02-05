@@ -4,6 +4,8 @@ import spritesheet
 
 class HealthBar(pygame.sprite.Sprite):
 
+    parent = None
+
     def __init__(self):
 
         # Call the parents constructor
@@ -49,6 +51,11 @@ class HealthBar(pygame.sprite.Sprite):
         self.image = self.images[10]
 
         self.rect = self.image.get_rect()
+
+    def update(self):
+
+        self.rect.x = self.parent.rect.x + (self.parent.rect.width / 2 - self.rect.width / 2)
+        self.rect.y = self.parent.rect.y - 20
 
 
 class ProgressBar(pygame.sprite.Sprite):
