@@ -186,14 +186,16 @@ def main():
         blackout.update()
 
         # Scrolling
-        if player.rect.x >= 864:
-            diff = player.rect.x - 864
-            player.rect.x = 864
+        if player.rect.x >= 624:
+            diff = player.rect.x - 624
+            if not current_level.at_edge:
+                player.rect.x = 624
             current_level.shift_world(-diff)
 
-        if player.rect.x <= 48:
-            diff = player.rect.x - 48
-            player.rect.x = 48
+        if player.rect.x <= 288:
+            diff = player.rect.x - 288
+            if not current_level.at_edge:
+                player.rect.x = 288
             current_level.shift_world(-diff)
 
         # All drawing goes here

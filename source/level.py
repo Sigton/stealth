@@ -30,6 +30,7 @@ class Level:
 
     # How far the level has scrolled
     world_shift = 0
+    at_edge = False
 
     def __init__(self, player):
 
@@ -80,10 +81,13 @@ class Level:
 
         # Set boundaries
         if self.world_shift >= 0:
+            self.at_edge = True
             self.world_shift = 0
         elif self.world_shift <= -960:
+            self.at_edge = True
             self.world_shift = -960
         else:
+            self.at_edge = False
             # Move everything in the level
             for platform in self.platform_list:
                 platform.rect.x += shift_x
