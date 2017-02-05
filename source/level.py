@@ -377,6 +377,9 @@ class Level02(Level):
         tile_file = os.path.join("level_data", "layouts", "level2.png")
         type_file = os.path.join("level_data", "tile_types", "level2.png")
 
+        self.door_linkup = {0: 0,
+                            1: 0}
+
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
             level.write_data()
@@ -386,6 +389,8 @@ class Level02(Level):
 
         # Then render
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         # Set start position
         self.start_x = 0
