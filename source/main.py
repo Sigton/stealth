@@ -70,7 +70,7 @@ def main():
 
     # Set the players position
     player.rect.x = 48
-    player.rect.y = 624
+    player.rect.y = 384
 
     # Variables to control the player
     run = 0
