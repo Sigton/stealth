@@ -333,9 +333,6 @@ class Level01(Level):
         # Then render
         self.render(level_data)
 
-        self.level_text = leveltext.Level01()
-        self.level_text.player = self.player
-
         # Set start position
         self.start_x = 0
         self.start_y = 719
