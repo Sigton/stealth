@@ -31,7 +31,8 @@ class Level:
     # How far the level has scrolled
     world_shift_x = 0
     world_shift_y = 0
-    at_edge = False
+    at_edge_x = False
+    at_edge_y = False
 
     def __init__(self, player):
 
@@ -79,76 +80,61 @@ class Level:
 
         # Scroll the level left/right
         self.world_shift_x += shift_x
-        self.world_shift_y += shift_y
 
-        # Shift on the x axis
-
+        self.at_edge_x = False
         # Set boundaries
-        if self.world_shift_x > 0:
-            self.at_edge = True
+        if self.world_shift_x >= 0:
+            self.at_edge_x = True
             self.world_shift_x = 0
 
         elif self.world_shift_x <= -960:
-            self.at_edge = True
+            self.at_edge_x = True
             self.world_shift_x = -960
 
-        else:
-            self.at_edge = False
+        if not self.at_edge_x:
             # Move everything in the level
             for platform in self.platform_list:
                 platform.rect.x += shift_x
-
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.x += shift_x
-
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
-
             for door in self.doors:
                 door.rect.x += shift_x
-
             for bomb in self.bombs:
                 bomb.rect.x += shift_x
-
             for guard in self.guards:
                 guard.rect.x += shift_x
-
             for entity in self.entities:
                 entity.rect.x += shift_x
 
-        # Shift on the y axis
+        self.world_shift_y += shift_y
 
-        if self.world_shift_y < 0:
-            self.at_edge = True
+        self.at_edge_y = False
+        if self.world_shift_y <= 0:
+            self.at_edge_y = True
             self.world_shift_y = 0
 
         elif self.world_shift_y >= 720:
-            self.at_edge = True
+            self.at_edge_y = True
             self.world_shift_y = 720
 
-        else:
-            self.at_edge = False
+        if not self.at_edge_y:
             # Move everything in the level
             for platform in self.platform_list:
-                platform.rect.y += shift_y
-
+                platform.rect.y -= shift_y
             for cosmetic in self.cosmetic_list:
-                cosmetic.rect.y += shift_y
-
+                cosmetic.rect.y -= shift_y
             for keypad in self.keypads:
-                keypad.rect.y += shift_y
-
+                keypad.rect.y -= shift_y
             for door in self.doors:
-                door.rect.y += shift_y
-
+                door.rect.y -= shift_y
             for bomb in self.bombs:
-                bomb.rect.y += shift_y
-
+                bomb.rect.y -= shift_y
             for guard in self.guards:
-                guard.rect.y += shift_y
-
+                guard.rect.y -= shift_y
             for entity in self.entities:
-                entity.rect.y += shift_y
+                entity.rect.y -= shift_y
 
     def reset_world(self):
 
@@ -321,6 +307,14 @@ class Level01(Level):
 
         self.level_text = leveltext.Level01()
         self.level_text.player = self.player
+
+        # Set start position
+        self.start_x = 0
+        self.start_y = 0
+
+        # Scroll to start position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
 
 
 class Level02(Level):

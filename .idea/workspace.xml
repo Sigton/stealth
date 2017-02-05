@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +28,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="178" column="9" lean-forward="false" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="206" column="38" lean-forward="false" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -36,8 +40,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="85" column="32" lean-forward="false" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -363,13 +367,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Updated setup.py to include arms.py">
-      <created>1485972997257</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1485972997257</updated>
     </task>
     <task id="LOCAL-00079" summary="Created arm class">
       <created>1485973517380</created>
@@ -707,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486290801468</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Fixed a small bug">
+      <created>1486291028691</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1486291028692</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TodoView">
@@ -746,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finally fixed it!" />
     <MESSAGE value="Added funcs.py" />
     <MESSAGE value="torches and players now have hitmasks" />
     <MESSAGE value="Includes funcs.py in main" />
@@ -771,7 +774,8 @@
     <MESSAGE value="Fixed player animations" />
     <MESSAGE value="Created new build" />
     <MESSAGE value="Added support for scrolling on the y axis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for scrolling on the y axis" />
+    <MESSAGE value="Fixed a small bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a small bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="178" column="9" lean-forward="false" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
+        <state relative-caret-position="510">
+          <caret line="206" column="38" lean-forward="false" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -988,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="85" column="32" lean-forward="false" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -187,15 +187,27 @@ def main():
         # Scrolling
         if player.rect.x >= 624:
             diff = player.rect.x - 624
-            if not current_level.at_edge:
+            if not current_level.at_edge_x:
                 player.rect.x = 624
             current_level.shift_world(-diff, 0)
 
         if player.rect.x <= 288:
             diff = player.rect.x - 288
-            if not current_level.at_edge:
+            if not current_level.at_edge_x:
                 player.rect.x = 288
             current_level.shift_world(-diff, 0)
+
+        if player.rect.y >= 454:
+            diff = player.rect.y - 454
+            if not current_level.at_edge_y:
+                player.rect.y = 454
+            current_level.shift_world(0, diff)
+
+        if player.rect.y <= 288:
+            diff = player.rect.y - 288
+            if not current_level.at_edge_y:
+                player.rect.y = 288
+            current_level.shift_world(0, diff)
 
         # All drawing goes here
         current_level.draw(game_display)
