@@ -348,6 +348,12 @@ class Level01(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Up arrow or W to jump", 48, 990)
         self.level_text.add(text)
+        text = leveltext.LevelText("Don't fall!", 615, 600)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Nearly there...", 975, 600)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Down we go", 1750, 450)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0

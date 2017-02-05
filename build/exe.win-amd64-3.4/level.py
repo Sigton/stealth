@@ -50,6 +50,7 @@ class Level:
         self.doors = pygame.sprite.Group()
         self.guards = pygame.sprite.Group()
         self.entities = pygame.sprite.Group()
+        self.level_text = pygame.sprite.Group()
 
         self.player = player
 
@@ -82,6 +83,7 @@ class Level:
         self.bombs.draw(display)
         self.guards.draw(display)
         self.entities.draw(display)
+        self.level_text.draw(display)
 
     def shift_world(self, shift_x, shift_y):
 
@@ -116,6 +118,8 @@ class Level:
                 guard.rect.x += shift_x
             for entity in self.entities:
                 entity.rect.x += shift_x
+            for text in self.level_text:
+                text.rect.x += shift_x
 
         self.world_shift_y += shift_y
 
@@ -146,6 +150,8 @@ class Level:
                 guard.rect.y -= shift_y
             for entity in self.entities:
                 entity.rect.y -= shift_y
+            for text in self.level_text:
+                text.rect.y -= shift_y
 
     def reset_world(self):
 
@@ -181,6 +187,10 @@ class Level:
         for entity in self.entities:
             entity.rect.x -= self.world_shift_x
             entity.rect.y += self.world_shift_y
+
+        for text in self.level_text:
+            text.rect.x -= self.world_shift_x
+            text.rect.y += self.world_shift_y
 
         self.world_shift_x = 0
         self.world_shift_y = 0
@@ -333,8 +343,17 @@ class Level01(Level):
         # Then render
         self.render(level_data)
 
-        self.level_text = leveltext.Level01()
-        self.level_text.player = self.player
+        # Add the level text
+        text = leveltext.LevelText("Left/right arrows or A/D to walk", 48, 960)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Up arrow or W to jump", 48, 990)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Don't fall!", 615, 600)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Nearly there...", 975, 600)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Down we go", 1750, 450)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0
