@@ -124,9 +124,10 @@ def main():
 
             elif event.type == KEYUP:
 
-                if event.key == K_LEFT and run != 1:
+                if event.key == K_LEFT or event.key == K_RIGHT:
                     run = 0
-                if event.key == K_RIGHT and run != -1:
+
+                if event.key == K_a or event.key == K_d:
                     run = 0
 
                 if event.key == K_UP or event.key == K_w:
@@ -236,3 +237,4 @@ def main():
 if __name__ == "__main__":
     main()
     pygame.quit()
+    quit()
