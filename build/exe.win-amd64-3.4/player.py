@@ -178,7 +178,7 @@ class Player(pygame.sprite.Sprite):
 
         # Reset to the sprites original position and image
         self.rect.x = 48
-        self.rect.y = 624
+        self.rect.y = 385
         self.xv = 0
         self.yv = 0
         self.direction = "R"
