@@ -166,6 +166,13 @@ def main():
             if has_guard:
                 light_sound.play(-1)
 
+        # Check if player has hit obstacles
+        obstacle_hits = pygame.sprite.spritecollide(player, current_level.obstacle_list, False)
+        if len(obstacle_hits):
+            player.reset()
+            current_level.reset_world()
+            current_level.set_scrolling()
+
         if not pause:
             # Check if the guards got the players
             hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)

@@ -35,6 +35,9 @@ class Level:
     at_edge_x = False
     at_edge_y = False
 
+    start_x = 0
+    start_y = 0
+
     def __init__(self, player):
 
         # Constructor
@@ -181,6 +184,10 @@ class Level:
 
         self.world_shift_x = 0
         self.world_shift_y = 0
+
+    def set_scrolling(self):
+
+        self.shift_world(self.start_x, self.start_y)
 
     def create_platform(self, tile, x, y):
         platform = platforms.Platform(tile)
