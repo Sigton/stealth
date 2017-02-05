@@ -3,6 +3,7 @@ import pygame
 import spritesheet
 import constants
 import funcs
+import healthbar
 
 
 class Player(pygame.sprite.Sprite):
@@ -71,6 +72,9 @@ class Player(pygame.sprite.Sprite):
         self.footstep.set_volume(0.5)
 
         self.walk_dist = 0
+
+        self.health_bar = healthbar.HealthBar()
+        self.health_bar.parent = self
 
     def update(self):
 

@@ -62,7 +62,7 @@ class LevelData:
                 tile_data = {}
 
                 new_tile.append((x, y))
-                print(x, y, pixel)
+
                 if pixel in self.tile_colors:
                     n = 0
                     for color in self.tile_colors:
