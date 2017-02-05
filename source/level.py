@@ -84,7 +84,7 @@ class Level:
         # Shift on the x axis
 
         # Set boundaries
-        if self.world_shift_x >= 0:
+        if self.world_shift_x > 0:
             self.at_edge = True
             self.world_shift_x = 0
 
@@ -118,7 +118,7 @@ class Level:
 
         # Shift on the y axis
 
-        if self.world_shift_y <= 0:
+        if self.world_shift_y < 0:
             self.at_edge = True
             self.world_shift_y = 0
 
