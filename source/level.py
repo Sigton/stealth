@@ -29,7 +29,8 @@ class Level:
     background = None
 
     # How far the level has scrolled
-    world_shift = 0
+    world_shift_x = 0
+    world_shift_y = 0
     at_edge = False
 
     def __init__(self, player):
@@ -74,55 +75,114 @@ class Level:
         self.guards.draw(display)
         self.entities.draw(display)
 
-    def shift_world(self, shift_x):
+    def shift_world(self, shift_x, shift_y):
 
         # Scroll the level left/right
-        self.world_shift += shift_x
+        self.world_shift_x += shift_x
+        self.world_shift_y += shift_y
+
+        # Shift on the x axis
 
         # Set boundaries
-        if self.world_shift >= 0:
+        if self.world_shift_x >= 0:
             self.at_edge = True
-            self.world_shift = 0
-        elif self.world_shift <= -960:
+            self.world_shift_x = 0
+
+        elif self.world_shift_x <= -960:
             self.at_edge = True
-            self.world_shift = -960
+            self.world_shift_x = -960
+
         else:
             self.at_edge = False
             # Move everything in the level
             for platform in self.platform_list:
                 platform.rect.x += shift_x
+
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.x += shift_x
+
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
+
             for door in self.doors:
                 door.rect.x += shift_x
+
             for bomb in self.bombs:
                 bomb.rect.x += shift_x
+
             for guard in self.guards:
                 guard.rect.x += shift_x
+
             for entity in self.entities:
                 entity.rect.x += shift_x
+
+        # Shift on the y axis
+
+        if self.world_shift_y <= 0:
+            self.at_edge = True
+            self.world_shift_y = 0
+
+        elif self.world_shift_y >= 720:
+            self.at_edge = True
+            self.world_shift_y = 720
+
+        else:
+            self.at_edge = False
+            # Move everything in the level
+            for platform in self.platform_list:
+                platform.rect.y += shift_y
+
+            for cosmetic in self.cosmetic_list:
+                cosmetic.rect.y += shift_y
+
+            for keypad in self.keypads:
+                keypad.rect.y += shift_y
+
+            for door in self.doors:
+                door.rect.y += shift_y
+
+            for bomb in self.bombs:
+                bomb.rect.y += shift_y
+
+            for guard in self.guards:
+                guard.rect.y += shift_y
+
+            for entity in self.entities:
+                entity.rect.y += shift_y
 
     def reset_world(self):
 
         # Moves platforms back to their original position
         for platform in self.platform_list:
-            platform.rect.x -= self.world_shift
-        for cosmetic in self.cosmetic_list:
-            cosmetic.rect.x -= self.world_shift
-        for keypad in self.keypads:
-            keypad.rect.x -= self.world_shift
-        for door in self.doors:
-            door.rect.x -= self.world_shift
-        for bomb in self.bombs:
-            bomb.rect.x -= self.world_shift
-        for guard in self.guards:
-            guard.rect.x -= self.world_shift
-        for entity in self.entities:
-            entity.rect.x -= self.world_shift
+            platform.rect.x -= self.world_shift_x
+            platform.rect.y -= self.world_shift_y
 
-        self.world_shift = 0
+        for cosmetic in self.cosmetic_list:
+            cosmetic.rect.x -= self.world_shift_x
+            cosmetic.rect.y -= self.world_shift_y
+
+        for keypad in self.keypads:
+            keypad.rect.x -= self.world_shift_x
+            keypad.rect.y -= self.world_shift_y
+
+        for door in self.doors:
+            door.rect.x -= self.world_shift_x
+            door.rect.y -= self.world_shift_y
+
+        for bomb in self.bombs:
+            bomb.rect.x -= self.world_shift_x
+            bomb.rect.y -= self.world_shift_y
+
+        for guard in self.guards:
+            guard.rect.x -= self.world_shift_x
+            guard.rect.y -= self.world_shift_y
+
+        for entity in self.entities:
+            entity.rect.x -= self.world_shift_x
+            entity.rect.y -= self.world_shift_y
+
+        self.world_shift_x = 0
+        self.world_shift_y = 0
 
     def create_platform(self, tile, x, y):
         platform = platforms.Platform(tile)

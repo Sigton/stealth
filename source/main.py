@@ -189,13 +189,13 @@ def main():
             diff = player.rect.x - 624
             if not current_level.at_edge:
                 player.rect.x = 624
-            current_level.shift_world(-diff)
+            current_level.shift_world(-diff, 0)
 
         if player.rect.x <= 288:
             diff = player.rect.x - 288
             if not current_level.at_edge:
                 player.rect.x = 288
-            current_level.shift_world(-diff)
+            current_level.shift_world(-diff, 0)
 
         # All drawing goes here
         current_level.draw(game_display)
