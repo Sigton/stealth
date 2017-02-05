@@ -159,7 +159,7 @@ class Level:
             cosmetic.rect.y += self.world_shift_y
 
         for obstacle in self.obstacle_list:
-            obstacle.rect.y -= self.world_shift_x
+            obstacle.rect.x -= self.world_shift_x
             obstacle.rect.y += self.world_shift_y
 
         for keypad in self.keypads:
