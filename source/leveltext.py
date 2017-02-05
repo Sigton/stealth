@@ -10,7 +10,7 @@ class LevelText(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.font = pygame.font.Font("resources/alienleague.ttf", 18)
+        self.font = pygame.font.Font("resources/alienleague.ttf", 22)
 
         self.image = self.font.render(text, True, constants.WHITE)
 
