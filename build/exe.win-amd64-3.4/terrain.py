@@ -15,9 +15,10 @@ class LevelData:
                    9408399, 10461087, 11513775, 12566463,
                    13619151, 14671839, 15724527, 16488,
                    38143, 13429247, 10081535, 16776960,
-                   11776768, 12517631, 16711680, 5635840,
-                   255, 16727808, 6502, 6691072]
-    type_colors = [0, 986895, 2039583]
+                   11776768, 65320, 2672680, 12517631,
+                   16711680, 5635840, 255, 16727808, 6502,
+                   6691072]
+    type_colors = [0, 986895, 2039583, 3092271]
 
     def __init__(self, savefile, loadfile1, loadfile2):
 
@@ -45,7 +46,8 @@ class LevelData:
         block_types = (
             "Solid",
             "Cosmetic",
-            "Entity"
+            "Entity",
+            "Obstacle"
         )
 
         pixel_array = pygame.PixelArray(self.load_file1)

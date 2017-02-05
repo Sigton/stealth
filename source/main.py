@@ -124,9 +124,9 @@ def main():
 
             elif event.type == KEYUP:
 
-                if (event.key == K_LEFT or event.key == K_a) and player.xv <= 0:
+                if event.key == K_LEFT and run != 1:
                     run = 0
-                if (event.key == K_RIGHT or event.key == K_d) and player.xv >= 0:
+                if event.key == K_RIGHT and run != -1:
                     run = 0
 
                 if event.key == K_UP or event.key == K_w:

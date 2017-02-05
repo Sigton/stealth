@@ -15505,8 +15505,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -15515,8 +15515,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15525,8 +15525,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15535,8 +15535,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15545,8 +15545,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15555,8 +15555,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15565,8 +15565,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15575,8 +15575,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -15585,8 +15585,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16105,8 +16105,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -16115,8 +16115,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16125,8 +16125,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16135,8 +16135,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16145,8 +16145,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16155,8 +16155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16165,8 +16165,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16175,8 +16175,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16185,8 +16185,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16705,8 +16705,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -16715,8 +16715,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16725,8 +16725,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16735,8 +16735,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16745,8 +16745,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16755,8 +16755,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16765,8 +16765,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16775,8 +16775,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -16785,8 +16785,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17305,8 +17305,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -17315,8 +17315,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17325,8 +17325,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17335,8 +17335,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17345,8 +17345,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17355,8 +17355,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17365,8 +17365,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17375,8 +17375,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17385,8 +17385,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17905,8 +17905,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -17915,8 +17915,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17925,8 +17925,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17935,8 +17935,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17945,8 +17945,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17955,8 +17955,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17965,8 +17965,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17975,8 +17975,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -17985,8 +17985,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20905,8 +20905,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -20915,8 +20915,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20925,8 +20925,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20935,8 +20935,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20945,8 +20945,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20955,8 +20955,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20965,8 +20965,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20975,8 +20975,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -20985,8 +20985,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21505,8 +21505,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -21515,8 +21515,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21525,8 +21525,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21535,8 +21535,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21545,8 +21545,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21555,8 +21555,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21565,8 +21565,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21575,8 +21575,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -21585,8 +21585,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22105,8 +22105,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -22115,8 +22115,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22125,8 +22125,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22135,8 +22135,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22145,8 +22145,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22155,8 +22155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22165,8 +22165,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22175,8 +22175,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22185,8 +22185,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22705,8 +22705,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -22715,8 +22715,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22725,8 +22725,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22735,8 +22735,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22745,8 +22745,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22755,8 +22755,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22765,8 +22765,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22775,8 +22775,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -22785,8 +22785,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23305,8 +23305,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -23315,8 +23315,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23325,8 +23325,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23335,8 +23335,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23345,8 +23345,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23355,8 +23355,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23365,8 +23365,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23375,8 +23375,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -23385,8 +23385,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25105,8 +25105,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -25115,8 +25115,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25125,8 +25125,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25135,8 +25135,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25145,8 +25145,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25155,8 +25155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25165,8 +25165,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25175,8 +25175,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25185,8 +25185,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25705,8 +25705,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -25715,8 +25715,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25725,8 +25725,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25735,8 +25735,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25745,8 +25745,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25755,8 +25755,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25765,8 +25765,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25775,8 +25775,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -25785,8 +25785,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26305,8 +26305,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -26315,8 +26315,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26325,8 +26325,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26335,8 +26335,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26345,8 +26345,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26355,8 +26355,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26365,8 +26365,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26375,8 +26375,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26385,8 +26385,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26905,8 +26905,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -26915,8 +26915,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26925,8 +26925,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26935,8 +26935,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26945,8 +26945,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26955,8 +26955,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26965,8 +26965,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26975,8 +26975,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -26985,8 +26985,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27505,8 +27505,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -27515,8 +27515,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27525,8 +27525,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27535,8 +27535,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27545,8 +27545,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27555,8 +27555,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27565,8 +27565,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27575,8 +27575,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -27585,8 +27585,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28705,8 +28705,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -28715,8 +28715,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28725,8 +28725,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28735,8 +28735,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28745,8 +28745,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28755,8 +28755,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28765,8 +28765,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28775,8 +28775,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -28785,8 +28785,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29305,8 +29305,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -29315,8 +29315,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29325,8 +29325,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29335,8 +29335,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29345,8 +29345,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29355,8 +29355,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29365,8 +29365,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29375,8 +29375,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29385,8 +29385,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29905,8 +29905,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -29915,8 +29915,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29925,8 +29925,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29935,8 +29935,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29945,8 +29945,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29955,8 +29955,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29965,8 +29965,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29975,8 +29975,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -29985,8 +29985,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30505,8 +30505,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -30515,8 +30515,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30525,8 +30525,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30535,8 +30535,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30545,8 +30545,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30555,8 +30555,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30565,8 +30565,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30575,8 +30575,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -30585,8 +30585,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31105,8 +31105,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -31115,8 +31115,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31125,8 +31125,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31135,8 +31135,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31145,8 +31145,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31155,8 +31155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31165,8 +31165,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31175,8 +31175,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -31185,8 +31185,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32305,8 +32305,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -32315,8 +32315,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32325,8 +32325,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32335,8 +32335,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32345,8 +32345,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32355,8 +32355,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32365,8 +32365,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32375,8 +32375,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32385,8 +32385,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32905,8 +32905,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -32915,8 +32915,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32925,8 +32925,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32935,8 +32935,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32945,8 +32945,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32955,8 +32955,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32965,8 +32965,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32975,8 +32975,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -32985,8 +32985,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33505,8 +33505,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -33515,8 +33515,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33525,8 +33525,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33535,8 +33535,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33545,8 +33545,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33555,8 +33555,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33565,8 +33565,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33575,8 +33575,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -33585,8 +33585,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34105,8 +34105,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -34115,8 +34115,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34125,8 +34125,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34135,8 +34135,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34145,8 +34145,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34155,8 +34155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34165,8 +34165,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34175,8 +34175,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34185,8 +34185,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34705,8 +34705,8 @@
       50
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 23
     }
   ],
   [
@@ -34715,8 +34715,8 @@
       51
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34725,8 +34725,8 @@
       52
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34735,8 +34735,8 @@
       53
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34745,8 +34745,8 @@
       54
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34755,8 +34755,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34765,8 +34765,8 @@
       56
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34775,8 +34775,8 @@
       57
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
@@ -34785,8 +34785,8 @@
       58
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Obstacle",
+      "tile": 24
     }
   ],
   [
