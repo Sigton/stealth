@@ -16,6 +16,7 @@ class Level:
 
     platform_list = None
     cosmetic_list = None
+    obstacle_list = None
     keypads = None
     bombs = None
     doors = None
@@ -40,6 +41,7 @@ class Level:
 
         self.platform_list = pygame.sprite.Group()
         self.cosmetic_list = pygame.sprite.Group()
+        self.obstacle_list = pygame.sprite.Group()
         self.keypads = pygame.sprite.Group()
         self.bombs = pygame.sprite.Group()
         self.doors = pygame.sprite.Group()
@@ -56,6 +58,7 @@ class Level:
         # Update everything in the level
         self.platform_list.update()
         self.cosmetic_list.update()
+        self.obstacle_list.update()
         self.keypads.update()
         self.bombs.update()
         self.guards.update()
@@ -71,6 +74,7 @@ class Level:
         # Draw the sprite lists
         self.platform_list.draw(display)
         self.cosmetic_list.draw(display)
+        self.obstacle_list.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
@@ -97,6 +101,8 @@ class Level:
                 platform.rect.x += shift_x
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.x += shift_x
+            for obstacle in self.obstacle_list:
+                obstacle.rect.x += shift_x
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
             for door in self.doors:
@@ -125,6 +131,8 @@ class Level:
                 platform.rect.y -= shift_y
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.y -= shift_y
+            for obstacle in self.obstacle_list:
+                obstacle.rect.y -= shift_y
             for keypad in self.keypads:
                 keypad.rect.y -= shift_y
             for door in self.doors:
@@ -141,31 +149,35 @@ class Level:
         # Moves platforms back to their original position
         for platform in self.platform_list:
             platform.rect.x -= self.world_shift_x
-            platform.rect.y -= self.world_shift_y
+            platform.rect.y += self.world_shift_y
 
         for cosmetic in self.cosmetic_list:
             cosmetic.rect.x -= self.world_shift_x
-            cosmetic.rect.y -= self.world_shift_y
+            cosmetic.rect.y += self.world_shift_y
+
+        for obstacle in self.obstacle_list:
+            obstacle.rect.y -= self.world_shift_x
+            obstacle.rect.y += self.world_shift_y
 
         for keypad in self.keypads:
             keypad.rect.x -= self.world_shift_x
-            keypad.rect.y -= self.world_shift_y
+            keypad.rect.y += self.world_shift_y
 
         for door in self.doors:
             door.rect.x -= self.world_shift_x
-            door.rect.y -= self.world_shift_y
+            door.rect.y += self.world_shift_y
 
         for bomb in self.bombs:
             bomb.rect.x -= self.world_shift_x
-            bomb.rect.y -= self.world_shift_y
+            bomb.rect.y += self.world_shift_y
 
         for guard in self.guards:
             guard.rect.x -= self.world_shift_x
-            guard.rect.y -= self.world_shift_y
+            guard.rect.y += self.world_shift_y
 
         for entity in self.entities:
             entity.rect.x -= self.world_shift_x
-            entity.rect.y -= self.world_shift_y
+            entity.rect.y += self.world_shift_y
 
         self.world_shift_x = 0
         self.world_shift_y = 0
@@ -181,6 +193,12 @@ class Level:
         platform.rect.x = x
         platform.rect.y = y
         self.cosmetic_list.add(platform)
+
+    def create_obstacle(self, tile, x, y):
+        platform = platforms.Platform(tile)
+        platform.rect.x = x
+        platform.rect.y = y
+        self.obstacle_list.add(platform)
 
     def create_keypad(self, x, y):
         new_keypad = entities.Keypad()
@@ -280,6 +298,9 @@ class Level:
 
             elif tile_data['type'] == "Cosmetic":
                 self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+
+            elif tile_data['type'] == "Obstacle":
+                self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
 
 class Level01(Level):
