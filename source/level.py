@@ -411,7 +411,8 @@ class Level02(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Almost there...", 100, 435)
         self.level_text.add(text)
-
+        text = leveltext.LevelText("Use space bar to hack the keypad", 300, 50)
+        self.level_text.add(text)
         text = leveltext.LevelText("Congrats!", 1150, 700)
         self.level_text.add(text)
 
