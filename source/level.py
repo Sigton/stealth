@@ -374,7 +374,7 @@ class Level02(Level):
 
         self.background = pygame.image.load("resources/background.png").convert()
 
-        save_file = os.path.join("level_data", "level1.json")
+        save_file = os.path.join("level_data", "level2.json")
         tile_file = os.path.join("level_data", "layouts", "level2.png")
         type_file = os.path.join("level_data", "tile_types", "level2.png")
 
@@ -433,3 +433,15 @@ class Level02(Level):
         # Scroll to start position
         self.reset_world()
         self.shift_world(self.start_x, self.start_y)
+
+
+class Level03(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+
