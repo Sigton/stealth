@@ -292,20 +292,20 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 28:
+                if tile_data['tile'] == 29:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 27:
+                elif tile_data['tile'] == 28:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 25:
+                elif tile_data['tile'] == 26:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 29:
+                elif tile_data['tile'] == 30:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 31:
+                elif tile_data['tile'] == 32:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
@@ -374,7 +374,7 @@ class Level02(Level):
 
         self.background = pygame.image.load("resources/background.png").convert()
 
-        save_file = os.path.join("level_data", "level1.json")
+        save_file = os.path.join("level_data", "level2.json")
         tile_file = os.path.join("level_data", "layouts", "level2.png")
         type_file = os.path.join("level_data", "tile_types", "level2.png")
 
@@ -425,6 +425,38 @@ class Level02(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Choose your path", 1300, 625)
         self.level_text.add(text)
+
+        # Set start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to start position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
+
+
+class Level03(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+        save_file = os.path.join("level_data", "level3.json")
+        tile_file = os.path.join("level_data", "layouts", "level3.png")
+        type_file = os.path.join("level_data", "tile_types", "level3.png")
+
+        level = terrain.LevelData(save_file, tile_file, type_file)
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render
+        self.render(level_data)
 
         # Set start position
         self.start_x = 0
