@@ -4,6 +4,7 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="383" column="32" lean-forward="false" selection-start-line="383" selection-start-column="32" selection-end-line="383" selection-end-column="32" />
+            <state relative-caret-position="714">
+              <caret line="407" column="33" lean-forward="true" selection-start-line="407" selection-start-column="33" selection-end-line="407" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -126,7 +127,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
@@ -365,13 +366,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00109" summary="At long last fixed it">
-      <created>1486199472202</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1486199472203</updated>
     </task>
     <task id="LOCAL-00110" summary="Fixed some lag">
       <created>1486199700379</created>
@@ -709,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486400550958</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Updated door linkup">
+      <created>1486400691192</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1486400691192</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TodoView">
@@ -722,7 +723,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17386723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -748,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated main.py" />
     <MESSAGE value="Added suspended lamps" />
     <MESSAGE value="Removed print" />
     <MESSAGE value="music plays just before game loop" />
@@ -773,7 +773,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Created new build" />
     <MESSAGE value="Removed health bar for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed health bar for now" />
+    <MESSAGE value="Updated door linkup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated door linkup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -989,8 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="383" column="32" lean-forward="false" selection-start-line="383" selection-start-column="32" selection-end-line="383" selection-end-column="32" />
+        <state relative-caret-position="714">
+          <caret line="407" column="33" lean-forward="true" selection-start-line="407" selection-start-column="33" selection-end-line="407" selection-end-column="33" />
           <folding />
         </state>
       </provider>
