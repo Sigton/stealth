@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Added some stuffs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/terrain.py" afterPath="$PROJECT_DIR$/source/terrain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="436" column="0" lean-forward="false" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/source/terrain.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1105">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -126,13 +125,13 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/leveltext.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/constants.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
       </list>
     </option>
   </component>
@@ -376,13 +375,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Horizontal scrolling is now completely working">
-      <created>1486289033782</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1486289033783</updated>
     </task>
     <task id="LOCAL-00124" summary="Fixed player animations">
       <created>1486289778904</created>
@@ -720,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486416253318</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Added some stuffs">
+      <created>1486417409543</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1486417409543</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TodoView">
@@ -759,7 +758,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Restarting level text system" />
     <MESSAGE value="Finished leveltext class" />
     <MESSAGE value="Added level text" />
     <MESSAGE value="Fixed range of bugs" />
@@ -784,7 +782,8 @@
     <MESSAGE value="Progress on level 3" />
     <MESSAGE value="Updated level 3 and slowed down guards" />
     <MESSAGE value="Updated things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated things" />
+    <MESSAGE value="Added some stuffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some stuffs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -993,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="436" column="0" lean-forward="false" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1002,7 +1001,7 @@
     <entry file="file://$PROJECT_DIR$/source/terrain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding />
         </state>
       </provider>
