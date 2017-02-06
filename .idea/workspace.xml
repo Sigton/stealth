@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="255">
+              <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -121,8 +122,8 @@
         <option value="$PROJECT_DIR$/source/leveltext.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
+        <option value="$PROJECT_DIR$/source/main.py" />
       </list>
     </option>
   </component>
@@ -366,13 +367,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Made music louder">
-      <created>1486209674914</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1486209674914</updated>
     </task>
     <task id="LOCAL-00120" summary="Added functions for level scrolling">
       <created>1486211395374</created>
@@ -710,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486412707863</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Finished level 3 class">
+      <created>1486413138721</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1486413138721</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TodoView">
@@ -749,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added things to the rending stuff" />
     <MESSAGE value="Finished acid tiles" />
     <MESSAGE value="Player now dies" />
     <MESSAGE value="Attempted to fix another bug" />
@@ -774,7 +774,8 @@
     <MESSAGE value="Adding more level text" />
     <MESSAGE value="Finished level 2!" />
     <MESSAGE value="Started level 3 and fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started level 3 and fixed bug" />
+    <MESSAGE value="Finished level 3 class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished level 3 class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="255">
+          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
