@@ -381,7 +381,12 @@ class Level02(Level):
         self.door_linkup = {0: 1,
                             1: 1,
                             2: 0,
-                            3: 0}
+                            3: 0,
+                            4: 2,
+                            5: 2,
+                            6: 2,
+                            7: 2,
+                            8: 2}
 
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
