@@ -411,8 +411,19 @@ class Level02(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Almost there...", 100, 435)
         self.level_text.add(text)
-
+        text = leveltext.LevelText("Use space bar to hack the keypad.", 360, 50)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Once the keypad is hacked,", 360, 75)
+        self.level_text.add(text)
+        text = leveltext.LevelText("the door will open.", 360, 100)
+        self.level_text.add(text)
+        text = leveltext.LevelText("And again", 585, 270)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Jump!", 800, 370)
+        self.level_text.add(text)
         text = leveltext.LevelText("Congrats!", 1150, 700)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Choose your path", 1300, 625)
         self.level_text.add(text)
 
         # Set start position
