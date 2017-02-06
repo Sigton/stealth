@@ -65,8 +65,6 @@ def main():
     player.level = current_level
     current_level.player = player
 
-    current_level.entities.add(player.health_bar)
-
     # Create the blackout
     blackout = covers.Blackout()
     blackout.player = player
