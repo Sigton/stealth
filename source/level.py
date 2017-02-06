@@ -209,6 +209,12 @@ class Level:
         platform.rect.y = y
         self.obstacle_list.add(platform)
 
+    def create_anim_obs(self, x, y, tile):
+        platform = platforms.AnimatedPlatform(tile)
+        platform.rect.x = x
+        platform.rect.y = y
+        self.obstacle_list.add(platform)
+
     def create_keypad(self, x, y):
         new_keypad = entities.Keypad()
 
@@ -309,7 +315,10 @@ class Level:
                 self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
             elif tile_data['type'] == "Obstacle":
-                self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                if tile_data['tile'] == 23:
+                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                else:
+                    self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
 
 class Level01(Level):
