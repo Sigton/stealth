@@ -62,7 +62,7 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/images/terrain.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
 
         self.images = []
 
