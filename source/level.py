@@ -23,6 +23,7 @@ class Level:
     guards = None
     entities = None
     level_text = None
+    ladders = None
 
     player = None
 
@@ -51,6 +52,7 @@ class Level:
         self.guards = pygame.sprite.Group()
         self.entities = pygame.sprite.Group()
         self.level_text = pygame.sprite.Group()
+        self.ladders = pygame.sprite.Group()
 
         self.player = player
 
@@ -63,6 +65,7 @@ class Level:
         self.platform_list.update()
         self.cosmetic_list.update()
         self.obstacle_list.update()
+        self.ladders.update()
         self.keypads.update()
         self.bombs.update()
         self.guards.update()
@@ -79,6 +82,7 @@ class Level:
         self.platform_list.draw(display)
         self.cosmetic_list.draw(display)
         self.obstacle_list.draw(display)
+        self.ladders.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
@@ -108,6 +112,8 @@ class Level:
                 cosmetic.rect.x += shift_x
             for obstacle in self.obstacle_list:
                 obstacle.rect.x += shift_x
+            for ladder in self.ladders:
+                ladder.rect.x += shift_x
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
             for bomb in self.bombs:
@@ -138,6 +144,8 @@ class Level:
                 cosmetic.rect.y -= shift_y
             for obstacle in self.obstacle_list:
                 obstacle.rect.y -= shift_y
+            for ladder in self.ladders:
+                ladder.rect.y -= shift_y
             for keypad in self.keypads:
                 keypad.rect.y -= shift_y
             for bomb in self.bombs:
@@ -163,6 +171,10 @@ class Level:
         for obstacle in self.obstacle_list:
             obstacle.rect.x -= self.world_shift_x
             obstacle.rect.y += self.world_shift_y
+
+        for ladder in self.ladders:
+            ladder.rect.x -= self.world_shift_x
+            ladder.rect.y += self.world_shift_y
 
         for keypad in self.keypads:
             keypad.rect.x -= self.world_shift_x
@@ -278,6 +290,14 @@ class Level:
 
         self.guards.add(new_hguard)
 
+    def create_ladder(self, tile, x, y):
+        new_ladder = platforms.Platform(tile)
+
+        new_ladder.rect.x = x
+        new_ladder.rect.y = y
+
+        self.ladders.add(new_ladder)
+
     def render(self, data):
 
         self.door_no = 0
@@ -292,27 +312,30 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 29:
+                if tile_data['tile'] == 28:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 28:
+                elif tile_data['tile'] == 27:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 26:
+                elif tile_data['tile'] == 25:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 30:
+                elif tile_data['tile'] == 29:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 32:
+                elif tile_data['tile'] == 31:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
                 self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
             elif tile_data['type'] == "Cosmetic":
-                self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                if tile_data['tile'] == 25:
+                    self.create_ladder(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                else:
+                    self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
             elif tile_data['type'] == "Obstacle":
                 if tile_data['tile'] == 23:
