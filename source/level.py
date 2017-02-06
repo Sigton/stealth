@@ -407,6 +407,9 @@ class Level02(Level):
         text = leveltext.LevelText("Almost there...", 100, 435)
         self.level_text.add(text)
 
+        text = leveltext.LevelText("Congrats!", 1150, 700)
+        self.level_text.add(text)
+
         # Set start position
         self.start_x = 0
         self.start_y = 719
