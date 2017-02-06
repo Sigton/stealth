@@ -209,7 +209,7 @@ class Level:
         platform.rect.y = y
         self.obstacle_list.add(platform)
 
-    def create_anim_obs(self, x, y, tile):
+    def create_anim_obs(self, tile, x, y):
         platform = platforms.AnimatedPlatform(tile)
         platform.rect.x = x
         platform.rect.y = y
