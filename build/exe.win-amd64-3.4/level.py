@@ -110,8 +110,6 @@ class Level:
                 obstacle.rect.x += shift_x
             for keypad in self.keypads:
                 keypad.rect.x += shift_x
-            for door in self.doors:
-                door.rect.x += shift_x
             for bomb in self.bombs:
                 bomb.rect.x += shift_x
             for guard in self.guards:
@@ -142,8 +140,6 @@ class Level:
                 obstacle.rect.y -= shift_y
             for keypad in self.keypads:
                 keypad.rect.y -= shift_y
-            for door in self.doors:
-                door.rect.y -= shift_y
             for bomb in self.bombs:
                 bomb.rect.y -= shift_y
             for guard in self.guards:
@@ -171,10 +167,6 @@ class Level:
         for keypad in self.keypads:
             keypad.rect.x -= self.world_shift_x
             keypad.rect.y += self.world_shift_y
-
-        for door in self.doors:
-            door.rect.x -= self.world_shift_x
-            door.rect.y += self.world_shift_y
 
         for bomb in self.bombs:
             bomb.rect.x -= self.world_shift_x
@@ -213,6 +205,12 @@ class Level:
 
     def create_obstacle(self, tile, x, y):
         platform = platforms.Platform(tile)
+        platform.rect.x = x
+        platform.rect.y = y
+        self.obstacle_list.add(platform)
+
+    def create_anim_obs(self, tile, x, y):
+        platform = platforms.AnimatedPlatform(tile)
         platform.rect.x = x
         platform.rect.y = y
         self.obstacle_list.add(platform)
@@ -317,7 +315,10 @@ class Level:
                 self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
             elif tile_data['type'] == "Obstacle":
-                self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                if tile_data['tile'] == 23:
+                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                else:
+                    self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
 
 class Level01(Level):
@@ -354,6 +355,43 @@ class Level01(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Down we go", 1750, 450)
         self.level_text.add(text)
+
+        # Set start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to start position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
+
+
+class Level02(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+        save_file = os.path.join("level_data", "level1.json")
+        tile_file = os.path.join("level_data", "layouts", "level2.png")
+        type_file = os.path.join("level_data", "tile_types", "level2.png")
+
+        self.door_linkup = {0: 0,
+                            1: 0}
+
+        level = terrain.LevelData(save_file, tile_file, type_file)
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render
+        self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         # Set start position
         self.start_x = 0

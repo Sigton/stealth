@@ -23,8 +23,11 @@ GIRDER2 = (48, 48, 24, 24)
 GIRDER3 = (72, 48, 24, 24)
 LAMP = (120, 48, 24, 24)
 CHAIN = (144, 48, 24, 24)
-ACID_TOP = (168, 48, 24, 24)
-ACID = (168, 72, 24, 24)
+ACID_TOP = (
+    (168, 48, 24, 24),
+    (168, 72, 24, 24)
+)
+ACID = (144, 72, 24, 24)
 
 platforms = (
     GROUND1, GROUND2, GROUND3, GROUND4, GROUND5,
@@ -50,3 +53,41 @@ class Platform(pygame.sprite.Sprite):
                                             sprite_sheet_data[3])
 
         self.rect = self.image.get_rect()
+
+
+class AnimatedPlatform(pygame.sprite.Sprite):
+
+    def __init__(self, sprite_sheet_data):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+
+        self.images = []
+
+        # Take the image for each frame from the spritesheet
+        # And add it to the list of frames
+
+        for sprite in sprite_sheet_data:
+            new_image = self.sprite_sheet.get_image(sprite[0],
+                                                    sprite[1],
+                                                    sprite[2],
+                                                    sprite[3])
+            self.images.append(new_image)
+
+        self.image = self.images[0]
+        self.rect = self.image.get_rect()
+
+        # A timer var for animation
+
+        self.tick = 0
+        self.frame = 0
+
+    def update(self):
+
+        self.tick += 1
+
+        if self.tick % 10 == 0:
+            self.frame = (self.frame + 1) % len(self.images)
+            self.image = self.images[self.frame]
