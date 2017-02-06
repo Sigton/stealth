@@ -157,8 +157,6 @@ def main():
             player.level = current_level
             current_level.player = player
 
-            current_level.entities.add(player.health_bar)
-
             has_guard = False
             for guard in current_level.guards.sprites():
                 if isinstance(guard, guards.Guard):
