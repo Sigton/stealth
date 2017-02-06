@@ -381,7 +381,12 @@ class Level02(Level):
         self.door_linkup = {0: 1,
                             1: 1,
                             2: 0,
-                            3: 0}
+                            3: 0,
+                            4: 2,
+                            5: 2,
+                            6: 2,
+                            7: 2,
+                            8: 2}
 
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
@@ -405,6 +410,9 @@ class Level02(Level):
         text = leveltext.LevelText("good luck!", 50, 885)
         self.level_text.add(text)
         text = leveltext.LevelText("Almost there...", 100, 435)
+        self.level_text.add(text)
+
+        text = leveltext.LevelText("Congrats!", 1150, 700)
         self.level_text.add(text)
 
         # Set start position
