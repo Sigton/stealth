@@ -444,4 +444,24 @@ class Level03(Level):
 
         self.background = pygame.image.load("resources/background.png").convert()
 
+        save_file = os.path.join("level_data", "level3.json")
+        tile_file = os.path.join("level_data", "layouts", "level3.png")
+        type_file = os.path.join("level_data", "tile_types", "level3.png")
 
+        level = terrain.LevelData(save_file, tile_file, type_file)
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render
+        self.render(level_data)
+
+        # Set start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to start position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
