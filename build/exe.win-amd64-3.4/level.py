@@ -378,8 +378,10 @@ class Level02(Level):
         tile_file = os.path.join("level_data", "layouts", "level2.png")
         type_file = os.path.join("level_data", "tile_types", "level2.png")
 
-        self.door_linkup = {0: 0,
-                            1: 0}
+        self.door_linkup = {0: 1,
+                            1: 1,
+                            2: 0,
+                            3: 0}
 
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
@@ -392,6 +394,18 @@ class Level02(Level):
         self.render(level_data)
         for door in self.doors.sprites():
             door.set_keypad()
+
+        # Add the level text
+        text = leveltext.LevelText("Watch out for the acid!", 100, 1300)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Nice!", 850, 1150)
+        self.level_text.add(text)
+        text = leveltext.LevelText("This is tricky,", 50, 860)
+        self.level_text.add(text)
+        text = leveltext.LevelText("good luck!", 50, 885)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Almost there...", 100, 435)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0
