@@ -137,6 +137,8 @@ def main():
             pause -= 1
 
         if pause == 0 and reset:
+            current_level.reset_world()
+            current_level.set_scrolling()
             player.reset()
             reset = False
 
