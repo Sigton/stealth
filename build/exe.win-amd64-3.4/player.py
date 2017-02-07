@@ -38,6 +38,10 @@ class Player(pygame.sprite.Sprite):
         self.stand_image_r = sprite_sheet.get_image(0, 0, 24, 48)
         self.stand_image_l = pygame.transform.flip(self.stand_image_r, True, False)
 
+        # Get the crouching image
+        self.crouch_image_r = sprite_sheet.get_image(96, 0, 48, 24)
+        self.crouch_image_l = pygame.transform.flip(self.crouch_image_r, True, False)
+
         # Arrays for animation
         self.walking_frames_r = []
         self.walking_frames_l = []
@@ -74,8 +78,14 @@ class Player(pygame.sprite.Sprite):
 
         self.walk_dist = 0
 
+        # Vars for controlling what the player is doing
+
         self.climbing = False
         self.touching_ladder = False
+
+        self.crouching = False
+
+        # The players health bar (to be removed in a future update)
 
         self.health_bar = healthbar.HealthBar()
         self.health_bar.parent = self
@@ -83,6 +93,17 @@ class Player(pygame.sprite.Sprite):
     def update(self):
 
         self.touching_ladder = self.on_ladder()
+
+        if self.crouching:
+            if self.rect.height == 48:
+                self.rect.height = 24
+                self.rect.width = 48
+                self.rect.y += 24
+
+            if self.direction == "R":
+                self.image = self.crouch_image_r
+            else:
+                self.image = self.crouch_image_l
 
         # Calculate gravity
         if self.yv == 0:
@@ -107,17 +128,18 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
         self.rect.x += self.xv
 
-        if self.direction == "R":
-            frame = self.walk_dist // 10 % len(self.walking_frames_r)
-            self.image = self.walking_frames_r[frame]
-        else:
-            frame = self.walk_dist // 10 % len(self.walking_frames_l)
-            self.image = self.walking_frames_l[frame]
+        if not self.crouching:
+            if self.direction == "R":
+                frame = self.walk_dist // 10 % len(self.walking_frames_r)
+                self.image = self.walking_frames_r[frame]
+            else:
+                frame = self.walk_dist // 10 % len(self.walking_frames_l)
+                self.image = self.walking_frames_l[frame]
 
         if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
             pygame.mixer.Sound.play(self.footstep)
 
-        if self.xv == 0:
+        if self.xv == 0 and not self.crouching:
             if self.direction == "R":
                 self.image = self.stand_image_r
             else:
@@ -172,13 +194,13 @@ class Player(pygame.sprite.Sprite):
     def walk_right(self):
 
         # Moves the player right
-        self.xv += self.speed
+        self.xv += self.speed / 2 if self.crouching else self.speed
         self.direction = "R"
 
     def walk_left(self):
 
         # Moves the player left
-        self.xv -= self.speed
+        self.xv -= self.speed / 2 if self.crouching else self.speed
         self.direction = "L"
 
     def jump(self):
@@ -222,3 +244,16 @@ class Player(pygame.sprite.Sprite):
         ladder_hit_list = pygame.sprite.spritecollide(self, self.level.ladders, False)
 
         return True if len(ladder_hit_list) else False
+
+    def do_crouch(self):
+
+        # Function to make the player crouch
+        self.crouching = True
+
+    def stop_crouching(self):
+
+        # Stops the player from crouching
+        self.crouching = False
+        self.rect.width = 24
+        self.rect.height = 48
+        self.rect.y -= 24
