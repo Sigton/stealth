@@ -38,6 +38,10 @@ class Player(pygame.sprite.Sprite):
         self.stand_image_r = sprite_sheet.get_image(0, 0, 24, 48)
         self.stand_image_l = pygame.transform.flip(self.stand_image_r, True, False)
 
+        # Get the crouching image
+        self.crouch_image_r = sprite_sheet.get_image(96, 0, 48, 24)
+        self.crouch_image_l = pygame.transform.flip(self.stand_image_r, True, False)
+
         # Arrays for animation
         self.walking_frames_r = []
         self.walking_frames_l = []
@@ -74,8 +78,14 @@ class Player(pygame.sprite.Sprite):
 
         self.walk_dist = 0
 
+        # Vars for controlling what the player is doing
+
         self.climbing = False
         self.touching_ladder = False
+
+        self.crouching = False
+
+        # The players health bar (to be removed in a future update)
 
         self.health_bar = healthbar.HealthBar()
         self.health_bar.parent = self
