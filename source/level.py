@@ -319,7 +319,7 @@ class Level:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 25:
+                elif tile_data['tile'] == 26:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
                 elif tile_data['tile'] == 29:
