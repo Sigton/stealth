@@ -98,6 +98,7 @@ class Player(pygame.sprite.Sprite):
             if self.rect.height == 48:
                 self.rect.height = 24
                 self.rect.width = 48
+                self.rect.y += 24
 
             if self.direction == "R":
                 self.image = self.crouch_image_r
