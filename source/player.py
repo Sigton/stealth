@@ -243,3 +243,8 @@ class Player(pygame.sprite.Sprite):
         ladder_hit_list = pygame.sprite.spritecollide(self, self.level.ladders, False)
 
         return True if len(ladder_hit_list) else False
+
+    def do_crouch(self):
+
+        # Function to make the player crouch
+        pass

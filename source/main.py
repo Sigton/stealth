@@ -77,6 +77,7 @@ def main():
     # Variables to control the player
     run = 0
     jump = False
+    crouch = False
 
     pause = 0
     reset = False
@@ -122,6 +123,10 @@ def main():
                 if event.key == K_SPACE:
                     player.use_keypad()
 
+                # Crouching
+                if event.key == K_LCTRL:
+                    crouch = True
+
             elif event.type == KEYUP:
 
                 if event.key == K_LEFT or event.key == K_RIGHT:
@@ -133,6 +138,9 @@ def main():
                 if event.key == K_UP or event.key == K_w:
                     jump = False
                     player.climbing = False
+
+                if event.key == K_LCTRL:
+                    crouch = False
 
         if pause > 0:
             pause -= 1
@@ -191,7 +199,10 @@ def main():
                 elif run == -1:
                     player.walk_left()
 
-            if jump:
+            if crouch:
+                player.crouch()
+
+            elif jump:
                 player.jump()
 
             # Update entities
