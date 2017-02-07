@@ -132,6 +132,7 @@ def main():
 
                 if event.key == K_UP or event.key == K_w:
                     jump = False
+                    player.climbing = False
 
         if pause > 0:
             pause -= 1

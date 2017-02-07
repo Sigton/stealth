@@ -74,18 +74,21 @@ class Player(pygame.sprite.Sprite):
         self.walk_dist = 0
 
         self.climbing = False
+        self.touching_ladder = False
 
         self.health_bar = healthbar.HealthBar()
         self.health_bar.parent = self
 
     def update(self):
 
-        self.climbing = self.on_ladder()
+        self.touching_ladder = self.on_ladder()
 
         # Calculate gravity
         if self.yv == 0:
             self.yv = 1
-        elif not self.climbing:
+        elif self.touching_ladder and not self.climbing:
+            self.yv = 1
+        else:
             self.yv += self.gravity
 
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
@@ -179,9 +182,10 @@ class Player(pygame.sprite.Sprite):
 
     def jump(self):
 
-        if self.climbing:
+        if self.touching_ladder:
 
             self.yv = -1
+            self.climbing = True
 
         elif self.on_ground():
 
