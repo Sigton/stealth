@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -36,8 +36,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+            <state relative-caret-position="714">
+              <caret line="140" column="46" lean-forward="false" selection-start-line="140" selection-start-column="46" selection-end-line="140" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -365,13 +365,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Fixed range of bugs">
-      <created>1486323611906</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1486323611906</updated>
     </task>
     <task id="LOCAL-00147" summary="Updated readme">
       <created>1486324076642</created>
@@ -709,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486497080443</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Updated player.py">
+      <created>1486497665286</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1486497665286</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TodoView">
@@ -748,7 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished level 2 structure" />
     <MESSAGE value="Adding more level text" />
     <MESSAGE value="Finished level 2!" />
     <MESSAGE value="Started level 3 and fixed bug" />
@@ -773,7 +772,8 @@
     <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Again more added to level 3" />
     <MESSAGE value="Added costume for crouching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added costume for crouching" />
+    <MESSAGE value="Updated player.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated player.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -989,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        <state relative-caret-position="714">
+          <caret line="140" column="46" lean-forward="false" selection-start-line="140" selection-start-column="46" selection-end-line="140" selection-end-column="46" />
           <folding />
         </state>
       </provider>

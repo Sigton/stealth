@@ -94,6 +94,16 @@ class Player(pygame.sprite.Sprite):
 
         self.touching_ladder = self.on_ladder()
 
+        if self.crouching:
+            if self.rect.height == 48:
+                self.rect.height = 24
+                self.rect.width = 48
+
+            if self.direction == "R":
+                self.image = self.crouch_image_r
+            else:
+                self.image = self.crouch_image_l
+
         # Calculate gravity
         if self.yv == 0:
             self.yv = 1
@@ -117,17 +127,18 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
         self.rect.x += self.xv
 
-        if self.direction == "R":
-            frame = self.walk_dist // 10 % len(self.walking_frames_r)
-            self.image = self.walking_frames_r[frame]
-        else:
-            frame = self.walk_dist // 10 % len(self.walking_frames_l)
-            self.image = self.walking_frames_l[frame]
+        if not self.crouching:
+            if self.direction == "R":
+                frame = self.walk_dist // 10 % len(self.walking_frames_r)
+                self.image = self.walking_frames_r[frame]
+            else:
+                frame = self.walk_dist // 10 % len(self.walking_frames_l)
+                self.image = self.walking_frames_l[frame]
 
         if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
             pygame.mixer.Sound.play(self.footstep)
 
-        if self.xv == 0:
+        if self.xv == 0 and not self.crouching:
             if self.direction == "R":
                 self.image = self.stand_image_r
             else:
