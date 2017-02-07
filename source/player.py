@@ -80,13 +80,13 @@ class Player(pygame.sprite.Sprite):
 
     def update(self):
 
+        self.climbing = self.on_ladder()
+
         # Calculate gravity
         if self.yv == 0:
             self.yv = 1
-        else:
+        elif not self.climbing:
             self.yv += self.gravity
-
-        self.climbing = self.on_ladder()
 
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
             self.yv = 0
@@ -181,8 +181,7 @@ class Player(pygame.sprite.Sprite):
 
         if self.climbing:
 
-            # Here have ladder climbing
-            pass
+            self.yv = -1
 
         elif self.on_ground():
 
