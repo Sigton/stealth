@@ -141,7 +141,7 @@ def main():
 
                 if event.key == K_LCTRL:
                     crouch = False
-                    player.crouching = False
+                    player.stop_crouching()
 
         if pause > 0:
             pause -= 1

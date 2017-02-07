@@ -248,3 +248,11 @@ class Player(pygame.sprite.Sprite):
 
         # Function to make the player crouch
         self.crouching = True
+
+    def stop_crouching(self):
+
+        # Stops the player from crouching
+        self.crouching = False
+        self.rect.width = 24
+        self.rect.height = 48
+        self.rect.y -= 24
