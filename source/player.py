@@ -247,4 +247,4 @@ class Player(pygame.sprite.Sprite):
     def do_crouch(self):
 
         # Function to make the player crouch
-        pass
+        self.crouching = True
