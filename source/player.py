@@ -18,6 +18,7 @@ class Player(pygame.sprite.Sprite):
     gravity = constants.PLAYER_GRAVITY
     friction = constants.PLAYER_FRICTION
     jump_height = constants.PLAYER_JUMP_HEIGHT
+    climb_speed = constants.PLAYER_CLIMB_SPEED
 
     image = None
     level = None
@@ -87,7 +88,7 @@ class Player(pygame.sprite.Sprite):
         if self.yv == 0:
             self.yv = 1
         elif self.touching_ladder and not self.climbing:
-            self.yv = 1
+            self.yv = self.climb_speed
         else:
             self.yv += self.gravity
 
@@ -184,7 +185,7 @@ class Player(pygame.sprite.Sprite):
 
         if self.touching_ladder:
 
-            self.yv = -1
+            self.yv = -self.climb_speed
             self.climbing = True
 
         elif self.on_ground():
