@@ -43155,8 +43155,8 @@
       55
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Entity",
+      "tile": 26
     }
   ],
   [
