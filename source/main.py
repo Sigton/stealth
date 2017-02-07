@@ -200,7 +200,7 @@ def main():
                     player.walk_left()
 
             if crouch:
-                player.crouch()
+                player.do_crouch()
 
             elif jump:
                 player.jump()
