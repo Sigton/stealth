@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -366,13 +367,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00128" summary="Scrolling on both axis is now complete!">
-      <created>1486295138920</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1486295138920</updated>
-    </task>
     <task id="LOCAL-00129" summary="Removed levels 2-11 as they are reworked">
       <created>1486296614437</created>
       <option name="number" value="00129" />
@@ -709,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486451775572</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Another bugfix">
+      <created>1486451955451</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1486451955452</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TodoView">
@@ -748,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated readme" />
     <MESSAGE value="Added level 2" />
     <MESSAGE value="More progress on level 2" />
     <MESSAGE value="Added a door to level 2" />
@@ -773,7 +773,8 @@
     <MESSAGE value="Added ladder spritesheet data" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
+    <MESSAGE value="Another bugfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another bugfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
