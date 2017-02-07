@@ -73,6 +73,8 @@ class Player(pygame.sprite.Sprite):
 
         self.walk_dist = 0
 
+        self.climbing = False
+
         self.health_bar = healthbar.HealthBar()
         self.health_bar.parent = self
 
@@ -83,6 +85,8 @@ class Player(pygame.sprite.Sprite):
             self.yv = 1
         else:
             self.yv += self.gravity
+
+        self.climbing = self.on_ladder()
 
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
             self.yv = 0
@@ -175,7 +179,13 @@ class Player(pygame.sprite.Sprite):
 
     def jump(self):
 
-        if self.on_ground():
+        if self.climbing:
+
+            # Here have ladder climbing
+            pass
+
+        elif self.on_ground():
+
             self.yv = -self.jump_height
 
     def reset(self):
@@ -201,3 +211,10 @@ class Player(pygame.sprite.Sprite):
         for bomb in touching_bombs:
             if bomb.progress < 10:
                 bomb.progress += 1
+
+    def on_ladder(self):
+
+        # Check if the player is touching a ladder
+        ladder_hit_list = pygame.sprite.spritecollide(self, self.level.ladders, False)
+
+        return True if len(ladder_hit_list) else False
