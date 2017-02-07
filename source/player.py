@@ -194,7 +194,7 @@ class Player(pygame.sprite.Sprite):
     def walk_right(self):
 
         # Moves the player right
-        self.xv += self.speed / 2 if self.crouching else self.speed
+        self.xv += self.speed / 1.5 if self.crouching else self.speed
         self.direction = "R"
 
     def walk_left(self):
