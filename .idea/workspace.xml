@@ -36,8 +36,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
+            <state relative-caret-position="697">
+              <caret line="276" column="33" lean-forward="false" selection-start-line="276" selection-start-column="33" selection-end-line="276" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -478,13 +478,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00161" summary="Finished level 2 structure">
-      <created>1486405770153</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1486405770153</updated>
-    </task>
     <task id="LOCAL-00162" summary="Fixed bug">
       <created>1486405854061</created>
       <option name="number" value="00162" />
@@ -821,7 +814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486573720765</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Updated player.py">
+      <created>1486574061349</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1486574061349</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TodoView">
@@ -873,7 +873,6 @@
     <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Again more added to level 3" />
     <MESSAGE value="Added costume for crouching" />
-    <MESSAGE value="Updated player.py" />
     <MESSAGE value="Added framework for crouching" />
     <MESSAGE value="Added controls for crouching" />
     <MESSAGE value="Player now moves slower when crouching" />
@@ -885,7 +884,8 @@
     <MESSAGE value="Updated crouching" />
     <MESSAGE value="Added function for checking if the player is at a wall" />
     <MESSAGE value="notepad mucked up all the indents so I fixed that" />
-    <option name="LAST_COMMIT_MESSAGE" value="notepad mucked up all the indents so I fixed that" />
+    <MESSAGE value="Updated player.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated player.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
+        <state relative-caret-position="697">
+          <caret line="276" column="33" lean-forward="false" selection-start-line="276" selection-start-column="33" selection-end-line="276" selection-end-column="33" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
