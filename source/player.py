@@ -248,7 +248,8 @@ class Player(pygame.sprite.Sprite):
     def do_crouch(self):
 
         # Function to make the player crouch
-        self.crouching = True
+        if self.on_ground():
+            self.crouching = True
 
     def stop_crouching(self):
 
