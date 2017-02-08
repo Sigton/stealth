@@ -95,10 +95,6 @@ class Player(pygame.sprite.Sprite):
         self.touching_ladder = self.on_ladder()
 
         if self.crouching:
-            if self.rect.height == 48:
-                self.rect.height = 24
-                self.rect.width = 48
-                self.rect.y += 24
 
             if self.direction == "R":
                 self.image = self.crouch_image_r
@@ -249,7 +245,15 @@ class Player(pygame.sprite.Sprite):
 
         # Function to make the player crouch
         if self.on_ground():
+				
+			# Check the player isn't at a wall
+		
             self.crouching = True
+			
+			if self.rect.height == 48:
+                self.rect.height = 24
+                self.rect.width = 48
+                self.rect.y += 24
 
     def stop_crouching(self):
 
