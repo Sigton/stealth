@@ -264,7 +264,15 @@ class Player(pygame.sprite.Sprite):
                     self.rect.y += 24
                     self.rect.x -= 24
 
-            if not (at_wall_l or at_wall_r):
+            elif (not at_wall_r) and at_wall_l:
+                self.crouching = True
+
+                if self.rect.height == 48:
+                    self.rect.height = 24
+                    self.rect.width = 48
+                    self.rect.y += 24
+
+            elif not (at_wall_l or at_wall_r):
                 self.crouching = True
 
                 if self.rect.height == 48:
