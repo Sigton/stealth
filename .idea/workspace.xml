@@ -36,8 +36,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="251" column="33" lean-forward="true" selection-start-line="251" selection-start-column="33" selection-end-line="251" selection-end-column="33" />
+            <state relative-caret-position="884">
+              <caret line="270" column="47" lean-forward="false" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -365,13 +365,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Updated door linkup">
-      <created>1486400691192</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1486400691192</updated>
     </task>
     <task id="LOCAL-00159" summary="Added bunch of level text">
       <created>1486401939239</created>
@@ -709,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486540816765</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Updated crouching">
+      <created>1486541356461</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1486541356461</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TodoView">
@@ -748,7 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated things" />
     <MESSAGE value="Added some stuffs" />
     <MESSAGE value="Added color code for ladders" />
     <MESSAGE value="Added ladder spritesheet data" />
@@ -773,7 +772,8 @@
     <MESSAGE value="Created new build" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated how the player stops crouching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated how the player stops crouching" />
+    <MESSAGE value="Updated crouching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated crouching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -988,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="251" column="33" lean-forward="true" selection-start-line="251" selection-start-column="33" selection-end-line="251" selection-end-column="33" />
+        <state relative-caret-position="884">
+          <caret line="270" column="47" lean-forward="false" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
           <folding />
         </state>
       </provider>

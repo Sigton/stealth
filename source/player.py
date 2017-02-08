@@ -259,3 +259,13 @@ class Player(pygame.sprite.Sprite):
             self.rect.width = 24
             self.rect.height = 48
             self.rect.y -= 24
+
+    def at_wall(self, direction):
+
+        # Checks if the player is at a wall
+
+        self.rect.x += 24 * direction
+        hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+        self.rect.x -= 24 * direction
+
+        return True if len(hit_list) else False
