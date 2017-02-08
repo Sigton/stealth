@@ -245,22 +245,20 @@ class Player(pygame.sprite.Sprite):
 
         # Function to make the player crouch
         if self.on_ground():
-				
-			# Check the player isn't at a wall
-                        at_wall_r = self.at_wall(1)
-                        at_wall_l = self.at_wall(-1)
 
-                        if not (at_wall_l or at_wall_r):
-                                self.crouching = True
-			
-                            if self.rect.height == 48:
-                                self.rect.height = 24
-                                self.rect.width = 48
-                                self.rect.y += 24
+            # Check the player isn't at a wall
+            at_wall_r = self.at_wall(1)
+            at_wall_l = self.at_wall(-1)
+
+            if not (at_wall_l or at_wall_r):
+                self.crouching = True
+
+                if self.rect.height == 48:
+                    self.rect.height = 24
+                    self.rect.width = 48
+                    self.rect.y += 24
 
     def stop_crouching(self):
-
-        # Stops the player from crouching
         if self.rect.height == 24:
             self.crouching = False
             self.rect.width = 24
