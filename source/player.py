@@ -258,6 +258,9 @@ class Player(pygame.sprite.Sprite):
                     self.rect.width = 48
                     self.rect.y += 24
 
+                    if self.direction == "L":
+                        self.rect.x -= 24
+
     def stop_crouching(self):
         if self.rect.height == 24:
             self.crouching = False
