@@ -141,7 +141,6 @@ def main():
 
                 if event.key == K_LCTRL:
                     crouch = False
-                    player.stop_crouching()
 
         if pause > 0:
             pause -= 1
@@ -202,8 +201,10 @@ def main():
 
             if crouch:
                 player.do_crouch()
+            else:
+                player.stop_crouching()
 
-            elif jump:
+            if jump and not crouch:
                 player.jump()
 
             # Update entities
