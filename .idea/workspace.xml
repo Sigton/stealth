@@ -36,8 +36,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state relative-caret-position="595">
+              <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -367,13 +367,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Added some stuffs">
-      <created>1486417409543</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1486417409543</updated>
     </task>
     <task id="LOCAL-00173" summary="Added color code for ladders">
       <created>1486417589337</created>
@@ -711,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486625246234</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Animation should now run">
+      <created>1486625560042</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1486625560042</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated level 3" />
     <MESSAGE value="Fixed another bug" />
     <MESSAGE value="Adjusted the level design" />
     <MESSAGE value="Added more to level 3" />
@@ -775,7 +774,8 @@
     <MESSAGE value="Fixed a bug with crouching" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Now loads crouching animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now loads crouching animation" />
+    <MESSAGE value="Animation should now run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Animation should now run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,8 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="595">
+          <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

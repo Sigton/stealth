@@ -138,7 +138,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.x += self.xv
 
         if self.crouching:
-            if self.xv == 0:
+            if self.xv != 0:
                 if self.direction == "R":
                     frame = self.walk_dist // 10 % len(self.crouching_frames_r)
                     self.image = self.crouching_frames_r[frame]
