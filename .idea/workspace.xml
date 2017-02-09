@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Added loads to level 3">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="218" column="31" lean-forward="true" selection-start-line="218" selection-start-column="31" selection-end-line="218" selection-end-column="31" />
+            <state relative-caret-position="1326">
+              <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -178,8 +179,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,13 +369,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Updated level 3">
-      <created>1486452048590</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1486452048590</updated>
     </task>
     <task id="LOCAL-00179" summary="Added framework for climbing ladders">
       <created>1486452547130</created>
@@ -712,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486627969434</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="Player walks slower on ladders">
+      <created>1486628137822</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1486628137822</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TodoView">
@@ -726,9 +727,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12170706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12170706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -751,7 +752,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjusted the level design" />
     <MESSAGE value="Again more added to level 3" />
     <MESSAGE value="Added costume for crouching" />
     <MESSAGE value="Added framework for crouching" />
@@ -776,7 +776,8 @@
     <MESSAGE value="Updated level 3" />
     <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
+    <MESSAGE value="Player walks slower on ladders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player walks slower on ladders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,17 +958,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="561">
             <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -991,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="218" column="31" lean-forward="true" selection-start-line="218" selection-start-column="31" selection-end-line="218" selection-end-column="31" />
+        <state relative-caret-position="1326">
+          <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
