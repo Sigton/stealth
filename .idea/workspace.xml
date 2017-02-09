@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -369,13 +368,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Fixed a bug">
-      <created>1486451775572</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1486451775572</updated>
     </task>
     <task id="LOCAL-00177" summary="Another bugfix">
       <created>1486451955451</created>
@@ -713,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486627587906</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="Added more to level 3">
+      <created>1486627906135</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1486627906135</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TodoView">
@@ -753,7 +752,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adjusted the level design" />
-    <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Again more added to level 3" />
     <MESSAGE value="Added costume for crouching" />
     <MESSAGE value="Added framework for crouching" />
@@ -777,7 +775,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated player spritesheet" />
     <MESSAGE value="Updated level 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 3" />
+    <MESSAGE value="Added more to level 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more to level 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,8 +991,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
