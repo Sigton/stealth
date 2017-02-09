@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/player.png" afterPath="$PROJECT_DIR$/source/resources/player.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -368,13 +370,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00174" summary="Added ladder spritesheet data">
-      <created>1486417693350</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1486417693350</updated>
-    </task>
     <task id="LOCAL-00175" summary="Fixed bug">
       <created>1486419696251</created>
       <option name="number" value="00175" />
@@ -711,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486626719819</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="Updated player spritesheet">
+      <created>1486626794721</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1486626794721</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TodoView">
@@ -768,14 +770,14 @@
     <MESSAGE value="Improved crouching physics" />
     <MESSAGE value="Added to level 3" />
     <MESSAGE value="Updated player crouching" />
-    <MESSAGE value="Updated player spritesheet" />
     <MESSAGE value="Created new build" />
     <MESSAGE value="Removed old and unused files" />
     <MESSAGE value="Fixed a bug with crouching" />
     <MESSAGE value="Now loads crouching animation" />
     <MESSAGE value="Animation should now run" />
     <MESSAGE value="Fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
+    <MESSAGE value="Updated player spritesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated player spritesheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
