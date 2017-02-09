@@ -284,14 +284,16 @@ class Player(pygame.sprite.Sprite):
                         self.rect.x -= 24
 
     def stop_crouching(self):
-        if self.rect.height == 24:
-            self.crouching = False
-            self.rect.width = 24
-            self.rect.height = 48
-            self.rect.y -= 24
 
-            if self.direction == "L":
-                self.rect.x += 24
+        if self.can_stand():
+            if self.rect.height == 24:
+                self.crouching = False
+                self.rect.width = 24
+                self.rect.height = 48
+                self.rect.y -= 24
+
+                if self.direction == "L":
+                    self.rect.x += 24
 
     def at_wall(self, direction):
 
@@ -302,3 +304,12 @@ class Player(pygame.sprite.Sprite):
         self.rect.x -= 24 * direction
 
         return True if len(hit_list) else False
+
+    def can_stand(self):
+
+        # This checks if there is a roof directly above the player
+        self.rect.y -= 24
+        hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+        self.rect.y += 24
+
+        return False if len(hit_list) else True
