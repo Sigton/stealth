@@ -69,7 +69,7 @@ class Player(pygame.sprite.Sprite):
         self.crouching_frames_l = []
 
         self.crouching_frames_r.append(self.crouch_image_r)
-        image = spritesheet.get_image(96, 24, 48, 24)
+        image = sprite_sheet.get_image(96, 24, 48, 24)
         self.crouching_frames_r.append(image)
 
         # Flip them
@@ -137,7 +137,15 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
         self.rect.x += self.xv
 
-        if not self.crouching:
+        if self.crouching:
+            if self.xv == 0:
+                if self.direction == "R":
+                    frame = self.walk_dist // 10 % len(self.crouching_frames_r)
+                    self.image = self.crouching_frames_r[frame]
+                else:
+                    frame = self.walk_dist // 10 % len(self.crouching_frames_l)
+                    self.image = self.crouching_frames_l[frame]
+        else:
             if self.direction == "R":
                 frame = self.walk_dist // 10 % len(self.walking_frames_r)
                 self.image = self.walking_frames_r[frame]
