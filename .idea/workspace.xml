@@ -38,7 +38,7 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="544">
               <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -369,13 +369,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Fixed bug">
-      <created>1486419696251</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1486419696251</updated>
     </task>
     <task id="LOCAL-00176" summary="Fixed a bug">
       <created>1486451775572</created>
@@ -713,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486626794721</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="Updated level 3">
+      <created>1486627587906</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1486627587906</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="TodoView">
@@ -752,7 +752,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed another bug" />
     <MESSAGE value="Adjusted the level design" />
     <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Again more added to level 3" />
@@ -777,7 +776,8 @@
     <MESSAGE value="Animation should now run" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated player spritesheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated player spritesheet" />
+    <MESSAGE value="Updated level 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="544">
           <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
