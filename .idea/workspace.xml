@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Added loads to level 3">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" />
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
     </list>
@@ -370,13 +368,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00179" summary="Added framework for climbing ladders">
-      <created>1486452547130</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1486452547130</updated>
-    </task>
     <task id="LOCAL-00180" summary="Ladders can be climbed">
       <created>1486453579656</created>
       <option name="number" value="00180" />
@@ -713,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486628137822</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="Added loads to level 3">
+      <created>1486660703325</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1486660703325</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TodoView">
@@ -752,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Again more added to level 3" />
     <MESSAGE value="Added costume for crouching" />
     <MESSAGE value="Added framework for crouching" />
     <MESSAGE value="Added controls for crouching" />
@@ -777,7 +774,8 @@
     <MESSAGE value="Added more to level 3" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Player walks slower on ladders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player walks slower on ladders" />
+    <MESSAGE value="Added loads to level 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added loads to level 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
