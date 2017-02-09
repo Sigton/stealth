@@ -64,6 +64,19 @@ class Player(pygame.sprite.Sprite):
             image = pygame.transform.flip(frame, True, False)
             self.walking_frames_l.append(image)
 
+        # Get the crouching animation
+        self.crouching_frames_r = []
+        self.crouching_frames_l = []
+
+        self.crouching_frames_r.append(self.crouch_image_r)
+        image = spritesheet.get_image(96, 24, 48, 24)
+        self.crouching_frames_r.append(image)
+
+        # Flip them
+        for frame in self.crouching_frames_r:
+            image = pygame.transform.flip(frame, True, False)
+            self.crouching_frames_l.append(image)
+
         # Set the starting image
         self.image = self.stand_image_r
 
