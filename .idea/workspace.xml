@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/player.png" afterPath="$PROJECT_DIR$/source/resources/player.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -368,13 +368,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00173" summary="Added color code for ladders">
-      <created>1486417589337</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1486417589338</updated>
-    </task>
     <task id="LOCAL-00174" summary="Added ladder spritesheet data">
       <created>1486417693350</created>
       <option name="number" value="00174" />
@@ -711,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486625560042</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="Fixed bug">
+      <created>1486626719819</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1486626719819</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TodoView">
@@ -772,10 +772,10 @@
     <MESSAGE value="Created new build" />
     <MESSAGE value="Removed old and unused files" />
     <MESSAGE value="Fixed a bug with crouching" />
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Now loads crouching animation" />
     <MESSAGE value="Animation should now run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Animation should now run" />
+    <MESSAGE value="Fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
