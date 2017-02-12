@@ -471,6 +471,9 @@ class Level03(Level):
         tile_file = os.path.join("level_data", "layouts", "level3.png")
         type_file = os.path.join("level_data", "tile_types", "level3.png")
 
+        self.door_linkup = {0: 0,
+                            1: 0}
+
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
             level.write_data()
