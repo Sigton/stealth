@@ -124,3 +124,7 @@ class Crosshair(pygame.sprite.Sprite):
 
         self.rect.x = mouse_x - self.rect.width/2
         self.rect.y = mouse_y - self.rect.height/2
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
