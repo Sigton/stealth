@@ -4,7 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="484" column="31" lean-forward="true" selection-start-line="484" selection-start-column="31" selection-end-line="484" selection-end-column="31" />
+            <state relative-caret-position="850">
+              <caret line="499" column="57" lean-forward="false" selection-start-line="499" selection-start-column="57" selection-end-line="499" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -381,13 +380,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00193" summary="Added costume for crouching">
-      <created>1486496758759</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1486496758760</updated>
-    </task>
     <task id="LOCAL-00194" summary="Added costume for crouching">
       <created>1486497080443</created>
       <option name="number" value="00194" />
@@ -724,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486930100887</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="Started on the level text">
+      <created>1486930450060</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1486930450060</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TodoView">
@@ -763,7 +762,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improved crouching physics" />
     <MESSAGE value="Updated player crouching" />
     <MESSAGE value="Removed old and unused files" />
     <MESSAGE value="Fixed a bug with crouching" />
@@ -788,7 +786,8 @@
     <MESSAGE value="Added to level 3" />
     <MESSAGE value="Added door linkup" />
     <MESSAGE value="Updated things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated things" />
+    <MESSAGE value="Started on the level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started on the level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="484" column="31" lean-forward="true" selection-start-line="484" selection-start-column="31" selection-end-line="484" selection-end-column="31" />
+        <state relative-caret-position="850">
+          <caret line="499" column="57" lean-forward="false" selection-start-line="499" selection-start-column="57" selection-end-line="499" selection-end-column="57" />
           <folding />
         </state>
       </provider>
