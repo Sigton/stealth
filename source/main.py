@@ -7,6 +7,7 @@ import level
 import guards
 import torches
 import covers
+import entities
 from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
 
@@ -72,6 +73,8 @@ def main():
     # Create the blackout
     blackout = covers.Blackout()
     blackout.player = player
+
+    crosshair = entities.Crosshair()
 
     # Set the players position
     player.rect.x = 48
@@ -215,6 +218,7 @@ def main():
         if not pause:
             current_level.update()
         blackout.update()
+        crosshair.update()
 
         # Scrolling
         if player.rect.x >= 624:
@@ -245,6 +249,7 @@ def main():
         current_level.draw(game_display)
         active_sprite_list.draw(game_display)
         blackout.draw(game_display)
+        crosshair.draw(game_display)
 
         # Limit to 60 fps
         clock.tick(60)
