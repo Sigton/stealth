@@ -118,13 +118,19 @@ class Crosshair(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+        self.mouse_x = 0
+        self.mouse_y = 0
+
     def update(self):
 
-        mouse_x, mouse_y = pygame.mouse.get_pos()
+        self.mouse_x, self.mouse_y = pygame.mouse.get_pos()
 
-        self.rect.x = mouse_x - self.rect.width/2
-        self.rect.y = mouse_y - self.rect.height/2
+        self.rect.x = self.mouse_x - self.rect.width/2
+        self.rect.y = self.mouse_y - self.rect.height/2
 
     def draw(self, display):
 
-        display.blit(self.image, (self.rect.x, self.rect.y))
+        if self.mouse_x <= 6 or self.mouse_x >= 954 or self.mouse_y <= 6 or self.mouse_y >= 714:
+            display.blit(self.image, (-24, -24))
+        else:
+            display.blit(self.image, (self.rect.x, self.rect.y))
