@@ -2,8 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_multiprocessing.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_socket.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/email/architecture.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/main.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/_dummy.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/__multiarray_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/__ufunc_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/_neighborhood_iterator_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/_numpyconfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/arrayobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/arrayscalars.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/halffloat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/multiarray_api.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/ndarrayobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/ndarraytypes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/noprefix.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_1_7_deprecated_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_3kcompat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_common.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_cpu.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_endian.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_interrupt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_math.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_no_deprecated_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/npy_os.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/numpyconfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/old_defines.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/oldnumeric.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/ufunc_api.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/ufuncobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/include/numpy/utils.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/lib/npy-pkg-config/mlib.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/lib/npy-pkg-config/npymath.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/lib/npymath.lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/multiarray.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/multiarray_tests.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/numpy-atlas.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/operand_flag_tests.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/struct_ufunc_test.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/test_rational.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/tests/data/astype_copy.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/tests/data/recarray_from_file.fits" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/umath.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/core/umath_tests.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/distutils/mingw/gfortran_vs2003_hack.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/distutils/site.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/src/fortranobject.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/src/fortranobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/assumed_shape/foo_free.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/assumed_shape/foo_mod.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/assumed_shape/foo_use.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/assumed_shape/precision.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/kind/foo.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/mixed/foo.f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/mixed/foo_fixed.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/mixed/foo_free.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/regression/inout.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/f2py/tests/src/size/foo.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/fft/fftpack_lite.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/py2-objarr.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/py2-objarr.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/py3-objarr.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/py3-objarr.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/python3.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/lib/tests/data/win64python2.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/linalg/_umath_linalg.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/linalg/lapack_lite.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/random/mtrand.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/numpy/random/randomkit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/arms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/covers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/entities.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/guards.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/healthbar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/layouts/level9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level10.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level11.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level12.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level13.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level3.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level7.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/level9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/level_data/tile_types/level9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/leveltext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/platforms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/player.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/arms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/beep.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/blackout.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/bomb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/darkscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/guard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/healthbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/hguard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/hiss.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/icon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/keypad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/lights.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/loading_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/music2.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/orionpax.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/step.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/terrain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/resources/text/level9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/spritesheet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/terrain.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/source/torches.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +191,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+            <state relative-caret-position="731">
+              <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -170,6 +338,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,13 +547,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Updated level 3">
-      <created>1486488872990</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1486488872990</updated>
     </task>
     <task id="LOCAL-00186" summary="Updated level 3">
       <created>1486489082537</created>
@@ -709,7 +884,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486916916525</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="Fixed image">
+      <created>1486917029935</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1486917029935</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TodoView">
@@ -723,11 +905,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12170706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12170706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
@@ -740,7 +923,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -748,7 +930,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player now stops crouching correctly" />
     <MESSAGE value="Updated how the player stops crouching" />
     <MESSAGE value="Updated crouching" />
     <MESSAGE value="Added function for checking if the player is at a wall" />
@@ -773,7 +954,8 @@
     <MESSAGE value="Finished level 3 off" />
     <MESSAGE value="Added instance of crosshair" />
     <MESSAGE value="Added draw function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added draw function" />
+    <MESSAGE value="Fixed image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -953,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -996,8 +1170,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+        <state relative-caret-position="731">
+          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding />
         </state>
       </provider>
