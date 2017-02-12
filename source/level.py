@@ -486,6 +486,16 @@ class Level03(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the keypad
+        text = leveltext.LevelText("Watch out for the guards!", 110, 1075)
+        self.level_text.add(text)
+        text = leveltext.LevelText("They're searching with torches,", 110, 1100)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Make sure they don't catch you!", 110, 1125)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Try to find a way to get past the guard.", 110, 1150)
+        self.level_text.add(text)
+
         # Set start position
         self.start_x = 0
         self.start_y = 719
