@@ -102,3 +102,29 @@ class Bomb(pygame.sprite.Sprite):
             if not self.played_sound:
                 pygame.mixer.Sound.play(self.beep_sound)
                 self.played_sound = True
+
+
+class Crosshair(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        # Set the image
+        sprite_sheet = spritesheet.SpriteSheet("resources/crosshair.png")
+
+        self.image = sprite_sheet.get_image(0, 0, 24, 24)
+
+        self.rect = self.image.get_rect()
+
+    def update(self):
+
+        mouse_x, mouse_y = pygame.mouse.get_pos()
+
+        self.rect.x = mouse_x - self.rect.width/2
+        self.rect.y = mouse_y - self.rect.height/2
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))

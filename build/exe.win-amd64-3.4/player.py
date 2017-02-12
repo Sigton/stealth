@@ -64,6 +64,19 @@ class Player(pygame.sprite.Sprite):
             image = pygame.transform.flip(frame, True, False)
             self.walking_frames_l.append(image)
 
+        # Get the crouching animation
+        self.crouching_frames_r = []
+        self.crouching_frames_l = []
+
+        self.crouching_frames_r.append(self.crouch_image_r)
+        image = sprite_sheet.get_image(96, 24, 48, 24)
+        self.crouching_frames_r.append(image)
+
+        # Flip them
+        for frame in self.crouching_frames_r:
+            image = pygame.transform.flip(frame, True, False)
+            self.crouching_frames_l.append(image)
+
         # Set the starting image
         self.image = self.stand_image_r
 
@@ -124,7 +137,15 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
         self.rect.x += self.xv
 
-        if not self.crouching:
+        if self.crouching:
+            if self.xv != 0:
+                if self.direction == "R":
+                    frame = self.walk_dist // 10 % len(self.crouching_frames_r)
+                    self.image = self.crouching_frames_r[frame]
+                else:
+                    frame = self.walk_dist // 10 % len(self.crouching_frames_l)
+                    self.image = self.crouching_frames_l[frame]
+        else:
             if self.direction == "R":
                 frame = self.walk_dist // 10 % len(self.walking_frames_r)
                 self.image = self.walking_frames_r[frame]
@@ -190,13 +211,13 @@ class Player(pygame.sprite.Sprite):
     def walk_right(self):
 
         # Moves the player right
-        self.xv += self.speed / 1.5 if self.crouching else self.speed
+        self.xv += self.speed / 1.5 if self.crouching or self.climbing else self.speed
         self.direction = "R"
 
     def walk_left(self):
 
         # Moves the player left
-        self.xv -= self.speed / 2 if self.crouching else self.speed
+        self.xv -= self.speed / 2 if self.crouching or self.climbing else self.speed
         self.direction = "L"
 
     def jump(self):
@@ -241,6 +262,16 @@ class Player(pygame.sprite.Sprite):
 
         return True if len(ladder_hit_list) else False
 
+    def at_wall(self, direction):
+
+        # Checks if the player is at a wall
+
+        self.rect.x += 24 * direction
+        hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+        self.rect.x -= 24 * direction
+
+        return True if len(hit_list) else False
+
     def do_crouch(self):
 
         at_wall_l = False
@@ -255,24 +286,7 @@ class Player(pygame.sprite.Sprite):
             else:
                 at_wall_l = self.at_wall(-1)
 
-            if (not at_wall_l) and at_wall_r:
-                self.crouching = True
-
-                if self.rect.height == 48:
-                    self.rect.height = 24
-                    self.rect.width = 48
-                    self.rect.y += 24
-                    self.rect.x -= 24
-
-            elif (not at_wall_r) and at_wall_l:
-                self.crouching = True
-
-                if self.rect.height == 48:
-                    self.rect.height = 24
-                    self.rect.width = 48
-                    self.rect.y += 24
-
-            elif not (at_wall_l or at_wall_r):
+            if not(at_wall_l or at_wall_r):
                 self.crouching = True
 
                 if self.rect.height == 48:
@@ -284,21 +298,22 @@ class Player(pygame.sprite.Sprite):
                         self.rect.x -= 24
 
     def stop_crouching(self):
-        if self.rect.height == 24:
-            self.crouching = False
-            self.rect.width = 24
-            self.rect.height = 48
-            self.rect.y -= 24
 
-            if self.direction == "L":
-                self.rect.x += 24
+        if self.can_stand():
+            if self.rect.height == 24:
+                self.crouching = False
+                self.rect.width = 24
+                self.rect.height = 48
+                self.rect.y -= 24
 
-    def at_wall(self, direction):
+                if self.direction == "L":
+                    self.rect.x += 24
 
-        # Checks if the player is at a wall
+    def can_stand(self):
 
-        self.rect.x += 24 * direction
+        # This checks if there is a roof directly above the player
+        self.rect.y -= 24
         hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
-        self.rect.x -= 24 * direction
+        self.rect.y += 24
 
-        return True if len(hit_list) else False
+        return False if len(hit_list) else True
