@@ -278,7 +278,7 @@ class Player(pygame.sprite.Sprite):
         at_wall_r = False
 
         # Function to make the player crouch
-        if self.on_ground():
+        if self.on_ground() and not self.climbing:
 
             # Check the player isn't at a wall
             if self.direction == "R":
