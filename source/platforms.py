@@ -48,10 +48,10 @@ class Platform(pygame.sprite.Sprite):
 
         sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
 
-        self.image = sprite_sheet.get_image_srcalpha(sprite_sheet_data[0],
-                                                     sprite_sheet_data[1],
-                                                     sprite_sheet_data[2],
-                                                     sprite_sheet_data[3])
+        self.image = sprite_sheet.get_image(sprite_sheet_data[0],
+                                            sprite_sheet_data[1],
+                                            sprite_sheet_data[2],
+                                            sprite_sheet_data[3])
 
         self.rect = self.image.get_rect()
 
@@ -71,10 +71,10 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         # And add it to the list of frames
 
         for sprite in sprite_sheet_data:
-            new_image = self.sprite_sheet.get_image_srcalpha(sprite[0],
-                                                             sprite[1],
-                                                             sprite[2],
-                                                             sprite[3])
+            new_image = self.sprite_sheet.get_image(sprite[0],
+                                                    sprite[1],
+                                                    sprite[2],
+                                                    sprite[3])
             self.images.append(new_image)
 
         self.image = self.images[0]
