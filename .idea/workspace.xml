@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/crosshair.png" afterPath="$PROJECT_DIR$/source/resources/crosshair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_multiprocessing.pyd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/logos.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_powered.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_tiny.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/ref/docscomments.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -187,6 +191,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exe.win-amd64-3.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exe.win-amd64-3.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pygame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,13 +412,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00210" summary="Updated player.py">
-      <created>1486574061349</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1486574061349</updated>
     </task>
     <task id="LOCAL-00211" summary="Improved crouching physics">
       <created>1486574529995</created>
@@ -726,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486990613818</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="Fixed bug with scrolling by capping player yv">
+      <created>1486991299452</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1486991299452</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TodoView">
@@ -740,9 +770,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
@@ -765,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added draw function" />
     <MESSAGE value="Fixed image" />
     <MESSAGE value="Deleted bunch of unused files" />
     <MESSAGE value="Created new build" />
@@ -790,7 +819,8 @@
     <MESSAGE value="Finished lag reduction for now" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed problem with crosshair image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed problem with crosshair image" />
+    <MESSAGE value="Fixed bug with scrolling by capping player yv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with scrolling by capping player yv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
