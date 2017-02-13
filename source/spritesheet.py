@@ -22,6 +22,9 @@ class SpriteSheet(object):
         # Set white to transparent
         image.set_colorkey(constants.WHITE)
 
+        # Return the image
+        return image
+
     def get_image_srcalpha(self, x, y, width, height):
 
         # Create a new blank image
