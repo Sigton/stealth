@@ -10,7 +10,7 @@ class SpriteSheet(object):
         # Load the sprite sheet
         self.sprite_sheet = pygame.image.load(filename).convert_alpha()
 
-    def get_image(self, x, y, width, height):
+    def get_image_srcalpha(self, x, y, width, height):
 
         # Create a new blank image
         image = pygame.Surface([width, height], flags=pygame.SRCALPHA)

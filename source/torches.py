@@ -16,8 +16,8 @@ class Torch(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/light.png")
-        self.image_r = self.sprite_sheet.get_image(0, 0, 160, 94)
-        self.image_l = self.sprite_sheet.get_image(0, 94, 160, 94)
+        self.image_r = self.sprite_sheet.get_image_srcalpha(0, 0, 160, 94)
+        self.image_l = self.sprite_sheet.get_image_srcalpha(0, 94, 160, 94)
 
         self.image = self.image_r
 

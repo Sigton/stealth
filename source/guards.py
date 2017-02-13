@@ -30,7 +30,7 @@ class Guard(pygame.sprite.Sprite):
         self.sprite_sheet = spritesheet.SpriteSheet("resources/guard.png")
 
         # Get the standing images
-        self.stand_image_r = self.sprite_sheet.get_image(0, 0, 24, 48)
+        self.stand_image_r = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
         self.stand_image_l = pygame.transform.flip(self.stand_image_r, True, False)
 
         # Arrays for animation
@@ -38,16 +38,16 @@ class Guard(pygame.sprite.Sprite):
         self.walking_frames_l = []
 
         # Load the images
-        image = self.sprite_sheet.get_image(0, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
         self.walking_frames_r.append(image)
 
-        image = self.sprite_sheet.get_image(24, 0, 25, 48)
+        image = self.sprite_sheet.get_image_srcalpha(24, 0, 25, 48)
         self.walking_frames_r.append(image)
 
-        image = self.sprite_sheet.get_image(48, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(48, 0, 24, 48)
         self.walking_frames_r.append(image)
 
-        image = self.sprite_sheet.get_image(72, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(72, 0, 24, 48)
         self.walking_frames_r.append(image)
 
         # Flip them
@@ -168,19 +168,19 @@ class HostileGuard(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
 
-        self.stand_img_r = self.sprite_sheet.get_image(0, 0, 24, 48)
+        self.stand_img_r = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
         self.stand_img_l = pygame.transform.flip(self.stand_img_r, True, False)
 
         self.walking_frames_r = []
         self.walking_frames_l = []
 
-        image = self.sprite_sheet.get_image(0, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
         self.walking_frames_r.append(image)
-        image = self.sprite_sheet.get_image(24, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(24, 0, 24, 48)
         self.walking_frames_r.append(image)
-        image = self.sprite_sheet.get_image(48, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(48, 0, 24, 48)
         self.walking_frames_r.append(image)
-        image = self.sprite_sheet.get_image(72, 0, 24, 48)
+        image = self.sprite_sheet.get_image_srcalpha(72, 0, 24, 48)
         self.walking_frames_r.append(image)
 
         for frame in self.walking_frames_r:

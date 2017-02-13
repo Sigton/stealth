@@ -16,7 +16,7 @@ class Door(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
 
-        self.image = self.sprite_sheet.get_image(96, 48, 24, 24)
+        self.image = self.sprite_sheet.get_image_srcalpha(96, 48, 24, 24)
         self.rect = self.image.get_rect()
 
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
@@ -45,8 +45,8 @@ class Keypad(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/keypad.png")
 
-        self.image_off = self.sprite_sheet.get_image(0, 0, 12, 14)
-        self.image_on = self.sprite_sheet.get_image(12, 0, 12, 14)
+        self.image_off = self.sprite_sheet.get_image_srcalpha(0, 0, 12, 14)
+        self.image_on = self.sprite_sheet.get_image_srcalpha(12, 0, 12, 14)
 
         self.image = self.image_off
 
@@ -80,8 +80,8 @@ class Bomb(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
 
-        self.image_off = self.sprite_sheet.get_image(0, 0, 24, 24)
-        self.image_on = self.sprite_sheet.get_image(24, 0, 24, 24)
+        self.image_off = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 24)
+        self.image_on = self.sprite_sheet.get_image_srcalpha(24, 0, 24, 24)
 
         self.image = self.image_off
 
@@ -114,7 +114,7 @@ class Crosshair(pygame.sprite.Sprite):
         # Set the image
         sprite_sheet = spritesheet.SpriteSheet("resources/crosshair.png")
 
-        self.image = sprite_sheet.get_image(0, 0, 24, 24)
+        self.image = sprite_sheet.get_image_srcalpha(0, 0, 24, 24)
 
         self.rect = self.image.get_rect()
 
