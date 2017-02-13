@@ -17,8 +17,8 @@ class Arm(pygame.sprite.Sprite):
         # Load the image
         self.sprite_sheet = spritesheet.SpriteSheet("resources/arms.png")
 
-        self.arm_right = self.sprite_sheet.get_image_srcalpha(0, 0, 28, 12)
-        self.arm_left = self.sprite_sheet.get_image_srcalpha(0, 12, 28, 12)
+        self.arm_right = self.sprite_sheet.get_image(0, 0, 28, 12)
+        self.arm_left = self.sprite_sheet.get_image(0, 12, 28, 12)
 
         self.image = self.arm_right
 
