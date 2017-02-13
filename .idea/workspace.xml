@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_multiprocessing.pyd" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/logos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_powered.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_small.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_tiny.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/ref/docscomments.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/install.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/readme.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sgml_input.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_difflib_expect.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,7 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pygame" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,13 +409,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00211" summary="Improved crouching physics">
-      <created>1486574529995</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1486574529995</updated>
     </task>
     <task id="LOCAL-00212" summary="Added to level 3">
       <created>1486575403759</created>
@@ -756,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486991299452</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="Removed unnecessary files">
+      <created>1486991498289</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1486991498289</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TodoView">
@@ -795,7 +792,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed image" />
     <MESSAGE value="Deleted bunch of unused files" />
     <MESSAGE value="Created new build" />
     <MESSAGE value="Updated crosshair class" />
@@ -820,7 +816,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed problem with crosshair image" />
     <MESSAGE value="Fixed bug with scrolling by capping player yv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with scrolling by capping player yv" />
+    <MESSAGE value="Removed unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
