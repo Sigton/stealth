@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/crosshair.png" afterPath="$PROJECT_DIR$/source/resources/crosshair.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/bomb.png" afterPath="$PROJECT_DIR$/source/resources/bomb.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
     </list>
@@ -37,8 +37,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="135" column="64" lean-forward="true" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
+            <state relative-caret-position="391">
+              <caret line="83" column="51" lean-forward="false" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -381,13 +381,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00203" summary="Fixed bug">
-      <created>1486500813979</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1486500813980</updated>
-    </task>
     <task id="LOCAL-00204" summary="Created new build">
       <created>1486500901775</created>
       <option name="number" value="00204" />
@@ -724,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486989522673</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="Updated entities">
+      <created>1486990028098</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1486990028098</updated>
+    </task>
+    <option name="localTasksCounter" value="253" />
     <servers />
   </component>
   <component name="TodoView">
@@ -763,7 +763,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player walks slower on ladders" />
     <MESSAGE value="Added loads to level 3" />
     <MESSAGE value="Made level 3 a little easier" />
     <MESSAGE value="Made level 3 easier" />
@@ -788,7 +787,8 @@
     <MESSAGE value="Forgot to return the image" />
     <MESSAGE value="Player images now use colorkey for transparency" />
     <MESSAGE value="Guards now use colorkey for transparency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guards now use colorkey for transparency" />
+    <MESSAGE value="Updated entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="135" column="64" lean-forward="true" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
+        <state relative-caret-position="391">
+          <caret line="83" column="51" lean-forward="false" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
           <folding />
         </state>
       </provider>

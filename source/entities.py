@@ -80,8 +80,8 @@ class Bomb(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
 
-        self.image_off = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 24)
-        self.image_on = self.sprite_sheet.get_image_srcalpha(24, 0, 24, 24)
+        self.image_off = self.sprite_sheet.get_image(0, 0, 24, 24)
+        self.image_on = self.sprite_sheet.get_image(24, 0, 24, 24)
 
         self.image = self.image_off
 
