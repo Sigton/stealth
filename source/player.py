@@ -122,6 +122,9 @@ class Player(pygame.sprite.Sprite):
         else:
             self.yv += self.gravity
 
+            if self.yv >= 15:
+                self.yv = 15
+
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
             self.yv = 0
             self.rect.y = constants.SCREEN_HEIGHT - self.rect.height
