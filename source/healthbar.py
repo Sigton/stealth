@@ -42,7 +42,7 @@ class HealthBar(pygame.sprite.Sprite):
         image = self.sprite_sheet.get_image(32, 32, 32, 16)
         self.images.append(image)
 
-        image = self.sprite_sheet.get_imagea(32, 48, 32, 16)
+        image = self.sprite_sheet.get_image(32, 48, 32, 16)
         self.images.append(image)
 
         image = self.sprite_sheet.get_image(32, 64, 32, 16)
