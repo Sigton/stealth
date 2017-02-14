@@ -523,6 +523,8 @@ class Level03(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Good job!", 200, 200)
         self.level_text.add(text)
+        text = leveltext.LevelText("Watch out here...", 1275, 425)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0
