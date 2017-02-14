@@ -312,20 +312,20 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 29:
+                if tile_data['tile'] == 32:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 28:
+                elif tile_data['tile'] == 31:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 26:
+                elif tile_data['tile'] == 29:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 30:
+                elif tile_data['tile'] == 33:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 31:
+                elif tile_data['tile'] == 34:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
@@ -531,5 +531,38 @@ class Level03(Level):
         self.start_y = 719
 
         # Scroll to start position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
+
+
+class Level04(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+        self.save_file = os.path.join("level_data", "level4.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level4.png")
+        self.type_file = os.path.join("level_data", "tile_types", "level4.png")
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file)
+
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Render it
+        self.render(level_data)
+
+        # Set the start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to the starting position
         self.reset_world()
         self.shift_world(self.start_x, self.start_y)
