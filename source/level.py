@@ -501,6 +501,12 @@ class Level03(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Here's another guard.", 500, 900)
         self.level_text.add(text)
+        text = leveltext.LevelText("Let go to slide down ladders.", 800, 800)
+        self.level_text.add(text)
+        text = leveltext.LevelText("These are tricky jumps!", 1120, 1355)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Try get over this guard", 1570, 1250)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0
