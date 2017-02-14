@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="524" column="33" lean-forward="true" selection-start-line="524" selection-start-column="33" selection-end-line="524" selection-end-column="33" />
+            <state relative-caret-position="204">
+              <caret line="495" column="89" lean-forward="true" selection-start-line="495" selection-start-column="89" selection-end-line="495" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -366,13 +365,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00217" summary="Removed old and unused files">
-      <created>1486591831054</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1486591831055</updated>
     </task>
     <task id="LOCAL-00218" summary="Fixed a bug with crouching">
       <created>1486624514671</created>
@@ -710,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487072220270</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="Added a text for the level">
+      <created>1487091396271</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1487091396271</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TodoView">
@@ -749,7 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added to level 3" />
     <MESSAGE value="Added door linkup" />
     <MESSAGE value="Updated things" />
     <MESSAGE value="Started on the level text" />
@@ -774,7 +772,8 @@
     <MESSAGE value="Added even more level text" />
     <MESSAGE value="Fixed render order" />
     <MESSAGE value="Added more level text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
+    <MESSAGE value="Added a text for the level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a text for the level" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -993,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="524" column="33" lean-forward="true" selection-start-line="524" selection-start-column="33" selection-end-line="524" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="495" column="89" lean-forward="true" selection-start-line="495" selection-start-column="89" selection-end-line="495" selection-end-column="89" />
           <folding />
         </state>
       </provider>
