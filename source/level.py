@@ -486,7 +486,7 @@ class Level03(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
-        # Add the keypad
+        # Add the level text
         text = leveltext.LevelText("Watch out for the guards!", 110, 1075)
         self.level_text.add(text)
         text = leveltext.LevelText("They're searching with torches,", 110, 1100)
@@ -505,7 +505,21 @@ class Level03(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("These are tricky jumps!", 1120, 1355)
         self.level_text.add(text)
-        text = leveltext.LevelText("Try get over this guard", 1570, 1250)
+        text = leveltext.LevelText("Try get over this guard.", 1570, 1250)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Press your crouch key", 1635, 1060)
+        self.level_text.add(text)
+        text = leveltext.LevelText("to slide through", 1635, 1085)
+        self.level_text.add(text)
+        text = leveltext.LevelText("tight spaces.", 1635, 1110)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Jump onto", 1200, 875)
+        self.level_text.add(text)
+        text = leveltext.LevelText("the ladders.", 1200, 900)
+        self.level_text.add(text)
+        text = leveltext.LevelText("You can also crouch", 800, 300)
+        self.level_text.add(text)
+        text = leveltext.LevelText("under torches!", 800, 325)
         self.level_text.add(text)
 
         # Set start position
