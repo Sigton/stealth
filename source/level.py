@@ -228,7 +228,7 @@ class Level:
         platform.rect.y = y
 
         # Create a hitmask for collisions
-        platform.hitmask = funcs.create_mask()
+        platform.hitmask = funcs.create_mask(platform.image)
 
         # Trim to the height of the image
 
