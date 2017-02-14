@@ -45,8 +45,8 @@ class Keypad(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/keypad.png")
 
-        self.image_off = self.sprite_sheet.get_image_srcalpha(0, 0, 12, 14)
-        self.image_on = self.sprite_sheet.get_image_srcalpha(12, 0, 12, 14)
+        self.image_off = self.sprite_sheet.get_image(0, 0, 12, 14)
+        self.image_on = self.sprite_sheet.get_image(12, 0, 12, 14)
 
         self.image = self.image_off
 
@@ -80,8 +80,8 @@ class Bomb(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
 
-        self.image_off = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 24)
-        self.image_on = self.sprite_sheet.get_image_srcalpha(24, 0, 24, 24)
+        self.image_off = self.sprite_sheet.get_image(0, 0, 24, 24)
+        self.image_on = self.sprite_sheet.get_image(24, 0, 24, 24)
 
         self.image = self.image_off
 
@@ -114,17 +114,23 @@ class Crosshair(pygame.sprite.Sprite):
         # Set the image
         sprite_sheet = spritesheet.SpriteSheet("resources/crosshair.png")
 
-        self.image = sprite_sheet.get_image_srcalpha(0, 0, 24, 24)
+        self.image = sprite_sheet.get_image(0, 0, 24, 24)
 
         self.rect = self.image.get_rect()
 
+        self.mouse_x = 0
+        self.mouse_y = 0
+
     def update(self):
 
-        mouse_x, mouse_y = pygame.mouse.get_pos()
+        self.mouse_x, self.mouse_y = pygame.mouse.get_pos()
 
-        self.rect.x = mouse_x - self.rect.width/2
-        self.rect.y = mouse_y - self.rect.height/2
+        self.rect.x = self.mouse_x - self.rect.width/2
+        self.rect.y = self.mouse_y - self.rect.height/2
 
     def draw(self, display):
 
-        display.blit(self.image, (self.rect.x, self.rect.y))
+        if self.mouse_x <= 6 or self.mouse_x >= 954 or self.mouse_y <= 6 or self.mouse_y >= 714:
+            display.blit(self.image, (-24, -24))
+        else:
+            display.blit(self.image, (self.rect.x, self.rect.y))

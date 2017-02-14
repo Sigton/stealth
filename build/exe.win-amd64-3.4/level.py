@@ -83,11 +83,11 @@ class Level:
         self.cosmetic_list.draw(display)
         self.obstacle_list.draw(display)
         self.ladders.draw(display)
+        self.level_text.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
         self.entities.draw(display)
-        self.level_text.draw(display)
 
     def shift_world(self, shift_x, shift_y):
 
@@ -312,17 +312,17 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 28:
+                if tile_data['tile'] == 29:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 27:
+                elif tile_data['tile'] == 28:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
                 elif tile_data['tile'] == 26:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 29:
+                elif tile_data['tile'] == 30:
                     self.create_bomb(position[0]*24, position[1]*24)
 
                 elif tile_data['tile'] == 31:
@@ -471,6 +471,9 @@ class Level03(Level):
         tile_file = os.path.join("level_data", "layouts", "level3.png")
         type_file = os.path.join("level_data", "tile_types", "level3.png")
 
+        self.door_linkup = {0: 0,
+                            1: 0}
+
         level = terrain.LevelData(save_file, tile_file, type_file)
         if write_data:
             level.write_data()
@@ -480,6 +483,48 @@ class Level03(Level):
 
         # Then render
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
+
+        # Add the level text
+        text = leveltext.LevelText("Watch out for the guards!", 110, 1075)
+        self.level_text.add(text)
+        text = leveltext.LevelText("They're searching with torches,", 110, 1100)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Make sure they don't catch you!", 110, 1125)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Try to find a way to get past the guard.", 110, 1150)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Press the jump key", 700, 1300)
+        self.level_text.add(text)
+        text = leveltext.LevelText("to climb ladders!", 700, 1325)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Here's another guard.", 500, 900)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Let go to slide down ladders.", 800, 800)
+        self.level_text.add(text)
+        text = leveltext.LevelText("These are tricky jumps!", 1120, 1355)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Try get over this guard.", 1570, 1250)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Press your crouch key", 1635, 1060)
+        self.level_text.add(text)
+        text = leveltext.LevelText("to slide through", 1635, 1085)
+        self.level_text.add(text)
+        text = leveltext.LevelText("tight spaces.", 1635, 1110)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Jump onto", 1200, 875)
+        self.level_text.add(text)
+        text = leveltext.LevelText("the ladders.", 1200, 900)
+        self.level_text.add(text)
+        text = leveltext.LevelText("You can also crouch", 920, 350)
+        self.level_text.add(text)
+        text = leveltext.LevelText("under torches!", 920, 375)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Good job!", 200, 200)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Watch out here...", 1275, 425)
+        self.level_text.add(text)
 
         # Set start position
         self.start_x = 0

@@ -35,11 +35,11 @@ class Player(pygame.sprite.Sprite):
         sprite_sheet = spritesheet.SpriteSheet("resources/player.png")
 
         # Get the standing image
-        self.stand_image_r = sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
+        self.stand_image_r = sprite_sheet.get_image(0, 0, 24, 48)
         self.stand_image_l = pygame.transform.flip(self.stand_image_r, True, False)
 
         # Get the crouching image
-        self.crouch_image_r = sprite_sheet.get_image_srcalpha(96, 0, 48, 24)
+        self.crouch_image_r = sprite_sheet.get_image(96, 0, 48, 24)
         self.crouch_image_l = pygame.transform.flip(self.crouch_image_r, True, False)
 
         # Arrays for animation
@@ -47,16 +47,16 @@ class Player(pygame.sprite.Sprite):
         self.walking_frames_l = []
 
         # Load the images
-        image = sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
+        image = sprite_sheet.get_image(0, 0, 24, 48)
         self.walking_frames_r.append(image)
 
-        image = sprite_sheet.get_image_srcalpha(24, 0, 24, 48)
+        image = sprite_sheet.get_image(24, 0, 24, 48)
         self.walking_frames_r.append(image)
 
-        image = sprite_sheet.get_image_srcalpha(48, 0, 24, 48)
+        image = sprite_sheet.get_image(48, 0, 24, 48)
         self.walking_frames_r.append(image)
 
-        image = sprite_sheet.get_image_srcalpha(72, 0, 24, 48)
+        image = sprite_sheet.get_image(72, 0, 24, 48)
         self.walking_frames_r.append(image)
 
         # Flip them to the left
@@ -69,7 +69,7 @@ class Player(pygame.sprite.Sprite):
         self.crouching_frames_l = []
 
         self.crouching_frames_r.append(self.crouch_image_r)
-        image = sprite_sheet.get_image_srcalpha(96, 24, 48, 24)
+        image = sprite_sheet.get_image(96, 24, 48, 24)
         self.crouching_frames_r.append(image)
 
         # Flip them
@@ -121,6 +121,9 @@ class Player(pygame.sprite.Sprite):
             self.yv = self.climb_speed
         else:
             self.yv += self.gravity
+
+            if self.yv >= 15:
+                self.yv = 15
 
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
             self.yv = 0
@@ -278,7 +281,7 @@ class Player(pygame.sprite.Sprite):
         at_wall_r = False
 
         # Function to make the player crouch
-        if self.on_ground():
+        if self.on_ground() and not self.climbing:
 
             # Check the player isn't at a wall
             if self.direction == "R":
