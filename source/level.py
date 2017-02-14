@@ -24,6 +24,7 @@ class Level:
     entities = None
     level_text = None
     ladders = None
+    pixel_perfect_collisions = None
 
     player = None
 
@@ -53,6 +54,7 @@ class Level:
         self.entities = pygame.sprite.Group()
         self.level_text = pygame.sprite.Group()
         self.ladders = pygame.sprite.Group()
+        self.pixel_perfect_collisions = pygame.sprite.Group()
 
         self.player = player
 
@@ -63,6 +65,7 @@ class Level:
 
         # Update everything in the level
         self.platform_list.update()
+        self.pixel_perfect_collisions.update()
         self.cosmetic_list.update()
         self.obstacle_list.update()
         self.ladders.update()
@@ -80,6 +83,7 @@ class Level:
 
         # Draw the sprite lists
         self.platform_list.draw(display)
+        self.pixel_perfect_collisions.draw(display)
         self.cosmetic_list.draw(display)
         self.obstacle_list.draw(display)
         self.ladders.draw(display)
@@ -107,6 +111,8 @@ class Level:
         if not self.at_edge_x:
             # Move everything in the level
             for platform in self.platform_list:
+                platform.rect.x += shift_x
+            for platform in self.pixel_perfect_collisions:
                 platform.rect.x += shift_x
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.x += shift_x
@@ -140,6 +146,8 @@ class Level:
             # Move everything in the level
             for platform in self.platform_list:
                 platform.rect.y -= shift_y
+            for platform in self.pixel_perfect_collisions:
+                platform.rect.y -= shift_y
             for cosmetic in self.cosmetic_list:
                 cosmetic.rect.y -= shift_y
             for obstacle in self.obstacle_list:
@@ -161,6 +169,10 @@ class Level:
 
         # Moves platforms back to their original position
         for platform in self.platform_list:
+            platform.rect.x -= self.world_shift_x
+            platform.rect.y += self.world_shift_y
+
+        for platform in self.pixel_perfect_collisions:
             platform.rect.x -= self.world_shift_x
             platform.rect.y += self.world_shift_y
 
@@ -208,6 +220,12 @@ class Level:
         platform.rect.x = x
         platform.rect.y = y
         self.platform_list.add(platform)
+
+    def create_pixel_perfect(self, tile, x, y):
+        platform = platforms.Platform(tile)
+        platform.rect.x = x
+        platform.rect.y = y
+        self.pixel_perfect_collisions.add(platform)
 
     def create_cosmetic(self, tile, x, y):
         platform = platforms.Platform(tile)
