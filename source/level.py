@@ -517,9 +517,9 @@ class Level03(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("the ladders.", 1200, 900)
         self.level_text.add(text)
-        text = leveltext.LevelText("You can also crouch", 800, 300)
+        text = leveltext.LevelText("You can also crouch", 920, 350)
         self.level_text.add(text)
-        text = leveltext.LevelText("under torches!", 800, 325)
+        text = leveltext.LevelText("under torches!", 920, 375)
         self.level_text.add(text)
 
         # Set start position
