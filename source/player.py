@@ -174,18 +174,6 @@ class Player(pygame.sprite.Sprite):
                 self.rect.left = block.rect.right
             self.walk_dist = 0
 
-        # Collisions with platforms that require pixel perfect
-        block_hit_list = pygame.sprite.spritecollide(self, self.level.pixel_perfect_collisions, False)
-        for block in block_hit_list:
-
-            # Check if masks overlap
-            if funcs.pixel_perfect_collision(self, block):
-
-                if self.direction == "L":
-                    self.rect.x = block.rect.x + len(block.trimmed_hitmask[0])
-                else:
-                    self.rect.x = block.rect.x
-
         # So the player can't walk off the left side of the screen
         if self.rect.x <= 0:
             self.rect.x = 0
