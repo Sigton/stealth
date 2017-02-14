@@ -83,11 +83,11 @@ class Level:
         self.cosmetic_list.draw(display)
         self.obstacle_list.draw(display)
         self.ladders.draw(display)
+        self.level_text.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
         self.entities.draw(display)
-        self.level_text.draw(display)
 
     def shift_world(self, shift_x, shift_y):
 
