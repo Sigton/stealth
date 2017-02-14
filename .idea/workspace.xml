@@ -34,8 +34,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="227" column="50" lean-forward="false" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+            <state relative-caret-position="51">
+              <caret line="327" column="39" lean-forward="true" selection-start-line="327" selection-start-column="39" selection-end-line="327" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -388,13 +388,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00228" summary="Added loads to level 3">
-      <created>1486660703325</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1486660703325</updated>
-    </task>
     <task id="LOCAL-00229" summary="Made level 3 a little easier">
       <created>1486661410984</created>
       <option name="number" value="00229" />
@@ -731,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487102996016</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="Added group for pixel perfect collisions">
+      <created>1487103333108</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1487103333108</updated>
+    </task>
+    <option name="localTasksCounter" value="278" />
     <servers />
   </component>
   <component name="TodoView">
@@ -770,7 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player images now use colorkey for transparency" />
     <MESSAGE value="Guards now use colorkey for transparency" />
     <MESSAGE value="Updated entities" />
     <MESSAGE value="Updated health bar" />
@@ -795,7 +794,8 @@
     <MESSAGE value="Updated level 4" />
     <MESSAGE value="Added vent shaft roof and floor" />
     <MESSAGE value="Added vent shaft center" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added vent shaft center" />
+    <MESSAGE value="Added group for pixel perfect collisions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added group for pixel perfect collisions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="227" column="50" lean-forward="false" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+        <state relative-caret-position="51">
+          <caret line="327" column="39" lean-forward="true" selection-start-line="327" selection-start-column="39" selection-end-line="327" selection-end-column="39" />
           <folding />
         </state>
       </provider>
