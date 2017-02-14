@@ -7,6 +7,7 @@ import healthbar
 import leveltext
 import constants
 import terrain
+import funcs
 import os
 
 
@@ -221,10 +222,24 @@ class Level:
         platform.rect.y = y
         self.platform_list.add(platform)
 
-    def create_pixel_perfect(self, tile, x, y):
+    def create_shaft_wall(self, tile, x, y):
         platform = platforms.Platform(tile)
         platform.rect.x = x
         platform.rect.y = y
+
+        # Create a hitmask for collisions
+        platform.hitmask = funcs.create_mask()
+
+        # Trim to the height of the image
+
+        # Check if its a roof or floor
+        if platform.hitmask[0][0] == 1:
+            # Floor
+            platform.trimmed_mask = platform.hitmask[:3]
+        else:
+            # Roof
+            platform.trimmed_mask = platform.hitmask[-3:]
+
         self.pixel_perfect_collisions.add(platform)
 
     def create_cosmetic(self, tile, x, y):
@@ -348,7 +363,7 @@ class Level:
 
             elif tile_data['type'] == "Solid":
                 if tile_data['tile'] == 26 or tile_data['tile'] == 27:
-                    self.create_pixel_perfect(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_shaft_wall(platforms.platforms[tile_data['tile'] - 1], position[0] * 24, position[1] * 24)
                 else:
                     self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
