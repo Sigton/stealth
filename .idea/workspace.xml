@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level3.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level3.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/bomb.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/bomb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/guard.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/guard.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/healthbar.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/healthbar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/hguard.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/hguard.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/player.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/player.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/arms.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/arms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/entities.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/entities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/guards.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/guards.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/healthbar.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/healthbar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/spritesheet.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/spritesheet.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +22,18 @@
     <favorites_list name="Stealth" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/level.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="568" column="0" lean-forward="true" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,8 +110,8 @@
         <option value="$PROJECT_DIR$/source/arms.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -362,13 +356,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00220" summary="Now loads crouching animation">
-      <created>1486625246234</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1486625246234</updated>
     </task>
     <task id="LOCAL-00221" summary="Animation should now run">
       <created>1486625560042</created>
@@ -706,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487092190559</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="Created new build">
+      <created>1487100152285</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1487100152285</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TodoView">
@@ -720,7 +714,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -745,7 +739,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started on the level text" />
     <MESSAGE value="More level text and fixed exploit" />
     <MESSAGE value="Renamed function" />
     <MESSAGE value="Added a new get_image function" />
@@ -770,7 +763,8 @@
     <MESSAGE value="Added a text for the level" />
     <MESSAGE value="Fixed crosshair image" />
     <MESSAGE value="Finally completely absolutely finished level 3!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally completely absolutely finished level 3!" />
+    <MESSAGE value="Created new build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,21 +971,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="526" column="33" lean-forward="true" selection-start-line="526" selection-start-column="33" selection-end-line="526" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="568" column="0" lean-forward="true" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
