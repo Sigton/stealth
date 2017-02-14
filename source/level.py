@@ -312,20 +312,20 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 29:
+                if tile_data['tile'] == 31:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 28:
+                elif tile_data['tile'] == 30:
                     self.door_no += 1
                     self.create_door(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 26:
+                elif tile_data['tile'] == 28:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 30:
+                elif tile_data['tile'] == 32:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 31:
+                elif tile_data['tile'] == 33:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
