@@ -84,7 +84,10 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
         # Create a hitmask
-        self.hitmask = funcs.create_mask(self.image)
+        self.hitmask_stand = funcs.create_mask(self.stand_image_r)
+        self.hitmask_crouch = funcs.create_mask(self.crouch_image_r)
+
+        self.hitmask = self.hitmask_stand
 
         self.footstep = pygame.mixer.Sound("resources/step.wav")
         self.footstep.set_volume(0.5)
@@ -300,6 +303,8 @@ class Player(pygame.sprite.Sprite):
                     if self.direction == "L":
                         self.rect.x -= 24
 
+                    self.hitmask = self.hitmask_crouch
+
     def stop_crouching(self):
 
         if self.can_stand():
@@ -311,6 +316,8 @@ class Player(pygame.sprite.Sprite):
 
                 if self.direction == "L":
                     self.rect.x += 24
+
+                self.hitmask = self.hitmask_stand
 
     def can_stand(self):
 

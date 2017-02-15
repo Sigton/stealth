@@ -1075,7 +1075,8 @@
       47
     ],
     {
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
@@ -1674,7 +1675,8 @@
       47
     ],
     {
-      "tile": 17
+      "tile": 17,
+      "type": "Cosmetic"
     }
   ],
   [
