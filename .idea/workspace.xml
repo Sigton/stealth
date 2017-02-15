@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -379,13 +382,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00236" summary="Created new build">
-      <created>1486917729062</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1486917729062</updated>
-    </task>
     <task id="LOCAL-00237" summary="Updated crosshair class">
       <created>1486920427416</created>
       <option name="number" value="00237" />
@@ -722,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487153681603</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="Added to level 4">
+      <created>1487153859584</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1487153859584</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TodoView">
@@ -761,7 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug with scrolling by capping player yv" />
     <MESSAGE value="Removed unnecessary files" />
     <MESSAGE value="Removed more files" />
     <MESSAGE value="Added loads of level text" />
@@ -786,7 +788,8 @@
     <MESSAGE value="Created new build&#10;" />
     <MESSAGE value=" Created new build with the bug fixed" />
     <MESSAGE value="Fixed collision with ventilation shafts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed collision with ventilation shafts" />
+    <MESSAGE value="Added to level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
