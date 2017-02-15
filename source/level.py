@@ -360,6 +360,9 @@ class Level01(Level):
         tile_file = os.path.join("level_data", "layouts", "level1")
         type_file = os.path.join("level_data", "tile_types", "level1")
 
+        # How many layers the level has
+        self.layer_range = 2
+
         level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
             level.write_data()
@@ -403,6 +406,9 @@ class Level02(Level):
         save_file = os.path.join("level_data", "level2.json")
         tile_file = os.path.join("level_data", "layouts", "level2")
         type_file = os.path.join("level_data", "tile_types", "level2")
+
+        # How many layers the level has
+        self.layer_range = 1
 
         self.door_linkup = {0: 1,
                             1: 1,
@@ -473,6 +479,9 @@ class Level03(Level):
         save_file = os.path.join("level_data", "level3.json")
         tile_file = os.path.join("level_data", "layouts", "level3")
         type_file = os.path.join("level_data", "tile_types", "level3")
+
+        # How many layers the level has
+        self.layer_range = 1
 
         self.door_linkup = {0: 0,
                             1: 0}
@@ -550,6 +559,9 @@ class Level04(Level):
         self.save_file = os.path.join("level_data", "level4.json")
         self.tile_file = os.path.join("level_data", "layouts", "level4")
         self.type_file = os.path.join("level_data", "tile_types", "level4")
+
+        # How many layers the level has
+        self.layer_range = 1
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
