@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/layouts/level9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level9.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/terrain.py" afterPath="$PROJECT_DIR$/source/terrain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +23,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="536" column="26" lean-forward="false" selection-start-line="536" selection-start-column="26" selection-end-line="536" selection-end-column="26" />
+            <state relative-caret-position="527">
+              <caret line="553" column="89" lean-forward="false" selection-start-line="553" selection-start-column="89" selection-end-line="553" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/terrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,11 +133,11 @@
         <option value="$PROJECT_DIR$/source/entities.py" />
         <option value="$PROJECT_DIR$/source/arms.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
+        <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
@@ -385,13 +383,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00241" summary="Updated things">
-      <created>1486930100886</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1486930100887</updated>
     </task>
     <task id="LOCAL-00242" summary="Started on the level text">
       <created>1486930450060</created>
@@ -729,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487154351004</updated>
     </task>
-    <option name="localTasksCounter" value="290" />
+    <task id="LOCAL-00290" summary="Began working on support for layered rendering">
+      <created>1487154684736</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1487154684737</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="TodoView">
@@ -768,7 +766,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added even more level text" />
     <MESSAGE value="Fixed render order" />
     <MESSAGE value="Added more level text" />
     <MESSAGE value="Added a text for the level" />
@@ -793,7 +790,8 @@
     <MESSAGE value="Added some decorations to level 4" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed bug with pixel perfect collision and crouching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with pixel perfect collision and crouching" />
+    <MESSAGE value="Began working on support for layered rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Began working on support for layered rendering" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,13 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/funcs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1004,16 +995,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="536" column="26" lean-forward="false" selection-start-line="536" selection-start-column="26" selection-end-line="536" selection-end-column="26" />
+        <state relative-caret-position="527">
+          <caret line="553" column="89" lean-forward="false" selection-start-line="553" selection-start-column="89" selection-end-line="553" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

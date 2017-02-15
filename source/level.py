@@ -357,10 +357,10 @@ class Level01(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level1.json")
-        tile_file = os.path.join("level_data", "layouts", "level1", "level1.png")
-        type_file = os.path.join("level_data", "tile_types", "level1", "level1.png")
+        tile_file = os.path.join("level_data", "layouts", "level1")
+        type_file = os.path.join("level_data", "tile_types", "level1")
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
             level.write_data()
 
@@ -401,8 +401,8 @@ class Level02(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level2.json")
-        tile_file = os.path.join("level_data", "layouts", "level2", "level2.png")
-        type_file = os.path.join("level_data", "tile_types", "level2", "level2.png")
+        tile_file = os.path.join("level_data", "layouts", "level2")
+        type_file = os.path.join("level_data", "tile_types", "level2")
 
         self.door_linkup = {0: 1,
                             1: 1,
@@ -414,7 +414,7 @@ class Level02(Level):
                             7: 2,
                             8: 2}
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        level = terrain.LevelData(save_file, tile_file, type_file, "level2")
         if write_data:
             level.write_data()
 
@@ -471,13 +471,13 @@ class Level03(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level3.json")
-        tile_file = os.path.join("level_data", "layouts", "level3", "level3.png")
-        type_file = os.path.join("level_data", "tile_types", "level3", "level3.png")
+        tile_file = os.path.join("level_data", "layouts", "level3")
+        type_file = os.path.join("level_data", "tile_types", "level3")
 
         self.door_linkup = {0: 0,
                             1: 0}
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        level = terrain.LevelData(save_file, tile_file, type_file, "level3")
         if write_data:
             level.write_data()
 
@@ -548,10 +548,10 @@ class Level04(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         self.save_file = os.path.join("level_data", "level4.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level4", "level4.png")
-        self.type_file = os.path.join("level_data", "tile_types", "level4", "level4.png")
+        self.tile_file = os.path.join("level_data", "layouts", "level4")
+        self.type_file = os.path.join("level_data", "tile_types", "level4")
 
-        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file)
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
         if write_data:
             level.write_data()
