@@ -465,8 +465,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -475,24 +475,14 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
     [
       0,
       48
-    ],
-    {
-      "type": null,
-      "tile": 0
-    }
-  ],
-  [
-    [
-      0,
-      49
     ],
     {
       "type": null,
@@ -502,6 +492,16 @@
   [
     [
       0,
+      49
+    ],
+    {
+      "type": null,
+      "tile": 0
+    }
+  ],
+  [
+    [
+      0,
       50
     ],
     {
@@ -995,8 +995,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1005,8 +1005,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1015,8 +1015,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1025,8 +1025,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1035,8 +1035,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1045,8 +1045,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1055,8 +1055,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1065,8 +1065,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1075,8 +1075,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1595,8 +1595,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1605,8 +1605,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1615,8 +1615,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1625,8 +1625,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1635,8 +1635,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1645,8 +1645,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1655,8 +1655,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1665,8 +1665,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -1675,8 +1675,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2195,8 +2195,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2205,8 +2205,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2215,8 +2215,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2225,8 +2225,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2235,8 +2235,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2245,8 +2245,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2255,8 +2255,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2265,8 +2265,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2275,8 +2275,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2795,8 +2795,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2805,8 +2805,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2815,8 +2815,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2825,8 +2825,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2835,8 +2835,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2845,8 +2845,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2855,8 +2855,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2865,8 +2865,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -2875,8 +2875,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3395,8 +3395,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3405,8 +3405,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3415,8 +3415,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3425,8 +3425,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3435,8 +3435,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3445,8 +3445,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3455,8 +3455,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3465,8 +3465,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3475,8 +3475,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -3995,8 +3995,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4005,8 +4005,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4015,8 +4015,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4025,8 +4025,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4035,8 +4035,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4045,8 +4045,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4055,8 +4055,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4065,8 +4065,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4075,8 +4075,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4595,8 +4595,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4605,8 +4605,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4615,8 +4615,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4625,8 +4625,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4635,8 +4635,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4645,8 +4645,8 @@
       44
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4655,8 +4655,8 @@
       45
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4665,8 +4665,8 @@
       46
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -4675,8 +4675,8 @@
       47
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5195,8 +5195,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5205,8 +5205,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5215,8 +5215,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5225,8 +5225,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5235,8 +5235,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5755,8 +5755,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5765,8 +5765,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5775,8 +5775,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5785,8 +5785,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5795,8 +5795,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5805,8 +5805,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5815,8 +5815,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5825,8 +5825,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -5835,8 +5835,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6355,8 +6355,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6365,8 +6365,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6375,8 +6375,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6385,8 +6385,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6395,8 +6395,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6405,8 +6405,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6415,8 +6415,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6425,8 +6425,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6435,8 +6435,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6955,8 +6955,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6965,8 +6965,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6975,8 +6975,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6985,8 +6985,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -6995,8 +6995,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7005,8 +7005,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7015,8 +7015,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7025,8 +7025,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7035,8 +7035,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7555,8 +7555,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7565,8 +7565,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7575,8 +7575,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7585,8 +7585,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7595,8 +7595,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7605,8 +7605,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7615,8 +7615,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7625,8 +7625,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -7635,8 +7635,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8155,8 +8155,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8165,8 +8165,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8175,8 +8175,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8185,8 +8185,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8195,8 +8195,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8205,8 +8205,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8215,8 +8215,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8225,8 +8225,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8235,8 +8235,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8755,8 +8755,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8765,8 +8765,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8775,8 +8775,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8785,8 +8785,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8795,8 +8795,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8805,8 +8805,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8815,8 +8815,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8825,8 +8825,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -8835,8 +8835,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9355,8 +9355,8 @@
       35
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9365,8 +9365,8 @@
       36
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9375,8 +9375,8 @@
       37
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9385,8 +9385,8 @@
       38
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9395,8 +9395,8 @@
       39
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9405,8 +9405,8 @@
       40
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9415,8 +9415,8 @@
       41
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9425,8 +9425,8 @@
       42
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
@@ -9435,8 +9435,8 @@
       43
     ],
     {
-      "type": null,
-      "tile": 0
+      "type": "Cosmetic",
+      "tile": 29
     }
   ],
   [
