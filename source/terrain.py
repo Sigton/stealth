@@ -63,13 +63,13 @@ class LevelData:
             "Obstacle"
         )
 
+        self.level_data = []
+
         z = 0
         for file in self.load_files1:
 
             pixel_array = pygame.PixelArray(file)
             pixel_array2 = pygame.PixelArray(self.load_files2[z])
-
-            self.level_data = []
 
             x = 0
             for column in pixel_array:
