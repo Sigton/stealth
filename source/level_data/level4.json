@@ -2885,8 +2885,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3485,8 +3485,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -3503,16 +3503,6 @@
     [
       5,
       50
-    ],
-    {
-      "tile": 24,
-      "type": "Obstacle"
-    }
-  ],
-  [
-    [
-      5,
-      51
     ],
     {
       "tile": 24,
@@ -3522,6 +3512,16 @@
   [
     [
       5,
+      51
+    ],
+    {
+      "tile": 24,
+      "type": "Obstacle"
+    }
+  ],
+  [
+    [
+      5,
       52
     ],
     {
@@ -4075,8 +4075,8 @@
       47
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 27,
+      "type": "Solid"
     }
   ],
   [
@@ -4085,8 +4085,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -4685,8 +4685,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5255,8 +5255,8 @@
       45
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 27,
+      "type": "Solid"
     }
   ],
   [
@@ -5285,8 +5285,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -5885,8 +5885,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -6475,8 +6475,8 @@
       47
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 26,
+      "type": "Solid"
     }
   ],
   [
@@ -6485,8 +6485,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7085,8 +7085,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -7655,8 +7655,8 @@
       45
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 26,
+      "type": "Solid"
     }
   ],
   [
@@ -7685,8 +7685,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8285,8 +8285,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -8885,8 +8885,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -9485,8 +9485,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10085,8 +10085,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [
@@ -10685,8 +10685,8 @@
       48
     ],
     {
-      "tile": 0,
-      "type": null
+      "tile": 1,
+      "type": "Solid"
     }
   ],
   [

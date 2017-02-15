@@ -329,7 +329,10 @@ class Level:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
-                self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                if tile_data['tile'] == 26:
+                    self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, (position[1]*24)+20)
+                else:
+                    self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
 
             elif tile_data['type'] == "Cosmetic":
                 if tile_data['tile'] == 25:
