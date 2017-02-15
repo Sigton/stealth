@@ -60,6 +60,10 @@ class Platform(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
+
 
 class AnimatedPlatform(pygame.sprite.Sprite):
 
@@ -97,3 +101,7 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         if self.tick % 10 == 0:
             self.frame = (self.frame + 1) % len(self.images)
             self.image = self.images[self.frame]
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
