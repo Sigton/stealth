@@ -203,26 +203,26 @@ class Level:
 
         self.shift_world(self.start_x, self.start_y)
 
-    def create_platform(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_platform(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.platform_list.add(platform)
 
-    def create_cosmetic(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_cosmetic(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.cosmetic_list.add(platform)
 
-    def create_obstacle(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_obstacle(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.obstacle_list.add(platform)
 
-    def create_anim_obs(self, tile, x, y):
-        platform = platforms.AnimatedPlatform(tile)
+    def create_anim_obs(self, tile, x, y, layer):
+        platform = platforms.AnimatedPlatform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.obstacle_list.add(platform)
@@ -290,8 +290,8 @@ class Level:
 
         self.guards.add(new_hguard)
 
-    def create_ladder(self, tile, x, y):
-        new_ladder = platforms.Platform(tile)
+    def create_ladder(self, tile, x, y, layer):
+        new_ladder = platforms.Platform(tile, layer)
 
         new_ladder.rect.x = x
         new_ladder.rect.y = y
@@ -303,6 +303,8 @@ class Level:
         self.door_no = 0
         self.keypad_array = []
 
+        layer = 1
+        n = 0
         for tile in data:
             position = tile[0]
             tile_data = tile[1]
@@ -330,21 +332,30 @@ class Level:
 
             elif tile_data['type'] == "Solid":
                 if tile_data['tile'] == 26:
-                    self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, (position[1]*24)+20)
+                    self.create_platform(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, (position[1]*24)+20, layer)
                 else:
-                    self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_platform(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Cosmetic":
                 if tile_data['tile'] == 25:
-                    self.create_ladder(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_ladder(platforms.platforms[tile_data['tile']-1],
+                                       position[0]*24, position[1]*24, layer)
                 else:
-                    self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_cosmetic(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Obstacle":
                 if tile_data['tile'] == 23:
-                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
                 else:
-                    self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_obstacle(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
+            n += 1
+            if n % 4800 == 0:
+                layer += 1
 
 
 class Level01(Level):
