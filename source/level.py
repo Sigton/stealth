@@ -83,26 +83,21 @@ class Level:
         # Draw the sprite lists
         for layer in range(self.layer_range):
 
-            platforms = [platform for platform in self.platform_list.sprites() if platform.layer == layer]
+            platforms = [platform for platform in self.platform_list.sprites() if platform.layer == layer+1]
             for platform in platforms:
                 platform.draw(display)
 
-            cosmetics = [cosmetic for cosmetic in self.cosmetic_list.sprites() if cosmetic.layer == layer]
+            cosmetics = [cosmetic for cosmetic in self.cosmetic_list.sprites() if cosmetic.layer == layer+1]
             for cosmetic in cosmetics:
                 cosmetic.draw(display)
 
-            obstacles = [obstacle for obstacle in self.obstacle_list.sprites() if obstacle.layer == layer]
+            obstacles = [obstacle for obstacle in self.obstacle_list.sprites() if obstacle.layer == layer+1]
             for obstacle in obstacles:
                 obstacle.draw(display)
 
-            ladders = [ladder for ladder in self.ladders.sprites() if ladder.layer == layer]
+            ladders = [ladder for ladder in self.ladders.sprites() if ladder.layer == layer+1]
             for ladder in ladders:
                 ladder.draw(display)
-
-        self.platform_list.draw(display)
-        self.cosmetic_list.draw(display)
-        self.obstacle_list.draw(display)
-        self.ladders.draw(display)
 
         self.level_text.draw(display)
         self.keypads.draw(display)
