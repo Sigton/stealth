@@ -270,8 +270,8 @@ class Level:
 
         self.bombs.add(new_bomb)
 
-    def create_door(self, x, y):
-        new_door = entities.Door()
+    def create_door(self, x, y, layer):
+        new_door = entities.Door(layer)
 
         new_door.rect.x = x
         new_door.rect.y = y
@@ -335,7 +335,7 @@ class Level:
 
                 elif tile_data['tile'] == 34:
                     self.door_no += 1
-                    self.create_door(position[0]*24, position[1]*24)
+                    self.create_door(position[0]*24, position[1]*24, layer)
 
                 elif tile_data['tile'] == 32:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
