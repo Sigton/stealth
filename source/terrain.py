@@ -109,4 +109,4 @@ class LevelData:
             z += 1
 
         with open(self.save_file, "w") as outfile:
-            json.dump(self.level_data, outfile, indent=2)
+            json.dump(self.level_data, outfile)

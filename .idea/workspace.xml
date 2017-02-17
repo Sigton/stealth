@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="More lag reduction">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/terrain.py" afterPath="$PROJECT_DIR$/source/terrain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,14 +30,24 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+            <state relative-caret-position="374">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/terrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -125,10 +141,10 @@
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
-        <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
+        <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
       </list>
     </option>
   </component>
@@ -373,13 +389,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00276" summary="Added vent shaft center">
-      <created>1487102996016</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
-      <option name="project" value="LOCAL" />
-      <updated>1487102996016</updated>
     </task>
     <task id="LOCAL-00277" summary="Added group for pixel perfect collisions">
       <created>1487103333108</created>
@@ -717,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487371350198</updated>
     </task>
-    <option name="localTasksCounter" value="325" />
+    <task id="LOCAL-00325" summary="More lag reduction">
+      <created>1487371475911</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
+      <option name="project" value="LOCAL" />
+      <updated>1487371475911</updated>
+    </task>
+    <option name="localTasksCounter" value="326" />
     <servers />
   </component>
   <component name="TodoView">
@@ -756,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added layer_range attribute to levels" />
     <MESSAGE value="Added layer attribute to tiles" />
     <MESSAGE value="Renderer now assigns tiles layers" />
     <MESSAGE value="Wrote a real neat rendering script" />
@@ -781,7 +796,8 @@
     <MESSAGE value="Removed unused files" />
     <MESSAGE value="Removed some guards from level 3 to counter lag" />
     <MESSAGE value="Fixed layer range" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed layer range" />
+    <MESSAGE value="More lag reduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="More lag reduction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,13 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/spritesheet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -988,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1003,6 +1004,22 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
