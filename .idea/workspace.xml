@@ -363,13 +363,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00268" summary="Finally completely absolutely finished level 3!">
-      <created>1487092190559</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
-      <option name="project" value="LOCAL" />
-      <updated>1487092190559</updated>
-    </task>
     <task id="LOCAL-00269" summary="Created new build">
       <created>1487100152285</created>
       <option name="number" value="00269" />
@@ -706,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487315830620</updated>
     </task>
-    <option name="localTasksCounter" value="317" />
+    <task id="LOCAL-00317" summary="Added to level 2">
+      <created>1487317058433</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
+      <option name="project" value="LOCAL" />
+      <updated>1487317058433</updated>
+    </task>
+    <option name="localTasksCounter" value="318" />
     <servers />
   </component>
   <component name="TodoView">
@@ -745,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug with pixel perfect collision and crouching" />
     <MESSAGE value="Began working on support for layered rendering" />
     <MESSAGE value="Layered rendering should now work" />
     <MESSAGE value="Layered rendering works!" />
@@ -770,7 +769,8 @@
     <MESSAGE value="Updated terrain.png" />
     <MESSAGE value="Fixed a bug with doors and layered rendering" />
     <MESSAGE value="Added another layer to level 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added another layer to level 2" />
+    <MESSAGE value="Added to level 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to level 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
