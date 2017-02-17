@@ -59,6 +59,8 @@ class Level:
         self.keypad_array = []
         self.door_no = 0
 
+        self.layer_range = 0
+
     def update(self):
 
         # Update everything in the level
@@ -79,10 +81,24 @@ class Level:
         display.blit(self.background, (0, 0))
 
         # Draw the sprite lists
-        self.platform_list.draw(display)
-        self.cosmetic_list.draw(display)
-        self.obstacle_list.draw(display)
-        self.ladders.draw(display)
+        for layer in range(self.layer_range):
+
+            platforms = [platform for platform in self.platform_list.sprites() if platform.layer == layer+1]
+            for platform in platforms:
+                platform.draw(display)
+
+            cosmetics = [cosmetic for cosmetic in self.cosmetic_list.sprites() if cosmetic.layer == layer+1]
+            for cosmetic in cosmetics:
+                cosmetic.draw(display)
+
+            obstacles = [obstacle for obstacle in self.obstacle_list.sprites() if obstacle.layer == layer+1]
+            for obstacle in obstacles:
+                obstacle.draw(display)
+
+            ladders = [ladder for ladder in self.ladders.sprites() if ladder.layer == layer+1]
+            for ladder in ladders:
+                ladder.draw(display)
+
         self.level_text.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
@@ -203,26 +219,26 @@ class Level:
 
         self.shift_world(self.start_x, self.start_y)
 
-    def create_platform(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_platform(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.platform_list.add(platform)
 
-    def create_cosmetic(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_cosmetic(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.cosmetic_list.add(platform)
 
-    def create_obstacle(self, tile, x, y):
-        platform = platforms.Platform(tile)
+    def create_obstacle(self, tile, x, y, layer):
+        platform = platforms.Platform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.obstacle_list.add(platform)
 
-    def create_anim_obs(self, tile, x, y):
-        platform = platforms.AnimatedPlatform(tile)
+    def create_anim_obs(self, tile, x, y, layer):
+        platform = platforms.AnimatedPlatform(tile, layer)
         platform.rect.x = x
         platform.rect.y = y
         self.obstacle_list.add(platform)
@@ -254,8 +270,8 @@ class Level:
 
         self.bombs.add(new_bomb)
 
-    def create_door(self, x, y):
-        new_door = entities.Door()
+    def create_door(self, x, y, layer):
+        new_door = entities.Door(layer)
 
         new_door.rect.x = x
         new_door.rect.y = y
@@ -290,8 +306,8 @@ class Level:
 
         self.guards.add(new_hguard)
 
-    def create_ladder(self, tile, x, y):
-        new_ladder = platforms.Platform(tile)
+    def create_ladder(self, tile, x, y, layer):
+        new_ladder = platforms.Platform(tile, layer)
 
         new_ladder.rect.x = x
         new_ladder.rect.y = y
@@ -303,6 +319,8 @@ class Level:
         self.door_no = 0
         self.keypad_array = []
 
+        layer = 1
+        n = 0
         for tile in data:
             position = tile[0]
             tile_data = tile[1]
@@ -312,36 +330,48 @@ class Level:
 
             if tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 32:
+                if tile_data['tile'] == 35:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 31:
+                elif tile_data['tile'] == 34:
                     self.door_no += 1
-                    self.create_door(position[0]*24, position[1]*24)
+                    self.create_door(position[0]*24, position[1]*24, layer)
 
-                elif tile_data['tile'] == 29:
+                elif tile_data['tile'] == 32:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 33:
+                elif tile_data['tile'] == 36:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 34:
+                elif tile_data['tile'] == 37:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
-                self.create_platform(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                if tile_data['tile'] == 26:
+                    self.create_platform(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, (position[1]*24)+20, layer)
+                else:
+                    self.create_platform(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Cosmetic":
                 if tile_data['tile'] == 25:
-                    self.create_ladder(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_ladder(platforms.platforms[tile_data['tile']-1],
+                                       position[0]*24, position[1]*24, layer)
                 else:
-                    self.create_cosmetic(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_cosmetic(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Obstacle":
                 if tile_data['tile'] == 23:
-                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
                 else:
-                    self.create_obstacle(platforms.platforms[tile_data['tile']-1], position[0]*24, position[1]*24)
+                    self.create_obstacle(platforms.platforms[tile_data['tile']-1],
+                                         position[0]*24, position[1]*24, layer)
+            n += 1
+            if n % 4800 == 0:
+                layer += 1
 
 
 class Level01(Level):
@@ -354,10 +384,13 @@ class Level01(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level1.json")
-        tile_file = os.path.join("level_data", "layouts", "level1.png")
-        type_file = os.path.join("level_data", "tile_types", "level1.png")
+        tile_file = os.path.join("level_data", "layouts", "level1")
+        type_file = os.path.join("level_data", "tile_types", "level1")
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        # How many layers the level has
+        self.layer_range = 2
+
+        level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
             level.write_data()
 
@@ -398,8 +431,11 @@ class Level02(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level2.json")
-        tile_file = os.path.join("level_data", "layouts", "level2.png")
-        type_file = os.path.join("level_data", "tile_types", "level2.png")
+        tile_file = os.path.join("level_data", "layouts", "level2")
+        type_file = os.path.join("level_data", "tile_types", "level2")
+
+        # How many layers the level has
+        self.layer_range = 2
 
         self.door_linkup = {0: 1,
                             1: 1,
@@ -411,7 +447,7 @@ class Level02(Level):
                             7: 2,
                             8: 2}
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        level = terrain.LevelData(save_file, tile_file, type_file, "level2")
         if write_data:
             level.write_data()
 
@@ -468,13 +504,16 @@ class Level03(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         save_file = os.path.join("level_data", "level3.json")
-        tile_file = os.path.join("level_data", "layouts", "level3.png")
-        type_file = os.path.join("level_data", "tile_types", "level3.png")
+        tile_file = os.path.join("level_data", "layouts", "level3")
+        type_file = os.path.join("level_data", "tile_types", "level3")
+
+        # How many layers the level has
+        self.layer_range = 1
 
         self.door_linkup = {0: 0,
                             1: 0}
 
-        level = terrain.LevelData(save_file, tile_file, type_file)
+        level = terrain.LevelData(save_file, tile_file, type_file, "level3")
         if write_data:
             level.write_data()
 
@@ -545,10 +584,13 @@ class Level04(Level):
         self.background = pygame.image.load("resources/background.png").convert()
 
         self.save_file = os.path.join("level_data", "level4.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level4.png")
-        self.type_file = os.path.join("level_data", "tile_types", "level4.png")
+        self.tile_file = os.path.join("level_data", "layouts", "level4")
+        self.type_file = os.path.join("level_data", "tile_types", "level4")
 
-        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file)
+        # How many layers the level has
+        self.layer_range = 1
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
         if write_data:
             level.write_data()

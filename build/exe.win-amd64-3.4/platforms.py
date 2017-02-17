@@ -29,23 +29,27 @@ ACID_TOP = (
 )
 ACID = (144, 72, 24, 24)
 LADDER = (120, 72, 24, 24)
-VENT_TOP = (0, 72, 24, 24)
-VENT_BOTTOM = (24, 72, 24, 24)
+VENT_BOTTOM = (0, 72, 24, 4)
+VENT_TOP = (24, 92, 24, 4)
 VENT = (48, 72, 24, 24)
+BACKGROUND = (72, 72, 24, 24)
+BACKGROUND_GIRDER = (96, 72, 24, 24)
+BACKGROUND_CRATE = (0, 96, 24, 24)
 
 platforms = (
     GROUND1, GROUND2, GROUND3, GROUND4, GROUND5,
     GROUND6, GROUND7, GROUND8, GROUND9, GROUND10,
     GROUND11, GROUND12, GROUND13, GROUND14, GROUND15,
     GROUND16, CRATE, GIRDER1, GIRDER2, GIRDER3,
-    LAMP, CHAIN, ACID_TOP, ACID, LADDER, VENT_BOTTOM,
-    VENT_TOP, VENT
+    LAMP, CHAIN, ACID_TOP, ACID, LADDER, VENT_TOP,
+    VENT_BOTTOM, VENT, BACKGROUND, BACKGROUND_GIRDER,
+    BACKGROUND_CRATE
 )
 
 
 class Platform(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data):
+    def __init__(self, sprite_sheet_data, layer=1):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -59,10 +63,17 @@ class Platform(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+        # The layer the tile is in
+        self.layer = layer
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
+
 
 class AnimatedPlatform(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data):
+    def __init__(self, sprite_sheet_data, layer=1):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -89,6 +100,9 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         self.tick = 0
         self.frame = 0
 
+        # The layer the tile is in
+        self.layer = layer
+
     def update(self):
 
         self.tick += 1
@@ -96,3 +110,7 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         if self.tick % 10 == 0:
             self.frame = (self.frame + 1) % len(self.images)
             self.image = self.images[self.frame]
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))

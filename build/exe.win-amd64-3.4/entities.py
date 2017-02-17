@@ -9,7 +9,7 @@ class Door(pygame.sprite.Sprite):
     level = None
     door_no = 0
 
-    def __init__(self):
+    def __init__(self, layer):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -22,6 +22,8 @@ class Door(pygame.sprite.Sprite):
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.hiss_sound.set_volume(0.25)
 
+        self.layer = layer
+
     def set_keypad(self):
         # Set the keypad that operates this door
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.door_no-1]]
@@ -32,6 +34,10 @@ class Door(pygame.sprite.Sprite):
         if self.keypad.progress >= 10:
             self.level.platform_list.remove(self)
             pygame.mixer.Sound.play(self.hiss_sound)
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
 
 
 class Keypad(pygame.sprite.Sprite):

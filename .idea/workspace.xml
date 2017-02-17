@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/entities.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/terrain.py" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/terrain.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
@@ -22,15 +33,35 @@
     <favorites_list name="Stealth" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="437" column="28" lean-forward="true" selection-start-line="437" selection-start-column="28" selection-end-line="437" selection-end-column="28" />
+            <state relative-caret-position="425">
+              <caret line="418" column="20" lean-forward="false" selection-start-line="418" selection-start-column="20" selection-end-line="418" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,7 +207,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,13 +396,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00271" summary="Updated level 4">
-      <created>1487101782006</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1487101782006</updated>
     </task>
     <task id="LOCAL-00272" summary="Updated terrain.png">
       <created>1487102079171</created>
@@ -709,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487317459815</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="Finished level 2">
+      <created>1487318856492</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1487318856493</updated>
+    </task>
+    <option name="localTasksCounter" value="321" />
     <servers />
   </component>
   <component name="TodoView">
@@ -723,7 +754,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -748,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Layered rendering works!" />
     <MESSAGE value="Updated some level stuff" />
     <MESSAGE value="Things are kinda working" />
     <MESSAGE value="Formulated how to fix the bug" />
@@ -773,7 +803,8 @@
     <MESSAGE value="Added to level 2" />
     <MESSAGE value="More decoration in level 2" />
     <MESSAGE value="Updated level 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 2" />
+    <MESSAGE value="Finished level 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished level 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/arms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -983,16 +1007,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="437" column="28" lean-forward="true" selection-start-line="437" selection-start-column="28" selection-end-line="437" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="418" column="20" lean-forward="false" selection-start-line="418" selection-start-column="20" selection-end-line="418" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
