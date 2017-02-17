@@ -588,7 +588,7 @@ class Level04(Level):
         self.type_file = os.path.join("level_data", "tile_types", "level4")
 
         # How many layers the level has
-        self.layer_range = 1
+        self.layer_range = 2
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
