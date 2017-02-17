@@ -508,7 +508,7 @@ class Level03(Level):
         type_file = os.path.join("level_data", "tile_types", "level3")
 
         # How many layers the level has
-        self.layer_range = 1
+        self.layer_range = 2
 
         self.door_linkup = {0: 0,
                             1: 0}
