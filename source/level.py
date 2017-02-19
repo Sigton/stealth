@@ -271,7 +271,7 @@ class Level:
         self.bombs.add(new_bomb)
 
     def create_door(self, tile, x, y, layer):
-        new_door = entities.Door(layer)
+        new_door = entities.Door(tile, layer)
 
         new_door.rect.x = x
         new_door.rect.y = y
@@ -329,22 +329,23 @@ class Level:
                 print(tile)
 
             if tile_data['type'] == "Door":
+                print(tile_data, position)
                 self.door_no += 1
                 self.create_door(platforms.platforms[tile_data['tile']-1],
                                  position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 35:
+                if tile_data['tile'] == 34:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
                 elif tile_data['tile'] == 32:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 36:
+                elif tile_data['tile'] == 35:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 37:
+                elif tile_data['tile'] == 36:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
