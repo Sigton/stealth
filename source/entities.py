@@ -15,6 +15,9 @@ class Door(platforms.Platform):
         # Call the parents constructor
         platforms.Platform.__init__(self, tile, layer)
 
+        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
+        self.hiss_sound.set_volume(0.25)
+
     def set_keypad(self):
         # Set the keypad that operates this door
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.door_no-1]]
