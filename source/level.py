@@ -328,14 +328,14 @@ class Level:
             if 'type' not in tile_data:
                 print(tile)
 
-            if tile_data['type'] == "Entity":
+            if tile_data['type'] == "Door":
+                self.door_no += 1
+                self.create_door(position[0] * 24, position[1] * 24, layer)
+
+            elif tile_data['type'] == "Entity":
 
                 if tile_data['tile'] == 35:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
-
-                elif tile_data['tile'] == 34:
-                    self.door_no += 1
-                    self.create_door(position[0]*24, position[1]*24, layer)
 
                 elif tile_data['tile'] == 32:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
