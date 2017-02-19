@@ -270,7 +270,7 @@ class Level:
 
         self.bombs.add(new_bomb)
 
-    def create_door(self, x, y, layer):
+    def create_door(self, tile, x, y, layer):
         new_door = entities.Door(layer)
 
         new_door.rect.x = x
@@ -330,7 +330,8 @@ class Level:
 
             if tile_data['type'] == "Door":
                 self.door_no += 1
-                self.create_door(position[0] * 24, position[1] * 24, layer)
+                self.create_door(platforms.platforms[tile_data['tile']-1],
+                                 position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
