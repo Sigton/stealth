@@ -338,7 +338,7 @@ class Level:
                 if tile_data['tile'] == 36:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 33:
+                elif tile_data['tile'] == 34:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
                 elif tile_data['tile'] == 37:
