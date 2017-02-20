@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -413,13 +410,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00292" summary="Layered rendering works!">
-      <created>1487155857734</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
-      <option name="project" value="LOCAL" />
-      <updated>1487155857734</updated>
-    </task>
     <task id="LOCAL-00293" summary="Updated some level stuff">
       <created>1487156291512</created>
       <option name="number" value="00293" />
@@ -756,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487619342370</updated>
     </task>
-    <option name="localTasksCounter" value="341" />
+    <task id="LOCAL-00341" summary="Updated level 4">
+      <created>1487620027407</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
+      <option name="project" value="LOCAL" />
+      <updated>1487620027408</updated>
+    </task>
+    <option name="localTasksCounter" value="342" />
     <servers />
   </component>
   <component name="TodoView">
