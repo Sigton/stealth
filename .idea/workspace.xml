@@ -36,8 +36,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="867">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -390,13 +390,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00315" summary="Fixed a bug with doors and layered rendering">
-      <created>1487280590035</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
-      <option name="project" value="LOCAL" />
-      <updated>1487280590035</updated>
-    </task>
     <task id="LOCAL-00316" summary="Added another layer to level 2">
       <created>1487315830619</created>
       <option name="number" value="00316" />
@@ -733,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487711003183</updated>
     </task>
-    <option name="localTasksCounter" value="364" />
+    <task id="LOCAL-00364" summary="Updated menu">
+      <created>1487711634769</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
+      <option name="project" value="LOCAL" />
+      <updated>1487711634769</updated>
+    </task>
+    <option name="localTasksCounter" value="365" />
     <servers />
   </component>
   <component name="TodoView">
@@ -772,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create door function takes tile as input" />
     <MESSAGE value="Door is now a subclass of platform" />
     <MESSAGE value="Added door as a tile" />
     <MESSAGE value="Fixed rendering bugs" />
@@ -797,7 +796,8 @@
     <MESSAGE value="Updated menu.py" />
     <MESSAGE value="Now calls to menu instead of game" />
     <MESSAGE value="Added button class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button class" />
+    <MESSAGE value="Updated menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1017,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state relative-caret-position="867">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

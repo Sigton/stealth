@@ -1,7 +1,9 @@
 import pygame
+from pygame.locals import *
 
 import game as g
 import spritesheet
+import constants
 
 
 class Button(pygame.sprite.Sprite):
@@ -36,11 +38,27 @@ class Menu:
 
         self.game = g.Game(display, clock)
 
-        main_menu_buttons = list()
-        main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
-        main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
-        main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
+        self.background = pygame.image.load("resources/menubackground.png").convert()
+
+        self.main_menu_buttons = list()
+        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
+        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
+        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
 
     def run(self):
+
+        game_exit = False
+
+        while not game_exit:
+
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    game_exit = True
+
+            self.display.fill(constants.BLACK)
+            self.display.blit(self.background, (0, 0))
+
+            pygame.display.update()
+            self.clock.tick(60)
 
         self.game.run()
