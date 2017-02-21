@@ -1,7 +1,7 @@
 import pygame
 from pygame.locals import *
 
-import game
+import game as g
 import constants
 
 
@@ -34,7 +34,9 @@ def main():
     clock = pygame.time.Clock()
 
     # Run the game
-    game.game(game_display, clock)  # Nice and easy way to avoid scoping issues
+    game = g.Game(game_display, clock)
+
+    game.run()
 
     pygame.mouse.set_visible(True)
     pygame.quit()

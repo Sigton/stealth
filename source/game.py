@@ -19,7 +19,7 @@ class Game:
         self.display = display
         self.clock = clock
 
-    def game(self):
+    def run(self):
         # Game loop
 
         # Show the loading screen
