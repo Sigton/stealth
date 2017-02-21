@@ -12,7 +12,7 @@ from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
 
 
-def main():
+def game():
     # Main program
 
     # Initiate pygame
@@ -257,8 +257,9 @@ def main():
         # Update the display
         pygame.display.flip()
 
-if __name__ == "__main__":
-    main()
     pygame.mouse.set_visible(True)
     pygame.quit()
     quit()
+
+if __name__ == "__main__":
+    game()
