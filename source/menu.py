@@ -9,3 +9,7 @@ class Menu:
         self.clock = clock
 
         self.game = g.Game(display, clock)
+
+    def run(self):
+
+        self.game.run()

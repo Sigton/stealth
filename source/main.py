@@ -1,7 +1,7 @@
 import pygame
 from pygame.locals import *
 
-import game as g
+import menu as m
 import constants
 
 
@@ -33,10 +33,10 @@ def main():
     # Used to manage update frequency
     clock = pygame.time.Clock()
 
-    # Run the game
-    game = g.Game(game_display, clock)
+    # Start the menu
+    menu = m.Menu(game_display, clock)
 
-    game.run()
+    menu.run()
 
     pygame.mouse.set_visible(True)
     pygame.quit()
