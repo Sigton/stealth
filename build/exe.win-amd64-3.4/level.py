@@ -270,8 +270,8 @@ class Level:
 
         self.bombs.add(new_bomb)
 
-    def create_door(self, x, y, layer):
-        new_door = entities.Door(layer)
+    def create_door(self, tile, x, y, layer):
+        new_door = entities.Door(tile, layer)
 
         new_door.rect.x = x
         new_door.rect.y = y
@@ -328,22 +328,23 @@ class Level:
             if 'type' not in tile_data:
                 print(tile)
 
-            if tile_data['type'] == "Entity":
+            if tile_data['type'] == "Door":
+                self.door_no += 1
+                self.create_door(platforms.platforms[tile_data['tile']-1],
+                                 position[0]*24, position[1]*24, layer)
 
-                if tile_data['tile'] == 35:
+            elif tile_data['type'] == "Entity":
+
+                if tile_data['tile'] == 36:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
                 elif tile_data['tile'] == 34:
-                    self.door_no += 1
-                    self.create_door(position[0]*24, position[1]*24, layer)
-
-                elif tile_data['tile'] == 32:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 36:
+                elif tile_data['tile'] == 37:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 37:
+                elif tile_data['tile'] == 38:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
@@ -588,7 +589,11 @@ class Level04(Level):
         self.type_file = os.path.join("level_data", "tile_types", "level4")
 
         # How many layers the level has
-        self.layer_range = 1
+        self.layer_range = 2
+
+        self.door_linkup = {0: 0,
+                            1: 0,
+                            2: 0}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
@@ -600,6 +605,8 @@ class Level04(Level):
 
         # Render it
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         # Set the start position
         self.start_x = 0

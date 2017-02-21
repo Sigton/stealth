@@ -1,28 +1,22 @@
 import pygame
 
 import spritesheet
+import platforms
 
 
-class Door(pygame.sprite.Sprite):
+class Door(platforms.Platform):
 
     keypad = None
     level = None
     door_no = 0
 
-    def __init__(self, layer):
+    def __init__(self, tile, layer):
 
         # Call the parents constructor
-        pygame.sprite.Sprite.__init__(self)
-
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
-
-        self.image = self.sprite_sheet.get_image_srcalpha(96, 48, 24, 24)
-        self.rect = self.image.get_rect()
+        platforms.Platform.__init__(self, tile, layer)
 
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.hiss_sound.set_volume(0.25)
-
-        self.layer = layer
 
     def set_keypad(self):
         # Set the keypad that operates this door

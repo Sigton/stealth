@@ -18,9 +18,9 @@ class LevelData:
                    38143, 13429247, 10081535, 16776960,
                    11776768, 65320, 2672680, 60159, 24027,
                    16793, 11110, 460551, 16173544, 7987,
-                   12517631, 16711680, 5635840, 255, 16727808,
+                   5635840, 2850816, 12517631, 16711680, 255, 16727808,
                    6502, 6691072]
-    type_colors = [0, 986895, 2039583, 3092271]
+    type_colors = [0, 986895, 2039583, 3092271, 4144959]
 
     def __init__(self, savefile, loadfile1, loadfile2, level):
 
@@ -61,7 +61,8 @@ class LevelData:
             "Solid",
             "Cosmetic",
             "Entity",
-            "Obstacle"
+            "Obstacle",
+            "Door"
         )
 
         self.level_data = []
@@ -109,4 +110,4 @@ class LevelData:
             z += 1
 
         with open(self.save_file, "w") as outfile:
-            json.dump(self.level_data, outfile, indent=2)
+            json.dump(self.level_data, outfile)
