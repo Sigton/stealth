@@ -13,12 +13,7 @@ from funcs import pixel_perfect_collision
 
 
 def game():
-    # Main program
-
-    # Initiate pygame
-    pygame.mixer.pre_init(22050, -16, 1, 512)
-    pygame.mixer.init()
-    pygame.init()
+    # Game loop
 
     # Set the display size
     game_display = pygame.display.set_mode(constants.SIZE)
