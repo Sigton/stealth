@@ -1,6 +1,6 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable(script="source/main.py",
+executables = [cx_Freeze.Executable(script="source/game.py",
                                     icon="source/resources/icon.ico",
                                     targetName="Stealth.exe")]
 
