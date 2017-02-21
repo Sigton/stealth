@@ -30,7 +30,11 @@ def main():
     icon.blit(icon_img, (0, 0))
     pygame.display.set_icon(icon)
 
-    game.game(game_display)
+    # Used to manage update frequency
+    clock = pygame.time.Clock()
+
+    # Run the game
+    game.game(game_display, clock)  # Nice and easy way to avoid scoping issues
 
     pygame.mouse.set_visible(True)
     pygame.quit()

@@ -12,7 +12,7 @@ from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
 
 
-def game(game_display):
+def game(game_display, clock):
     # Game loop
 
     # Show the loading screen
@@ -25,9 +25,6 @@ def game(game_display):
     # Load the music
     pygame.mixer.music.load("resources/music.mp3")
     pygame.mixer.music.set_volume(0.25)
-
-    # Used to manage update frequency
-    clock = pygame.time.Clock()
 
     # Create the player
     player = p.Player()
