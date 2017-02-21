@@ -1,6 +1,6 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable(script="source/game.py",
+executables = [cx_Freeze.Executable(script="source/main.py",
                                     icon="source/resources/icon.ico",
                                     targetName="Stealth.exe")]
 
@@ -19,7 +19,8 @@ include_files = ["source/level_data/",
                  "source/spritesheet.py",
                  "source/terrain.py",
                  "source/torches.py",
-                 "source/funcs.py"]
+                 "source/funcs.py",
+                 "source/game.py"]
 
 excludes = ["tkinter",
             "OpenGL",
