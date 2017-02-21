@@ -260,6 +260,3 @@ def game():
     pygame.mouse.set_visible(True)
     pygame.quit()
     quit()
-
-if __name__ == "__main__":
-    game()
