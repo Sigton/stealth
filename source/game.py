@@ -105,7 +105,7 @@ class Game:
 
                     game_exit = True
                     pygame.quit()
-                    quit()
+                    exit()
 
                 elif event.type == KEYDOWN:
 

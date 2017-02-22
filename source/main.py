@@ -36,7 +36,7 @@ def main():
     menu.run()
 
     pygame.quit()
-    quit()
+    exit()
 
 if __name__ == "__main__":
     main()
