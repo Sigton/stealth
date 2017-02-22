@@ -17,9 +17,6 @@ def main():
     # Set the display size
     game_display = pygame.display.set_mode(constants.SIZE)
 
-    # Hide the mouse
-    pygame.mouse.set_visible(False)
-
     # Set the window caption and icon
     pygame.display.set_caption("Stealth")
 
@@ -38,7 +35,6 @@ def main():
 
     menu.run()
 
-    pygame.mouse.set_visible(True)
     pygame.quit()
     quit()
 

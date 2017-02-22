@@ -81,3 +81,6 @@ class Menu:
 
             pygame.display.update()
             self.clock.tick(60)
+
+        pygame.mouse.set_visible(False)
+        self.game.run()
