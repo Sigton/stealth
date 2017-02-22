@@ -66,6 +66,10 @@ class Game:
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
 
+        # Reset scrolling
+        self.current_level.reset_world()
+        self.current_level.shift_world(self.current_level.start_x, self.current_level.start_y)
+
         # Set the players position
         self.player.rect.x = 48
         self.player.rect.y = 384
