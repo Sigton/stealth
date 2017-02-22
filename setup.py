@@ -20,7 +20,8 @@ include_files = ["source/level_data/",
                  "source/terrain.py",
                  "source/torches.py",
                  "source/funcs.py",
-                 "source/game.py"]
+                 "source/game.py",
+                 "source/menu.py"]
 
 excludes = ["tkinter",
             "OpenGL",

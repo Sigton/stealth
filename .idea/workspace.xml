@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Created bnew">
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/Stealth.exe" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_bz2.pyd" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_ctypes.pyd" afterPath="" />
@@ -31,45 +31,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/guards.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/healthbar.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level9.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level10.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level12.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level13.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level5.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level6.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level7.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level8.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level9.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level9.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/leveltext.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/Grammar.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/Grammar3.4.3.final.0.pickle" afterPath="" />
@@ -79,7 +44,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pydoc_data/_pydoc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pyexpat.pyd" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/LGPL" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL.dll" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL_image.dll" afterPath="" />
@@ -207,17 +171,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/step.wav" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/select.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/cli-32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/cli-64.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/cli-arm-32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/cli.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/command/launcher manifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/gui-32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/gui-64.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/gui-arm-32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/gui.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/script (dev).tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/setuptools/script.tmpl" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/spritesheet.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/terrain.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/185test.db" afterPath="" />
@@ -551,6 +504,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/torches.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/unicodedata.pyd" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -567,7 +521,18 @@
     <favorites_list name="Stealth" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -653,10 +618,10 @@
         <option value="$PROJECT_DIR$/source/entities.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -901,13 +866,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00333" summary="Fixed rendering bugs">
-      <created>1487502894218</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1487502894218</updated>
     </task>
     <task id="LOCAL-00334" summary="Fixed another bug">
       <created>1487505633417</created>
@@ -1245,7 +1203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487800855674</updated>
     </task>
-    <option name="localTasksCounter" value="382" />
+    <task id="LOCAL-00382" summary="Created new build">
+      <created>1487800964571</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1487800964572</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1261,7 +1226,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1284,10 +1249,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated menubuttons.png" />
     <MESSAGE value="Updated more things" />
     <MESSAGE value="Game is now a class" />
-    <MESSAGE value="Created new build" />
     <MESSAGE value="Added menu.py" />
     <MESSAGE value="Updated menu.py" />
     <MESSAGE value="Now calls to menu instead of game" />
@@ -1309,7 +1272,9 @@
     <MESSAGE value="Game now loads before showing menu" />
     <MESSAGE value="Resets players position when game starts" />
     <MESSAGE value="Fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
+    <MESSAGE value="Created new build" />
+    <MESSAGE value="Fixed problem with setup and made new build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed problem with setup and made new build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1473,14 +1438,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/spritesheet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1536,6 +1493,14 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
