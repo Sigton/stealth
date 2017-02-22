@@ -8,25 +8,27 @@ import constants
 
 class Button(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet, sprite_sheet_data):
+    def __init__(self, sprite_sheet, sprite_sheet_data, x, y):
 
         pygame.sprite.Sprite.__init__(self)
 
         self.sprite_sheet = spritesheet.SpriteSheet(sprite_sheet)
 
-        self.image_inactive = self.sprite_sheet.get_image(sprite_sheet_data[0][0],
-                                                          sprite_sheet_data[0][1],
-                                                          sprite_sheet_data[0][2],
-                                                          sprite_sheet_data[0][3])
+        self.image_inactive = self.sprite_sheet.get_image_srcalpha(sprite_sheet_data[0][0],
+                                                                   sprite_sheet_data[0][1],
+                                                                   sprite_sheet_data[0][2],
+                                                                   sprite_sheet_data[0][3])
 
-        self.image_active = self.sprite_sheet.get_image(sprite_sheet_data[1][0],
-                                                        sprite_sheet_data[1][1],
-                                                        sprite_sheet_data[1][2],
-                                                        sprite_sheet_data[1][3])
+        self.image_active = self.sprite_sheet.get_image_srcalpha(sprite_sheet_data[1][0],
+                                                                 sprite_sheet_data[1][1],
+                                                                 sprite_sheet_data[1][2],
+                                                                 sprite_sheet_data[1][3])
 
         self.image = self.image_inactive
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
 
 
 class Text(pygame.sprite.Sprite):
@@ -55,12 +57,12 @@ class Menu:
 
         self.background = pygame.image.load("resources/menubackground.png").convert()
 
-        self.main_menu_buttons = list()
-        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
-        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
-        self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
+        self.main_menu = pygame.sprite.Group()
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80)), 300, 300))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80)), 300, 380))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80)), 300, 460))
 
-        self.title = Text("STEALTH", 200, 300, 100)
+        self.main_menu.add(Text("STEALTH", 200, 165, 100))
 
     def run(self):
 
@@ -75,7 +77,7 @@ class Menu:
             self.display.fill(constants.BLACK)
             self.display.blit(self.background, (0, 0))
 
-            self.display.blit(self.title.image, (self.title.rect.x, self.title.rect.y))
+            self.main_menu.draw(self.display)
 
             pygame.display.update()
             self.clock.tick(60)
