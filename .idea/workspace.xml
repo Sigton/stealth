@@ -36,8 +36,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="680">
+              <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -400,13 +400,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00319" summary="Updated level 2">
-      <created>1487317459815</created>
-      <option name="number" value="00319" />
-      <option name="presentableId" value="LOCAL-00319" />
-      <option name="project" value="LOCAL" />
-      <updated>1487317459815</updated>
-    </task>
     <task id="LOCAL-00320" summary="Finished level 2">
       <created>1487318856492</created>
       <option name="number" value="00320" />
@@ -743,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487750585194</updated>
     </task>
-    <option name="localTasksCounter" value="368" />
+    <task id="LOCAL-00368" summary="Added button drawing">
+      <created>1487750902466</created>
+      <option name="number" value="00368" />
+      <option name="presentableId" value="LOCAL-00368" />
+      <option name="project" value="LOCAL" />
+      <updated>1487750902466</updated>
+    </task>
+    <option name="localTasksCounter" value="369" />
     <servers />
   </component>
   <component name="TodoView">
@@ -782,7 +782,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed rendering bugs" />
     <MESSAGE value="Fixed another bug" />
     <MESSAGE value="Forgot to set the sound effects for doors" />
     <MESSAGE value="Added things" />
@@ -807,7 +806,8 @@
     <MESSAGE value="Updated menu" />
     <MESSAGE value="Added title text" />
     <MESSAGE value="Added ability to set size of text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ability to set size of text" />
+    <MESSAGE value="Added button drawing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added button drawing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1029,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="680">
+          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
