@@ -22,6 +22,9 @@ class Game:
     def run(self):
         # Game loop
 
+        # Hide mouse pointer
+        pygame.mouse.set_visible(False)
+
         # Show the loading screen
         loading_screen = covers.LoadingScreen()
 
@@ -93,6 +96,9 @@ class Game:
 
                 # If player closes window
                 if event.type == QUIT:
+
+                    pygame.mouse.set_visible(True)
+
                     game_exit = True
                     pygame.quit()
                     quit()
@@ -241,3 +247,5 @@ class Game:
             self.clock.tick(60)
             # Update the display
             pygame.display.flip()
+
+        pygame.mouse.set_visible(True)
