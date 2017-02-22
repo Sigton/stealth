@@ -58,9 +58,9 @@ class Menu:
         self.background = pygame.image.load("resources/menubackground.png").convert()
 
         self.main_menu = pygame.sprite.Group()
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)), 300, 300))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)), 300, 380))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)), 300, 460))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)), 340, 350))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)), 300, 430))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)), 260, 510))
 
         self.main_menu.add(Text("STEALTH", 200, 165, 100))
 
