@@ -57,10 +57,6 @@ class Game:
 
         self.crosshair = entities.Crosshair()
 
-        # Set the players position
-        self.player.rect.x = 48
-        self.player.rect.y = 384
-
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
 
@@ -69,6 +65,10 @@ class Game:
 
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
+
+        # Set the players position
+        self.player.rect.x = 48
+        self.player.rect.y = 384
 
         # Variables to control the player
         run = 0
