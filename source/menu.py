@@ -30,6 +30,19 @@ class Button(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
 
+    def update(self):
+
+        mouse_pos = pygame.mouse.get_pos()
+
+        touching_pointer = self.rect.collidepoint(mouse_pos)
+
+        if touching_pointer:
+            if self.image != self.image_active:
+                self.image = self.image_active
+        else:
+            if self.image != self.image_inactive:
+                self.image = self.image_inactive
+
 
 class Text(pygame.sprite.Sprite):
 
@@ -73,6 +86,8 @@ class Menu:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     game_exit = True
+
+            self.main_menu.update()
 
             self.display.fill(constants.BLACK)
             self.display.blit(self.background, (0, 0))
