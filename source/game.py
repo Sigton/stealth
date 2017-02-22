@@ -94,6 +94,8 @@ class Game:
                 # If player closes window
                 if event.type == QUIT:
                     game_exit = True
+                    pygame.quit()
+                    quit()
 
                 elif event.type == KEYDOWN:
 
