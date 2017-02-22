@@ -80,9 +80,13 @@ class Menu:
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)),
                                   260, 510, "quit"))
 
-        self.main_menu.add(Text("STEALTH", 200, 165, 100))
+        self.main_menu.add(Text("Stealth", 200, 165, 100))
+
+        self.current_screen = None
 
     def run(self):
+
+        self.current_screen = self.main_menu
 
         game_exit = False
 
@@ -96,7 +100,7 @@ class Menu:
 
                     mouse_pos = pygame.mouse.get_pos()
 
-                    buttons_clicked = [x for x in self.main_menu if x.rect.collidepoint(mouse_pos)
+                    buttons_clicked = [x for x in self.current_screen if x.rect.collidepoint(mouse_pos)
                                        and isinstance(x, Button)]
 
                     for button in buttons_clicked:
@@ -107,12 +111,12 @@ class Menu:
                             else:
                                 button.command()
 
-            self.main_menu.update()
+            self.current_screen.update()
 
             self.display.fill(constants.BLACK)
             self.display.blit(self.background, (0, 0))
 
-            self.main_menu.draw(self.display)
+            self.current_screen.draw(self.display)
 
             pygame.display.update()
             self.clock.tick(60)
