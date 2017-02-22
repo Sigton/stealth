@@ -58,9 +58,9 @@ class Menu:
         self.background = pygame.image.load("resources/menubackground.png").convert()
 
         self.main_menu = pygame.sprite.Group()
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)), 340, 350))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)), 300, 430))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)), 260, 510))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)), 180, 350))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)), 140, 430))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)), 100, 510))
 
         self.main_menu.add(Text("STEALTH", 200, 165, 100))
 
@@ -83,4 +83,3 @@ class Menu:
             self.clock.tick(60)
 
         pygame.mouse.set_visible(False)
-        self.game.run()
