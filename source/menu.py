@@ -29,6 +29,21 @@ class Button(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
 
+class Text(pygame.sprite.Sprite):
+
+    def __init__(self, text, x, y):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        self.font = pygame.font.Font("resources/alienleague.ttf", 48)
+
+        self.image = self.font.render(text, True, constants.WHITE)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+
 class Menu:
 
     def __init__(self, display, clock):
@@ -45,6 +60,8 @@ class Menu:
         self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
         self.main_menu_buttons.append(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 0, 360, 80))))
 
+        self.title = Text("STEALTH", 300, 100)
+
     def run(self):
 
         game_exit = False
@@ -58,7 +75,7 @@ class Menu:
             self.display.fill(constants.BLACK)
             self.display.blit(self.background, (0, 0))
 
+            self.display.blit(self.title.image, (self.title.rect.x, self.title.rect.y))
+
             pygame.display.update()
             self.clock.tick(60)
-
-        self.game.run()
