@@ -8,7 +8,7 @@ import constants
 
 class Button(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet, sprite_sheet_data, x, y):
+    def __init__(self, sprite_sheet, sprite_sheet_data, x, y, command):
 
         pygame.sprite.Sprite.__init__(self)
 
@@ -29,6 +29,8 @@ class Button(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+
+        self.command = command
 
     def update(self):
 
@@ -71,9 +73,12 @@ class Menu:
         self.background = pygame.image.load("resources/menubackground.png").convert()
 
         self.main_menu = pygame.sprite.Group()
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)), 340, 350))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)), 300, 430))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)), 260, 510))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
+                                  340, 350, lambda: self.game.run()))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
+                                  300, 430, None))
+        self.main_menu.add(Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)),
+                                  260, 510, "quit"))
 
         self.main_menu.add(Text("STEALTH", 200, 165, 100))
 
@@ -86,6 +91,21 @@ class Menu:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     game_exit = True
+
+                if event.type == MOUSEBUTTONUP:
+
+                    mouse_pos = pygame.mouse.get_pos()
+
+                    buttons_clicked = [x for x in self.main_menu if x.rect.collidepoint(mouse_pos)
+                                       and isinstance(x, Button)]
+
+                    for button in buttons_clicked:
+                        if button.command is not None:
+                            if button.command == "quit":  # Special case for quitting game
+                                game_exit = True
+
+                            else:
+                                button.command()
 
             self.main_menu.update()
 
