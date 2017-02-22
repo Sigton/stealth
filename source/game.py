@@ -10,6 +10,7 @@ import covers
 import entities
 from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
+import sys
 
 
 class Game:
@@ -105,7 +106,7 @@ class Game:
 
                     game_exit = True
                     pygame.quit()
-                    exit()
+                    sys.exit(0)
 
                 elif event.type == KEYDOWN:
 

@@ -3,6 +3,7 @@ from pygame.locals import *
 
 import menu as m
 import constants
+import sys
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
     menu.run()
 
     pygame.quit()
-    exit()
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
