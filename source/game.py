@@ -19,17 +19,11 @@ class Game:
         self.display = display
         self.clock = clock
 
-    def run(self):
-        # Game loop
-
-        # Hide mouse pointer
-        pygame.mouse.set_visible(False)
-
         # Show the loading screen
-        loading_screen = covers.LoadingScreen()
+        self.loading_screen = covers.LoadingScreen()
 
         for n in range(63):
-            blit_alpha(self.display, loading_screen.image, (0, 0), n*4)
+            blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
             pygame.display.flip()
 
         # Load the music
@@ -37,35 +31,44 @@ class Game:
         pygame.mixer.music.set_volume(0.25)
 
         # Create the player
-        player = p.Player()
+        self.player = p.Player()
 
-        active_sprite_list = pygame.sprite.Group()
-        active_sprite_list.add(player)
+        self.active_sprite_list = pygame.sprite.Group()
+        self.active_sprite_list.add(self.player)
 
         # Create the levels
-        level_list = list()
+        self.level_list = list()
 
-        level_list.append(level.Level01(player, True))
-        level_list.append(level.Level02(player, True))
-        level_list.append(level.Level03(player, True))
-        level_list.append(level.Level04(player, True))
+        self.level_list.append(level.Level01(self.player, True))
+        self.level_list.append(level.Level02(self.player, True))
+        self.level_list.append(level.Level03(self.player, True))
+        self.level_list.append(level.Level04(self.player, True))
 
         # Set the current level
-        current_level_no = 0
-        current_level = level_list[current_level_no]
+        self.current_level_no = 0
+        self.current_level = self.level_list[self.current_level_no]
 
-        player.level = current_level
-        current_level.player = player
+        self.player.level = self.current_level
+        self.current_level.player = self.player
 
         # Create the blackout
-        blackout = covers.Blackout()
-        blackout.player = player
+        self.blackout = covers.Blackout()
+        self.blackout.player = self.player
 
-        crosshair = entities.Crosshair()
+        self.crosshair = entities.Crosshair()
 
         # Set the players position
-        player.rect.x = 48
-        player.rect.y = 384
+        self.player.rect.x = 48
+        self.player.rect.y = 384
+
+        self.light_sound = pygame.mixer.Sound("resources/lights.wav")
+        self.light_sound.set_volume(0.15)
+
+    def run(self):
+        # Game loop
+
+        # Hide mouse pointer
+        pygame.mouse.set_visible(False)
 
         # Variables to control the player
         run = 0
@@ -75,15 +78,12 @@ class Game:
         pause = 0
         reset = False
 
-        light_sound = pygame.mixer.Sound("resources/lights.wav")
-        light_sound.set_volume(0.15)
-
         has_guard = False
-        for guard in current_level.guards.sprites():
+        for guard in self.current_level.guards.sprites():
             if isinstance(guard, guards.Guard):
                 has_guard = True
         if has_guard:
-            light_sound.play(-1)
+            self.light_sound.play(-1)
 
         # Play the music
         pygame.mixer.music.play(-1)
@@ -119,7 +119,7 @@ class Game:
 
                     # Use keypads
                     if event.key == K_SPACE:
-                        player.use_keypad()
+                        self.player.use_keypad()
 
                     # Crouching
                     if event.key == K_LCTRL:
@@ -135,7 +135,7 @@ class Game:
 
                     if event.key == K_UP or event.key == K_w:
                         jump = False
-                        player.climbing = False
+                        self.player.climbing = False
 
                     if event.key == K_LCTRL:
                         crouch = False
@@ -144,104 +144,104 @@ class Game:
                 pause -= 1
 
             if pause == 0 and reset:
-                current_level.reset_world()
-                current_level.set_scrolling()
-                player.reset()
+                self.current_level.reset_world()
+                self.current_level.set_scrolling()
+                self.player.reset()
                 reset = False
 
             # Level progression
-            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
+            if self.player.rect.x + self.player.rect.width/2 >= constants.SCREEN_WIDTH:
 
                 # Reset the player and move on the level
-                current_level.reset_world()
-                player.reset()
+                self.current_level.reset_world()
+                self.player.reset()
 
-                light_sound.stop()
+                self.light_sound.stop()
 
-                current_level_no += 1
-                if current_level_no >= len(level_list):
+                self.current_level_no += 1
+                if self.current_level_no >= len(self.level_list):
                     break
                 else:
-                    current_level = level_list[current_level_no]
+                    self.current_level = self.level_list[self.current_level_no]
 
-                player.level = current_level
-                current_level.player = player
+                self.player.level = self.current_level
+                self.current_level.player = self.player
 
                 has_guard = False
-                for guard in current_level.guards.sprites():
+                for guard in self.current_level.guards.sprites():
                     if isinstance(guard, guards.Guard):
                         has_guard = True
                 if has_guard:
-                    light_sound.play(-1)
+                    self.light_sound.play(-1)
 
             # Check if player has hit obstacles
-            obstacle_hits = pygame.sprite.spritecollide(player, current_level.obstacle_list, False)
+            obstacle_hits = pygame.sprite.spritecollide(self.player, self.current_level.obstacle_list, False)
             if len(obstacle_hits):
-                player.reset()
-                current_level.reset_world()
-                current_level.set_scrolling()
+                self.player.reset()
+                self.current_level.reset_world()
+                self.current_level.set_scrolling()
 
             if not pause:
                 # Check if the guards got the players
-                hit_list = pygame.sprite.spritecollide(player, current_level.entities, False)
+                hit_list = pygame.sprite.spritecollide(self.player, self.current_level.entities, False)
                 for hit in hit_list:
                     if isinstance(hit, torches.Torch):
-                        if pixel_perfect_collision(player, hit):
+                        if pixel_perfect_collision(self.player, hit):
                             pause = 120
                             reset = True
 
                 # Playing running and jumping
                 if abs(run) > 0:
                     if run == 1:
-                        player.walk_right()
+                        self.player.walk_right()
                     elif run == -1:
-                        player.walk_left()
+                        self.player.walk_left()
 
                 if crouch:
-                    player.do_crouch()
+                    self.player.do_crouch()
                 else:
-                    player.stop_crouching()
+                    self.player.stop_crouching()
 
                 if jump and not crouch:
-                    player.jump()
+                    self.player.jump()
 
                 # Update entities
-            active_sprite_list.update()
+            self.active_sprite_list.update()
             if not pause:
-                current_level.update()
-            blackout.update()
-            crosshair.update()
+                self.current_level.update()
+            self.blackout.update()
+            self.crosshair.update()
 
             # Scrolling
-            if player.rect.x >= 624:
-                diff = player.rect.x - 624
-                if not current_level.at_edge_x:
-                    player.rect.x = 624
-                current_level.shift_world(-diff, 0)
+            if self.player.rect.x >= 624:
+                diff = self.player.rect.x - 624
+                if not self.current_level.at_edge_x:
+                    self.player.rect.x = 624
+                self.current_level.shift_world(-diff, 0)
 
-            if player.rect.x <= 288:
-                diff = player.rect.x - 288
-                if not current_level.at_edge_x:
-                    player.rect.x = 288
-                current_level.shift_world(-diff, 0)
+            if self.player.rect.x <= 288:
+                diff = self.player.rect.x - 288
+                if not self.current_level.at_edge_x:
+                    self.player.rect.x = 288
+                self.current_level.shift_world(-diff, 0)
 
-            if player.rect.y >= 454:
-                diff = player.rect.y - 454
-                if not current_level.at_edge_y:
-                    player.rect.y = 454
-                current_level.shift_world(0, diff)
+            if self.player.rect.y >= 454:
+                diff = self.player.rect.y - 454
+                if not self.current_level.at_edge_y:
+                    self.player.rect.y = 454
+                self.current_level.shift_world(0, diff)
 
-            if player.rect.y <= 288:
-                diff = player.rect.y - 288
-                if not current_level.at_edge_y:
-                    player.rect.y = 288
-                current_level.shift_world(0, diff)
+            if self.player.rect.y <= 288:
+                diff = self.player.rect.y - 288
+                if not self.current_level.at_edge_y:
+                    self.player.rect.y = 288
+                self.current_level.shift_world(0, diff)
 
             # All drawing goes here
-            current_level.draw(self.display)
-            active_sprite_list.draw(self.display)
-            blackout.draw(self.display)
-            crosshair.draw(self.display)
+            self.current_level.draw(self.display)
+            self.active_sprite_list.draw(self.display)
+            self.blackout.draw(self.display)
+            self.crosshair.draw(self.display)
 
             # Limit to 60 fps
             self.clock.tick(60)

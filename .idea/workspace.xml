@@ -52,8 +52,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="250" column="37" lean-forward="false" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="37" />
+            <state relative-caret-position="629">
+              <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -394,13 +394,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00329" summary="Fixed bug">
-      <created>1487501908887</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1487501908888</updated>
-    </task>
     <task id="LOCAL-00330" summary="create door function takes tile as input">
       <created>1487502086454</created>
       <option name="number" value="00330" />
@@ -737,7 +730,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487799546066</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="Fixed mouse pointer visibility">
+      <created>1487799706793</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1487799706793</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="TodoView">
@@ -776,7 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed main" />
     <MESSAGE value="Added new main.py" />
     <MESSAGE value="Updated setup.py for new main.py" />
     <MESSAGE value="Updated main.py" />
@@ -801,7 +800,8 @@
     <MESSAGE value="Buttons are clickable" />
     <MESSAGE value="'x' now closes window rather than returning to menu" />
     <MESSAGE value="Updated a mechanic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated a mechanic" />
+    <MESSAGE value="Fixed mouse pointer visibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed mouse pointer visibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -991,6 +991,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="250" column="37" lean-forward="false" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="37" />
+        <state relative-caret-position="629">
+          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
           <folding />
         </state>
       </provider>
