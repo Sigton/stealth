@@ -134,3 +134,14 @@ class Crosshair(pygame.sprite.Sprite):
             display.blit(self.image, (-24, -24))
         else:
             display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class ExclamationMark(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        sprite_sheet = spritesheet.SpriteSheet("resources/exclamation.png")
+
+        self.image = sprite_sheet.get_image_srcalpha(0, 0, 58, 86)
