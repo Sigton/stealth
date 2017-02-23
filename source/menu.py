@@ -75,7 +75,7 @@ class Menu:
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
                                   320, 350, lambda: self.game.run()))
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
-                                  280, 430, "quit"))
+                                  282, 426, "quit"))
 
         self.main_menu.add(text.Text("Stealth", 200, 165, 100))
 
