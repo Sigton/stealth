@@ -92,6 +92,9 @@ class Player(pygame.sprite.Sprite):
         self.footstep = pygame.mixer.Sound("resources/step.wav")
         self.footstep.set_volume(0.5)
 
+        self.fall = pygame.mixer.Sound("resources/fall.wav")
+        self.fall.set_volume(0.5)
+
         self.walk_dist = 0
 
         # Vars for controlling what the player is doing
@@ -100,6 +103,9 @@ class Player(pygame.sprite.Sprite):
         self.touching_ladder = False
 
         self.crouching = False
+
+        self.in_air = False
+        self.air_time = 0
 
         # The players health bar (to be removed in a future update)
 
@@ -202,6 +208,18 @@ class Player(pygame.sprite.Sprite):
         if self.rect.y + self.rect.height <= 0:
             self.rect.y = 0 - self.rect.height
             self.yv = 0
+
+        if not self.on_ground():
+            self.in_air = True
+
+        if self.on_ground() and self.in_air:
+            if self.air_time > 45:
+                self.fall.play()
+            self.in_air = False
+            self.air_time = 0
+
+        if self.in_air:
+            self.air_time += 1
 
     def on_ground(self):
 
