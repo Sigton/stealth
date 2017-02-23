@@ -52,7 +52,7 @@ class HUD(pygame.sprite.Sprite):
 
     def update(self):
 
-        if self.player.rect.y > 360:
+        if self.player.rect.y > 200:
             self.rect.y = 0
             self.health_label.rect.centery = 24
             self.stamina_label.rect.centery = 24
@@ -70,3 +70,5 @@ class HUD(pygame.sprite.Sprite):
         display.blit(self.image, (self.rect.x, self.rect.y))
         self.health_label.draw(display)
         self.stamina_label.draw(display)
+        self.health_num.draw(display)
+        self.stamina_num.draw(display)
