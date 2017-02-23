@@ -48,8 +48,8 @@
       <file leaf-file-name="covers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/covers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="799">
+              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -407,13 +407,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00356" summary="Updated more things">
-      <created>1487707487815</created>
-      <option name="number" value="00356" />
-      <option name="presentableId" value="LOCAL-00356" />
-      <option name="project" value="LOCAL" />
-      <updated>1487707487815</updated>
-    </task>
     <task id="LOCAL-00357" summary="Game is now a class">
       <created>1487709162381</created>
       <option name="number" value="00357" />
@@ -750,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487868742791</updated>
     </task>
-    <option name="localTasksCounter" value="405" />
+    <task id="LOCAL-00405" summary="Created GameOverScreen class">
+      <created>1487869196089</created>
+      <option name="number" value="00405" />
+      <option name="presentableId" value="LOCAL-00405" />
+      <option name="project" value="LOCAL" />
+      <updated>1487869196089</updated>
+    </task>
+    <option name="localTasksCounter" value="406" />
     <servers />
   </component>
   <component name="TodoView">
@@ -789,7 +789,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed mouse pointer visibility" />
     <MESSAGE value="Game now loads before showing menu" />
     <MESSAGE value="Resets players position when game starts" />
     <MESSAGE value="Fixed problem with setup and made new build" />
@@ -814,7 +813,8 @@
     <MESSAGE value="Reduced lag on level 2" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Better order of scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better order of scripts" />
+    <MESSAGE value="Created GameOverScreen class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created GameOverScreen class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/covers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+        <state relative-caret-position="799">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
