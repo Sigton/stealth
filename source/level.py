@@ -4,7 +4,7 @@ import platforms
 import guards
 import entities
 import healthbar
-import leveltext
+import text as leveltext
 import constants
 import terrain
 import os

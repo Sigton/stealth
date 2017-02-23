@@ -8,7 +8,7 @@ import guards
 import torches
 import covers
 import entities
-import leveltext
+import text as leveltext
 import hud
 from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
