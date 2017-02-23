@@ -43,12 +43,12 @@ class Game:
         label.update_text("Loading Level 1...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        # self.level_list.append(level.Level01(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
         label.draw(self.display)
@@ -70,6 +70,9 @@ class Game:
         # Create the blackout
         self.blackout = covers.Blackout()
         self.blackout.player = self.player
+
+        # Create the game over screen
+        self.game_over = covers.GameOverScreen()
 
         self.crosshair = entities.Crosshair()
 
@@ -210,7 +213,7 @@ class Game:
                 for hit in hit_list:
                     if isinstance(hit, torches.Torch):
                         if pixel_perfect_collision(self.player, hit):
-                            pause = 120
+                            pause = 180
                             reset = True
 
                             # Create an exclamation mark
@@ -268,6 +271,9 @@ class Game:
             self.active_sprite_list.draw(self.display)
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
+
+            if reset and 0 < pause < 60:
+                self.game_over.draw(self.display)
 
             # Limit to 60 fps
             self.clock.tick(60)
