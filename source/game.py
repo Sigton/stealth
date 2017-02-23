@@ -275,11 +275,9 @@ class Game:
             self.active_sprite_list.draw(self.display)
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
-
+            self.hud.draw(self.display)
             if reset and 0 < pause < 120:
                 self.game_over.draw(self.display)
-
-            self.hud.draw(self.display)
 
             # Limit to 60 fps
             self.clock.tick(60)
