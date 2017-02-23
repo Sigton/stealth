@@ -27,10 +27,6 @@ class Game:
             blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
             pygame.display.flip()
 
-        # Load the music
-        pygame.mixer.music.load("resources/music.mp3")
-        pygame.mixer.music.set_volume(0.25)
-
         # Create the player
         self.player = p.Player()
 
@@ -63,6 +59,10 @@ class Game:
 
     def run(self):
         # Game loop
+
+        # Load the music
+        pygame.mixer.music.load("resources/music.mp3")
+        pygame.mixer.music.set_volume(0.25)
 
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
@@ -252,5 +252,9 @@ class Game:
             self.clock.tick(60)
             # Update the display
             pygame.display.flip()
+
+        pygame.mixer.music.load("resources/menu_music.mp3")
+        pygame.mixer.music.set_volume(0.75)
+        pygame.mixer.music.play(-1)
 
         pygame.mouse.set_visible(True)

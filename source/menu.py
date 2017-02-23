@@ -86,7 +86,12 @@ class Menu:
 
     def run(self):
 
+        pygame.mixer.music.load("resources/menu_music.mp3")
+        pygame.mixer.music.set_volume(0.75)
+
         self.current_screen = self.main_menu
+
+        pygame.mixer.music.play(-1)
 
         game_exit = False
 
