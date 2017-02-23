@@ -272,7 +272,7 @@ class Game:
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
 
-            if reset and 0 < pause < 60:
+            if reset and 0 < pause < 120:
                 self.game_over.draw(self.display)
 
             # Limit to 60 fps
