@@ -93,9 +93,9 @@ class Menu:
         # Fill the group with everything on that screen of the menu
         self.main_menu = pygame.sprite.Group()
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
-                                  340, 350, lambda: self.game.run()))
+                                  320, 350, lambda: self.game.run()))
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
-                                  300, 430, "quit"))
+                                  280, 430, "quit"))
 
         self.main_menu.add(Text("Stealth", 200, 165, 100))
 
