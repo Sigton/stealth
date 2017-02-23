@@ -8,6 +8,7 @@ import guards
 import torches
 import covers
 import entities
+import leveltext
 from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
 import sys
@@ -27,6 +28,9 @@ class Game:
             blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
             pygame.display.flip()
 
+        # Create the loading label
+        label = leveltext.LoadingLabel("", 300, 500)
+
         # Create the player
         self.player = p.Player()
 
@@ -36,9 +40,24 @@ class Game:
         # Create the levels
         self.level_list = list()
 
+        label.update_text("Loading Level 1...", 480, 500)
+        label.draw(self.display)
+        pygame.display.flip()
         self.level_list.append(level.Level01(self.player, True))
+        self.loading_screen.draw(self.display)
+        label.update_text("Loading Level 2...", 480, 500)
+        label.draw(self.display)
+        pygame.display.flip()
         self.level_list.append(level.Level02(self.player, True))
+        self.loading_screen.draw(self.display)
+        label.update_text("Loading Level 3...", 480, 500)
+        label.draw(self.display)
+        pygame.display.flip()
         self.level_list.append(level.Level03(self.player, True))
+        self.loading_screen.draw(self.display)
+        label.update_text("Loading Level 4...", 480, 500)
+        label.draw(self.display)
+        pygame.display.flip()
         self.level_list.append(level.Level04(self.player, True))
 
         # Set the current level

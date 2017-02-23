@@ -26,7 +26,7 @@ class LoadingLabel(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.font = pygame.font.Font("resources/alienleague.ttf", 72)
+        self.font = pygame.font.Font("resources/alienleague.ttf", 36)
 
         self.image = self.font.render(text, True, constants.WHITE)
 
@@ -34,9 +34,12 @@ class LoadingLabel(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
 
-    def update_text(self, text):
+    def update_text(self, text, x, y):
 
         self.image = self.font.render(text, True, constants.WHITE)
+        self.rect = self.image.get_rect()
+        self.rect.centerx = x
+        self.rect.centery = y
 
     def draw(self, display):
 
