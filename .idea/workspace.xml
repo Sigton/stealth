@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +24,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="206" column="64" lean-forward="true" selection-start-line="206" selection-start-column="64" selection-end-line="206" selection-end-column="64" />
+            <state relative-caret-position="442">
+              <caret line="203" column="54" lean-forward="true" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -391,13 +387,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00382" summary="Created new build">
-      <created>1487800964571</created>
-      <option name="number" value="00382" />
-      <option name="presentableId" value="LOCAL-00382" />
-      <option name="project" value="LOCAL" />
-      <updated>1487800964572</updated>
-    </task>
     <task id="LOCAL-00383" summary="Fixed problem with setup">
       <created>1487801114784</created>
       <option name="number" value="00383" />
@@ -734,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487882907863</updated>
     </task>
-    <option name="localTasksCounter" value="432" />
+    <task id="LOCAL-00432" summary="Squashed bug">
+      <created>1487883212068</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1487883212069</updated>
+    </task>
+    <option name="localTasksCounter" value="433" />
     <servers />
   </component>
   <component name="TodoView">
@@ -773,7 +769,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished GameOverScreen class" />
     <MESSAGE value="Added in the game over screen" />
     <MESSAGE value="Adjusted timings" />
     <MESSAGE value="Removed unused class" />
@@ -798,7 +793,8 @@
     <MESSAGE value="Updated menu positions" />
     <MESSAGE value="Made falling sound effect louder" />
     <MESSAGE value="Updated menu music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated menu music" />
+    <MESSAGE value="Squashed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Squashed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="206" column="64" lean-forward="true" selection-start-line="206" selection-start-column="64" selection-end-line="206" selection-end-column="64" />
+        <state relative-caret-position="442">
+          <caret line="203" column="54" lean-forward="true" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
