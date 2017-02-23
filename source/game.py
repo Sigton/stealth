@@ -43,12 +43,12 @@ class Game:
         label.update_text("Loading Level 1...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        # self.level_list.append(level.Level01(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
         label.draw(self.display)
@@ -213,6 +213,9 @@ class Game:
                         if pixel_perfect_collision(self.player, hit):
                             pause = 120
                             reset = True
+
+                            # Create an exclamation mark
+                            self.current_level.entities.add(entities.ExclamationMark(hit.guard))
 
                 # Playing running and jumping
                 if abs(run) > 0:

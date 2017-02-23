@@ -138,10 +138,15 @@ class Crosshair(pygame.sprite.Sprite):
 
 class ExclamationMark(pygame.sprite.Sprite):
 
-    def __init__(self):
+    def __init__(self, guard):
 
         pygame.sprite.Sprite.__init__(self)
 
-        sprite_sheet = spritesheet.SpriteSheet("resources/exclamation.png")
+        self.guard = guard
 
-        self.image = sprite_sheet.get_image_srcalpha(0, 0, 58, 86)
+        sprite_sheet = spritesheet.SpriteSheet("resources/exclamation.png")
+        self.image = sprite_sheet.get_image_srcalpha(0, 0, 29, 43)
+
+        self.rect = self.image.get_rect()
+        self.rect.centerx = self.guard.rect.centerx
+        self.rect.y = self.guard.rect.y - 36
