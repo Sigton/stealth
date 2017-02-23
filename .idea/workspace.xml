@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/fall.wav" afterPath="$PROJECT_DIR$/source/resources/fall.wav" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/menu_music.mp3" afterPath="$PROJECT_DIR$/source/resources/menu_music.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -378,13 +374,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00380" summary="Resets players position when game starts">
-      <created>1487800355380</created>
-      <option name="number" value="00380" />
-      <option name="presentableId" value="LOCAL-00380" />
-      <option name="project" value="LOCAL" />
-      <updated>1487800355380</updated>
-    </task>
     <task id="LOCAL-00381" summary="Fixed bug">
       <created>1487800855673</created>
       <option name="number" value="00381" />
@@ -721,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487881774311</updated>
     </task>
-    <option name="localTasksCounter" value="430" />
+    <task id="LOCAL-00430" summary="Made falling sound effect louder">
+      <created>1487882843369</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1487882843370</updated>
+    </task>
+    <option name="localTasksCounter" value="431" />
     <servers />
   </component>
   <component name="TodoView">
@@ -760,7 +756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Better order of scripts" />
     <MESSAGE value="Created GameOverScreen class" />
     <MESSAGE value="Finished GameOverScreen class" />
     <MESSAGE value="Added in the game over screen" />
@@ -785,7 +780,8 @@
     <MESSAGE value="Updated HUD" />
     <MESSAGE value="Switched from numbers to &amp;'s" />
     <MESSAGE value="Updated menu positions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated menu positions" />
+    <MESSAGE value="Made falling sound effect louder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made falling sound effect louder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
