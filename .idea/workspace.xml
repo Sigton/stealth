@@ -4,7 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="226" column="26" lean-forward="true" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="214" column="40" lean-forward="false" selection-start-line="214" selection-start-column="40" selection-end-line="214" selection-end-column="40" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
-              <caret line="151" column="44" lean-forward="false" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
+              <caret line="157" column="46" lean-forward="false" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -379,13 +378,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00348" summary="Added new main.py">
-      <created>1487662224068</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
-      <option name="project" value="LOCAL" />
-      <updated>1487662224068</updated>
-    </task>
     <task id="LOCAL-00349" summary="Updated setup.py for new main.py">
       <created>1487662302259</created>
       <option name="number" value="00349" />
@@ -722,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487857108974</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="Exclamation marks are now created when guards find players">
+      <created>1487858857409</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1487858857409</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="TodoView">
@@ -761,7 +760,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated things" />
     <MESSAGE value="Updated menu.py and menu buttons images" />
     <MESSAGE value="Updated how buttons update" />
     <MESSAGE value="Updated menu design" />
@@ -786,7 +784,8 @@
     <MESSAGE value="Created new build" />
     <MESSAGE value="Updated menu background" />
     <MESSAGE value="Create exclamation mark class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create exclamation mark class" />
+    <MESSAGE value="Exclamation marks are now created when guards find players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exclamation marks are now created when guards find players" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -999,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="226" column="26" lean-forward="true" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="214" column="40" lean-forward="false" selection-start-line="214" selection-start-column="40" selection-end-line="214" selection-end-column="40" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1010,7 +1009,7 @@
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="151" column="44" lean-forward="false" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
+          <caret line="157" column="46" lean-forward="false" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
           <folding />
         </state>
       </provider>

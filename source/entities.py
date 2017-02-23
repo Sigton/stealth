@@ -150,3 +150,9 @@ class ExclamationMark(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = self.guard.rect.centerx
         self.rect.y = self.guard.rect.y - 36
+
+        self.timer = 120
+
+    def update(self):
+
+        self.guard.level.entities.remove(self)
