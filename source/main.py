@@ -33,11 +33,12 @@ def main():
 
     # Start the menu
     menu = m.Menu(game_display, clock)
-
     menu.run()
 
+    # Quit the game
     pygame.quit()
     sys.exit(0)
 
 if __name__ == "__main__":
+    # Begin everything
     main()

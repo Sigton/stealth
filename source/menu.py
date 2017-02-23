@@ -8,10 +8,14 @@ import constants
 
 class Button(pygame.sprite.Sprite):
 
+    # Generic button class
+
     def __init__(self, sprite_sheet, sprite_sheet_data, x, y, command):
 
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set the sprites images
         self.sprite_sheet = spritesheet.SpriteSheet(sprite_sheet)
 
         self.image_inactive = self.sprite_sheet.get_image_srcalpha(sprite_sheet_data[0][0],
@@ -26,19 +30,22 @@ class Button(pygame.sprite.Sprite):
 
         self.image = self.image_inactive
 
+        # Correct the sprites position
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
 
+        # Set the command
         self.command = command
 
     def update(self):
 
+        # Get the mouse pointer position
         mouse_pos = pygame.mouse.get_pos()
 
+        # Check if the mouse is touching the button
         touching_pointer = self.rect.collidepoint(mouse_pos)
-
-        if touching_pointer:
+        if touching_pointer:  # If it is then switch the image
             if self.image != self.image_active:
                 self.image = self.image_active
         else:
@@ -48,14 +55,20 @@ class Button(pygame.sprite.Sprite):
 
 class Text(pygame.sprite.Sprite):
 
+    # Generic text class
+
     def __init__(self, text, size, x, y):
 
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set the font
         self.font = pygame.font.Font("resources/alienleague.ttf", size)
 
+        # Draw the text
         self.image = self.font.render(text, True, constants.WHITE)
 
+        # Then move it
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -63,15 +76,21 @@ class Text(pygame.sprite.Sprite):
 
 class Menu:
 
+    # This is the games menu
+
     def __init__(self, display, clock):
 
+        # Set the display to draw to and the clock for timing
         self.display = display
         self.clock = clock
 
+        # Create an instance of the game class
         self.game = g.Game(display, clock)
 
+        # Set the background
         self.background = pygame.image.load("resources/menubackground.png").convert()
 
+        # Fill the group with everything on that screen of the menu
         self.main_menu = pygame.sprite.Group()
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
                                   340, 350, lambda: self.game.run()))
@@ -82,27 +101,33 @@ class Menu:
 
         self.main_menu.add(Text("Stealth", 200, 165, 100))
 
+        # The screen that is currently displayed
         self.current_screen = None
 
     def run(self):
 
+        # Load the music
         pygame.mixer.music.load("resources/menu_music.mp3")
         pygame.mixer.music.set_volume(0.75)
 
+        # Set the current screen
         self.current_screen = self.main_menu
 
+        # Play the music
         pygame.mixer.music.play(-1)
 
         game_exit = False
 
         while not game_exit:
 
+            # Event loop
             for event in pygame.event.get():
-                if event.type == QUIT:
+                if event.type == QUIT:  # Quit closes the application
                     game_exit = True
 
                 if event.type == MOUSEBUTTONUP:
 
+                    # Check if any buttons were clicked
                     mouse_pos = pygame.mouse.get_pos()
 
                     buttons_clicked = [x for x in self.current_screen if x.rect.collidepoint(mouse_pos)
@@ -110,19 +135,25 @@ class Menu:
 
                     for button in buttons_clicked:
                         if button.command is not None:
+
+                            # Execute the buttons command
+
                             if button.command == "quit":  # Special case for quitting game
                                 game_exit = True
 
                             else:
                                 button.command()
 
+            # Update the sprites
             self.current_screen.update()
 
+            # Draw to the display
             self.display.fill(constants.BLACK)
             self.display.blit(self.background, (0, 0))
 
             self.current_screen.draw(self.display)
 
+            # Update and limit to 60fps
             pygame.display.update()
             self.clock.tick(60)
 
