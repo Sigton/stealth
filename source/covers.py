@@ -67,3 +67,11 @@ class DarkScreen(pygame.sprite.Sprite):
     def draw(self, display):
 
         display.blit(self.image, (0, 0))
+
+
+class GameOverScreen(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
