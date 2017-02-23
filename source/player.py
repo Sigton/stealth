@@ -3,7 +3,6 @@ import pygame
 import spritesheet
 import constants
 import funcs
-import healthbar
 
 
 class Player(pygame.sprite.Sprite):
@@ -22,7 +21,6 @@ class Player(pygame.sprite.Sprite):
 
     image = None
     level = None
-    health_bar = None  # tbc
 
     # Methods
     def __init__(self):
@@ -106,11 +104,6 @@ class Player(pygame.sprite.Sprite):
 
         self.in_air = False
         self.air_time = 0
-
-        # The players health bar (to be removed in a future update)
-
-        self.health_bar = healthbar.HealthBar()
-        self.health_bar.parent = self
 
     def update(self):
 

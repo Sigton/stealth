@@ -9,6 +9,7 @@ import torches
 import covers
 import entities
 import leveltext
+import hud
 from spritesheet import blit_alpha
 from funcs import pixel_perfect_collision
 import sys
@@ -75,6 +76,8 @@ class Game:
         self.game_over = covers.GameOverScreen()
 
         self.crosshair = entities.Crosshair()
+
+        self.hud = hud.HUD()
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
@@ -274,6 +277,8 @@ class Game:
 
             if reset and 0 < pause < 120:
                 self.game_over.draw(self.display)
+
+            self.hud.draw(self.display)
 
             # Limit to 60 fps
             self.clock.tick(60)
