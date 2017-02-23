@@ -45,8 +45,8 @@ class HUD(pygame.sprite.Sprite):
         self.health_label = Label("Health:", 28, 248, 680)
         self.stamina_label = Label("Stamina:", 28, 488, 680)
 
-        self.health_num = Label("10", 28, 368, 680)
-        self.stamina_num = Label("10", 28, 608, 680)
+        self.health_num = Label("100%", 28, 368, 680)
+        self.stamina_num = Label("100%", 28, 608, 680)
 
         self.player = player
 
