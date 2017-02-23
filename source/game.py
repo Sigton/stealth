@@ -77,7 +77,7 @@ class Game:
 
         self.crosshair = entities.Crosshair()
 
-        self.hud = hud.HUD()
+        self.hud = hud.HUD(self.player)
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
@@ -243,6 +243,7 @@ class Game:
                 self.current_level.update()
             self.blackout.update()
             self.crosshair.update()
+            self.hud.update()
 
             # Scrolling
             if self.player.rect.x >= 624:
