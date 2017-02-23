@@ -1,6 +1,31 @@
 import pygame
 
 import spritesheet
+import text as t
+import constants
+
+
+class Label(t.Text):
+
+    def __init__(self, text, size, x, y):
+
+        t.Text.__init__(self, text, size, x, y)
+
+        self.start_x = self.rect.centerx
+        self.start_y = self.rect.centery
+
+    def update_text(self, text):
+
+        self.image = self.font.render(text, True, constants.WHTIE)
+
+        self.rect = self.image.get_rect()
+
+        self.rect.centerx = self.start_x
+        self.rect.centery = self.start_y
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
 
 
 class HUD(pygame.sprite.Sprite):
