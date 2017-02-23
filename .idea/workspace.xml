@@ -24,8 +24,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -397,13 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00371" summary="Updated things">
-      <created>1487780921876</created>
-      <option name="number" value="00371" />
-      <option name="presentableId" value="LOCAL-00371" />
-      <option name="project" value="LOCAL" />
-      <updated>1487780921876</updated>
-    </task>
     <task id="LOCAL-00372" summary="Updated menu.py and menu buttons images">
       <created>1487793393421</created>
       <option name="number" value="00372" />
@@ -740,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487877848446</updated>
     </task>
-    <option name="localTasksCounter" value="420" />
+    <task id="LOCAL-00420" summary="Added a label class">
+      <created>1487878480257</created>
+      <option name="number" value="00420" />
+      <option name="presentableId" value="LOCAL-00420" />
+      <option name="project" value="LOCAL" />
+      <updated>1487878480257</updated>
+    </task>
+    <option name="localTasksCounter" value="421" />
     <servers />
   </component>
   <component name="TodoView">
@@ -779,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated menu background" />
     <MESSAGE value="Create exclamation mark class" />
     <MESSAGE value="Exclamation marks are now created when guards find players" />
     <MESSAGE value="Exclamation mark now removes itself once the game resumes" />
@@ -804,7 +803,8 @@
     <MESSAGE value="Fixed a problem with the guards animation" />
     <MESSAGE value="Renamed leveltext to text" />
     <MESSAGE value="Moved Text to text.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved Text to text.py" />
+    <MESSAGE value="Added a label class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a label class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
