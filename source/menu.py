@@ -3,6 +3,7 @@ from pygame.locals import *
 
 import game as g
 import spritesheet
+import text
 import constants
 
 
@@ -53,27 +54,6 @@ class Button(pygame.sprite.Sprite):
                 self.image = self.image_inactive
 
 
-class Text(pygame.sprite.Sprite):
-
-    # Generic text class
-
-    def __init__(self, text, size, x, y):
-
-        # Call the parents constructor
-        pygame.sprite.Sprite.__init__(self)
-
-        # Set the font
-        self.font = pygame.font.Font("resources/alienleague.ttf", size)
-
-        # Draw the text
-        self.image = self.font.render(text, True, constants.WHITE)
-
-        # Then move it
-        self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.rect.y = y
-
-
 class Menu:
 
     # This is the games menu
@@ -97,7 +77,7 @@ class Menu:
         self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
                                   280, 430, "quit"))
 
-        self.main_menu.add(Text("Stealth", 200, 165, 100))
+        self.main_menu.add(text.Text("Stealth", 200, 165, 100))
 
         # The screen that is currently displayed
         self.current_screen = None

@@ -44,3 +44,24 @@ class LoadingLabel(pygame.sprite.Sprite):
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class Text(pygame.sprite.Sprite):
+
+    # Generic text class
+
+    def __init__(self, text, size, x, y):
+
+        # Call the parents constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        # Set the font
+        self.font = pygame.font.Font("resources/alienleague.ttf", size)
+
+        # Draw the text
+        self.image = self.font.render(text, True, constants.WHITE)
+
+        # Then move it
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
