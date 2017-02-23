@@ -80,10 +80,10 @@ class Guard(pygame.sprite.Sprite):
                 self.direction = "R"
 
         if self.direction == "R":
-            frame = (self.rect.x // 30) % len(self.walking_frames_r)
+            frame = (self.rect.x // 15) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
         else:
-            frame = (self.rect.x // 30) % len(self.walking_frames_l)
+            frame = (self.rect.x // 15) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
 
     def on_ground(self):
@@ -226,10 +226,10 @@ class HostileGuard(pygame.sprite.Sprite):
 
         if abs(self.xv) > 0.5:
             if self.direction == "R":
-                frame = (self.rect.x // 30) % len(self.walking_frames_r)
+                frame = (self.rect.x // 15) % len(self.walking_frames_r)
                 self.image = self.walking_frames_r[frame]
             else:
-                frame = (self.rect.x // 30) % len(self.walking_frames_l)
+                frame = (self.rect.x // 15) % len(self.walking_frames_l)
                 self.image = self.walking_frames_l[frame]
         else:
             if self.direction == "R":
