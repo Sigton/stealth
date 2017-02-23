@@ -123,10 +123,11 @@ class Player(pygame.sprite.Sprite):
         elif self.touching_ladder and not self.climbing:
             self.yv = self.climb_speed
         else:
-            self.yv += self.gravity
+            if not (self.crouching and not self.climbing):
+                self.yv += self.gravity
 
-            if self.yv >= 15:
-                self.yv = 15
+                if self.yv >= 15:
+                    self.yv = 15
 
         if self.rect.y >= constants.SCREEN_HEIGHT - self.rect.height and self.yv >= 0:
             self.yv = 0
