@@ -278,4 +278,6 @@ class Game:
         pygame.mixer.music.set_volume(0.75)
         pygame.mixer.music.play(-1)
 
+        self.light_sound.stop()
+
         pygame.mouse.set_visible(True)
