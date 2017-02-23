@@ -62,6 +62,9 @@ class Guard(pygame.sprite.Sprite):
         self.torch = torches.Torch()
         self.torch.guard = self
 
+        # Var for animation
+        self.walk_dist = 0
+
     def update(self):
 
         # Update the position of the guards
@@ -72,6 +75,7 @@ class Guard(pygame.sprite.Sprite):
                 self.xv = -self.speed/2  # For some reason guards move twice as fast left
 
             self.rect.x += self.xv
+            self.walk_dist += 1
 
         if self.at_wall() or self.on_edge():
             if self.direction == "R":
@@ -80,10 +84,10 @@ class Guard(pygame.sprite.Sprite):
                 self.direction = "R"
 
         if self.direction == "R":
-            frame = (self.rect.x // 15) % len(self.walking_frames_r)
+            frame = (self.walk_dist // 15) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
         else:
-            frame = (self.rect.x // 15) % len(self.walking_frames_l)
+            frame = (self.walk_dist // 15) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
 
     def on_ground(self):
