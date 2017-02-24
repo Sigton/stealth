@@ -28,6 +28,7 @@ Coming soon is:
 - Pause menu
 - Security guards
 - Laser beams
+- Performance Improvements
 
 ## A Thanks to
 My friends, for trying everything out and telling me what they thought. Without this, the game would be nowhere as good
