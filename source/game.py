@@ -82,6 +82,9 @@ class Game:
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
 
+        self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
+        self.dissolve_sound.set_volume(0.2)
+
     def run(self):
         # Game loop
 
@@ -205,8 +208,9 @@ class Game:
 
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(self.player, self.current_level.obstacle_list, False)
-            if len(obstacle_hits):
+            if len(obstacle_hits) and not self.player.dying:
                 self.player.dying = True
+                self.dissolve_sound.play()
 
             if self.player.dying and self.player.death_progress >= 22:
                 self.player.reset()
