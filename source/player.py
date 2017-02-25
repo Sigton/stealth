@@ -127,7 +127,21 @@ class Player(pygame.sprite.Sprite):
         self.in_air = False
         self.air_time = 0
 
+        self.dying = False
+        self.death_progress = 0
+
     def update(self):
+
+        if self.dying:
+            self.death_progress += 1
+
+            if self.death_progress % 4 == 0:
+                if self.direction == "R":
+                    self.image = self.dissolve_frames_r[self.death_progress]
+                else:
+                    self.image = self.dissolve_frames_l[self.death_progress]
+
+            return
 
         self.touching_ladder = self.on_ladder()
 
