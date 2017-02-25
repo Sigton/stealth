@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
@@ -417,13 +419,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00417" summary="Fixed a problem with the guards animation">
-      <created>1487876835843</created>
-      <option name="number" value="00417" />
-      <option name="presentableId" value="LOCAL-00417" />
-      <option name="project" value="LOCAL" />
-      <updated>1487876835843</updated>
-    </task>
     <task id="LOCAL-00418" summary="Renamed leveltext to text">
       <created>1487877712556</created>
       <option name="number" value="00418" />
@@ -760,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488059437434</updated>
     </task>
-    <option name="localTasksCounter" value="467" />
+    <task id="LOCAL-00467" summary="Updated level 4">
+      <created>1488060405938</created>
+      <option name="number" value="00467" />
+      <option name="presentableId" value="LOCAL-00467" />
+      <option name="project" value="LOCAL" />
+      <updated>1488060405938</updated>
+    </task>
+    <option name="localTasksCounter" value="468" />
     <servers />
   </component>
   <component name="TodoView">
@@ -818,13 +820,13 @@
     <MESSAGE value="Health regenerates slower" />
     <MESSAGE value="Added more to level 4" />
     <MESSAGE value="Fixed some things" />
-    <MESSAGE value="Updated level 4" />
     <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Even more decorations in level 4" />
     <MESSAGE value="Updated terrain.png" />
     <MESSAGE value="Added spritesheet data for new images" />
     <MESSAGE value="New tiles completely added" />
-    <option name="LAST_COMMIT_MESSAGE" value="New tiles completely added" />
+    <MESSAGE value="Updated level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
