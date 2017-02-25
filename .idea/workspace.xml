@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/terrain.png" afterPath="$PROJECT_DIR$/source/resources/terrain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/platforms.py" afterPath="$PROJECT_DIR$/source/platforms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/terrain.py" afterPath="$PROJECT_DIR$/source/terrain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +41,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="588" column="34" lean-forward="false" selection-start-line="588" selection-start-column="34" selection-end-line="588" selection-end-column="34" />
+            <state relative-caret-position="408">
+              <caret line="337" column="42" lean-forward="false" selection-start-line="337" selection-start-column="42" selection-end-line="337" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -44,11 +50,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platforms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="platforms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/platforms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            <state relative-caret-position="119">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/terrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -65,8 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>30 9</find>
-      <find>29 9</find>
       <find>22 10</find>
       <find>5 8</find>
       <find>16727808</find>
@@ -95,6 +109,8 @@
       <find>hea</find>
       <find>reset</find>
       <find>health</find>
+      <find>4 34</find>
+      <find>7 34</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,7 +147,6 @@
         <option value="$PROJECT_DIR$/source/spritesheet.py" />
         <option value="$PROJECT_DIR$/source/arms.py" />
         <option value="$PROJECT_DIR$/source/funcs.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/leveltext.py" />
@@ -147,6 +162,7 @@
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
       </list>
     </option>
   </component>
@@ -407,13 +423,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00415" summary="Updated HUD image and fixed guard animation speed">
-      <created>1487876563224</created>
-      <option name="number" value="00415" />
-      <option name="presentableId" value="LOCAL-00415" />
-      <option name="project" value="LOCAL" />
-      <updated>1487876563224</updated>
     </task>
     <task id="LOCAL-00416" summary="Fixed rendering order problem">
       <created>1487876634846</created>
@@ -751,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488058712620</updated>
     </task>
-    <option name="localTasksCounter" value="465" />
+    <task id="LOCAL-00465" summary="Added spritesheet data for new images">
+      <created>1488058829996</created>
+      <option name="number" value="00465" />
+      <option name="presentableId" value="LOCAL-00465" />
+      <option name="project" value="LOCAL" />
+      <updated>1488058829997</updated>
+    </task>
+    <option name="localTasksCounter" value="466" />
     <servers />
   </component>
   <component name="TodoView">
@@ -772,7 +788,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -790,7 +806,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created arrays of frames" />
     <MESSAGE value="A small part of the script for the death animation" />
     <MESSAGE value="Player now &quot;dies&quot;" />
     <MESSAGE value="Centered player while dissolving" />
@@ -815,7 +830,8 @@
     <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Even more decorations in level 4" />
     <MESSAGE value="Updated terrain.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated terrain.png" />
+    <MESSAGE value="Added spritesheet data for new images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spritesheet data for new images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -959,13 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="50" column="49" lean-forward="true" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/torches.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1020,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="588" column="34" lean-forward="false" selection-start-line="588" selection-start-column="34" selection-end-line="588" selection-end-column="34" />
+        <state relative-caret-position="408">
+          <caret line="337" column="42" lean-forward="false" selection-start-line="337" selection-start-column="42" selection-end-line="337" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1030,8 +1039,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/platforms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
