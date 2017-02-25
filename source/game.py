@@ -210,9 +210,11 @@ class Game:
             obstacle_hits = pygame.sprite.spritecollide(self.player, self.current_level.obstacle_list, False)
             if len(obstacle_hits) and not self.player.dying:
                 self.player.dying = True
+                self.player.health = 0
                 self.dissolve_sound.play()
 
             if self.player.dying and self.player.death_progress >= 75:
+                self.player.health = 100
                 self.player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
