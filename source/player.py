@@ -293,6 +293,8 @@ class Player(pygame.sprite.Sprite):
         self.yv = 0
         self.direction = "R"
         self.image = self.stand_image_r
+        self.dying = False
+        self.death_progress = 0
 
     def use_keypad(self):
 

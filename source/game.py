@@ -206,6 +206,9 @@ class Game:
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(self.player, self.current_level.obstacle_list, False)
             if len(obstacle_hits):
+                self.player.dying = True
+
+            if self.player.dying and self.player.death_progress > 24:
                 self.player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
