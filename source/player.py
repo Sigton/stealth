@@ -256,6 +256,7 @@ class Player(pygame.sprite.Sprite):
         if (self.on_ground() or self.on_ladder()) and self.in_air:
             if self.air_time > 45:
                 self.fall.play()
+                self.health -= self.air_time / 10
             self.in_air = False
             self.air_time = 0
 
