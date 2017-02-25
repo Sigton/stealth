@@ -419,13 +419,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00418" summary="Renamed leveltext to text">
-      <created>1487877712556</created>
-      <option name="number" value="00418" />
-      <option name="presentableId" value="LOCAL-00418" />
-      <option name="project" value="LOCAL" />
-      <updated>1487877712556</updated>
-    </task>
     <task id="LOCAL-00419" summary="Moved Text to text.py">
       <created>1487877848446</created>
       <option name="number" value="00419" />
@@ -762,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488060405938</updated>
     </task>
-    <option name="localTasksCounter" value="468" />
+    <task id="LOCAL-00468" summary="Added more guards to level 4">
+      <created>1488060783285</created>
+      <option name="number" value="00468" />
+      <option name="presentableId" value="LOCAL-00468" />
+      <option name="project" value="LOCAL" />
+      <updated>1488060783285</updated>
+    </task>
+    <option name="localTasksCounter" value="469" />
     <servers />
   </component>
   <component name="TodoView">
@@ -801,7 +801,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player now &quot;dies&quot;" />
     <MESSAGE value="Centered player while dissolving" />
     <MESSAGE value="Added dissolve sound effect" />
     <MESSAGE value="Slowed down dissolve animation" />
@@ -826,7 +825,8 @@
     <MESSAGE value="Added spritesheet data for new images" />
     <MESSAGE value="New tiles completely added" />
     <MESSAGE value="Updated level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
+    <MESSAGE value="Added more guards to level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more guards to level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
