@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/hud.py" afterPath="$PROJECT_DIR$/source/hud.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/source/hud.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
-              <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+              <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -143,8 +146,8 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
-        <option value="$PROJECT_DIR$/source/hud.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
+        <option value="$PROJECT_DIR$/source/hud.py" />
       </list>
     </option>
   </component>
@@ -516,13 +519,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00397" summary="Exclamation marks are now created when guards find players">
-      <created>1487858857409</created>
-      <option name="number" value="00397" />
-      <option name="presentableId" value="LOCAL-00397" />
-      <option name="project" value="LOCAL" />
-      <updated>1487858857409</updated>
-    </task>
     <task id="LOCAL-00398" summary="Exclamation mark now removes itself once the game resumes">
       <created>1487859060909</created>
       <option name="number" value="00398" />
@@ -859,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488035616152</updated>
     </task>
-    <option name="localTasksCounter" value="447" />
+    <task id="LOCAL-00447" summary="Player now takes fall damage">
+      <created>1488035888223</created>
+      <option name="number" value="00447" />
+      <option name="presentableId" value="LOCAL-00447" />
+      <option name="project" value="LOCAL" />
+      <updated>1488035888224</updated>
+    </task>
+    <option name="localTasksCounter" value="448" />
     <servers />
   </component>
   <component name="TodoView">
@@ -898,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moved Text to text.py" />
     <MESSAGE value="Added a label class" />
     <MESSAGE value="Added labels to HUD" />
     <MESSAGE value="Added back in the other levels to create build" />
@@ -923,7 +925,8 @@
     <MESSAGE value="Added delay after dissolving" />
     <MESSAGE value="Player disappears after dissolving" />
     <MESSAGE value="Connected players attributes to the HUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected players attributes to the HUD" />
+    <MESSAGE value="Player now takes fall damage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player now takes fall damage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1135,7 +1138,7 @@
     <entry file="file://$PROJECT_DIR$/source/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
-          <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding />
         </state>
       </provider>

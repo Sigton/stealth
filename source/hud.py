@@ -65,8 +65,8 @@ class HUD(pygame.sprite.Sprite):
             self.health_num.rect.centery = 696
             self.stamina_num.rect.centery = 696
 
-        self.health_num.update_text(self.player.health + "%")
-        self.stamina_num.update_text(self.player.stamina + "%")
+        self.health_num.update_text(str(self.player.health) + "%")
+        self.stamina_num.update_text(str(self.player.stamina) + "%")
 
     def draw(self, display):
 
