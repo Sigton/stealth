@@ -16,7 +16,7 @@ class Label(t.Text):
 
     def update_text(self, text):
 
-        self.image = self.font.render(text, True, constants.WHTIE)
+        self.image = self.font.render(text, True, constants.WHITE)
 
         self.rect = self.image.get_rect()
 
