@@ -97,6 +97,9 @@ class Player(pygame.sprite.Sprite):
             image = pygame.transform.flip(frame, True, False)
             self.dissolve_frames_l.append(image)
 
+        # Create an empty image for when the player needs to be hidden
+        self.empty_image = sprite_sheet.get_image(88, 48, 4, 4)
+
         # Set the starting image
         self.image = self.stand_image_r
 
@@ -144,6 +147,8 @@ class Player(pygame.sprite.Sprite):
 
                 self.rect = self.image.get_rect()
                 self.rect.center = old_center
+            elif self.death_progress >= 30:
+                self.image = self.empty_image
 
             return
 
