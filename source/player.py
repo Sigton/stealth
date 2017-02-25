@@ -263,6 +263,13 @@ class Player(pygame.sprite.Sprite):
         if self.in_air:
             self.air_time += 1
 
+        # Player slowly regains health and stamina
+        if self.health < 100:
+            self.health += 0.005
+
+        if self.stamina < 100:
+            self.stamina += 0.005
+
     def on_ground(self):
 
         # Helper function that returns whether the player is on the ground
