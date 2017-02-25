@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +38,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
+            <state relative-caret-position="459">
+              <caret line="294" column="41" lean-forward="false" selection-start-line="294" selection-start-column="41" selection-end-line="294" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -506,13 +509,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00389" summary="Removed options button">
-      <created>1487839402790</created>
-      <option name="number" value="00389" />
-      <option name="presentableId" value="LOCAL-00389" />
-      <option name="project" value="LOCAL" />
-      <updated>1487839402790</updated>
-    </task>
     <task id="LOCAL-00390" summary="Added LoadingLabel class">
       <created>1487841065754</created>
       <option name="number" value="00390" />
@@ -849,7 +845,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488032098862</updated>
     </task>
-    <option name="localTasksCounter" value="439" />
+    <task id="LOCAL-00439" summary="Fixed bug">
+      <created>1488032924473</created>
+      <option name="number" value="00439" />
+      <option name="presentableId" value="LOCAL-00439" />
+      <option name="project" value="LOCAL" />
+      <updated>1488032924473</updated>
+    </task>
+    <option name="localTasksCounter" value="440" />
     <servers />
   </component>
   <component name="TodoView">
@@ -870,7 +873,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -897,7 +900,6 @@
     <MESSAGE value="Moved Text to text.py" />
     <MESSAGE value="Added a label class" />
     <MESSAGE value="Added labels to HUD" />
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added back in the other levels to create build" />
     <MESSAGE value="Updated setup.py and created new build" />
     <MESSAGE value="Added numbers for health and stamina" />
@@ -913,7 +915,8 @@
     <MESSAGE value="Created arrays of frames" />
     <MESSAGE value="A small part of the script for the death animation" />
     <MESSAGE value="Player now &quot;dies&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player now &quot;dies&quot;" />
+    <MESSAGE value="Fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1123,8 +1126,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
+        <state relative-caret-position="459">
+          <caret line="294" column="41" lean-forward="false" selection-start-line="294" selection-start-column="41" selection-end-line="294" selection-end-column="41" />
           <folding />
         </state>
       </provider>

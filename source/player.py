@@ -136,10 +136,14 @@ class Player(pygame.sprite.Sprite):
             self.death_progress += 1
 
             if self.death_progress % 4 == 0:
+                old_center = self.rect.center
                 if self.direction == "R":
                     self.image = self.dissolve_frames_r[int(self.death_progress/4)]
                 else:
                     self.image = self.dissolve_frames_l[int(self.death_progress/4)]
+
+                self.rect = self.image.get_rect()
+                self.rect.center = old_center
 
             return
 
@@ -287,12 +291,13 @@ class Player(pygame.sprite.Sprite):
     def reset(self):
 
         # Reset to the sprites original position and image
+        self.image = self.stand_image_r
+        self.rect = self.image.get_rect()
         self.rect.x = 48
         self.rect.y = 385
         self.xv = 0
         self.yv = 0
         self.direction = "R"
-        self.image = self.stand_image_r
         self.dying = False
         self.death_progress = 0
 
