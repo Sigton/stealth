@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -389,13 +385,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00407" summary="Added in the game over screen">
-      <created>1487870226442</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1487870226442</updated>
-    </task>
     <task id="LOCAL-00408" summary="Adjusted timings">
       <created>1487870277327</created>
       <option name="number" value="00408" />
@@ -732,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488042476812</updated>
     </task>
-    <option name="localTasksCounter" value="457" />
+    <task id="LOCAL-00457" summary="Updated level 4">
+      <created>1488056323953</created>
+      <option name="number" value="00457" />
+      <option name="presentableId" value="LOCAL-00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1488056323953</updated>
+    </task>
+    <option name="localTasksCounter" value="458" />
     <servers />
   </component>
   <component name="TodoView">
@@ -771,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made falling sound effect louder" />
     <MESSAGE value="Updated menu music" />
     <MESSAGE value="Squashed bug" />
     <MESSAGE value="Squashed more bugs" />
@@ -796,7 +791,8 @@
     <MESSAGE value="Acid removes all health" />
     <MESSAGE value="Increased severity of fall damage" />
     <MESSAGE value="Health regenerates slower" />
-    <option name="LAST_COMMIT_MESSAGE" value="Health regenerates slower" />
+    <MESSAGE value="Updated level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
