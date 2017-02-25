@@ -75,6 +75,31 @@ class Player(pygame.sprite.Sprite):
             image = pygame.transform.flip(frame, True, False)
             self.crouching_frames_l.append(image)
 
+        # Get the dissolve animation
+        self.dissolve_frames_r = []
+        self.dissolve_frames_l = []
+
+        image = sprite_sheet.get_image(0, 48, 22, 48)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(22, 48, 20, 46)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(42, 48, 16, 34)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(58, 48, 14, 24)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(72, 48, 10, 14)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(82, 48, 6, 10)
+        self.dissolve_frames_r.append(image)
+
+        # Flip them
+        for frame in self.dissolve_frames_r:
+            image = pygame.transform.flip(frame, True, False)
+            self.dissolve_frames_l.append(image)
+
+        # Create an empty image for when the player needs to be hidden
+        self.empty_image = sprite_sheet.get_image(88, 48, 4, 4)
+
         # Set the starting image
         self.image = self.stand_image_r
 
@@ -95,6 +120,10 @@ class Player(pygame.sprite.Sprite):
 
         self.walk_dist = 0
 
+        # The players stats
+        self.health = 100
+        self.stamina = 100
+
         # Vars for controlling what the player is doing
 
         self.climbing = False
@@ -105,7 +134,27 @@ class Player(pygame.sprite.Sprite):
         self.in_air = False
         self.air_time = 0
 
+        self.dying = False
+        self.death_progress = 0
+
     def update(self):
+
+        if self.dying:
+            self.death_progress += 1
+
+            if self.death_progress % 5 == 0 and self.death_progress < 30:
+                old_center = self.rect.center
+                if self.direction == "R":
+                    self.image = self.dissolve_frames_r[int(self.death_progress/5)]
+                else:
+                    self.image = self.dissolve_frames_l[int(self.death_progress/5)]
+
+                self.rect = self.image.get_rect()
+                self.rect.center = old_center
+            elif self.death_progress >= 30:
+                self.image = self.empty_image
+
+            return
 
         self.touching_ladder = self.on_ladder()
 
@@ -201,17 +250,25 @@ class Player(pygame.sprite.Sprite):
             self.rect.y = 0 - self.rect.height
             self.yv = 0
 
-        if not self.on_ground():
+        if not (self.on_ground() or self.on_ladder()):
             self.in_air = True
 
-        if self.on_ground() and self.in_air:
+        if (self.on_ground() or self.on_ladder()) and self.in_air:
             if self.air_time > 45:
                 self.fall.play()
+                self.health -= self.air_time / 7.5
             self.in_air = False
             self.air_time = 0
 
         if self.in_air:
             self.air_time += 1
+
+        # Player slowly regains health and stamina
+        if self.health < 100:
+            self.health += 0.001
+
+        if self.stamina < 100:
+            self.stamina += 0.001
 
     def on_ground(self):
 
@@ -251,12 +308,17 @@ class Player(pygame.sprite.Sprite):
     def reset(self):
 
         # Reset to the sprites original position and image
+        self.image = self.stand_image_r
+        self.rect = self.image.get_rect()
         self.rect.x = 48
         self.rect.y = 385
         self.xv = 0
         self.yv = 0
         self.direction = "R"
-        self.image = self.stand_image_r
+        self.dying = False
+        self.death_progress = 0
+        self.in_air = False
+        self.air_time = 0
 
     def use_keypad(self):
 

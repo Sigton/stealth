@@ -16,7 +16,7 @@ class Label(t.Text):
 
     def update_text(self, text):
 
-        self.image = self.font.render(text, True, constants.WHTIE)
+        self.image = self.font.render(text, True, constants.WHITE)
 
         self.rect = self.image.get_rect()
 
@@ -51,6 +51,9 @@ class HUD(pygame.sprite.Sprite):
         self.player = player
 
     def update(self):
+
+        self.health_num.update_text("{0:.1f}%".format(round(self.player.health, 1)))
+        self.stamina_num.update_text("{0:.1f}%".format(round(self.player.stamina, 1)))
 
         if self.player.rect.y > 200:
             self.rect.y = 0
