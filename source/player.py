@@ -265,10 +265,10 @@ class Player(pygame.sprite.Sprite):
 
         # Player slowly regains health and stamina
         if self.health < 100:
-            self.health += 0.005
+            self.health += 0.001
 
         if self.stamina < 100:
-            self.stamina += 0.005
+            self.stamina += 0.001
 
     def on_ground(self):
 

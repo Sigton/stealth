@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +38,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="258" column="50" lean-forward="false" selection-start-line="258" selection-start-column="50" selection-end-line="258" selection-end-column="50" />
+            <state relative-caret-position="677">
+              <caret line="270" column="33" lean-forward="false" selection-start-line="270" selection-start-column="33" selection-end-line="270" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -515,13 +519,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00405" summary="Created GameOverScreen class">
-      <created>1487869196089</created>
-      <option name="number" value="00405" />
-      <option name="presentableId" value="LOCAL-00405" />
-      <option name="project" value="LOCAL" />
-      <updated>1487869196089</updated>
-    </task>
     <task id="LOCAL-00406" summary="Finished GameOverScreen class">
       <created>1487869654069</created>
       <option name="number" value="00406" />
@@ -858,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488037343253</updated>
     </task>
-    <option name="localTasksCounter" value="455" />
+    <task id="LOCAL-00455" summary="Increased severity of fall damage">
+      <created>1488037556753</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1488037556753</updated>
+    </task>
+    <option name="localTasksCounter" value="456" />
     <servers />
   </component>
   <component name="TodoView">
@@ -897,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Switched from numbers to &amp;'s" />
     <MESSAGE value="Updated menu positions" />
     <MESSAGE value="Made falling sound effect louder" />
     <MESSAGE value="Updated menu music" />
@@ -922,7 +925,8 @@
     <MESSAGE value="Increased height you need to fall from to take damage" />
     <MESSAGE value="Player slowly regenerates health" />
     <MESSAGE value="Acid removes all health" />
-    <option name="LAST_COMMIT_MESSAGE" value="Acid removes all health" />
+    <MESSAGE value="Increased severity of fall damage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Increased severity of fall damage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,8 +1137,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="258" column="50" lean-forward="false" selection-start-line="258" selection-start-column="50" selection-end-line="258" selection-end-column="50" />
+        <state relative-caret-position="677">
+          <caret line="270" column="33" lean-forward="false" selection-start-line="270" selection-start-column="33" selection-end-line="270" selection-end-column="33" />
           <folding />
         </state>
       </provider>
