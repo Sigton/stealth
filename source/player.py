@@ -120,6 +120,10 @@ class Player(pygame.sprite.Sprite):
 
         self.walk_dist = 0
 
+        # The players stats
+        self.health = 100
+        self.stamina = 100
+
         # Vars for controlling what the player is doing
 
         self.climbing = False
