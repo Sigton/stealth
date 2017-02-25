@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Fixed issue with player.png">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/player.png" afterPath="$PROJECT_DIR$/source/resources/player.png" />
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+            <state relative-caret-position="748">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -505,13 +505,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00385" summary="Switched quits for exits">
-      <created>1487801541875</created>
-      <option name="number" value="00385" />
-      <option name="presentableId" value="LOCAL-00385" />
-      <option name="project" value="LOCAL" />
-      <updated>1487801541875</updated>
-    </task>
     <task id="LOCAL-00386" summary="Fixed the problem with undefined exit">
       <created>1487801774122</created>
       <option name="number" value="00386" />
@@ -848,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488026551229</updated>
     </task>
-    <option name="localTasksCounter" value="435" />
+    <task id="LOCAL-00435" summary="Fixed issue with player.png">
+      <created>1488026671707</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1488026671707</updated>
+    </task>
+    <option name="localTasksCounter" value="436" />
     <servers />
   </component>
   <component name="TodoView">
@@ -887,7 +887,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unused class" />
     <MESSAGE value="Created HUD.py" />
     <MESSAGE value="Hud should now render and fixed bug with player" />
     <MESSAGE value="Updated hud image" />
@@ -912,7 +911,8 @@
     <MESSAGE value="Squashed bug" />
     <MESSAGE value="Squashed more bugs" />
     <MESSAGE value="Updated player.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated player.png" />
+    <MESSAGE value="Fixed issue with player.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with player.png" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        <state relative-caret-position="748">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -75,6 +75,28 @@ class Player(pygame.sprite.Sprite):
             image = pygame.transform.flip(frame, True, False)
             self.crouching_frames_l.append(image)
 
+        # Get the dissolve animation
+        self.dissolve_frames_r = []
+        self.dissolve_frames_l = []
+
+        image = sprite_sheet.get_image(0, 48, 22, 48)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(22, 48, 20, 46)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(42, 48, 16, 34)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(58, 48, 14, 24)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(72, 48, 10, 14)
+        self.dissolve_frames_r.append(image)
+        image = sprite_sheet.get_image(82, 48, 6, 10)
+        self.dissolve_frames_r.append(image)
+
+        # Flip them
+        for frame in self.dissolve_frames_r:
+            image = pygame.transform.flip(frame, True, False)
+            self.dissolve_frames_l.append(image)
+
         # Set the starting image
         self.image = self.stand_image_r
 
