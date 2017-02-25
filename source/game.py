@@ -212,7 +212,7 @@ class Game:
                 self.player.dying = True
                 self.dissolve_sound.play()
 
-            if self.player.dying and self.player.death_progress >= 28:
+            if self.player.dying and self.player.death_progress >= 75:
                 self.player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()

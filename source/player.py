@@ -135,7 +135,7 @@ class Player(pygame.sprite.Sprite):
         if self.dying:
             self.death_progress += 1
 
-            if self.death_progress % 5 == 0:
+            if self.death_progress % 5 == 0 and self.death_progress < 30:
                 old_center = self.rect.center
                 if self.direction == "R":
                     self.image = self.dissolve_frames_r[int(self.death_progress/5)]
