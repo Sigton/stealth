@@ -135,12 +135,12 @@ class Player(pygame.sprite.Sprite):
         if self.dying:
             self.death_progress += 1
 
-            if self.death_progress % 4 == 0:
+            if self.death_progress % 5 == 0:
                 old_center = self.rect.center
                 if self.direction == "R":
-                    self.image = self.dissolve_frames_r[int(self.death_progress/4)]
+                    self.image = self.dissolve_frames_r[int(self.death_progress/5)]
                 else:
-                    self.image = self.dissolve_frames_l[int(self.death_progress/4)]
+                    self.image = self.dissolve_frames_l[int(self.death_progress/5)]
 
                 self.rect = self.image.get_rect()
                 self.rect.center = old_center
