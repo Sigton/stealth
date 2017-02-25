@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="Add">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
@@ -401,13 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00412" summary="Updated hud image">
-      <created>1487873700652</created>
-      <option name="number" value="00412" />
-      <option name="presentableId" value="LOCAL-00412" />
-      <option name="project" value="LOCAL" />
-      <updated>1487873700652</updated>
-    </task>
     <task id="LOCAL-00413" summary="Added features to the HUD">
       <created>1487873931478</created>
       <option name="number" value="00413" />
@@ -744,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488057975761</updated>
     </task>
-    <option name="localTasksCounter" value="462" />
+    <task id="LOCAL-00462" summary="Added more decorations to level 4">
+      <created>1488058206023</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1488058206023</updated>
+    </task>
+    <option name="localTasksCounter" value="463" />
     <servers />
   </component>
   <component name="TodoView">
@@ -805,10 +801,10 @@
     <MESSAGE value="Increased severity of fall damage" />
     <MESSAGE value="Health regenerates slower" />
     <MESSAGE value="Added more to level 4" />
-    <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Fixed some things" />
     <MESSAGE value="Updated level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
+    <MESSAGE value="Added more decorations to level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more decorations to level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
