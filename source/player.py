@@ -300,6 +300,8 @@ class Player(pygame.sprite.Sprite):
         self.direction = "R"
         self.dying = False
         self.death_progress = 0
+        self.in_air = False
+        self.air_time = 0
 
     def use_keypad(self):
 

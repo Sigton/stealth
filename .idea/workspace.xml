@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="833">
@@ -31,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="115" column="33" lean-forward="false" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="288" column="39" lean-forward="true" selection-start-line="288" selection-start-column="39" selection-end-line="288" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -132,8 +136,8 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/hud.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
-        <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/source/player.py" />
       </list>
     </option>
   </component>
@@ -505,13 +509,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00391" summary="Added loading label when levels are loading">
-      <created>1487841644309</created>
-      <option name="number" value="00391" />
-      <option name="presentableId" value="LOCAL-00391" />
-      <option name="project" value="LOCAL" />
-      <updated>1487841644309</updated>
-    </task>
     <task id="LOCAL-00392" summary="Fixed bug with ladders">
       <created>1487842155523</created>
       <option name="number" value="00392" />
@@ -848,7 +845,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488033646833</updated>
     </task>
-    <option name="localTasksCounter" value="441" />
+    <task id="LOCAL-00441" summary="Added dissolve sound effect">
+      <created>1488033785850</created>
+      <option name="number" value="00441" />
+      <option name="presentableId" value="LOCAL-00441" />
+      <option name="project" value="LOCAL" />
+      <updated>1488033785850</updated>
+    </task>
+    <option name="localTasksCounter" value="442" />
     <servers />
   </component>
   <component name="TodoView">
@@ -887,7 +891,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated HUD image" />
     <MESSAGE value="Updated HUD image and fixed guard animation speed" />
     <MESSAGE value="Fixed rendering order problem" />
     <MESSAGE value="Fixed a problem with the guards animation" />
@@ -912,7 +915,8 @@
     <MESSAGE value="Player now &quot;dies&quot;" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Centered player while dissolving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centered player while dissolving" />
+    <MESSAGE value="Added dissolve sound effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dissolve sound effect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,18 +1116,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="115" column="33" lean-forward="false" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="217" column="47" lean-forward="false" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="288" column="39" lean-forward="true" selection-start-line="288" selection-start-column="39" selection-end-line="288" selection-end-column="39" />
           <folding />
         </state>
       </provider>
