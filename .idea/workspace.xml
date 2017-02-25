@@ -35,8 +35,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="296" column="31" lean-forward="false" selection-start-line="296" selection-start-column="31" selection-end-line="296" selection-end-column="31" />
+            <state relative-caret-position="314">
+              <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -506,13 +506,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00388" summary="Added more documentation">
-      <created>1487837448376</created>
-      <option name="number" value="00388" />
-      <option name="presentableId" value="LOCAL-00388" />
-      <option name="project" value="LOCAL" />
-      <updated>1487837448376</updated>
-    </task>
     <task id="LOCAL-00389" summary="Removed options button">
       <created>1487839402790</created>
       <option name="number" value="00389" />
@@ -849,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488031942782</updated>
     </task>
-    <option name="localTasksCounter" value="438" />
+    <task id="LOCAL-00438" summary="Player now &quot;dies&quot;">
+      <created>1488032098861</created>
+      <option name="number" value="00438" />
+      <option name="presentableId" value="LOCAL-00438" />
+      <option name="project" value="LOCAL" />
+      <updated>1488032098862</updated>
+    </task>
+    <option name="localTasksCounter" value="439" />
     <servers />
   </component>
   <component name="TodoView">
@@ -888,7 +888,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated hud image" />
     <MESSAGE value="Added features to the HUD" />
     <MESSAGE value="Updated HUD image" />
     <MESSAGE value="Updated HUD image and fixed guard animation speed" />
@@ -913,7 +912,8 @@
     <MESSAGE value="Fixed issue with player.png" />
     <MESSAGE value="Created arrays of frames" />
     <MESSAGE value="A small part of the script for the death animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="A small part of the script for the death animation" />
+    <MESSAGE value="Player now &quot;dies&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player now &quot;dies&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1123,8 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="296" column="31" lean-forward="false" selection-start-line="296" selection-start-column="31" selection-end-line="296" selection-end-column="31" />
+        <state relative-caret-position="314">
+          <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
           <folding />
         </state>
       </provider>

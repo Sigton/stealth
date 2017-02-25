@@ -137,9 +137,9 @@ class Player(pygame.sprite.Sprite):
 
             if self.death_progress % 4 == 0:
                 if self.direction == "R":
-                    self.image = self.dissolve_frames_r[self.death_progress]
+                    self.image = self.dissolve_frames_r[int(self.death_progress/4)]
                 else:
-                    self.image = self.dissolve_frames_l[self.death_progress]
+                    self.image = self.dissolve_frames_l[int(self.death_progress/4)]
 
             return
 

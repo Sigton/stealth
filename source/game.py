@@ -208,7 +208,7 @@ class Game:
             if len(obstacle_hits):
                 self.player.dying = True
 
-            if self.player.dying and self.player.death_progress > 24:
+            if self.player.dying and self.player.death_progress >= 22:
                 self.player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
