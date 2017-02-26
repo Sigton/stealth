@@ -35,8 +35,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="622" column="33" lean-forward="true" selection-start-line="622" selection-start-column="33" selection-end-line="622" selection-end-column="33" />
+            <state relative-caret-position="680">
+              <caret line="625" column="66" lean-forward="false" selection-start-line="625" selection-start-column="66" selection-end-line="625" selection-end-column="66" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -398,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00443" summary="Slowed down dissolve animation">
-      <created>1488034113957</created>
-      <option name="number" value="00443" />
-      <option name="presentableId" value="LOCAL-00443" />
-      <option name="project" value="LOCAL" />
-      <updated>1488034113957</updated>
-    </task>
     <task id="LOCAL-00444" summary="Added delay after dissolving">
       <created>1488034227346</created>
       <option name="number" value="00444" />
@@ -741,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488140977356</updated>
     </task>
-    <option name="localTasksCounter" value="492" />
+    <task id="LOCAL-00492" summary="Added more level text">
+      <created>1488141745962</created>
+      <option name="number" value="00492" />
+      <option name="presentableId" value="LOCAL-00492" />
+      <option name="project" value="LOCAL" />
+      <updated>1488141745962</updated>
+    </task>
+    <option name="localTasksCounter" value="493" />
     <servers />
   </component>
   <component name="TodoView">
@@ -762,7 +762,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -780,7 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed rounding issues" />
     <MESSAGE value="Increased height you need to fall from to take damage" />
     <MESSAGE value="Player slowly regenerates health" />
     <MESSAGE value="Acid removes all health" />
@@ -805,7 +804,8 @@
     <MESSAGE value="Fixed something with level 4" />
     <MESSAGE value="Level 4 structure complete!" />
     <MESSAGE value="Began with adding level text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Began with adding level text" />
+    <MESSAGE value="Added more level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="622" column="33" lean-forward="true" selection-start-line="622" selection-start-column="33" selection-end-line="622" selection-end-column="33" />
+        <state relative-caret-position="680">
+          <caret line="625" column="66" lean-forward="false" selection-start-line="625" selection-start-column="66" selection-end-line="625" selection-end-column="66" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

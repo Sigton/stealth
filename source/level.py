@@ -621,6 +621,10 @@ class Level04(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("Slide through here!", 588, 476)
         self.level_text.add(text)
+        text = leveltext.LevelText("You'll need to hang about on these ladders.", 1200, 1350)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Here's some complex jumps", 1500, 700)
+        self.level_text.add(text)
 
         # Set the start position
         self.start_x = 0
