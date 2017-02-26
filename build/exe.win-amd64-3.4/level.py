@@ -610,6 +610,22 @@ class Level04(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the level text
+        text = leveltext.LevelText("Up we go!", 80, 1060)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Crawl through ventilation shafts", 144, 90)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Doors aren't", 664, 130)
+        self.level_text.add(text)
+        text = leveltext.LevelText("always vertical", 664, 155)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Slide through here!", 588, 476)
+        self.level_text.add(text)
+        text = leveltext.LevelText("You'll need to hang about on these ladders.", 1200, 1350)
+        self.level_text.add(text)
+        text = leveltext.LevelText("Here's some complex jumps", 1500, 700)
+        self.level_text.add(text)
+
         # Set the start position
         self.start_x = 0
         self.start_y = 719

@@ -2,9 +2,545 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/Stealth.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_bz2.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_ctypes.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_hashlib.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_lzma.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_multiprocessing.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_ssl.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/_testcapi.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/arms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/covers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/ctypes/macholib/README.ctypes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/ctypes/macholib/fetch_macholib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/ctypes/macholib/fetch_macholib.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/command_template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-10.0-amd64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-10.0.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-6.0.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-7.1.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-8.0.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-9.0-amd64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/command/wininst-9.0.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/distutils/tests/Setup.sample" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/entities.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/funcs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/game.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/guards.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/healthbar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/hud.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level1/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level1/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level2/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level2/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level3/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level4/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/layouts/level4/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level3.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level1/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level1/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level2/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level2/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level3/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level4/layer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/tile_types/level4/layer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/Grammar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/Grammar3.4.3.final.0.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/PatternGrammar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/PatternGrammar3.4.3.final.0.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/lib2to3/tests/data/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/menu.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/platforms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/player.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pydoc_data/_pydoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/LGPL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL_image.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL_mixer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/SDL_ttf.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/_camera.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/_freetype.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/base.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/bufferproxy.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/cdrom.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/color.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/constants.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/display.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/logos.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_powered.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/pygame_tiny.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/docs/ref/docscomments.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/draw.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/event.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/alien3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/arraydemo.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/asprite.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/blue.mpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/bomb.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/boom.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/brick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/car_door.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/chimp.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/city.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/danger.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/explosion1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/fist.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/house_lo.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/house_lo.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/house_lo.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/liquid.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/midikeys.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/oldplayer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/player1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/punch.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/sans.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/secosmic_lo.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/shot.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/whiff.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/data/yuv_1.pgm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/JavaCompiling.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/_MainMenu_EOArchive_English.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/classes.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/info.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/MainMenu.nib/keyedobjects.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/English.lproj/aliens.icns" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/examples/macosx/aliens_app_example/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/fastevent.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/font.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/freesansbold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/gfxdraw.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/image.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/imageext.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/install.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/joystick.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/key.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/libogg.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/libvorbis.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/libvorbisfile.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/mask.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/math.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/mikmod.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/mixer.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/mixer_music.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/mouse.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/movie.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/newbuffer.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/overlay.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pixelarray.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pixelcopy.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pygame.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pygame_icon.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pygame_icon.icns" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pygame_icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pygame_icon.tiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/pypm.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/readme.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/rect.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/rwobject.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/scrap.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/smpeg.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/surface.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/surflock.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/A_PyGameMono-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/PyGameMono-18-100dpi.bdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/PyGameMono-18-75dpi.bdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/PyGameMono-8.bdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/PyGameMono.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/test_fixed.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/test_sans.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/fonts/u13079_PyGameMono-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/xbm_cursors/white_sizing.xbm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/tests/fixtures/xbm_cursors/white_sizing_mask.xbm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/time.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/transform.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/pygame/zlib1.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/python34.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/alienleague.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/arms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/beep.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/blackout.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/bomb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/crosshair.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/darkscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/dissolve.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/exclamation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/fall.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/gameover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/guard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/healthbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/hguard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/hiss.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/hud_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/icon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/keypad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/lights.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/loading_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/menu_music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/menubackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/menubuttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/music2.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/step.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/resources/terrain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/select.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/spritesheet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/terrain.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/185test.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/Sine-1000Hz-300ms.aif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-alaw.aifc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm16.aiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm16.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm16.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm24.aiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm24.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm24.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm32.aiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm32.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm32.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm8.aiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm8.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-pcm8.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-ulaw.aifc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiodata/pluck-ulaw.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/audiotest.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/badcert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/badkey.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/capath/4e1295a3.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/capath/5ed36f99.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/capath/6e88d7b8.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/capath/99d0fa06.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cfgparser.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cfgparser.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cfgparser.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/check_soundcard.vbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/big5-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/big5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/big5hkscs-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/big5hkscs.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/cp949-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/cp949.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_jisx0213-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_jisx0213.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_jp-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_jp.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_kr-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/euc_kr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gb18030-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gb18030.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gb2312-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gb2312.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gbk-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/gbk.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/hz-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/hz.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/iso2022_jp-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/iso2022_jp.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/iso2022_kr-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/iso2022_kr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/johab-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/johab.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/shift_jis-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/shift_jis.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/shift_jisx0213-utf8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cjkencodings/shift_jisx0213.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/cmath_testcases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/crashers/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/data/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/abs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/add.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/and.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/base.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/clamp.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/class.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/compare.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/comparetotal.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/comparetotmag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/copy.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/copyabs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/copynegate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/copysign.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddAbs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddAdd.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddAnd.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddBase.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCanonical.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddClass.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCompare.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCompareSig.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCompareTotal.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCompareTotalMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCopy.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCopyAbs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCopyNegate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddCopySign.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddDivide.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddDivideInt.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddEncode.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddFMA.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddInvert.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddLogB.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMax.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMaxMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMin.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMinMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMinus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddMultiply.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddNextMinus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddNextPlus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddNextToward.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddOr.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddPlus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddQuantize.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddReduce.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddRemainder.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddRemainderNear.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddRotate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddSameQuantum.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddScaleB.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddShift.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddSubtract.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddToIntegral.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ddXor.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/decDouble.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/decQuad.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/decSingle.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/divide.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/divideint.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqAbs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqAdd.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqAnd.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqBase.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCanonical.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqClass.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCompare.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCompareSig.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCompareTotal.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCompareTotalMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCopy.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCopyAbs.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCopyNegate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqCopySign.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqDivide.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqDivideInt.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqEncode.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqFMA.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqInvert.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqLogB.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMax.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMaxMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMin.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMinMag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMinus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqMultiply.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqNextMinus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqNextPlus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqNextToward.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqOr.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqPlus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqQuantize.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqReduce.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqRemainder.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqRemainderNear.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqRotate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqSameQuantum.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqScaleB.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqShift.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqSubtract.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqToIntegral.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dqXor.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dsBase.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/dsEncode.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/exp.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/extra.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/fma.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/inexact.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/invert.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/ln.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/log10.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/logb.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/max.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/maxmag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/min.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/minmag.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/minus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/multiply.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/nextminus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/nextplus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/nexttoward.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/or.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/plus.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/power.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/powersqrt.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/quantize.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/randomBound32.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/randoms.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/reduce.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/remainder.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/remainderNear.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/rescale.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/rotate.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/rounding.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/samequantum.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/scaleb.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/shift.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/squareroot.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/subtract.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/testall.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/tointegral.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/tointegralx.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/decimaltestdata/xor.decTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/dh512.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/empty.vbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/exception_hierarchy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/floating_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/formatfloat_testcases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/https_svn_python_org_root.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/ieee754.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.pbm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.pgm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.ras" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.sgi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.tiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/imghdrdata/python.xbm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/keycert.passwd.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/keycert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/keycert2.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/keycert3.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/keycert4.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/leakers/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/mailcap.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/math_testcases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/mime.types" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/nokia.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/nullbytecert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/nullcert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/pstats.pck" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/pycacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/pycakey.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/randv2_32.pck" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/randv2_64.pck" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/randv3.pck" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/revocation.crl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/selfsigned_pythontestdotnet.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sgml_input.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sha256.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.8svx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.aifc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.aiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.hcom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.sndt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.voc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/sndhdrdata/sndhdr.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/ssl_cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/ssl_key.passwd.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/ssl_key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_asyncio/keycert3.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_asyncio/pycacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_asyncio/ssl_cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_asyncio/ssl_key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_difflib_expect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_doctest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_doctest2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_doctest3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_doctest4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/PyBanner048.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/audiotest.au" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_01.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_02.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_03.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_04.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_05.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_06.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_08.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_09.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_12a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_17.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_18.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_19.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_20.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_21.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_22.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_23.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_24.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_25.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_26.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_27.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_28.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_29.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_30.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_31.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_32.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_33.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_34.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_35.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_36.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_37.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_38.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_39.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_40.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_41.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_42.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_43.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_44.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_45.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_email/data/msg_46.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_importlib/namespace_pkgs/missing_directory.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_importlib/namespace_pkgs/module_and_namespace_package/a_test/empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_importlib/namespace_pkgs/nested_portion1.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/test_importlib/namespace_pkgs/top_level_portion1.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/testtar.tar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/tokenize_tests-latin1-coding-cookie-and-utf8-bom-sig.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/tokenize_tests-no-coding-cookie-and-utf8-bom-sig-only.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/tokenize_tests-utf8-coding-cookie-and-no-utf8-bom-sig.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/tokenize_tests-utf8-coding-cookie-and-utf8-bom-sig.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/tokenize_tests.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/xmltestdata/simple-ns.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/xmltestdata/simple.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/xmltestdata/test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/xmltestdata/test.xml.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/zip_cp437_header.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/test/zipdir.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/text.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/torches.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/unicodedata.pyd" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,24 +558,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+            <state relative-caret-position="85">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/level.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="625" column="66" lean-forward="false" selection-start-line="625" selection-start-column="66" selection-end-line="625" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,9 +658,9 @@
         <option value="$PROJECT_DIR$/source/hud.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
+        <option value="$PROJECT_DIR$/source/game.py" />
       </list>
     </option>
   </component>
@@ -397,13 +921,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00444" summary="Added delay after dissolving">
-      <created>1488034227346</created>
-      <option name="number" value="00444" />
-      <option name="presentableId" value="LOCAL-00444" />
-      <option name="project" value="LOCAL" />
-      <updated>1488034227346</updated>
     </task>
     <task id="LOCAL-00445" summary="Player disappears after dissolving">
       <created>1488034421825</created>
@@ -741,7 +1258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488141745962</updated>
     </task>
-    <option name="localTasksCounter" value="493" />
+    <task id="LOCAL-00493" summary="Finished level text in level 4">
+      <created>1488142924085</created>
+      <option name="number" value="00493" />
+      <option name="presentableId" value="LOCAL-00493" />
+      <option name="project" value="LOCAL" />
+      <updated>1488142924085</updated>
+    </task>
+    <option name="localTasksCounter" value="494" />
     <servers />
   </component>
   <component name="TodoView">
@@ -755,14 +1279,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -780,7 +1304,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Increased height you need to fall from to take damage" />
     <MESSAGE value="Player slowly regenerates health" />
     <MESSAGE value="Acid removes all health" />
     <MESSAGE value="Increased severity of fall damage" />
@@ -805,7 +1328,8 @@
     <MESSAGE value="Level 4 structure complete!" />
     <MESSAGE value="Began with adding level text" />
     <MESSAGE value="Added more level text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
+    <MESSAGE value="Finished level text in level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished level text in level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -998,14 +1522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/terrain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1016,11 +1532,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="625" column="66" lean-forward="false" selection-start-line="625" selection-start-column="66" selection-end-line="625" selection-end-column="66" />
+        <state relative-caret-position="731">
+          <caret line="628" column="32" lean-forward="true" selection-start-line="628" selection-start-column="32" selection-end-line="628" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
