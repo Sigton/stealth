@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
@@ -34,8 +36,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9316">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="595">
+              <caret line="605" column="38" lean-forward="true" selection-start-line="605" selection-start-column="38" selection-end-line="605" selection-end-column="38" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -397,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00428" summary="Updated menu positions">
-      <created>1487881774311</created>
-      <option name="number" value="00428" />
-      <option name="presentableId" value="LOCAL-00428" />
-      <option name="project" value="LOCAL" />
-      <updated>1487881774311</updated>
-    </task>
     <task id="LOCAL-00430" summary="Made falling sound effect louder">
       <created>1487882843369</created>
       <option name="number" value="00430" />
@@ -740,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488101452390</updated>
     </task>
-    <option name="localTasksCounter" value="478" />
+    <task id="LOCAL-00478" summary="Added more decorations to level 4">
+      <created>1488101815505</created>
+      <option name="number" value="00478" />
+      <option name="presentableId" value="LOCAL-00478" />
+      <option name="project" value="LOCAL" />
+      <updated>1488101815505</updated>
+    </task>
+    <option name="localTasksCounter" value="479" />
     <servers />
   </component>
   <component name="TodoView">
@@ -795,7 +797,6 @@
     <MESSAGE value="Increased severity of fall damage" />
     <MESSAGE value="Health regenerates slower" />
     <MESSAGE value="Fixed some things" />
-    <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Even more decorations in level 4" />
     <MESSAGE value="Updated terrain.png" />
     <MESSAGE value="Added spritesheet data for new images" />
@@ -804,7 +805,8 @@
     <MESSAGE value="Less lag in level 4" />
     <MESSAGE value="Updated level 4" />
     <MESSAGE value="Added more to level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more to level 4" />
+    <MESSAGE value="Added more decorations to level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more decorations to level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9316">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="595">
+          <caret line="605" column="38" lean-forward="true" selection-start-line="605" selection-start-column="38" selection-end-line="605" selection-end-column="38" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

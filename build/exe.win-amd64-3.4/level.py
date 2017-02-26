@@ -335,16 +335,16 @@ class Level:
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 36:
+                if tile_data['tile'] == 38:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 34:
+                elif tile_data['tile'] == 36:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 37:
+                elif tile_data['tile'] == 39:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 38:
+                elif tile_data['tile'] == 40:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
@@ -593,7 +593,9 @@ class Level04(Level):
 
         self.door_linkup = {0: 0,
                             1: 0,
-                            2: 0}
+                            2: 0,
+                            3: 1,
+                            4: 1}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
