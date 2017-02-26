@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
@@ -399,13 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00426" summary="Updated HUD">
-      <created>1487881310099</created>
-      <option name="number" value="00426" />
-      <option name="presentableId" value="LOCAL-00426" />
-      <option name="project" value="LOCAL" />
-      <updated>1487881310099</updated>
-    </task>
     <task id="LOCAL-00427" summary="Switched from numbers to &amp;'s">
       <created>1487881375462</created>
       <option name="number" value="00427" />
@@ -742,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488101182917</updated>
     </task>
-    <option name="localTasksCounter" value="476" />
+    <task id="LOCAL-00476" summary="Added more to level 4">
+      <created>1488101370562</created>
+      <option name="number" value="00476" />
+      <option name="presentableId" value="LOCAL-00476" />
+      <option name="project" value="LOCAL" />
+      <updated>1488101370562</updated>
+    </task>
+    <option name="localTasksCounter" value="477" />
     <servers />
   </component>
   <component name="TodoView">
@@ -796,7 +794,6 @@
     <MESSAGE value="Acid removes all health" />
     <MESSAGE value="Increased severity of fall damage" />
     <MESSAGE value="Health regenerates slower" />
-    <MESSAGE value="Added more to level 4" />
     <MESSAGE value="Fixed some things" />
     <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Even more decorations in level 4" />
@@ -806,7 +803,8 @@
     <MESSAGE value="Added more guards to level 4" />
     <MESSAGE value="Less lag in level 4" />
     <MESSAGE value="Updated level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
+    <MESSAGE value="Added more to level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more to level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
