@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
@@ -409,13 +411,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00440" summary="Centered player while dissolving">
-      <created>1488033646832</created>
-      <option name="number" value="00440" />
-      <option name="presentableId" value="LOCAL-00440" />
-      <option name="project" value="LOCAL" />
-      <updated>1488033646833</updated>
-    </task>
     <task id="LOCAL-00441" summary="Added dissolve sound effect">
       <created>1488033785850</created>
       <option name="number" value="00441" />
@@ -752,7 +747,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488129066213</updated>
     </task>
-    <option name="localTasksCounter" value="489" />
+    <task id="LOCAL-00489" summary="Fixed something with level 4">
+      <created>1488129695251</created>
+      <option name="number" value="00489" />
+      <option name="presentableId" value="LOCAL-00489" />
+      <option name="project" value="LOCAL" />
+      <updated>1488129695251</updated>
+    </task>
+    <option name="localTasksCounter" value="490" />
     <servers />
   </component>
   <component name="TodoView">
@@ -791,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed a bug with data types" />
     <MESSAGE value="Fixed spelling error" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed rounding issues" />
@@ -816,7 +817,8 @@
     <MESSAGE value="Added some more decorations to level 4" />
     <MESSAGE value="Added decorations" />
     <MESSAGE value="Updated level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 4" />
+    <MESSAGE value="Fixed something with level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed something with level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
