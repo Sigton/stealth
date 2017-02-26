@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -413,13 +407,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00432" summary="Squashed bug">
-      <created>1487883212068</created>
-      <option name="number" value="00432" />
-      <option name="presentableId" value="LOCAL-00432" />
-      <option name="project" value="LOCAL" />
-      <updated>1487883212069</updated>
-    </task>
     <task id="LOCAL-00433" summary="Squashed more bugs">
       <created>1487884626306</created>
       <option name="number" value="00433" />
@@ -756,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488125209289</updated>
     </task>
-    <option name="localTasksCounter" value="481" />
+    <task id="LOCAL-00481" summary="A strange bug that fixed itself...">
+      <created>1488125575326</created>
+      <option name="number" value="00481" />
+      <option name="presentableId" value="LOCAL-00481" />
+      <option name="project" value="LOCAL" />
+      <updated>1488125575326</updated>
+    </task>
+    <option name="localTasksCounter" value="482" />
     <servers />
   </component>
   <component name="TodoView">
@@ -795,7 +789,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Slowed down dissolve animation" />
     <MESSAGE value="Added delay after dissolving" />
     <MESSAGE value="Player disappears after dissolving" />
     <MESSAGE value="Connected players attributes to the HUD" />
@@ -820,7 +813,8 @@
     <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Updated level 4" />
     <MESSAGE value="Added decorations to level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added decorations to level 4" />
+    <MESSAGE value="A strange bug that fixed itself..." />
+    <option name="LAST_COMMIT_MESSAGE" value="A strange bug that fixed itself..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
