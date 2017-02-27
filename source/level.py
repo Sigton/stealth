@@ -545,8 +545,6 @@ class Level03(Level):
         self.level_text.add(text)
         text = leveltext.LevelText("These are tricky jumps!", 1120, 1355)
         self.level_text.add(text)
-        text = leveltext.LevelText("Try get over this guard.", 1570, 1250)
-        self.level_text.add(text)
         text = leveltext.LevelText("Press your crouch key", 1635, 1060)
         self.level_text.add(text)
         text = leveltext.LevelText("to slide through", 1635, 1085)

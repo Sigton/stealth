@@ -44,12 +44,12 @@ class Game:
         label.update_text("Loading Level 1...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        # self.level_list.append(level.Level01(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
         label.draw(self.display)
@@ -59,7 +59,7 @@ class Game:
         label.update_text("Loading Level 4...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True))
+        # self.level_list.append(level.Level04(self.player, True))
 
         # Set the current level
         self.current_level_no = 0
