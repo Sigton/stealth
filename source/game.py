@@ -276,15 +276,6 @@ class Game:
                     self.player.rect.y = 288
                 self.current_level.shift_world(0, diff)
 
-            # All drawing goes here
-            self.current_level.draw(self.display)
-            self.active_sprite_list.draw(self.display)
-            self.blackout.draw(self.display)
-            self.crosshair.draw(self.display)
-            self.hud.draw(self.display)
-            if reset and 0 < pause < 100:
-                blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
-
             if pause == 0 and reset:
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
@@ -296,6 +287,15 @@ class Game:
                 self.player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
+
+            # All drawing goes here
+            self.current_level.draw(self.display)
+            self.active_sprite_list.draw(self.display)
+            self.blackout.draw(self.display)
+            self.crosshair.draw(self.display)
+            self.hud.draw(self.display)
+            if reset and 0 < pause < 100:
+                blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
 
             # Limit to 60 fps
             self.clock.tick(60)
