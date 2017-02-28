@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="833">
+              <caret line="297" column="50" lean-forward="false" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="656" column="33" lean-forward="true" selection-start-line="656" selection-start-column="33" selection-end-line="656" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="639" column="38" lean-forward="true" selection-start-line="639" selection-start-column="38" selection-end-line="639" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -131,8 +135,8 @@
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
-        <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
+        <option value="$PROJECT_DIR$/source/game.py" />
       </list>
     </option>
   </component>
@@ -393,13 +397,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00463" summary="Even more decorations in level 4">
-      <created>1488058429237</created>
-      <option name="number" value="00463" />
-      <option name="presentableId" value="LOCAL-00463" />
-      <option name="project" value="LOCAL" />
-      <updated>1488058429237</updated>
     </task>
     <task id="LOCAL-00464" summary="Updated terrain.png">
       <created>1488058712620</created>
@@ -737,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488308677368</updated>
     </task>
-    <option name="localTasksCounter" value="512" />
+    <task id="LOCAL-00512" summary="Updated level 5">
+      <created>1488309535953</created>
+      <option name="number" value="00512" />
+      <option name="presentableId" value="LOCAL-00512" />
+      <option name="project" value="LOCAL" />
+      <updated>1488309535953</updated>
+    </task>
+    <option name="localTasksCounter" value="513" />
     <servers />
   </component>
   <component name="TodoView">
@@ -797,11 +801,11 @@
     <MESSAGE value="Now loads level 5" />
     <MESSAGE value="Started adding terrain to level 5" />
     <MESSAGE value="Fixed a bunch of a problems" />
-    <MESSAGE value="Updated level 5" />
     <MESSAGE value="Added a door to level 5" />
     <MESSAGE value="Added some decorations to level 5" />
     <MESSAGE value="Even more doors!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Even more doors!" />
+    <MESSAGE value="Updated level 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,18 +1005,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
+    <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="289">
+          <caret line="639" column="38" lean-forward="true" selection-start-line="639" selection-start-column="38" selection-end-line="639" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
+    <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="656" column="33" lean-forward="true" selection-start-line="656" selection-start-column="33" selection-end-line="656" selection-end-column="33" />
+        <state relative-caret-position="833">
+          <caret line="297" column="50" lean-forward="false" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="50" />
           <folding />
         </state>
       </provider>
