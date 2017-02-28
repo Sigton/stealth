@@ -399,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00467" summary="Updated level 4">
-      <created>1488060405938</created>
-      <option name="number" value="00467" />
-      <option name="presentableId" value="LOCAL-00467" />
-      <option name="project" value="LOCAL" />
-      <updated>1488060405938</updated>
-    </task>
     <task id="LOCAL-00468" summary="Added more guards to level 4">
       <created>1488060783285</created>
       <option name="number" value="00468" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488311748748</updated>
     </task>
-    <option name="localTasksCounter" value="516" />
+    <task id="LOCAL-00516" summary="Continuing with decorating level 5">
+      <created>1488312388197</created>
+      <option name="number" value="00516" />
+      <option name="presentableId" value="LOCAL-00516" />
+      <option name="project" value="LOCAL" />
+      <updated>1488312388197</updated>
+    </task>
+    <option name="localTasksCounter" value="517" />
     <servers />
   </component>
   <component name="TodoView">
@@ -781,7 +781,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made it harder" />
     <MESSAGE value="Added some decorations" />
     <MESSAGE value="Added some more decorations to level 4" />
     <MESSAGE value="Added decorations" />
@@ -806,7 +805,8 @@
     <MESSAGE value="Hopefully finally fixed that scrolling bug" />
     <MESSAGE value="Made a slight mistake with the last bugfix" />
     <MESSAGE value="Updated level 5 with a few decorations n stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 5 with a few decorations n stuff" />
+    <MESSAGE value="Continuing with decorating level 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continuing with decorating level 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
