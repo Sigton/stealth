@@ -399,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00469" summary="Updated level 4">
-      <created>1488061457430</created>
-      <option name="number" value="00469" />
-      <option name="presentableId" value="LOCAL-00469" />
-      <option name="project" value="LOCAL" />
-      <updated>1488061457430</updated>
-    </task>
     <task id="LOCAL-00470" summary="Updated level 4">
       <created>1488061911160</created>
       <option name="number" value="00470" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488312666800</updated>
     </task>
-    <option name="localTasksCounter" value="518" />
+    <task id="LOCAL-00518" summary="More decorations">
+      <created>1488312931345</created>
+      <option name="number" value="00518" />
+      <option name="presentableId" value="LOCAL-00518" />
+      <option name="project" value="LOCAL" />
+      <updated>1488312931345</updated>
+    </task>
+    <option name="localTasksCounter" value="519" />
     <servers />
   </component>
   <component name="TodoView">
