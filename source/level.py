@@ -649,6 +649,9 @@ class Level05(Level):
         # How many layers the level has
         self.layer_range = 2
 
+        self.door_linkup = {0: 0,
+                            1: 0}
+
         level = terrain.LevelData(self.save_file, self.type_file, self.type_file, "level5")
 
         if write_data:
@@ -659,6 +662,8 @@ class Level05(Level):
 
         # Then render it
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         # Set the start position
         self.start_x = 0
