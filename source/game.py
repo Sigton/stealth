@@ -286,7 +286,7 @@ class Game:
             self.crosshair.draw(self.display)
             self.hud.draw(self.display)
             if reset and 0 < pause < 100:
-                blit_alpha(self.display, self.game_over.image, (0, 0), pause*-2+256)
+                blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
 
             # Limit to 60 fps
             self.clock.tick(60)
