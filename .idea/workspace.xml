@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="656" column="32" lean-forward="false" selection-start-line="656" selection-start-column="32" selection-end-line="656" selection-end-column="32" />
+              <caret line="656" column="33" lean-forward="true" selection-start-line="656" selection-start-column="33" selection-end-line="656" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -398,13 +394,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00462" summary="Added more decorations to level 4">
-      <created>1488058206023</created>
-      <option name="number" value="00462" />
-      <option name="presentableId" value="LOCAL-00462" />
-      <option name="project" value="LOCAL" />
-      <updated>1488058206023</updated>
-    </task>
     <task id="LOCAL-00463" summary="Even more decorations in level 4">
       <created>1488058429237</created>
       <option name="number" value="00463" />
@@ -741,7 +730,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488308593259</updated>
     </task>
-    <option name="localTasksCounter" value="511" />
+    <task id="LOCAL-00511" summary="Even more doors!">
+      <created>1488308677368</created>
+      <option name="number" value="00511" />
+      <option name="presentableId" value="LOCAL-00511" />
+      <option name="project" value="LOCAL" />
+      <updated>1488308677368</updated>
+    </task>
+    <option name="localTasksCounter" value="512" />
     <servers />
   </component>
   <component name="TodoView">
@@ -780,7 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added more to level 4" />
     <MESSAGE value="Added more decorations to level 4" />
     <MESSAGE value="Added decorations to level 4" />
     <MESSAGE value="A strange bug that fixed itself..." />
@@ -805,7 +800,8 @@
     <MESSAGE value="Updated level 5" />
     <MESSAGE value="Added a door to level 5" />
     <MESSAGE value="Added some decorations to level 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some decorations to level 5" />
+    <MESSAGE value="Even more doors!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Even more doors!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,7 +1012,7 @@
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="656" column="32" lean-forward="false" selection-start-line="656" selection-start-column="32" selection-end-line="656" selection-end-column="32" />
+          <caret line="656" column="33" lean-forward="true" selection-start-line="656" selection-start-column="33" selection-end-line="656" selection-end-column="33" />
           <folding />
         </state>
       </provider>
