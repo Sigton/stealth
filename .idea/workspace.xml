@@ -399,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00468" summary="Added more guards to level 4">
-      <created>1488060783285</created>
-      <option name="number" value="00468" />
-      <option name="presentableId" value="LOCAL-00468" />
-      <option name="project" value="LOCAL" />
-      <updated>1488060783285</updated>
-    </task>
     <task id="LOCAL-00469" summary="Updated level 4">
       <created>1488061457430</created>
       <option name="number" value="00469" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488312388197</updated>
     </task>
-    <option name="localTasksCounter" value="517" />
+    <task id="LOCAL-00517" summary="More decorations">
+      <created>1488312666800</created>
+      <option name="number" value="00517" />
+      <option name="presentableId" value="LOCAL-00517" />
+      <option name="project" value="LOCAL" />
+      <updated>1488312666800</updated>
+    </task>
+    <option name="localTasksCounter" value="518" />
     <servers />
   </component>
   <component name="TodoView">
@@ -781,7 +781,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some decorations" />
     <MESSAGE value="Added some more decorations to level 4" />
     <MESSAGE value="Added decorations" />
     <MESSAGE value="Updated level 4" />
@@ -806,7 +805,8 @@
     <MESSAGE value="Made a slight mistake with the last bugfix" />
     <MESSAGE value="Updated level 5 with a few decorations n stuff" />
     <MESSAGE value="Continuing with decorating level 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continuing with decorating level 5" />
+    <MESSAGE value="More decorations" />
+    <option name="LAST_COMMIT_MESSAGE" value="More decorations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
