@@ -220,27 +220,19 @@ class Level:
         self.shift_world(self.start_x, self.start_y)
 
     def create_platform(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.platform_list.add(platform)
 
     def create_cosmetic(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.cosmetic_list.add(platform)
 
     def create_obstacle(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.obstacle_list.add(platform)
 
     def create_anim_obs(self, tile, x, y, layer):
-        platform = platforms.AnimatedPlatform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.AnimatedPlatform(tile, x, y, layer)
         self.obstacle_list.add(platform)
 
     def create_keypad(self, x, y):
@@ -273,9 +265,6 @@ class Level:
     def create_door(self, tile, x, y, layer):
         new_door = entities.Door(tile, layer)
 
-        new_door.rect.x = x
-        new_door.rect.y = y
-
         new_door.level = self
         new_door.door_no = self.door_no
 
@@ -307,11 +296,7 @@ class Level:
         self.guards.add(new_hguard)
 
     def create_ladder(self, tile, x, y, layer):
-        new_ladder = platforms.Platform(tile, layer)
-
-        new_ladder.rect.x = x
-        new_ladder.rect.y = y
-
+        new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
     def render(self, data):

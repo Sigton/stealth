@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/platforms.py" afterPath="$PROJECT_DIR$/source/platforms.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +36,18 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="669" column="29" lean-forward="true" selection-start-line="669" selection-start-column="29" selection-end-line="669" selection-end-column="29" />
+            <state relative-caret-position="442">
+              <caret line="298" column="58" lean-forward="false" selection-start-line="298" selection-start-column="58" selection-end-line="298" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="platforms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/platforms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="107" column="23" lean-forward="false" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -44,7 +56,7 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
+            <state relative-caret-position="388">
               <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
@@ -131,7 +143,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/leveltext.py" />
-        <option value="$PROJECT_DIR$/source/entities.py" />
         <option value="$PROJECT_DIR$/source/covers.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
         <option value="$PROJECT_DIR$/source/guards.py" />
@@ -139,10 +150,11 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/hud.py" />
-        <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
@@ -404,13 +416,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00474" summary="Less lag in level 4">
-      <created>1488100759963</created>
-      <option name="number" value="00474" />
-      <option name="presentableId" value="LOCAL-00474" />
-      <option name="project" value="LOCAL" />
-      <updated>1488100759963</updated>
     </task>
     <task id="LOCAL-00475" summary="Updated level 4">
       <created>1488101182917</created>
@@ -748,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488355943876</updated>
     </task>
-    <option name="localTasksCounter" value="523" />
+    <task id="LOCAL-00523" summary="Removed prints now that I have devised a solution">
+      <created>1488389801406</created>
+      <option name="number" value="00523" />
+      <option name="presentableId" value="LOCAL-00523" />
+      <option name="project" value="LOCAL" />
+      <updated>1488389801407</updated>
+    </task>
+    <option name="localTasksCounter" value="524" />
     <servers />
   </component>
   <component name="TodoView">
@@ -787,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated level 4" />
     <MESSAGE value="Fixed something with level 4" />
     <MESSAGE value="Level 4 structure complete!" />
     <MESSAGE value="Began with adding level text" />
@@ -812,7 +823,8 @@
     <MESSAGE value="Even more decorations" />
     <MESSAGE value="Updated level 5" />
     <MESSAGE value="Had a bash at fixing a bug with the scrolling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Had a bash at fixing a bug with the scrolling" />
+    <MESSAGE value="Removed prints now that I have devised a solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed prints now that I have devised a solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/guards.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
@@ -970,13 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/platforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/terrain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1005,14 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1021,10 +1011,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/platforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="107" column="23" lean-forward="false" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="669" column="29" lean-forward="true" selection-start-line="669" selection-start-column="29" selection-end-line="669" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="298" column="58" lean-forward="false" selection-start-line="298" selection-start-column="58" selection-end-line="298" selection-end-column="58" />
           <folding />
         </state>
       </provider>

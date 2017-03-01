@@ -10,10 +10,10 @@ class Door(platforms.Platform):
     level = None
     door_no = 0
 
-    def __init__(self, tile, layer):
+    def __init__(self, tile, x, y, layer):
 
         # Call the parents constructor
-        platforms.Platform.__init__(self, tile, layer)
+        platforms.Platform.__init__(self, tile, x, y, layer)
 
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.hiss_sound.set_volume(0.25)

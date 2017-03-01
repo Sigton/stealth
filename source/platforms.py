@@ -54,7 +54,7 @@ platforms = (
 
 class Platform(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data, layer=1):
+    def __init__(self, sprite_sheet_data, x, y, layer=1):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -67,6 +67,11 @@ class Platform(pygame.sprite.Sprite):
                                             sprite_sheet_data[3])
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         # The layer the tile is in
         self.layer = layer
@@ -78,7 +83,7 @@ class Platform(pygame.sprite.Sprite):
 
 class AnimatedPlatform(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data, layer=1):
+    def __init__(self, sprite_sheet_data, x, y, layer=1):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -99,6 +104,11 @@ class AnimatedPlatform(pygame.sprite.Sprite):
 
         self.image = self.images[0]
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         # A timer var for animation
 
