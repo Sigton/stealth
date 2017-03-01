@@ -22,7 +22,7 @@ class Guard(pygame.sprite.Sprite):
 
     sprite_sheet = None
 
-    def __init__(self):
+    def __init__(self, x, y):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -58,6 +58,11 @@ class Guard(pygame.sprite.Sprite):
         self.image = self.stand_image_r
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         self.torch = torches.Torch()
         self.torch.guard = self
@@ -166,7 +171,7 @@ class HostileGuard(pygame.sprite.Sprite):
 
     sprite_sheet = None
 
-    def __init__(self):
+    def __init__(self, x, y):
 
         pygame.sprite.Sprite.__init__(self)
 
@@ -194,6 +199,11 @@ class HostileGuard(pygame.sprite.Sprite):
         self.image = self.stand_img_r
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         self.arm = arms.Arm()
         self.arm.guard = self

@@ -236,10 +236,7 @@ class Level:
         self.obstacle_list.add(platform)
 
     def create_keypad(self, x, y):
-        new_keypad = entities.Keypad()
-
-        new_keypad.rect.x = x
-        new_keypad.rect.y = y
+        new_keypad = entities.Keypad(x, y)
 
         new_keypad.progress_bar = healthbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
@@ -250,10 +247,7 @@ class Level:
         self.keypad_array.append(new_keypad)
 
     def create_bomb(self, x, y):
-        new_bomb = entities.Bomb()
-
-        new_bomb.rect.x = x
-        new_bomb.rect.y = y
+        new_bomb = entities.Bomb(x, y)
 
         new_bomb.progress_bar = healthbar.ProgressBar()
         new_bomb.progress_bar.parent = new_bomb
@@ -263,7 +257,7 @@ class Level:
         self.bombs.add(new_bomb)
 
     def create_door(self, tile, x, y, layer):
-        new_door = entities.Door(tile, layer)
+        new_door = entities.Door(tile, x, y, layer)
 
         new_door.level = self
         new_door.door_no = self.door_no
@@ -272,10 +266,7 @@ class Level:
         self.doors.add(new_door)
 
     def create_guard(self, x, y):
-        new_guard = guards.Guard()
-
-        new_guard.rect.x = x
-        new_guard.rect.y = y
+        new_guard = guards.Guard(x, y)
 
         new_guard.level = self
         new_guard.player = self.player
@@ -284,10 +275,7 @@ class Level:
         self.guards.add(new_guard)
 
     def create_hguard(self, x, y):
-        new_hguard = guards.HostileGuard()
-
-        new_hguard.rect.x = x
-        new_hguard.rect.y = y
+        new_hguard = guards.HostileGuard(x, y)
 
         new_hguard.level = self
         new_hguard.player = self.player
