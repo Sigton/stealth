@@ -161,6 +161,9 @@ class ExclamationMark(pygame.sprite.Sprite):
         self.rect.centerx = self.guard.rect.centerx
         self.rect.y = self.guard.rect.y - 36
 
+        self.start_x = self.rect.x
+        self.start_y = self.rect.y
+
         self.timer = 120
 
     def update(self):

@@ -177,40 +177,40 @@ class Level:
 
         # Moves platforms back to their original position
         for platform in self.platform_list:
-            platform.rect.x -= self.world_shift_x
-            platform.rect.y += self.world_shift_y
+            platform.rect.x = platform.start_x
+            platform.rect.y = platform.start_y
 
         for cosmetic in self.cosmetic_list:
-            cosmetic.rect.x -= self.world_shift_x
-            cosmetic.rect.y += self.world_shift_y
+            cosmetic.rect.x = cosmetic.start_x
+            cosmetic.rect.y = cosmetic.start_y
 
         for obstacle in self.obstacle_list:
-            obstacle.rect.x -= self.world_shift_x
-            obstacle.rect.y += self.world_shift_y
+            obstacle.rect.x = obstacle.start_x
+            obstacle.rect.y = obstacle.start_y
 
         for ladder in self.ladders:
-            ladder.rect.x -= self.world_shift_x
-            ladder.rect.y += self.world_shift_y
+            ladder.rect.x = ladder.start_x
+            ladder.rect.y = ladder.start_y
 
         for keypad in self.keypads:
-            keypad.rect.x -= self.world_shift_x
-            keypad.rect.y += self.world_shift_y
+            keypad.rect.x = keypad.start_x
+            keypad.rect.y = keypad.start_y
 
         for bomb in self.bombs:
-            bomb.rect.x -= self.world_shift_x
-            bomb.rect.y += self.world_shift_y
+            bomb.rect.x = bomb.start_x
+            bomb.rect.y = bomb.start_y
 
         for guard in self.guards:
-            guard.rect.x -= self.world_shift_x
-            guard.rect.y += self.world_shift_y
+            guard.rect.x = guard.start_x
+            guard.rect.y = guard.start_y
 
         for entity in self.entities:
-            entity.rect.x -= self.world_shift_x
-            entity.rect.y += self.world_shift_y
+            entity.rect.x = entity.start_x
+            entity.rect.y = entity.start_y
 
         for text in self.level_text:
-            text.rect.x -= self.world_shift_x
-            text.rect.y += self.world_shift_y
+            text.rect.x = text.start_x
+            text.rect.y = text.start_y
 
         self.world_shift_x = 0
         self.world_shift_y = 0

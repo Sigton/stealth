@@ -18,6 +18,9 @@ class LevelText(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
 
+        self.start_x = x
+        self.start_y = y
+
 
 class LoadingLabel(pygame.sprite.Sprite):
 
