@@ -106,7 +106,7 @@ class Game:
 
         # Reset scrolling
         self.current_level.reset_world()
-        self.current_level.shift_world(self.current_level.start_x, self.current_level.start_y)
+        self.current_level.set_scrolling()
 
         # Set the players position
         self.player.rect.x = 48

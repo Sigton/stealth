@@ -173,6 +173,8 @@ class Level:
             for text in self.level_text:
                 text.rect.y -= shift_y
 
+        print("Shift world:", self.at_edge_y, self.world_shift_y, self.platform_list.sprites()[0].rect.y)
+
     def reset_world(self):
 
         # Moves platforms back to their original position
@@ -215,9 +217,13 @@ class Level:
         self.world_shift_x = 0
         self.world_shift_y = 0
 
+        print("Reset world:", self.at_edge_y, self.world_shift_y, self.platform_list.sprites()[0].rect.y)
+
     def set_scrolling(self):
 
         self.shift_world(self.start_x, self.start_y)
+
+        print("Set world:", self.at_edge_y, self.world_shift_y, self.platform_list.sprites()[0].rect.y)
 
     def create_platform(self, tile, x, y, layer):
         platform = platforms.Platform(tile, layer)
