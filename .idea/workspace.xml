@@ -33,21 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="284" column="38" lean-forward="false" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
+            <state relative-caret-position="493">
+              <caret line="293" column="27" lean-forward="true" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -407,13 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00481" summary="A strange bug that fixed itself...">
-      <created>1488125575326</created>
-      <option name="number" value="00481" />
-      <option name="presentableId" value="LOCAL-00481" />
-      <option name="project" value="LOCAL" />
-      <updated>1488125575326</updated>
-    </task>
     <task id="LOCAL-00482" summary="Updated level 4">
       <created>1488125706223</created>
       <option name="number" value="00482" />
@@ -750,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488476823475</updated>
     </task>
-    <option name="localTasksCounter" value="530" />
+    <task id="LOCAL-00530" summary="Updated level 5">
+      <created>1488484635197</created>
+      <option name="number" value="00530" />
+      <option name="presentableId" value="LOCAL-00530" />
+      <option name="project" value="LOCAL" />
+      <updated>1488484635198</updated>
+    </task>
+    <option name="localTasksCounter" value="531" />
     <servers />
   </component>
   <component name="TodoView">
@@ -805,7 +795,6 @@
     <MESSAGE value="Continuing with decorating level 5" />
     <MESSAGE value="More decorations" />
     <MESSAGE value="Even more decorations" />
-    <MESSAGE value="Updated level 5" />
     <MESSAGE value="Had a bash at fixing a bug with the scrolling" />
     <MESSAGE value="Removed prints now that I have devised a solution" />
     <MESSAGE value="Began execution of solution" />
@@ -814,7 +803,8 @@
     <MESSAGE value="Hacked a bugfix, to be improved at a later date" />
     <MESSAGE value="Updated level 5 with more decorations" />
     <MESSAGE value="Fixed centering of dissolving animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed centering of dissolving animation" />
+    <MESSAGE value="Updated level 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1007,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="284" column="38" lean-forward="false" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1025,8 +1007,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
+        <state relative-caret-position="204">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="293" column="27" lean-forward="true" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
           <folding />
         </state>
       </provider>
