@@ -66,6 +66,8 @@ class Guard(pygame.sprite.Sprite):
 
         self.torch = torches.Torch()
         self.torch.guard = self
+        self.torch.start_x = self.start_x + self.rect.width / 2
+        self.torch.start_y = self.start_y + self.rect.height / 2
 
         # Var for animation
         self.walk_dist = 0
