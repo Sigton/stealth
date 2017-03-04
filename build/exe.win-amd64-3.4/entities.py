@@ -10,10 +10,10 @@ class Door(platforms.Platform):
     level = None
     door_no = 0
 
-    def __init__(self, tile, layer):
+    def __init__(self, tile, x, y, layer):
 
         # Call the parents constructor
-        platforms.Platform.__init__(self, tile, layer)
+        platforms.Platform.__init__(self, tile, x, y, layer)
 
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.hiss_sound.set_volume(0.25)
@@ -38,7 +38,7 @@ class Keypad(pygame.sprite.Sprite):
 
     progress_bar = None
 
-    def __init__(self):
+    def __init__(self, x, y):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -51,6 +51,11 @@ class Keypad(pygame.sprite.Sprite):
         self.image = self.image_off
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
         self.beep_sound.set_volume(0.25)
@@ -73,7 +78,7 @@ class Bomb(pygame.sprite.Sprite):
 
     progress_bar = None
 
-    def __init__(self):
+    def __init__(self, x, y):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -86,6 +91,11 @@ class Bomb(pygame.sprite.Sprite):
         self.image = self.image_off
 
         self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
 
         self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
         self.beep_sound.set_volume(0.25)
@@ -150,6 +160,9 @@ class ExclamationMark(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = self.guard.rect.centerx
         self.rect.y = self.guard.rect.y - 36
+
+        self.start_x = self.rect.x
+        self.start_y = self.rect.y
 
         self.timer = 120
 

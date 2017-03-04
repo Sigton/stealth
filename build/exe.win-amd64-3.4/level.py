@@ -4,7 +4,7 @@ import platforms
 import guards
 import entities
 import healthbar
-import text as leveltext
+import text
 import constants
 import terrain
 import os
@@ -177,40 +177,40 @@ class Level:
 
         # Moves platforms back to their original position
         for platform in self.platform_list:
-            platform.rect.x -= self.world_shift_x
-            platform.rect.y += self.world_shift_y
+            platform.rect.x = platform.start_x
+            platform.rect.y = platform.start_y
 
         for cosmetic in self.cosmetic_list:
-            cosmetic.rect.x -= self.world_shift_x
-            cosmetic.rect.y += self.world_shift_y
+            cosmetic.rect.x = cosmetic.start_x
+            cosmetic.rect.y = cosmetic.start_y
 
         for obstacle in self.obstacle_list:
-            obstacle.rect.x -= self.world_shift_x
-            obstacle.rect.y += self.world_shift_y
+            obstacle.rect.x = obstacle.start_x
+            obstacle.rect.y = obstacle.start_y
 
         for ladder in self.ladders:
-            ladder.rect.x -= self.world_shift_x
-            ladder.rect.y += self.world_shift_y
+            ladder.rect.x = ladder.start_x
+            ladder.rect.y = ladder.start_y
 
         for keypad in self.keypads:
-            keypad.rect.x -= self.world_shift_x
-            keypad.rect.y += self.world_shift_y
+            keypad.rect.x = keypad.start_x
+            keypad.rect.y = keypad.start_y
 
         for bomb in self.bombs:
-            bomb.rect.x -= self.world_shift_x
-            bomb.rect.y += self.world_shift_y
+            bomb.rect.x = bomb.start_x
+            bomb.rect.y = bomb.start_y
 
         for guard in self.guards:
-            guard.rect.x -= self.world_shift_x
-            guard.rect.y += self.world_shift_y
+            guard.rect.x = guard.start_x
+            guard.rect.y = guard.start_y
 
         for entity in self.entities:
-            entity.rect.x -= self.world_shift_x
-            entity.rect.y += self.world_shift_y
+            entity.rect.x = entity.start_x
+            entity.rect.y = entity.start_y
 
         for text in self.level_text:
-            text.rect.x -= self.world_shift_x
-            text.rect.y += self.world_shift_y
+            text.rect.x = text.start_x
+            text.rect.y = text.start_y
 
         self.world_shift_x = 0
         self.world_shift_y = 0
@@ -220,48 +220,38 @@ class Level:
         self.shift_world(self.start_x, self.start_y)
 
     def create_platform(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.platform_list.add(platform)
 
     def create_cosmetic(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.cosmetic_list.add(platform)
 
     def create_obstacle(self, tile, x, y, layer):
-        platform = platforms.Platform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.Platform(tile, x, y, layer)
         self.obstacle_list.add(platform)
 
     def create_anim_obs(self, tile, x, y, layer):
-        platform = platforms.AnimatedPlatform(tile, layer)
-        platform.rect.x = x
-        platform.rect.y = y
+        platform = platforms.AnimatedPlatform(tile, x, y, layer)
         self.obstacle_list.add(platform)
 
     def create_keypad(self, x, y):
-        new_keypad = entities.Keypad()
-
-        new_keypad.rect.x = x
-        new_keypad.rect.y = y
+        new_keypad = entities.Keypad(x, y)
 
         new_keypad.progress_bar = healthbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
         new_keypad.progress_bar.level = self
+        new_keypad.progress_bar.rect.x = new_keypad.rect.centerx
+        new_keypad.progress_bar.rect.y = new_keypad.rect.y - 20
+        new_keypad.progress_bar.start_x = new_keypad.progress_bar.rect.x
+        new_keypad.progress_bar.start_y = new_keypad.progress_bar.rect.y
         self.entities.add(new_keypad.progress_bar)
 
         self.keypads.add(new_keypad)
         self.keypad_array.append(new_keypad)
 
     def create_bomb(self, x, y):
-        new_bomb = entities.Bomb()
-
-        new_bomb.rect.x = x
-        new_bomb.rect.y = y
+        new_bomb = entities.Bomb(x, y)
 
         new_bomb.progress_bar = healthbar.ProgressBar()
         new_bomb.progress_bar.parent = new_bomb
@@ -271,10 +261,7 @@ class Level:
         self.bombs.add(new_bomb)
 
     def create_door(self, tile, x, y, layer):
-        new_door = entities.Door(tile, layer)
-
-        new_door.rect.x = x
-        new_door.rect.y = y
+        new_door = entities.Door(tile, x, y, layer)
 
         new_door.level = self
         new_door.door_no = self.door_no
@@ -283,10 +270,7 @@ class Level:
         self.doors.add(new_door)
 
     def create_guard(self, x, y):
-        new_guard = guards.Guard()
-
-        new_guard.rect.x = x
-        new_guard.rect.y = y
+        new_guard = guards.Guard(x, y)
 
         new_guard.level = self
         new_guard.player = self.player
@@ -295,10 +279,7 @@ class Level:
         self.guards.add(new_guard)
 
     def create_hguard(self, x, y):
-        new_hguard = guards.HostileGuard()
-
-        new_hguard.rect.x = x
-        new_hguard.rect.y = y
+        new_hguard = guards.HostileGuard(x, y)
 
         new_hguard.level = self
         new_hguard.player = self.player
@@ -307,11 +288,7 @@ class Level:
         self.guards.add(new_hguard)
 
     def create_ladder(self, tile, x, y, layer):
-        new_ladder = platforms.Platform(tile, layer)
-
-        new_ladder.rect.x = x
-        new_ladder.rect.y = y
-
+        new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
     def render(self, data):
@@ -402,16 +379,16 @@ class Level01(Level):
         self.render(level_data)
 
         # Add the level text
-        text = leveltext.LevelText("Left/right arrows or A/D to walk", 48, 960)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Up arrow or W to jump", 48, 990)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Don't fall!", 615, 600)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Nearly there...", 975, 600)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Down we go", 1750, 450)
-        self.level_text.add(text)
+        level_text = text.LevelText("Left/right arrows or A/D to walk", 48, 960)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Up arrow or W to jump", 48, 990)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Don't fall!", 615, 600)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Nearly there...", 975, 600)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Down we go", 1750, 450)
+        self.level_text.add(level_text)
 
         # Set start position
         self.start_x = 0
@@ -461,30 +438,30 @@ class Level02(Level):
             door.set_keypad()
 
         # Add the level text
-        text = leveltext.LevelText("Watch out for the acid!", 100, 1300)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Nice!", 850, 1150)
-        self.level_text.add(text)
-        text = leveltext.LevelText("This is tricky,", 50, 860)
-        self.level_text.add(text)
-        text = leveltext.LevelText("good luck!", 50, 885)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Almost there...", 100, 435)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Use space bar to hack the keypad.", 360, 50)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Once the keypad is hacked,", 360, 75)
-        self.level_text.add(text)
-        text = leveltext.LevelText("the door will open.", 360, 100)
-        self.level_text.add(text)
-        text = leveltext.LevelText("And again", 585, 270)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Jump!", 800, 370)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Congrats!", 1150, 700)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Choose your path", 1300, 625)
-        self.level_text.add(text)
+        level_text = text.LevelText("Watch out for the acid!", 100, 1300)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Nice!", 850, 1150)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("This is tricky,", 50, 860)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("good luck!", 50, 885)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Almost there...", 100, 435)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Use space bar to hack the keypad.", 360, 50)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Once the keypad is hacked,", 360, 75)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("the door will open.", 360, 100)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("And again", 585, 270)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Jump!", 800, 370)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Congrats!", 1150, 700)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Choose your path", 1300, 625)
+        self.level_text.add(level_text)
 
         # Set start position
         self.start_x = 0
@@ -509,7 +486,7 @@ class Level03(Level):
         type_file = os.path.join("level_data", "tile_types", "level3")
 
         # How many layers the level has
-        self.layer_range = 1
+        self.layer_range = 2
 
         self.door_linkup = {0: 0,
                             1: 0}
@@ -527,44 +504,42 @@ class Level03(Level):
             door.set_keypad()
 
         # Add the level text
-        text = leveltext.LevelText("Watch out for the guards!", 110, 1075)
-        self.level_text.add(text)
-        text = leveltext.LevelText("They're searching with torches,", 110, 1100)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Make sure they don't catch you!", 110, 1125)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Try to find a way to get past the guard.", 110, 1150)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Press the jump key", 700, 1300)
-        self.level_text.add(text)
-        text = leveltext.LevelText("to climb ladders!", 700, 1325)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Here's another guard.", 500, 900)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Let go to slide down ladders.", 800, 800)
-        self.level_text.add(text)
-        text = leveltext.LevelText("These are tricky jumps!", 1120, 1355)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Try get over this guard.", 1570, 1250)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Press your crouch key", 1635, 1060)
-        self.level_text.add(text)
-        text = leveltext.LevelText("to slide through", 1635, 1085)
-        self.level_text.add(text)
-        text = leveltext.LevelText("tight spaces.", 1635, 1110)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Jump onto", 1200, 875)
-        self.level_text.add(text)
-        text = leveltext.LevelText("the ladders.", 1200, 900)
-        self.level_text.add(text)
-        text = leveltext.LevelText("You can also crouch", 920, 350)
-        self.level_text.add(text)
-        text = leveltext.LevelText("under torches!", 920, 375)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Good job!", 200, 200)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Watch out here...", 1275, 425)
-        self.level_text.add(text)
+        level_text = text.LevelText("Watch out for the guards!", 110, 1075)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("They're searching with torches,", 110, 1100)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Make sure they don't catch you!", 110, 1125)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Try to find a way to get past the guard.", 110, 1150)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Press the jump key", 700, 1300)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("to climb ladders!", 700, 1325)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Here's another guard.", 500, 900)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Let go to slide down ladders.", 800, 800)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("These are tricky jumps!", 1120, 1355)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Press your crouch key", 1635, 1060)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("to slide through", 1635, 1085)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("tight spaces.", 1635, 1110)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Jump onto", 1200, 875)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("the ladders.", 1200, 900)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("You can also crouch", 920, 350)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("under torches!", 920, 375)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Good job!", 200, 200)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Watch out here...", 1275, 425)
+        self.level_text.add(level_text)
 
         # Set start position
         self.start_x = 0
@@ -611,20 +586,65 @@ class Level04(Level):
             door.set_keypad()
 
         # Add the level text
-        text = leveltext.LevelText("Up we go!", 80, 1060)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Crawl through ventilation shafts", 144, 90)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Doors aren't", 664, 130)
-        self.level_text.add(text)
-        text = leveltext.LevelText("always vertical", 664, 155)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Slide through here!", 588, 476)
-        self.level_text.add(text)
-        text = leveltext.LevelText("You'll need to hang about on these ladders.", 1200, 1350)
-        self.level_text.add(text)
-        text = leveltext.LevelText("Here's some complex jumps", 1500, 700)
-        self.level_text.add(text)
+        level_text = text.LevelText("Up we go!", 80, 1060)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Crawl through ventilation shafts", 144, 90)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Doors aren't", 664, 130)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("always vertical", 664, 155)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Slide through here!", 588, 476)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("You'll need to hang about on these ladders.", 1200, 1350)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Here's some complex jumps", 1500, 700)
+        self.level_text.add(level_text)
+
+        # Set the start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to the starting position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
+
+
+class Level05(Level):
+
+    def __init__(self, player, write_data=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png").convert()
+
+        self.save_file = os.path.join("level_data", "level5.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level5")
+        self.type_file = os.path.join("level_data", "tile_types", "level5")
+
+        # How many layers the level has
+        self.layer_range = 2
+
+        self.door_linkup = {0: 0,
+                            1: 0,
+                            2: 1,
+                            3: 1,
+                            4: 2,
+                            5: 2}
+
+        level = terrain.LevelData(self.save_file, self.type_file, self.type_file, "level5")
+
+        if write_data:
+            level.write_data()
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render it
+        self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         # Set the start position
         self.start_x = 0
