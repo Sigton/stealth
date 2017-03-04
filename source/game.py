@@ -97,6 +97,9 @@ class Game:
     def run(self):
         # Game loop
 
+        # A performance enhancement
+        player = self.player
+
         # Load the music
         pygame.mixer.music.load("resources/music.mp3")
         pygame.mixer.music.set_volume(0.25)
@@ -109,8 +112,8 @@ class Game:
         self.current_level.set_scrolling()
 
         # Set the players position
-        self.player.rect.x = 48
-        self.player.rect.y = 384
+        player.rect.x = 48
+        player.rect.y = 384
 
         # Variables to control the player
         run = 0
@@ -160,7 +163,7 @@ class Game:
 
                     # Use keypads
                     if event.key == K_SPACE:
-                        self.player.use_keypad()
+                        player.use_keypad()
 
                     # Crouching
                     if event.key == K_LCTRL:
@@ -176,7 +179,7 @@ class Game:
 
                     if event.key == K_UP or event.key == K_w:
                         jump = False
-                        self.player.climbing = False
+                        player.climbing = False
 
                     if event.key == K_LCTRL:
                         crouch = False
@@ -185,11 +188,11 @@ class Game:
                 pause -= 1
 
             # Level progression
-            if self.player.rect.x + self.player.rect.width/2 >= constants.SCREEN_WIDTH:
+            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
 
                 # Reset the player and move on the level
                 self.current_level.reset_world()
-                self.player.reset()
+                player.reset()
 
                 self.light_sound.stop()
 
@@ -199,8 +202,8 @@ class Game:
                 else:
                     self.current_level = self.level_list[self.current_level_no]
 
-                self.player.level = self.current_level
-                self.current_level.player = self.player
+                player.level = self.current_level
+                self.current_level.player = player
 
                 has_guard = False
                 for guard in self.current_level.guards.sprites():
@@ -210,18 +213,18 @@ class Game:
                     self.light_sound.play(-1)
 
             # Check if player has hit obstacles
-            obstacle_hits = pygame.sprite.spritecollide(self.player, self.current_level.obstacle_list, False)
-            if len(obstacle_hits) and not self.player.dying:
-                self.player.dying = True
-                self.player.health = 0
+            obstacle_hits = pygame.sprite.spritecollide(player, self.current_level.obstacle_list, False)
+            if len(obstacle_hits) and not player.dying:
+                player.dying = True
+                player.health = 0
                 self.dissolve_sound.play()
 
             if not pause:
                 # Check if the guards got the players
-                hit_list = pygame.sprite.spritecollide(self.player, self.current_level.entities, False)
+                hit_list = pygame.sprite.spritecollide(player, self.current_level.entities, False)
                 for hit in hit_list:
                     if isinstance(hit, torches.Torch):
-                        if pixel_perfect_collision(self.player, hit):
+                        if pixel_perfect_collision(player, hit):
                             pause = 180
                             reset = True
 
@@ -231,17 +234,17 @@ class Game:
                 # Playing running and jumping
                 if abs(run) > 0:
                     if run == 1:
-                        self.player.walk_right()
+                        player.walk_right()
                     elif run == -1:
-                        self.player.walk_left()
+                        player.walk_left()
 
                 if crouch:
-                    self.player.do_crouch()
+                    player.do_crouch()
                 else:
-                    self.player.stop_crouching()
+                    player.stop_crouching()
 
                 if jump and not crouch:
-                    self.player.jump()
+                    player.jump()
 
                 # Update entities
             self.active_sprite_list.update()
@@ -252,39 +255,39 @@ class Game:
             self.hud.update()
 
             # Scrolling
-            if self.player.rect.x >= 624:
-                diff = self.player.rect.x - 624
+            if player.rect.x >= 624:
+                diff = player.rect.x - 624
                 if not self.current_level.at_edge_x:
-                    self.player.rect.x = 624
+                    player.rect.x = 624
                 self.current_level.shift_world(-diff, 0)
 
-            if self.player.rect.x <= 288:
-                diff = self.player.rect.x - 288
+            if player.rect.x <= 288:
+                diff = player.rect.x - 288
                 if not self.current_level.at_edge_x:
-                    self.player.rect.x = 288
+                    player.rect.x = 288
                 self.current_level.shift_world(-diff, 0)
 
-            if self.player.rect.y >= 454:
-                diff = self.player.rect.y - 454
+            if player.rect.y >= 454:
+                diff = player.rect.y - 454
                 if not self.current_level.at_edge_y:
-                    self.player.rect.y = 454
+                    player.rect.y = 454
                 self.current_level.shift_world(0, diff)
 
-            if self.player.rect.y <= 288:
-                diff = self.player.rect.y - 288
+            if player.rect.y <= 288:
+                diff = player.rect.y - 288
                 if not self.current_level.at_edge_y:
-                    self.player.rect.y = 288
+                    player.rect.y = 288
                 self.current_level.shift_world(0, diff)
 
             if pause == 0 and reset:
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
-                self.player.reset()
+                player.reset()
                 reset = False
 
-            if self.player.dying and self.player.death_progress >= 75:
-                self.player.health = 100
-                self.player.reset()
+            if player.dying and player.death_progress >= 75:
+                player.health = 100
+                player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
 
