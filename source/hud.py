@@ -1,22 +1,22 @@
 import pygame
 
 import spritesheet
-import text as t
+import text
 import constants
 
 
-class Label(t.Text):
+class Label(text.Text):
 
-    def __init__(self, text, size, x, y):
+    def __init__(self, texts, size, x, y):
 
-        t.Text.__init__(self, text, size, x, y)
+        text.Text.__init__(self, texts, size, x, y)
 
         self.start_x = self.rect.centerx
         self.start_y = self.rect.centery
 
-    def update_text(self, text):
+    def update_text(self, texts):
 
-        self.image = self.font.render(text, True, constants.WHITE)
+        self.image = self.font.render(texts, True, constants.WHITE)
 
         self.rect = self.image.get_rect()
 
