@@ -8,10 +8,10 @@ import guards
 import torches
 import covers
 import entities
-import text as leveltext
+import text
 import hud
-from spritesheet import blit_alpha
-from funcs import pixel_perfect_collision
+import spritesheet
+import funcs
 import sys
 
 
@@ -26,11 +26,11 @@ class Game:
         self.loading_screen = covers.LoadingScreen()
 
         for n in range(63):
-            blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
+            spritesheet.blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
             pygame.display.flip()
 
         # Create the loading label
-        label = leveltext.LoadingLabel("", 300, 500)
+        label = text.LoadingLabel("", 300, 500)
 
         # Create the player
         self.player = p.Player()
@@ -224,7 +224,7 @@ class Game:
                 hit_list = pygame.sprite.spritecollide(player, self.current_level.entities, False)
                 for hit in hit_list:
                     if isinstance(hit, torches.Torch):
-                        if pixel_perfect_collision(player, hit):
+                        if funcs.pixel_perfect_collision(player, hit):
                             pause = 180
                             reset = True
 
@@ -298,7 +298,7 @@ class Game:
             self.crosshair.draw(self.display)
             self.hud.draw(self.display)
             if reset and 0 < pause < 100:
-                blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
+                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
 
             # Limit to 60 fps
             self.clock.tick(60)
