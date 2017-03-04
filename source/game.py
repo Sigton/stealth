@@ -44,13 +44,13 @@ class Game:
         label.update_text("Loading Level 1...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        # self.level_list.append(level.Level01(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
@@ -122,6 +122,7 @@ class Game:
 
         pause = 0
         reset = False
+        do_reset = False
 
         has_guard = False
         for guard in self.current_level.guards.sprites():
@@ -219,7 +220,10 @@ class Game:
                 player.health = 0
                 self.dissolve_sound.play()
 
-            if not pause:
+            if pause == 0 and reset:
+                do_reset = True
+
+            elif not pause:
                 # Check if the guards got the players
                 hit_list = pygame.sprite.spritecollide(player, self.current_level.entities, False)
                 for hit in hit_list:
@@ -279,11 +283,13 @@ class Game:
                     player.rect.y = 288
                 self.current_level.shift_world(0, diff)
 
-            if pause == 0 and reset:
+            if do_reset:
+                print("reset called")
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
                 player.reset()
                 reset = False
+                do_reset = False
 
             if player.dying and player.death_progress >= 75:
                 player.health = 100
