@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level5/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level5/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
     </list>
@@ -397,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00485" summary="Added some more decorations to level 4">
-      <created>1488126663542</created>
-      <option name="number" value="00485" />
-      <option name="presentableId" value="LOCAL-00485" />
-      <option name="project" value="LOCAL" />
-      <updated>1488126663542</updated>
-    </task>
     <task id="LOCAL-00486" summary="Added decorations">
       <created>1488126867461</created>
       <option name="number" value="00486" />
@@ -740,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488639553128</updated>
     </task>
-    <option name="localTasksCounter" value="534" />
+    <task id="LOCAL-00534" summary="Updated level 5">
+      <created>1488646366479</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1488646366480</updated>
+    </task>
+    <option name="localTasksCounter" value="535" />
     <servers />
   </component>
   <component name="TodoView">
@@ -802,9 +804,9 @@
     <MESSAGE value="Hacked a bugfix, to be improved at a later date" />
     <MESSAGE value="Updated level 5 with more decorations" />
     <MESSAGE value="Fixed centering of dissolving animation" />
-    <MESSAGE value="Updated level 5" />
     <MESSAGE value="Updated level 5 and fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 5 and fixed bug" />
+    <MESSAGE value="Updated level 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
