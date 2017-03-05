@@ -250,7 +250,7 @@ class Game:
                 if jump and not crouch:
                     player.jump()
 
-                # Update entities
+            # Update entities
             self.active_sprite_list.update()
             if not pause:
                 self.current_level.update()
@@ -284,7 +284,6 @@ class Game:
                 self.current_level.shift_world(0, diff)
 
             if do_reset:
-                print("reset called")
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
                 player.reset()
