@@ -13,6 +13,7 @@ import hud
 import spritesheet
 import funcs
 import sys
+import cProfile
 
 
 class Game:
@@ -44,25 +45,25 @@ class Game:
         label.update_text("Loading Level 1...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        # self.level_list.append(level.Level01(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True))
+        # self.level_list.append(level.Level03(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True))
+        # self.level_list.append(level.Level04(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", 480, 500)
@@ -250,7 +251,7 @@ class Game:
                 if jump and not crouch:
                     player.jump()
 
-                # Update entities
+            # Update entities
             self.active_sprite_list.update()
             if not pause:
                 self.current_level.update()
@@ -284,7 +285,6 @@ class Game:
                 self.current_level.shift_world(0, diff)
 
             if do_reset:
-                print("reset called")
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
                 player.reset()
