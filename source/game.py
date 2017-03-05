@@ -13,7 +13,6 @@ import hud
 import spritesheet
 import funcs
 import sys
-import cProfile
 
 
 class Game:
