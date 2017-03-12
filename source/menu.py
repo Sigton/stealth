@@ -58,14 +58,16 @@ class Menu:
 
     # This is the games menu
 
-    def __init__(self, display, clock):
+    def __init__(self, parent):
+
+        self.parent = parent
 
         # Set the display to draw to and the clock for timing
-        self.display = display
-        self.clock = clock
+        self.display = parent.game_display
+        self.clock = parent.clock
 
         # Create an instance of the game class
-        self.game = g.Game(display, clock)
+        self.game = g.Game(self.display, self.clock)
 
         # Set the background
         self.background = pygame.image.load("resources/menubackground.png").convert()

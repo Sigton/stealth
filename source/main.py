@@ -35,7 +35,7 @@ class Main:
     def run(self):
 
         # Start the menu
-        menu = m.Menu(self.game_display, self.clock)
+        menu = m.Menu(self)
         menu.run()
 
         # Quit the game
