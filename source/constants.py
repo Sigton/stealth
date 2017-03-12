@@ -20,3 +20,16 @@ GUARD_SPEED = 1.5
 HGUARD_SPEED = 2
 HGUARD_FOLLOW_DIST = 500
 HGUARD_FRICTION = 0.8
+
+
+# Sets the screen to a new size
+def set_screen_size(new_width, new_height):
+
+    global SCREEN_WIDTH, SCREEN_HEIGHT, SIZE
+
+    SCREEN_WIDTH = new_width
+    SCREEN_HEIGHT = new_height
+
+    SIZE = (SCREEN_WIDTH, SCREEN_HEIGHT)
+
+    return SIZE
