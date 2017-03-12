@@ -82,6 +82,9 @@ class Menu:
         # The screen that is currently displayed
         self.current_screen = None
 
+        # Lag mode
+        self.lagging = False
+
     def run(self):
 
         # Load the music
@@ -122,6 +125,11 @@ class Menu:
                             else:
                                 button.command()
 
+                if event.type == KEYUP:
+
+                    if event.key == K_F8:
+                        self.toggle_lag()
+
             # Update the sprites
             self.current_screen.update()
 
@@ -136,3 +144,11 @@ class Menu:
             self.clock.tick(60)
 
         pygame.mouse.set_visible(False)
+
+    def toggle_lag(self):
+
+        if not self.lagging:
+            self.lagging = True
+
+        else:
+            self.lagging = False
