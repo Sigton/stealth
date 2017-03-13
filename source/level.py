@@ -116,9 +116,9 @@ class Level:
             self.at_edge_x = True
             self.world_shift_x = 0
 
-        elif self.world_shift_x <= -960:
+        elif self.world_shift_x <= -(960 + (960 - constants.SCREEN_WIDTH)):
             self.at_edge_x = True
-            self.world_shift_x = -960
+            self.world_shift_x = -(960 + (960 - constants.SCREEN_WIDTH))
 
         if not self.at_edge_x:
             # Move everything in the level
@@ -148,9 +148,9 @@ class Level:
             self.at_edge_y = True
             self.world_shift_y = 0
 
-        elif self.world_shift_y >= 720:
+        elif self.world_shift_y >= (720 + (720 - constants.SCREEN_HEIGHT)):
             self.at_edge_y = True
-            self.world_shift_y = 720
+            self.world_shift_y = (720 + (720 - constants.SCREEN_HEIGHT))
 
         if not self.at_edge_y:
             # Move everything in the level
