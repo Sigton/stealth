@@ -151,6 +151,8 @@ class Menu:
 
         if not self.lagging:
             self.lagging = True
+            self.display = self.parent.set_screen_size(720, 540)
 
         else:
             self.lagging = False
+            self.display = self.parent.set_screen_size(960, 720)

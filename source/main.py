@@ -42,6 +42,12 @@ class Main:
         pygame.quit()
         sys.exit(0)
 
+    def set_screen_size(self, new_width, new_height):
+
+        self.game_display = pygame.display.set_mode(constants.set_screen_size(new_width, new_height))
+
+        return self.game_display
+
 if __name__ == "__main__":
     # Begin everything
     game = Main()
