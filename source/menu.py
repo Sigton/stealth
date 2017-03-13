@@ -80,13 +80,15 @@ class Menu:
                                   320, 350, lambda: self.game.run())
         self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
                                   282, 426, "quit")
-        self.title = text.Text("Stealth", 200, 165, 100)
+
+        self.title_big = text.Text("Stealth", 200, 165, 100)
+        self.title_small = text.Text("Stealth", 150, 124, 80)
 
         # Fill the group with everything on that screen of the menu
         self.main_menu = pygame.sprite.Group()
         self.main_menu.add(self.play_button)
         self.main_menu.add(self.quit_button)
-        self.main_menu.add(self.title)
+        self.main_menu.add(self.title_big)
 
         # The screen that is currently displayed
         self.current_screen = None
@@ -160,8 +162,12 @@ class Menu:
             self.lagging = True
             self.display = self.parent.set_screen_size(720, 540)
             self.background = self.background_small
+            self.main_menu.remove(self.title_big)
+            self.main_menu.add(self.title_small)
 
         else:
             self.lagging = False
             self.display = self.parent.set_screen_size(960, 720)
             self.background = self.background_large
+            self.main_menu.remove(self.title_small)
+            self.main_menu.add(self.title_big)
