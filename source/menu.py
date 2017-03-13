@@ -165,9 +165,15 @@ class Menu:
             self.main_menu.remove(self.title_big)
             self.main_menu.add(self.title_small)
 
+            self.play_button.rect.topleft = (180, 270)
+            self.quit_button.rect.topleft = (142, 346)
+
         else:
             self.lagging = False
             self.display = self.parent.set_screen_size(960, 720)
             self.background = self.background_large
             self.main_menu.remove(self.title_small)
             self.main_menu.add(self.title_big)
+
+            self.play_button.rect.topleft = (320, 350)
+            self.quit_button.rect.topleft = (282, 426)
