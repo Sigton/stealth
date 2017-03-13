@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -409,13 +407,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00518" summary="More decorations">
-      <created>1488312931345</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1488312931345</updated>
-    </task>
     <task id="LOCAL-00519" summary="Even more decorations">
       <created>1488313616186</created>
       <option name="number" value="00519" />
@@ -752,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489436490564</updated>
     </task>
-    <option name="localTasksCounter" value="567" />
+    <task id="LOCAL-00567" summary="Fixed more bugs">
+      <created>1489437089798</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1489437089798</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="TodoView">
@@ -810,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Even more decorations" />
     <MESSAGE value="Had a bash at fixing a bug with the scrolling" />
     <MESSAGE value="Removed prints now that I have devised a solution" />
     <MESSAGE value="Began execution of solution" />
@@ -835,7 +832,8 @@
     <MESSAGE value="Added ability to change screen size" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated some things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated some things" />
+    <MESSAGE value="Fixed more bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed more bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
