@@ -75,14 +75,18 @@ class Menu:
 
         self.background = self.background_large
 
+        # Create the content of the menu]
+        self.play_button = Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
+                                  320, 350, lambda: self.game.run())
+        self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
+                                  282, 426, "quit")
+        self.title = text.Text("Stealth", 200, 165, 100)
+
         # Fill the group with everything on that screen of the menu
         self.main_menu = pygame.sprite.Group()
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
-                                  320, 350, lambda: self.game.run()))
-        self.main_menu.add(Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
-                                  282, 426, "quit"))
-
-        self.main_menu.add(text.Text("Stealth", 200, 165, 100))
+        self.main_menu.add(self.play_button)
+        self.main_menu.add(self.quit_button)
+        self.main_menu.add(self.title)
 
         # The screen that is currently displayed
         self.current_screen = None
