@@ -261,10 +261,10 @@ class Game:
             self.hud.update()
 
             # Scrolling
-            if player.rect.x >= 624:
-                diff = player.rect.x - 624
+            if player.rect.x >= constants.SCREEN_WIDTH - 288:
+                diff = player.rect.x - (constants.SCREEN_WIDTH - 288)
                 if not self.current_level.at_edge_x:
-                    player.rect.x = 624
+                    player.rect.x = constants.SCREEN_WIDTH - 288
                 self.current_level.shift_world(-diff, 0)
 
             if player.rect.x <= 288:
@@ -273,10 +273,10 @@ class Game:
                     player.rect.x = 288
                 self.current_level.shift_world(-diff, 0)
 
-            if player.rect.y >= 454:
-                diff = player.rect.y - 454
+            if player.rect.y >= constants.SCREEN_HEIGHT - 240:
+                diff = player.rect.y - (constants.SCREEN_HEIGHT - 240)
                 if not self.current_level.at_edge_y:
-                    player.rect.y = 454
+                    player.rect.y = constants.SCREEN_HEIGHT - 240
                 self.current_level.shift_world(0, diff)
 
             if player.rect.y <= 288:
