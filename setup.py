@@ -24,8 +24,7 @@ include_files = ["source/level_data/",
                  "source/menu.py",
                  "source/hud.py"]
 
-excludes = ["tkinter",
-            "OpenGL",
+excludes = ["OpenGL",
             "email",
             "html",
             "http",

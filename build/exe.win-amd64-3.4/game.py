@@ -17,10 +17,12 @@ import sys
 
 class Game:
 
-    def __init__(self, display, clock):
+    def __init__(self, parent):
 
-        self.display = display
-        self.clock = clock
+        self.parent = parent
+
+        self.display = self.parent.display
+        self.clock = self.parent.clock
 
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()
@@ -50,25 +52,25 @@ class Game:
         label.update_text("Loading Level 2...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True))
+        # self.level_list.append(level.Level03(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True))
+        # self.level_list.append(level.Level04(self.player, True))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", 480, 500)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True))
+        # self.level_list.append(level.Level05(self.player, True))
 
         # Set the current level
         self.current_level_no = 0
@@ -259,10 +261,10 @@ class Game:
             self.hud.update()
 
             # Scrolling
-            if player.rect.x >= 624:
-                diff = player.rect.x - 624
+            if player.rect.x >= constants.SCREEN_WIDTH - 288:
+                diff = player.rect.x - (constants.SCREEN_WIDTH - 288)
                 if not self.current_level.at_edge_x:
-                    player.rect.x = 624
+                    player.rect.x = constants.SCREEN_WIDTH - 288
                 self.current_level.shift_world(-diff, 0)
 
             if player.rect.x <= 288:
@@ -271,10 +273,10 @@ class Game:
                     player.rect.x = 288
                 self.current_level.shift_world(-diff, 0)
 
-            if player.rect.y >= 454:
-                diff = player.rect.y - 454
+            if player.rect.y >= constants.SCREEN_HEIGHT - 240:
+                diff = player.rect.y - (constants.SCREEN_HEIGHT - 240)
                 if not self.current_level.at_edge_y:
-                    player.rect.y = 454
+                    player.rect.y = constants.SCREEN_HEIGHT - 240
                 self.current_level.shift_world(0, diff)
 
             if player.rect.y <= 288:

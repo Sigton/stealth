@@ -1,4 +1,5 @@
 import pygame
+import constants
 
 
 class Blackout(pygame.sprite.Sprite):
@@ -44,10 +45,11 @@ class LoadingScreen(pygame.sprite.Sprite):
         self.image.blit(self.image_file, (0, 0))
 
         self.rect = self.image.get_rect()
+        self.rect.center = constants.SCREEN_CENTER
 
     def draw(self, display):
 
-        display.blit(self.image, (0, 0))
+        display.blit(self.image, (self.rect.x, self.rect.y))
 
 
 class DarkScreen(pygame.sprite.Sprite):
@@ -64,9 +66,12 @@ class DarkScreen(pygame.sprite.Sprite):
         self.image = self.image.convert_alpha()
         self.image.blit(self.image_file, (0, 0))
 
+        self.rect = self.image.get_rect()
+        self.rect.center = constants.SCREEN_CENTER
+
     def draw(self, display):
 
-        display.blit(self.image, (0, 0))
+        display.blit(self.image, (self.rect.x, self.rect.y))
 
 
 class GameOverScreen(pygame.sprite.Sprite):
@@ -83,6 +88,9 @@ class GameOverScreen(pygame.sprite.Sprite):
         self.image = self.image.convert_alpha()
         self.image.blit(self.image_file, (0, 0))
 
+        self.rect = self.image.get_rect()
+        self.rect.center = constants.SCREEN_CENTER
+
     def draw(self, display):
 
-        display.blit(self.image, (0, 0))
+        display.blit(self.image, (self.rect.x, self.rect.y))
