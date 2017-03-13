@@ -70,7 +70,10 @@ class Menu:
         self.game = g.Game(self)
 
         # Set the background
-        self.background = pygame.image.load("resources/menubackground.png").convert()
+        self.background_large = pygame.image.load("resources/menubackground.png").convert()
+        self.background_small = pygame.image.load("resources/menubackgroundsmall.png").convert()
+
+        self.background = self.background_large
 
         # Fill the group with everything on that screen of the menu
         self.main_menu = pygame.sprite.Group()
@@ -152,7 +155,9 @@ class Menu:
         if not self.lagging:
             self.lagging = True
             self.display = self.parent.set_screen_size(720, 540)
+            self.background = self.background_small
 
         else:
             self.lagging = False
             self.display = self.parent.set_screen_size(960, 720)
+            self.background = self.background_large
