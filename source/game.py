@@ -17,10 +17,12 @@ import sys
 
 class Game:
 
-    def __init__(self, display, clock):
+    def __init__(self, parent):
 
-        self.display = display
-        self.clock = clock
+        self.parent = parent
+
+        self.display = self.parent.display
+        self.clock = self.parent.clock
 
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()

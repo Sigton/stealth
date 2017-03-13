@@ -67,7 +67,7 @@ class Menu:
         self.clock = parent.clock
 
         # Create an instance of the game class
-        self.game = g.Game(self.display, self.clock)
+        self.game = g.Game(self)
 
         # Set the background
         self.background = pygame.image.load("resources/menubackground.png").convert()
