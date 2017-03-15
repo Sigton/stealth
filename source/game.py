@@ -26,6 +26,8 @@ class Game:
 
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()
+        if self.parent.parent.small:
+            self.loading_screen.image = self.loading_screen.image_small
 
         for n in range(63):
             spritesheet.blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
