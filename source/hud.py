@@ -30,23 +30,25 @@ class Label(text.Text):
 
 class HUD(pygame.sprite.Sprite):
 
-    def __init__(self, player):
+    def __init__(self, player, small):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
+
+        self.middle = 360 if small else 480
 
         sprite_sheet = spritesheet.SpriteSheet("resources/hud_bar.png")
         self.image = sprite_sheet.get_image(0, 0, 480, 48)
 
         self.rect = self.image.get_rect()
-        self.rect.centerx = 480
+        self.rect.centerx = self.middle
         self.rect.y = 672
 
-        self.health_label = Label("Health:", 28, 248, 680)
-        self.stamina_label = Label("Stamina:", 28, 488, 680)
+        self.health_label = Label("Health:", 28, self.middle - 232, 680)
+        self.stamina_label = Label("Stamina:", 28, self.middle + 8, 680)
 
-        self.health_num = Label("100%", 28, 368, 680)
-        self.stamina_num = Label("100%", 28, 608, 680)
+        self.health_num = Label("100%", 28, self.middle - 112, 680)
+        self.stamina_num = Label("100%", 28, self.middle + 128, 680)
 
         self.player = player
 

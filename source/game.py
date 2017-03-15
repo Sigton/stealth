@@ -97,7 +97,7 @@ class Game:
 
         self.crosshair = entities.Crosshair()
 
-        self.hud = hud.HUD(self.player)
+        self.hud = hud.HUD(self.player, self.parent.parent.small)
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
