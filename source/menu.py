@@ -66,16 +66,13 @@ class Menu:
         self.display = parent.game_display
         self.clock = parent.clock
 
-        # Create an instance of the game class
-        self.game = g.Game(self)
-
         # Set the background
         self.background_large = pygame.image.load("resources/menubackground.png").convert()
         self.background_small = pygame.image.load("resources/menubackgroundsmall.png").convert()
 
         self.background = self.background_large
 
-        # Create the content of the menu]
+        # Create the content of the menu
         self.play_button = Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
                                   320, 350, lambda: self.game.run())
         self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
@@ -95,6 +92,12 @@ class Menu:
 
         # Lag mode
         self.lagging = False
+
+        if self.parent.small:
+            self.toggle_lag()
+
+        # Create an instance of the game class
+        self.game = g.Game(self)
 
     def run(self):
 
