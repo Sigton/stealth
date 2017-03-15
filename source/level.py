@@ -354,7 +354,7 @@ class Level:
 
 class Level01(Level):
 
-    def __init__(self, player, write_data=False):
+    def __init__(self, player, write_data=False, fast=False):
 
         # Call the parents constructor
         Level.__init__(self, player)
@@ -370,7 +370,7 @@ class Level01(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
-            level.write_data()
+            level.write_data(fast)
 
         # Load the data
         level_data = level.load_data()
@@ -401,7 +401,7 @@ class Level01(Level):
 
 class Level02(Level):
 
-    def __init__(self, player, write_data=False):
+    def __init__(self, player, write_data=False, fast=False):
 
         # Call the parents constructor
         Level.__init__(self, player)
@@ -427,7 +427,7 @@ class Level02(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level2")
         if write_data:
-            level.write_data()
+            level.write_data(fast)
 
         # Load the data
         level_data = level.load_data()
@@ -474,7 +474,7 @@ class Level02(Level):
 
 class Level03(Level):
 
-    def __init__(self, player, write_data=False):
+    def __init__(self, player, write_data=False, fast=False):
 
         # Call the parents constructor
         Level.__init__(self, player)
@@ -493,7 +493,7 @@ class Level03(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level3")
         if write_data:
-            level.write_data()
+            level.write_data(fast)
 
         # Load the data
         level_data = level.load_data()
@@ -552,7 +552,7 @@ class Level03(Level):
 
 class Level04(Level):
 
-    def __init__(self, player, write_data=False):
+    def __init__(self, player, write_data=False, fast=False):
 
         # Call the parents constructor
         Level.__init__(self, player)
@@ -575,7 +575,7 @@ class Level04(Level):
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
         if write_data:
-            level.write_data()
+            level.write_data(fast)
 
         # Load the data
         level_data = level.load_data()
@@ -612,7 +612,7 @@ class Level04(Level):
 
 class Level05(Level):
 
-    def __init__(self, player, write_data=False):
+    def __init__(self, player, write_data=False, fast=False):
 
         # Call the parents constructor
         Level.__init__(self, player)
@@ -636,7 +636,7 @@ class Level05(Level):
         level = terrain.LevelData(self.save_file, self.type_file, self.type_file, "level5")
 
         if write_data:
-            level.write_data()
+            level.write_data(fast)
 
         # Load the data
         level_data = level.load_data()

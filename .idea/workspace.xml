@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +43,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="459">
+              <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/level.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="613" column="0" lean-forward="true" selection-start-line="613" selection-start-column="0" selection-end-line="613" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/terrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,8 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>is_Moving</find>
-      <find>27 23</find>
       <find>36 15</find>
       <find>25 51</find>
       <find>25 50</find>
@@ -93,6 +112,8 @@
       <find>leveltext</find>
       <find>720</find>
       <find>960</find>
+      <find>load_files1</find>
+      <find>load_files2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +149,6 @@
         <option value="$PROJECT_DIR$/source/leveltext.py" />
         <option value="$PROJECT_DIR$/source/text.py" />
         <option value="$PROJECT_DIR$/source/torches.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/spritesheet.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
@@ -139,12 +159,13 @@
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/arms.py" />
         <option value="$PROJECT_DIR$/source/constants.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/covers.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -406,13 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00541" summary="Fixed bug">
-      <created>1488650121520</created>
-      <option name="number" value="00541" />
-      <option name="presentableId" value="LOCAL-00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1488650121520</updated>
     </task>
     <task id="LOCAL-00542" summary="Created new build">
       <created>1488650158852</created>
@@ -750,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489606307319</updated>
     </task>
-    <option name="localTasksCounter" value="590" />
+    <task id="LOCAL-00590" summary="Adjusted write data script for fast levels">
+      <created>1489608449225</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1489608449225</updated>
+    </task>
+    <option name="localTasksCounter" value="591" />
     <servers />
   </component>
   <component name="TodoView">
@@ -764,9 +785,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124200426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124200426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
@@ -808,7 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated some things" />
     <MESSAGE value="Fixed more bugs" />
     <MESSAGE value="Small background is now implemented" />
@@ -833,7 +853,8 @@
     <MESSAGE value="Updated game.py" />
     <MESSAGE value="Created small loading screen image" />
     <MESSAGE value="Loading label adjusts position for screen size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loading label adjusts position for screen size" />
+    <MESSAGE value="Adjusted write data script for fast levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted write data script for fast levels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python34/Lib/site-packages/pygame/sprite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
@@ -1010,13 +1024,6 @@
         <state relative-caret-position="799">
           <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1056,8 +1063,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="459">
+          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="613" column="0" lean-forward="true" selection-start-line="613" selection-start-column="0" selection-end-line="613" selection-end-column="0" />
           <folding />
         </state>
       </provider>
