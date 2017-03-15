@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="629">
+              <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -398,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00525" summary="All sprites now set their initial position differently">
-      <created>1488391512815</created>
-      <option name="number" value="00525" />
-      <option name="presentableId" value="LOCAL-00525" />
-      <option name="project" value="LOCAL" />
-      <updated>1488391512815</updated>
-    </task>
     <task id="LOCAL-00526" summary="Attempted to fix bug">
       <created>1488403174276</created>
       <option name="number" value="00526" />
@@ -741,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489562210584</updated>
     </task>
-    <option name="localTasksCounter" value="574" />
+    <task id="LOCAL-00574" summary="Created a container in the launcher">
+      <created>1489562308721</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1489562308721</updated>
+    </task>
+    <option name="localTasksCounter" value="575" />
     <servers />
   </component>
   <component name="TodoView">
@@ -799,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated level 5 with more decorations" />
     <MESSAGE value="Fixed centering of dissolving animation" />
     <MESSAGE value="Updated level 5 and fixed bug" />
     <MESSAGE value="Performance enhancement" />
@@ -824,7 +823,8 @@
     <MESSAGE value="Button resizing too!" />
     <MESSAGE value="Import tkinter into main" />
     <MESSAGE value="Created launcher app class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created launcher app class" />
+    <MESSAGE value="Created a container in the launcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a container in the launcher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="629">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -28,6 +28,16 @@ class LauncherApp(tk.Tk):
         self.container.grid_columnconfigure(0, weight=1)
 
 
+class Launcher(tk.Frame):
+
+    def __init__(self, parent, controller):
+
+        tk.Frame.__init__(self, parent)
+
+        self.parent = parent
+        self.controller = controller
+
+
 class Main:
 
     def __init__(self):
