@@ -36,12 +36,14 @@ class LevelData:
         self.load_files2 = []
 
         for file in self.load_dir1:
-            image = pygame.image.load(os.path.join("level_data", "layouts", level, file))
-            self.load_files1 += [image]
+            if file is not "Thumbs.db":  # Saves me manually deleting it each time
+                image = pygame.image.load(os.path.join("level_data", "layouts", level, file))
+                self.load_files1 += [image]
 
         for file in self.load_dir1:
-            image = pygame.image.load(os.path.join("level_data", "tile_types", level, file))
-            self.load_files2 += [image]
+            if file is not "Thumbs.db":
+                image = pygame.image.load(os.path.join("level_data", "tile_types", level, file))
+                self.load_files2 += [image]
 
         self.level_data = []
 

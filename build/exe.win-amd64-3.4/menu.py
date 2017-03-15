@@ -138,7 +138,7 @@ class Menu:
 
                 if event.type == KEYUP:
 
-                    if event.key == K_F8:
+                    if event.key == K_F8 or event.key == K_RSHIFT:
                         self.toggle_lag()
 
             # Update the sprites

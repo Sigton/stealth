@@ -20,6 +20,7 @@ class LauncherApp(tk.Tk):
 
         tk.Tk.wm_title(self, "Stealth Launcher")
         self.geometry("480x360")
+        self.resizable(0, 0)
 
         self.container = tk.Frame(self)
         self.container.pack(side="top", fill="both", expand=True)
@@ -87,3 +88,4 @@ class Main:
 if __name__ == "__main__":
     # Open the launcher
     launcher = LauncherApp()
+    launcher.mainloop()
