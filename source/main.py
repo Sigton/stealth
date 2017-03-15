@@ -29,7 +29,7 @@ class LauncherApp(tk.Tk):
 
         frame = Launcher(self.container, self)
         frame.grid(row=0, column=0, sticky="nsew")
-        frame.tk_raise()
+        frame.tkraise()
 
 
 class Launcher(tk.Frame):
@@ -85,6 +85,5 @@ class Main:
         return self.game_display
 
 if __name__ == "__main__":
-    # Begin everything
-    game = Main()
-    game.run()
+    # Open the launcher
+    launcher = LauncherApp()
