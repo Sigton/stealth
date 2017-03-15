@@ -48,6 +48,11 @@ class Launcher(tk.Frame):
         self.title = ttk.Label(self, text="Stealth", font=("Verdana", 16))
         self.title.place(x=240, y=50, anchor="center")
 
+        self.button1 = ttk.Checkbutton(self, text="Fast Mode", variable=self.fast)
+        self.button1.place(x=50, y=130, anchor="w")
+
+        self.button2 = ttk.Checkbutton(self, text="Small Screen", variable=self.small)
+        self.button2.place(x=50, y=160, anchor="w")
 
 class Main:
 
