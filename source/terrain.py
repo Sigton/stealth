@@ -35,21 +35,19 @@ class LevelData:
         self.load_files1 = []
         self.load_files2 = []
 
-        for file in self.load_dir1:
-            if file is not "Thumbs.db":  # Saves me manually deleting it each time
-                image = pygame.image.load(os.path.join("level_data", "layouts", level, file))
-                self.load_files1 += [image]
+        self.normal_tile_files_temp = [x for x in self.load_dir1 if x[:4] != "fast"]
+        self.fast_tile_files_temp = [x for x in self.load_dir1 if x[:4] == "fast"]
+        self.normal_tile_files = [pygame.image.load(os.path.join("level_data", "layouts", level, x))
+                                  for x in self.normal_tile_files_temp]
+        self.fast_tile_files = [pygame.image.load(os.path.join("level_data", "layouts", level, x))
+                                for x in self.fast_tile_files_temp]
 
-        self.normal_tile_files = [x for x in self.load_files1 if x[:4] != "fast"]
-        self.fast_tile_files = [x for x in self.load_files1 if x[:4] == "fast"]
-
-        for file in self.load_dir1:
-            if file is not "Thumbs.db":
-                image = pygame.image.load(os.path.join("level_data", "tile_types", level, file))
-                self.load_files2 += [image]
-
-        self.normal_type_files = [x for x in self.load_files2 if x[:4] != "fast"]
-        self.fast_type_files = [x for x in self.load_files2 if x[:4] == "fast"]
+        self.normal_type_files_temp = [x for x in self.load_dir2 if x[:4] != "fast"]
+        self.fast_type_files_temp = [x for x in self.load_dir2 if x[:4] == "fast"]
+        self.normal_type_files = [pygame.image.load(os.path.join("level_data", "tile_types", level, x))
+                                  for x in self.normal_type_files_temp]
+        self.fast_type_files = [pygame.image.load(os.path.join("level_data", "tile_types", level, x))
+                                for x in self.fast_type_files_temp]
 
         self.level_data = []
 
@@ -77,7 +75,7 @@ class LevelData:
         self.level_data = []
 
         load_files1 = self.fast_tile_files if fast else self.normal_tile_files
-        load_files2 = self.fast_type_files if fast else self.fast_tile_files
+        load_files2 = self.fast_type_files if fast else self.normal_type_files
 
         z = 0
         for file in load_files1:
