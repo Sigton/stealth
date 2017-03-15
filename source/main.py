@@ -7,7 +7,6 @@ from tkinter import ttk
 
 import menu as m
 import constants
-import sys
 
 
 class LauncherApp(tk.Tk):
@@ -73,13 +72,13 @@ class Launcher(tk.Frame):
 
     def launch(self):
 
-        self.game = Main()
+        self.game = Main(bool(self.fast.get()), bool(self.small.get()))
         self.game.run()
 
 
 class Main:
 
-    def __init__(self):
+    def __init__(self, fast_mode, small_mode):
         # Main Program
 
         # Initiate pygame
@@ -102,6 +101,9 @@ class Main:
 
         # Used to manage update frequency
         self.clock = pygame.time.Clock()
+
+        self.fast = fast_mode
+        self.small = small_mode
 
     def run(self):
 
