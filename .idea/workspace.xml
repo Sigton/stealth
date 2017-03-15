@@ -429,13 +429,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00544" summary="Updated level 5">
-      <created>1488716147460</created>
-      <option name="number" value="00544" />
-      <option name="presentableId" value="LOCAL-00544" />
-      <option name="project" value="LOCAL" />
-      <updated>1488716147460</updated>
-    </task>
     <task id="LOCAL-00545" summary="Updated level 5">
       <created>1488716210681</created>
       <option name="number" value="00545" />
@@ -772,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489611067589</updated>
     </task>
-    <option name="localTasksCounter" value="593" />
+    <task id="LOCAL-00593" summary="Fast mode is now working">
+      <created>1489611226024</created>
+      <option name="number" value="00593" />
+      <option name="presentableId" value="LOCAL-00593" />
+      <option name="project" value="LOCAL" />
+      <updated>1489611226024</updated>
+    </task>
+    <option name="localTasksCounter" value="594" />
     <servers />
   </component>
   <component name="TodoView">
@@ -830,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Small background is now implemented" />
     <MESSAGE value="Slight updates to the menu" />
     <MESSAGE value="Title now changes size with screen" />
     <MESSAGE value="Button resizing too!" />
@@ -855,7 +854,8 @@
     <MESSAGE value="Adjusted write data script for fast levels" />
     <MESSAGE value="Updated level.py" />
     <MESSAGE value="Fixed a variety of bugs with terrain.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a variety of bugs with terrain.py" />
+    <MESSAGE value="Fast mode is now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fast mode is now working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

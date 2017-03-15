@@ -24,8 +24,17 @@ class Game:
         self.display = self.parent.display
         self.clock = self.parent.clock
 
+        self.fast = self.parent.parent.fast
+
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()
+        if self.parent.parent.small:
+            self.loading_screen.image = self.loading_screen.image_small
+            loading_label_x = 360
+            loading_label_y = 400
+        else:
+            loading_label_x = 480
+            loading_label_y = 500
 
         for n in range(63):
             spritesheet.blit_alpha(self.display, self.loading_screen.image, (0, 0), n * 4)
@@ -43,34 +52,34 @@ class Game:
         # Create the levels
         self.level_list = list()
 
-        label.update_text("Loading Level 1...", 480, 500)
+        label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True))
+        self.level_list.append(level.Level01(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
-        label.update_text("Loading Level 2...", 480, 500)
+        label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level02(self.player, True))
+        # self.level_list.append(level.Level02(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
-        label.update_text("Loading Level 3...", 480, 500)
+        label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level03(self.player, True))
+        # self.level_list.append(level.Level03(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
-        label.update_text("Loading Level 4...", 480, 500)
+        label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level04(self.player, True))
+        # self.level_list.append(level.Level04(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
-        label.update_text("Loading Level 5...", 480, 500)
+        label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level05(self.player, True))
+        # self.level_list.append(level.Level05(self.player, True, self.fast))
 
         # Set the current level
         self.current_level_no = 0
