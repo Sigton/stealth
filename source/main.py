@@ -60,6 +60,9 @@ class Launcher(tk.Frame):
                                 font="Helvetica 9 italic")
         self.label2.place(x=160, y=160, anchor="w")
 
+        self.launch_button = ttk.Button(self, text="Launch")
+        self.launch_button.place(x=240, y=240, anchor="center")
+
 
 class Main:
 

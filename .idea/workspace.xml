@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="63" column="63" lean-forward="true" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -398,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00531" summary="Updated level 5">
-      <created>1488487892331</created>
-      <option name="number" value="00531" />
-      <option name="presentableId" value="LOCAL-00531" />
-      <option name="project" value="LOCAL" />
-      <updated>1488487892331</updated>
-    </task>
     <task id="LOCAL-00532" summary="Updated level 5">
       <created>1488638216276</created>
       <option name="number" value="00532" />
@@ -741,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489564751717</updated>
     </task>
-    <option name="localTasksCounter" value="580" />
+    <task id="LOCAL-00580" summary="Added labels for the check boxes">
+      <created>1489564944670</created>
+      <option name="number" value="00580" />
+      <option name="presentableId" value="LOCAL-00580" />
+      <option name="project" value="LOCAL" />
+      <updated>1489564944670</updated>
+    </task>
+    <option name="localTasksCounter" value="581" />
     <servers />
   </component>
   <component name="TodoView">
@@ -799,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added lots of decorations to level 5" />
     <MESSAGE value="Updated level 5" />
     <MESSAGE value="Measures to reduce lag" />
     <MESSAGE value="Updated constants.py" />
@@ -824,7 +823,8 @@
     <MESSAGE value="Calls launcher on start" />
     <MESSAGE value="Created some vars and added the title" />
     <MESSAGE value="Added buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added buttons" />
+    <MESSAGE value="Added labels for the check boxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added labels for the check boxes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="63" column="63" lean-forward="true" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
