@@ -21,6 +21,12 @@ class LauncherApp(tk.Tk):
         tk.Tk.wm_title(self, "Stealth Launcher")
         self.geometry("480x360")
 
+        self.container = tk.Frame(self)
+        self.container.pack(side="top", fill="both", expand=True)
+
+        self.container.grid_rowconfigure(0, weight=1)
+        self.container.grid_columnconfigure(0, weight=1)
+
 
 class Main:
 
