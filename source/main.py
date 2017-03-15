@@ -1,6 +1,10 @@
 import pygame
 from pygame.locals import *
 
+# tkinter is used for the launcher GUI
+import tkinter as tk
+from tkinter import ttk
+
 import menu as m
 import constants
 import sys
