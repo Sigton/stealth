@@ -45,6 +45,8 @@ class Launcher(tk.Frame):
         self.fast = tk.IntVar()
         self.small = tk.IntVar()
 
+        self.game = None
+
         self.title = ttk.Label(self, text="Stealth", font=("Verdana", 16))
         self.title.place(x=240, y=50, anchor="center")
 
@@ -66,8 +68,13 @@ class Launcher(tk.Frame):
         self.desc2 = ttk.Label(self, text="Click \"Launch\" to start your game!")
         self.desc2.place(x=240, y=195, anchor="center")
 
-        self.launch_button = ttk.Button(self, text="Launch")
+        self.launch_button = ttk.Button(self, text="Launch", command=self.launch)
         self.launch_button.place(x=240, y=240, anchor="center")
+
+    def launch(self):
+
+        self.game = Main()
+        self.game.run()
 
 
 class Main:
@@ -104,7 +111,6 @@ class Main:
 
         # Quit the game
         pygame.quit()
-        sys.exit(0)
 
     def set_screen_size(self, new_width, new_height):
 
