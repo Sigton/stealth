@@ -40,10 +40,16 @@ class LevelData:
                 image = pygame.image.load(os.path.join("level_data", "layouts", level, file))
                 self.load_files1 += [image]
 
+        self.normal_tile_files = [x for x in self.load_files1 if x[:4] != "fast"]
+        self.fast_tile_files = [x for x in self.load_files1 if x[:4] == "fast"]
+
         for file in self.load_dir1:
             if file is not "Thumbs.db":
                 image = pygame.image.load(os.path.join("level_data", "tile_types", level, file))
                 self.load_files2 += [image]
+
+        self.normal_type_files = [x for x in self.load_files2 if x[:4] != "fast"]
+        self.fast_type_files = [x for x in self.load_files2 if x[:4] == "fast"]
 
         self.level_data = []
 
@@ -56,7 +62,7 @@ class LevelData:
 
         return data
 
-    def write_data(self):
+    def write_data(self, fast):
 
         # Writes data to the json file
 
@@ -70,11 +76,14 @@ class LevelData:
 
         self.level_data = []
 
+        load_files1 = self.fast_tile_files if fast else self.normal_tile_files
+        load_files2 = self.fast_type_files if fast else self.fast_tile_files
+
         z = 0
-        for file in self.load_files1:
+        for file in load_files1:
 
             pixel_array = pygame.PixelArray(file)
-            pixel_array2 = pygame.PixelArray(self.load_files2[z])
+            pixel_array2 = pygame.PixelArray(load_files2[z])
 
             x = 0
             for column in pixel_array:
