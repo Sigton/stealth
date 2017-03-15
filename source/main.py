@@ -10,6 +10,18 @@ import constants
 import sys
 
 
+class LauncherApp(tk.Tk):
+
+    # The launcher to select game options
+
+    def __init__(self, *args, **kwargs):
+
+        tk.Tk.__init__(self, *args, **kwargs)
+
+        tk.Tk.wm_title(self, "Stealth Launcher")
+        self.geometry("480x360")
+
+
 class Main:
 
     def __init__(self):

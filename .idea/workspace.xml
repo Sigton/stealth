@@ -24,9 +24,11 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -396,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00523" summary="Removed prints now that I have devised a solution">
-      <created>1488389801406</created>
-      <option name="number" value="00523" />
-      <option name="presentableId" value="LOCAL-00523" />
-      <option name="project" value="LOCAL" />
-      <updated>1488389801407</updated>
-    </task>
     <task id="LOCAL-00524" summary="Began execution of solution">
       <created>1488390204877</created>
       <option name="number" value="00524" />
@@ -739,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489439825659</updated>
     </task>
-    <option name="localTasksCounter" value="572" />
+    <task id="LOCAL-00572" summary="Import tkinter into main">
+      <created>1489562094949</created>
+      <option name="number" value="00572" />
+      <option name="presentableId" value="LOCAL-00572" />
+      <option name="project" value="LOCAL" />
+      <updated>1489562094949</updated>
+    </task>
+    <option name="localTasksCounter" value="573" />
     <servers />
   </component>
   <component name="TodoView">
@@ -797,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Attempted to fix bug" />
     <MESSAGE value="Hacked a bugfix, to be improved at a later date" />
     <MESSAGE value="Updated level 5 with more decorations" />
     <MESSAGE value="Fixed centering of dissolving animation" />
@@ -822,7 +823,8 @@
     <MESSAGE value="Slight updates to the menu" />
     <MESSAGE value="Title now changes size with screen" />
     <MESSAGE value="Button resizing too!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Button resizing too!" />
+    <MESSAGE value="Import tkinter into main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import tkinter into main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,9 +1042,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
