@@ -73,7 +73,9 @@ class Launcher(tk.Frame):
     def launch(self):
 
         self.game = Main(bool(self.fast.get()), bool(self.small.get()))
+        self.controller.withdraw()
         self.game.run()
+        self.controller.deiconify()
 
 
 class Main:

@@ -25,8 +25,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -399,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00535" summary="Updated level 5">
-      <created>1488646787645</created>
-      <option name="number" value="00535" />
-      <option name="presentableId" value="LOCAL-00535" />
-      <option name="project" value="LOCAL" />
-      <updated>1488646787645</updated>
-    </task>
     <task id="LOCAL-00536" summary="Performance enhancement">
       <created>1488647240090</created>
       <option name="number" value="00536" />
@@ -742,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489565592527</updated>
     </task>
-    <option name="localTasksCounter" value="584" />
+    <task id="LOCAL-00584" summary="Input passed to main class">
+      <created>1489596724503</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1489596724504</updated>
+    </task>
+    <option name="localTasksCounter" value="585" />
     <servers />
   </component>
   <component name="TodoView">
@@ -800,7 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created screen center attribute" />
     <MESSAGE value="Updated covers.py" />
     <MESSAGE value="Began implementation of an anti-lag system" />
     <MESSAGE value="Updated how things work" />
@@ -825,7 +824,8 @@
     <MESSAGE value="Added launch button" />
     <MESSAGE value="Added more labels!" />
     <MESSAGE value="Launch button works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Launch button works" />
+    <MESSAGE value="Input passed to main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Input passed to main class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
