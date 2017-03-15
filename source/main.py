@@ -42,6 +42,12 @@ class Launcher(tk.Frame):
         self.parent = parent
         self.controller = controller
 
+        self.fast = tk.IntVar()
+        self.small = tk.IntVar()
+
+        self.title = ttk.Label(self, text="Stealth", font=("Verdana", 16))
+        self.title.place(x=240, y=50, anchor="center")
+
 
 class Main:
 
