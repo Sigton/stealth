@@ -48,6 +48,9 @@ class Launcher(tk.Frame):
         self.title = ttk.Label(self, text="Stealth", font=("Verdana", 16))
         self.title.place(x=240, y=50, anchor="center")
 
+        self.desc = ttk.Label(self, text="Select the launch options you want for your game.")
+        self.desc.place(x=240, y=90, anchor="center")
+
         self.button1 = ttk.Checkbutton(self, text="Fast Mode", variable=self.fast)
         self.button1.place(x=50, y=130, anchor="w")
         self.label1 = ttk.Label(self, text="Removes decorations for better performance.",
@@ -59,6 +62,9 @@ class Launcher(tk.Frame):
         self.label2 = ttk.Label(self, text="Smaller window for smaller or lower resolution monitors.",
                                 font="Helvetica 9 italic")
         self.label2.place(x=160, y=160, anchor="w")
+
+        self.desc2 = ttk.Label(self, text="Click \"Launch\" to start your game!")
+        self.desc2.place(x=240, y=195, anchor="center")
 
         self.launch_button = ttk.Button(self, text="Launch")
         self.launch_button.place(x=240, y=240, anchor="center")
