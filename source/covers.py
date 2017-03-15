@@ -38,11 +38,18 @@ class LoadingScreen(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_file = pygame.image.load("resources/loading_screen.png")
+        self.image_file_large = pygame.image.load("resources/loading_screen.png")
+        self.image_file_small = pygame.image.load("resources/loading_screen_small.png")
 
-        self.image = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
-        self.image = self.image.convert_alpha()
-        self.image.blit(self.image_file, (0, 0))
+        self.image_large = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
+        self.image_large = self.image_large.convert_alpha()
+        self.image_large.blit(self.image_file_large, (0, 0))
+
+        self.image_small = pygame.Surface([720, 540], flags=pygame.SRCALPHA)
+        self.image_small = self.image_small.convert_alpha()
+        self.image_small.blit(self.image_file_small, (0, 0))
+
+        self.image = self.image_large
 
         self.rect = self.image.get_rect()
         self.rect.center = constants.SCREEN_CENTER
