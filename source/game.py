@@ -303,6 +303,7 @@ class Game:
 
             if player.dying and player.death_progress >= 75:
                 player.health = 100
+                player.stamina = 100
                 player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
