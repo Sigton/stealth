@@ -157,6 +157,7 @@ class Game:
                     pygame.mouse.set_visible(True)
 
                     pygame.quit()
+                    sys.exit(0)
 
                 elif event.type == KEYDOWN:
 
