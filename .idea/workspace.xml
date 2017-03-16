@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2133">
-              <caret line="250" column="46" lean-forward="true" selection-start-line="250" selection-start-column="46" selection-end-line="250" selection-end-column="46" />
+            <state relative-caret-position="620">
+              <caret line="289" column="85" lean-forward="true" selection-start-line="289" selection-start-column="85" selection-end-line="289" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -133,8 +132,8 @@
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/hud.py" />
-        <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/source/player.py" />
       </list>
     </option>
   </component>
@@ -396,13 +395,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00546" summary="Updated level 5">
-      <created>1488718442391</created>
-      <option name="number" value="00546" />
-      <option name="presentableId" value="LOCAL-00546" />
-      <option name="project" value="LOCAL" />
-      <updated>1488718442391</updated>
     </task>
     <task id="LOCAL-00547" summary="Updated level 5">
       <created>1488731262993</created>
@@ -740,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489613467884</updated>
     </task>
-    <option name="localTasksCounter" value="595" />
+    <task id="LOCAL-00595" summary="Players stamina goes down">
+      <created>1489651449052</created>
+      <option name="number" value="00595" />
+      <option name="presentableId" value="LOCAL-00595" />
+      <option name="project" value="LOCAL" />
+      <updated>1489651449053</updated>
+    </task>
+    <option name="localTasksCounter" value="596" />
     <servers />
   </component>
   <component name="TodoView">
@@ -798,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Title now changes size with screen" />
     <MESSAGE value="Button resizing too!" />
     <MESSAGE value="Import tkinter into main" />
     <MESSAGE value="Created launcher app class" />
@@ -823,7 +821,8 @@
     <MESSAGE value="Fixed a variety of bugs with terrain.py" />
     <MESSAGE value="Fast mode is now working" />
     <MESSAGE value="The HUD also changes position for small screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="The HUD also changes position for small screen" />
+    <MESSAGE value="Players stamina goes down" />
+    <option name="LAST_COMMIT_MESSAGE" value="Players stamina goes down" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="250" column="46" lean-forward="true" selection-start-line="250" selection-start-column="46" selection-end-line="250" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/menu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -1047,6 +1038,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="305" column="36" lean-forward="false" selection-start-line="305" selection-start-column="36" selection-end-line="305" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="289" column="85" lean-forward="true" selection-start-line="289" selection-start-column="85" selection-end-line="289" selection-end-column="85" />
           <folding />
         </state>
       </provider>
