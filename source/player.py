@@ -187,7 +187,7 @@ class Player(pygame.sprite.Sprite):
             self.walk_dist = 0
         else:
             self.walk_dist += 1
-            self.stamina -= 0.005
+            self.stamina -= 0.01
 
         # Move left/right
         self.rect.x += self.xv
@@ -269,7 +269,7 @@ class Player(pygame.sprite.Sprite):
             self.health += 0.001
 
         if self.stamina < 100:
-            self.stamina += 0.002
+            self.stamina += 0.004
 
     def on_ground(self):
 
