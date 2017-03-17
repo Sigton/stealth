@@ -61,25 +61,25 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level02(self.player, True, self.fast))
+        self.level_list.append(level.Level02(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level03(self.player, True, self.fast))
+        self.level_list.append(level.Level03(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level04(self.player, True, self.fast))
+        self.level_list.append(level.Level04(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level05(self.player, True, self.fast))
+        self.level_list.append(level.Level05(self.player, True, self.fast))
 
         # Set the current level
         self.current_level_no = 0
@@ -97,7 +97,7 @@ class Game:
 
         self.crosshair = entities.Crosshair()
 
-        self.hud = hud.HUD(self.player)
+        self.hud = hud.HUD(self.player, self.parent.parent.small)
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0.15)
@@ -303,6 +303,7 @@ class Game:
 
             if player.dying and player.death_progress >= 75:
                 player.health = 100
+                player.stamina = 100
                 player.reset()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
