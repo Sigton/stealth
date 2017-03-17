@@ -182,7 +182,7 @@ class Player(pygame.sprite.Sprite):
 
         # Momentum
         self.xv *= self.friction
-        if abs(self.xv) <= 0.5:
+        if abs(self.xv) <= 0.1:
             self.xv = 0
             self.walk_dist = 0
         else:
@@ -291,7 +291,6 @@ class Player(pygame.sprite.Sprite):
         self.direction = "R"
 
     def walk_left(self):
-
         # Moves the player left
         self.xv -= (self.speed / 2) * (self.stamina / 100) \
             if self.crouching or self.climbing else self.speed * (self.stamina / 100)
