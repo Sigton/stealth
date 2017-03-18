@@ -246,7 +246,3 @@ class Laser(pygame.sprite.Sprite):
                                (self.start_point[0]-self.rect.x, self.start_point[1]-self.rect.y),
                                (self.end_point[0]-self.rect.x, self.end_point[1]-self.rect.y), 1)
             self.created_surf = True
-
-    def draw(self, display):
-
-        display.blit(self.image, self.rect.topleft)
