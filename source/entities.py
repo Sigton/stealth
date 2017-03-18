@@ -4,6 +4,7 @@ import spritesheet
 import platforms
 import math
 import constants
+import funcs
 
 
 class Door(platforms.Platform):
@@ -198,6 +199,8 @@ class Camera(pygame.sprite.Sprite):
         self.end_point = (self.rect.centerx+1, self.rect.centery+1)
 
         self.line = pygame.Rect(self.start_point, self.end_point)
+        self.created_mask = False
+        self.hitmask = None
 
     def update(self):
 
@@ -227,3 +230,6 @@ class Camera(pygame.sprite.Sprite):
     def draw_lines(self, display):
 
         self.line = pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
+        if not self.created_mask:
+            self.hitmask = funcs.create_mask(self.line)
+            self.created_mask = True

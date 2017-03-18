@@ -241,16 +241,20 @@ class Game:
                 do_reset = True
 
             elif not pause:
-                # Check if the guards got the players
+                # Check if the guards got the player
                 hit_list = pygame.sprite.spritecollide(player, self.current_level.entities, False)
                 for hit in hit_list:
                     if isinstance(hit, torches.Torch):
-                        if funcs.pixel_perfect_collision(player, hit):
+                        if funcs.pixel_perfect_collision(player.rect, player.hitmask, hit.rect, hit.hitmask):
                             pause = 180
                             reset = True
 
                             # Create an exclamation mark
                             self.current_level.entities.add(entities.ExclamationMark(hit.guard))
+
+                # See if the player crossed a laser beam
+                cameras = [entity for entity in self.current_level.entities.sprites()
+                           if isinstance(entity, entities.Camera)]
 
                 # Playing running and jumping
                 if abs(run) > 0:
