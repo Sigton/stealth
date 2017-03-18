@@ -80,6 +80,10 @@ class Level:
         display.fill(constants.BLACK)
         display.blit(self.background, (0, 0))
 
+        # Draw the sights from cameras
+        cameras = [entity for entity in self.entities.sprites() if isinstance(entity, entities.Camera)]
+        [camera.draw_lines(display) for camera in cameras]
+
         # Draw the sprite lists
         for layer in range(self.layer_range):
 
@@ -103,9 +107,6 @@ class Level:
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
-
-        cameras = [entity for entity in self.entities.sprites() if isinstance(entity, entities.Camera)]
-        [camera.draw_lines(display) for camera in cameras]
 
         self.entities.draw(display)
 
