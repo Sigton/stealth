@@ -213,6 +213,9 @@ class Laser(pygame.sprite.Sprite):
         self.image = None
         self.created_surf = False
 
+        self.start_x = 0
+        self.start_y = 0
+
     def update(self, display):
 
         # Draw the line that the camera sees
@@ -245,4 +248,8 @@ class Laser(pygame.sprite.Sprite):
             pygame.draw.aaline(self.image, constants.RED,
                                (self.start_point[0]-self.rect.x, self.start_point[1]-self.rect.y),
                                (self.end_point[0]-self.rect.x, self.end_point[1]-self.rect.y), 1)
+
+            self.start_x = self.rect.x
+            self.start_y = self.rect.y
+
             self.created_surf = True
