@@ -209,10 +209,12 @@ class Laser(pygame.sprite.Sprite):
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
 
+        self.created_image = False
+
         self.image = None
         self.rect = None
 
-    def draw_laser(self):
+    def update(self):
 
         # Draw the line that the camera sees
         # Using the camera angle, follow it's line of perspective until you hit a platform
@@ -237,20 +239,15 @@ class Laser(pygame.sprite.Sprite):
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
 
-        self.end_point = (self.end_point[0] - self.start_point[0],
-                          self.end_point[1] - self.start_point[1])
+        if not self.created_image:
+            self.image = pygame.Surface([int(abs(self.end_point[0] - self.start_point[0])),
+                                         int(abs(self.end_point[1] - self.start_point[1]))])
+            self.image.set_colorkey(constants.BLACK)
 
-        line_gradient = (self.end_point[1] - self.start_point[1], self.end_point[0] - self.start_point[0])
-        if line_gradient[0] < 0:
-            self.end_point[1] += line_gradient[0]
-            self.start_point[1] += line_gradient[0]
-        elif line_gradient[1] < 0:
-            self.end_point[0] += line_gradient[1]
-            self.start_point[0] += line_gradient[1]
+            pygame.draw.aaline(self.image, constants.RED, self.start_point, self.end_point, 1)
 
-        line_gradient = (self.end_point[1] - self.start_point[1], self.end_point[0] - self.start_point[0])
-        self.image = pygame.Surface([line_gradient])
+            self.created_image = True
 
-        pygame.draw.aaline(self.image, constants.RED, self.start_point, self.end_point, 1)
-
-        self.rect = self.image.get_rect()
+            self.rect = self.image.get_rect()
+        self.rect.center = self.camera.rect.center
+        print(self.rect.x, self.rect.y)

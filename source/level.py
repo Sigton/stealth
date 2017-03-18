@@ -699,10 +699,6 @@ class Level06(Level):
         # Then render it
         self.render(level_data)
 
-        # Set the lasers image
-        for laser in self.lasers.sprites():
-            laser.draw_laser()
-
         # Set the start position
         self.start_x = 0
         self.start_y = 719
