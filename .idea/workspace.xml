@@ -34,8 +34,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+            <state relative-caret-position="782">
+              <caret line="343" column="80" lean-forward="true" selection-start-line="343" selection-start-column="80" selection-end-line="343" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -72,7 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>25 50</find>
       <find>6 1</find>
       <find>6 3</find>
       <find>6 2</find>
@@ -102,6 +101,7 @@
       <find>load_files2</find>
       <find>self</find>
       <find>64 42</find>
+      <find>64, 42</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -415,13 +415,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00558" summary="Updated constants.py">
-      <created>1489348723489</created>
-      <option name="number" value="00558" />
-      <option name="presentableId" value="LOCAL-00558" />
-      <option name="project" value="LOCAL" />
-      <updated>1489348723489</updated>
     </task>
     <task id="LOCAL-00559" summary="Created screen center attribute">
       <created>1489349101828</created>
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489838563046</updated>
     </task>
-    <option name="localTasksCounter" value="607" />
+    <task id="LOCAL-00607" summary="Added create camera function">
+      <created>1489839648084</created>
+      <option name="number" value="00607" />
+      <option name="presentableId" value="LOCAL-00607" />
+      <option name="project" value="LOCAL" />
+      <updated>1489839648084</updated>
+    </task>
+    <option name="localTasksCounter" value="608" />
     <servers />
   </component>
   <component name="TodoView">
@@ -817,7 +817,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added more labels!" />
     <MESSAGE value="Launch button works" />
     <MESSAGE value="Input passed to main class" />
     <MESSAGE value="Launcher hides when games open" />
@@ -842,7 +841,8 @@
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Stamina goes down slower" />
     <MESSAGE value="Created Camera class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Camera class" />
+    <MESSAGE value="Added create camera function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added create camera function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,14 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1060,10 +1052,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        <state relative-caret-position="782">
+          <caret line="343" column="80" lean-forward="true" selection-start-line="343" selection-start-column="80" selection-end-line="343" selection-end-column="80" />
           <folding />
         </state>
       </provider>
