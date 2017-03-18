@@ -189,3 +189,5 @@ class Camera(pygame.sprite.Sprite):
 
         self.start_x = self.rect.x
         self.start_y = self.rect.y
+
+        self.level = level
