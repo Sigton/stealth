@@ -4,8 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="748">
-              <caret line="244" column="94" lean-forward="true" selection-start-line="244" selection-start-column="94" selection-end-line="244" selection-end-column="94" />
+              <caret line="247" column="36" lean-forward="false" selection-start-line="247" selection-start-column="36" selection-end-line="247" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -411,13 +409,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00579" summary="Added buttons">
-      <created>1489564751717</created>
-      <option name="number" value="00579" />
-      <option name="presentableId" value="LOCAL-00579" />
-      <option name="project" value="LOCAL" />
-      <updated>1489564751717</updated>
-    </task>
     <task id="LOCAL-00580" summary="Added labels for the check boxes">
       <created>1489564944670</created>
       <option name="number" value="00580" />
@@ -754,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489854969744</updated>
     </task>
-    <option name="localTasksCounter" value="628" />
+    <task id="LOCAL-00628" summary="Fixing things">
+      <created>1489870409525</created>
+      <option name="number" value="00628" />
+      <option name="presentableId" value="LOCAL-00628" />
+      <option name="project" value="LOCAL" />
+      <updated>1489870409525</updated>
+    </task>
+    <option name="localTasksCounter" value="629" />
     <servers />
   </component>
   <component name="TodoView">
@@ -812,7 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spritesheet data for cameras" />
     <MESSAGE value="Created Level 6 class" />
     <MESSAGE value="Added level 6" />
     <MESSAGE value="Updated level 6" />
@@ -837,7 +834,8 @@
     <MESSAGE value="Things are breaking down" />
     <MESSAGE value="Reverted to older more reliable laser script" />
     <MESSAGE value="Okay things are now sort-of working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Okay things are now sort-of working" />
+    <MESSAGE value="Fixing things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing things" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1062,7 +1060,7 @@
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="244" column="94" lean-forward="true" selection-start-line="244" selection-start-column="94" selection-end-line="244" selection-end-column="94" />
+          <caret line="247" column="36" lean-forward="false" selection-start-line="247" selection-start-column="36" selection-end-line="247" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
