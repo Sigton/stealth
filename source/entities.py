@@ -3,6 +3,7 @@ import pygame
 import spritesheet
 import platforms
 import math
+import constants
 
 
 class Door(platforms.Platform):
@@ -218,3 +219,5 @@ class Camera(pygame.sprite.Sprite):
     def draw_lines(self, display):
 
         start_point = (self.rect.centerx, self.rect.centery)
+
+        pygame.draw.line(display, constants.RED, start_point, self.end_point, width=2)
