@@ -84,7 +84,8 @@ class Level:
         display.blit(self.background, (0, 0))
 
         # Draw the sights from cameras
-        self.lasers.draw(display)
+        for laser in self.lasers.sprites():
+            laser.draw(display)
 
         # Draw the sprite lists
         for layer in range(self.layer_range):
