@@ -178,7 +178,10 @@ class Camera(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
-        self.image = sprite_sheet.get_image(image)
+        self.image = sprite_sheet.get_image(image[0],
+                                            image[1],
+                                            image[2],
+                                            image[3])
 
         self.rect = self.image.get_rect()
         self.rect.x = x
