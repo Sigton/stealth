@@ -2,6 +2,7 @@ import pygame
 
 import spritesheet
 import platforms
+import math
 
 
 class Door(platforms.Platform):
