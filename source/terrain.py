@@ -19,8 +19,8 @@ class LevelData:
                    11776768, 65320, 2672680, 60159, 24027,
                    16793, 11110, 460551, 16173544, 7987,
                    5635840, 2850816, 12754615, 9401735,
-                   12517631, 16711680, 255, 16727808,
-                   6502, 6691072]
+                   6121635, 12517631, 16711680, 255,
+                   16727808, 6502, 6691072]
     type_colors = [0, 986895, 2039583, 3092271, 4144959]
 
     def __init__(self, savefile, loadfile1, loadfile2, level):
@@ -92,7 +92,7 @@ class LevelData:
                     tile_data = {}
 
                     new_tile.append((x, y))
-
+                    print(pixel, x, y)
                     if pixel in self.tile_colors:
                         n = 0
                         for color in self.tile_colors:

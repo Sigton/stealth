@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/fastlayer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/fastlayer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/fastlayer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/fastlayer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/terrain.py" afterPath="$PROJECT_DIR$/source/terrain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="690" column="52" lean-forward="true" selection-start-line="690" selection-start-column="52" selection-end-line="690" selection-end-column="52" />
+            <state relative-caret-position="544">
+              <caret line="323" column="44" lean-forward="false" selection-start-line="323" selection-start-column="44" selection-end-line="323" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -47,7 +46,7 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5100">
+            <state relative-caret-position="17">
               <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
               <folding />
             </state>
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="terrain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/terrain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+            <state relative-caret-position="-680">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -85,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>25 51</find>
       <find>25 50</find>
       <find>6 1</find>
       <find>6 3</find>
@@ -115,6 +113,7 @@
       <find>load_files1</find>
       <find>load_files2</find>
       <find>self</find>
+      <find>64 42</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,12 +160,12 @@
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/covers.py" />
-        <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/hud.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
+        <option value="$PROJECT_DIR$/source/terrain.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -428,13 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00555" summary="Updated level 5">
-      <created>1488787949740</created>
-      <option name="number" value="00555" />
-      <option name="presentableId" value="LOCAL-00555" />
-      <option name="project" value="LOCAL" />
-      <updated>1488787949740</updated>
     </task>
     <task id="LOCAL-00556" summary="Updated level 5">
       <created>1488787989113</created>
@@ -772,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489831380181</updated>
     </task>
-    <option name="localTasksCounter" value="604" />
+    <task id="LOCAL-00604" summary="Updated level 6">
+      <created>1489832835824</created>
+      <option name="number" value="00604" />
+      <option name="presentableId" value="LOCAL-00604" />
+      <option name="project" value="LOCAL" />
+      <updated>1489832835824</updated>
+    </task>
+    <option name="localTasksCounter" value="605" />
     <servers />
   </component>
   <component name="TodoView">
@@ -830,7 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added buttons" />
     <MESSAGE value="Added labels for the check boxes" />
     <MESSAGE value="Added launch button" />
     <MESSAGE value="Added more labels!" />
@@ -855,7 +853,8 @@
     <MESSAGE value="Added spritesheet data for cameras" />
     <MESSAGE value="Created Level 6 class" />
     <MESSAGE value="Added level 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added level 6" />
+    <MESSAGE value="Updated level 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,9 +1039,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/terrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5100">
+        <state relative-caret-position="17">
           <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
           <folding />
         </state>
@@ -1058,24 +1073,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="690" column="52" lean-forward="true" selection-start-line="690" selection-start-column="52" selection-end-line="690" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/terrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <caret line="323" column="44" lean-forward="false" selection-start-line="323" selection-start-column="44" selection-end-line="323" selection-end-column="44" />
           <folding />
         </state>
       </provider>
