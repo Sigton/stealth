@@ -103,6 +103,10 @@ class Level:
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
+
+        cameras = [entity for entity in self.entities.sprites() if isinstance(entity, entities.Camera)]
+        [camera.draw_lines(display) for camera in cameras]
+
         self.entities.draw(display)
 
     def shift_world(self, shift_x, shift_y):

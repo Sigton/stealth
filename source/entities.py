@@ -220,4 +220,4 @@ class Camera(pygame.sprite.Sprite):
 
         start_point = (self.rect.centerx, self.rect.centery)
 
-        pygame.draw.line(display, constants.RED, start_point, self.end_point, width=2)
+        pygame.draw.line(display, constants.RED, start_point, self.end_point, 2)
