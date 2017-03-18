@@ -169,3 +169,20 @@ class ExclamationMark(pygame.sprite.Sprite):
     def update(self):
 
         self.guard.level.entities.remove(self)
+
+
+class Camera(pygame.sprite.Sprite):
+
+    def __init__(self, x, y, image):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+        self.image = sprite_sheet.get_image(image)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = self.rect.x
+        self.start_y = self.rect.y
