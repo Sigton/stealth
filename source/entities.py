@@ -195,9 +195,9 @@ class Camera(pygame.sprite.Sprite):
         self.level = level
 
         self.start_point = (self.rect.centerx, self.rect.centery-5)
-        self.end_point = None
+        self.end_point = (self.rect.centerx+1, self.rect.centery+1)
 
-        self.line = pygame.Rect()
+        self.line = pygame.Rect(self.start_point, self.end_point)
 
     def update(self):
 
