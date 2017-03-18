@@ -4,6 +4,8 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,21 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="343" column="80" lean-forward="true" selection-start-line="343" selection-start-column="80" selection-end-line="343" selection-end-column="80" />
+            <state relative-caret-position="731">
+              <caret line="295" column="37" lean-forward="true" selection-start-line="295" selection-start-column="37" selection-end-line="295" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="183" column="51" lean-forward="false" selection-start-line="183" selection-start-column="51" selection-end-line="183" selection-end-column="51" />
+            <state relative-caret-position="561">
+              <caret line="175" column="41" lean-forward="false" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -152,8 +154,8 @@
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -415,13 +417,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00560" summary="Updated covers.py">
-      <created>1489349501799</created>
-      <option name="number" value="00560" />
-      <option name="presentableId" value="LOCAL-00560" />
-      <option name="project" value="LOCAL" />
-      <updated>1489349501799</updated>
     </task>
     <task id="LOCAL-00561" summary="Began implementation of an anti-lag system">
       <created>1489350272210</created>
@@ -759,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489839963860</updated>
     </task>
-    <option name="localTasksCounter" value="609" />
+    <task id="LOCAL-00609" summary="Fixed bug">
+      <created>1489839986553</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1489839986553</updated>
+    </task>
+    <option name="localTasksCounter" value="610" />
     <servers />
   </component>
   <component name="TodoView">
@@ -832,7 +834,6 @@
     <MESSAGE value="Stamina affects player speed, needs fixed however" />
     <MESSAGE value="Launcher appears if you close the game mid-game" />
     <MESSAGE value="Player loses stamina faster" />
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed bug with couching and stamina" />
     <MESSAGE value="Added spritesheet data for cameras" />
     <MESSAGE value="Created Level 6 class" />
@@ -842,7 +843,8 @@
     <MESSAGE value="Created Camera class" />
     <MESSAGE value="Added create camera function" />
     <MESSAGE value="Cameras are now technically entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cameras are now technically entities" />
+    <MESSAGE value="Fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1052,18 +1046,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
+    <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="343" column="80" lean-forward="true" selection-start-line="343" selection-start-column="80" selection-end-line="343" selection-end-column="80" />
+        <state relative-caret-position="561">
+          <caret line="175" column="41" lean-forward="false" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/entities.py">
+    <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="183" column="51" lean-forward="false" selection-start-line="183" selection-start-column="51" selection-end-line="183" selection-end-column="51" />
+        <state relative-caret-position="544">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="295" column="37" lean-forward="true" selection-start-line="295" selection-start-column="37" selection-end-line="295" selection-end-column="37" />
           <folding />
         </state>
       </provider>

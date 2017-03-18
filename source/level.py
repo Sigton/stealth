@@ -292,7 +292,7 @@ class Level:
         self.ladders.add(new_ladder)
 
     def create_camera(self, tile, x, y):
-        new_camera = entities.Camera(x, y, tile)
+        new_camera = entities.Camera(x, y, tile, self)
         self.entities.add(new_camera)
 
     def render(self, data):

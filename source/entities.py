@@ -173,7 +173,7 @@ class ExclamationMark(pygame.sprite.Sprite):
 
 class Camera(pygame.sprite.Sprite):
 
-    def __init__(self, x, y, image):
+    def __init__(self, x, y, image, level):
 
         pygame.sprite.Sprite.__init__(self)
 
