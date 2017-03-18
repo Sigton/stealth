@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,17 +31,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="324" column="60" lean-forward="false" selection-start-line="324" selection-start-column="60" selection-end-line="324" selection-end-column="60" />
+            <state relative-caret-position="323">
+              <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
@@ -151,9 +151,9 @@
         <option value="$PROJECT_DIR$/source/platforms.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -415,13 +415,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00557" summary="Measures to reduce lag">
-      <created>1489344152015</created>
-      <option name="number" value="00557" />
-      <option name="presentableId" value="LOCAL-00557" />
-      <option name="project" value="LOCAL" />
-      <updated>1489344152015</updated>
     </task>
     <task id="LOCAL-00558" summary="Updated constants.py">
       <created>1489348723489</created>
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489836894727</updated>
     </task>
-    <option name="localTasksCounter" value="606" />
+    <task id="LOCAL-00606" summary="Created Camera class">
+      <created>1489838563046</created>
+      <option name="number" value="00606" />
+      <option name="presentableId" value="LOCAL-00606" />
+      <option name="project" value="LOCAL" />
+      <updated>1489838563046</updated>
+    </task>
+    <option name="localTasksCounter" value="607" />
     <servers />
   </component>
   <component name="TodoView">
@@ -817,7 +817,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added launch button" />
     <MESSAGE value="Added more labels!" />
     <MESSAGE value="Launch button works" />
     <MESSAGE value="Input passed to main class" />
@@ -842,7 +841,8 @@
     <MESSAGE value="Added level 6" />
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Stamina goes down slower" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stamina goes down slower" />
+    <MESSAGE value="Created Camera class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Camera class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1052,18 +1052,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="324" column="60" lean-forward="false" selection-start-line="324" selection-start-column="60" selection-end-line="324" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="187" column="34" lean-forward="false" selection-start-line="187" selection-start-column="34" selection-end-line="187" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -291,6 +291,10 @@ class Level:
         new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
+    def create_camera(self, tile, x, y):
+        new_camera = entities.Camera(x, y, tile)
+        self.entities.add(new_camera)
+
     def render(self, data):
 
         self.door_no = 0
