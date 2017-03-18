@@ -187,7 +187,7 @@ class Player(pygame.sprite.Sprite):
             self.walk_dist = 0
         else:
             self.walk_dist += 1
-            self.stamina -= 0.01
+            self.stamina -= 0.008
 
         # Move left/right
         self.rect.x += self.xv
@@ -291,6 +291,7 @@ class Player(pygame.sprite.Sprite):
         self.direction = "R"
 
     def walk_left(self):
+
         # Moves the player left
         self.xv -= (self.speed / 2) * (self.stamina / 100) \
             if self.crouching or self.climbing else self.speed * (self.stamina / 100)
