@@ -194,6 +194,7 @@ class Camera(pygame.sprite.Sprite):
 
         self.level = level
 
+        self.start_point = (self.rect.centerx, self.rect.centery-5)
         self.end_point = None
 
     def update(self):
@@ -202,22 +203,10 @@ class Camera(pygame.sprite.Sprite):
         # Using the camera angle, follow it's line of perspective until you hit a platform
         # Then draw a line connecting the two points
 
-        at_platform = False
-        dist = 0
-        self.end_point = None
-
-        while not at_platform:
-
-            dist += 2
-            x, y = dist*math.degrees(math.cos(26)), dist*math.degrees(math.sin(26))
-
-            at_platform = True if [platform.rect.collidepoint(x, y)
-                                   for platform in self.level.platform_list.sprites()] else False
-
-            self.end_point = (x, y) if at_platform else None
+        self.start_point = (self.rect.centerx, self.rect.centery-5)
+        self.end_point = (self.start_point[0] + 100*math.cos(math.radians(154)),
+                          self.start_point[1] + 100*math.sin(math.radians(154)))
 
     def draw_lines(self, display):
 
-        start_point = (self.rect.centerx, self.rect.centery)
-
-        pygame.draw.line(display, constants.RED, start_point, self.end_point, 2)
+        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 0)
