@@ -24,6 +24,7 @@ class Level:
     entities = None
     level_text = None
     ladders = None
+    lasers = None
 
     player = None
 
@@ -53,6 +54,7 @@ class Level:
         self.entities = pygame.sprite.Group()
         self.level_text = pygame.sprite.Group()
         self.ladders = pygame.sprite.Group()
+        self.lasers = pygame.sprite.Group()
 
         self.player = player
 
@@ -73,6 +75,7 @@ class Level:
         self.guards.update()
         self.entities.update()
         self.level_text.update()
+        self.lasers.update()
 
     def draw(self, display):
 
@@ -81,8 +84,7 @@ class Level:
         display.blit(self.background, (0, 0))
 
         # Draw the sights from cameras
-        cameras = [entity for entity in self.entities.sprites() if isinstance(entity, entities.Camera)]
-        [camera.draw_lines(display) for camera in cameras]
+        self.lasers.draw(display)
 
         # Draw the sprite lists
         for layer in range(self.layer_range):
@@ -298,7 +300,10 @@ class Level:
 
     def create_camera(self, tile, x, y):
         new_camera = entities.Camera(x, y, tile, self)
+        new_laser = entities.Laser(new_camera)
+        new_camera.laser = new_laser
         self.entities.add(new_camera)
+        self.lasers.add(new_laser)
 
     def render(self, data):
 
@@ -693,6 +698,10 @@ class Level06(Level):
 
         # Then render it
         self.render(level_data)
+
+        # Set the lasers image
+        for laser in self.lasers.sprites():
+            laser.draw_laser()
 
         # Set the start position
         self.start_x = 0

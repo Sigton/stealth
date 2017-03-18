@@ -195,41 +195,62 @@ class Camera(pygame.sprite.Sprite):
 
         self.level = level
 
-        self.start_point = (self.rect.centerx, self.rect.centery-5)
-        self.end_point = (self.rect.centerx+1, self.rect.centery+1)
+        self.laser = None
 
-        self.line = pygame.Rect(self.start_point, self.end_point)
-        self.created_mask = False
-        self.hitmask = None
 
-    def update(self):
+class Laser(pygame.sprite.Sprite):
+
+    def __init__(self, camera):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        self.camera = camera
+
+        self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
+        self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
+
+        self.image = None
+        self.rect = None
+
+    def draw_laser(self):
 
         # Draw the line that the camera sees
         # Using the camera angle, follow it's line of perspective until you hit a platform
         # Then draw a line connecting the two points
 
-        self.start_point = (self.rect.centerx, self.rect.centery-5)
+        self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
         x_angle = math.cos(math.radians(154))
         y_angle = math.sin(math.radians(154))
 
-        platforms = [platform for platform in self.level.platform_list.sprites()]
+        platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
         # Calculate end point
         at_platform = False
         dist = 0
         while not at_platform:
             dist += 24
-            self.end_point = (self.start_point[0] + dist*x_angle,
-                              self.start_point[1] + dist*y_angle)
+            self.end_point = (self.start_point[0] + dist * x_angle,
+                              self.start_point[1] + dist * y_angle)
 
             for platform in platforms:
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
 
-    def draw_lines(self, display):
+        self.end_point = (self.end_point[0] - self.start_point[0],
+                          self.end_point[1] - self.start_point[1])
 
-        self.line = pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
-        if not self.created_mask:
-            self.hitmask = funcs.create_mask(self.line)
-            self.created_mask = True
+        line_gradient = (self.end_point[1] - self.start_point[1], self.end_point[0] - self.start_point[0])
+        if line_gradient[0] < 0:
+            self.end_point[1] += line_gradient[0]
+            self.start_point[1] += line_gradient[0]
+        elif line_gradient[1] < 0:
+            self.end_point[0] += line_gradient[1]
+            self.start_point[0] += line_gradient[1]
+
+        line_gradient = (self.end_point[1] - self.start_point[1], self.end_point[0] - self.start_point[0])
+        self.image = pygame.Surface([line_gradient])
+
+        pygame.draw.aaline(self.image, constants.RED, self.start_point, self.end_point, 1)
+
+        self.rect = self.image.get_rect()

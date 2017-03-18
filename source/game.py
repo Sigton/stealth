@@ -252,10 +252,6 @@ class Game:
                             # Create an exclamation mark
                             self.current_level.entities.add(entities.ExclamationMark(hit.guard))
 
-                # See if the player crossed a laser beam
-                cameras = [entity for entity in self.current_level.entities.sprites()
-                           if isinstance(entity, entities.Camera)]
-
                 # Playing running and jumping
                 if abs(run) > 0:
                     if run == 1:
