@@ -653,3 +653,39 @@ class Level05(Level):
         # Scroll to the starting position
         self.reset_world()
         self.shift_world(self.start_x, self.start_y)
+
+
+class Level06(Level):
+
+    def __init__(self, player, write_data=False, fast=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png")
+
+        self.save_file = os.path.join("level_data", "level6.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level6")
+        self.type_file = os.path.join("level_data", "tile_types", "level6")
+
+        # How many layers the level has
+        self.layer_range = 1
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
+
+        if write_data:
+            level.write_data(fast)
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render it
+        self.render(level_data)
+
+        # Set the start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to the starting position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
