@@ -147,6 +147,11 @@ class Level:
                 entity.rect.x += shift_x
             for text in self.level_text:
                 text.rect.x += shift_x
+            for laser in self.lasers:
+                try:
+                    laser.rect.x += shift_x
+                except AttributeError:
+                    pass
 
         self.world_shift_y += shift_y
 
@@ -179,6 +184,11 @@ class Level:
                 entity.rect.y -= shift_y
             for text in self.level_text:
                 text.rect.y -= shift_y
+            for laser in self.lasers:
+                try:
+                    laser.rect.y -= shift_y
+                except AttributeError:
+                    pass
 
     def reset_world(self):
 
@@ -218,6 +228,13 @@ class Level:
         for text in self.level_text:
             text.rect.x = text.start_x
             text.rect.y = text.start_y
+
+        for laser in self.lasers:
+            try:
+                laser.rect.x = laser.start_x
+                laser.rect.y = laser.start_y
+            except AttributeError:
+                pass
 
         self.world_shift_x = 0
         self.world_shift_y = 0
