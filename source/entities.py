@@ -209,7 +209,11 @@ class Laser(pygame.sprite.Sprite):
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
 
-    def update(self):
+        self.rect = None
+        self.image = None
+        self.created_surf = False
+
+    def update(self, display):
 
         # Draw the line that the camera sees
         # Using the camera angle, follow it's line of perspective until you hit a platform
@@ -234,6 +238,12 @@ class Laser(pygame.sprite.Sprite):
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
 
+        if not self.created_surf:
+            self.rect = pygame.draw.line(display, constants.RED, self.start_point, self.end_point, 1)
+            self.image = pygame.Surface([self.rect.width, self.rect.height])
+            self.image.set_colorkey(constants.BLACK)
+            pygame.draw.aaline(self.image, constants.RED, self.start_point, self.end_point, 1)
+
     def draw(self, display):
 
-        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
+        display.blit(self.image, self.rect.topleft)

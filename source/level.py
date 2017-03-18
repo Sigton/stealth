@@ -63,7 +63,7 @@ class Level:
 
         self.layer_range = 0
 
-    def update(self):
+    def update(self, display):
 
         # Update everything in the level
         self.platform_list.update()
@@ -75,7 +75,7 @@ class Level:
         self.guards.update()
         self.entities.update()
         self.level_text.update()
-        self.lasers.update()
+        self.lasers.update(display)
 
     def draw(self, display):
 

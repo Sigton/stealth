@@ -270,7 +270,7 @@ class Game:
             # Update entities
             self.active_sprite_list.update()
             if not pause:
-                self.current_level.update()
+                self.current_level.update(self.display)
             self.blackout.update()
             self.crosshair.update()
             self.hud.update()
