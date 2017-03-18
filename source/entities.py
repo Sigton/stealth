@@ -204,9 +204,24 @@ class Camera(pygame.sprite.Sprite):
         # Then draw a line connecting the two points
 
         self.start_point = (self.rect.centerx, self.rect.centery-5)
-        self.end_point = (self.start_point[0] + 100*math.cos(math.radians(154)),
-                          self.start_point[1] + 100*math.sin(math.radians(154)))
+
+        x_angle = math.cos(math.radians(154))
+        y_angle = math.sin(math.radians(154))
+
+        platforms = [platform for platform in self.level.platform_list.sprites()]
+
+        # Calculate end point
+        at_platform = False
+        dist = 0
+        while not at_platform:
+            dist += 24
+            self.end_point = (self.start_point[0] + dist*x_angle,
+                              self.start_point[1] + dist*y_angle)
+
+            for platform in platforms:
+                if platform.rect.collidepoint(self.end_point):
+                    at_platform = True
 
     def draw_lines(self, display):
 
-        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 0)
+        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
