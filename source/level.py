@@ -312,16 +312,16 @@ class Level:
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 39:
+                if tile_data['tile'] == 40:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 37:
+                elif tile_data['tile'] == 38:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 40:
+                elif tile_data['tile'] == 41:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 41:
+                elif tile_data['tile'] == 42:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
