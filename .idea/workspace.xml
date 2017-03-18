@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/constants.py" afterPath="$PROJECT_DIR$/source/constants.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,14 +41,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
-              <caret line="219" column="60" lean-forward="false" selection-start-line="219" selection-start-column="60" selection-end-line="219" selection-end-column="60" />
+              <caret line="219" column="60" lean-forward="true" selection-start-line="219" selection-start-column="60" selection-end-line="219" selection-end-column="60" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,7 +154,6 @@
         <option value="$PROJECT_DIR$/source/guards.py" />
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/arms.py" />
-        <option value="$PROJECT_DIR$/source/constants.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/constants.py" />
       </list>
     </option>
   </component>
@@ -417,13 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00564" summary="Added ability to change screen size">
-      <created>1489435403671</created>
-      <option name="number" value="00564" />
-      <option name="presentableId" value="LOCAL-00564" />
-      <option name="project" value="LOCAL" />
-      <updated>1489435403671</updated>
     </task>
     <task id="LOCAL-00565" summary="Fixed bug">
       <created>1489435588893</created>
@@ -761,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489841268975</updated>
     </task>
-    <option name="localTasksCounter" value="613" />
+    <task id="LOCAL-00613" summary="Added more methods to camera">
+      <created>1489844071167</created>
+      <option name="number" value="00613" />
+      <option name="presentableId" value="LOCAL-00613" />
+      <option name="project" value="LOCAL" />
+      <updated>1489844071167</updated>
+    </task>
+    <option name="localTasksCounter" value="614" />
     <servers />
   </component>
   <component name="TodoView">
@@ -819,7 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Squashed some bugs" />
     <MESSAGE value="Updated game.py" />
     <MESSAGE value="Created small loading screen image" />
     <MESSAGE value="Loading label adjusts position for screen size" />
@@ -844,7 +853,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Cameras take level as attribute" />
     <MESSAGE value="math now included in entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="math now included in entities" />
+    <MESSAGE value="Added more methods to camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more methods to camera" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,21 +1065,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="219" column="60" lean-forward="false" selection-start-line="219" selection-start-column="60" selection-end-line="219" selection-end-column="60" />
+          <caret line="219" column="60" lean-forward="true" selection-start-line="219" selection-start-column="60" selection-end-line="219" selection-end-column="60" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
