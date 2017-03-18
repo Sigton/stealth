@@ -197,6 +197,8 @@ class Camera(pygame.sprite.Sprite):
         self.start_point = (self.rect.centerx, self.rect.centery-5)
         self.end_point = None
 
+        self.line = pygame.Rect()
+
     def update(self):
 
         # Draw the line that the camera sees
@@ -224,4 +226,4 @@ class Camera(pygame.sprite.Sprite):
 
     def draw_lines(self, display):
 
-        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
+        self.line = pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
