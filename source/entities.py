@@ -209,11 +209,6 @@ class Laser(pygame.sprite.Sprite):
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
 
-        self.created_image = False
-
-        self.image = None
-        self.rect = None
-
     def update(self):
 
         # Draw the line that the camera sees
@@ -239,15 +234,6 @@ class Laser(pygame.sprite.Sprite):
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
 
-        if not self.created_image:
-            self.image = pygame.Surface([int(abs(self.end_point[0] - self.start_point[0])),
-                                         int(abs(self.end_point[1] - self.start_point[1]))])
-            self.image.set_colorkey(constants.BLACK)
+    def draw(self, display):
 
-            pygame.draw.aaline(self.image, constants.RED, self.start_point, self.end_point, 1)
-
-            self.created_image = True
-
-            self.rect = self.image.get_rect()
-        self.rect.center = self.camera.rect.center
-        print(self.rect.x, self.rect.y)
+        pygame.draw.aaline(display, constants.RED, self.start_point, self.end_point, 1)
