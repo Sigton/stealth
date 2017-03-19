@@ -182,12 +182,12 @@ class Player(pygame.sprite.Sprite):
 
         # Momentum
         self.xv *= self.friction
-        if abs(self.xv) <= 0.5:
+        if abs(self.xv) <= 0.1:
             self.xv = 0
             self.walk_dist = 0
         else:
             self.walk_dist += 1
-            self.stamina -= 0.01
+            self.stamina -= 0.008
 
         # Move left/right
         self.rect.x += self.xv

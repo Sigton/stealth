@@ -24,6 +24,7 @@ class Level:
     entities = None
     level_text = None
     ladders = None
+    lasers = None
 
     player = None
 
@@ -53,6 +54,7 @@ class Level:
         self.entities = pygame.sprite.Group()
         self.level_text = pygame.sprite.Group()
         self.ladders = pygame.sprite.Group()
+        self.lasers = pygame.sprite.Group()
 
         self.player = player
 
@@ -73,12 +75,17 @@ class Level:
         self.guards.update()
         self.entities.update()
         self.level_text.update()
+        self.lasers.update()
 
     def draw(self, display):
 
         # Draw everything on this level
         display.fill(constants.BLACK)
         display.blit(self.background, (0, 0))
+
+        # Draw the sights from cameras
+        for laser in self.lasers.sprites():
+            laser.draw(display)
 
         # Draw the sprite lists
         for layer in range(self.layer_range):
@@ -103,6 +110,7 @@ class Level:
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
+
         self.entities.draw(display)
 
     def shift_world(self, shift_x, shift_y):
@@ -291,6 +299,16 @@ class Level:
         new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
+    def create_camera(self, tile, x, y):
+        new_camera = entities.Camera(x, y, tile, self)
+        new_laser = entities.Laser(new_camera, self.player)
+        new_camera.laser = new_laser
+        new_camera.camera_no = self.door_no
+
+        self.entities.add(new_camera)
+        self.doors.add(new_camera)
+        self.lasers.add(new_laser)
+
     def render(self, data):
 
         self.door_no = 0
@@ -307,21 +325,25 @@ class Level:
 
             if tile_data['type'] == "Door":
                 self.door_no += 1
-                self.create_door(platforms.platforms[tile_data['tile']-1],
-                                 position[0]*24, position[1]*24, layer)
+                if 35 < tile_data['tile'] < 38:
+                    self.create_camera(platforms.platforms[tile_data['tile']-1],
+                                       position[0]*24, position[1]*24)
+                else:
+                    self.create_door(platforms.platforms[tile_data['tile']-1],
+                                     position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 38:
+                if tile_data['tile'] == 40:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 36:
+                elif tile_data['tile'] == 38:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 39:
+                elif tile_data['tile'] == 41:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 40:
+                elif tile_data['tile'] == 42:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
             elif tile_data['type'] == "Solid":
@@ -634,6 +656,46 @@ class Level05(Level):
                             5: 2}
 
         level = terrain.LevelData(self.save_file, self.type_file, self.type_file, "level5")
+
+        if write_data:
+            level.write_data(fast)
+
+        # Load the data
+        level_data = level.load_data()
+
+        # Then render it
+        self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
+
+        # Set the start position
+        self.start_x = 0
+        self.start_y = 719
+
+        # Scroll to the starting position
+        self.reset_world()
+        self.shift_world(self.start_x, self.start_y)
+
+
+class Level06(Level):
+
+    def __init__(self, player, write_data=False, fast=False):
+
+        # Call the parents constructor
+        Level.__init__(self, player)
+
+        self.background = pygame.image.load("resources/background.png")
+
+        self.save_file = os.path.join("level_data", "level6.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level6")
+        self.type_file = os.path.join("level_data", "tile_types", "level6")
+
+        # How many layers the level has
+        self.layer_range = 1
+
+        self.door_linkup = {0: 0}
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 
         if write_data:
             level.write_data(fast)

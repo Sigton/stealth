@@ -2,6 +2,8 @@ import pygame
 
 import spritesheet
 import platforms
+import math
+import constants
 
 
 class Door(platforms.Platform):
@@ -169,3 +171,105 @@ class ExclamationMark(pygame.sprite.Sprite):
     def update(self):
 
         self.guard.level.entities.remove(self)
+
+
+class Camera(pygame.sprite.Sprite):
+
+    camera_no = 0
+
+    def __init__(self, x, y, image, level):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+        self.image = sprite_sheet.get_image(image[0],
+                                            image[1],
+                                            image[2],
+                                            image[3])
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = self.rect.x
+        self.start_y = self.rect.y
+
+        self.level = level
+
+        self.laser = None
+        self.keypad = None
+
+    def update(self):
+
+        # Update the status of the door
+        if self.keypad.progress >= 10:
+            self.level.lasers.remove(self.laser)
+
+    def set_keypad(self):
+        # Set the keypad that operates this door
+        self.keypad = self.level.keypad_array[self.level.door_linkup[self.camera_no-1]]
+
+
+class Laser(pygame.sprite.Sprite):
+
+    def __init__(self, camera, player):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        self.camera = camera
+        self.player = player
+
+        self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
+        self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
+
+        self.rect = None
+        self.image = None
+
+        self.start_x = 0
+        self.start_y = 0
+
+    def update(self):
+
+        # Draw the line that the camera sees
+        # Using the camera angle, follow it's line of perspective until you hit a platform
+        # Then draw a line connecting the two points
+
+        self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
+
+        x_angle = math.cos(math.radians(154))
+        y_angle = math.sin(math.radians(154))
+
+        platforms = [platform for platform in self.camera.level.platform_list.sprites()]
+
+        # Calculate end point
+        at_platform = False
+        dist = 0
+        while not at_platform:
+            dist += 30
+            self.end_point = (self.start_point[0] + dist * x_angle,
+                              self.start_point[1] + dist * y_angle)
+
+            for platform in platforms:
+                if platform.rect.collidepoint(self.end_point):
+                    at_platform = True
+
+    def draw(self, display):
+
+        pygame.draw.aaline(display, constants.RED,
+                           (self.start_point[0], self.start_point[1]),
+                           (self.end_point[0], self.end_point[1]), 1)
+
+    def test_collision(self):
+
+        for n in range(10):
+            line_gradient = (self.end_point[1] - self.start_point[1]) /\
+                            (self.end_point[0] - self.start_point[0])
+            player_gradient = (self.player.rect.y+self.player.rect.height*((n*10)/100) - self.start_point[1]) /\
+                              (self.player.rect.x - self.start_point[0])
+
+            diff = player_gradient - line_gradient
+
+            if abs(diff) < 0.05:
+                return True
+
+        return False

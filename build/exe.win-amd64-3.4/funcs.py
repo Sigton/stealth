@@ -3,7 +3,7 @@ import pygame
 # Various functions for various pru
 
 
-def pixel_perfect_collision(obj1, obj2):
+def pixel_perfect_collision(obj1_rect, obj1_hitmask, obj2_rect, obj2_hitmask):
     """
     If the function finds a collision, it will return True;
     if not, it will return False. If one of the objects is
@@ -11,8 +11,8 @@ def pixel_perfect_collision(obj1, obj2):
     """
     try:
         # create attributes
-        rect1, mask1 = obj1.rect, obj1.hitmask
-        rect2, mask2 = obj2.rect, obj2.hitmask
+        rect1, mask1 = obj1_rect, obj1_hitmask
+        rect2, mask2 = obj2_rect, obj2_hitmask
         # initial examination
         if rect1.colliderect(rect2) is False:
             return False
