@@ -198,11 +198,9 @@ class Camera(pygame.sprite.Sprite):
         self.laser = None
 
 
-class Laser(pygame.sprite.Sprite):
+class Laser:
 
     def __init__(self, camera):
-
-        pygame.sprite.Sprite.__init__(self)
 
         self.camera = camera
 
@@ -215,7 +213,7 @@ class Laser(pygame.sprite.Sprite):
         self.start_x = 0
         self.start_y = 0
 
-    def update(self, display):
+    def update(self):
 
         # Draw the line that the camera sees
         # Using the camera angle, follow it's line of perspective until you hit a platform
