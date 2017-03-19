@@ -199,6 +199,13 @@ class Camera(pygame.sprite.Sprite):
         self.laser = None
         self.keypad = None
 
+    def update(self):
+
+        # Update the status of the door
+        if self.keypad.progress >= 10:
+            self.level.lasers.remove(self.laser)
+            self.level.entities.remove(self)
+
     def set_keypad(self):
         # Set the keypad that operates this door
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.camera_no-1]]
