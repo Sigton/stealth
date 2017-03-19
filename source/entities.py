@@ -232,7 +232,7 @@ class Laser(pygame.sprite.Sprite):
         at_platform = False
         dist = 0
         while not at_platform:
-            dist += 1
+            dist += 30
             self.end_point = (self.start_point[0] + dist * x_angle,
                               self.start_point[1] + dist * y_angle)
 
