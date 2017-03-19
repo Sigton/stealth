@@ -306,6 +306,7 @@ class Level:
         new_camera.camera_no = self.door_no
 
         self.entities.add(new_camera)
+        self.doors.add(new_camera)
         self.lasers.add(new_laser)
 
     def render(self, data):
@@ -691,6 +692,8 @@ class Level06(Level):
 
         # How many layers the level has
         self.layer_range = 1
+
+        self.door_linkup = {0: 0}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 
