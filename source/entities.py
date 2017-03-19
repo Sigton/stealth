@@ -4,7 +4,6 @@ import spritesheet
 import platforms
 import math
 import constants
-import funcs
 
 
 class Door(platforms.Platform):
