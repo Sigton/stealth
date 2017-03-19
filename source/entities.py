@@ -249,10 +249,15 @@ class Laser(pygame.sprite.Sprite):
 
     def test_collision(self):
 
-        line_gradient = (self.end_point[1] - self.start_point[1]) / (self.end_point[0] - self.start_point[0])
-        player_gradient = (self.player.rect.y - self.start_point[1]) / (self.player.rect.x - self.start_point[0])
+        for n in range(10):
+            line_gradient = (self.end_point[1] - self.start_point[1]) /\
+                            (self.end_point[0] - self.start_point[0])
+            player_gradient = (self.player.rect.y+self.player.rect.height*((n*10)/100) - self.start_point[1]) /\
+                              (self.player.rect.x - self.start_point[0])
 
-        diff = player_gradient - line_gradient
+            diff = player_gradient - line_gradient
 
-        if abs(diff) < 0.1:
-            print("collision")
+            if abs(diff) < 0.05:
+                return True
+
+        return False
