@@ -175,7 +175,7 @@ class ExclamationMark(pygame.sprite.Sprite):
 
 class Camera(pygame.sprite.Sprite):
 
-    door_no = 0
+    camera_no = 0
 
     def __init__(self, x, y, image, level):
 
@@ -201,7 +201,7 @@ class Camera(pygame.sprite.Sprite):
 
     def set_keypad(self):
         # Set the keypad that operates this door
-        self.keypad = self.level.keypad_array[self.level.door_linkup[self.door_no-1]]
+        self.keypad = self.level.keypad_array[self.level.door_linkup[self.camera_no-1]]
 
 
 class Laser(pygame.sprite.Sprite):
