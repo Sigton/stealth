@@ -252,6 +252,9 @@ class Game:
                             # Create an exclamation mark
                             self.current_level.entities.add(entities.ExclamationMark(hit.guard))
 
+                for laser in self.current_level.lasers:
+                    laser.test_collision()
+
                 # Playing running and jumping
                 if abs(run) > 0:
                     if run == 1:

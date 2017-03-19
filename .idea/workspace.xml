@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="272" column="42" lean-forward="false" selection-start-line="272" selection-start-column="42" selection-end-line="272" selection-end-column="42" />
+            <state relative-caret-position="612">
+              <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="901">
@@ -143,9 +143,9 @@
         <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/constants.py" />
         <option value="$PROJECT_DIR$/source/funcs.py" />
-        <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/game.py" />
       </list>
     </option>
   </component>
@@ -407,13 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00590" summary="Adjusted write data script for fast levels">
-      <created>1489608449225</created>
-      <option name="number" value="00590" />
-      <option name="presentableId" value="LOCAL-00590" />
-      <option name="project" value="LOCAL" />
-      <updated>1489608449225</updated>
     </task>
     <task id="LOCAL-00591" summary="Updated level.py">
       <created>1489608611918</created>
@@ -751,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489921643455</updated>
     </task>
-    <option name="localTasksCounter" value="639" />
+    <task id="LOCAL-00639" summary="Created a collision detection script">
+      <created>1489925182585</created>
+      <option name="number" value="00639" />
+      <option name="presentableId" value="LOCAL-00639" />
+      <option name="project" value="LOCAL" />
+      <updated>1489925182586</updated>
+    </task>
+    <option name="localTasksCounter" value="640" />
     <servers />
   </component>
   <component name="TodoView">
@@ -809,7 +809,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added red to colours" />
     <MESSAGE value="Cameras draw lines" />
     <MESSAGE value="Now draws line" />
     <MESSAGE value="FINALLY fixed the trig" />
@@ -834,7 +833,8 @@
     <MESSAGE value="Laser did need to be a sprite, oops" />
     <MESSAGE value="Improved performance" />
     <MESSAGE value="Lasers have player as an attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lasers have player as an attribute" />
+    <MESSAGE value="Created a collision detection script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a collision detection script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,14 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="272" column="42" lean-forward="false" selection-start-line="272" selection-start-column="42" selection-end-line="272" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1058,6 +1050,14 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
