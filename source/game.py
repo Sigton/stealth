@@ -252,8 +252,13 @@ class Game:
                             # Create an exclamation mark
                             self.current_level.entities.add(entities.ExclamationMark(hit.guard))
 
+                hit_laser = False
                 for laser in self.current_level.lasers:
-                    laser.test_collision()
+                    hit_laser = laser.test_collision()
+
+                if hit_laser:
+                    pause = 180
+                    reset = True
 
                 # Playing running and jumping
                 if abs(run) > 0:
@@ -274,6 +279,8 @@ class Game:
             self.active_sprite_list.update()
             if not pause:
                 self.current_level.update()
+            else:
+                self.current_level.lasers.update()
             self.blackout.update()
             self.crosshair.update()
             self.hud.update()
