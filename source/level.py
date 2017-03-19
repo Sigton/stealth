@@ -322,8 +322,12 @@ class Level:
 
             if tile_data['type'] == "Door":
                 self.door_no += 1
-                self.create_door(platforms.platforms[tile_data['tile']-1],
-                                 position[0]*24, position[1]*24, layer)
+                if 35 < tile_data['tile'] < 38:
+                    self.create_camera(platforms.platforms[tile_data['tile']-1],
+                                       position[0]*24, position[1]*24)
+                else:
+                    self.create_door(platforms.platforms[tile_data['tile']-1],
+                                     position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
@@ -351,9 +355,6 @@ class Level:
                 if tile_data['tile'] == 25:
                     self.create_ladder(platforms.platforms[tile_data['tile']-1],
                                        position[0]*24, position[1]*24, layer)
-                elif 35 < tile_data['tile'] < 38:
-                    self.create_camera(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24)
                 else:
                     self.create_cosmetic(platforms.platforms[tile_data['tile']-1],
                                          position[0]*24, position[1]*24, layer)
