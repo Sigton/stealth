@@ -301,7 +301,7 @@ class Level:
 
     def create_camera(self, tile, x, y):
         new_camera = entities.Camera(x, y, tile, self)
-        new_laser = entities.Laser(new_camera)
+        new_laser = entities.Laser(new_camera, self.player)
         new_camera.laser = new_laser
         self.entities.add(new_camera)
         self.lasers.add(new_laser)

@@ -200,11 +200,12 @@ class Camera(pygame.sprite.Sprite):
 
 class Laser(pygame.sprite.Sprite):
 
-    def __init__(self, camera):
+    def __init__(self, camera, player):
 
         pygame.sprite.Sprite.__init__(self)
 
         self.camera = camera
+        self.player = player
 
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
