@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -408,13 +407,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00595" summary="Players stamina goes down">
-      <created>1489651449052</created>
-      <option name="number" value="00595" />
-      <option name="presentableId" value="LOCAL-00595" />
-      <option name="project" value="LOCAL" />
-      <updated>1489651449053</updated>
-    </task>
     <task id="LOCAL-00596" summary="Stamina affects player speed, needs fixed however">
       <created>1489651926329</created>
       <option name="number" value="00596" />
@@ -751,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489927667916</updated>
     </task>
-    <option name="localTasksCounter" value="644" />
+    <task id="LOCAL-00644" summary="Reclassifying cameras as a type of door... yea">
+      <created>1489927877411</created>
+      <option name="number" value="00644" />
+      <option name="presentableId" value="LOCAL-00644" />
+      <option name="project" value="LOCAL" />
+      <updated>1489927877411</updated>
+    </task>
+    <option name="localTasksCounter" value="645" />
     <servers />
   </component>
   <component name="TodoView">
@@ -809,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed drawing order" />
     <MESSAGE value="Automatically calculates the length of the laser now" />
     <MESSAGE value="Getting ready for collisions with lasers" />
     <MESSAGE value="Fixed bug" />
@@ -834,7 +832,8 @@
     <MESSAGE value="Collision detection has been fine-tuned" />
     <MESSAGE value="Level restarts when caught by the cameras" />
     <MESSAGE value="Funcs is not needed in entities.py no more" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funcs is not needed in entities.py no more" />
+    <MESSAGE value="Reclassifying cameras as a type of door... yea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reclassifying cameras as a type of door... yea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
