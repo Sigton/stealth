@@ -211,7 +211,6 @@ class Laser(pygame.sprite.Sprite):
 
         self.rect = None
         self.image = None
-        self.created_surf = False
 
         self.start_x = 0
         self.start_y = 0
@@ -222,34 +221,27 @@ class Laser(pygame.sprite.Sprite):
         # Using the camera angle, follow it's line of perspective until you hit a platform
         # Then draw a line connecting the two points
 
-        if not self.created_surf:
-            self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
+        self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
-            x_angle = math.cos(math.radians(154))
-            y_angle = math.sin(math.radians(154))
+        x_angle = math.cos(math.radians(154))
+        y_angle = math.sin(math.radians(154))
 
-            platforms = [platform for platform in self.camera.level.platform_list.sprites()]
+        platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
-            # Calculate end point
-            at_platform = False
-            dist = 0
-            while not at_platform:
-                dist += 24
-                self.end_point = (self.start_point[0] + dist * x_angle,
-                                  self.start_point[1] + dist * y_angle)
+        # Calculate end point
+        at_platform = False
+        dist = 0
+        while not at_platform:
+            dist += 30
+            self.end_point = (self.start_point[0] + dist * x_angle,
+                              self.start_point[1] + dist * y_angle)
 
-                for platform in platforms:
-                    if platform.rect.collidepoint(self.end_point):
-                        at_platform = True
+            for platform in platforms:
+                if platform.rect.collidepoint(self.end_point):
+                    at_platform = True
 
-            self.rect = pygame.draw.line(display, constants.RED, self.start_point, self.end_point, 1)
-            self.image = pygame.Surface([self.rect.width, self.rect.height])
-            self.image.set_colorkey(constants.BLACK)
-            pygame.draw.aaline(self.image, constants.RED,
-                               (self.start_point[0]-self.rect.x, self.start_point[1]-self.rect.y),
-                               (self.end_point[0]-self.rect.x, self.end_point[1]-self.rect.y), 1)
+    def draw(self, display):
 
-            self.start_x = self.rect.x
-            self.start_y = self.rect.y
-
-            self.created_surf = True
+        pygame.draw.aaline(display, constants.RED,
+                           (self.start_point[0], self.start_point[1]),
+                           (self.end_point[0], self.end_point[1]), 1)
