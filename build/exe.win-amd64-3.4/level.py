@@ -25,6 +25,7 @@ class Level:
     level_text = None
     ladders = None
     lasers = None
+    non_draw = None
 
     player = None
 
@@ -55,6 +56,7 @@ class Level:
         self.level_text = pygame.sprite.Group()
         self.ladders = pygame.sprite.Group()
         self.lasers = pygame.sprite.Group()
+        self.non_draw = pygame.sprite.Group()
 
         self.player = player
 
@@ -76,6 +78,7 @@ class Level:
         self.entities.update()
         self.level_text.update()
         self.lasers.update()
+        self.non_draw.update()
 
     def draw(self, display):
 
@@ -258,6 +261,21 @@ class Level:
         self.keypads.add(new_keypad)
         self.keypad_array.append(new_keypad)
 
+    def create_recharging_keypad(self, x, y):
+        new_keypad = entities.RechargingKeypad(x, y)
+
+        new_keypad.progress_bar = healthbar.ProgressBar()
+        new_keypad.progress_bar.parent = new_keypad
+        new_keypad.progress_bar.level = self
+        new_keypad.progress_bar.rect.x = new_keypad.rect.centerx
+        new_keypad.progress_bar.rect.y = new_keypad.rect.y - 20
+        new_keypad.progress_bar.start_x = new_keypad.progress_bar.rect.x
+        new_keypad.progress_bar.start_y = new_keypad.progress_bar.rect.y
+        self.entities.add(new_keypad.progress_bar)
+
+        self.keypads.add(new_keypad)
+        self.keypad_array.append(new_keypad)
+
     def create_bomb(self, x, y):
         new_bomb = entities.Bomb(x, y)
 
@@ -299,11 +317,14 @@ class Level:
         new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
-    def create_camera(self, tile, x, y):
+    def create_camera(self, tile, x, y, direction):
         new_camera = entities.Camera(x, y, tile, self)
         new_laser = entities.Laser(new_camera, self.player)
         new_camera.laser = new_laser
         new_camera.camera_no = self.door_no
+
+        if not direction:
+            new_laser.angle = 26
 
         self.entities.add(new_camera)
         self.doors.add(new_camera)
@@ -327,7 +348,7 @@ class Level:
                 self.door_no += 1
                 if 35 < tile_data['tile'] < 38:
                     self.create_camera(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24)
+                                       position[0]*24, position[1]*24, tile_data['tile']-36)
                 else:
                     self.create_door(platforms.platforms[tile_data['tile']-1],
                                      position[0]*24, position[1]*24, layer)
@@ -345,6 +366,9 @@ class Level:
 
                 elif tile_data['tile'] == 42:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
+
+                elif tile_data['tile'] == 44:
+                    self.create_recharging_keypad((position[0]*24)+6, (position[1]*24)+5)
 
             elif tile_data['type'] == "Solid":
                 if tile_data['tile'] == 26:
@@ -709,7 +733,8 @@ class Level06(Level):
         # How many layers the level has
         self.layer_range = 1
 
-        self.door_linkup = {0: 0}
+        self.door_linkup = {0: 0,
+                            1: 1}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 

@@ -76,6 +76,34 @@ class Keypad(pygame.sprite.Sprite):
                 self.played_sound = True
 
 
+class RechargingKeypad(Keypad):
+
+    def __init__(self, x, y):
+
+        # Call the parents constructor
+        Keypad.__init__(self, x, y)
+
+        self.timer_threshold = 60
+        self.timer = self.timer_threshold
+
+    def update(self):
+
+        # Update the image if the pad is activated
+        if self.progress >= 10:
+            self.image = self.image_on
+
+        if self.progress == 0:
+            self.image = self.image_off
+
+        if self.timer == 0:
+            if self.progress > 0:
+                self.timer = self.timer_threshold
+                self.progress -= 1
+
+        else:
+            self.timer -= 1
+
+
 class Bomb(pygame.sprite.Sprite):
 
     progress_bar = None
@@ -204,6 +232,7 @@ class Camera(pygame.sprite.Sprite):
         # Update the status of the door
         if self.keypad.progress >= 10:
             self.level.lasers.remove(self.laser)
+            self.level.non_draw.add(self.laser)
 
     def set_keypad(self):
         # Set the keypad that operates this door
@@ -225,6 +254,8 @@ class Laser(pygame.sprite.Sprite):
         self.rect = None
         self.image = None
 
+        self.angle = 154
+
         self.start_x = 0
         self.start_y = 0
 
@@ -236,8 +267,8 @@ class Laser(pygame.sprite.Sprite):
 
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
-        x_angle = math.cos(math.radians(154))
-        y_angle = math.sin(math.radians(154))
+        x_angle = math.cos(math.radians(self.angle))
+        y_angle = math.sin(math.radians(self.angle))
 
         platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
@@ -253,6 +284,11 @@ class Laser(pygame.sprite.Sprite):
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
 
+        if self in self.camera.level.non_draw:
+            if self.camera.keypad.progress == 0:
+                self.camera.level.non_draw.remove(self)
+                self.camera.level.lasers.add(self)
+
     def draw(self, display):
 
         pygame.draw.aaline(display, constants.RED,
@@ -262,10 +298,13 @@ class Laser(pygame.sprite.Sprite):
     def test_collision(self):
 
         for n in range(10):
-            line_gradient = (self.end_point[1] - self.start_point[1]) /\
-                            (self.end_point[0] - self.start_point[0])
-            player_gradient = (self.player.rect.y+self.player.rect.height*((n*10)/100) - self.start_point[1]) /\
-                              (self.player.rect.x - self.start_point[0])
+            try:
+                line_gradient = (self.end_point[1] - self.start_point[1]) /\
+                                (self.end_point[0] - self.start_point[0])
+                player_gradient = (self.player.rect.y+self.player.rect.height*((n*10)/100) - self.start_point[1]) /\
+                                  (self.player.rect.x - self.start_point[0])
+            except ZeroDivisionError:
+                return False
 
             diff = player_gradient - line_gradient
 
