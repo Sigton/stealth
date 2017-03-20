@@ -299,11 +299,14 @@ class Level:
         new_ladder = platforms.Platform(tile, x, y, layer)
         self.ladders.add(new_ladder)
 
-    def create_camera(self, tile, x, y):
+    def create_camera(self, tile, x, y, direction):
         new_camera = entities.Camera(x, y, tile, self)
         new_laser = entities.Laser(new_camera, self.player)
         new_camera.laser = new_laser
         new_camera.camera_no = self.door_no
+
+        if not direction:
+            new_laser.angle = 26
 
         self.entities.add(new_camera)
         self.doors.add(new_camera)
@@ -327,7 +330,7 @@ class Level:
                 self.door_no += 1
                 if 35 < tile_data['tile'] < 38:
                     self.create_camera(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24)
+                                       position[0]*24, position[1]*24, tile_data['tile']-36)
                 else:
                     self.create_door(platforms.platforms[tile_data['tile']-1],
                                      position[0]*24, position[1]*24, layer)

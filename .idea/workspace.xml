@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,17 +31,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7429">
-              <caret line="719" column="23" lean-forward="true" selection-start-line="719" selection-start-column="23" selection-end-line="719" selection-end-column="23" />
+            <state relative-caret-position="289">
+              <caret line="308" column="32" lean-forward="false" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
-        <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
+        <option value="$PROJECT_DIR$/source/level.py" />
       </list>
     </option>
   </component>
@@ -417,13 +417,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00609" summary="Fixed bug">
-      <created>1489839986553</created>
-      <option name="number" value="00609" />
-      <option name="presentableId" value="LOCAL-00609" />
-      <option name="project" value="LOCAL" />
-      <updated>1489839986553</updated>
     </task>
     <task id="LOCAL-00610" summary="Cameras take level as attribute">
       <created>1489840392666</created>
@@ -761,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490030222644</updated>
     </task>
-    <option name="localTasksCounter" value="658" />
+    <task id="LOCAL-00658" summary="Added angle attribute to lasers">
+      <created>1490030293346</created>
+      <option name="number" value="00658" />
+      <option name="presentableId" value="LOCAL-00658" />
+      <option name="project" value="LOCAL" />
+      <updated>1490030293346</updated>
+    </task>
+    <option name="localTasksCounter" value="659" />
     <servers />
   </component>
   <component name="TodoView">
@@ -819,7 +819,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created exceptions for when lasers dont have rects" />
     <MESSAGE value="Lasers work well enough" />
     <MESSAGE value="Laser doesn't need to be child of Sprite" />
     <MESSAGE value="display no longer needs to be passed to update" />
@@ -844,7 +843,8 @@
     <MESSAGE value="Added level text" />
     <MESSAGE value="Fixed a colour code" />
     <MESSAGE value="Added a keypad" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a keypad" />
+    <MESSAGE value="Added angle attribute to lasers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added angle attribute to lasers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7429">
-          <caret line="719" column="23" lean-forward="true" selection-start-line="719" selection-start-column="23" selection-end-line="719" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1068,6 +1060,14 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="308" column="32" lean-forward="false" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
