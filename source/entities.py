@@ -225,6 +225,8 @@ class Laser(pygame.sprite.Sprite):
         self.rect = None
         self.image = None
 
+        self.angle = 154
+
         self.start_x = 0
         self.start_y = 0
 
@@ -236,8 +238,8 @@ class Laser(pygame.sprite.Sprite):
 
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
-        x_angle = math.cos(math.radians(154))
-        y_angle = math.sin(math.radians(154))
+        x_angle = math.cos(math.radians(self.angle))
+        y_angle = math.sin(math.radians(self.angle))
 
         platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
