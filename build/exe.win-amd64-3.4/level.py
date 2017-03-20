@@ -668,6 +668,22 @@ class Level05(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the level text
+        level_text = text.LevelText("Go down here!", 30, 1060)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Easy way out...", 700, 1350)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Ah, some doors.", 1600, 1350)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("These jumps aren't easy!", 290, 670)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Here's a keypad.", 70, 30)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("You need perfect timing for this.", 1560, 550)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Watch out for the acid!", 400, 1050)
+        self.level_text.add(level_text)
+
         # Set the start position
         self.start_x = 0
         self.start_y = 719
