@@ -232,6 +232,7 @@ class Camera(pygame.sprite.Sprite):
         # Update the status of the door
         if self.keypad.progress >= 10:
             self.level.lasers.remove(self.laser)
+            self.level.non_draw.add(self.laser)
 
     def set_keypad(self):
         # Set the keypad that operates this door
@@ -282,6 +283,11 @@ class Laser(pygame.sprite.Sprite):
             for platform in platforms:
                 if platform.rect.collidepoint(self.end_point):
                     at_platform = True
+
+        if self in self.camera.level.non_draw:
+            if self.camera.keypad.progress == 0:
+                self.camera.level.non_draw.remove(self)
+                self.camera.level.lasers.add(self)
 
     def draw(self, display):
 
