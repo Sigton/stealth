@@ -76,6 +76,20 @@ class Keypad(pygame.sprite.Sprite):
                 self.played_sound = True
 
 
+class RechargingKeypad(Keypad):
+
+    def __init__(self, x, y):
+
+        # Call the parents constructor
+        Keypad.__init__(self, x, y)
+
+    def update(self):
+
+        # Update the image if the pad is activated
+        if self.progress >= 10:
+            self.image = self.image_on
+
+
 class Bomb(pygame.sprite.Sprite):
 
     progress_bar = None
