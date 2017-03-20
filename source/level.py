@@ -258,6 +258,21 @@ class Level:
         self.keypads.add(new_keypad)
         self.keypad_array.append(new_keypad)
 
+    def create_recharging_keypad(self, x, y):
+        new_keypad = entities.RechargingKeypad(x, y)
+
+        new_keypad.progress_bar = healthbar.ProgressBar()
+        new_keypad.progress_bar.parent = new_keypad
+        new_keypad.progress_bar.level = self
+        new_keypad.progress_bar.rect.x = new_keypad.rect.centerx
+        new_keypad.progress_bar.rect.y = new_keypad.rect.y - 20
+        new_keypad.progress_bar.start_x = new_keypad.progress_bar.rect.x
+        new_keypad.progress_bar.start_y = new_keypad.progress_bar.rect.y
+        self.entities.add(new_keypad.progress_bar)
+
+        self.keypads.add(new_keypad)
+        self.keypad_array.append(new_keypad)
+
     def create_bomb(self, x, y):
         new_bomb = entities.Bomb(x, y)
 
@@ -348,6 +363,9 @@ class Level:
 
                 elif tile_data['tile'] == 42:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
+
+                elif tile_data['tile'] == 44:
+                    self.create_recharging_keypad((position[0]*24)+6, (position[1]*24)+5)
 
             elif tile_data['type'] == "Solid":
                 if tile_data['tile'] == 26:
