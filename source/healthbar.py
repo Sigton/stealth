@@ -1,5 +1,6 @@
 import pygame
 import spritesheet
+import entities
 
 
 class ProgressBar(pygame.sprite.Sprite):
@@ -65,5 +66,5 @@ class ProgressBar(pygame.sprite.Sprite):
         if self.parent.progress >= 10 and self.timer:
             self.timer -= 1
 
-        if not self.timer and self.parent.progress >= 10:
+        if not self.timer and self.parent.progress >= 10 and not isinstance(self.parent, entities.RechargingKeypad):
             self.level.entities.remove(self)
