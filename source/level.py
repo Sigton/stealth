@@ -675,6 +675,10 @@ class Level05(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Ah, some doors.", 1600, 1350)
         self.level_text.add(level_text)
+        level_text = text.LevelText("These jumps aren't easy!", 290, 670)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Here's a keypad.", 70, 30)
+        self.level_text.add(level_text)
 
         # Set the start position
         self.start_x = 0
