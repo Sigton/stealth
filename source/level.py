@@ -25,6 +25,7 @@ class Level:
     level_text = None
     ladders = None
     lasers = None
+    non_draw = None
 
     player = None
 
@@ -55,6 +56,7 @@ class Level:
         self.level_text = pygame.sprite.Group()
         self.ladders = pygame.sprite.Group()
         self.lasers = pygame.sprite.Group()
+        self.non_draw = pygame.sprite.Group()
 
         self.player = player
 
@@ -76,6 +78,7 @@ class Level:
         self.entities.update()
         self.level_text.update()
         self.lasers.update()
+        self.non_draw.update()
 
     def draw(self, display):
 
