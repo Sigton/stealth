@@ -83,7 +83,7 @@ class RechargingKeypad(Keypad):
         # Call the parents constructor
         Keypad.__init__(self, x, y)
 
-        self.timer_threshold = 75
+        self.timer_threshold = 60
         self.timer = self.timer_threshold
 
     def update(self):
