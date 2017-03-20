@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level6.json" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.4/level_data/level6.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/menu.py" afterPath="$PROJECT_DIR$/source/menu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/menu.py">
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+            <state relative-caret-position="804">
+              <caret line="402" column="25" lean-forward="false" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -121,7 +115,6 @@
         <option value="$PROJECT_DIR$/source/covers.py" />
         <option value="$PROJECT_DIR$/source/hud.py" />
         <option value="$PROJECT_DIR$/source/platforms.py" />
-        <option value="$PROJECT_DIR$/source/player.py" />
         <option value="$PROJECT_DIR$/source/constants.py" />
         <option value="$PROJECT_DIR$/source/funcs.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
@@ -130,6 +123,7 @@
         <option value="$PROJECT_DIR$/source/entities.py" />
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
+        <option value="$PROJECT_DIR$/source/player.py" />
       </list>
     </option>
   </component>
@@ -391,13 +385,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00622" summary="Fixed bug">
-      <created>1489849659903</created>
-      <option name="number" value="00622" />
-      <option name="presentableId" value="LOCAL-00622" />
-      <option name="project" value="LOCAL" />
-      <updated>1489849659903</updated>
     </task>
     <task id="LOCAL-00623" summary="Did a bunch of things with collision detection">
       <created>1489851523313</created>
@@ -735,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490041077489</updated>
     </task>
-    <option name="localTasksCounter" value="671" />
+    <task id="LOCAL-00671" summary="Fixed bug with menu">
+      <created>1490042128507</created>
+      <option name="number" value="00671" />
+      <option name="presentableId" value="LOCAL-00671" />
+      <option name="project" value="LOCAL" />
+      <updated>1490042128507</updated>
+    </task>
+    <option name="localTasksCounter" value="672" />
     <servers />
   </component>
   <component name="TodoView">
@@ -793,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated level 6" />
     <MESSAGE value="Added set_keypad method to cameras" />
     <MESSAGE value="camera_no attribute is now set when camera is created" />
     <MESSAGE value="Added keypad to level 6 to control the camera" />
@@ -818,7 +811,8 @@
     <MESSAGE value="Added non-draw group" />
     <MESSAGE value="Laser reappears when keypad progress reaches 0" />
     <MESSAGE value="Keypads recharge faster" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keypads recharge faster" />
+    <MESSAGE value="Fixed bug with menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -947,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/platforms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -990,14 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="330" column="36" lean-forward="true" selection-start-line="330" selection-start-column="36" selection-end-line="330" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1019,7 +998,7 @@
         <state relative-caret-position="306">
           <caret line="85" column="33" lean-forward="false" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,7 +1008,7 @@
         <state relative-caret-position="459">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1044,8 +1023,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        <state relative-caret-position="544">
+          <caret line="139" column="37" lean-forward="true" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="402" column="25" lean-forward="false" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
           <folding />
         </state>
       </provider>
