@@ -83,11 +83,22 @@ class RechargingKeypad(Keypad):
         # Call the parents constructor
         Keypad.__init__(self, x, y)
 
+        self.timer_threshold = 75
+        self.timer = self.timer_threshold
+
     def update(self):
 
         # Update the image if the pad is activated
         if self.progress >= 10:
             self.image = self.image_on
+
+        if self.timer == 0:
+            if self.progress > 0:
+                self.timer = self.timer_threshold
+                self.progress -= 1
+
+        else:
+            self.timer -= 1
 
 
 class Bomb(pygame.sprite.Sprite):
