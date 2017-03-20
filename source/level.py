@@ -679,6 +679,8 @@ class Level05(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Here's a keypad.", 70, 30)
         self.level_text.add(level_text)
+        level_text = text.LevelText("You need perfect timing for this.", 1560, 550)
+        self.level_text.add(level_text)
 
         # Set the start position
         self.start_x = 0

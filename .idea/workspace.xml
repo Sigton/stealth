@@ -25,7 +25,7 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="323">
               <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
               <folding />
             </state>
@@ -35,8 +35,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="679" column="61" lean-forward="false" selection-start-line="679" selection-start-column="61" selection-end-line="679" selection-end-column="61" />
+            <state relative-caret-position="476">
+              <caret line="681" column="81" lean-forward="false" selection-start-line="681" selection-start-column="81" selection-end-line="681" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="201" column="21" lean-forward="true" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
+            <state relative-caret-position="3332">
+              <caret line="201" column="21" lean-forward="false" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -172,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,6 +200,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,13 +408,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00604" summary="Updated level 6">
-      <created>1489832835824</created>
-      <option name="number" value="00604" />
-      <option name="presentableId" value="LOCAL-00604" />
-      <option name="project" value="LOCAL" />
-      <updated>1489832835824</updated>
     </task>
     <task id="LOCAL-00605" summary="Stamina goes down slower">
       <created>1489836894727</created>
@@ -752,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489997135237</updated>
     </task>
-    <option name="localTasksCounter" value="653" />
+    <task id="LOCAL-00653" summary="Added more level text">
+      <created>1489997611649</created>
+      <option name="number" value="00653" />
+      <option name="presentableId" value="LOCAL-00653" />
+      <option name="project" value="LOCAL" />
+      <updated>1489997611649</updated>
+    </task>
+    <option name="localTasksCounter" value="654" />
     <servers />
   </component>
   <component name="TodoView">
@@ -810,7 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing things" />
     <MESSAGE value="Fixed one bug" />
     <MESSAGE value="Draw function no longer needed" />
     <MESSAGE value="Added start position attributes to lasers" />
@@ -835,7 +834,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Camera isn't removed when turned off" />
     <MESSAGE value="Added some level text to level 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some level text to level 5" />
+    <MESSAGE value="Added more level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,8 +1037,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="201" column="21" lean-forward="true" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
+        <state relative-caret-position="3332">
+          <caret line="201" column="21" lean-forward="false" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1047,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="323">
           <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
           <folding />
         </state>
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="679" column="61" lean-forward="false" selection-start-line="679" selection-start-column="61" selection-end-line="679" selection-end-column="61" />
+        <state relative-caret-position="476">
+          <caret line="681" column="81" lean-forward="false" selection-start-line="681" selection-start-column="81" selection-end-line="681" selection-end-column="81" />
           <folding />
         </state>
       </provider>
