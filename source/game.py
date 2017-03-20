@@ -252,11 +252,11 @@ class Game:
                             # Create an exclamation mark
                             self.current_level.entities.add(entities.ExclamationMark(hit.guard))
 
-                hit_laser = False
+                hit_laser = []
                 for laser in self.current_level.lasers:
-                    hit_laser = laser.test_collision()
+                    hit_laser += [laser.test_collision()]
 
-                if hit_laser:
+                if True in hit_laser:
                     pause = 180
                     reset = True
 
