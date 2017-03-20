@@ -121,23 +121,24 @@ class Menu:
                     game_exit = True
 
                 if event.type == MOUSEBUTTONUP:
+                    print(event.button)
+                    if event.button == 1:
+                        # Check if any buttons were clicked
+                        mouse_pos = pygame.mouse.get_pos()
 
-                    # Check if any buttons were clicked
-                    mouse_pos = pygame.mouse.get_pos()
+                        buttons_clicked = [x for x in self.current_screen if x.rect.collidepoint(mouse_pos)
+                                           and isinstance(x, Button)]
 
-                    buttons_clicked = [x for x in self.current_screen if x.rect.collidepoint(mouse_pos)
-                                       and isinstance(x, Button)]
+                        for button in buttons_clicked:
+                            if button.command is not None:
 
-                    for button in buttons_clicked:
-                        if button.command is not None:
+                                # Execute the buttons command
 
-                            # Execute the buttons command
+                                if button.command == "quit":  # Special case for quitting game
+                                    game_exit = True
 
-                            if button.command == "quit":  # Special case for quitting game
-                                game_exit = True
-
-                            else:
-                                button.command()
+                                else:
+                                    button.command()
 
                 if event.type == KEYUP:
 
