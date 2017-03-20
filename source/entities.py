@@ -92,6 +92,9 @@ class RechargingKeypad(Keypad):
         if self.progress >= 10:
             self.image = self.image_on
 
+        if self.progress == 0:
+            self.image = self.image_off
+
         if self.timer == 0:
             if self.progress > 0:
                 self.timer = self.timer_threshold

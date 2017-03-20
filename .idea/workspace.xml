@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/healthbar.py" afterPath="$PROJECT_DIR$/source/healthbar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+            <state relative-caret-position="493">
+              <caret line="95" column="39" lean-forward="false" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="healthbar.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="healthbar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/healthbar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/terrain.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
-        <option value="$PROJECT_DIR$/source/entities.py" />
         <option value="$PROJECT_DIR$/source/healthbar.py" />
+        <option value="$PROJECT_DIR$/source/entities.py" />
       </list>
     </option>
   </component>
@@ -430,13 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00617" summary="FINALLY fixed the trig">
-      <created>1489847540847</created>
-      <option name="number" value="00617" />
-      <option name="presentableId" value="LOCAL-00617" />
-      <option name="project" value="LOCAL" />
-      <updated>1489847540847</updated>
     </task>
     <task id="LOCAL-00618" summary="Made red darker">
       <created>1489847592453</created>
@@ -774,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490040478882</updated>
     </task>
-    <option name="localTasksCounter" value="666" />
+    <task id="LOCAL-00666" summary="Healthbar doesn't disappear when progress is full&#10;">
+      <created>1490040590731</created>
+      <option name="number" value="00666" />
+      <option name="presentableId" value="LOCAL-00666" />
+      <option name="project" value="LOCAL" />
+      <updated>1490040590732</updated>
+    </task>
+    <option name="localTasksCounter" value="667" />
     <servers />
   </component>
   <component name="TodoView">
@@ -795,7 +795,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -832,7 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Collision nearly works" />
     <MESSAGE value="Collision detection has been fine-tuned" />
     <MESSAGE value="Level restarts when caught by the cameras" />
     <MESSAGE value="Funcs is not needed in entities.py no more" />
@@ -857,7 +856,8 @@
     <MESSAGE value="Added color code for new keypads" />
     <MESSAGE value="Recharging keypads now render" />
     <MESSAGE value="Keypad progress now goes down" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keypad progress now goes down" />
+    <MESSAGE value="Healthbar doesn't disappear when progress is full&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Healthbar doesn't disappear when progress is full&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,20 +1068,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/entities.py">
+    <entry file="file://$PROJECT_DIR$/source/healthbar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        <state relative-caret-position="459">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/healthbar.py">
+    <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="95" column="39" lean-forward="false" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
