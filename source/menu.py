@@ -121,7 +121,7 @@ class Menu:
                     game_exit = True
 
                 if event.type == MOUSEBUTTONUP:
-                    print(event.button)
+
                     if event.button == 1:
                         # Check if any buttons were clicked
                         mouse_pos = pygame.mouse.get_pos()
