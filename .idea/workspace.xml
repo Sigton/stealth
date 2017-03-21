@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="60" column="86" lean-forward="true" selection-start-line="60" selection-start-column="86" selection-end-line="60" selection-end-column="86" />
+            <state relative-caret-position="431">
+              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -411,13 +411,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00643" summary="Funcs is not needed in entities.py no more">
-      <created>1489927667916</created>
-      <option name="number" value="00643" />
-      <option name="presentableId" value="LOCAL-00643" />
-      <option name="project" value="LOCAL" />
-      <updated>1489927667916</updated>
-    </task>
     <task id="LOCAL-00644" summary="Reclassifying cameras as a type of door... yea">
       <created>1489927877411</created>
       <option name="number" value="00644" />
@@ -754,7 +747,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490122749527</updated>
     </task>
-    <option name="localTasksCounter" value="692" />
+    <task id="LOCAL-00692" summary="Adjusted styling of launcher">
+      <created>1490129321146</created>
+      <option name="number" value="00692" />
+      <option name="presentableId" value="LOCAL-00692" />
+      <option name="project" value="LOCAL" />
+      <updated>1490129321146</updated>
+    </task>
+    <option name="localTasksCounter" value="693" />
     <servers />
   </component>
   <component name="TodoView">
@@ -775,7 +775,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -812,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Keypad progress now goes down" />
     <MESSAGE value="Healthbar doesn't disappear when progress is full&#10;" />
     <MESSAGE value="Keypad turns off when progress goes back down" />
     <MESSAGE value="Added non-draw group" />
@@ -837,7 +836,8 @@
     <MESSAGE value="Fixed rendering order" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Created function for getting last key pressed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created function for getting last key pressed" />
+    <MESSAGE value="Adjusted styling of launcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted styling of launcher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="60" column="86" lean-forward="true" selection-start-line="60" selection-start-column="86" selection-end-line="60" selection-end-column="86" />
+        <state relative-caret-position="431">
+          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
           <folding />
         </state>
       </provider>
