@@ -139,6 +139,7 @@ class Game:
 
         pause = 0
         reset = False
+        progress = False
         do_reset = False
 
         has_guard = False
@@ -207,6 +208,10 @@ class Game:
 
             # Level progression
             if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
+                pause = 60
+                progress = True
+
+            if progress and not pause:
 
                 # Reset the player and move on the level
                 self.current_level.reset_world()

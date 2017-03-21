@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +20,12 @@
     <favorites_list name="Stealth" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/player.py">
+    <leaf>
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="402" column="25" lean-forward="false" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,9 +121,9 @@
         <option value="$PROJECT_DIR$/source/healthbar.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
         <option value="$PROJECT_DIR$/source/entities.py" />
-        <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/player.py" />
+        <option value="$PROJECT_DIR$/source/game.py" />
       </list>
     </option>
   </component>
@@ -385,13 +385,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00623" summary="Did a bunch of things with collision detection">
-      <created>1489851523313</created>
-      <option name="number" value="00623" />
-      <option name="presentableId" value="LOCAL-00623" />
-      <option name="project" value="LOCAL" />
-      <updated>1489851523313</updated>
     </task>
     <task id="LOCAL-00624" summary="Getting places still">
       <created>1489852922826</created>
@@ -729,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490042128507</updated>
     </task>
-    <option name="localTasksCounter" value="672" />
+    <task id="LOCAL-00672" summary="Adjusted can_stand method for players">
+      <created>1490046767130</created>
+      <option name="number" value="00672" />
+      <option name="presentableId" value="LOCAL-00672" />
+      <option name="project" value="LOCAL" />
+      <updated>1490046767130</updated>
+    </task>
+    <option name="localTasksCounter" value="673" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,7 +750,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -787,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added set_keypad method to cameras" />
     <MESSAGE value="camera_no attribute is now set when camera is created" />
     <MESSAGE value="Added keypad to level 6 to control the camera" />
     <MESSAGE value="Added update function to camera" />
@@ -812,7 +811,8 @@
     <MESSAGE value="Laser reappears when keypad progress reaches 0" />
     <MESSAGE value="Keypads recharge faster" />
     <MESSAGE value="Fixed bug with menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with menu" />
+    <MESSAGE value="Adjusted can_stand method for players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted can_stand method for players" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,19 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,19 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="85" column="33" lean-forward="false" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/healthbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="139" column="37" lean-forward="true" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,14 +1009,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="402" column="25" lean-forward="false" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
+        <state relative-caret-position="6494">
+          <caret line="386" column="38" lean-forward="true" selection-start-line="386" selection-start-column="38" selection-end-line="386" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/healthbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
           <folding />
         </state>
       </provider>
