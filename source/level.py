@@ -86,10 +86,6 @@ class Level:
         display.fill(constants.BLACK)
         display.blit(self.background, (0, 0))
 
-        # Draw the sights from cameras
-        for laser in self.lasers.sprites():
-            laser.draw(display)
-
         # Draw the sprite lists
         for layer in range(self.layer_range):
 
@@ -108,6 +104,10 @@ class Level:
             ladders = [ladder for ladder in self.ladders.sprites() if ladder.layer == layer+1]
             for ladder in ladders:
                 ladder.draw(display)
+
+        # Draw the sights from cameras
+        for laser in self.lasers.sprites():
+            laser.draw(display)
 
         self.level_text.draw(display)
         self.keypads.draw(display)
