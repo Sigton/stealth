@@ -57,13 +57,15 @@ class Launcher(tk.Frame):
         self.desc = ttk.Label(self, text="Select the launch options you want for your game.", background="#0b2837")
         self.desc.place(x=240, y=60, anchor="center")
 
-        self.button1 = ttk.Checkbutton(self, text="Fast Mode", variable=self.fast)#, background="#0b2837")
+        self.button1 = tk.Checkbutton(self, text="Fast Mode", variable=self.fast,
+                                      background="#0b2837", activebackground="#0b2837")
         self.button1.place(x=50, y=100, anchor="w")
         self.label1 = ttk.Label(self, text="Removes decorations for better performance.",
                                 font="Helvetica 9 italic", background="#0b2837")
         self.label1.place(x=160, y=100, anchor="w")
 
-        self.button2 = ttk.Checkbutton(self, text="Small Screen", variable=self.small)#, background="#0b2837")
+        self.button2 = tk.Checkbutton(self, text="Small Screen", variable=self.small,
+                                      background="#0b2837", activebackground="#0b2837")
         self.button2.place(x=50, y=130, anchor="w")
         self.label2 = ttk.Label(self, text="Smaller window for smaller or lower resolution monitors.",
                                 font="Helvetica 9 italic", background="#0b2837")
