@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 import constants
+import controls
 import player as p
 import level
 import guards
@@ -139,6 +140,7 @@ class Game:
 
         pause = 0
         reset = False
+        progress = False
         do_reset = False
 
         has_guard = False
@@ -171,42 +173,46 @@ class Game:
                         game_exit = True
 
                     # Player controls
-                    if event.key == K_LEFT or event.key == K_a:
+                    if event.key == controls.WALK_LEFT:
                         run = -1
-                    if event.key == K_RIGHT or event.key == K_d:
+                    if event.key == controls.WALK_RIGHT:
                         run = 1
 
-                    if event.key == K_UP or event.key == K_w:
+                    if event.key == controls.JUMP:
                         jump = True
 
                     # Use keypads
-                    if event.key == K_SPACE:
+                    if event.key == controls.SPACE:
                         player.use_keypad()
 
                     # Crouching
-                    if event.key == K_LCTRL:
+                    if event.key == controls.CROUCH:
                         crouch = True
 
                 elif event.type == KEYUP:
 
-                    if event.key == K_LEFT or event.key == K_RIGHT:
+                    if event.key == controls.WALK_LEFT and not run == 1:
                         run = 0
 
-                    if event.key == K_a or event.key == K_d:
+                    if event.key == controls.WALK_RIGHT and not run == -1:
                         run = 0
 
-                    if event.key == K_UP or event.key == K_w:
+                    if event.key == controls.JUMP:
                         jump = False
                         player.climbing = False
 
-                    if event.key == K_LCTRL:
+                    if event.key == controls.CROUCH:
                         crouch = False
 
             if pause > 0:
                 pause -= 1
 
             # Level progression
-            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
+            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH and not progress:
+                pause = 60
+                progress = True
+
+            if progress and not pause:
 
                 # Reset the player and move on the level
                 self.current_level.reset_world()
@@ -229,6 +235,8 @@ class Game:
                         has_guard = True
                 if has_guard:
                     self.light_sound.play(-1)
+
+                progress = False
 
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(player, self.current_level.obstacle_list, False)
