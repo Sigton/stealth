@@ -7,6 +7,7 @@ from tkinter import ttk
 
 import menu as m
 import constants
+import os
 
 
 class LauncherApp(tk.Tk):
@@ -45,6 +46,10 @@ class Launcher(tk.Frame):
         self.small = tk.IntVar()
 
         self.game = None
+
+        self.background_image = tk.PhotoImage(file="resources/launcher_background.gif")
+        self.background_label = ttk.Label(self, image=self.background_image)
+        self.background_label.place(x=0, y=0)
 
         self.title = ttk.Label(self, text="Stealth", font=("Verdana", 16))
         self.title.place(x=240, y=20, anchor="center")
