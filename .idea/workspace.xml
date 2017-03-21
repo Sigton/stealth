@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
-              <caret line="301" column="60" lean-forward="false" selection-start-line="301" selection-start-column="60" selection-end-line="301" selection-end-column="60" />
+              <caret line="301" column="93" lean-forward="false" selection-start-line="301" selection-start-column="93" selection-end-line="301" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -410,13 +410,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00636" summary="Laser did need to be a sprite, oops">
-      <created>1489918020376</created>
-      <option name="number" value="00636" />
-      <option name="presentableId" value="LOCAL-00636" />
-      <option name="project" value="LOCAL" />
-      <updated>1489918020376</updated>
-    </task>
     <task id="LOCAL-00637" summary="Improved performance">
       <created>1489918143184</created>
       <option name="number" value="00637" />
@@ -753,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490119125551</updated>
     </task>
-    <option name="localTasksCounter" value="685" />
+    <task id="LOCAL-00685" summary="Adding overhead to collision detection">
+      <created>1490120018615</created>
+      <option name="number" value="00685" />
+      <option name="presentableId" value="LOCAL-00685" />
+      <option name="project" value="LOCAL" />
+      <updated>1490120018615</updated>
+    </task>
+    <option name="localTasksCounter" value="686" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +811,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed possible bug" />
     <MESSAGE value="Fixed bug with laser collision detection" />
     <MESSAGE value="Created RechargingKeypad class" />
     <MESSAGE value="Added color code for new keypads" />
@@ -836,7 +835,8 @@
     <MESSAGE value="Fixed another mistake" />
     <MESSAGE value="Keypads go down even faster" />
     <MESSAGE value="Updated level 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 6" />
+    <MESSAGE value="Adding overhead to collision detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding overhead to collision detection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,7 +1068,7 @@
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
-          <caret line="301" column="60" lean-forward="false" selection-start-line="301" selection-start-column="60" selection-end-line="301" selection-end-column="60" />
+          <caret line="301" column="93" lean-forward="false" selection-start-line="301" selection-start-column="93" selection-end-line="301" selection-end-column="93" />
           <folding />
         </state>
       </provider>
