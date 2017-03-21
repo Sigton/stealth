@@ -190,10 +190,10 @@ class Game:
 
                 elif event.type == KEYUP:
 
-                    if event.key == K_LEFT or event.key == K_RIGHT:
+                    if (event.key == K_LEFT or event.key == K_a) and not run == 1:
                         run = 0
 
-                    if event.key == K_a or event.key == K_d:
+                    if (event.key == K_RIGHT or event.key == K_d) and not run == -1:
                         run = 0
 
                     if event.key == K_UP or event.key == K_w:
