@@ -4,6 +4,6 @@ from pygame.locals import *
 
 WALK_LEFT = K_a
 WALK_RIGHT = K_d
-HUMP = K_w
+JUMP = K_w
 ACTION = K_SPACE
 CROUCH = K_LCTRL
