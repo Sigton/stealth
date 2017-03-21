@@ -172,12 +172,12 @@ class Game:
                         game_exit = True
 
                     # Player controls
-                    if event.key == K_LEFT or event.key == K_a:
+                    if event.key == K_a:
                         run = -1
-                    if event.key == K_RIGHT or event.key == K_d:
+                    if event.key == K_d:
                         run = 1
 
-                    if event.key == K_UP or event.key == K_w:
+                    if event.key == K_w:
                         jump = True
 
                     # Use keypads
@@ -190,13 +190,13 @@ class Game:
 
                 elif event.type == KEYUP:
 
-                    if (event.key == K_LEFT or event.key == K_a) and not run == 1:
+                    if event.key == K_a and not run == 1:
                         run = 0
 
-                    if (event.key == K_RIGHT or event.key == K_d) and not run == -1:
+                    if event.key == K_d and not run == -1:
                         run = 0
 
-                    if event.key == K_UP or event.key == K_w:
+                    if event.key == K_w:
                         jump = False
                         player.climbing = False
 
