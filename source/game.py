@@ -182,7 +182,7 @@ class Game:
                         jump = True
 
                     # Use keypads
-                    if event.key == controls.SPACE:
+                    if event.key == controls.ACTION:
                         player.use_keypad()
 
                     # Crouching
