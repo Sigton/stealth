@@ -251,9 +251,6 @@ class Laser(pygame.sprite.Sprite):
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
 
-        self.rect = None
-        self.image = None
-
         self.angle = 154
 
         self.start_x = 0
@@ -297,9 +294,9 @@ class Laser(pygame.sprite.Sprite):
 
     def test_collision(self):
 
-        if self.start_point[0] > self.player.rect.right or self.end_point[0] < self.rect.left:
+        if self.start_point[0] > self.player.rect.right or self.end_point[0] < self.player.rect.left:
             return False
-        if self.start_point[1] > self.player.rect.bottom or self.end_point[1] < self.rect.top:
+        if self.start_point[1] > self.player.rect.bottom or self.end_point[1] < self.player.rect.top:
             return False
 
         for n in range(10):

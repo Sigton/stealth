@@ -4,7 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/source/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
-              <caret line="301" column="93" lean-forward="false" selection-start-line="301" selection-start-column="93" selection-end-line="301" selection-end-column="93" />
+              <caret line="298" column="92" lean-forward="false" selection-start-line="298" selection-start-column="92" selection-end-line="298" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -410,13 +409,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00637" summary="Improved performance">
-      <created>1489918143184</created>
-      <option name="number" value="00637" />
-      <option name="presentableId" value="LOCAL-00637" />
-      <option name="project" value="LOCAL" />
-      <updated>1489918143184</updated>
-    </task>
     <task id="LOCAL-00638" summary="Lasers have player as an attribute">
       <created>1489921643454</created>
       <option name="number" value="00638" />
@@ -753,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490120018615</updated>
     </task>
-    <option name="localTasksCounter" value="686" />
+    <task id="LOCAL-00686" summary="Fixed collision detection">
+      <created>1490120407848</created>
+      <option name="number" value="00686" />
+      <option name="presentableId" value="LOCAL-00686" />
+      <option name="project" value="LOCAL" />
+      <updated>1490120407848</updated>
+    </task>
+    <option name="localTasksCounter" value="687" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug with laser collision detection" />
     <MESSAGE value="Created RechargingKeypad class" />
     <MESSAGE value="Added color code for new keypads" />
     <MESSAGE value="Recharging keypads now render" />
@@ -836,7 +834,8 @@
     <MESSAGE value="Keypads go down even faster" />
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Adding overhead to collision detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding overhead to collision detection" />
+    <MESSAGE value="Fixed collision detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed collision detection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,7 +1067,7 @@
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
-          <caret line="301" column="93" lean-forward="false" selection-start-line="301" selection-start-column="93" selection-end-line="301" selection-end-column="93" />
+          <caret line="298" column="92" lean-forward="false" selection-start-line="298" selection-start-column="92" selection-end-line="298" selection-end-column="92" />
           <folding />
         </state>
       </provider>
