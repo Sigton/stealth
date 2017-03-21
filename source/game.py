@@ -207,7 +207,7 @@ class Game:
                 pause -= 1
 
             # Level progression
-            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH:
+            if player.rect.x + player.rect.width/2 >= constants.SCREEN_WIDTH and not progress:
                 pause = 60
                 progress = True
 
@@ -234,6 +234,8 @@ class Game:
                         has_guard = True
                 if has_guard:
                     self.light_sound.play(-1)
+
+                progress = False
 
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(player, self.current_level.obstacle_list, False)
