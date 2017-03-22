@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="73" column="52" lean-forward="true" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+            <state relative-caret-position="459">
+              <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -404,13 +404,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00652" summary="Added some level text to level 5">
-      <created>1489997135237</created>
-      <option name="number" value="00652" />
-      <option name="presentableId" value="LOCAL-00652" />
-      <option name="project" value="LOCAL" />
-      <updated>1489997135237</updated>
-    </task>
     <task id="LOCAL-00653" summary="Added more level text">
       <created>1489997611649</created>
       <option name="number" value="00653" />
@@ -747,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490212725044</updated>
     </task>
-    <option name="localTasksCounter" value="701" />
+    <task id="LOCAL-00701" summary="Added a label">
+      <created>1490216065797</created>
+      <option name="number" value="00701" />
+      <option name="presentableId" value="LOCAL-00701" />
+      <option name="project" value="LOCAL" />
+      <updated>1490216065797</updated>
+    </task>
+    <option name="localTasksCounter" value="702" />
     <servers />
   </component>
   <component name="TodoView">
@@ -805,7 +805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pause on level transition" />
     <MESSAGE value="Removed a print that was no longer needed" />
     <MESSAGE value="Finally fixed a movement bug thats been in the game for ages" />
     <MESSAGE value="Removed arrow keys for controlling player and created controls.py" />
@@ -830,7 +829,8 @@
     <MESSAGE value="Adjusted layout of launcher" />
     <MESSAGE value="Added new heading to launcher" />
     <MESSAGE value="Made button darker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made button darker" />
+    <MESSAGE value="Added a label" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a label" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="52" lean-forward="true" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+        <state relative-caret-position="459">
+          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

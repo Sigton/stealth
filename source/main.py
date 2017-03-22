@@ -73,6 +73,12 @@ class Launcher(tk.Frame):
         self.control1 = tk.Label(self, text="Walk Left:")
         self.control1.place(x=50, y=240, anchor="w")
 
+        self.control2 = tk.Label(self, text="Walk Right:")
+        self.control2.place(x=50, y=240, anchor="w")
+
+        self.control3 = tk.Label(self, text="Jump:")
+        self.control3.place(x=50, y=240, anchor="w")
+
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
         self.launch_button.place(x=240, y=420, anchor="center")
