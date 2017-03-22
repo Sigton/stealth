@@ -12,6 +12,8 @@ CROUCH = K_LCTRL
 
 def get_last_key():
 
+    key = None
+
     key_pressed = False
     while not key_pressed:
 

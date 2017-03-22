@@ -36,8 +36,8 @@
       <file leaf-file-name="controls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/controls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="238">
+              <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -404,13 +404,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00660" summary="Fixed possible bug">
-      <created>1490033668971</created>
-      <option name="number" value="00660" />
-      <option name="presentableId" value="LOCAL-00660" />
-      <option name="project" value="LOCAL" />
-      <updated>1490033668971</updated>
-    </task>
     <task id="LOCAL-00661" summary="Fixed bug with laser collision detection">
       <created>1490034195304</created>
       <option name="number" value="00661" />
@@ -747,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490218575444</updated>
     </task>
-    <option name="localTasksCounter" value="709" />
+    <task id="LOCAL-00709" summary="Updated get_last_key since it has to work without the display">
+      <created>1490220307736</created>
+      <option name="number" value="00709" />
+      <option name="presentableId" value="LOCAL-00709" />
+      <option name="project" value="LOCAL" />
+      <updated>1490220307736</updated>
+    </task>
+    <option name="localTasksCounter" value="710" />
     <servers />
   </component>
   <component name="TodoView">
@@ -805,7 +805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed another mistake" />
     <MESSAGE value="Keypads go down even faster" />
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Adding overhead to collision detection" />
@@ -830,7 +829,8 @@
     <MESSAGE value="Added buttons" />
     <MESSAGE value="Fixed button anchor point" />
     <MESSAGE value="Moved launch button down" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved launch button down" />
+    <MESSAGE value="Updated get_last_key since it has to work without the display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated get_last_key since it has to work without the display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/controls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="238">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
