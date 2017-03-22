@@ -70,20 +70,20 @@ class Launcher(tk.Frame):
         self.controls_heading = tk.Label(self, text="Control Configuration", font=("Verdana", 12))
         self.controls_heading.place(x=240, y=200, anchor="center")
 
-        self.control1 = tk.Label(self, text="Walk Left Button:")
-        self.control1.place(x=50, y=240, anchor="w")
+        self.control1_label = tk.Label(self, text="Walk Left Button:")
+        self.control1_label.place(x=50, y=240, anchor="w")
 
-        self.control2 = tk.Label(self, text="Walk Right Button:")
-        self.control2.place(x=50, y=270, anchor="w")
+        self.control2_label = tk.Label(self, text="Walk Right Button:")
+        self.control2_label.place(x=50, y=270, anchor="w")
 
-        self.control3 = tk.Label(self, text="Jump Button:")
-        self.control3.place(x=50, y=300, anchor="w")
+        self.control3_label = tk.Label(self, text="Jump Button:")
+        self.control3_label.place(x=50, y=300, anchor="w")
 
-        self.control4 = tk.Label(self, text="Action Button:")
-        self.control4.place(x=50, y=330, anchor="w")
+        self.control4_label = tk.Label(self, text="Action Button:")
+        self.control4_label.place(x=50, y=330, anchor="w")
 
-        self.control5 = tk.Label(self, text="Crouch Button:")
-        self.control5.place(x=50, y=360, anchor="w")
+        self.control5_label = tk.Label(self, text="Crouch Button:")
+        self.control5_label.place(x=50, y=360, anchor="w")
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
