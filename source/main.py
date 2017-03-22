@@ -47,32 +47,25 @@ class Launcher(tk.Frame):
 
         self.game = None
 
-        self.background_image = tk.PhotoImage(file="resources/launcher_background.gif")
-        self.background_label = ttk.Label(self, image=self.background_image)
-        self.background_label.place(x=0, y=0)
-
-        self.title = tk.Label(self, text="Stealth", font=("Verdana", 16), background="#42555f")
+        self.title = tk.Label(self, text="Stealth", font=("Verdana", 16))
         self.title.place(x=240, y=20, anchor="center")
 
-        self.desc = tk.Label(self, text="Select the launch options you want for your game.", background="#42555f")
+        self.desc = tk.Label(self, text="Select the launch options you want for your game.")
         self.desc.place(x=240, y=60, anchor="center")
 
-        self.button1 = tk.Checkbutton(self, text="Fast Mode", variable=self.fast,
-                                      background="#42555f", activebackground="#42555f")
+        self.button1 = tk.Checkbutton(self, text="Fast Mode", variable=self.fast)
         self.button1.place(x=50, y=100, anchor="w")
         self.label1 = tk.Label(self, text="Removes decorations for better performance.",
-                               font="Helvetica 9 italic", background="#42555f")
+                               font="Helvetica 9 italic")
         self.label1.place(x=160, y=100, anchor="w")
 
-        self.button2 = tk.Checkbutton(self, text="Small Screen", variable=self.small,
-                                      background="#42555f", activebackground="#42555f")
+        self.button2 = tk.Checkbutton(self, text="Small Screen", variable=self.small)
         self.button2.place(x=50, y=130, anchor="w")
         self.label2 = tk.Label(self, text="Smaller window for smaller or lower resolution monitors.",
-                               font="Helvetica 9 italic", background="#42555f")
+                               font="Helvetica 9 italic")
         self.label2.place(x=160, y=130, anchor="w")
 
-        self.launch_button = tk.Button(self, text="Launch", width="20", height="2", bg="#566b75",
-                                       activebackground="#93a6af", command=self.launch)
+        self.launch_button = tk.Button(self, text="Launch", width="20", height="2", command=self.launch)
         self.launch_button.place(x=240, y=320, anchor="center")
 
     def launch(self):
