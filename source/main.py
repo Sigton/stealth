@@ -3,10 +3,16 @@ from pygame.locals import *
 
 # tkinter is used for the launcher GUI
 import tkinter as tk
-from tkinter import ttk
 
 import menu as m
 import constants
+import controls
+
+
+# Initiate pygame
+pygame.mixer.pre_init(22050, -16, 1, 512)
+pygame.mixer.init()
+pygame.init()
 
 
 class LauncherApp(tk.Tk):
@@ -72,18 +78,28 @@ class Launcher(tk.Frame):
 
         self.control1_label = tk.Label(self, text="Walk Left Button:")
         self.control1_label.place(x=50, y=240, anchor="w")
+        self.control1 = tk.Label(self, text=pygame.key.name(controls.WALK_LEFT))
+        self.control1.place(x=160, y=240, anchor="w")
 
         self.control2_label = tk.Label(self, text="Walk Right Button:")
         self.control2_label.place(x=50, y=270, anchor="w")
+        self.control2 = tk.Label(self, text=pygame.key.name(controls.WALK_RIGHT))
+        self.control2.place(x=160, y=270, anchor="w")
 
         self.control3_label = tk.Label(self, text="Jump Button:")
         self.control3_label.place(x=50, y=300, anchor="w")
+        self.control3 = tk.Label(self, text=pygame.key.name(controls.JUMP))
+        self.control3.place(x=160, y=300, anchor="w")
 
         self.control4_label = tk.Label(self, text="Action Button:")
         self.control4_label.place(x=50, y=330, anchor="w")
+        self.control4 = tk.Label(self, text=pygame.key.name(controls.ACTION))
+        self.control4.place(x=160, y=330, anchor="w")
 
         self.control5_label = tk.Label(self, text="Crouch Button:")
         self.control5_label.place(x=50, y=360, anchor="w")
+        self.control5 = tk.Label(self, text=pygame.key.name(controls.CROUCH))
+        self.control5.place(x=160, y=360, anchor="w")
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
@@ -101,11 +117,6 @@ class Main:
 
     def __init__(self, fast_mode, small_mode):
         # Main Program
-
-        # Initiate pygame
-        pygame.mixer.pre_init(22050, -16, 1, 512)
-        pygame.mixer.init()
-        pygame.init()
 
         # Set the display size
         self.game_display = pygame.display.set_mode(constants.SIZE)
