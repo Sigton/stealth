@@ -80,26 +80,36 @@ class Launcher(tk.Frame):
         self.control1_label.place(x=50, y=240, anchor="w")
         self.control1 = tk.Label(self, text=pygame.key.name(controls.WALK_LEFT))
         self.control1.place(x=160, y=240, anchor="w")
+        self.control1_button = tk.Button(self, text="Change")
+        self.control1_button.place(x=230, y=240)
 
         self.control2_label = tk.Label(self, text="Walk Right Button:")
         self.control2_label.place(x=50, y=270, anchor="w")
         self.control2 = tk.Label(self, text=pygame.key.name(controls.WALK_RIGHT))
         self.control2.place(x=160, y=270, anchor="w")
+        self.control1_button = tk.Button(self, text="Change")
+        self.control1_button.place(x=230, y=270)
 
         self.control3_label = tk.Label(self, text="Jump Button:")
         self.control3_label.place(x=50, y=300, anchor="w")
         self.control3 = tk.Label(self, text=pygame.key.name(controls.JUMP))
         self.control3.place(x=160, y=300, anchor="w")
+        self.control1_button = tk.Button(self, text="Change")
+        self.control1_button.place(x=230, y=300)
 
         self.control4_label = tk.Label(self, text="Action Button:")
         self.control4_label.place(x=50, y=330, anchor="w")
         self.control4 = tk.Label(self, text=pygame.key.name(controls.ACTION))
         self.control4.place(x=160, y=330, anchor="w")
+        self.control1_button = tk.Button(self, text="Change")
+        self.control1_button.place(x=230, y=330)
 
         self.control5_label = tk.Label(self, text="Crouch Button:")
         self.control5_label.place(x=50, y=360, anchor="w")
         self.control5 = tk.Label(self, text=pygame.key.name(controls.CROUCH))
         self.control5.place(x=160, y=360, anchor="w")
+        self.control1_button = tk.Button(self, text="Change")
+        self.control1_button.place(x=230, y=360)
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
