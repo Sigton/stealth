@@ -68,6 +68,9 @@ class Launcher(tk.Frame):
                                font="Helvetica 9 italic")
         self.label2.place(x=160, y=150, anchor="w")
 
+        self.controls_heading = tk.Label(self, text="Control Configuration", font=("Verdana", 12))
+        self.controls_heading.place(x=240, y=200, anchor="center")
+
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2", command=self.launch)
         self.launch_button.place(x=240, y=320, anchor="center")
 
