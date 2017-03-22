@@ -7,7 +7,6 @@ from tkinter import ttk
 
 import menu as m
 import constants
-import os
 
 
 class LauncherApp(tk.Tk):
@@ -19,7 +18,7 @@ class LauncherApp(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
 
         tk.Tk.wm_title(self, "Stealth Launcher")
-        self.geometry("480x360")
+        self.geometry("480x480")
         self.resizable(0, 0)
 
         self.container = tk.Frame(self)
@@ -71,8 +70,9 @@ class Launcher(tk.Frame):
         self.controls_heading = tk.Label(self, text="Control Configuration", font=("Verdana", 12))
         self.controls_heading.place(x=240, y=200, anchor="center")
 
-        self.launch_button = tk.Button(self, text="Launch", width="20", height="2", command=self.launch)
-        self.launch_button.place(x=240, y=320, anchor="center")
+        self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
+                                       bg="#bbb", activebackground="#ccc", command=self.launch)
+        self.launch_button.place(x=240, y=420, anchor="center")
 
     def launch(self):
 
