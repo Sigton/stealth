@@ -70,6 +70,9 @@ class Launcher(tk.Frame):
         self.controls_heading = tk.Label(self, text="Control Configuration", font=("Verdana", 12))
         self.controls_heading.place(x=240, y=200, anchor="center")
 
+        self.control1 = tk.Label(self, text="Walk Left:")
+        self.control1.place(x=50, y=240, anchor="w")
+
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
         self.launch_button.place(x=240, y=420, anchor="center")

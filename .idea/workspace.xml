@@ -24,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+            <state relative-caret-position="425">
+              <caret line="73" column="52" lean-forward="true" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -404,13 +404,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00651" summary="Camera isn't removed when turned off">
-      <created>1489933183885</created>
-      <option name="number" value="00651" />
-      <option name="presentableId" value="LOCAL-00651" />
-      <option name="project" value="LOCAL" />
-      <updated>1489933183885</updated>
-    </task>
     <task id="LOCAL-00652" summary="Added some level text to level 5">
       <created>1489997135237</created>
       <option name="number" value="00652" />
@@ -747,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490212094021</updated>
     </task>
-    <option name="localTasksCounter" value="700" />
+    <task id="LOCAL-00700" summary="Made button darker">
+      <created>1490212725044</created>
+      <option name="number" value="00700" />
+      <option name="presentableId" value="LOCAL-00700" />
+      <option name="project" value="LOCAL" />
+      <updated>1490212725044</updated>
+    </task>
+    <option name="localTasksCounter" value="701" />
     <servers />
   </component>
   <component name="TodoView">
@@ -805,7 +805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjusted can_stand method for players" />
     <MESSAGE value="Pause on level transition" />
     <MESSAGE value="Removed a print that was no longer needed" />
     <MESSAGE value="Finally fixed a movement bug thats been in the game for ages" />
@@ -830,7 +829,8 @@
     <MESSAGE value="Fixed background color" />
     <MESSAGE value="Adjusted layout of launcher" />
     <MESSAGE value="Added new heading to launcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new heading to launcher" />
+    <MESSAGE value="Made button darker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made button darker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        <state relative-caret-position="425">
+          <caret line="73" column="52" lean-forward="true" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
