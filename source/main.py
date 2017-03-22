@@ -113,7 +113,7 @@ class Launcher(tk.Frame):
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
-        self.launch_button.place(x=240, y=420, anchor="center")
+        self.launch_button.place(x=240, y=440, anchor="center")
 
     def launch(self):
 
