@@ -15,11 +15,9 @@ def get_last_key():
     key_pressed = False
     while not key_pressed:
 
-        for event in pygame.event.get():
-            if event.type == KEYDOWN:
+        keys = pygame.key.get_pressed()
 
-                if event.key == K_ESCAPE:
-                    return None
+        if 1 in keys:
+            key = keys.index(1)
 
-                else:
-                    return event.key
+    return key
