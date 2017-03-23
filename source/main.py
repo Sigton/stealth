@@ -132,8 +132,13 @@ class Launcher(tk.Frame):
         self.controller.bind("<KeyPress>", lambda event, c=control: self.get_key(event, c))
 
     def get_key(self, event, control):
-
-        controls.controls[control] = event.keycode
+        trans_dict = {192: 96, 107: 270, 109: 269, 37: 276, 39: 275, 38: 273, 40: 274, 45: 277,
+                      36: 278, 33: 280, 46: 127, 35: 279, 34: 281}
+        if event.keycode in trans_dict:
+            code = trans_dict[event.keycode]
+        else:
+            code = event.keycode
+        controls.controls[control] = code
         self.update_controls()
 
     def update_controls(self):
