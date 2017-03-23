@@ -128,6 +128,7 @@ class Launcher(tk.Frame):
 
     def set_control(self, control):
 
+        self.controller.unbind("<KeyPress>")
         self.controller.bind("<KeyPress>", lambda event, c=control: self.get_key(event, c))
 
     def get_key(self, event, control):
