@@ -750,6 +750,10 @@ class Level06(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the level text
+        level_text = text.LevelText("Don't get caught by the camera!", 425, 1210)
+        self.level_text.add(level_text)
+
         # Set the start position
         self.start_x = 0
         self.start_y = 719
