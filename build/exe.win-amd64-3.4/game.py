@@ -56,31 +56,31 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True, self.fast))
+        # self.level_list.append(level.Level01(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True, self.fast))
+        # self.level_list.append(level.Level02(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True, self.fast))
+        # self.level_list.append(level.Level03(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True, self.fast))
+        # self.level_list.append(level.Level04(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True, self.fast))
+        # self.level_list.append(level.Level05(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
@@ -173,35 +173,35 @@ class Game:
                         game_exit = True
 
                     # Player controls
-                    if event.key == controls.WALK_LEFT:
+                    if event.key == controls.controls["WALK_LEFT"]:
                         run = -1
-                    if event.key == controls.WALK_RIGHT:
+                    if event.key == controls.controls["WALK_RIGHT"]:
                         run = 1
 
-                    if event.key == controls.JUMP:
+                    if event.key == controls.controls["JUMP"]:
                         jump = True
 
                     # Use keypads
-                    if event.key == controls.SPACE:
+                    if event.key == controls.controls["ACTION"]:
                         player.use_keypad()
 
                     # Crouching
-                    if event.key == controls.CROUCH:
+                    if event.key == controls.controls["CROUCH"]:
                         crouch = True
 
                 elif event.type == KEYUP:
 
-                    if event.key == controls.WALK_LEFT and not run == 1:
+                    if event.key == controls.controls["WALK_LEFT"] and not run == 1:
                         run = 0
 
-                    if event.key == controls.WALK_RIGHT and not run == -1:
+                    if event.key == controls.controls["WALK_RIGHT"] and not run == -1:
                         run = 0
 
-                    if event.key == controls.JUMP:
+                    if event.key == controls.controls["JUMP"]:
                         jump = False
                         player.climbing = False
 
-                    if event.key == controls.CROUCH:
+                    if event.key == controls.controls["CROUCH"]:
                         crouch = False
 
             if pause > 0:
