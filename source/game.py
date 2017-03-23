@@ -168,7 +168,7 @@ class Game:
                     sys.exit(0)
 
                 elif event.type == KEYDOWN:
-
+                    print(event.key)
                     if event.key == K_ESCAPE:
                         game_exit = True
 
