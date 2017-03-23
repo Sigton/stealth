@@ -123,9 +123,8 @@ class Launcher(tk.Frame):
     def launch(self):
 
         self.game = Main(bool(self.fast.get()), bool(self.small.get()))
-        self.controller.withdraw()
+        self.controller.destroy()
         self.game.run()
-        self.controller.deiconify()
 
     def set_control(self, control):
 
@@ -153,6 +152,9 @@ class Main:
 
     def __init__(self, fast_mode, small_mode):
         # Main Program
+
+        if not pygame.font.get_init():
+            pygame.font.init()
 
         # Set the display size
         self.game_display = pygame.display.set_mode(constants.SIZE)

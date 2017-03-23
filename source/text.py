@@ -1,9 +1,6 @@
 import pygame
 import constants
 
-if not pygame.font.get_init():
-    pygame.font.init()
-
 
 class LevelText(pygame.sprite.Sprite):
 
