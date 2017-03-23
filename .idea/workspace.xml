@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/source/controls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
-              <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+              <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -423,13 +423,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00673" summary="Pause on level transition">
-      <created>1490080350571</created>
-      <option name="number" value="00673" />
-      <option name="presentableId" value="LOCAL-00673" />
-      <option name="project" value="LOCAL" />
-      <updated>1490080350571</updated>
-    </task>
     <task id="LOCAL-00674" summary="Removed a print that was no longer needed">
       <created>1490080416049</created>
       <option name="number" value="00674" />
@@ -766,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490299649202</updated>
     </task>
-    <option name="localTasksCounter" value="722" />
+    <task id="LOCAL-00722" summary="More keys added to trans_dict">
+      <created>1490299926204</created>
+      <option name="number" value="00722" />
+      <option name="presentableId" value="LOCAL-00722" />
+      <option name="project" value="LOCAL" />
+      <updated>1490299926204</updated>
+    </task>
+    <option name="localTasksCounter" value="723" />
     <servers />
   </component>
   <component name="TodoView">
@@ -824,7 +824,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added background image to launcher" />
     <MESSAGE value="Changed background color" />
     <MESSAGE value="Fixed background color" />
     <MESSAGE value="Adjusted layout of launcher" />
@@ -849,7 +848,8 @@
     <MESSAGE value="Fixed trans_dict" />
     <MESSAGE value="Progress with trans_dict" />
     <MESSAGE value="Fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
+    <MESSAGE value="More keys added to trans_dict" />
+    <option name="LAST_COMMIT_MESSAGE" value="More keys added to trans_dict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,7 +1077,7 @@
     <entry file="file://$PROJECT_DIR$/source/controls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
-          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
           <folding />
         </state>
       </provider>
