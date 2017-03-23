@@ -129,8 +129,7 @@ class Launcher(tk.Frame):
 
     def set_control(self, control):
 
-        new_key = controls.get_last_key()
-        print(new_key)
+        self.bind("<KeyPress>", controls.get_key)
 
 
 class Main:
