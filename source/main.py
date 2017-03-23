@@ -132,13 +132,14 @@ class Launcher(tk.Frame):
         self.controller.bind("<KeyPress>", lambda event, c=control: self.get_key(event, c))
 
     def get_key(self, event, control):
-        print(event.keycode)
+
         if event.keycode in controls.trans_dict:
             code = controls.trans_dict[event.keycode]
         else:
             code = event.keycode
         controls.controls[control] = code
         self.update_controls()
+        self.controller.unbind("<KeyPress>")
 
     def update_controls(self):
         self.control1.configure(text=pygame.key.name(controls.controls["WALK_LEFT"]))
