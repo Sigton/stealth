@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/entities.py" afterPath="$PROJECT_DIR$/source/entities.py" />
-    </list>
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -402,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00680" summary="Updated setup.py">
-      <created>1490083449996</created>
-      <option name="number" value="00680" />
-      <option name="presentableId" value="LOCAL-00680" />
-      <option name="project" value="LOCAL" />
-      <updated>1490083449996</updated>
-    </task>
     <task id="LOCAL-00681" summary="Fixed typo in controls.py">
       <created>1490114954550</created>
       <option name="number" value="00681" />
@@ -745,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490301182241</updated>
     </task>
-    <option name="localTasksCounter" value="729" />
+    <task id="LOCAL-00729" summary="Made collision detection more accurate">
+      <created>1490305178770</created>
+      <option name="number" value="00729" />
+      <option name="presentableId" value="LOCAL-00729" />
+      <option name="project" value="LOCAL" />
+      <updated>1490305178770</updated>
+    </task>
+    <option name="localTasksCounter" value="730" />
     <servers />
   </component>
   <component name="TodoView">
@@ -803,7 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed background color" />
     <MESSAGE value="Adjusted layout of launcher" />
     <MESSAGE value="Added new heading to launcher" />
     <MESSAGE value="Made button darker" />
@@ -828,7 +824,8 @@
     <MESSAGE value="More keys added to trans_dict" />
     <MESSAGE value="Function unbinds once key has been set" />
     <MESSAGE value="Fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
+    <MESSAGE value="Made collision detection more accurate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made collision detection more accurate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
