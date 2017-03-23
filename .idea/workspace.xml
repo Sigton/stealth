@@ -4,7 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/controls.py" afterPath="$PROJECT_DIR$/source/controls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/source/controls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
-              <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+              <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -423,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00674" summary="Removed a print that was no longer needed">
-      <created>1490080416049</created>
-      <option name="number" value="00674" />
-      <option name="presentableId" value="LOCAL-00674" />
-      <option name="project" value="LOCAL" />
-      <updated>1490080416049</updated>
-    </task>
     <task id="LOCAL-00675" summary="Fixed bug">
       <created>1490080945860</created>
       <option name="number" value="00675" />
@@ -766,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490299926204</updated>
     </task>
-    <option name="localTasksCounter" value="723" />
+    <task id="LOCAL-00723" summary="More keys added to trans_dict">
+      <created>1490300157079</created>
+      <option name="number" value="00723" />
+      <option name="presentableId" value="LOCAL-00723" />
+      <option name="project" value="LOCAL" />
+      <updated>1490300157079</updated>
+    </task>
+    <option name="localTasksCounter" value="724" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1077,7 +1076,7 @@
     <entry file="file://$PROJECT_DIR$/source/controls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
-          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
           <folding />
         </state>
       </provider>
