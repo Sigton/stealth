@@ -16,10 +16,11 @@ def get_last_key():
 
     key_pressed = False
     while not key_pressed:
-
+        pygame.event.pump()
         keys = pygame.key.get_pressed()
-
+        print(keys)
         if 1 in keys:
             key = keys.index(1)
+            key_pressed = True
 
     return key
