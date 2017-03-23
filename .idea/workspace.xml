@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/controls.py" afterPath="$PROJECT_DIR$/source/controls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="115" column="81" lean-forward="false" selection-start-line="115" selection-start-column="81" selection-end-line="115" selection-end-column="81" />
+            <state relative-caret-position="408">
+              <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -413,13 +412,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00665" summary="Keypad progress now goes down">
-      <created>1490040478882</created>
-      <option name="number" value="00665" />
-      <option name="presentableId" value="LOCAL-00665" />
-      <option name="project" value="LOCAL" />
-      <updated>1490040478882</updated>
-    </task>
     <task id="LOCAL-00666" summary="Healthbar doesn't disappear when progress is full&#10;">
       <created>1490040590731</created>
       <option name="number" value="00666" />
@@ -756,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490256692998</updated>
     </task>
-    <option name="localTasksCounter" value="714" />
+    <task id="LOCAL-00714" summary="Fixed a range of things">
+      <created>1490293827835</created>
+      <option name="number" value="00714" />
+      <option name="presentableId" value="LOCAL-00714" />
+      <option name="project" value="LOCAL" />
+      <updated>1490293827838</updated>
+    </task>
+    <option name="localTasksCounter" value="715" />
     <servers />
   </component>
   <component name="TodoView">
@@ -814,7 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed collision detection" />
     <MESSAGE value="Adjusted rendering order" />
     <MESSAGE value="Fixed rendering order" />
     <MESSAGE value="Created function for getting last key pressed" />
@@ -839,7 +837,8 @@
     <MESSAGE value="Added function to change key" />
     <MESSAGE value="That function wasn't working, time to find an alternate method" />
     <MESSAGE value="Using tkinter to detect controls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using tkinter to detect controls" />
+    <MESSAGE value="Fixed a range of things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a range of things" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="115" column="81" lean-forward="false" selection-start-line="115" selection-start-column="81" selection-end-line="115" selection-end-column="81" />
+        <state relative-caret-position="408">
+          <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

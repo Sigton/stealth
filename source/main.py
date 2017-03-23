@@ -133,7 +133,15 @@ class Launcher(tk.Frame):
 
     def get_key(self, event, control):
 
-        control = event.keycode
+        controls.controls[control] = event.keycode
+        self.update_controls()
+
+    def update_controls(self):
+        self.control1.configure(text=pygame.key.name(controls.controls["WALK_LEFT"]))
+        self.control2.configure(text=pygame.key.name(controls.controls["WALK_RIGHT"]))
+        self.control3.configure(text=pygame.key.name(controls.controls["JUMP"]))
+        self.control4.configure(text=pygame.key.name(controls.controls["ACTION"]))
+        self.control5.configure(text=pygame.key.name(controls.controls["CROUCH"]))
 
 
 class Main:
