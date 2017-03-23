@@ -310,7 +310,7 @@ class Laser(pygame.sprite.Sprite):
 
             diff = player_gradient - line_gradient
 
-            if abs(diff) < 0.05:
+            if abs(diff) < 0.05 - n/500:
                 return True
 
         return False
