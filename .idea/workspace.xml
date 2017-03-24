@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -400,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00683" summary="Keypads go down even faster">
-      <created>1490115073229</created>
-      <option name="number" value="00683" />
-      <option name="presentableId" value="LOCAL-00683" />
-      <option name="project" value="LOCAL" />
-      <updated>1490115073229</updated>
-    </task>
     <task id="LOCAL-00684" summary="Updated level 6">
       <created>1490119125550</created>
       <option name="number" value="00684" />
@@ -743,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490309620154</updated>
     </task>
-    <option name="localTasksCounter" value="732" />
+    <task id="LOCAL-00732" summary="Fixed door linkup">
+      <created>1490340516069</created>
+      <option name="number" value="00732" />
+      <option name="presentableId" value="LOCAL-00732" />
+      <option name="project" value="LOCAL" />
+      <updated>1490340516069</updated>
+    </task>
+    <option name="localTasksCounter" value="733" />
     <servers />
   </component>
   <component name="TodoView">
@@ -801,7 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made button darker" />
     <MESSAGE value="Added a label" />
     <MESSAGE value="More labels!" />
     <MESSAGE value="Finished off those labels" />
@@ -826,7 +824,8 @@
     <MESSAGE value="Made collision detection more accurate" />
     <MESSAGE value="Added level text" />
     <MESSAGE value="Updated level 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 6" />
+    <MESSAGE value="Fixed door linkup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed door linkup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
