@@ -734,8 +734,7 @@ class Level06(Level):
         # How many layers the level has
         self.layer_range = 1
 
-        self.door_linkup = {0: 0,
-                            1: 1}
+        self.door_linkup = {0: 0}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 
