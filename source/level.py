@@ -752,6 +752,8 @@ class Level06(Level):
         # Add the level text
         level_text = text.LevelText("Don't get caught by the camera!", 425, 1210)
         self.level_text.add(level_text)
+        level_text = text.LevelText("Use the keypad to turn off the camera.", 425, 1235)
+        self.level_text.add(level_text)
 
         # Set the start position
         self.start_x = 0
