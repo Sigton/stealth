@@ -284,16 +284,16 @@ class Laser(pygame.sprite.Sprite):
                     if platform.rect.collidepoint(self.end_point):
                         at_platform = True
 
-            if self in self.camera.level.non_draw:
-                if self.camera.keypad.progress == 0:
-                    self.camera.level.non_draw.remove(self)
-                    self.camera.level.lasers.add(self)
-
             self.vector = (self.end_point[0] - self.start_point[0],
                            self.end_point[1] - self.start_point[1])
         else:
             self.end_point = (self.start_point[0]+self.vector[0],
                               self.start_point[1]+self.vector[1])
+
+        if self in self.camera.level.non_draw:
+            if self.camera.keypad.progress == 0:
+                self.camera.level.non_draw.remove(self)
+                self.camera.level.lasers.add(self)
 
     def draw(self, display):
 
