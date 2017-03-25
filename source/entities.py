@@ -256,6 +256,8 @@ class Laser(pygame.sprite.Sprite):
         self.start_x = 0
         self.start_y = 0
 
+        self.vector = None
+
     def update(self):
 
         # Draw the line that the camera sees
@@ -264,27 +266,34 @@ class Laser(pygame.sprite.Sprite):
 
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
-        x_angle = math.cos(math.radians(self.angle))
-        y_angle = math.sin(math.radians(self.angle))
+        if self.vector is None:
+            x_angle = math.cos(math.radians(self.angle))
+            y_angle = math.sin(math.radians(self.angle))
 
-        platforms = [platform for platform in self.camera.level.platform_list.sprites()]
+            platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
-        # Calculate end point
-        at_platform = False
-        dist = 0
-        while not at_platform:
-            dist += 30
-            self.end_point = (self.start_point[0] + dist * x_angle,
-                              self.start_point[1] + dist * y_angle)
+            # Calculate end point
+            at_platform = False
+            dist = 0
+            while not at_platform:
+                dist += 30
+                self.end_point = (self.start_point[0] + dist * x_angle,
+                                  self.start_point[1] + dist * y_angle)
 
-            for platform in platforms:
-                if platform.rect.collidepoint(self.end_point):
-                    at_platform = True
+                for platform in platforms:
+                    if platform.rect.collidepoint(self.end_point):
+                        at_platform = True
 
-        if self in self.camera.level.non_draw:
-            if self.camera.keypad.progress == 0:
-                self.camera.level.non_draw.remove(self)
-                self.camera.level.lasers.add(self)
+            if self in self.camera.level.non_draw:
+                if self.camera.keypad.progress == 0:
+                    self.camera.level.non_draw.remove(self)
+                    self.camera.level.lasers.add(self)
+
+            self.vector = (self.end_point[0] - self.start_point[0],
+                           self.end_point[1] - self.start_point[1])
+        else:
+            self.end_point = (self.start_point[0]+self.vector[0],
+                              self.start_point[1]+self.vector[1])
 
     def draw(self, display):
 
