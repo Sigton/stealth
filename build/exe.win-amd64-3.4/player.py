@@ -195,17 +195,17 @@ class Player(pygame.sprite.Sprite):
         if self.crouching:
             if self.xv != 0:
                 if self.direction == "R":
-                    frame = self.walk_dist // 10 % len(self.crouching_frames_r)
+                    frame = self.walk_dist // 7 % len(self.crouching_frames_r)
                     self.image = self.crouching_frames_r[frame]
                 else:
-                    frame = self.walk_dist // 10 % len(self.crouching_frames_l)
+                    frame = self.walk_dist // 7 % len(self.crouching_frames_l)
                     self.image = self.crouching_frames_l[frame]
         else:
             if self.direction == "R":
-                frame = self.walk_dist // 10 % len(self.walking_frames_r)
+                frame = self.walk_dist // 7 % len(self.walking_frames_r)
                 self.image = self.walking_frames_r[frame]
             else:
-                frame = self.walk_dist // 10 % len(self.walking_frames_l)
+                frame = self.walk_dist // 7 % len(self.walking_frames_l)
                 self.image = self.walking_frames_l[frame]
 
         if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
@@ -286,15 +286,15 @@ class Player(pygame.sprite.Sprite):
     def walk_right(self):
 
         # Moves the player right
-        self.xv += (self.speed / 1.5) * (self.stamina / 100) \
-            if self.crouching or self.climbing else self.speed * (self.stamina / 100)
+        self.xv += (self.speed / 1.5) * ((self.stamina / 400) + 0.75) \
+            if self.crouching or self.climbing else self.speed * ((self.stamina / 400) + 0.75)
         self.direction = "R"
 
     def walk_left(self):
 
         # Moves the player left
-        self.xv -= (self.speed / 2) * (self.stamina / 100) \
-            if self.crouching or self.climbing else self.speed * (self.stamina / 100)
+        self.xv -= (self.speed / 2) * ((self.stamina / 400) + 0.75) \
+            if self.crouching or self.climbing else self.speed * ((self.stamina / 400) + 0.75)
         self.direction = "L"
 
     def jump(self):

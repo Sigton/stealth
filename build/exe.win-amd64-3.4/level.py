@@ -101,7 +101,7 @@ class Level:
             for ladder in ladders:
                 ladder.draw(display)
 
-            if layer == 0:
+            if layer == self.layer_range-1:
                 # Draw the sights from cameras
                 for laser in self.lasers.sprites():
                     laser.draw(display)
@@ -732,10 +732,10 @@ class Level06(Level):
         self.type_file = os.path.join("level_data", "tile_types", "level6")
 
         # How many layers the level has
-        self.layer_range = 1
+        self.layer_range = 2
 
-        self.door_linkup = {0: 0,
-                            1: 1}
+        self.door_linkup = {0: 1,
+                            1: 0}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 
@@ -749,6 +749,14 @@ class Level06(Level):
         self.render(level_data)
         for door in self.doors.sprites():
             door.set_keypad()
+
+        # Add the level text
+        level_text = text.LevelText("Don't get caught by the camera!", 435, 1210)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Use the keypad to turn off the camera,", 435, 1235)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("But it will turn on again soon!", 490, 1260)
+        self.level_text.add(level_text)
 
         # Set the start position
         self.start_x = 0
