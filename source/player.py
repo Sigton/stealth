@@ -195,17 +195,17 @@ class Player(pygame.sprite.Sprite):
         if self.crouching:
             if self.xv != 0:
                 if self.direction == "R":
-                    frame = self.walk_dist // 10 % len(self.crouching_frames_r)
+                    frame = self.walk_dist // 7 % len(self.crouching_frames_r)
                     self.image = self.crouching_frames_r[frame]
                 else:
-                    frame = self.walk_dist // 10 % len(self.crouching_frames_l)
+                    frame = self.walk_dist // 7 % len(self.crouching_frames_l)
                     self.image = self.crouching_frames_l[frame]
         else:
             if self.direction == "R":
-                frame = self.walk_dist // 10 % len(self.walking_frames_r)
+                frame = self.walk_dist // 7 % len(self.walking_frames_r)
                 self.image = self.walking_frames_r[frame]
             else:
-                frame = self.walk_dist // 10 % len(self.walking_frames_l)
+                frame = self.walk_dist // 7 % len(self.walking_frames_l)
                 self.image = self.walking_frames_l[frame]
 
         if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
