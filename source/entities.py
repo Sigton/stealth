@@ -303,8 +303,13 @@ class Laser(pygame.sprite.Sprite):
 
     def test_collision(self):
 
-        if self.start_point[0] > self.player.rect.right or self.end_point[0] < self.player.rect.left:
-            return False
+        if self.start_point[0] - self.end_point[0] > 0:
+
+            if self.start_point[0] < self.player.rect.left or self.end_point[0] > self.player.rect.right:
+                return False
+        else:
+            if self.start_point[0] > self.player.rect.right or self.end_point[0] < self.player.rect.left:
+                return False
         if self.start_point[1] > self.player.rect.bottom or self.end_point[1] < self.player.rect.top:
             return False
 
