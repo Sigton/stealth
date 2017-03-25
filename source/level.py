@@ -101,7 +101,7 @@ class Level:
             for ladder in ladders:
                 ladder.draw(display)
 
-            if layer == 0:
+            if layer == self.layer_range-1:
                 # Draw the sights from cameras
                 for laser in self.lasers.sprites():
                     laser.draw(display)
