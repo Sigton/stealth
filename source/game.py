@@ -321,6 +321,8 @@ class Game:
             if do_reset:
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
+                if player.crouching:
+                    player.stop_crouching()
                 player.reset()
                 reset = False
                 do_reset = False
