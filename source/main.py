@@ -118,6 +118,9 @@ class Launcher(tk.Frame):
                                          command=lambda: self.set_control("CROUCH"))
         self.control5_button.place(x=230, y=360, anchor="w")
 
+        self.save_controls_button = tk.Button(self, text="Set as default", command=controls.save_controls)
+        self.save_controls_button.place(x=350, y=300, anchor="w")
+
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
         self.launch_button.place(x=240, y=440, anchor="center")
