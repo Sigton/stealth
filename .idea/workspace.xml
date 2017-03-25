@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/player.py" afterPath="$PROJECT_DIR$/source/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -407,13 +404,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00713" summary="Using tkinter to detect controls">
-      <created>1490256692998</created>
-      <option name="number" value="00713" />
-      <option name="presentableId" value="LOCAL-00713" />
-      <option name="project" value="LOCAL" />
-      <updated>1490256692998</updated>
-    </task>
     <task id="LOCAL-00714" summary="Fixed a range of things">
       <created>1490293827835</created>
       <option name="number" value="00714" />
@@ -750,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490455292716</updated>
     </task>
-    <option name="localTasksCounter" value="762" />
+    <task id="LOCAL-00762" summary="Adjusted how stamina works and updated level 6">
+      <created>1490455667365</created>
+      <option name="number" value="00762" />
+      <option name="presentableId" value="LOCAL-00762" />
+      <option name="project" value="LOCAL" />
+      <updated>1490455667365</updated>
+    </task>
+    <option name="localTasksCounter" value="763" />
     <servers />
   </component>
   <component name="TodoView">
@@ -809,7 +806,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Using tkinter to detect controls" />
     <MESSAGE value="Fixed a range of things" />
     <MESSAGE value="Controls now kinda work" />
     <MESSAGE value="Attempt at fixing problems" />
@@ -834,7 +830,8 @@
     <MESSAGE value="Sped up player running animation" />
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Fixed issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue" />
+    <MESSAGE value="Adjusted how stamina works and updated level 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted how stamina works and updated level 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
