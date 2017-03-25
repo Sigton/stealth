@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/player.py">
+      <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="232" column="30" lean-forward="true" selection-start-line="232" selection-start-column="30" selection-end-line="232" selection-end-column="30" />
+            <state relative-caret-position="411">
+              <caret line="742" column="34" lean-forward="true" selection-start-line="742" selection-start-column="34" selection-end-line="742" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -393,13 +395,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00709" summary="Updated get_last_key since it has to work without the display">
-      <created>1490220307736</created>
-      <option name="number" value="00709" />
-      <option name="presentableId" value="LOCAL-00709" />
-      <option name="project" value="LOCAL" />
-      <updated>1490220307736</updated>
-    </task>
     <task id="LOCAL-00710" summary="Fixed bug">
       <created>1490220351028</created>
       <option name="number" value="00710" />
@@ -736,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490449533600</updated>
     </task>
-    <option name="localTasksCounter" value="758" />
+    <task id="LOCAL-00758" summary="Updated level 6">
+      <created>1490453182572</created>
+      <option name="number" value="00758" />
+      <option name="presentableId" value="LOCAL-00758" />
+      <option name="project" value="LOCAL" />
+      <updated>1490453182572</updated>
+    </task>
+    <option name="localTasksCounter" value="759" />
     <servers />
   </component>
   <component name="TodoView">
@@ -817,10 +819,10 @@
     <MESSAGE value="Tested the set as default button" />
     <MESSAGE value="Huge performance improvement with lasers" />
     <MESSAGE value="Fixed" />
-    <MESSAGE value="Updated level 6" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Sped up player running animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sped up player running animation" />
+    <MESSAGE value="Updated level 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1023,18 +1025,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="742" column="34" lean-forward="true" selection-start-line="742" selection-start-column="34" selection-end-line="742" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="270" column="51" lean-forward="true" selection-start-line="270" selection-start-column="51" selection-end-line="270" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="232" column="30" lean-forward="true" selection-start-line="232" selection-start-column="30" selection-end-line="232" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1047,10 +1049,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/player.py">
+    <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="232" column="30" lean-forward="true" selection-start-line="232" selection-start-column="30" selection-end-line="232" selection-end-column="30" />
+        <state relative-caret-position="411">
+          <caret line="742" column="34" lean-forward="true" selection-start-line="742" selection-start-column="34" selection-end-line="742" selection-end-column="34" />
           <folding />
         </state>
       </provider>
