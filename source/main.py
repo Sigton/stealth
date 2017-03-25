@@ -90,33 +90,33 @@ class Launcher(tk.Frame):
         self.control2_label.place(x=50, y=270, anchor="w")
         self.control2 = tk.Label(self, text=pygame.key.name(controls.controls["WALK_RIGHT"]))
         self.control2.place(x=160, y=270, anchor="w")
-        self.control1_button = tk.Button(self, text="Change",
+        self.control2_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("WALK_RIGHT"))
-        self.control1_button.place(x=230, y=270, anchor="w")
+        self.control2_button.place(x=230, y=270, anchor="w")
 
         self.control3_label = tk.Label(self, text="Jump Button:")
         self.control3_label.place(x=50, y=300, anchor="w")
         self.control3 = tk.Label(self, text=pygame.key.name(controls.controls["JUMP"]))
         self.control3.place(x=160, y=300, anchor="w")
-        self.control1_button = tk.Button(self, text="Change",
+        self.control3_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("JUMP"))
-        self.control1_button.place(x=230, y=300, anchor="w")
+        self.control3_button.place(x=230, y=300, anchor="w")
 
         self.control4_label = tk.Label(self, text="Action Button:")
         self.control4_label.place(x=50, y=330, anchor="w")
         self.control4 = tk.Label(self, text=pygame.key.name(controls.controls["ACTION"]))
         self.control4.place(x=160, y=330, anchor="w")
-        self.control1_button = tk.Button(self, text="Change",
+        self.control4_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("ACTION"))
-        self.control1_button.place(x=230, y=330, anchor="w")
+        self.control4_button.place(x=230, y=330, anchor="w")
 
         self.control5_label = tk.Label(self, text="Crouch Button:")
         self.control5_label.place(x=50, y=360, anchor="w")
         self.control5 = tk.Label(self, text=pygame.key.name(controls.controls["CROUCH"]))
         self.control5.place(x=160, y=360, anchor="w")
-        self.control1_button = tk.Button(self, text="Change",
+        self.control5_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("CROUCH"))
-        self.control1_button.place(x=230, y=360, anchor="w")
+        self.control5_button.place(x=230, y=360, anchor="w")
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
