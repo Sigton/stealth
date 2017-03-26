@@ -694,8 +694,6 @@ class Level05(Level):
             door.set_keypad()
 
         # Add the level text
-        level_text = text.LevelText("Go down here!", 30, 1060)
-        self.level_text.add(level_text)
         level_text = text.LevelText("Easy way out...", 700, 1350)
         self.level_text.add(level_text)
         level_text = text.LevelText("Ah, some doors.", 1600, 1350)
