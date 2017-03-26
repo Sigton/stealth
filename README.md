@@ -1,35 +1,5 @@
 # Stealth - Platformer
 
-Stealth is a project I have been working on in Scratch for quite a long while now.
-Since I have finished the Scratch version, I'm now working on one in python.
-
-This version will run smoother and should have more features when it's finished.
-
-## Current features
-In the game currently are:
-- Platforming physics
-- Animated player
-- Levels 1-10
-- Keypads and doors
-- Guards with torches
-- Level text
-- Sound effects
-- Background Music
-
-## Planned features
-Coming soon is:
-- A menu
-  * With main screen
-  * level select menu
-  * options menu
-- Armed guards
-- Reworking of levels
-- Animations
-- Pause menu
-- Security guards
-- Laser beams
-- Performance Improvements
-
-## A Thanks to
-My friends, for trying everything out and telling me what they thought. Without this, the game would be nowhere as good
-as it is.
+Stealth is a platforming adventure through an enemy occupied warehouse, and your goal is to destroy the facility.
+By navigating the building, sneaking past the guards, avoiding the dangers, you'll make it to the heart of the warehouse where you need to plant bombs to destroy the place.
+These bombs have a timer, however, so you need to make sure you get out again before the time runs out!
