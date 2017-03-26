@@ -14,6 +14,8 @@ making it run a lot better.
 
 If that still isn't enough, then you can select to run on "Small Screen" mode, which will again improve performance.
 
+![Performance Improvements](http://i.cubeupload.com/Z1lQoP.png)
+
 ### Screenshots:
 
 ![Image of Menu](http://i.cubeupload.com/076JEL.png)
