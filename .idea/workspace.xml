@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level6/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level6/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="88" column="75" lean-forward="true" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+            <state relative-caret-position="357">
+              <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -388,13 +386,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00736" summary="Added more level text">
-      <created>1490341835358</created>
-      <option name="number" value="00736" />
-      <option name="presentableId" value="LOCAL-00736" />
-      <option name="project" value="LOCAL" />
-      <updated>1490341835359</updated>
-    </task>
     <task id="LOCAL-00737" summary="Updated level 6">
       <created>1490342397651</created>
       <option name="number" value="00737" />
@@ -731,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490538071819</updated>
     </task>
-    <option name="localTasksCounter" value="786" />
+    <task id="LOCAL-00786" summary="Updated level 6">
+      <created>1490538932838</created>
+      <option name="number" value="00786" />
+      <option name="presentableId" value="LOCAL-00786" />
+      <option name="project" value="LOCAL" />
+      <updated>1490538932838</updated>
+    </task>
+    <option name="localTasksCounter" value="787" />
     <servers />
   </component>
   <component name="TodoView">
@@ -807,7 +805,6 @@
     <MESSAGE value="Added decorations to level 6" />
     <MESSAGE value="Decorating level 6" />
     <MESSAGE value="Fixed bug" />
-    <MESSAGE value="Updated level 6" />
     <MESSAGE value="Compressed distribution" />
     <MESSAGE value="Don't actually need the build directory anymore..." />
     <MESSAGE value="Fixed bug that appears if you're caught when crouching" />
@@ -815,7 +812,8 @@
     <MESSAGE value="Removed a bit of level text I didn't like too much" />
     <MESSAGE value="Added an image to the readme" />
     <MESSAGE value="Added another screenshot to the readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added another screenshot to the readme" />
+    <MESSAGE value="Updated level 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated level 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1044,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="88" column="75" lean-forward="true" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="75" />
+        <state relative-caret-position="357">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
           <folding />
         </state>
       </provider>
