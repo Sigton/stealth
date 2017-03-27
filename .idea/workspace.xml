@@ -26,8 +26,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="326" column="43" lean-forward="true" selection-start-line="326" selection-start-column="43" selection-end-line="326" selection-end-column="43" />
+            <state relative-caret-position="351">
+              <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -406,13 +406,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00746" summary="Tested the set as default button">
-      <created>1490443372082</created>
-      <option name="number" value="00746" />
-      <option name="presentableId" value="LOCAL-00746" />
-      <option name="project" value="LOCAL" />
-      <updated>1490443372082</updated>
-    </task>
     <task id="LOCAL-00747" summary="Tested the set as default button">
       <created>1490444036021</created>
       <option name="number" value="00747" />
@@ -749,7 +742,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490648298371</updated>
     </task>
-    <option name="localTasksCounter" value="796" />
+    <task id="LOCAL-00796" summary="Objects reset on player death/capture">
+      <created>1490648422532</created>
+      <option name="number" value="00796" />
+      <option name="presentableId" value="LOCAL-00796" />
+      <option name="project" value="LOCAL" />
+      <updated>1490648422532</updated>
+    </task>
+    <option name="localTasksCounter" value="797" />
     <servers />
   </component>
   <component name="TodoView">
@@ -808,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sped up player running animation" />
     <MESSAGE value="Fixed issue" />
     <MESSAGE value="Adjusted how stamina works and updated level 6" />
     <MESSAGE value="Made level 6 easier" />
@@ -833,7 +832,8 @@
     <MESSAGE value="Created a generator to get all the keypads" />
     <MESSAGE value="Added a reset function for keypads" />
     <MESSAGE value="Compacted code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compacted code" />
+    <MESSAGE value="Objects reset on player death/capture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Objects reset on player death/capture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1062,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="326" column="43" lean-forward="true" selection-start-line="326" selection-start-column="43" selection-end-line="326" selection-end-column="43" />
+        <state relative-caret-position="351">
+          <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
           <folding />
         </state>
       </provider>

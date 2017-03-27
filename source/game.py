@@ -319,9 +319,9 @@ class Game:
                 self.current_level.shift_world(0, diff)
 
             if do_reset:
+                self.current_level.reset_objects()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
-                self.current_level.reset_objects()
                 player.reset()
                 if player.crouching:
                     player.stop_crouching()
@@ -333,9 +333,9 @@ class Game:
                 player.health = 100
                 player.stamina = 100
                 player.reset()
+                self.current_level.reset_objects()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
-                self.current_level.reset_objects()
 
             # All drawing goes here
             self.current_level.draw(self.display)
