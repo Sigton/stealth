@@ -80,6 +80,7 @@ class Keypad(pygame.sprite.Sprite):
         self.progress = 0
         self.image = self.image_off
         self.played_sound = False
+        self.progress_bar.level.entities.add(self.progress_bar)
 
 
 class RechargingKeypad(Keypad):
