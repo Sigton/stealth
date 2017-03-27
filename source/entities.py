@@ -75,6 +75,12 @@ class Keypad(pygame.sprite.Sprite):
                 pygame.mixer.Sound.play(self.beep_sound)
                 self.played_sound = True
 
+    def reset(self):
+
+        self.progress = 0
+        self.image = self.image_off
+        self.played_sound = False
+
 
 class RechargingKeypad(Keypad):
 
