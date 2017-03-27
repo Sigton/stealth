@@ -107,7 +107,7 @@ class Game:
         self.hud = hud.HUD(self.player, self.parent.parent.small)
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
-        self.light_sound.set_volume(0.15)
+        self.light_sound.set_volume(0.05)
 
         self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
         self.dissolve_sound.set_volume(0.2)
