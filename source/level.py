@@ -237,6 +237,8 @@ class Level:
         for door in doors:
             self.platform_list.add(door)
 
+        keypads = [keypad for keypad in self.keypads if isinstance(keypad, entities.Keypad)]
+
     def create_platform(self, tile, x, y, layer):
         platform = platforms.Platform(tile, x, y, layer)
         self.platform_list.add(platform)
