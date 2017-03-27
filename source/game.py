@@ -80,7 +80,7 @@ class Game:
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level05(self.player, True, self.fast))
+        self.level_list.append(level.Level05(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)

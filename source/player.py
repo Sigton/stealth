@@ -398,8 +398,8 @@ class Player(pygame.sprite.Sprite):
     def can_stand(self):
 
         # This checks if there is a roof directly above the player
-        self.rect.y -= 12
+        self.rect.y -= 24
         hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
-        self.rect.y += 12
+        self.rect.y += 24
 
         return False if len(hit_list) else True
