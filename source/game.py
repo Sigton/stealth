@@ -343,8 +343,12 @@ class Game:
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
             self.hud.draw(self.display)
-            if reset and 0 < pause < 100:
+            if reset and 67 < pause < 100:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
+            elif reset and 0 < pause < 17:
+                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), pause*16)
+            elif reset and 17 < pause < 67:
+                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), 256)
 
             # Limit to 60 fps
             self.clock.tick(60)
