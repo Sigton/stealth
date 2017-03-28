@@ -120,7 +120,7 @@ class Game:
 
         # Load the music
         pygame.mixer.music.load("resources/music.mp3")
-        pygame.mixer.music.set_volume(0.25)
+        pygame.mixer.music.set_volume(0.75)
 
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
