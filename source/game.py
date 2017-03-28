@@ -329,7 +329,7 @@ class Game:
                 reset = False
                 do_reset = False
 
-            if (player.dying and player.death_progress >= 75) or player.health <= 0:
+            if (player.dying and player.death_progress >= 75) != player.health <= 0:
                 player.health = 100
                 player.stamina = 100
                 player.reset()
