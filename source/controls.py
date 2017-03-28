@@ -90,12 +90,12 @@ trans_dict = {65: 97,
 
 
 def save_controls():
-    with open("controls.json", "w") as outfile:
+    with open("save_data.json", "w") as outfile:
         json.dump(controls, outfile)
 
 
 def load_controls():
-    with open("controls.json", 'r') as infile:
+    with open("save_data.json", 'r') as infile:
         data = json.load(infile)
 
     return data
