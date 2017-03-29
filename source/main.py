@@ -6,7 +6,7 @@ import tkinter as tk
 
 import menu as m
 import constants
-import controls
+import saves
 
 
 # Initiate pygame
@@ -52,7 +52,7 @@ class Launcher(tk.Frame):
 
         self.game = None
 
-        controls.controls = controls.load_controls()
+        saves.controls = saves.load_controls()
 
         self.title = tk.Label(self, text="Stealth", font=("Verdana", 20))
         self.title.place(x=240, y=20, anchor="center")
@@ -80,7 +80,7 @@ class Launcher(tk.Frame):
 
         self.control1_label = tk.Label(self, text="Walk Left Button:")
         self.control1_label.place(x=50, y=240, anchor="w")
-        self.control1 = tk.Label(self, text=pygame.key.name(controls.controls["WALK_LEFT"]))
+        self.control1 = tk.Label(self, text=pygame.key.name(saves.controls["WALK_LEFT"]))
         self.control1.place(x=160, y=240, anchor="w")
         self.control1_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("WALK_LEFT"))
@@ -88,7 +88,7 @@ class Launcher(tk.Frame):
 
         self.control2_label = tk.Label(self, text="Walk Right Button:")
         self.control2_label.place(x=50, y=270, anchor="w")
-        self.control2 = tk.Label(self, text=pygame.key.name(controls.controls["WALK_RIGHT"]))
+        self.control2 = tk.Label(self, text=pygame.key.name(saves.controls["WALK_RIGHT"]))
         self.control2.place(x=160, y=270, anchor="w")
         self.control2_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("WALK_RIGHT"))
@@ -96,7 +96,7 @@ class Launcher(tk.Frame):
 
         self.control3_label = tk.Label(self, text="Jump Button:")
         self.control3_label.place(x=50, y=300, anchor="w")
-        self.control3 = tk.Label(self, text=pygame.key.name(controls.controls["JUMP"]))
+        self.control3 = tk.Label(self, text=pygame.key.name(saves.controls["JUMP"]))
         self.control3.place(x=160, y=300, anchor="w")
         self.control3_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("JUMP"))
@@ -104,7 +104,7 @@ class Launcher(tk.Frame):
 
         self.control4_label = tk.Label(self, text="Action Button:")
         self.control4_label.place(x=50, y=330, anchor="w")
-        self.control4 = tk.Label(self, text=pygame.key.name(controls.controls["ACTION"]))
+        self.control4 = tk.Label(self, text=pygame.key.name(saves.controls["ACTION"]))
         self.control4.place(x=160, y=330, anchor="w")
         self.control4_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("ACTION"))
@@ -112,13 +112,13 @@ class Launcher(tk.Frame):
 
         self.control5_label = tk.Label(self, text="Crouch Button:")
         self.control5_label.place(x=50, y=360, anchor="w")
-        self.control5 = tk.Label(self, text=pygame.key.name(controls.controls["CROUCH"]))
+        self.control5 = tk.Label(self, text=pygame.key.name(saves.controls["CROUCH"]))
         self.control5.place(x=160, y=360, anchor="w")
         self.control5_button = tk.Button(self, text="Change",
                                          command=lambda: self.set_control("CROUCH"))
         self.control5_button.place(x=230, y=360, anchor="w")
 
-        self.save_controls_button = tk.Button(self, text="Set as default", command=controls.save_controls)
+        self.save_controls_button = tk.Button(self, text="Set as default", command=saves.save_controls)
         self.save_controls_button.place(x=350, y=300, anchor="w")
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
@@ -138,20 +138,20 @@ class Launcher(tk.Frame):
 
     def get_key(self, event, control):
 
-        if event.keycode in controls.trans_dict:
-            code = controls.trans_dict[event.keycode]
+        if event.keycode in saves.trans_dict:
+            code = saves.trans_dict[event.keycode]
         else:
             code = event.keycode
-        controls.controls[control] = code
+        saves.controls[control] = code
         self.update_controls()
         self.controller.unbind("<KeyPress>")
 
     def update_controls(self):
-        self.control1.configure(text=pygame.key.name(controls.controls["WALK_LEFT"]))
-        self.control2.configure(text=pygame.key.name(controls.controls["WALK_RIGHT"]))
-        self.control3.configure(text=pygame.key.name(controls.controls["JUMP"]))
-        self.control4.configure(text=pygame.key.name(controls.controls["ACTION"]))
-        self.control5.configure(text=pygame.key.name(controls.controls["CROUCH"]))
+        self.control1.configure(text=pygame.key.name(saves.controls["WALK_LEFT"]))
+        self.control2.configure(text=pygame.key.name(saves.controls["WALK_RIGHT"]))
+        self.control3.configure(text=pygame.key.name(saves.controls["JUMP"]))
+        self.control4.configure(text=pygame.key.name(saves.controls["ACTION"]))
+        self.control5.configure(text=pygame.key.name(saves.controls["CROUCH"]))
 
 
 class Main:
