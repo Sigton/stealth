@@ -9,6 +9,17 @@ controls = {"WALK_LEFT": K_a,
             "ACTION": K_SPACE,
             "CROUCH": K_LCTRL}
 
+def save_controls():
+    with open("save_data.json", "w") as outfile:
+        json.dump(controls, outfile)
+
+
+def load_controls():
+    with open("save_data.json", 'r') as infile:
+        data = json.load(infile)
+
+    return data
+
 trans_dict = {65: 97,
               66: 98,
               67: 99,
@@ -87,15 +98,3 @@ trans_dict = {65: 97,
               96: 256,
               110: 266,
               220: 60}
-
-
-def save_controls():
-    with open("save_data.json", "w") as outfile:
-        json.dump(controls, outfile)
-
-
-def load_controls():
-    with open("save_data.json", 'r') as infile:
-        data = json.load(infile)
-
-    return data
