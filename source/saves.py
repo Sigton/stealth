@@ -1,6 +1,8 @@
 from pygame.locals import *
 import json
 
+save_data = {}
+
 # The control for each function
 
 controls = {"WALK_LEFT": K_a,
@@ -10,16 +12,16 @@ controls = {"WALK_LEFT": K_a,
             "CROUCH": K_LCTRL}
 
 
-def save_controls():
+def save():
     with open("save_data.json", "w") as outfile:
-        json.dump(controls, outfile)
+        json.dump(save_data, outfile)
 
 
 def load_controls():
     with open("save_data.json", 'r') as infile:
         data = json.load(infile)
 
-    return data
+    return data["controls"]
 
 trans_dict = {65: 97,
               66: 98,
