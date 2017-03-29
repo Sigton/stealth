@@ -4,7 +4,10 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.py" afterPath="$PROJECT_DIR$/source/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +28,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="120" column="112" lean-forward="false" selection-start-line="120" selection-start-column="112" selection-end-line="120" selection-end-column="112" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -47,8 +50,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -59,21 +62,12 @@
       <file leaf-file-name="saves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/saves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="51">
+              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
+                <element signature="e#0#27#0" expanded="true" />
                 <element signature="e#526#2328#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_data.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/save_data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="92" lean-forward="true" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -433,20 +427,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00761" summary="Fixed issue">
-      <created>1490455292716</created>
-      <option name="number" value="00761" />
-      <option name="presentableId" value="LOCAL-00761" />
-      <option name="project" value="LOCAL" />
-      <updated>1490455292716</updated>
-    </task>
-    <task id="LOCAL-00762" summary="Adjusted how stamina works and updated level 6">
-      <created>1490455667365</created>
-      <option name="number" value="00762" />
-      <option name="presentableId" value="LOCAL-00762" />
-      <option name="project" value="LOCAL" />
-      <updated>1490455667365</updated>
-    </task>
     <task id="LOCAL-00763" summary="Updated level 6">
       <created>1490455755946</created>
       <option name="number" value="00763" />
@@ -776,7 +756,21 @@
       <option name="project" value="LOCAL" />
       <updated>1490804608341</updated>
     </task>
-    <option name="localTasksCounter" value="811" />
+    <task id="LOCAL-00811" summary="Passed controls down onto Game">
+      <created>1490804733727</created>
+      <option name="number" value="00811" />
+      <option name="presentableId" value="LOCAL-00811" />
+      <option name="project" value="LOCAL" />
+      <updated>1490804733727</updated>
+    </task>
+    <task id="LOCAL-00812" summary="Added a reset controls button">
+      <created>1490804942753</created>
+      <option name="number" value="00812" />
+      <option name="presentableId" value="LOCAL-00812" />
+      <option name="project" value="LOCAL" />
+      <updated>1490804942753</updated>
+    </task>
+    <option name="localTasksCounter" value="813" />
     <servers />
   </component>
   <component name="TodoView">
@@ -853,8 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added an image to the readme" />
-    <MESSAGE value="Added another screenshot to the readme" />
     <MESSAGE value="Updated level 6" />
     <MESSAGE value="Added more information to the readme" />
     <MESSAGE value="Added a screenshot to readme" />
@@ -878,7 +870,9 @@
     <MESSAGE value="Fixed formatting" />
     <MESSAGE value="Started on allowing to save progress by making save_data allow more than controls" />
     <MESSAGE value="Updated things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated things" />
+    <MESSAGE value="Passed controls down onto Game" />
+    <MESSAGE value="Added a reset controls button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a reset controls button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,6 +1070,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="120" column="112" lean-forward="false" selection-start-line="120" selection-start-column="112" selection-end-line="120" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/save_data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1086,9 +1090,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/saves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
+            <element signature="e#0#27#0" expanded="true" />
             <element signature="e#526#2328#0" expanded="false" />
           </folding>
         </state>
@@ -1102,20 +1107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
+        <state relative-caret-position="374">
+          <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
