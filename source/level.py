@@ -233,7 +233,8 @@ class Level:
 
     def reset_objects(self):
 
-        [self.platform_list.add(door) for door in self.doors if door not in self.platform_list]
+        [self.platform_list.add(door) for door in self.doors
+         if door not in self.platform_list and isinstance(door, entities.Door)]
         [keypad.reset() for keypad in self.keypads if isinstance(keypad, entities.Keypad)]
 
     def create_platform(self, tile, x, y, layer):

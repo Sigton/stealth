@@ -304,9 +304,9 @@ class Laser(pygame.sprite.Sprite):
 
     def draw(self, display):
 
-        pygame.draw.aaline(display, constants.RED,
-                           (self.start_point[0], self.start_point[1]),
-                           (self.end_point[0], self.end_point[1]), 1)
+        pygame.draw.line(display, constants.RED,
+                         (self.start_point[0], self.start_point[1]),
+                         (self.end_point[0], self.end_point[1]), 1)
 
     def test_collision(self):
 
