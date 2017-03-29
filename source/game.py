@@ -26,6 +26,7 @@ class Game:
         self.clock = self.parent.clock
 
         self.fast = self.parent.parent.fast
+        self.controls = self.parent.parent.controls
 
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()
@@ -173,35 +174,35 @@ class Game:
                         game_exit = True
 
                     # Player controls
-                    if event.key == saves.controls["WALK_LEFT"]:
+                    if event.key == self.controls["WALK_LEFT"]:
                         run = -1
-                    if event.key == saves.controls["WALK_RIGHT"]:
+                    if event.key == self.controls["WALK_RIGHT"]:
                         run = 1
 
-                    if event.key == saves.controls["JUMP"]:
+                    if event.key == self.controls["JUMP"]:
                         jump = True
 
                     # Use keypads
-                    if event.key == saves.controls["ACTION"]:
+                    if event.key == self.controls["ACTION"]:
                         player.use_keypad()
 
                     # Crouching
-                    if event.key == saves.controls["CROUCH"]:
+                    if event.key == self.controls["CROUCH"]:
                         crouch = True
 
                 elif event.type == KEYUP:
 
-                    if event.key == saves.controls["WALK_LEFT"] and not run == 1:
+                    if event.key == self.controls["WALK_LEFT"] and not run == 1:
                         run = 0
 
-                    if event.key == saves.controls["WALK_RIGHT"] and not run == -1:
+                    if event.key == self.controls["WALK_RIGHT"] and not run == -1:
                         run = 0
 
-                    if event.key == saves.controls["JUMP"]:
+                    if event.key == self.controls["JUMP"]:
                         jump = False
                         player.climbing = False
 
-                    if event.key == saves.controls["CROUCH"]:
+                    if event.key == self.controls["CROUCH"]:
                         crouch = False
 
             if pause > 0:

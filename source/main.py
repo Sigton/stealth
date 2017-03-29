@@ -127,7 +127,7 @@ class Launcher(tk.Frame):
 
     def launch(self):
 
-        self.game = Main(bool(self.fast.get()), bool(self.small.get()))
+        self.game = Main(bool(self.fast.get()), bool(self.small.get()), self.controls)
         self.controller.destroy()
         self.game.run()
 
@@ -160,7 +160,7 @@ class Launcher(tk.Frame):
 
 class Main:
 
-    def __init__(self, fast_mode, small_mode):
+    def __init__(self, fast_mode, small_mode, controls):
         # Main Program
 
         if not pygame.font.get_init():
@@ -184,6 +184,7 @@ class Main:
 
         self.fast = fast_mode
         self.small = small_mode
+        self.controls = controls
 
     def run(self):
 
