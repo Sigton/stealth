@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 
 import constants
-import controls
+import saves
 import player as p
 import level
 import guards
@@ -173,35 +173,35 @@ class Game:
                         game_exit = True
 
                     # Player controls
-                    if event.key == controls.controls["WALK_LEFT"]:
+                    if event.key == saves.controls["WALK_LEFT"]:
                         run = -1
-                    if event.key == controls.controls["WALK_RIGHT"]:
+                    if event.key == saves.controls["WALK_RIGHT"]:
                         run = 1
 
-                    if event.key == controls.controls["JUMP"]:
+                    if event.key == saves.controls["JUMP"]:
                         jump = True
 
                     # Use keypads
-                    if event.key == controls.controls["ACTION"]:
+                    if event.key == saves.controls["ACTION"]:
                         player.use_keypad()
 
                     # Crouching
-                    if event.key == controls.controls["CROUCH"]:
+                    if event.key == saves.controls["CROUCH"]:
                         crouch = True
 
                 elif event.type == KEYUP:
 
-                    if event.key == controls.controls["WALK_LEFT"] and not run == 1:
+                    if event.key == saves.controls["WALK_LEFT"] and not run == 1:
                         run = 0
 
-                    if event.key == controls.controls["WALK_RIGHT"] and not run == -1:
+                    if event.key == saves.controls["WALK_RIGHT"] and not run == -1:
                         run = 0
 
-                    if event.key == controls.controls["JUMP"]:
+                    if event.key == saves.controls["JUMP"]:
                         jump = False
                         player.climbing = False
 
-                    if event.key == controls.controls["CROUCH"]:
+                    if event.key == saves.controls["CROUCH"]:
                         crouch = False
 
             if pause > 0:
