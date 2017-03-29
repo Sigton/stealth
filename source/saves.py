@@ -9,6 +9,7 @@ controls = {"WALK_LEFT": K_a,
             "ACTION": K_SPACE,
             "CROUCH": K_LCTRL}
 
+
 def save_controls():
     with open("save_data.json", "w") as outfile:
         json.dump(controls, outfile)
