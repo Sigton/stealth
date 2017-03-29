@@ -118,8 +118,10 @@ class Launcher(tk.Frame):
                                          command=lambda: self.set_control("CROUCH"))
         self.control5_button.place(x=230, y=360, anchor="w")
 
-        self.save_controls_button = tk.Button(self, text="Set as default", command=self.save_controls)
-        self.save_controls_button.place(x=350, y=300, anchor="w")
+        self.save_controls_button = tk.Button(self, text="Set as default", command=self.save_controls, width="11")
+        self.save_controls_button.place(x=350, y=285, anchor="w")
+        self.reset_controls_button = tk.Button(self, text="Reset controls", command=self.reset_controls, width="11")
+        self.reset_controls_button.place(x=350, y=315, anchor="w")
 
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
                                        bg="#bbb", activebackground="#ccc", command=self.launch)
@@ -156,6 +158,11 @@ class Launcher(tk.Frame):
     def save_controls(self):
 
         saves.save_data["controls"] = self.controls
+
+    def reset_controls(self):
+
+        self.controls = saves.default_controls
+        self.update_controls()
 
 
 class Main:
