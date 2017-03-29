@@ -142,7 +142,7 @@ class Launcher(tk.Frame):
             code = saves.trans_dict[event.keycode]
         else:
             code = event.keycode
-        saves.controls[control] = code
+        self.controls[control] = code
         self.update_controls()
         self.controller.unbind("<KeyPress>")
 
