@@ -15,10 +15,7 @@ def load():
 
 
 def load_controls():
-    with open("save_data.json", 'r') as infile:
-        data = json.load(infile)
-
-    return data["controls"]
+    return save_data["controls"]
 
 save_data = load()
 
