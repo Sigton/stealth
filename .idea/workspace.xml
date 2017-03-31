@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/resources/menubuttons.png" afterPath="$PROJECT_DIR$/source/resources/menubuttons.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/menu.py" afterPath="$PROJECT_DIR$/source/menu.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +36,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+            <state relative-caret-position="266">
+              <caret line="78" column="37" lean-forward="false" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -430,13 +423,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00771" summary="Added decorations to level 6">
-      <created>1490461209260</created>
-      <option name="number" value="00771" />
-      <option name="presentableId" value="LOCAL-00771" />
-      <option name="project" value="LOCAL" />
-      <updated>1490461209260</updated>
-    </task>
     <task id="LOCAL-00772" summary="Added decorations to level 6">
       <created>1490472936840</created>
       <option name="number" value="00772" />
@@ -773,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490973492678</updated>
     </task>
-    <option name="localTasksCounter" value="821" />
+    <task id="LOCAL-00821" summary="Added new button">
+      <created>1490974442162</created>
+      <option name="number" value="00821" />
+      <option name="presentableId" value="LOCAL-00821" />
+      <option name="project" value="LOCAL" />
+      <updated>1490974442162</updated>
+    </task>
+    <option name="localTasksCounter" value="822" />
     <servers />
   </component>
   <component name="TodoView">
@@ -850,7 +843,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a reset function for keypads" />
     <MESSAGE value="Compacted code" />
     <MESSAGE value="Objects reset on player death/capture" />
     <MESSAGE value="Progress bars are added back into the entities group" />
@@ -875,7 +867,8 @@
     <MESSAGE value="Updated main.py" />
     <MESSAGE value="Now picks up from where you left off" />
     <MESSAGE value="Moved buttons down" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved buttons down" />
+    <MESSAGE value="Added new button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,8 +1107,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+        <state relative-caret-position="266">
+          <caret line="78" column="37" lean-forward="false" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding />
         </state>
       </provider>
