@@ -90,7 +90,7 @@ class Game:
         self.level_list.append(level.Level06(self.player, True, self.fast))
 
         # Set the current level
-        self.current_level_no = saves.load("current_level")
+        self.current_level_no = 0
         self.current_level = self.level_list[self.current_level_no]
 
         self.player.level = self.current_level
@@ -113,8 +113,17 @@ class Game:
         self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
         self.dissolve_sound.set_volume(0.2)
 
-    def run(self):
+    def run(self, from_start=False):
         # Game loop
+
+        if not from_start:
+            self.current_level_no = saves.load("current_level")
+        else:
+            self.current_level_no = 0
+        saves.save_data["current_level"] = self.current_level_no
+        saves.save()
+
+        self.current_level = self.level_list[self.current_level_no]
 
         # A performance enhancement
         player = self.player
