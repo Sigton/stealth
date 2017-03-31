@@ -4,13 +4,6 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level3.json" afterPath="$PROJECT_DIR$/source/level_data/level3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level4.json" afterPath="$PROJECT_DIR$/source/level_data/level4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level5.json" afterPath="$PROJECT_DIR$/source/level_data/level5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +36,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="765" column="67" lean-forward="false" selection-start-line="765" selection-start-column="67" selection-end-line="765" selection-end-column="67" />
+            <state relative-caret-position="331">
+              <caret line="768" column="39" lean-forward="true" selection-start-line="768" selection-start-column="39" selection-end-line="768" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -415,13 +408,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00779" summary="Don't actually need the build directory anymore...">
-      <created>1490480651671</created>
-      <option name="number" value="00779" />
-      <option name="presentableId" value="LOCAL-00779" />
-      <option name="project" value="LOCAL" />
-      <updated>1490480651671</updated>
-    </task>
     <task id="LOCAL-00781" summary="Fixed bug that appears if you're caught when crouching">
       <created>1490514996729</created>
       <option name="number" value="00781" />
@@ -758,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490997339089</updated>
     </task>
-    <option name="localTasksCounter" value="829" />
+    <task id="LOCAL-00829" summary="Added more level text">
+      <created>1490997978395</created>
+      <option name="number" value="00829" />
+      <option name="presentableId" value="LOCAL-00829" />
+      <option name="project" value="LOCAL" />
+      <updated>1490997978395</updated>
+    </task>
+    <option name="localTasksCounter" value="830" />
     <servers />
   </component>
   <component name="TodoView">
@@ -835,7 +828,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made in game music louder" />
     <MESSAGE value="Renamed controls.json to save_data.json" />
     <MESSAGE value="Renamed controls.py to saves.py" />
     <MESSAGE value="Missed a file" />
@@ -860,7 +852,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added decorations to level 6" />
     <MESSAGE value="Added level text to level 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added level text to level 6" />
+    <MESSAGE value="Added more level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="765" column="67" lean-forward="false" selection-start-line="765" selection-start-column="67" selection-end-line="765" selection-end-column="67" />
+        <state relative-caret-position="331">
+          <caret line="768" column="39" lean-forward="true" selection-start-line="768" selection-start-column="39" selection-end-line="768" selection-end-column="39" />
           <folding />
         </state>
       </provider>
