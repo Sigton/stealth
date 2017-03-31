@@ -77,6 +77,8 @@ class Menu:
                                   320, 426, lambda: self.game.run())
         self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
                                   282, 502, "quit")
+        self.continue_button = Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)),
+                                      358, 350, lambda: self.game.run())
 
         self.title_big = text.Text("Stealth", 200, 165, 100)
         self.title_small = text.Text("Stealth", 150, 124, 80)
@@ -85,6 +87,7 @@ class Menu:
         self.main_menu = pygame.sprite.Group()
         self.main_menu.add(self.play_button)
         self.main_menu.add(self.quit_button)
+        self.main_menu.add(self.continue_button)
         self.main_menu.add(self.title_big)
 
         # The screen that is currently displayed
