@@ -90,7 +90,7 @@ class Game:
         self.level_list.append(level.Level06(self.player, True, self.fast))
 
         # Set the current level
-        self.current_level_no = 0
+        self.current_level_no = saves.load("current_level")
         self.current_level = self.level_list[self.current_level_no]
 
         self.player.level = self.current_level
