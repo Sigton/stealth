@@ -763,6 +763,8 @@ class Level06(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Have fun with this bit...", 425, 600)
         self.level_text.add(level_text)
+        level_text = text.LevelText("Better start running!", 100, 35)
+        self.level_text.add(level_text)
 
         # Set the start position
         self.start_x = 0
