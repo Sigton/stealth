@@ -52,7 +52,7 @@ class Launcher(tk.Frame):
 
         self.game = None
 
-        self.controls = saves.load_controls()
+        self.controls = saves.load("controls")
 
         self.title = tk.Label(self, text="Stealth", font=("Verdana", 20))
         self.title.place(x=240, y=20, anchor="center")
