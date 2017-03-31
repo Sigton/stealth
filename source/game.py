@@ -124,6 +124,8 @@ class Game:
         saves.save()
 
         self.current_level = self.level_list[self.current_level_no]
+        self.player.level = self.current_level
+        self.current_level.player = self.player
 
         # A performance enhancement
         player = self.player
