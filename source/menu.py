@@ -174,6 +174,7 @@ class Menu:
 
             self.play_button.rect.topleft = (180, 346)
             self.quit_button.rect.topleft = (142, 422)
+            self.continue_button.rect.topleft = (218, 270)
 
         else:
             self.lagging = False
@@ -182,5 +183,6 @@ class Menu:
             self.main_menu.remove(self.title_small)
             self.main_menu.add(self.title_big)
 
-            self.play_button.rect.topleft = (320, 426)
-            self.quit_button.rect.topleft = (282, 502)
+            self.play_button.rect.topleft = (300, 426)
+            self.quit_button.rect.topleft = (262, 502)
+            self.continue_button.rect.topleft = (338, 350)
