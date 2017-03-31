@@ -74,9 +74,9 @@ class Menu:
 
         # Create the content of the menu
         self.play_button = Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
-                                  320, 350, lambda: self.game.run())
+                                  320, 426, lambda: self.game.run())
         self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
-                                  282, 426, "quit")
+                                  282, 502, "quit")
 
         self.title_big = text.Text("Stealth", 200, 165, 100)
         self.title_small = text.Text("Stealth", 150, 124, 80)
@@ -169,8 +169,8 @@ class Menu:
             self.main_menu.remove(self.title_big)
             self.main_menu.add(self.title_small)
 
-            self.play_button.rect.topleft = (180, 270)
-            self.quit_button.rect.topleft = (142, 346)
+            self.play_button.rect.topleft = (180, 346)
+            self.quit_button.rect.topleft = (142, 422)
 
         else:
             self.lagging = False
@@ -179,5 +179,5 @@ class Menu:
             self.main_menu.remove(self.title_small)
             self.main_menu.add(self.title_big)
 
-            self.play_button.rect.topleft = (320, 350)
-            self.quit_button.rect.topleft = (282, 426)
+            self.play_button.rect.topleft = (320, 426)
+            self.quit_button.rect.topleft = (282, 502)
