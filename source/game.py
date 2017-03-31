@@ -224,9 +224,13 @@ class Game:
                 self.current_level_no += 1
                 if self.current_level_no >= len(self.level_list):
                     self.current_level_no = 0
+                    saves.save_data["current_level"] = 0
+                    saves.save()
                     break
                 else:
                     self.current_level = self.level_list[self.current_level_no]
+                saves.save_data["current_level"] = self.current_level_no
+                saves.save()
 
                 player.level = self.current_level
                 self.current_level.player = player
