@@ -7,15 +7,14 @@ def save():
         json.dump(save_data, outfile)
 
 
-def load():
+def load(x=None):
     with open("save_data.json", "r") as infile:
         data = json.load(infile)
 
-    return data
-
-
-def load_controls():
-    return save_data["controls"]
+    if x is None:
+        return data
+    else:
+        return data[x]
 
 save_data = load()
 
