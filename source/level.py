@@ -792,6 +792,9 @@ class Level07(Level):
 
         self.layer_range = 1
 
+        self.door_linkup = {0: 0,
+                            1: 0}
+
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level7")
 
         if write_data:
@@ -800,6 +803,8 @@ class Level07(Level):
         level_data = level.load_data()
 
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         self.start_x = 0
         self.start_y = 719
