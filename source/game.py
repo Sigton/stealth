@@ -308,7 +308,8 @@ class Game:
                     player.jump()
 
             # Update entities
-            self.active_sprite_list.update()
+            if not progress:
+                self.active_sprite_list.update()
             if not pause:
                 self.current_level.update()
             else:
