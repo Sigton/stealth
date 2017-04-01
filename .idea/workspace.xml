@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level.py" afterPath="$PROJECT_DIR$/source/level.py" />
-    </list>
+    <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="373" column="49" lean-forward="true" selection-start-line="373" selection-start-column="49" selection-end-line="373" selection-end-column="49" />
+            <state relative-caret-position="572">
+              <caret line="95" column="75" lean-forward="true" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -140,8 +137,8 @@
         <option value="$PROJECT_DIR$/source/main.py" />
         <option value="$PROJECT_DIR$/source/menu.py" />
         <option value="$PROJECT_DIR$/source/save_data.json" />
-        <option value="$PROJECT_DIR$/source/game.py" />
         <option value="$PROJECT_DIR$/source/level.py" />
+        <option value="$PROJECT_DIR$/source/game.py" />
       </list>
     </option>
   </component>
@@ -397,13 +394,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00783" summary="Removed a bit of level text I didn't like too much">
-      <created>1490515461232</created>
-      <option name="number" value="00783" />
-      <option name="presentableId" value="LOCAL-00783" />
-      <option name="project" value="LOCAL" />
-      <updated>1490515461232</updated>
     </task>
     <task id="LOCAL-00784" summary="Added an image to the readme">
       <created>1490515772495</created>
@@ -741,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491039170727</updated>
     </task>
-    <option name="localTasksCounter" value="832" />
+    <task id="LOCAL-00832" summary="Implemented level 7">
+      <created>1491041524535</created>
+      <option name="number" value="00832" />
+      <option name="presentableId" value="LOCAL-00832" />
+      <option name="project" value="LOCAL" />
+      <updated>1491041524535</updated>
+    </task>
+    <option name="localTasksCounter" value="833" />
     <servers />
   </component>
   <component name="TodoView">
@@ -818,7 +815,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Missed a file" />
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Reordered saves.py to make it more readable" />
     <MESSAGE value="Fixed formatting" />
@@ -843,7 +839,8 @@
     <MESSAGE value="Added more level text" />
     <MESSAGE value="Finished level text on level 6" />
     <MESSAGE value="Smoothed out the getting caught transition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smoothed out the getting caught transition" />
+    <MESSAGE value="Implemented level 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented level 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1073,8 +1070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="373" column="49" lean-forward="true" selection-start-line="373" selection-start-column="49" selection-end-line="373" selection-end-column="49" />
+        <state relative-caret-position="572">
+          <caret line="95" column="75" lean-forward="true" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
