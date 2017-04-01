@@ -154,6 +154,7 @@ class Game:
         reset = False
         progress = False
         do_reset = False
+        show_caught = False
 
         has_guard = False
         for guard in self.current_level.guards.sprites():
@@ -262,7 +263,7 @@ class Game:
                 player.health = 0
                 self.dissolve_sound.play()
 
-            if pause == 0 and reset:
+            if pause < 50 and reset:
                 do_reset = True
 
             elif not pause:
@@ -335,6 +336,12 @@ class Game:
                     player.rect.y = 288
                 self.current_level.shift_world(0, diff)
 
+            if reset and pause > 0:
+                show_caught = True
+
+            if show_caught and pause == 0:
+                show_caught = False
+
             if do_reset:
                 self.current_level.reset_objects()
                 self.current_level.reset_world()
@@ -360,11 +367,11 @@ class Game:
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
             self.hud.draw(self.display)
-            if reset and 67 < pause < 100:
+            if show_caught and 67 < pause < 100:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
-            elif reset and 0 < pause < 17:
+            elif show_caught and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), pause*16)
-            elif reset and 17 < pause < 67:
+            elif show_caught and 16 < pause < 68:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), 256)
 
             # Limit to 60 fps
