@@ -1,20 +1,20 @@
 # Stealth - Platformer
 
+Due completion - Monday 17th April, 2017
+After this date will be two weeks of testing, before this will be submitted as an entry to the BAFTA Young Games Designers Competition on the 1st of May.
+
 ### Description
 
 Stealth is a platforming adventure through an enemy occupied warehouse, and your goal is to destroy the facility.
 By navigating the building, sneaking past the guards, avoiding the dangers, you'll make it to the heart of the warehouse where you need to plant bombs to destroy the place.
 These bombs have a timer, however, so you need to make sure you get out again before the time runs out!
 
-### Performance Issues?
+### Known bugs:
 
-If you are experiencing performance issues, there a few steps you can take.
-In the launcher, you can select to run "Fast mode". This removes all decorations and unnecessary items from the game,
-making it run a lot better.
+- Collision detection between the player and torches is inaccurate when crouching
 
-If that still isn't enough, then you can select to run on "Small Screen" mode, which will again improve performance.
 
-![Performance Improvements](http://i.cubeupload.com/Z1lQoP.png)
+If you've found a bug, please make an issue about it.
 
 ### Screenshots:
 

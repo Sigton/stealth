@@ -114,6 +114,7 @@ class RechargingKeypad(Keypad):
 class Bomb(pygame.sprite.Sprite):
 
     progress_bar = None
+    level = None
 
     def __init__(self, x, y):
 
@@ -136,19 +137,39 @@ class Bomb(pygame.sprite.Sprite):
 
         self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
         self.beep_sound.set_volume(0.25)
-        self.played_sound = True
+        self.played_sound = False
 
         # How much is required for the bomb to be activated
         self.progress = 0
 
+        self.placed = False
+        self.has_placed = False
+
     def update(self):
 
-        # Update the image if the bomb is activated
-        if self.progress >= 10:
-            self.image = self.image_on
-            if not self.played_sound:
-                pygame.mixer.Sound.play(self.beep_sound)
-                self.played_sound = True
+        if not self.has_placed:
+            if self.placed:
+                self.level.non_draw.remove(self)
+                self.level.bombs.add(self)
+                self.level.entities.add(self.progress_bar)
+                self.has_placed = True
+        else:
+            # Update the image if the bomb is activated
+            if self.progress >= 10:
+                if not self.played_sound:
+                    self.image = self.image_on
+                    pygame.mixer.Sound.play(self.beep_sound)
+                    self.played_sound = True
+
+    def reset(self):
+
+        self.level.bombs.remove(self)
+        self.level.non_draw.add(self)
+        self.level.entities.remove(self.progress_bar)
+        self.progress = 0
+        self.played_sound = False
+        self.placed = False
+        self.image = self.image_off
 
 
 class Crosshair(pygame.sprite.Sprite):
@@ -200,7 +221,6 @@ class ExclamationMark(pygame.sprite.Sprite):
 
         self.start_x = self.rect.x
         self.start_y = self.rect.y
-
         self.timer = 120
 
     def update(self):

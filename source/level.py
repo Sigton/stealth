@@ -3,17 +3,19 @@ import pygame
 import platforms
 import guards
 import entities
-import healthbar
+import progressbar
 import text
 import constants
 import terrain
+import saves
 import os
 
 
 class Level:
 
     # Sprites associated with the level
-
+    # Each of these gets assigned a Group instance
+    # To hold a different type of sprite
     platform_list = None
     cosmetic_list = None
     obstacle_list = None
@@ -27,10 +29,13 @@ class Level:
     lasers = None
     non_draw = None
 
+    # Reference to the player
     player = None
 
     # Background image
     background = None
+    background_x = 0
+    background_y = 0
 
     # How far the level has scrolled
     world_shift_x = 0
@@ -38,57 +43,94 @@ class Level:
     at_edge_x = False
     at_edge_y = False
 
+    # The start point of the level
     start_x = 0
     start_y = 0
+
+    # If the level is running in fast mode
+    fast = False
 
     def __init__(self, player):
 
         # Constructor
 
+        # Instantiate all of the groups
+
+        # Platforms are anything the player collides with
         self.platform_list = pygame.sprite.Group()
+        # Cosmetics are ignored by the player
         self.cosmetic_list = pygame.sprite.Group()
+        # Obstacles kill the player
         self.obstacle_list = pygame.sprite.Group()
+        # Keypads operate other platforms
         self.keypads = pygame.sprite.Group()
+        # Bombs are bombs
         self.bombs = pygame.sprite.Group()
+        # Doors are anything that can be controlled by a keypad
+        # Also includes cameras
         self.doors = pygame.sprite.Group()
+        # Guards are simply guards
         self.guards = pygame.sprite.Group()
+        # Entities are any miscellaneous
         self.entities = pygame.sprite.Group()
+        # All the levels level text
         self.level_text = pygame.sprite.Group()
+        # Anything the player can climb
         self.ladders = pygame.sprite.Group()
+        # Lasers from the cameras
         self.lasers = pygame.sprite.Group()
+        # Anything that requires to be updated but not drawn to the display
         self.non_draw = pygame.sprite.Group()
 
+        # Set reference to the player
         self.player = player
 
+        # Vars used to control the setup of keypads and doors
         self.keypad_array = []
         self.door_no = 0
 
+        # How many layers the level has
         self.layer_range = 0
+
+        # Load the controls
+        self.controls = saves.load("controls")
+
+        # Load the background
+        self.background = pygame.image.load("resources/background.png").convert()
+        self.fast_background = pygame.image.load("resources/background_fast.png").convert()
 
     def update(self):
 
-        # Update everything in the level
-        self.platform_list.update()
-        self.cosmetic_list.update()
+        # Update everything in the level that needs updated
+        # Some groups such as cosmetics don't require updates
         self.obstacle_list.update()
         self.ladders.update()
         self.keypads.update()
+        self.doors.update()
         self.bombs.update()
         self.guards.update()
         self.entities.update()
-        self.level_text.update()
         self.lasers.update()
         self.non_draw.update()
 
     def draw(self, display):
 
         # Draw everything on this level
+
+        # Start by drawing the background
         display.fill(constants.BLACK)
-        display.blit(self.background, (0, 0))
+        if self.fast:
+            display.blit(self.fast_background, (0, 0))
+        else:
+            display.blit(self.background, ((self.world_shift_x//4), (self.world_shift_y//-4)))
 
         # Draw the sprite lists
+
+        # Loop the number of times there are layers
         for layer in range(self.layer_range):
 
+            # Get all the tiles that are in that layer and draw them
+            # Repeat this for most of the groups
             cosmetics = [cosmetic for cosmetic in self.cosmetic_list.sprites() if cosmetic.layer == layer+1]
             for cosmetic in cosmetics:
                 cosmetic.draw(display)
@@ -101,20 +143,22 @@ class Level:
             for ladder in ladders:
                 ladder.draw(display)
 
+            # Draw lasers on the top layer
             if layer == self.layer_range-1:
                 # Draw the sights from cameras
                 for laser in self.lasers.sprites():
                     laser.draw(display)
 
+            # Platforms need to be drawn after the lasers
             platforms = [platform for platform in self.platform_list.sprites() if platform.layer == layer + 1]
             for platform in platforms:
                 platform.draw(display)
 
+        # Draw other things that layers don't apply to
         self.level_text.draw(display)
         self.keypads.draw(display)
         self.bombs.draw(display)
         self.guards.draw(display)
-
         self.entities.draw(display)
 
     def shift_world(self, shift_x, shift_y):
@@ -123,15 +167,19 @@ class Level:
         self.world_shift_x += shift_x
 
         self.at_edge_x = False
-        # Set boundaries
+
+        # If the level has been scrolled to the edge, then set the at_edge var to true
+        # This stops the level from scrolling any further
         if self.world_shift_x >= 0:
             self.at_edge_x = True
             self.world_shift_x = 0
 
+        # Do the same again for the other diretion
         elif self.world_shift_x <= -(960 + (960 - constants.SCREEN_WIDTH)):
             self.at_edge_x = True
             self.world_shift_x = -(960 + (960 - constants.SCREEN_WIDTH))
 
+        # If the level can scroll,
         if not self.at_edge_x:
             # Move everything in the level
             for platform in self.platform_list:
@@ -152,9 +200,16 @@ class Level:
                 entity.rect.x += shift_x
             for text in self.level_text:
                 text.rect.x += shift_x
+            for sprite in self.non_draw:
+                # Lasers position themselves relative to their parents,
+                # so they do not need scrolled
+                if not isinstance(sprite, entities.Laser):
+                    sprite.rect.x += shift_x
 
+        # Repeat the process for the y axis
         self.world_shift_y += shift_y
 
+        # Set the edges of the level
         self.at_edge_y = False
         if self.world_shift_y <= 0:
             self.at_edge_y = True
@@ -184,6 +239,9 @@ class Level:
                 entity.rect.y -= shift_y
             for text in self.level_text:
                 text.rect.y -= shift_y
+            for sprite in self.non_draw:
+                if not isinstance(sprite, entities.Laser):
+                    sprite.rect.y -= shift_y
 
     def reset_world(self):
 
@@ -224,20 +282,40 @@ class Level:
             text.rect.x = text.start_x
             text.rect.y = text.start_y
 
+        for sprite in self.non_draw:
+            # Again lasers move themselves
+            # so don't need to be adjusted jere
+            if not isinstance(sprite, entities.Laser):
+                sprite.rect.x = sprite.start_x
+                sprite.rect.y = sprite.start_y
+
         self.world_shift_x = 0
         self.world_shift_y = 0
 
     def set_scrolling(self):
 
+        # Scroll the level to the start position
         self.shift_world(self.start_x, self.start_y)
 
     def reset_objects(self):
 
+        # Reset anything done to any objects in the level
+
+        # If any doors have been opened,
+        # then close them again
         [self.platform_list.add(door) for door in self.doors
          if door not in self.platform_list and isinstance(door, entities.Door)]
+
+        # Reset any progress on keypads
         [keypad.reset() for keypad in self.keypads if isinstance(keypad, entities.Keypad)]
 
+        # Reset any bombs
+        [bomb.reset() for bomb in self.bombs.sprites()]
+        [bomb.reset() for bomb in self.non_draw.sprites() if isinstance(bomb, entities.Bomb)]
+
     def create_platform(self, tile, x, y, layer):
+        # Create a new platform
+        # then add it to the list of platforms
         platform = platforms.Platform(tile, x, y, layer)
         self.platform_list.add(platform)
 
@@ -256,7 +334,7 @@ class Level:
     def create_keypad(self, x, y):
         new_keypad = entities.Keypad(x, y)
 
-        new_keypad.progress_bar = healthbar.ProgressBar()
+        new_keypad.progress_bar = progressbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
         new_keypad.progress_bar.level = self
         new_keypad.progress_bar.rect.x = new_keypad.rect.centerx
@@ -271,7 +349,7 @@ class Level:
     def create_recharging_keypad(self, x, y):
         new_keypad = entities.RechargingKeypad(x, y)
 
-        new_keypad.progress_bar = healthbar.ProgressBar()
+        new_keypad.progress_bar = progressbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
         new_keypad.progress_bar.level = self
         new_keypad.progress_bar.rect.x = new_keypad.rect.centerx
@@ -286,12 +364,12 @@ class Level:
     def create_bomb(self, x, y):
         new_bomb = entities.Bomb(x, y)
 
-        new_bomb.progress_bar = healthbar.ProgressBar()
+        new_bomb.progress_bar = progressbar.ProgressBar()
         new_bomb.progress_bar.parent = new_bomb
+        new_bomb.level = self
         new_bomb.progress_bar.level = self
-        self.entities.add(new_bomb.progress_bar)
 
-        self.bombs.add(new_bomb)
+        self.non_draw.add(new_bomb)
 
     def create_door(self, tile, x, y, layer):
         new_door = entities.Door(tile, x, y, layer)
@@ -353,28 +431,28 @@ class Level:
 
             if tile_data['type'] == "Door":
                 self.door_no += 1
-                if 35 < tile_data['tile'] < 38:
+                if 37 < tile_data['tile'] < 40:
                     self.create_camera(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24, tile_data['tile']-36)
+                                       position[0]*24, position[1]*24, tile_data['tile']-38)
                 else:
                     self.create_door(platforms.platforms[tile_data['tile']-1],
                                      position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 40:
+                if tile_data['tile'] == 42:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 38:
+                elif tile_data['tile'] == 40:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 41:
+                elif tile_data['tile'] == 43:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 42:
+                elif tile_data['tile'] == 44:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 44:
+                elif tile_data['tile'] == 46:
                     self.create_recharging_keypad((position[0]*24)+6, (position[1]*24)+5)
 
             elif tile_data['type'] == "Solid":
@@ -395,8 +473,12 @@ class Level:
 
             elif tile_data['type'] == "Obstacle":
                 if tile_data['tile'] == 23:
-                    self.create_anim_obs(platforms.platforms[tile_data['tile']-1],
-                                         position[0]*24, position[1]*24, layer)
+                    if self.fast:
+                        self.create_obstacle(platforms.platforms[tile_data['tile']-1][0],
+                                             position[0]*24, position[1]*24, layer)
+                    else:
+                        self.create_anim_obs(platforms.platforms[tile_data['tile'] - 1],
+                                             position[0] * 24, position[1] * 24, layer)
                 else:
                     self.create_obstacle(platforms.platforms[tile_data['tile']-1],
                                          position[0]*24, position[1]*24, layer)
@@ -412,14 +494,14 @@ class Level01(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png").convert()
-
         save_file = os.path.join("level_data", "level1.json")
         tile_file = os.path.join("level_data", "layouts", "level1")
         type_file = os.path.join("level_data", "tile_types", "level1")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
@@ -432,9 +514,14 @@ class Level01(Level):
         self.render(level_data)
 
         # Add the level text
-        level_text = text.LevelText("Left/right arrows or A/D to walk", 48, 960)
+        level_text = text.LevelText("Use {} and {} to walk left/right".format(
+            pygame.key.name(self.controls["WALK_LEFT"]),
+            pygame.key.name(self.controls["WALK_RIGHT"])
+        ), 36, 960)
         self.level_text.add(level_text)
-        level_text = text.LevelText("Up arrow or W to jump", 48, 990)
+        level_text = text.LevelText("Use {} to jump!".format(
+            pygame.key.name(self.controls["JUMP"])
+        ), 36, 990)
         self.level_text.add(level_text)
         level_text = text.LevelText("Don't fall!", 615, 600)
         self.level_text.add(level_text)
@@ -459,14 +546,14 @@ class Level02(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png").convert()
-
         save_file = os.path.join("level_data", "level2.json")
         tile_file = os.path.join("level_data", "layouts", "level2")
         type_file = os.path.join("level_data", "tile_types", "level2")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         self.door_linkup = {0: 1,
                             1: 1,
@@ -501,7 +588,9 @@ class Level02(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Almost there...", 100, 435)
         self.level_text.add(level_text)
-        level_text = text.LevelText("Use space bar to hack the keypad.", 360, 50)
+        level_text = text.LevelText("Use {} to hack the keypad.".format(
+            pygame.key.name(self.controls["ACTION"])
+        ), 360, 50)
         self.level_text.add(level_text)
         level_text = text.LevelText("Once the keypad is hacked,", 360, 75)
         self.level_text.add(level_text)
@@ -532,14 +621,14 @@ class Level03(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png").convert()
-
         save_file = os.path.join("level_data", "level3.json")
         tile_file = os.path.join("level_data", "layouts", "level3")
         type_file = os.path.join("level_data", "tile_types", "level3")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         self.door_linkup = {0: 0,
                             1: 0}
@@ -575,7 +664,9 @@ class Level03(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("These are tricky jumps!", 1120, 1355)
         self.level_text.add(level_text)
-        level_text = text.LevelText("Press your crouch key", 1635, 1060)
+        level_text = text.LevelText("Press {}".format(
+            pygame.key.name(self.controls["CROUCH"])
+        ), 1635, 1060)
         self.level_text.add(level_text)
         level_text = text.LevelText("to slide through", 1635, 1085)
         self.level_text.add(level_text)
@@ -610,14 +701,14 @@ class Level04(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png").convert()
-
         self.save_file = os.path.join("level_data", "level4.json")
         self.tile_file = os.path.join("level_data", "layouts", "level4")
         self.type_file = os.path.join("level_data", "tile_types", "level4")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         self.door_linkup = {0: 0,
                             1: 0,
@@ -670,14 +761,14 @@ class Level05(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png").convert()
-
         self.save_file = os.path.join("level_data", "level5.json")
         self.tile_file = os.path.join("level_data", "layouts", "level5")
         self.type_file = os.path.join("level_data", "tile_types", "level5")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         self.door_linkup = {0: 0,
                             1: 0,
@@ -729,14 +820,14 @@ class Level06(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png")
-
         self.save_file = os.path.join("level_data", "level6.json")
         self.tile_file = os.path.join("level_data", "layouts", "level6")
         self.type_file = os.path.join("level_data", "tile_types", "level6")
 
         # How many layers the level has
         self.layer_range = 2
+
+        self.fast = fast
 
         self.door_linkup = {0: 1,
                             1: 0}
@@ -784,13 +875,13 @@ class Level07(Level):
         # Call the parents constructor
         Level.__init__(self, player)
 
-        self.background = pygame.image.load("resources/background.png")
-
         self.save_file = os.path.join("level_data", "level7.json")
         self.tile_file = os.path.join("level_data", "layouts", "level7")
         self.type_file = os.path.join("level_data", "tile_types", "level7")
 
         self.layer_range = 1
+
+        self.fast = fast
 
         self.door_linkup = {0: 0,
                             1: 0}
@@ -811,3 +902,33 @@ class Level07(Level):
 
         self.reset_world()
         self.shift_world(self.start_x, self.start_y)
+
+
+class Level08(Level):
+
+    def __init__(self, player, write_data=False, fast=False):
+
+        Level.__init__(self, player)
+
+        self.save_file = os.path.join("level_data", "level8.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level8")
+        self.type_file = os.path.join("level_data", "tile_types", "level8")
+
+        self.layer_range = 1
+
+        self.fast = fast
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level8")
+
+        if write_data:
+            level.write_data(fast)
+
+        level_data = level.load_data()
+
+        self.render(level_data)
+
+        self.start_x = 0
+        self.start_y = 719
+
+        self.reset_world()
+        self.set_scrolling()

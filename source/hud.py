@@ -52,10 +52,13 @@ class HUD(pygame.sprite.Sprite):
 
         self.player = player
 
+        self.y_pos = 492 if small else 672
+
     def update(self):
 
         self.health_num.update_text("{0:.1f}%".format(round(self.player.health, 1)))
-        self.stamina_num.update_text("{0:.1f}%".format(round(self.player.stamina, 1)))
+        self.stamina_num.update_text("{0:.1f}%".format(round(self.player.stamina -
+                                                             self.player.stamina*(1-(self.player.stamina/100)), 1)))
 
         if self.player.rect.y > 200:
             self.rect.y = 0
@@ -64,11 +67,11 @@ class HUD(pygame.sprite.Sprite):
             self.health_num.rect.centery = 24
             self.stamina_num.rect.centery = 24
         else:
-            self.rect.y = 672
-            self.health_label.rect.centery = 696
-            self.stamina_label.rect.centery = 696
-            self.health_num.rect.centery = 696
-            self.stamina_num.rect.centery = 696
+            self.rect.y = self.y_pos
+            self.health_label.rect.centery = self.y_pos + 24
+            self.stamina_label.rect.centery = self.y_pos + 24
+            self.health_num.rect.centery = self.y_pos + 24
+            self.stamina_num.rect.centery = self.y_pos + 24
 
     def draw(self, display):
 

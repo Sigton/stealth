@@ -9,7 +9,7 @@ class Arm(pygame.sprite.Sprite):
 
     guard = None
 
-    def __init__(self):
+    def __init__(self, guard):
 
         # Constructor
         pygame.sprite.Sprite.__init__(self)
@@ -22,8 +22,16 @@ class Arm(pygame.sprite.Sprite):
 
         self.image = self.arm_right
 
+        self.guard = guard
+
         # Set a reference to the images rectangle
         self.rect = self.image.get_rect()
+
+        self.rect.x = self.guard.rect.x + self.guard.rect.width / 4
+        self.rect.y = self.guard.rect.y + self.guard.rect.height / 4
+
+        self.start_x = self.rect.x
+        self.start_y = self.rect.y
 
     def update(self):
 
@@ -54,7 +62,10 @@ class Arm(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(center=self.rect.center)
 
         # Align rectangle after rotation
-        self.rect.bottom = self.guard.rect.y + (self.guard.rect.height * 0.5)
+        if degrees > 180:
+            self.rect.top = self.guard.rect.y + (self.guard.rect.height * 0.25)
+        else:
+            self.rect.bottom = self.guard.rect.y + (self.guard.rect.height * 0.5)
         if self.guard.direction == "R":
             self.rect.left = self.guard.rect.left + self.guard.rect.width * 0.2
         else:

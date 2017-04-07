@@ -53,6 +53,8 @@ class ProgressBar(pygame.sprite.Sprite):
         self.image = self.images[0]
 
         self.rect = self.image.get_rect()
+        self.start_x = None
+        self.start_y = None
 
         self.timer = 30
 
@@ -60,6 +62,10 @@ class ProgressBar(pygame.sprite.Sprite):
 
         self.rect.x = self.parent.rect.x + (self.parent.rect.width/2 - self.rect.width/2)
         self.rect.y = self.parent.rect.y - 20
+
+        if self.start_x is None and self.start_y is None:
+            self.start_x = self.rect.x
+            self.start_y = self.rect.y
 
         self.image = self.images[self.parent.progress]
 

@@ -10,6 +10,7 @@ import constants
 class Button(pygame.sprite.Sprite):
 
     # Generic button class
+    # This can be used for any button on the menu
 
     def __init__(self, sprite_sheet, sprite_sheet_data, x, y, command):
 
@@ -60,6 +61,7 @@ class Menu:
 
     def __init__(self, parent):
 
+        # Assign attributes from input
         self.parent = parent
 
         # Set the display to draw to and the clock for timing
@@ -143,11 +145,6 @@ class Menu:
                                 else:
                                     button.command()
 
-                if event.type == KEYUP:
-
-                    if event.key == K_F8 or event.key == K_RSHIFT:
-                        self.toggle_lag()
-
             # Update the sprites
             self.current_screen.update()
 
@@ -164,6 +161,9 @@ class Menu:
         pygame.mouse.set_visible(False)
 
     def toggle_lag(self):
+
+        # This re-sizes the screen
+        # and realigns the menu to still look correct even on the smaller display size
 
         if not self.lagging:
             self.lagging = True

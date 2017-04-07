@@ -2,7 +2,7 @@ import pygame
 
 import spritesheet
 import torches
-import arms
+import guard_parts
 import constants
 import math
 
@@ -79,8 +79,7 @@ class Guard(pygame.sprite.Sprite):
             if self.direction == "R":
                 self.xv = self.speed
             else:
-                self.xv = -self.speed/2  # For some reason guards move twice as fast left
-
+                self.xv = -self.speed
             self.rect.x += self.xv
             self.walk_dist += 1
 
@@ -91,10 +90,10 @@ class Guard(pygame.sprite.Sprite):
                 self.direction = "R"
 
         if self.direction == "R":
-            frame = (self.walk_dist // 15) % len(self.walking_frames_r)
+            frame = (self.walk_dist // 7) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
         else:
-            frame = (self.walk_dist // 15) % len(self.walking_frames_l)
+            frame = (self.walk_dist // 7) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
 
     def on_ground(self):
@@ -179,7 +178,7 @@ class HostileGuard(pygame.sprite.Sprite):
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
 
-        self.stand_img_r = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
+        self.stand_img_r = self.sprite_sheet.get_image(0, 0, 24, 48)
         self.stand_img_l = pygame.transform.flip(self.stand_img_r, True, False)
 
         self.walking_frames_r = []
@@ -207,8 +206,7 @@ class HostileGuard(pygame.sprite.Sprite):
         self.start_x = x
         self.start_y = y
 
-        self.arm = arms.Arm()
-        self.arm.guard = self
+        self.arm = guard_parts.Arm(self)
 
     def update(self):
 
