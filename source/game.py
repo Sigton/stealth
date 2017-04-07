@@ -84,19 +84,19 @@ class Game:
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True, self.fast))
+        # self.level_list.append(level.Level03(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True, self.fast))
+        # self.level_list.append(level.Level04(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True, self.fast))
+        # self.level_list.append(level.Level05(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
@@ -204,9 +204,9 @@ class Game:
         do_reset = False
         show_caught = False
 
-        # If there are guards in the level then play the light sound
-        if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
-            self.light_sound.play(-1)
+        # Always play the light sound
+        # But make it a non-zero volume if there are guards
+        self.light_sound.play(-1)
 
         # Play the music
         pygame.mixer.music.play(-1)
@@ -317,10 +317,6 @@ class Game:
                 player.level = self.current_level
                 self.current_level.player = player
 
-                # If there are guards in the level then play the light sound
-                if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
-                    self.light_sound.play(-1)
-
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
                 progress = False
@@ -407,25 +403,26 @@ class Game:
             self.crosshair.update()
             self.hud.update()
 
-            # Volume controls for the guards' light
-            if self.light_sound.get_num_channels():
-                # Find nearest guard
-                # This is done by generating a list of the distances to each guard
-                # calculated using Pythagoras' theorem.
-                # This list is then sorted, so the zeroth item of the list would
-                # be the distance to the nearest guard.
-                nearest_guard = [int(math.pow((math.pow(x.rect.x - player.rect.x, 2)) +
-                                              (math.pow(x.rect.y - player.rect.y, 2)), 0.5))
-                                 for x in self.current_level.guards.sprites()]
-                nearest_guard.sort()
+            if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
+                    # Find nearest guard
+                    # This is done by generating a list of the distances to each guard
+                    # calculated using Pythagoras' theorem.
+                    # This list is then sorted, so the zeroth item of the list would
+                    # be the distance to the nearest guard.
+                    nearest_guard = [int(math.pow((math.pow(x.rect.x - player.rect.x, 2)) +
+                                                  (math.pow(x.rect.y - player.rect.y, 2)), 0.5))
+                                     for x in self.current_level.guards.sprites()]
+                    nearest_guard.sort()
 
-                # Stops a special case where being very far away from all
-                # guards means that the sound can still be loud
-                if nearest_guard[0]-250 < 0:
-                    # And then set the volume relative to the distance to the nearest guard
-                    self.light_sound.set_volume(abs(nearest_guard[0]-250)/400)
-                else:
-                    self.light_sound.set_volume(0)
+                    # Stops a special case where being very far away from all
+                    # guards means that the sound can still be loud
+                    if nearest_guard[0]-250 < 0:
+                        # And then set the volume relative to the distance to the nearest guard
+                        self.light_sound.set_volume(abs(nearest_guard[0]-250)/400)
+                    else:
+                        self.light_sound.set_volume(0)
+            else:
+                self.light_sound.set_volume(0)
 
             # Scrolling in all 4 directions
 

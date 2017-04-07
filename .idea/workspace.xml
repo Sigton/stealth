@@ -4,9 +4,9 @@
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/guards.py" afterPath="$PROJECT_DIR$/source/guards.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level1.json" afterPath="$PROJECT_DIR$/source/level_data/level1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level2.json" afterPath="$PROJECT_DIR$/source/level_data/level2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level7.json" afterPath="$PROJECT_DIR$/source/level_data/level7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level8.json" afterPath="$PROJECT_DIR$/source/level_data/level8.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="80" column="10" lean-forward="false" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+            <state relative-caret-position="663">
+              <caret line="430" column="77" lean-forward="true" selection-start-line="430" selection-start-column="77" selection-end-line="430" selection-end-column="77" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -40,8 +40,8 @@
       <file leaf-file-name="guards.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/guards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+            <state relative-caret-position="374">
+              <caret line="92" column="41" lean-forward="false" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -617,13 +617,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00787" summary="Updated level 6">
-      <created>1490539484965</created>
-      <option name="number" value="00787" />
-      <option name="presentableId" value="LOCAL-00787" />
-      <option name="project" value="LOCAL" />
-      <updated>1490539484965</updated>
-    </task>
     <task id="LOCAL-00788" summary="Added more information to the readme">
       <created>1490540035468</created>
       <option name="number" value="00788" />
@@ -960,7 +953,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491591037487</updated>
     </task>
-    <option name="localTasksCounter" value="836" />
+    <task id="LOCAL-00836" summary="Things are better at 45 fps as it turns out">
+      <created>1491592932879</created>
+      <option name="number" value="00836" />
+      <option name="presentableId" value="LOCAL-00836" />
+      <option name="project" value="LOCAL" />
+      <updated>1491592932879</updated>
+    </task>
+    <option name="localTasksCounter" value="837" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1056,7 +1056,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed formatting" />
     <MESSAGE value="Started on allowing to save progress by making save_data allow more than controls" />
     <MESSAGE value="Passed controls down onto Game" />
     <MESSAGE value="Added a reset controls button" />
@@ -1081,7 +1080,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Made minor adjustments to movement speeds" />
     <MESSAGE value="Did some testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some testing" />
+    <MESSAGE value="Things are better at 45 fps as it turns out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Things are better at 45 fps as it turns out" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,16 +1274,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/guards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="91" column="33" lean-forward="true" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+        <state relative-caret-position="374">
+          <caret line="92" column="41" lean-forward="false" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="80" column="10" lean-forward="false" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        <state relative-caret-position="663">
+          <caret line="430" column="77" lean-forward="true" selection-start-line="430" selection-start-column="77" selection-end-line="430" selection-end-column="77" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
