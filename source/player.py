@@ -380,7 +380,7 @@ class Player(pygame.sprite.Sprite):
         # Moves the player left
 
         # Stamina has an effect on walking speed, as does crouching
-        self.xv -= self.speed * ((self.stamina / 400) + 0.75) \
+        self.xv -= (self.speed / 2) * ((self.stamina / 400) + 0.75) \
             if self.crouching or self.climbing else self.speed * ((self.stamina / 400) + 0.75)
         self.direction = "L"
 
