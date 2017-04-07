@@ -84,13 +84,13 @@ class Game:
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level03(self.player, True, self.fast))
+        self.level_list.append(level.Level03(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level04(self.player, True, self.fast))
+        self.level_list.append(level.Level04(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
@@ -102,19 +102,19 @@ class Game:
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level06(self.player, True, self.fast))
+        self.level_list.append(level.Level06(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 7...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level07(self.player, True, self.fast))
+        self.level_list.append(level.Level07(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level08(self.player, True, self.fast))
+        self.level_list.append(level.Level08(self.player, True, self.fast))
 
         # Set the current level
         self.current_level_no = 0
@@ -549,7 +549,7 @@ class Game:
                 spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), pause*16)
 
             # Limit to 60 fps
-            self.clock.tick(60)
+            self.clock.tick(45)
             # Update the display
             pygame.display.flip()
 

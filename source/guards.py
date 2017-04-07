@@ -90,10 +90,10 @@ class Guard(pygame.sprite.Sprite):
                 self.direction = "R"
 
         if self.direction == "R":
-            frame = (self.walk_dist // 7) % len(self.walking_frames_r)
+            frame = (self.walk_dist // 12) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
         else:
-            frame = (self.walk_dist // 7) % len(self.walking_frames_l)
+            frame = (self.walk_dist // 12) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
 
     def on_ground(self):
