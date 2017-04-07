@@ -72,7 +72,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level01(self.player, True, self.fast))
+        self.level_list.append(level.Level01(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
@@ -96,7 +96,7 @@ class Game:
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True, self.fast))
+        # self.level_list.append(level.Level05(self.player, True, self.fast))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
@@ -549,7 +549,7 @@ class Game:
                 spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), pause*16)
 
             # Limit to 60 fps
-            self.clock.tick(60)
+            self.clock.tick(50)
             # Update the display
             pygame.display.flip()
 
