@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level7.json" afterPath="$PROJECT_DIR$/source/level_data/level7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -408,13 +414,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00803" summary="Fixed bug">
-      <created>1490730135429</created>
-      <option name="number" value="00803" />
-      <option name="presentableId" value="LOCAL-00803" />
-      <option name="project" value="LOCAL" />
-      <updated>1490730135429</updated>
-    </task>
     <task id="LOCAL-00804" summary="Renamed controls.py to saves.py">
       <created>1490770357610</created>
       <option name="number" value="00804" />
@@ -751,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491646221047</updated>
     </task>
-    <option name="localTasksCounter" value="852" />
+    <task id="LOCAL-00852" summary="Moved decorations down a layer">
+      <created>1491646349480</created>
+      <option name="number" value="00852" />
+      <option name="presentableId" value="LOCAL-00852" />
+      <option name="project" value="LOCAL" />
+      <updated>1491646349480</updated>
+    </task>
+    <option name="localTasksCounter" value="853" />
     <servers />
   </component>
   <component name="TodoView">
@@ -836,7 +842,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Now picks up from where you left off" />
     <MESSAGE value="Moved buttons down" />
     <MESSAGE value="Added new button" />
     <MESSAGE value="Centered buttons" />
@@ -861,7 +866,8 @@
     <MESSAGE value="Level resets when user presses 'r' (by default)" />
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Updated level 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 7" />
+    <MESSAGE value="Moved decorations down a layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved decorations down a layer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
