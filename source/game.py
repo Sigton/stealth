@@ -290,8 +290,24 @@ class Game:
             # If the player has reached the right side of the screen
             # Then pause the game, and say the game should progress onto the next level
             if player.rect.centerx - player.rect.width/4 >= constants.SCREEN_WIDTH and not progress:
-                pause = 60
-                progress = True
+
+                # Don't let the player walk any further
+                player.rect.centerx = constants.SCREEN_WIDTH + player.rect.width/4
+                player.xv = 0
+
+                # If there are bombs in the level
+                # make sure the player has activated them in all
+                if len(self.current_level.bombs.sprites()) or \
+                   len([bomb for bomb in self.current_level.non_draw if isinstance(bomb, entities.Bomb)]):
+                    if not len([bomb for bomb in self.current_level.non_draw if isinstance(bomb, entities.Bomb)]):
+                        activated = len(self.current_level.bombs.sprites())
+                        if activated == len([bomb for bomb in self.current_level.bombs.sprites()
+                                             if bomb.progress >= 10]):
+                            pause = 60
+                            progress = True
+                else:
+                    pause = 60
+                    progress = True
 
             if progress and pause == 30:
 
