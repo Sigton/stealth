@@ -38,8 +38,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="935" column="79" lean-forward="false" selection-start-line="935" selection-start-column="79" selection-end-line="935" selection-end-column="79" />
+            <state relative-caret-position="418">
+              <caret line="943" column="78" lean-forward="false" selection-start-line="943" selection-start-column="78" selection-end-line="943" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -401,13 +401,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00816" summary="Saves current level in save_data">
-      <created>1490943664578</created>
-      <option name="number" value="00816" />
-      <option name="presentableId" value="LOCAL-00816" />
-      <option name="project" value="LOCAL" />
-      <updated>1490943664579</updated>
-    </task>
     <task id="LOCAL-00817" summary="Updates saves.load">
       <created>1490943803478</created>
       <option name="number" value="00817" />
@@ -744,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491651436113</updated>
     </task>
-    <option name="localTasksCounter" value="865" />
+    <task id="LOCAL-00865" summary="And again more level text">
+      <created>1491651725988</created>
+      <option name="number" value="00865" />
+      <option name="presentableId" value="LOCAL-00865" />
+      <option name="project" value="LOCAL" />
+      <updated>1491651725988</updated>
+    </task>
+    <option name="localTasksCounter" value="866" />
     <servers />
   </component>
   <component name="TodoView">
@@ -763,7 +763,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.491358" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371522" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3364486" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364486" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -829,7 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Progress saving now works" />
     <MESSAGE value="Added decorations to level 6" />
     <MESSAGE value="Added level text to level 6" />
     <MESSAGE value="Added more level text" />
@@ -854,7 +853,8 @@
     <MESSAGE value="Added decorations to level 7" />
     <MESSAGE value="Added some level text" />
     <MESSAGE value="More level text" />
-    <option name="LAST_COMMIT_MESSAGE" value="More level text" />
+    <MESSAGE value="And again more level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="And again more level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,14 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/save_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/saves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1067,10 +1059,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/save_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="935" column="79" lean-forward="false" selection-start-line="935" selection-start-column="79" selection-end-line="935" selection-end-column="79" />
+        <state relative-caret-position="418">
+          <caret line="943" column="78" lean-forward="false" selection-start-line="943" selection-start-column="78" selection-end-line="943" selection-end-column="78" />
           <folding />
         </state>
       </provider>
