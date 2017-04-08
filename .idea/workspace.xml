@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level7.json" afterPath="$PROJECT_DIR$/source/level_data/level7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -402,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00811" summary="Passed controls down onto Game">
-      <created>1490804733727</created>
-      <option name="number" value="00811" />
-      <option name="presentableId" value="LOCAL-00811" />
-      <option name="project" value="LOCAL" />
-      <updated>1490804733727</updated>
-    </task>
     <task id="LOCAL-00812" summary="Added a reset controls button">
       <created>1490804942753</created>
       <option name="number" value="00812" />
@@ -745,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491649207328</updated>
     </task>
-    <option name="localTasksCounter" value="860" />
+    <task id="LOCAL-00860" summary="Added decorations to level 7">
+      <created>1491649406998</created>
+      <option name="number" value="00860" />
+      <option name="presentableId" value="LOCAL-00860" />
+      <option name="project" value="LOCAL" />
+      <updated>1491649406998</updated>
+    </task>
+    <option name="localTasksCounter" value="861" />
     <servers />
   </component>
   <component name="TodoView">
@@ -846,7 +842,6 @@
     <MESSAGE value="Fixed a bug with the light sound" />
     <MESSAGE value="Fixed problem with the keypad linkup" />
     <MESSAGE value="Added new layer to level 7" />
-    <MESSAGE value="Added decorations to level 7" />
     <MESSAGE value="Added many many doors" />
     <MESSAGE value="Added a new control for restarting" />
     <MESSAGE value="Level resets when user presses 'r' (by default)" />
@@ -855,7 +850,8 @@
     <MESSAGE value="Fixed an issue" />
     <MESSAGE value="Recharging keypads stay on longer" />
     <MESSAGE value="Updated level 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated level 7" />
+    <MESSAGE value="Added decorations to level 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added decorations to level 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
