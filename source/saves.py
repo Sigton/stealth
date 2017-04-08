@@ -24,7 +24,8 @@ default_controls = {"WALK_LEFT": K_a,
                     "WALK_RIGHT": K_d,
                     "JUMP": K_w,
                     "ACTION": K_SPACE,
-                    "CROUCH": K_LCTRL}
+                    "CROUCH": K_LCTRL,
+                    "RESTART": K_r}
 
 trans_dict = {65: 97,
               66: 98,

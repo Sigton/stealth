@@ -153,14 +153,22 @@ class Launcher(tk.Frame):
                                          command=lambda: self.set_control("CROUCH"))
         self.control5_button.place(x=230, y=360, anchor="w")
 
+        self.control6_label = tk.Label(self, text="Restart Button:")
+        self.control6_label.place(x=50, y=390, anchor="w")
+        self.control6 = tk.Label(self, text=pygame.key.name(self.controls["RESTART"]))
+        self.control6.place(x=160, y=390, anchor="w")
+        self.control6_button = tk.Button(self, text="Change",
+                                         command=lambda: self.set_control("RESTART"))
+        self.control6_button.place(x=230, y=390, anchor="w")
+
         # The save controls button writes the controls currently selected to the save file,
         # if the user wants to use the same control setup the next time they play
         self.save_controls_button = tk.Button(self, text="Set as default", command=self.save_controls, width="11")
-        self.save_controls_button.place(x=350, y=285, anchor="w")
+        self.save_controls_button.place(x=350, y=300, anchor="w")
 
         # The reset controls button sets all the controls back to the very original control layout
         self.reset_controls_button = tk.Button(self, text="Reset controls", command=self.reset_controls, width="11")
-        self.reset_controls_button.place(x=350, y=315, anchor="w")
+        self.reset_controls_button.place(x=350, y=330, anchor="w")
 
         # The launch button starts the game with the users selected configuration
         self.launch_button = tk.Button(self, text="Launch", width="20", height="2",
@@ -224,6 +232,7 @@ class Launcher(tk.Frame):
         self.control3.configure(text=(pygame.key.name(self.controls["JUMP"])).upper())
         self.control4.configure(text=(pygame.key.name(self.controls["ACTION"])).upper())
         self.control5.configure(text=(pygame.key.name(self.controls["CROUCH"])).upper())
+        self.control6.configure(text=(pygame.key.name(self.controls["RESTART"])).upper())
 
         # Any controls that are bound to the same key show in red
 
@@ -252,6 +261,10 @@ class Launcher(tk.Frame):
             self.control5.configure(fg="red")
         else:
             self.control5.configure(fg="black")
+        if controls.count(self.controls["RESTART"]) > 1:
+            self.control6.configure(fg="red")
+        else:
+            self.control6.configure(fg="black")
 
     def save_controls(self):
 
