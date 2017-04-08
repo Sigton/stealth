@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="494" column="0" lean-forward="true" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
+            <state relative-caret-position="555">
+              <caret line="495" column="48" lean-forward="false" selection-start-line="495" selection-start-column="48" selection-end-line="495" selection-end-column="48" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -410,13 +408,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00798" summary="Progress bars are added back into the entities group">
-      <created>1490648840075</created>
-      <option name="number" value="00798" />
-      <option name="presentableId" value="LOCAL-00798" />
-      <option name="project" value="LOCAL" />
-      <updated>1490648840075</updated>
-    </task>
     <task id="LOCAL-00799" summary="Player dies when health is less than 0">
       <created>1490684163829</created>
       <option name="number" value="00799" />
@@ -753,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491644320637</updated>
     </task>
-    <option name="localTasksCounter" value="847" />
+    <task id="LOCAL-00847" summary="Level resets when user presses 'r' (by default)">
+      <created>1491644871618</created>
+      <option name="number" value="00847" />
+      <option name="presentableId" value="LOCAL-00847" />
+      <option name="project" value="LOCAL" />
+      <updated>1491644871618</updated>
+    </task>
+    <option name="localTasksCounter" value="848" />
     <servers />
   </component>
   <component name="TodoView">
@@ -838,7 +836,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updates saves.load" />
     <MESSAGE value="Updated main.py" />
     <MESSAGE value="Now picks up from where you left off" />
     <MESSAGE value="Moved buttons down" />
@@ -863,7 +860,8 @@
     <MESSAGE value="Added decorations to level 7" />
     <MESSAGE value="Added many many doors" />
     <MESSAGE value="Added a new control for restarting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new control for restarting" />
+    <MESSAGE value="Level resets when user presses 'r' (by default)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level resets when user presses 'r' (by default)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,8 +1073,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="494" column="0" lean-forward="true" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
+        <state relative-caret-position="555">
+          <caret line="495" column="48" lean-forward="false" selection-start-line="495" selection-start-column="48" selection-end-line="495" selection-end-column="48" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
