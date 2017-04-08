@@ -953,6 +953,10 @@ class Level07(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("And a nice easy finish!", 1150, 800)
         self.level_text.add(level_text)
+        level_text = text.LevelText("You can't go to the next level", 1500, 800)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("until all the bombs are active", 1500, 825)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
