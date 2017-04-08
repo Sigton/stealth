@@ -884,7 +884,10 @@ class Level07(Level):
         self.fast = fast
 
         self.door_linkup = {0: 0,
-                            1: 1}
+                            1: 0,
+                            2: 0,
+                            3: 1,
+                            4: 2}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level7")
 
