@@ -257,6 +257,9 @@ class Game:
                     if event.key == self.controls["CROUCH"]:
                         crouch = True
 
+                    if event.key == self.controls["RESTART"]:
+                        player.health = -1
+
                 # If a key was released...
                 elif event.type == KEYUP:
 
@@ -323,7 +326,8 @@ class Game:
 
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(player, self.current_level.obstacle_list, False)
-            if len(obstacle_hits) and not player.dying:
+            if (len(obstacle_hits) or player.health <=0) and not player.dying:
+
                 # If the player has, then say the player is dying
                 player.dying = True
                 player.health = 0
@@ -490,7 +494,7 @@ class Game:
                 do_reset = False
 
             # And now a similar procedure when the player dies
-            if (player.dying and player.death_progress == 40) != player.health <= 0:
+            if player.dying and player.death_progress == 40:
                 # Reset the players health and stamina
                 player.health = 100
                 player.stamina = 100
