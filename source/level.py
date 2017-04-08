@@ -949,6 +949,10 @@ class Level07(Level):
             pygame.key.name(self.controls["ACTION"])
         ), 1200, 1255)
         self.level_text.add(level_text)
+        level_text = text.LevelText("There are guards protecting these ones", 1480, 1070)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("And a nice easy finish!", 1150, 800)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719

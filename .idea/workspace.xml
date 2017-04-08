@@ -37,8 +37,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="949" column="13" lean-forward="false" selection-start-line="949" selection-start-column="13" selection-end-line="949" selection-end-column="13" />
+            <state relative-caret-position="435">
+              <caret line="953" column="70" lean-forward="false" selection-start-line="953" selection-start-column="70" selection-end-line="953" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -400,13 +400,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00818" summary="Updated main.py">
-      <created>1490944274582</created>
-      <option name="number" value="00818" />
-      <option name="presentableId" value="LOCAL-00818" />
-      <option name="project" value="LOCAL" />
-      <updated>1490944274582</updated>
-    </task>
     <task id="LOCAL-00819" summary="Now picks up from where you left off">
       <created>1490970223457</created>
       <option name="number" value="00819" />
@@ -743,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491652083414</updated>
     </task>
-    <option name="localTasksCounter" value="867" />
+    <task id="LOCAL-00867" summary="Added more level text">
+      <created>1491652474340</created>
+      <option name="number" value="00867" />
+      <option name="presentableId" value="LOCAL-00867" />
+      <option name="project" value="LOCAL" />
+      <updated>1491652474340</updated>
+    </task>
+    <option name="localTasksCounter" value="868" />
     <servers />
   </component>
   <component name="TodoView">
@@ -829,7 +829,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added level text to level 6" />
-    <MESSAGE value="Added more level text" />
     <MESSAGE value="Finished level text on level 6" />
     <MESSAGE value="Smoothed out the getting caught transition" />
     <MESSAGE value="Implemented level 7" />
@@ -853,7 +852,8 @@
     <MESSAGE value="More level text" />
     <MESSAGE value="And again more level text" />
     <MESSAGE value="Lots of level text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of level text" />
+    <MESSAGE value="Added more level text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more level text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,8 +1068,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/level.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="949" column="13" lean-forward="false" selection-start-line="949" selection-start-column="13" selection-end-line="949" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="953" column="70" lean-forward="false" selection-start-line="953" selection-start-column="70" selection-end-line="953" selection-end-column="70" />
           <folding />
         </state>
       </provider>
