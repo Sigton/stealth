@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer1.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level7.json" afterPath="$PROJECT_DIR$/source/level_data/level7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/save_data.json" afterPath="$PROJECT_DIR$/source/save_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -404,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
     </task>
-    <task id="LOCAL-00794" summary="Added a reset function for keypads">
-      <created>1490648241888</created>
-      <option name="number" value="00794" />
-      <option name="presentableId" value="LOCAL-00794" />
-      <option name="project" value="LOCAL" />
-      <updated>1490648241888</updated>
-    </task>
     <task id="LOCAL-00795" summary="Compacted code">
       <created>1490648298371</created>
       <option name="number" value="00795" />
@@ -747,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491643342722</updated>
     </task>
-    <option name="localTasksCounter" value="843" />
+    <task id="LOCAL-00843" summary="Updated level 7">
+      <created>1491643471186</created>
+      <option name="number" value="00843" />
+      <option name="presentableId" value="LOCAL-00843" />
+      <option name="project" value="LOCAL" />
+      <updated>1491643471186</updated>
+    </task>
+    <option name="localTasksCounter" value="844" />
     <servers />
   </component>
   <component name="TodoView">
