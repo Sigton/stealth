@@ -931,6 +931,8 @@ class Level07(Level):
             pygame.key.name(self.controls["RESTART"])
         ), 80, 1085)
         self.level_text.add(level_text)
+        level_text = text.LevelText("Remember this trick?", 180, 550)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
