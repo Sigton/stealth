@@ -924,6 +924,14 @@ class Level07(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the level text
+        level_text = text.LevelText("if you get stuck then press", 80, 1060)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("{} to restart the level".format(
+            pygame.key.name(self.controls["RESTART"])
+        ), 80, 1085)
+        self.level_text.add(level_text)
+
         self.start_x = 0
         self.start_y = 719
 
