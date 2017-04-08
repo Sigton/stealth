@@ -943,6 +943,12 @@ class Level07(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("on each of the power supplies", 890, 1280)
         self.level_text.add(level_text)
+        level_text = text.LevelText("Once you've placed the bomb", 1200, 1230)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("use {} to activate it!".format(
+            pygame.key.name(self.controls["ACTION"])
+        ), 1200, 1255)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
