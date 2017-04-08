@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9bea319-4479-4b9a-9427-ac174707714d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" afterPath="$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/game.py" afterPath="$PROJECT_DIR$/source/game.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/level_data/level6.json" afterPath="$PROJECT_DIR$/source/level_data/level6.json" />
@@ -28,8 +30,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="430" column="77" lean-forward="true" selection-start-line="430" selection-start-column="77" selection-end-line="430" selection-end-column="77" />
+            <state relative-caret-position="17">
+              <caret line="116" column="10" lean-forward="false" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -40,7 +42,7 @@
       <file leaf-file-name="guards.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/guards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="1462">
               <caret line="92" column="41" lean-forward="false" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
               <folding />
             </state>
@@ -50,7 +52,7 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="6392">
               <caret line="382" column="69" lean-forward="false" selection-start-line="382" selection-start-column="69" selection-end-line="382" selection-end-column="69" />
               <folding />
             </state>
@@ -254,200 +256,6 @@
       <recent name="D:\Stealth" />
     </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/Stealth.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/setup.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/constants.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/covers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/entities.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/game.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/guards.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/hud.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level1/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level1/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level2/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level2/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level2/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level3/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level3/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level4/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level4/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level4/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level5/fastlayer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level5/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level7/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level1.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level2.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level3.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level4.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level5.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level6.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level7.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level1/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level1/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level2/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level2/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level2/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level3/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level3/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level4/fastlayer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level4/layer1.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level4/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level5/fastlayer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level5/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level7/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/main.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/menu.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/platforms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/player.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/arms.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/background.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/hguard.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/terrain.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/save_data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/terrain.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/constants.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/covers.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/entities.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/funcs.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/game.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/guard_parts.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/guards.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/hud.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/level.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/menu.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/platforms.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/player.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/progressbar.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/saves.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/spritesheet.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/terrain.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/text.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/torches.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/guard_parts.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/layouts/level8/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/level8.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/level_data/tile_types/level8/layer2.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/progressbar.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/Thumbs.db</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/background_fast.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/resources/gameover_small.png</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/arms.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/__pycache__/healthbar.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/arms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/source/healthbar.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -616,13 +424,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966635645</updated>
-    </task>
-    <task id="LOCAL-00788" summary="Added more information to the readme">
-      <created>1490540035468</created>
-      <option name="number" value="00788" />
-      <option name="presentableId" value="LOCAL-00788" />
-      <option name="project" value="LOCAL" />
-      <updated>1490540035468</updated>
     </task>
     <task id="LOCAL-00789" summary="Added a screenshot to readme">
       <created>1490540552126</created>
@@ -960,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491592932879</updated>
     </task>
-    <option name="localTasksCounter" value="837" />
+    <task id="LOCAL-00837" summary="Fixed a bug with the light sound">
+      <created>1491595273466</created>
+      <option name="number" value="00837" />
+      <option name="presentableId" value="LOCAL-00837" />
+      <option name="project" value="LOCAL" />
+      <updated>1491595273466</updated>
+    </task>
+    <option name="localTasksCounter" value="838" />
     <servers />
   </component>
   <component name="TodoView">
@@ -976,35 +784,24 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33852544" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33852544" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39771548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.491358" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371522" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364486" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371522" sideWeight="0.49367756" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14806548" sideWeight="0.491358" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14806548" sideWeight="0.50864196" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.49367756" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39771548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14806548" sideWeight="0.50864196" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1056,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started on allowing to save progress by making save_data allow more than controls" />
     <MESSAGE value="Passed controls down onto Game" />
     <MESSAGE value="Added a reset controls button" />
     <MESSAGE value="Updated things" />
@@ -1081,7 +877,8 @@
     <MESSAGE value="Made minor adjustments to movement speeds" />
     <MESSAGE value="Did some testing" />
     <MESSAGE value="Things are better at 45 fps as it turns out" />
-    <option name="LAST_COMMIT_MESSAGE" value="Things are better at 45 fps as it turns out" />
+    <MESSAGE value="Fixed a bug with the light sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with the light sound" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1244,7 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="112" lean-forward="false" selection-start-line="0" selection-start-column="112" selection-end-line="0" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,7 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="880" column="0" lean-forward="false" selection-start-line="880" selection-start-column="0" selection-end-line="880" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1061,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="6392">
           <caret line="382" column="69" lean-forward="false" selection-start-line="382" selection-start-column="69" selection-end-line="382" selection-end-column="69" />
           <folding />
         </state>
@@ -1274,7 +1069,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/guards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="1462">
           <caret line="92" column="41" lean-forward="false" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
           <folding />
         </state>
@@ -1282,8 +1077,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="430" column="77" lean-forward="true" selection-start-line="430" selection-start-column="77" selection-end-line="430" selection-end-column="77" />
+        <state relative-caret-position="17">
+          <caret line="116" column="10" lean-forward="false" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
