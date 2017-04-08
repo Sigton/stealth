@@ -879,7 +879,7 @@ class Level07(Level):
         self.tile_file = os.path.join("level_data", "layouts", "level7")
         self.type_file = os.path.join("level_data", "tile_types", "level7")
 
-        self.layer_range = 1
+        self.layer_range = 2
 
         self.fast = fast
 
