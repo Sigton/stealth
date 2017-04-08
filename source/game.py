@@ -527,27 +527,36 @@ class Game:
 
             # First of all the 'player was caught' screen
             if show_caught and 67 < pause < 100:
-                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), abs(pause-100)*8)
+                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
+                                       abs(pause-100)*8)
             elif show_caught and 0 < pause < 17:
-                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0), pause*16)
+                spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
+                                       pause*16)
             elif show_caught and 16 < pause < 68:
                 self.display.blit(self.game_over.image, (0, 0))
 
             # Then just a dark screen when the player dies
-            if player.dying and 16 < player.death_progress < 33:
-                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), (player.death_progress-16)*16)
-            elif player.dying and 32 < player.death_progress < 60:
-                self.display.blit(self.black_screen.image, (0, 0))
-            elif player.dying and 59 < player.death_progress < 76:
-                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), abs(player.death_progress-75)*16)
+            # But this shouldn't be shown when the player is caught
+            # If the player manages to get caught and die at the same time
+            if not show_caught:
+                if player.dying and 16 < player.death_progress < 33:
+                    spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
+                                           (player.death_progress-16)*16)
+                elif player.dying and 32 < player.death_progress < 60:
+                    self.display.blit(self.black_screen.image, (0, 0))
+                elif player.dying and 59 < player.death_progress < 76:
+                    spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
+                                           abs(player.death_progress-75)*16)
 
             # And again a dark screen when the level is changing
             if progress and 43 < pause < 61:
-                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), abs(pause-60)*16)
+                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
+                                       abs(pause-60)*16)
             elif progress and 16 < pause < 54:
                 self.display.blit(self.black_screen.image, (0, 0))
             elif progress and 0 < pause < 17:
-                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), pause*16)
+                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
+                                       pause*16)
 
             # Limit to 60 fps
             self.clock.tick(45)
