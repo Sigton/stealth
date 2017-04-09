@@ -33,6 +33,8 @@ class Arm(pygame.sprite.Sprite):
         self.start_x = self.rect.x
         self.start_y = self.rect.y
 
+        self.degrees = 0
+
     def update(self):
 
         if self.guard.direction == "R":
@@ -54,15 +56,15 @@ class Arm(pygame.sprite.Sprite):
         # Gotta love trig
         rads = math.atan2(-dy, dx)
         rads %= 2 * math.pi
-        degrees = math.degrees(rads)
-        degrees = (degrees + 180) % 360
+        self.degrees = math.degrees(rads)
+        self.degrees = (self.degrees + 180) % 360
 
         # Rotate the image and reset the rect
-        self.image = pygame.transform.rotate(self.image, degrees)
+        self.image = pygame.transform.rotate(self.image, self.degrees)
         self.rect = self.image.get_rect(center=self.rect.center)
 
         # Align rectangle after rotation
-        if degrees > 180:
+        if self.degrees > 180:
             self.rect.top = self.guard.rect.y + (self.guard.rect.height * 0.25)
         else:
             self.rect.bottom = self.guard.rect.y + (self.guard.rect.height * 0.5)
@@ -74,6 +76,8 @@ class Arm(pygame.sprite.Sprite):
 
 class Bullet(pygame.sprite.Sprite):
 
-    def __init__(self):
+    def __init__(self, parent):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.parent = parent
