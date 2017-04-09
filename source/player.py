@@ -134,10 +134,7 @@ class Player(pygame.sprite.Sprite):
 
         # Load the players sounds and mix the volumes
         self.footstep = pygame.mixer.Sound("resources/step.wav")
-        self.footstep.set_volume(0.5)
-
         self.fall = pygame.mixer.Sound("resources/fall.wav")
-        self.fall.set_volume(0.5)
 
         # How far the player has walked without stopping
         # This is used for calculating what frame in the
@@ -265,7 +262,7 @@ class Player(pygame.sprite.Sprite):
 
         # Play the footstep sound every so often
         # but make sure that the player is both walking and on the ground
-        if int(self.walk_dist) % 20 == 0 and not self.walk_dist == 0 and self.on_ground():
+        if int(self.walk_dist) % 15 == 0 and not self.walk_dist == 0 and self.on_ground():
             pygame.mixer.Sound.play(self.footstep)
 
         # If not running or crouching then show the standing image
