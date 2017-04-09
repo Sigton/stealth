@@ -429,7 +429,7 @@ class Game:
             hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
                                                             if isinstance(bullet, guard_parts.Bullet)], False)
             for bullet in hit_list:
-                player.health -= 20
+                player.health -= 15
                 self.current_level.entities.remove(bullet)
 
             if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
