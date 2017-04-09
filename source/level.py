@@ -4,6 +4,7 @@ import platforms
 import guards
 import entities
 import progressbar
+import guard_parts
 import text
 import constants
 import terrain
@@ -312,6 +313,9 @@ class Level:
         # Reset any bombs
         [bomb.reset() for bomb in self.bombs.sprites()]
         [bomb.reset() for bomb in self.non_draw.sprites() if isinstance(bomb, entities.Bomb)]
+
+        # Delete any fired bullets
+        self.entities.remove([bullet for bullet in self.entities if isinstance(bullet, guard_parts.Bullet)])
 
     def create_platform(self, tile, x, y, layer):
         # Create a new platform
