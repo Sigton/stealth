@@ -34,6 +34,7 @@ class Arm(pygame.sprite.Sprite):
         self.start_y = self.rect.y
 
         self.degrees = 0
+        self.counter = 100
 
     def update(self):
 
@@ -73,6 +74,12 @@ class Arm(pygame.sprite.Sprite):
         else:
             self.rect.right = self.guard.rect.right - self.guard.rect.width * 0.2
 
+        if self.counter > 0:
+            self.counter -= 1
+        else:
+            self.guard.level.entities.add(Bullet(self))
+            self.counter = 100
+
 
 class Bullet(pygame.sprite.Sprite):
 
@@ -80,4 +87,18 @@ class Bullet(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.parent = parent
+        self.direction = parent.degrees - 360
+        if self.direction < 0:
+            self.direction = abs(self.direction)
+
+        self.image = pygame.image.load("resources/bullet.png").convert()
+        self.image = pygame.transform.rotate(self.image, self.direction)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = parent.rect.x
+        self.rect.y = parent.rect.y
+
+    def update(self):
+
+        self.rect.x += 20*math.cos(math.radians(self.direction))
+        self.rect.y += 20*math.sin(math.radians(self.direction))
