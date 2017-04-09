@@ -403,6 +403,14 @@ class Game:
                 if jump:
                     player.jump()
 
+            # Check for collisions between the player and bullets
+            # Gather a list of bullets and test for collision against the player
+            hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
+                                                            if isinstance(bullet, guard_parts.Bullet)], False)
+            for bullet in hit_list:
+                player.health -= 15
+                self.current_level.entities.remove(bullet)
+
             # Update entities
 
             # Don't update the player when the games progressing
@@ -423,14 +431,6 @@ class Game:
             self.blackout.update()
             self.crosshair.update()
             self.hud.update()
-
-            # Check for collisions between the player and bullets
-            # Gather a list of bullets and test for collision against the player
-            hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
-                                                            if isinstance(bullet, guard_parts.Bullet)], False)
-            for bullet in hit_list:
-                player.health -= 15
-                self.current_level.entities.remove(bullet)
 
             if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
                     # Find nearest guard
