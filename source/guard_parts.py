@@ -87,6 +87,8 @@ class Bullet(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
+        self.parent = parent
+
         self.direction = parent.degrees - 360
         if self.direction < 0:
             self.direction = abs(self.direction)
@@ -102,3 +104,7 @@ class Bullet(pygame.sprite.Sprite):
 
         self.rect.x += 20*math.cos(math.radians(self.direction))
         self.rect.y += 20*math.sin(math.radians(self.direction))
+
+        hit_list = pygame.sprite.spritecollide(self, self.parent.guard.level.platform_list, False)
+        if len(hit_list):
+            self.parent.guard.level.entities.remove(self)
