@@ -70,3 +70,10 @@ class Arm(pygame.sprite.Sprite):
             self.rect.left = self.guard.rect.left + self.guard.rect.width * 0.2
         else:
             self.rect.right = self.guard.rect.right - self.guard.rect.width * 0.2
+
+
+class Bullet(pygame.sprite.Sprite):
+
+    def __init__(self):
+
+        pygame.sprite.Sprite.__init__(self)
