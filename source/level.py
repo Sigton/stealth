@@ -1000,6 +1000,8 @@ class Level08(Level):
         level_data = level.load_data()
 
         self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
 
         self.start_x = 0
         self.start_y = 719
