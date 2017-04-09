@@ -12,6 +12,7 @@ import covers
 import entities
 import text
 import hud
+import guard_parts
 import spritesheet
 import funcs
 import math
@@ -422,6 +423,14 @@ class Game:
             self.blackout.update()
             self.crosshair.update()
             self.hud.update()
+
+            # Check for collisions between the player and bullets
+            # Gather a list of bullets and test for collision against the player
+            hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
+                                                 if isinstance(bullet, guard_parts.Bullet)], False)
+            for bullet in hit_list:
+                player.health -= 20
+                self.current_level.entities.remove(bullet)
 
             if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
                     # Find nearest guard
