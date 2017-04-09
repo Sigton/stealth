@@ -77,8 +77,9 @@ class Arm(pygame.sprite.Sprite):
         if self.counter > 0:
             self.counter -= 1
         else:
-            self.guard.level.entities.add(Bullet(self))
-            self.counter = 100
+            if self.guard.dist_to(self.guard.player.rect.x, self.guard.player.rect.y) < self.guard.follow_dist:
+                self.guard.level.entities.add(Bullet(self))
+                self.counter = 100
 
 
 class Bullet(pygame.sprite.Sprite):

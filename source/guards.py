@@ -165,6 +165,7 @@ class HostileGuard(pygame.sprite.Sprite):
     direction = "R"
 
     speed = constants.HGUARD_SPEED
+    follow_dist = constants.HGUARD_FOLLOW_DIST
 
     player = None
     level = None
@@ -215,7 +216,7 @@ class HostileGuard(pygame.sprite.Sprite):
         else:
             self.direction = "L"
 
-        if self.dist_to(self.player.rect.x, self.player.rect.y) < constants.HGUARD_FOLLOW_DIST and not self.on_edge():
+        if self.dist_to(self.player.rect.x, self.player.rect.y) < self.follow_dist and not self.on_edge():
             if self.direction == "R":
                 self.xv = self.speed
             else:

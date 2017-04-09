@@ -427,7 +427,7 @@ class Game:
             # Check for collisions between the player and bullets
             # Gather a list of bullets and test for collision against the player
             hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
-                                                 if isinstance(bullet, guard_parts.Bullet)], False)
+                                                            if isinstance(bullet, guard_parts.Bullet)], False)
             for bullet in hit_list:
                 player.health -= 20
                 self.current_level.entities.remove(bullet)
