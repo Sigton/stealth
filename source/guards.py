@@ -223,17 +223,20 @@ class HostileGuard(pygame.sprite.Sprite):
                 self.xv = -self.speed / 2
 
         if not abs(self.player.rect.x - self.rect.x) <= 5:
-            self.rect.x += self.xv
-            self.xv *= constants.HGUARD_FRICTION
-            if abs(self.xv) <= 0.5:
-                self.xv = 0
+            if not self.at_wall():
+                self.rect.x += self.xv
+                self.xv *= constants.HGUARD_FRICTION
+                if abs(self.xv) <= 0.5:
+                    self.xv = 0
 
-            block_hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
-            for block in block_hit_list:
-                if self.xv > 0:
-                    self.rect.right = block.rect.left
-                else:
-                    self.rect.left = block.rect.right
+                block_hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+                for block in block_hit_list:
+                    if self.xv > 0:
+                        self.rect.right = block.rect.left
+                    else:
+                        self.rect.left = block.rect.right
+                    self.xv = 0
+            else:
                 self.xv = 0
 
         else:
@@ -297,3 +300,27 @@ class HostileGuard(pygame.sprite.Sprite):
                 return False
             else:
                 return True
+
+    def at_wall(self):
+
+        if self.direction == "R":
+
+            self.rect.x += 24
+            block_hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+            self.rect.x -= 24
+
+            if len(block_hit_list):
+                return True
+            else:
+                return False
+
+        else:
+
+            self.rect.x -= 24
+            block_hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
+            self.rect.x += 24
+
+            if len(block_hit_list):
+                return True
+            else:
+                return False
