@@ -36,10 +36,12 @@ class Keypad(pygame.sprite.Sprite):
 
     progress_bar = None
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, level):
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
+
+        self.level = level
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/keypad.png")
 
@@ -55,9 +57,9 @@ class Keypad(pygame.sprite.Sprite):
         self.start_x = x
         self.start_y = y
 
-        self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
+        self.beep_sound = self.level.sound_engine.beep_sound
         self.beep_sound.set_volume(0.25)
-        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
+        self.hiss_sound = self.level.sound_engine.hiss_sound
         self.hiss_sound.set_volume(0.25)
         self.played_sound = False
 
@@ -70,8 +72,8 @@ class Keypad(pygame.sprite.Sprite):
         if self.progress >= 10:
             self.image = self.image_on
             if not self.played_sound:
-                pygame.mixer.Sound.play(self.beep_sound)
-                pygame.mixer.Sound.play(self.hiss_sound)
+                self.level.sound_engine.que_sound([self.beep_sound, 0])
+                self.level.sound_engine.que_sound([self.hiss_sound, 0])
                 self.played_sound = True
 
     def reset(self):
@@ -84,10 +86,10 @@ class Keypad(pygame.sprite.Sprite):
 
 class RechargingKeypad(Keypad):
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, level):
 
         # Call the parents constructor
-        Keypad.__init__(self, x, y)
+        Keypad.__init__(self, x, y, level)
 
         self.timer_threshold = 70
         self.timer = self.timer_threshold

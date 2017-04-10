@@ -337,7 +337,7 @@ class Level:
         self.obstacle_list.add(platform)
 
     def create_keypad(self, x, y):
-        new_keypad = entities.Keypad(x, y)
+        new_keypad = entities.Keypad(x, y, self)
 
         new_keypad.progress_bar = progressbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
@@ -352,7 +352,7 @@ class Level:
         self.keypad_array.append(new_keypad)
 
     def create_recharging_keypad(self, x, y):
-        new_keypad = entities.RechargingKeypad(x, y)
+        new_keypad = entities.RechargingKeypad(x, y, self)
 
         new_keypad.progress_bar = progressbar.ProgressBar()
         new_keypad.progress_bar.parent = new_keypad
