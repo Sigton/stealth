@@ -176,8 +176,12 @@ class Game:
 
         # Load the music
         # Then mix the volumes
-        pygame.mixer.music.load("resources/music.mp3")
-        pygame.mixer.music.set_volume(0.75)
+        if isinstance(self.current_level, (level.Level08)):
+            pygame.mixer.music.load("resources/music2.mp3")
+            pygame.mixer.music.set_volume(0.75)
+        else:
+            pygame.mixer.music.load("resources/music.mp3")
+            pygame.mixer.music.set_volume(0.75)
 
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
@@ -336,6 +340,10 @@ class Game:
                 # Assign references between objects
                 player.level = self.current_level
                 self.current_level.player = player
+
+                if isinstance(self.current_level, (level.Level08)):
+                    pygame.mixer.music.load("resources/music2.mp3")
+                    pygame.mixer.music.set_volume(0.75)
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
