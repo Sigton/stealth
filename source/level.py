@@ -1006,6 +1006,16 @@ class Level08(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        # Add the level text
+        level_text = text.LevelText("You've angered the guards!", 150, 1225)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("They now have firearms.", 150, 1250)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Bullets will hurt you.", 150, 1275)
+        self.level_text.add(level_text)
+        level_text = text.LevelText("Try to dodge or hide from them!", 150, 1300)
+        self.level_text.add(level_text)
+
         self.start_x = 0
         self.start_y = 719
 
