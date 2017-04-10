@@ -40,6 +40,9 @@ class Game:
         # Create an instance of the sound engine
         self.sound_engine = sounds.SoundEngine()
 
+        self.sound_engine.light_sound.set_volume(0)
+        self.sound_engine.dissolve_sound.set_volume(0.2)
+
         # Show the loading screen
         self.loading_screen = covers.LoadingScreen()
         if self.parent.parent.small:

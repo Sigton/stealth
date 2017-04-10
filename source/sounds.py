@@ -10,21 +10,30 @@ class SoundEngine:
         self.siren_sound_channel = pygame.mixer.Channel(2)
         self.footstep_sound_channel = pygame.mixer.Channel(3)
         self.fall_sound_channel = pygame.mixer.Channel(4)
+        self.beep_sound_channel = pygame.mixer.Channel(5)
+        self.gunshot_sound_channel = pygame.mixer.Channel(6)
+        self.hiss_sound_channel = pygame.mixer.Channel(7)
+        self.shell_sound_channel = pygame.mixer.Channel(8)
 
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
         self.siren_sound = pygame.mixer.Sound("resources/siren.wav")
         self.footstep_sound = pygame.mixer.Sound("resources/step.wav")
         self.fall_sound = pygame.mixer.Sound("resources/fall.wav")
-
-        self.light_sound.set_volume(0)
-        self.dissolve_sound.set_volume(0.2)
+        self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
+        self.gunshot_sound = pygame.mixer.Sound("resources/gunshot.wav")
+        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
+        self.shell_sound = pygame.mixer.Sound("resources/shelldrop.wav")
 
         self.channel_linkup = {self.light_sound: self.light_sound_channel,
                                self.dissolve_sound: self.dissolve_sound_channel,
                                self.siren_sound: self.siren_sound_channel,
                                self.footstep_sound: self.footstep_sound_channel,
-                               self.fall_sound: self.fall_sound_channel}
+                               self.fall_sound: self.fall_sound_channel,
+                               self.beep_sound: self.beep_sound_channel,
+                               self.gunshot_sound: self.gunshot_sound_channel,
+                               self.hiss_sound: self.hiss_sound_channel,
+                               self.shell_sound: self.shell_sound_channel}
 
         self.queued_sounds = []
 
