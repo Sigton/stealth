@@ -1,10 +1,16 @@
 import pygame
 
+# This deals with the loading and playing of sounds
+# Each sound has it's own channel so that we don't
+# any problems where there isn't a channel available
+# for the sound to play on.
+
 
 class SoundEngine:
 
     def __init__(self):
 
+        # Create a channel for each sound
         self.light_sound_channel = pygame.mixer.Channel(0)
         self.dissolve_sound_channel = pygame.mixer.Channel(1)
         self.siren_sound_channel = pygame.mixer.Channel(2)
@@ -15,6 +21,7 @@ class SoundEngine:
         self.hiss_sound_channel = pygame.mixer.Channel(7)
         self.shell_sound_channel = pygame.mixer.Channel(8)
 
+        # Load all the sounds
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
         self.siren_sound = pygame.mixer.Sound("resources/siren.wav")
@@ -25,6 +32,7 @@ class SoundEngine:
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.shell_sound = pygame.mixer.Sound("resources/shelldrop.wav")
 
+        # Link the sounds to the channels they should play in
         self.channel_linkup = {self.light_sound: self.light_sound_channel,
                                self.dissolve_sound: self.dissolve_sound_channel,
                                self.siren_sound: self.siren_sound_channel,
@@ -35,15 +43,16 @@ class SoundEngine:
                                self.hiss_sound: self.hiss_sound_channel,
                                self.shell_sound: self.shell_sound_channel}
 
+        # This is all the sounds that need to be played
         self.queued_sounds = []
 
     def play_sounds(self):
 
         # Plays all the queued sounds
         [self.channel_linkup[sound[0]].play(sound[0], sound[1]) for sound in self.queued_sounds]
-
+        # And empty the que
         self.queued_sounds = []
 
     def que_sound(self, sound):
-
+        # Add a sound to the que
         self.queued_sounds += [sound]
