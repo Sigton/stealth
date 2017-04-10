@@ -145,6 +145,7 @@ class Game:
         self.hud = hud.HUD(self.player, self.parent.parent.small)
 
         # Load the sounds and mix the volumes
+
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
         self.light_sound.set_volume(0)
 
