@@ -265,7 +265,7 @@ class Player(pygame.sprite.Sprite):
         # Play the footstep sound every so often
         # but make sure that the player is both walking and on the ground
         if int(self.walk_dist) % 15 == 0 and not self.walk_dist == 0 and self.on_ground():
-            pygame.mixer.Sound.play(self.footstep_sound)
+            self.sound_engine.que_sound([self.footstep_sound, 0])
 
         # If not running or crouching then show the standing image
         if self.xv == 0 and not self.crouching:
@@ -332,7 +332,7 @@ class Player(pygame.sprite.Sprite):
             # If the player has been in the air for more than a certain threshold of time
             if self.air_time > 45:
                 # Play the impact sound and deal the player damage
-                self.fall_sound.play()
+                self.sound_engine.que_sound([self.fall_sound, 0])
                 self.health -= self.air_time / 7.5
             # Since the player is no longer on the ground, tell the game such
             self.in_air = False
