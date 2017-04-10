@@ -37,9 +37,9 @@ class Arm(pygame.sprite.Sprite):
         self.degrees = 0
         self.counter = random.randrange(85, 115)
 
-        self.gunshot = pygame.mixer.Sound("resources/gunshot.wav")
-        self.shell_drop = pygame.mixer.Sound("resources/shelldrop.wav")
-        self.shell_drop.set_volume(0.50)
+        self.gunshot_sound = self.guard.level.sound_engine.gunshot_sound
+        self.shell_sound = self.guard.level.sound_engine.shell_sound
+        self.shell_sound.set_volume(0.5)
 
         self.drop_delay = 0
         self.played_dropped = True
@@ -87,7 +87,7 @@ class Arm(pygame.sprite.Sprite):
                 self.counter -= 1
             else:
                 self.guard.level.entities.add(Bullet(self))
-                self.gunshot.play(0)
+                self.guard.level.sound_engine.que_sound(self.gunshot_sound)
                 self.counter = random.randrange(85, 115)
                 self.drop_delay = random.randrange(10, 20)
                 self.played_dropped = False
@@ -96,7 +96,7 @@ class Arm(pygame.sprite.Sprite):
             self.drop_delay -= 1
         else:
             if not self.played_dropped:
-                self.shell_drop.play(0)
+                self.guard.level.sound_engine.que_sound(self.shell_sound)
                 self.played_dropped = True
 
 
