@@ -40,6 +40,9 @@ class Arm(pygame.sprite.Sprite):
         self.gunshot = pygame.mixer.Sound("resources/gunshot.wav")
         self.shell_drop = pygame.mixer.Sound("resources/shelldrop.wav")
 
+        self.drop_delay = 0
+        self.played_dropped = True
+
     def update(self):
 
         if self.guard.direction == "R":
@@ -85,6 +88,15 @@ class Arm(pygame.sprite.Sprite):
                 self.guard.level.entities.add(Bullet(self))
                 self.gunshot.play(0)
                 self.counter = 100
+                self.drop_delay = 15
+                self.played_dropped = False
+
+        if self.drop_delay > 0:
+            self.drop_delay -= 1
+        else:
+            if not self.played_dropped:
+                self.shell_drop.play(0)
+                self.played_dropped = True
 
 
 class Bullet(pygame.sprite.Sprite):
