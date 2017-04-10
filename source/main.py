@@ -15,6 +15,10 @@ pygame.mixer.pre_init(22050, -16, 1, 512)
 pygame.mixer.init()
 pygame.init()
 
+# We need more channels than the default
+# so set up some more
+pygame.mixer.set_num_channels(9)
+
 
 class LauncherApp(tk.Tk):
 
