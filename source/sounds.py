@@ -36,3 +36,7 @@ class SoundEngine:
             self.channel_linkup[sound].play(sound[0], sound[1])
 
         self.queued_sounds = []
+
+    def que_sound(self, sound):
+
+        self.queued_sounds += [sound]
