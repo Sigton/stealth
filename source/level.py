@@ -1021,6 +1021,8 @@ class Level08(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Big jump up head!", 150, 625)
         self.level_text.add(level_text)
+        level_text = text.LevelText("i wonder what's down there...", 900, 600)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
