@@ -151,6 +151,8 @@ class Game:
         self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
         self.dissolve_sound.set_volume(0.2)
 
+        self.siren_sound = pygame.mixer.Sound("resources/siren.wav")
+
     def run(self, from_start=False):
         # Game loop
 
@@ -179,6 +181,7 @@ class Game:
         if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
             pygame.mixer.music.load("resources/music2.mp3")
             pygame.mixer.music.set_volume(0.75)
+            self.siren_sound.play(-1)
         else:
             pygame.mixer.music.load("resources/music.mp3")
             pygame.mixer.music.set_volume(0.75)
@@ -345,6 +348,7 @@ class Game:
                     pygame.mixer.music.load("resources/music2.mp3")
                     pygame.mixer.music.set_volume(0.75)
                     pygame.mixer.music.play(-1)
+                    self.siren_sound.play(-1)
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
@@ -599,6 +603,7 @@ class Game:
 
         # Stop the light sound from playing once the game has finished
         self.light_sound.stop()
+        self.siren_sound.stop()
 
         # Start the menu music
         # before returning to the menu
