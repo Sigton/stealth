@@ -37,6 +37,9 @@ class Arm(pygame.sprite.Sprite):
         self.degrees = 0
         self.counter = 100
 
+        self.gunshot = pygame.mixer.Sound("resources/gunshot.wav")
+        self.shell_drop = pygame.mixer.Sound("resources/shelldrop.wav")
+
     def update(self):
 
         if self.guard.direction == "R":
@@ -80,6 +83,7 @@ class Arm(pygame.sprite.Sprite):
                 self.counter -= 1
             else:
                 self.guard.level.entities.add(Bullet(self))
+                self.gunshot.play(0)
                 self.counter = 100
 
 
