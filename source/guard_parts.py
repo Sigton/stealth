@@ -39,6 +39,7 @@ class Arm(pygame.sprite.Sprite):
 
         self.gunshot = pygame.mixer.Sound("resources/gunshot.wav")
         self.shell_drop = pygame.mixer.Sound("resources/shelldrop.wav")
+        self.shell_drop.set_volume(0.50)
 
         self.drop_delay = 0
         self.played_dropped = True
