@@ -130,6 +130,10 @@ class Bullet(pygame.sprite.Sprite):
         if len(hit_list):
             self.parent.guard.level.entities.remove(self)
 
+        hit_list = pygame.sprite.spritecollide(self, self.parent.guard.level.obstacle_list, False)
+        if len(hit_list):
+            self.parent.guard.level.entities.remove(self)
+
         if not 0 < self.rect.x < 1920:
             self.parent.guard.level.entities.remove(self)
         elif not 9 < self.rect.y < 1440:
