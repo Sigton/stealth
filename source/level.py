@@ -395,9 +395,8 @@ class Level:
         self.guards.add(new_guard)
 
     def create_hguard(self, x, y):
-        new_hguard = guards.HostileGuard(x, y)
+        new_hguard = guards.HostileGuard(x, y, self)
 
-        new_hguard.level = self
         new_hguard.player = self.player
         self.entities.add(new_hguard.arm)
 

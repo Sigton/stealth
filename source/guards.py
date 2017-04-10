@@ -173,9 +173,11 @@ class HostileGuard(pygame.sprite.Sprite):
 
     sprite_sheet = None
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, level):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.level = level
 
         self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
 
