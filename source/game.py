@@ -144,16 +144,6 @@ class Game:
         # Instantiate the HUD
         self.hud = hud.HUD(self.player, self.parent.parent.small)
 
-        # Load the sounds and mix the volumes
-
-        self.light_sound = pygame.mixer.Sound("resources/lights.wav")
-        self.light_sound.set_volume(0)
-
-        self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
-        self.dissolve_sound.set_volume(0.2)
-
-        self.siren_sound = pygame.mixer.Sound("resources/siren.wav")
-
     def run(self, from_start=False):
         # Game loop
 
