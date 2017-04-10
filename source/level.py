@@ -1025,7 +1025,7 @@ class Level08(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("Ah, you made it!", 1300, 1250)
         self.level_text.add(level_text)
-        level_text = text.LevelText("They keypad is up this way", 1590, 950)
+        level_text = text.LevelText("The keypad is up this way", 1590, 950)
         self.level_text.add(level_text)
 
         self.start_x = 0
