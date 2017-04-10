@@ -15,6 +15,11 @@ pygame.mixer.pre_init(22050, -16, 1, 512)
 pygame.mixer.init()
 pygame.init()
 
+# We require more than the default
+# of 8 channels for all of the sounds
+# that will be played
+pygame.mixer.set_num_channels(32)
+
 
 class LauncherApp(tk.Tk):
 
