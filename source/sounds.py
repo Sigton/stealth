@@ -33,7 +33,7 @@ class SoundEngine:
         # Plays all the queued sounds
         for sound in self.queued_sounds:
 
-            self.channel_linkup[sound].play(sound[0], sound[1])
+            self.channel_linkup[sound[0]].play(sound[0], sound[1])
 
         self.queued_sounds = []
 

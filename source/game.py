@@ -176,7 +176,7 @@ class Game:
         if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
             pygame.mixer.music.load("resources/music2.mp3")
             pygame.mixer.music.set_volume(0.75)
-            pygame.mixer.Sound.play(self.sound_engine.siren_sound, -1)
+            self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
         else:
             pygame.mixer.music.load("resources/music.mp3")
             pygame.mixer.music.set_volume(0.75)
@@ -209,7 +209,7 @@ class Game:
 
         # Always play the light sound
         # But make it a non-zero volume if there are guards
-        pygame.mixer.Sound.play(self.sound_engine.light_sound, -1)
+        self.sound_engine.que_sound([self.sound_engine.light_sound, -1])
 
         # Play the music
         pygame.mixer.music.play(-1)
@@ -343,7 +343,7 @@ class Game:
                     pygame.mixer.music.load("resources/music2.mp3")
                     pygame.mixer.music.set_volume(0.75)
                     pygame.mixer.music.play(-1)
-                    pygame.mixer.Sound.play(self.sound_engine.siren_sound, -1)
+                    self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
@@ -356,7 +356,7 @@ class Game:
                 # If the player has, then say the player is dying
                 player.dying = True
                 player.health = 0
-                pygame.mixer.Sound.play(self.sound_engine.dissolve_sound)
+                self.sound_engine.que_sound([self.sound_engine.dissolve_sound, 0])
 
             # This tells the game that it needs to reset the level
             if pause < 50 and reset:
@@ -439,6 +439,9 @@ class Game:
             self.blackout.update()
             self.crosshair.update()
             self.hud.update()
+
+            # Play all of the sounds that need to be played
+            self.sound_engine.play_sounds()
 
             if len([guard for guard in self.current_level.guards.sprites() if isinstance(guard, guards.Guard)]):
                     # Find nearest guard
