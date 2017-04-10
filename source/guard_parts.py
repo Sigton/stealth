@@ -103,8 +103,8 @@ class Bullet(pygame.sprite.Sprite):
 
     def update(self):
 
-        self.rect.x += 20*math.cos(math.radians(self.direction))
-        self.rect.y += 20*math.sin(math.radians(self.direction))
+        self.rect.x += 15*math.cos(math.radians(self.direction))
+        self.rect.y += 15*math.sin(math.radians(self.direction))
 
         hit_list = pygame.sprite.spritecollide(self, self.parent.guard.level.platform_list, False)
         if len(hit_list):

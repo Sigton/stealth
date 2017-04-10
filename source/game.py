@@ -408,7 +408,7 @@ class Game:
             hit_list = pygame.sprite.spritecollide(player, [bullet for bullet in self.current_level.entities
                                                             if isinstance(bullet, guard_parts.Bullet)], False)
             for bullet in hit_list:
-                player.health -= 15
+                player.health -= 10
                 self.current_level.entities.remove(bullet)
 
             # Update entities
