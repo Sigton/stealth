@@ -73,7 +73,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level01(self.player, True, self.fast, self.controls))
+        self.level_list.append(level.Level01(self.player, True, self.fast, self.controls))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
@@ -344,6 +344,7 @@ class Game:
                 if isinstance(self.current_level, (level.Level08)):
                     pygame.mixer.music.load("resources/music2.mp3")
                     pygame.mixer.music.set_volume(0.75)
+                    pygame.mixer.music.play(-1)
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
@@ -351,7 +352,7 @@ class Game:
 
             # Check if player has hit obstacles
             obstacle_hits = pygame.sprite.spritecollide(player, self.current_level.obstacle_list, False)
-            if (len(obstacle_hits) or player.health <=0) and not player.dying:
+            if (len(obstacle_hits) or player.health <= 0) and not player.dying:
 
                 # If the player has, then say the player is dying
                 player.dying = True
