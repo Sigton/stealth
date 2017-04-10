@@ -1033,3 +1033,17 @@ class Level08(Level):
 
         self.reset_world()
         self.set_scrolling()
+
+
+class Level09(Level):
+
+    def __init__(self, player, write_data=False, fast=False, controls=None):
+
+        Level.__init__(self, player, controls)
+
+
+class Level10(Level):
+
+    def __init__(self, player, write_data=False, fast=False, controls=None):
+
+        Level.__init__(self, player, controls)

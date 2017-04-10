@@ -176,7 +176,7 @@ class Game:
 
         # Load the music
         # Then mix the volumes
-        if isinstance(self.current_level, (level.Level08)):
+        if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
             pygame.mixer.music.load("resources/music2.mp3")
             pygame.mixer.music.set_volume(0.75)
         else:
@@ -341,7 +341,7 @@ class Game:
                 player.level = self.current_level
                 self.current_level.player = player
 
-                if isinstance(self.current_level, (level.Level08)):
+                if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
                     pygame.mixer.music.load("resources/music2.mp3")
                     pygame.mixer.music.set_volume(0.75)
                     pygame.mixer.music.play(-1)
