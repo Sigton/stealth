@@ -458,7 +458,7 @@ class Game:
                     # guards means that the sound can still be loud
                     if nearest_guard[0]-250 < 0:
                         # And then set the volume relative to the distance to the nearest guard
-                        self.sound_engine.light_sound.set_volume(abs(nearest_guard[0]-250)/400)
+                        self.sound_engine.light_sound.set_volume(abs(nearest_guard[0]-250)/150)
                     else:
                         self.sound_engine.light_sound.set_volume(0)
             else:
