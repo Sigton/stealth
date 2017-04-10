@@ -1,6 +1,7 @@
 import pygame
 import spritesheet
 import math
+import random
 
 
 class Arm(pygame.sprite.Sprite):
@@ -93,6 +94,8 @@ class Bullet(pygame.sprite.Sprite):
         self.direction = parent.degrees - 360
         if self.direction < 0:
             self.direction = abs(self.direction)
+
+        self.direction += random.randrange(-5, 5)
 
         self.image = pygame.image.load("resources/bullet.png").convert()
         self.image = pygame.transform.rotate(self.image, self.direction)
