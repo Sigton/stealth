@@ -87,7 +87,7 @@ class Arm(pygame.sprite.Sprite):
                 self.counter -= 1
             else:
                 self.guard.level.entities.add(Bullet(self))
-                self.guard.level.sound_engine.que_sound(self.gunshot_sound)
+                self.guard.level.sound_engine.que_sound([self.gunshot_sound, 0])
                 self.counter = random.randrange(85, 115)
                 self.drop_delay = random.randrange(10, 20)
                 self.played_dropped = False
@@ -96,7 +96,7 @@ class Arm(pygame.sprite.Sprite):
             self.drop_delay -= 1
         else:
             if not self.played_dropped:
-                self.guard.level.sound_engine.que_sound(self.shell_sound)
+                self.guard.level.sound_engine.que_sound([self.shell_sound, 0])
                 self.played_dropped = True
 
 
