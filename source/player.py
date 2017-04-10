@@ -133,8 +133,8 @@ class Player(pygame.sprite.Sprite):
         self.hitmask = self.hitmask_stand
 
         # Load the players sounds and mix the volumes
-        self.footstep = pygame.mixer.Sound("resources/step.wav")
-        self.fall = pygame.mixer.Sound("resources/fall.wav")
+        self.footstep_sound = None
+        self.fall_sound = None
 
         # How far the player has walked without stopping
         # This is used for calculating what frame in the
@@ -263,7 +263,7 @@ class Player(pygame.sprite.Sprite):
         # Play the footstep sound every so often
         # but make sure that the player is both walking and on the ground
         if int(self.walk_dist) % 15 == 0 and not self.walk_dist == 0 and self.on_ground():
-            pygame.mixer.Sound.play(self.footstep)
+            pygame.mixer.Sound.play(self.footstep_sound)
 
         # If not running or crouching then show the standing image
         if self.xv == 0 and not self.crouching:
@@ -330,7 +330,7 @@ class Player(pygame.sprite.Sprite):
             # If the player has been in the air for more than a certain threshold of time
             if self.air_time > 45:
                 # Play the impact sound and deal the player damage
-                self.fall.play()
+                self.fall_sound.play()
                 self.health -= self.air_time / 7.5
             # Since the player is no longer on the ground, tell the game such
             self.in_air = False
