@@ -24,6 +24,7 @@ include_files = ["source/level_data/",
                  "source/menu.py",
                  "source/hud.py",
                  "source/saves.py",
+                 "source/sounds.py",
                  "source/save_data.json"]
 
 excludes = ["OpenGL",
