@@ -50,7 +50,7 @@ class Level:
     # If the level is running in fast mode
     fast = False
 
-    def __init__(self, player, controls):
+    def __init__(self, player, controls, sound_engine):
 
         # Constructor
 
@@ -94,6 +94,8 @@ class Level:
 
         # Load the controls
         self.controls = controls
+
+        self.sound_engine = sound_engine
 
         # Load the background
         self.background = pygame.image.load("resources/background.png").convert()
@@ -492,10 +494,10 @@ class Level:
 
 class Level01(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         save_file = os.path.join("level_data", "level1.json")
         tile_file = os.path.join("level_data", "layouts", "level1")
@@ -544,10 +546,10 @@ class Level01(Level):
 
 class Level02(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         save_file = os.path.join("level_data", "level2.json")
         tile_file = os.path.join("level_data", "layouts", "level2")
@@ -619,10 +621,10 @@ class Level02(Level):
 
 class Level03(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         save_file = os.path.join("level_data", "level3.json")
         tile_file = os.path.join("level_data", "layouts", "level3")
@@ -699,10 +701,10 @@ class Level03(Level):
 
 class Level04(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         self.save_file = os.path.join("level_data", "level4.json")
         self.tile_file = os.path.join("level_data", "layouts", "level4")
@@ -759,10 +761,10 @@ class Level04(Level):
 
 class Level05(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         self.save_file = os.path.join("level_data", "level5.json")
         self.tile_file = os.path.join("level_data", "layouts", "level5")
@@ -818,10 +820,10 @@ class Level05(Level):
 
 class Level06(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         self.save_file = os.path.join("level_data", "level6.json")
         self.tile_file = os.path.join("level_data", "layouts", "level6")
@@ -878,10 +880,10 @@ class Level06(Level):
 
 class Level07(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         # Call the parents constructor
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         self.save_file = os.path.join("level_data", "level7.json")
         self.tile_file = os.path.join("level_data", "layouts", "level7")
@@ -975,9 +977,9 @@ class Level07(Level):
 
 class Level08(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
         self.save_file = os.path.join("level_data", "level8.json")
         self.tile_file = os.path.join("level_data", "layouts", "level8")
@@ -1037,13 +1039,13 @@ class Level08(Level):
 
 class Level09(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
 
 
 class Level10(Level):
 
-    def __init__(self, player, write_data=False, fast=False, controls=None):
+    def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
-        Level.__init__(self, player, controls)
+        Level.__init__(self, player, controls, sound_engine)
