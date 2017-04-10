@@ -17,11 +17,6 @@ class Door(platforms.Platform):
         # Call the parents constructor
         platforms.Platform.__init__(self, tile, x, y, layer)
 
-        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
-        self.hiss_sound.set_volume(0.25)
-
-        self.played_sound = False
-
     def set_keypad(self):
         # Set the keypad that operates this door
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.door_no-1]]
@@ -31,9 +26,6 @@ class Door(platforms.Platform):
         # Update the status of the door
         if self.keypad.progress >= 10:
             self.level.platform_list.remove(self)
-            if not self.played_sound:
-                pygame.mixer.Sound.play(self.hiss_sound)
-                self.played_sound = True
 
     def draw(self, display):
 
@@ -65,6 +57,8 @@ class Keypad(pygame.sprite.Sprite):
 
         self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
         self.beep_sound.set_volume(0.25)
+        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
+        self.hiss_sound.set_volume(0.25)
         self.played_sound = False
 
         # How much is required for the keypad to be activated
@@ -77,6 +71,7 @@ class Keypad(pygame.sprite.Sprite):
             self.image = self.image_on
             if not self.played_sound:
                 pygame.mixer.Sound.play(self.beep_sound)
+                pygame.mixer.Sound.play(self.hiss_sound)
                 self.played_sound = True
 
     def reset(self):
