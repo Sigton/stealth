@@ -60,7 +60,7 @@ class Game:
         label = text.LoadingLabel("", 300, 500)
 
         # Create the player
-        self.player = p.Player()
+        self.player = p.Player(self.sound_engine)
 
         # Create a group that contains only the player
         # This is so I can call .draw() on the group

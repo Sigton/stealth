@@ -35,12 +35,14 @@ class Player(pygame.sprite.Sprite):
     level = None
 
     # Methods
-    def __init__(self):
+    def __init__(self, sound_engine):
 
         # Constructor
 
         # Call parents constructor
         pygame.sprite.Sprite.__init__(self)
+
+        self.sound_engine = sound_engine
 
         # Load the sprite sheet to take all the images from
         sprite_sheet = spritesheet.SpriteSheet("resources/player.png")
@@ -133,8 +135,8 @@ class Player(pygame.sprite.Sprite):
         self.hitmask = self.hitmask_stand
 
         # Load the players sounds and mix the volumes
-        self.footstep_sound = None
-        self.fall_sound = None
+        self.footstep_sound = sound_engine.footstep_sound
+        self.fall_sound = sound_engine.fall_sound
 
         # How far the player has walked without stopping
         # This is used for calculating what frame in the
