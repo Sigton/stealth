@@ -103,6 +103,9 @@ class RechargingKeypad(Keypad):
                 self.level.sound_engine.que_sound([self.beep_sound, 0])
                 self.played_sound = True
 
+        if self.progress < 10 and self.played_sound:
+            self.played_sound = False
+
         if self.progress == 0:
             self.image = self.image_off
 
