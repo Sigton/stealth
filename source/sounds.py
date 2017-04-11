@@ -20,6 +20,7 @@ class SoundEngine:
         self.gunshot_sound_channel = pygame.mixer.Channel(6)
         self.hiss_sound_channel = pygame.mixer.Channel(7)
         self.shell_sound_channel = pygame.mixer.Channel(8)
+        self.click_sound_channel = pygame.mixer.Channel(9)
 
         # Load all the sounds
         self.light_sound = pygame.mixer.Sound("resources/lights.wav")
@@ -31,6 +32,7 @@ class SoundEngine:
         self.gunshot_sound = pygame.mixer.Sound("resources/gunshot.wav")
         self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
         self.shell_sound = pygame.mixer.Sound("resources/shelldrop.wav")
+        self.click_sound = pygame.mixer.Sound("resources/click.wav")
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {self.light_sound: self.light_sound_channel,
@@ -41,7 +43,8 @@ class SoundEngine:
                                self.beep_sound: self.beep_sound_channel,
                                self.gunshot_sound: self.gunshot_sound_channel,
                                self.hiss_sound: self.hiss_sound_channel,
-                               self.shell_sound: self.shell_sound_channel}
+                               self.shell_sound: self.shell_sound_channel,
+                               self.click_sound: self.click_sound_channel}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
