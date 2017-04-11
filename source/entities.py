@@ -99,6 +99,9 @@ class RechargingKeypad(Keypad):
         # Update the image if the pad is activated
         if self.progress >= 10:
             self.image = self.image_on
+            if not self.played_sound:
+                self.level.sound_engine.que_sound([self.beep_sound, 0])
+                self.played_sound = True
 
         if self.progress == 0:
             self.image = self.image_off
