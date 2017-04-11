@@ -17,7 +17,7 @@ pygame.init()
 
 # We need more channels than the default
 # so set up some more
-pygame.mixer.set_num_channels(9)
+pygame.mixer.set_num_channels(16)
 
 
 class LauncherApp(tk.Tk):
