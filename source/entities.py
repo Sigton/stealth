@@ -91,6 +91,8 @@ class RechargingKeypad(Keypad):
         # Call the parents constructor
         Keypad.__init__(self, x, y, level)
 
+        self.click_sound = self.level.sound_engine.click_sound
+
         self.timer_threshold = 70
         self.timer = self.timer_threshold
 
@@ -113,6 +115,7 @@ class RechargingKeypad(Keypad):
             if self.progress > 0:
                 self.timer = self.timer_threshold
                 self.progress -= 1
+                self.level.sound_engine.que_sound([self.click_sound, 0])
 
         else:
             self.timer -= 1
