@@ -200,21 +200,22 @@ class Game:
                     pygame.quit()
                     sys.exit(0)
 
-            if self.intro[current_gif].cur >= thresholds[current_gif]:
-                current_gif += 1
+            if do_quit:
+                if not delay:
+                    break
+            else:
+                if self.intro[current_gif].cur >= thresholds[current_gif]:
+                    current_gif += 1
 
-                to_fill = True
-                delay = 180
+                    to_fill = True
+                    delay = 180
 
-                if current_gif == len(self.intro):
-                    do_quit = True
+                    if current_gif == len(self.intro):
+                        do_quit = True
 
-            if not delay and to_fill:
-                self.display.blit(self.intro_background, (0, 0))
-                to_fill = False
-
-            if not delay and do_quit:
-                break
+                if not delay and to_fill:
+                    self.display.blit(self.intro_background, (0, 0))
+                    to_fill = False
 
             # Render the gif that should currently be playing
             # it is important we do not fill the display with black
