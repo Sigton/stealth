@@ -12,13 +12,13 @@ import covers
 import entities
 import text
 import hud
-import intros
 import guard_parts
 import spritesheet
 import sounds
 import funcs
 import math
 import sys
+import GIFImage
 
 
 class Game:
