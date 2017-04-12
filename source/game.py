@@ -166,8 +166,18 @@ class Game:
         # Here the intro is played
         # This is called before level 1,
         # to introduce the player to the game
+
+        # Empty the display
+        self.display.fill(constants.BLACK)
+
+        # Have a sort of game loop
         while True:
+
+            # We need an events loop so if the
+            # user quits we close the window
             for event in pygame.event.get():
+
+                # If the user closes the window
                 if event.type == QUIT:
                     # Show the mouse before quitting
                     pygame.mouse.set_visible(True)
@@ -176,9 +186,13 @@ class Game:
                     pygame.quit()
                     sys.exit(0)
 
-            self.display.fill(constants.BLACK)
+            # Render the gif that should currently be playing
+            # it is important we do not fill the display with black
+            # because of how the gifs were created
+            # to reduce the size of the files.
             self.intro[0].render(self.display, (0, 0))
 
+            # Update the display and regulate the frame rate
             pygame.display.flip()
             self.clock.tick(45)
 
