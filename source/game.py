@@ -152,6 +152,14 @@ class Game:
         # Instantiate the HUD
         self.hud = hud.HUD(self.player, self.parent.parent.small)
 
+    def play_intro(self):
+
+        # Here the intro is played
+        # This is called before level 1,
+        # to introduce the player to the game
+
+        pass
+
     def run(self, from_start=False):
         # Game loop
 
