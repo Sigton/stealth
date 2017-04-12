@@ -38,11 +38,18 @@ excludes = ["OpenGL",
             "xml",
             "socket"]
 
+packages = ["pygame",
+            "json",
+            "os",
+            "PIL",
+            "GIFImage",
+            "logging"]
+
 cx_Freeze.setup(
     name="Stealth",
     options={
         "build_exe": {
-            "packages": ["pygame", "json", "os", "random", "PIL", "GIFImage"],
+            "packages": packages,
             "excludes": excludes,
             "include_files": include_files
         }
