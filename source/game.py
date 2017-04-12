@@ -12,6 +12,7 @@ import covers
 import entities
 import text
 import hud
+import intros
 import guard_parts
 import spritesheet
 import sounds

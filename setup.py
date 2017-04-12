@@ -42,7 +42,7 @@ cx_Freeze.setup(
     name="Stealth",
     options={
         "build_exe": {
-            "packages": ["pygame", "json", "os", "random"],
+            "packages": ["pygame", "json", "os", "random", "PIL", "GIFImage"],
             "excludes": excludes,
             "include_files": include_files
         }
