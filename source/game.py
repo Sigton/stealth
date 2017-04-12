@@ -157,9 +157,11 @@ class Game:
         if self.parent.parent.small:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/small", image))
                           for image in os.listdir("resources/intro/small")]
+            self.intro_background = pygame.image.load("resources/intro/small/background.png").convert()
         else:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/normal", image))
                           for image in os.listdir("resources/intro/normal")]
+            self.intro_background = pygame.image.load("resources/intro/normal/background.png").convert()
 
     def play_intro(self):
 
@@ -168,7 +170,7 @@ class Game:
         # to introduce the player to the game
 
         # Empty the display
-        self.display.fill(constants.BLACK)
+        self.display.blit(self.intro_background, (0, 0))
 
         # The index of the gif which is currently playing
         current_gif = 0
@@ -208,7 +210,7 @@ class Game:
                     break
 
             if not delay and to_fill:
-                self.display.fill(constants.BLACK)
+                self.display.blit(self.intro_background, (0, 0))
                 to_fill = False
 
             # Render the gif that should currently be playing
