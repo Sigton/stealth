@@ -122,3 +122,5 @@ class LevelData:
 
         with open(self.save_file, "w") as outfile:
             json.dump(self.level_data, outfile)
+
+        return self.level_data

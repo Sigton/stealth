@@ -509,10 +509,9 @@ class Level01(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level1")
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Then render
         self.render(level_data)
@@ -571,10 +570,9 @@ class Level02(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level2")
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Then render
         self.render(level_data)
@@ -639,10 +637,9 @@ class Level03(Level):
 
         level = terrain.LevelData(save_file, tile_file, type_file, "level3")
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Then render
         self.render(level_data)
@@ -723,10 +720,9 @@ class Level04(Level):
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level4")
 
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Render it
         self.render(level_data)
@@ -784,10 +780,9 @@ class Level05(Level):
         level = terrain.LevelData(self.save_file, self.type_file, self.type_file, "level5")
 
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Then render it
         self.render(level_data)
@@ -844,10 +839,9 @@ class Level06(Level):
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level6")
 
         if write_data:
-            level.write_data(fast)
-
-        # Load the data
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         # Then render it
         self.render(level_data)
@@ -925,9 +919,9 @@ class Level07(Level):
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level7")
 
         if write_data:
-            level.write_data(fast)
-
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         self.render(level_data)
         for door in self.doors.sprites():
@@ -999,9 +993,9 @@ class Level08(Level):
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level8")
 
         if write_data:
-            level.write_data(fast)
-
-        level_data = level.load_data()
+            level_data = level.write_data(fast)
+        else:
+            level_data = level.load_data()
 
         self.render(level_data)
         for door in self.doors.sprites():
