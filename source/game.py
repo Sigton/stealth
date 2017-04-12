@@ -157,11 +157,10 @@ class Game:
         if self.parent.parent.small:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/small", image))
                           for image in os.listdir("resources/intro/small")]
-            self.intro_background = pygame.image.load("resources/intro/background_small.png").convert()
         else:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/normal", image))
                           for image in os.listdir("resources/intro/normal")]
-            self.intro_background = pygame.image.load("resources/intro/background.png").convert()
+        self.intro_background = pygame.image.load("resources/darkscreen.png").convert()
 
     def play_intro(self):
 
@@ -183,6 +182,7 @@ class Game:
         # Delay between gifs
         delay = 0
         to_fill = False
+        do_quit = False
 
         # Have a sort of game loop
         while True:
@@ -207,11 +207,14 @@ class Game:
                 delay = 180
 
                 if current_gif == len(self.intro):
-                    break
+                    do_quit = True
 
             if not delay and to_fill:
                 self.display.blit(self.intro_background, (0, 0))
                 to_fill = False
+
+            if not delay and do_quit:
+                break
 
             # Render the gif that should currently be playing
             # it is important we do not fill the display with black
