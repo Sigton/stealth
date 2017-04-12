@@ -155,9 +155,11 @@ class Game:
 
         # Load the parts of the intro
         if self.parent.parent.small:
-            self.intro = [gif.GIFImage(image) for image in os.listdir("resources/intro/small")]
+            self.intro = [gif.GIFImage(os.path.join("resources/intro/small", image))
+                          for image in os.listdir("resources/intro/small")]
         else:
-            self.intro = [gif.GIFImage(image) for image in os.listdir("resources/intro/normal")]
+            self.intro = [gif.GIFImage(os.path.join("resources/intro/normal", image))
+                          for image in os.listdir("resources/intro/normal")]
 
     def play_intro(self):
 
@@ -196,7 +198,7 @@ class Game:
 
         # If the player is about to start level 1,
         # then play the intro
-        if self.current_level_no:
+        if self.current_level_no == 0:
             self.play_intro()
 
         # Load the current level
