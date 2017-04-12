@@ -168,7 +168,10 @@ class Game:
         # This is called before level 1,
         # to introduce the player to the game
 
-        # Empty the display
+        # Reset all of the gifs in the intro
+        [gif.reset() for gif in self.intro]
+
+        # Blit the background onto the display
         self.display.blit(self.intro_background, (0, 0))
 
         # The index of the gif which is currently playing
@@ -181,7 +184,7 @@ class Game:
 
         # Delay between gifs
         delay = 0
-        to_fill = False
+        to_fill = True
         do_quit = False
 
         # Have a sort of game loop
