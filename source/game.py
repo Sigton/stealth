@@ -170,6 +170,14 @@ class Game:
         # Empty the display
         self.display.fill(constants.BLACK)
 
+        # The index of the gif which is currently playing
+        current_gif = 0
+
+        # This is how many frames are in each gif
+        thresholds = [157,
+                      178,
+                      182]
+
         # Have a sort of game loop
         while True:
 
@@ -190,7 +198,7 @@ class Game:
             # it is important we do not fill the display with black
             # because of how the gifs were created
             # to reduce the size of the files.
-            self.intro[0].render(self.display, (0, 0))
+            self.intro[current_gif].render(self.display, (0, 0))
 
             # Update the display and regulate the frame rate
             pygame.display.flip()
