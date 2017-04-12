@@ -157,11 +157,11 @@ class Game:
         if self.parent.parent.small:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/small", image))
                           for image in os.listdir("resources/intro/small")]
-            self.intro_background = pygame.image.load("resources/intro/small/background.png").convert()
+            self.intro_background = pygame.image.load("resources/intro/background_small.png").convert()
         else:
             self.intro = [gif.GIFImage(os.path.join("resources/intro/normal", image))
                           for image in os.listdir("resources/intro/normal")]
-            self.intro_background = pygame.image.load("resources/intro/normal/background.png").convert()
+            self.intro_background = pygame.image.load("resources/intro/background.png").convert()
 
     def play_intro(self):
 
