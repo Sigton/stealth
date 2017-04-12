@@ -174,9 +174,12 @@ class Game:
         current_gif = 0
 
         # This is how many frames are in each gif
-        thresholds = [157,
-                      178,
-                      182]
+        thresholds = [156,
+                      177,
+                      181]
+
+        # Delay between gifs
+        delay = 0
 
         # Have a sort of game loop
         while True:
@@ -194,11 +197,23 @@ class Game:
                     pygame.quit()
                     sys.exit(0)
 
+            if self.intro[current_gif].cur >= thresholds[current_gif]:
+                current_gif += 1
+                self.display.fill(constants.BLACK)
+
+                delay = 180
+
+                if current_gif == len(self.intro):
+                    break
+
             # Render the gif that should currently be playing
             # it is important we do not fill the display with black
             # because of how the gifs were created
             # to reduce the size of the files.
-            self.intro[current_gif].render(self.display, (0, 0))
+            if delay > 0:
+                delay -= 1
+            else:
+                self.intro[current_gif].render(self.display, (0, 0))
 
             # Update the display and regulate the frame rate
             pygame.display.flip()
