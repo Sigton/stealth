@@ -194,6 +194,11 @@ class Game:
         saves.save_data["current_level"] = self.current_level_no
         saves.save()
 
+        # If the player is about to start level 1,
+        # then play the intro
+        if self.current_level_no:
+            self.play_intro()
+
         # Load the current level
         self.current_level = self.level_list[self.current_level_no]
         self.player.level = self.current_level
