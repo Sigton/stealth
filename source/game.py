@@ -164,8 +164,21 @@ class Game:
         # Here the intro is played
         # This is called before level 1,
         # to introduce the player to the game
+        while True:
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
 
-        pass
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
+            self.display.fill(constants.BLACK)
+            self.intro[0].render(self.display, (0, 0))
+
+            pygame.display.flip()
+            self.clock.tick(45)
 
     def run(self, from_start=False):
         # Game loop
