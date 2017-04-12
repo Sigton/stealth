@@ -18,7 +18,8 @@ import sounds
 import funcs
 import math
 import sys
-import GIFImage
+import os
+import GIFImage as gif
 
 
 class Game:
@@ -151,6 +152,12 @@ class Game:
 
         # Instantiate the HUD
         self.hud = hud.HUD(self.player, self.parent.parent.small)
+
+        # Load the parts of the intro
+        if self.parent.parent.small:
+            self.intro = [gif.GIFImage(image) for image in os.listdir("resources/intro/small")]
+        else:
+            self.intro = [gif.GIFImage(image) for image in os.listdir("resources/intro/normal")]
 
     def play_intro(self):
 
