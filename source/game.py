@@ -88,43 +88,43 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 7...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level07(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level07(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
 
         # Set the current level
         self.current_level_no = 0
@@ -180,6 +180,7 @@ class Game:
 
         # Delay between gifs
         delay = 0
+        to_fill = False
 
         # Have a sort of game loop
         while True:
@@ -199,12 +200,16 @@ class Game:
 
             if self.intro[current_gif].cur >= thresholds[current_gif]:
                 current_gif += 1
-                self.display.fill(constants.BLACK)
 
+                to_fill = True
                 delay = 180
 
                 if current_gif == len(self.intro):
                     break
+
+            if not delay and to_fill:
+                self.display.fill(constants.BLACK)
+                to_fill = False
 
             # Render the gif that should currently be playing
             # it is important we do not fill the display with black
