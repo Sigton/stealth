@@ -330,6 +330,9 @@ class Game:
         # then play the intro
         if self.current_level_no == 0 and from_start:
             self.play_intro(self.intro, self.intro_thresholds, "infiltration", (175, 296))
+            played_intro = True
+        else:
+            played_intro = False
 
         # Load the current level
         self.current_level = self.level_list[self.current_level_no]
@@ -370,7 +373,13 @@ class Game:
         crouch = False
 
         # A variety of variables that are controlling whats going on
-        pause = 0
+
+        if played_intro:
+            pause = 100
+            fade_in = True
+        else:
+            pause = 0
+            fade_in = False
         reset = False
         progress = False
         do_reset = False
