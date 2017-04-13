@@ -216,7 +216,7 @@ class Game:
                     to_fill = True
                     delay = 30
 
-                    if current_gif == len(self.intro):
+                    if current_gif == 1:
                         do_quit = True
 
                 if not delay and to_fill:
@@ -235,6 +235,12 @@ class Game:
             # Update the display and regulate the frame rate
             pygame.display.flip()
             self.clock.tick(45)
+
+        for n in range(256):
+            pygame.event.get()
+            spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), n)
+            pygame.display.flip()
+            self.clock.tick()
 
         for n in range(256):
             pygame.event.get()
