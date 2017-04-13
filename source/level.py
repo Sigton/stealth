@@ -1040,9 +1040,13 @@ class Level09(Level):
         self.tile_file = os.path.join("level_data", "layouts", "level9")
         self.type_file = os.path.join("level_data", "tile_types", "level9")
 
-        self.layer_range = 1
+        self.layer_range = 2
 
         self.fast = fast
+
+        self.door_linkup = {0: 0,
+                            1: 0,
+                            2: 0}
 
         level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level9")
 
