@@ -175,6 +175,13 @@ class Game:
                                  177,
                                  181]
 
+        if self.parent.parent.small:
+            self.part2_scene = [gif.GIFImage("resources/anims/part2_small.gif")]
+        else:
+            self.part2_scene = [gif.GIFImage("resources/anims/part2.gif")]
+
+        self.part2_scene_thresholds = [158]
+
     def play_intro(self, scene, thresholds, texts):
 
         # Here the intro is played
@@ -226,7 +233,7 @@ class Game:
                     to_fill = True
                     delay = 30
 
-                    if current_gif == 1:  # len(scene):
+                    if current_gif == len(scene):
                         do_quit = True
 
                 if not delay and to_fill:
@@ -522,6 +529,9 @@ class Game:
                     pygame.mixer.music.set_volume(0.75)
                     pygame.mixer.music.play(-1)
                     self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
+                    if isinstance(self.current_level, level.Level08):
+                        self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 373, 200),
+                                                                                        ("escape", 125, 175, 296)])
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
