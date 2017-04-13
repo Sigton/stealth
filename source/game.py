@@ -169,7 +169,7 @@ class Game:
         # to introduce the player to the game
 
         # The text to display at the end of the intro
-        part1_text = text.Text("Infiltration", 125, 175, 296)
+        part1_text = text.Text("infiltration", 125, 175, 296)
 
         # Reset all of the gifs in the intro
         [gif.reset() for gif in self.intro]
@@ -237,6 +237,12 @@ class Game:
             self.clock.tick(45)
 
         for n in range(256):
+            self.black_screen.draw(self.display)
+            spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
+            pygame.display.flip()
+            pygame.time.wait(5)
+        pygame.time.wait(2000)
+        for n in range(255, 0, -1):
             self.black_screen.draw(self.display)
             spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
             pygame.display.flip()
