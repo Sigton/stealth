@@ -171,28 +171,27 @@ class Game:
                           for image in os.listdir("resources/intro/normal")]
         self.intro_background = pygame.image.load("resources/darkscreen.png").convert()
 
-    def play_intro(self):
+        self.intro_thresholds = [156,
+                                 177,
+                                 181]
+
+    def play_intro(self, scene, thresholds, label_text, text_pos):
 
         # Here the intro is played
         # This is called before level 1,
         # to introduce the player to the game
 
         # The text to display at the end of the intro
-        part1_text = text.Text("infiltration", 125, 175, 296)
+        part1_text = text.Text(label_text, 125, text_pos[0], text_pos[1])
 
         # Reset all of the gifs in the intro
-        [gif.reset() for gif in self.intro]
+        [gif.reset() for gif in scene]
 
         # Blit the background onto the display
         self.display.blit(self.intro_background, (0, 0))
 
         # The index of the gif which is currently playing
         current_gif = 0
-
-        # This is how many frames are in each gif
-        thresholds = [156,
-                      177,
-                      181]
 
         # Delay between gifs
         delay = 0
@@ -219,13 +218,13 @@ class Game:
                 if not delay:
                     break
             else:
-                if self.intro[current_gif].cur >= thresholds[current_gif]:
+                if scene[current_gif].cur >= thresholds[current_gif]:
                     current_gif += 1
 
                     to_fill = True
                     delay = 30
 
-                    if current_gif == len(self.intro):
+                    if current_gif == len(scene):
                         do_quit = True
 
                 if not delay and to_fill:
@@ -239,7 +238,7 @@ class Game:
             if delay > 0:
                 delay -= 1
             else:
-                self.intro[current_gif].render(self.display, (0, 0))
+                scene[current_gif].render(self.display, (0, 0))
 
             # Update the display and regulate the frame rate
             pygame.display.flip()
@@ -290,7 +289,7 @@ class Game:
         # If the player is about to start level 1,
         # then play the intro
         if self.current_level_no == 0 and from_start:
-            self.play_intro()
+            self.play_intro(self.intro, self.intro_thresholds, "infiltration", (175, 296))
 
         # Load the current level
         self.current_level = self.level_list[self.current_level_no]
