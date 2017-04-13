@@ -289,7 +289,7 @@ class Game:
 
         # If the player is about to start level 1,
         # then play the intro
-        if self.current_level_no == 0:
+        if self.current_level_no == 0 and from_start:
             self.play_intro()
 
         # Load the current level
