@@ -530,8 +530,8 @@ class Game:
                     pygame.mixer.music.play(-1)
                     self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
                     if isinstance(self.current_level, level.Level08):
-                        self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 373, 200),
-                                                                                        ("escape", 125, 175, 296)])
+                        self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 369, 200),
+                                                                                        ("escape", 125, 305, 296)])
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
