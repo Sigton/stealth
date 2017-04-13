@@ -225,7 +225,7 @@ class Game:
                     to_fill = True
                     delay = 30
 
-                    if current_gif == 1:
+                    if current_gif == len(self.intro):
                         do_quit = True
 
                 if not delay and to_fill:
