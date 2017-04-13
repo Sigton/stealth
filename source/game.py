@@ -214,7 +214,7 @@ class Game:
                     current_gif += 1
 
                     to_fill = True
-                    delay = 90
+                    delay = 30
 
                     if current_gif == len(self.intro):
                         do_quit = True
@@ -237,17 +237,26 @@ class Game:
             self.clock.tick(45)
 
         for n in range(256):
+            pygame.event.get()
             self.black_screen.draw(self.display)
             spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
             pygame.display.flip()
-            pygame.time.wait(5)
-        pygame.time.wait(2000)
+            self.clock.tick(45)
+
+        for n in range(90):
+            pygame.event.get()
+            self.clock.tick(45)
+
         for n in range(256, 0, -1):
+            pygame.event.get()
             self.black_screen.draw(self.display)
             spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n-1)
             pygame.display.flip()
-            pygame.time.wait(5)
-        pygame.time.wait(2000)
+            self.clock.tick(45)
+
+        for n in range(90):
+            pygame.event.get()
+            self.clock.tick(45)
 
     def run(self, from_start=False):
         # Game loop
