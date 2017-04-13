@@ -210,7 +210,7 @@ class Game:
                 if not delay:
                     break
             else:
-                if self.intro[current_gif].cur >= 1:  # thresholds[current_gif]
+                if self.intro[current_gif].cur >= thresholds[current_gif]:
                     current_gif += 1
 
                     to_fill = True
@@ -242,9 +242,9 @@ class Game:
             pygame.display.flip()
             pygame.time.wait(5)
         pygame.time.wait(2000)
-        for n in range(255, 0, -1):
+        for n in range(256, 0, -1):
             self.black_screen.draw(self.display)
-            spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
+            spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n-1)
             pygame.display.flip()
             pygame.time.wait(5)
         pygame.time.wait(2000)
