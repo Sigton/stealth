@@ -245,31 +245,71 @@ class Game:
             self.clock.tick(45)
 
         for n in range(256):
-            pygame.event.get()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
             spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0), n)
             pygame.display.flip()
             self.clock.tick()
 
         for n in range(256):
-            pygame.event.get()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
             self.black_screen.draw(self.display)
             spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
             pygame.display.flip()
             self.clock.tick(45)
 
         for n in range(90):
-            pygame.event.get()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
             self.clock.tick(45)
 
         for n in range(256, 0, -1):
-            pygame.event.get()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
             self.black_screen.draw(self.display)
             spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n-1)
             pygame.display.flip()
             self.clock.tick(45)
 
         for n in range(90):
-            pygame.event.get()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
+
             self.clock.tick(45)
 
     def run(self, from_start=False):
