@@ -375,7 +375,7 @@ class Game:
         # A variety of variables that are controlling whats going on
 
         if played_intro:
-            pause = 100
+            pause = 64
             fade_in = True
         else:
             pause = 0
@@ -768,6 +768,13 @@ class Game:
             elif progress and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
                                        pause*16)
+
+            # If the game should fade in then do so
+            if fade_in and pause:
+                spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
+                                       pause*4)
+            else:
+                fade_in = False
 
             # Limit to 60 fps
             self.clock.tick(45)
