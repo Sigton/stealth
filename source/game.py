@@ -82,7 +82,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
         # Getting the events stops the window from not responding
         pygame.event.get()
 
@@ -90,35 +90,35 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
+        # .level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
@@ -175,14 +175,16 @@ class Game:
                                  177,
                                  181]
 
-    def play_intro(self, scene, thresholds, label_text, text_pos):
+    def play_intro(self, scene, thresholds, texts):
 
         # Here the intro is played
         # This is called before level 1,
         # to introduce the player to the game
 
         # The text to display at the end of the intro
-        part1_text = text.Text(label_text, 125, text_pos[0], text_pos[1])
+        display_text = pygame.sprite.Group()
+        for t in texts:
+            display_text.add(text.Text(t[0], t[1], t[2], t[3]))
 
         # Reset all of the gifs in the intro
         [gif.reset() for gif in scene]
@@ -224,7 +226,7 @@ class Game:
                     to_fill = True
                     delay = 30
 
-                    if current_gif == len(scene):
+                    if current_gif == 1:  # len(scene):
                         do_quit = True
 
                 if not delay and to_fill:
@@ -269,7 +271,7 @@ class Game:
                     sys.exit(0)
 
             self.black_screen.draw(self.display)
-            spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n)
+            [spritesheet.blit_alpha(self.display, text.image, text.rect.topleft, n) for text in display_text]
             pygame.display.flip()
             self.clock.tick(45)
 
@@ -296,7 +298,7 @@ class Game:
                     sys.exit(0)
 
             self.black_screen.draw(self.display)
-            spritesheet.blit_alpha(self.display, part1_text.image, part1_text.rect.topleft, n-1)
+            [spritesheet.blit_alpha(self.display, text.image, text.rect.topleft, n-1) for text in display_text]
             pygame.display.flip()
             self.clock.tick(45)
 
@@ -329,7 +331,8 @@ class Game:
         # If the player is about to start level 1,
         # then play the intro
         if self.current_level_no == 0 and from_start:
-            self.play_intro(self.intro, self.intro_thresholds, "infiltration", (175, 296))
+            self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 373, 200),
+                                                                ("infiltration", 125, 175, 296)])
             played_intro = True
         else:
             played_intro = False
