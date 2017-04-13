@@ -375,7 +375,7 @@ class Game:
         # A variety of variables that are controlling whats going on
 
         if played_intro:
-            pause = 64
+            pause = 32
             fade_in = True
         else:
             pause = 0
@@ -772,7 +772,7 @@ class Game:
             # If the game should fade in then do so
             if fade_in and pause:
                 spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
-                                       pause*4)
+                                       pause*8)
             else:
                 fade_in = False
 
