@@ -426,6 +426,8 @@ class Game:
         do_reset = False
         show_caught = False
 
+        play_outro = False
+
         # Always play the light sound
         # But make it a non-zero volume if there are guards
         self.sound_engine.que_sound([self.sound_engine.light_sound, -1])
@@ -552,9 +554,7 @@ class Game:
                     saves.save_data["current_level"] = 0
                     saves.save()
 
-                    # Since the user has finished all of the levels
-                    # play the outro before returning to the menu
-                    self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 649, 296)])
+                    play_outro = True
 
                     break
                 else:
@@ -842,6 +842,11 @@ class Game:
         # Stop the light sound from playing once the game has finished
         self.sound_engine.light_sound.stop()
         self.sound_engine.siren_sound.stop()
+
+        if play_outro:
+            # Since the user has finished all of the levels
+            # play the outro before returning to the menu
+            self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 649, 296)])
 
         # Start the menu music
         # before returning to the menu
