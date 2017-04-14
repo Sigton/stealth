@@ -89,8 +89,10 @@ class Timer(Label):
         Label.__init__(self, str(num), 32, 10, 10)
 
         self.value = num
+        self.can_update = False
 
     def update(self):
 
-        self.value -= 1
-        self.update_text(str(self.value))
+        if self.can_update:
+            self.value -= 1
+            self.update_text(str(self.value))
