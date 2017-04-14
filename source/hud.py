@@ -80,3 +80,10 @@ class HUD(pygame.sprite.Sprite):
         self.stamina_label.draw(display)
         self.health_num.draw(display)
         self.stamina_num.draw(display)
+
+
+class Timer(Label):
+
+    def __init__(self, num, size, x, y):
+
+        Label.__init__(self, num, size, x, y)
