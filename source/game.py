@@ -90,56 +90,56 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 3...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 4...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 5...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 7...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level07(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level07(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 9...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
 
         # Set the current level
         self.current_level_no = 0
@@ -204,7 +204,7 @@ class Game:
         # The text to display at the end of the intro
         display_text = pygame.sprite.Group()
         for t in texts:
-            display_text.add(text.Text(t[0], t[1], t[2], t[3]))
+            display_text.add(text.Text(t[0], t[1], (constants.SCREEN_WIDTH/2)-(t[2]/2), t[3]))
 
         # Reset all of the gifs in the intro
         [gif.reset() for gif in scene]
@@ -352,11 +352,11 @@ class Game:
         # then play the intro
         played_intro = True
         if self.current_level_no == 0 and from_start:
-            self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 373, 200),
-                                                                ("infiltration", 125, 175, 296)])
+            self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 214, 200),
+                                                                ("infiltration", 125, 603, 296)])
         elif isinstance(self.current_level, level.Level08):
-            self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 369, 200),
-                                                                            ("escape", 125, 305, 296)])
+            self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 222, 369, 200),
+                                                                            ("escape", 349, 305, 296)])
         else:
             played_intro = False
 
@@ -534,7 +534,7 @@ class Game:
 
                     # Since the user has finished all of the levels
                     # play the outro before returning to the menu
-                    self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 155, 296)])
+                    self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 649, 296)])
 
                     break
                 else:
@@ -552,8 +552,8 @@ class Game:
                     pygame.mixer.music.play(-1)
                     self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
                     if isinstance(self.current_level, level.Level08):
-                        self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 369, 200),
-                                                                                        ("escape", 125, 305, 296)])
+                        self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 222, 200),
+                                                                                        ("escape", 125, 349, 296)])
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
