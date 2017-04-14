@@ -188,6 +188,13 @@ class Game:
 
         self.part2_scene_thresholds = [158]
 
+        if self.parent.parent.small:
+            self.outro_small = [gif.GIFImage("resources/anims/outro_small.gif")]
+        else:
+            self.outro = [gif.GIFImage("resources/anims/outro.gif")]
+
+        self.outro_thresholds = [112]
+
     def play_intro(self, scene, thresholds, texts):
 
         # Here the intro is played
