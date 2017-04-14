@@ -509,6 +509,7 @@ class Game:
             if progress and pause == 30:
 
                 # Reset the player and level
+                self.current_level.reset_objects()
                 self.current_level.reset_world()
                 player.reset()
 
