@@ -88,6 +88,7 @@ class Timer(Label):
 
         Label.__init__(self, str(num), 32, 10, 10)
 
+        self.start_value = num
         self.value = num
         self.can_update = False
 
@@ -95,3 +96,7 @@ class Timer(Label):
 
         self.value -= 1
         self.update_text(str(self.value))
+
+    def reset(self):
+
+        self.value = self.start_value
