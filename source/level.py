@@ -1061,6 +1061,8 @@ class Level09(Level):
 
         level_text = text.LevelText("There are lots of guards!", 70, 1080)
         self.level_text.add(level_text)
+        level_text = text.LevelText("You really need to be quick...", 300, 1000)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
