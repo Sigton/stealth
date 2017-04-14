@@ -1076,3 +1076,28 @@ class Level10(Level):
     def __init__(self, player, write_data=False, fast=False, controls=None, sound_engine=None):
 
         Level.__init__(self, player, controls, sound_engine)
+
+        self.save_file = os.path.join("level_data", "level10.json")
+        self.tile_file = os.path.join("level_data", "layouts", "level10")
+        self.type_file = os.path.join("level_data", "tile_types", "level10")
+
+        self.layer_range = 1
+
+        self.fast = fast
+
+        level = terrain.LevelData(self.save_file, self.tile_file, self.type_file, "level10")
+
+        if write_data:
+            level_data = level.write_data(self.fast)
+        else:
+            level_data = level.load_data()
+
+        self.render(level_data)
+        for door in self.doors.sprites():
+            door.set_keypad()
+
+        self.start_x = 0
+        self.start_y = 719
+
+        self.reset_world()
+        self.set_scrolling()
