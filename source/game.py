@@ -365,8 +365,8 @@ class Game:
             self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 214, 200),
                                                                 ("infiltration", 125, 603, 296)])
         elif isinstance(self.current_level, level.Level08) and from_start:
-            self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 222, 369, 200),
-                                                                            ("escape", 349, 305, 296)])
+            self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 222, 200),
+                                                                            ("escape", 125, 349, 296)])
         else:
             played_intro = False
 
