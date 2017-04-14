@@ -364,7 +364,7 @@ class Game:
         if self.current_level_no == 0 and from_start:
             self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 214, 200),
                                                                 ("infiltration", 125, 603, 296)])
-        elif isinstance(self.current_level, level.Level08):
+        elif isinstance(self.current_level, level.Level08) and from_start:
             self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 222, 369, 200),
                                                                             ("escape", 349, 305, 296)])
         else:
@@ -502,7 +502,7 @@ class Game:
                 elif event.type == self.update_timer_event:
                     if self.timer.can_update:
                         self.timer.update()
-                        self.sound_engine.que_sound([self.sound_engine.keypress_sound])
+                        self.sound_engine.que_sound([self.sound_engine.keypress_sound, 0])
 
             # Pause is a counter variable that stops the game
             # The higher pause is set to the longer the game will pause
