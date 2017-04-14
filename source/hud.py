@@ -84,6 +84,13 @@ class HUD(pygame.sprite.Sprite):
 
 class Timer(Label):
 
-    def __init__(self, num, size, x, y):
+    def __init__(self, num):
 
-        Label.__init__(self, num, size, x, y)
+        Label.__init__(self, str(num), 32, 10, 10)
+
+        self.value = num
+
+    def update(self):
+
+        self.value -= 1
+        self.update_text(str(self.value))
