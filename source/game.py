@@ -132,7 +132,7 @@ class Game:
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
@@ -343,10 +343,13 @@ class Game:
 
         # If the player is about to start level 1,
         # then play the intro
+        played_intro = True
         if self.current_level_no == 0 and from_start:
             self.play_intro(self.intro, self.intro_thresholds, [("part 1:", 75, 373, 200),
                                                                 ("infiltration", 125, 175, 296)])
-            played_intro = True
+        elif isinstance(self.current_level, level.Level08):
+            self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 369, 200),
+                                                                            ("escape", 125, 305, 296)])
         else:
             played_intro = False
 
