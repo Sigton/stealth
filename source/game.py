@@ -132,14 +132,14 @@ class Game:
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 9...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 10...", loading_label_x, loading_label_y)
@@ -385,6 +385,8 @@ class Game:
             pygame.mixer.music.load("resources/music2.mp3")
             pygame.mixer.music.set_volume(0.75)
             self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
+
+            self.timer.can_update = True
         else:
             pygame.mixer.music.load("resources/music.mp3")
             pygame.mixer.music.set_volume(0.75)
@@ -497,6 +499,9 @@ class Game:
                     if event.key == self.controls["CROUCH"]:
                         crouch = False
 
+                elif event.type == self.update_timer_event:
+                    self.timer.update()
+
             # Pause is a counter variable that stops the game
             # The higher pause is set to the longer the game will pause
             # Pause is often used when transitions are being made
@@ -564,6 +569,7 @@ class Game:
                     if isinstance(self.current_level, level.Level08):
                         self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 222, 200),
                                                                                         ("escape", 125, 349, 296)])
+                    self.timer.can_update = True
 
             # Once the progression has complete, set the progress var accordingly
             if progress and not pause:
@@ -774,6 +780,8 @@ class Game:
             self.blackout.draw(self.display)
             self.crosshair.draw(self.display)
             self.hud.draw(self.display)
+            if self.timer.can_update:
+                self.timer.draw(self.display)
 
             # Draw covers when player is caught/dies
             # there are certain periods where these covers fade in/out
