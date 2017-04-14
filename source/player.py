@@ -398,6 +398,20 @@ class Player(pygame.sprite.Sprite):
 
     def reset(self):
 
+        if self.crouching:
+            # If it can then reset the rect sizes
+            self.crouching = False
+            self.rect.width = 24
+            self.rect.height = 48
+            self.rect.y -= 24
+
+            # Again the players position needs readjusted when facing left
+            if self.direction == "L":
+                self.rect.x += 24
+
+            # And reset the hitmask to the standing one
+            self.hitmask = self.hitmask_stand
+
         # Reset to the sprites original position and image
         self.image = self.stand_image_r
         self.hitmask = self.hitmask_stand
