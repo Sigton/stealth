@@ -500,7 +500,9 @@ class Game:
                         crouch = False
 
                 elif event.type == self.update_timer_event:
-                    self.timer.update()
+                    if self.timer.can_update:
+                        self.timer.update()
+                        self.sound_engine.que_sound([self.sound_engine.keypress_sound])
 
             # Pause is a counter variable that stops the game
             # The higher pause is set to the longer the game will pause

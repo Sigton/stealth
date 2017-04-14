@@ -93,6 +93,5 @@ class Timer(Label):
 
     def update(self):
 
-        if self.can_update:
-            self.value -= 1
-            self.update_text(str(self.value))
+        self.value -= 1
+        self.update_text(str(self.value))
