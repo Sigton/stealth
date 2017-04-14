@@ -173,6 +173,10 @@ class Game:
 
         # Instantiate the HUD
         self.hud = hud.HUD(self.player, self.parent.parent.small)
+        self.timer = hud.Timer(180)
+
+        self.update_timer_event = USEREVENT + 1
+        pygame.time.set_timer(self.update_timer_event, 1000)
 
         # Load the parts of the intro
         if self.parent.parent.small:
