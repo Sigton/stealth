@@ -82,7 +82,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
         # Getting the events stops the window from not responding
         pygame.event.get()
 
@@ -90,7 +90,7 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # .level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
+        # level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
@@ -132,14 +132,14 @@ class Game:
         label.update_text("Loading Level 8...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 9...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
 
         # Set the current level
         self.current_level_no = 0
@@ -189,7 +189,7 @@ class Game:
         self.part2_scene_thresholds = [158]
 
         if self.parent.parent.small:
-            self.outro_small = [gif.GIFImage("resources/anims/outro_small.gif")]
+            self.outro = [gif.GIFImage("resources/anims/outro_small.gif")]
         else:
             self.outro = [gif.GIFImage("resources/anims/outro.gif")]
 
@@ -531,6 +531,11 @@ class Game:
                     self.current_level_no = 0
                     saves.save_data["current_level"] = 0
                     saves.save()
+
+                    # Since the user has finished all of the levels
+                    # play the outro before returning to the menu
+                    self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 155, 296)])
+
                     break
                 else:
                     self.current_level = self.level_list[self.current_level_no]
