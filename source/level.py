@@ -435,28 +435,28 @@ class Level:
 
             if tile_data['type'] == "Door":
                 self.door_no += 1
-                if 37 < tile_data['tile'] < 40:
+                if 38 < tile_data['tile'] < 41:
                     self.create_camera(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24, tile_data['tile']-38)
+                                       position[0]*24, position[1]*24, tile_data['tile']-39)
                 else:
                     self.create_door(platforms.platforms[tile_data['tile']-1],
                                      position[0]*24, position[1]*24, layer)
 
             elif tile_data['type'] == "Entity":
 
-                if tile_data['tile'] == 42:
+                if tile_data['tile'] == 43:
                     self.create_keypad((position[0]*24)+6, (position[1]*24)+5)
 
-                elif tile_data['tile'] == 40:
+                elif tile_data['tile'] == 41:
                     self.create_guard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 43:
+                elif tile_data['tile'] == 44:
                     self.create_bomb(position[0]*24, position[1]*24)
 
-                elif tile_data['tile'] == 44:
+                elif tile_data['tile'] == 45:
                     self.create_hguard(position[0]*24, (position[1]*24)-24)
 
-                elif tile_data['tile'] == 46:
+                elif tile_data['tile'] == 47:
                     self.create_recharging_keypad((position[0]*24)+6, (position[1]*24)+5)
 
             elif tile_data['type'] == "Solid":
