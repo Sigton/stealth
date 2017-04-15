@@ -475,6 +475,9 @@ class Level:
                 if tile_data['tile'] == 25:
                     self.create_ladder(platforms.platforms[tile_data['tile']-1],
                                        position[0]*24, position[1]*24, layer)
+                elif tile_data['tile'] == 39:
+                    self.create_sky(platforms.platforms[tile_data['tile'] - 1],
+                                    position[0] * 24, position[1] * 24, layer)
                 else:
                     self.create_cosmetic(platforms.platforms[tile_data['tile']-1],
                                          position[0]*24, position[1]*24, layer)
@@ -487,9 +490,6 @@ class Level:
                     else:
                         self.create_anim_obs(platforms.platforms[tile_data['tile'] - 1],
                                              position[0] * 24, position[1] * 24, layer)
-                elif tile_data['tile'] == 39:
-                    self.create_sky(platforms.platforms[tile_data['tile']-1],
-                                    position[0]*24, position[1]*24, layer)
                 else:
                     self.create_obstacle(platforms.platforms[tile_data['tile']-1],
                                          position[0]*24, position[1]*24, layer)
