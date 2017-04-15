@@ -167,6 +167,10 @@ class Game:
             self.game_over.image = self.game_over.image_small
         self.black_screen = covers.DarkScreen()
 
+        self.game_over2 = covers.GameOverScreen2()
+        if self.parent.parent.small:
+            self.game_over2.image = self.game_over2.image_small
+
         # Using a custom image as the pointer
         # suits the theme a bit better than the mouse pointer
         self.crosshair = entities.Crosshair()
@@ -776,7 +780,7 @@ class Game:
             if self.timer.can_update:
                 if self.timer.value <= 0:
                     time_up = True
-                    pause = 90
+                    pause = 100
 
                     self.timer.can_update = False
 
@@ -802,6 +806,9 @@ class Game:
                 player.reset()
 
                 self.timer.reset()
+
+            if time_up and not pause:
+                time_up = False
 
             # Stop the player from dying once it's dead
             if player.dying and player.death_progress >= 75:
@@ -834,6 +841,17 @@ class Game:
                                        pause*16)
             elif show_caught and 16 < pause < 68:
                 self.display.blit(self.game_over.image, (0, 0))
+
+            # If the bomb has gone off
+            # then show the other game over screen
+            if time_up and 67 < pause < 100:
+                spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
+                                       abs(pause-100)*8)
+            elif time_up and 0 < pause < 17:
+                spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
+                                       pause*16)
+            elif time_up and 16 < pause < 68:
+                self.display.blit(self.game_over2.image, (0, 0))
 
             # Then just a dark screen when the player dies
             # But this shouldn't be shown when the player is caught
