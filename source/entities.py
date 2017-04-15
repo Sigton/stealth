@@ -400,5 +400,6 @@ class Sky(pygame.sprite.Sprite):
         # than the rest of the platforms.
         # This is complicated for the sky
         # since it's position needs to move relative to the rest of the tiles
-
+        self.image.blit(self.full_image, ((self.level.world_shift_x//4)+self.rect.x,
+                                          (self.level.world_shift_y//-4)+self.rect.y))
         display.blit(self.image, (self.rect.x, self.rect.y))
