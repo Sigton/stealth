@@ -427,6 +427,7 @@ class Level:
 
     def create_sky(self, tile, x, y, layer):
         sky = entities.Sky(tile, x, y, layer)
+        sky.level = self
         self.sky.add(sky)
 
     def render(self, data):

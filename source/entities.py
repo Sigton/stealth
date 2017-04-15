@@ -369,6 +369,8 @@ class Laser(pygame.sprite.Sprite):
 
 class Sky(pygame.sprite.Sprite):
 
+    level = None
+
     def __init__(self, sprite_sheet_data, x, y, layer=1):
 
         pygame.sprite.Sprite.__init__(self)
