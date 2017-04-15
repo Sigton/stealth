@@ -365,3 +365,30 @@ class Laser(pygame.sprite.Sprite):
                 return True
 
         return False
+
+
+class Sky(pygame.sprite.Sprite):
+
+    def __init__(self, sprite_sheet_data, x, y, layer=1):
+
+        pygame.sprite.Sprite.__init__(self)
+
+        sprite_sheet = spritesheet.SpriteSheet("resources/sky.png")
+
+        self.image = sprite_sheet.get_image(sprite_sheet_data[0],
+                                            sprite_sheet_data[1],
+                                            sprite_sheet_data[2],
+                                            sprite_sheet_data[3])
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+        self.start_x = x
+        self.start_y = y
+
+        # The layer the tile is in
+        self.layer = layer
+
+    def draw(self, display):
+        display.blit(self.image, (self.rect.x, self.rect.y))
