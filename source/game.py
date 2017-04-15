@@ -784,6 +784,9 @@ class Game:
                     self.current_level_no = 7
                     self.current_level = self.level_list[self.current_level_no]
 
+                    saves.save_data["current_level"] = self.current_level_no
+                    saves.save()
+
                     self.current_level.player = player
                     player.level = self.current_level
 
