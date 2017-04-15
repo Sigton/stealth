@@ -385,9 +385,11 @@ class Game:
 
         # Load the music
         # Then mix the volumes
+        music2_playing = False
         if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
             pygame.mixer.music.load("resources/music2.mp3")
             pygame.mixer.music.set_volume(0.75)
+            music2_playing = True
             self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
 
             self.timer.can_update = True
@@ -572,10 +574,12 @@ class Game:
                 self.current_level.player = player
 
                 if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
-                    pygame.mixer.music.load("resources/music2.mp3")
-                    pygame.mixer.music.set_volume(0.75)
-                    pygame.mixer.music.play(-1)
-                    self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
+                    if not music2_playing:
+                        pygame.mixer.music.load("resources/music2.mp3")
+                        pygame.mixer.music.set_volume(0.75)
+                        pygame.mixer.music.play(-1)
+                        self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
+                        music2_playing = True
                     if isinstance(self.current_level, level.Level08):
                         self.play_intro(self.part2_scene, self.part2_scene_thresholds, [("part 2:", 75, 222, 200),
                                                                                         ("escape", 125, 349, 296)])
