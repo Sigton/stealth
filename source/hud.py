@@ -100,7 +100,9 @@ class Timer(Label):
     def reset(self):
 
         self.value = self.start_value
+        self.update_text(str(self.value))
 
     def set(self, val):
 
         self.value = val
+        self.update_text(str(self.value))
