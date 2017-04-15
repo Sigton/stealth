@@ -1123,6 +1123,8 @@ class Level10(Level):
 
         level_text = text.LevelText("Good luck!", 70, 1080)
         self.level_text.add(level_text)
+        level_text = text.LevelText("Loads of guards!", 200, 380)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
