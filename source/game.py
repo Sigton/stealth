@@ -543,6 +543,7 @@ class Game:
                 # Reset the player and level
                 self.current_level.reset_objects()
                 self.current_level.reset_world()
+                self.current_level.set_scrolling()
                 player.reset()
 
                 # Save the progress to the save file
@@ -771,6 +772,27 @@ class Game:
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
                 player.reset()
+
+            if self.timer.can_update:
+                if self.timer.value <= 0:
+                    # If the timer is out of time then reset to level 8
+
+                    self.current_level.reset_objects()
+                    self.current_level.reset_world()
+                    self.current_level.set_scrolling()
+
+                    self.current_level_no = 7
+                    self.current_level = self.level_list[self.current_level_no]
+
+                    self.current_level.player = player
+                    player.level = self.current_level
+
+                    self.current_level.reset_objects()
+                    self.current_level.reset_world()
+                    self.current_level.set_scrolling()
+                    player.reset()
+
+                    self.timer.reset()
 
             # Stop the player from dying once it's dead
             if player.dying and player.death_progress >= 75:
