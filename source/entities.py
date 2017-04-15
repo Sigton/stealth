@@ -375,10 +375,12 @@ class Sky(pygame.sprite.Sprite):
 
         sprite_sheet = spritesheet.SpriteSheet("resources/sky.png")
 
-        self.image = sprite_sheet.get_image(sprite_sheet_data[0],
-                                            sprite_sheet_data[1],
-                                            sprite_sheet_data[2],
-                                            sprite_sheet_data[3])
+        self.full_image = sprite_sheet.get_image(sprite_sheet_data[0],
+                                                 sprite_sheet_data[1],
+                                                 sprite_sheet_data[2],
+                                                 sprite_sheet_data[3])
+
+        self.image = pygame.Surface([240, 1152]).convert()
 
         self.rect = self.image.get_rect()
         self.rect.x = x
@@ -391,4 +393,10 @@ class Sky(pygame.sprite.Sprite):
         self.layer = layer
 
     def draw(self, display):
+
+        # To make the sky look more believable make it scroll slower
+        # than the rest of the platforms.
+        # This is complicated for the sky
+        # since it's position needs to move relative to the rest of the tiles
+
         display.blit(self.image, (self.rect.x, self.rect.y))
