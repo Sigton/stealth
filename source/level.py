@@ -1121,6 +1121,9 @@ class Level10(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
+        level_text = text.LevelText("Good luck!", 70, 1080)
+        self.level_text.add(level_text)
+
         self.start_x = 0
         self.start_y = 719
 
