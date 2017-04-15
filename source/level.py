@@ -28,6 +28,7 @@ class Level:
     ladders = None
     lasers = None
     non_draw = None
+    sky = None
 
     # Reference to the player
     player = None
@@ -81,6 +82,8 @@ class Level:
         self.lasers = pygame.sprite.Group()
         # Anything that requires to be updated but not drawn to the display
         self.non_draw = pygame.sprite.Group()
+        # This is the sky, only used on level 10
+        self.sky = pygame.sprite.GroupSingle()
 
         # Set reference to the player
         self.player = player
@@ -125,6 +128,9 @@ class Level:
             display.blit(self.fast_background, (0, 0))
         else:
             display.blit(self.background, ((self.world_shift_x//4), (self.world_shift_y//-4)))
+
+        # Draw the sky
+        self.sky.sprites()[0].draw(display)
 
         # Draw the sprite lists
 
@@ -421,7 +427,7 @@ class Level:
 
     def create_sky(self, tile, x, y, layer):
         sky = entities.Sky(tile, x, y, layer)
-        self.cosmetic_list.add(sky)
+        self.sky.add(sky)
 
     def render(self, data):
 
