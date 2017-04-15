@@ -86,7 +86,7 @@ class Timer(Label):
 
     def __init__(self, num):
 
-        Label.__init__(self, str(num), 32, 10, 10)
+        Label.__init__(self, str(num), 66, 10, 10)
 
         self.start_value = num
         self.value = num
