@@ -425,7 +425,7 @@ class Game:
         progress = False
         do_reset = False
         show_caught = False
-
+        time_up = False
         play_outro = False
 
         # Always play the light sound
@@ -775,27 +775,33 @@ class Game:
 
             if self.timer.can_update:
                 if self.timer.value <= 0:
-                    # If the timer is out of time then reset to level 8
+                    time_up = True
+                    pause = 90
 
-                    self.current_level.reset_objects()
-                    self.current_level.reset_world()
-                    self.current_level.set_scrolling()
+                    self.timer.can_update = False
 
-                    self.current_level_no = 7
-                    self.current_level = self.level_list[self.current_level_no]
+            if time_up and pause == 30:
+                # If the timer is out of time then reset to level 8
 
-                    saves.save_data["current_level"] = self.current_level_no
-                    saves.save()
+                self.current_level.reset_objects()
+                self.current_level.reset_world()
+                self.current_level.set_scrolling()
 
-                    self.current_level.player = player
-                    player.level = self.current_level
+                self.current_level_no = 7
+                self.current_level = self.level_list[self.current_level_no]
 
-                    self.current_level.reset_objects()
-                    self.current_level.reset_world()
-                    self.current_level.set_scrolling()
-                    player.reset()
+                saves.save_data["current_level"] = self.current_level_no
+                saves.save()
 
-                    self.timer.reset()
+                self.current_level.player = player
+                player.level = self.current_level
+
+                self.current_level.reset_objects()
+                self.current_level.reset_world()
+                self.current_level.set_scrolling()
+                player.reset()
+
+                self.timer.reset()
 
             # Stop the player from dying once it's dead
             if player.dying and player.death_progress >= 75:
