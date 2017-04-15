@@ -780,9 +780,11 @@ class Game:
             if self.timer.can_update:
                 if self.timer.value <= 0:
                     time_up = True
-                    pause = 100
+                    pause = 150
 
                     self.timer.can_update = False
+
+                    self.sound_engine.que_sound([self.sound_engine.explosion_sound, 0])
 
             if time_up and pause == 30:
                 # If the timer is out of time then reset to level 8
@@ -809,6 +811,7 @@ class Game:
 
             if time_up and not pause:
                 time_up = False
+                self.timer.can_update = True
 
             # Stop the player from dying once it's dead
             if player.dying and player.death_progress >= 75:
@@ -833,13 +836,13 @@ class Game:
             # During these periods the transparency needs to increase/decrease
 
             # First of all the 'player was caught' screen
-            if show_caught and 67 < pause < 100:
+            if show_caught and 117 < pause < 150:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
                                        abs(pause-100)*8)
             elif show_caught and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
                                        pause*16)
-            elif show_caught and 16 < pause < 68:
+            elif show_caught and 16 < pause < 118:
                 self.display.blit(self.game_over.image, (0, 0))
 
             # If the bomb has gone off
