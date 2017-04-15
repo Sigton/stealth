@@ -419,6 +419,10 @@ class Level:
         self.doors.add(new_camera)
         self.lasers.add(new_laser)
 
+    def create_sky(self, tile, x, y, layer):
+        sky = entities.Sky(tile, x, y, layer)
+        self.cosmetic_list.add(sky)
+
     def render(self, data):
 
         self.door_no = 0
@@ -483,6 +487,9 @@ class Level:
                     else:
                         self.create_anim_obs(platforms.platforms[tile_data['tile'] - 1],
                                              position[0] * 24, position[1] * 24, layer)
+                elif tile_data['tile'] == 39:
+                    self.create_sky(platforms.platforms[tile_data['tile']-1],
+                                    position[0]*24, position[1]*24, layer)
                 else:
                     self.create_obstacle(platforms.platforms[tile_data['tile']-1],
                                          position[0]*24, position[1]*24, layer)
