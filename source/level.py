@@ -213,6 +213,8 @@ class Level:
                 # so they do not need scrolled
                 if not isinstance(sprite, entities.Laser):
                     sprite.rect.x += shift_x
+            for sprite in self.sky:
+                sprite.rect.x += shift_x
 
         # Repeat the process for the y axis
         self.world_shift_y += shift_y
@@ -250,6 +252,8 @@ class Level:
             for sprite in self.non_draw:
                 if not isinstance(sprite, entities.Laser):
                     sprite.rect.y -= shift_y
+            for sprite in self.sky:
+                sprite.rect.y -= shift_y
 
     def reset_world(self):
 
@@ -296,6 +300,10 @@ class Level:
             if not isinstance(sprite, entities.Laser):
                 sprite.rect.x = sprite.start_x
                 sprite.rect.y = sprite.start_y
+
+        for sprite in self.sky:
+            sprite.rect.x = sprite.start_x
+            sprite.rect.y = sprite.start_y
 
         self.world_shift_x = 0
         self.world_shift_y = 0
