@@ -16,7 +16,7 @@ class Blackout(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image = pygame.image.load("resources/blackout.png").convert()
+        self.image = pygame.image.load("resources/blackout.png").convert_alpha()
 
         # Set the images rectangle
         self.rect = self.image.get_rect()

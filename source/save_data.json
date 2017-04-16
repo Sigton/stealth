@@ -1,1 +1,1 @@
-{"controls": {"CROUCH": 306, "WALK_RIGHT": 100, "RESTART": 114, "ACTION": 32, "WALK_LEFT": 97, "JUMP": 119}, "current_level": 0}
+{"controls": {"JUMP": 119, "ACTION": 32, "WALK_LEFT": 97, "WALK_RIGHT": 100, "RESTART": 114, "CROUCH": 306}, "current_level": 2}
