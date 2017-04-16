@@ -130,7 +130,8 @@ class Level:
             display.blit(self.background, ((self.world_shift_x//4), (self.world_shift_y//-4)))
 
         # Draw the sky
-        self.sky.sprites()[0].draw(display)
+        if len(self.sky.sprites()):
+            self.sky.sprites()[0].draw(display)
 
         # Draw the sprite lists
 
