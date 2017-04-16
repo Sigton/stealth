@@ -842,24 +842,24 @@ class Game:
             # During these periods the transparency needs to increase/decrease
 
             # First of all the 'player was caught' screen
-            if show_caught and 117 < pause < 150:
+            if show_caught and 67 < pause < 100:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
                                        abs(pause-100)*8)
             elif show_caught and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.game_over.image, (0, 0),
                                        pause*16)
-            elif show_caught and 16 < pause < 118:
+            elif show_caught and 16 < pause < 68:
                 self.display.blit(self.game_over.image, (0, 0))
 
             # If the bomb has gone off
             # then show the other game over screen
-            if time_up and 67 < pause < 100:
+            if time_up and 117 < pause < 150:
                 spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
                                        abs(pause-100)*8)
             elif time_up and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
                                        pause*16)
-            elif time_up and 16 < pause < 68:
+            elif time_up and 16 < pause < 118:
                 self.display.blit(self.game_over2.image, (0, 0))
 
             # Then just a dark screen when the player dies
