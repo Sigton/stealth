@@ -896,38 +896,25 @@ class Level07(Level):
             door.set_keypad()
 
         # Add the level text
-        level_text = text.LevelText("if you get stuck then press", 80, 1060)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("{} to restart the level".format(
+        self.level_text.add(text.LevelText("if you get stuck then press", 80, 1060))
+        self.level_text.add(text.LevelText("{} to restart the level".format(
             pygame.key.name(self.controls["RESTART"])
-        ), 80, 1085)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Remember this trick?", 180, 550)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You really need to be fast here!", 800, 380)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You're past the security!", 890, 1230)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Use {} to plant bombs".format(
+        ), 80, 1085))
+        self.level_text.add(text.LevelText("Remember this trick?", 180, 550))
+        self.level_text.add(text.LevelText("You really need to be fast here!", 800, 380))
+        self.level_text.add(text.LevelText("You're past the security!", 890, 1230))
+        self.level_text.add(text.LevelText("Use {} to plant bombs".format(
             pygame.key.name(self.controls["ACTION"])
-        ), 890, 1255)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("on each of the power supplies", 890, 1280)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Once you've placed the bomb", 1200, 1230)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("use {} to activate it!".format(
+        ), 890, 1255))
+        self.level_text.add(text.LevelText("on each of the power supplies", 890, 1280))
+        self.level_text.add(text.LevelText("Once you've placed the bomb", 1200, 1230))
+        self.level_text.add(text.LevelText("use {} to activate it!".format(
             pygame.key.name(self.controls["ACTION"])
-        ), 1200, 1255)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("There are guards protecting these ones", 1480, 1070)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("And a nice easy finish!", 1150, 800)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You can't go to the next level", 1500, 800)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("until all the bombs are active", 1500, 825)
-        self.level_text.add(level_text)
+        ), 1200, 1255))
+        self.level_text.add(text.LevelText("There are guards protecting these ones", 1480, 1070))
+        self.level_text.add(text.LevelText("And a nice easy finish!", 1150, 800))
+        self.level_text.add(text.LevelText("You can't go to the next level", 1500, 800))
+        self.level_text.add(text.LevelText("until all the bombs are active", 1500, 825))
 
         self.start_x = 0
         self.start_y = 719
