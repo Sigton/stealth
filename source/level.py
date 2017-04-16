@@ -1131,6 +1131,8 @@ class Level10(Level):
         self.level_text.add(level_text)
         level_text = text.LevelText("This was very cruel", 1050, 1090)
         self.level_text.add(level_text)
+        level_text = text.LevelText("You did it!", 1750, 1090)
+        self.level_text.add(level_text)
 
         self.start_x = 0
         self.start_y = 719
