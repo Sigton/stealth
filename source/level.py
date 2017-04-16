@@ -9,6 +9,7 @@ import text
 import constants
 import terrain
 import os
+import sys
 
 
 class Level:
@@ -512,6 +513,14 @@ class Level:
             n += 1
             if n % 4800 == 0:
                 layer += 1
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    # Show the mouse before quitting
+                    pygame.mouse.set_visible(True)
+
+                    # Exit pygame then quit the program
+                    pygame.quit()
+                    sys.exit(0)
 
 
 class Level01(Level):
