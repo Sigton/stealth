@@ -823,18 +823,12 @@ class Level06(Level):
             door.set_keypad()
 
         # Add the level text
-        level_text = text.LevelText("Don't get caught by the camera!", 435, 1210)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Use the keypad to turn off the camera,", 435, 1235)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("But it will turn on again soon!", 490, 1260)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Have fun with this bit...", 425, 600)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Better start running!", 100, 35)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Almost there...", 1680, 75)
-        self.level_text.add(level_text)
+        self.level_text.add(text.LevelText("Don't get caught by the camera!", 435, 1210))
+        self.level_text.add(text.LevelText("Use the keypad to turn off the camera,", 435, 1235))
+        self.level_text.add(text.LevelText("But it will turn on again soon!", 490, 1260))
+        self.level_text.add(text.LevelText("Have fun with this bit...", 425, 600))
+        self.level_text.add(text.LevelText("Better start running!", 100, 35))
+        self.level_text.add(text.LevelText("Almost there...", 1680, 75))
 
         # Set the start position
         self.start_x = 0
