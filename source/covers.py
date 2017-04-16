@@ -4,20 +4,21 @@ import constants
 
 class Blackout(pygame.sprite.Sprite):
 
+    # The player that this
+    # sprite needs to follow
     player = None
 
     def __init__(self):
+
+        # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_file = pygame.image.load("resources/blackout.png")
+        self.image = pygame.image.load("resources/blackout.png").convert()
 
-        self.image = pygame.Surface([2000, 1500], flags=pygame.SRCALPHA)
-        self.image = self.image.convert_alpha()
-        self.image.blit(self.image_file, (0, 0))
-
+        # Set the images rectangle
         self.rect = self.image.get_rect()
 
     def update(self):
