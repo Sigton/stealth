@@ -23,11 +23,13 @@ class Blackout(pygame.sprite.Sprite):
 
     def update(self):
 
+        # Center its image over the center of the player
         self.rect.x = (self.player.rect.x + (self.player.rect.width / 2)) - (self.rect.width / 2)
         self.rect.y = (self.player.rect.y + (self.player.rect.height / 2)) - (self.rect.height / 2)
 
     def draw(self, display):
 
+        # Blit to the display at its current position
         display.blit(self.image, (self.rect.x, self.rect.y))
 
 
