@@ -92,8 +92,8 @@ class GameOverScreen(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_large = pygame.image.load("resources/gameover.png").convert()
-        self.image_small = pygame.image.load("resources/gameover_small.png").convert()
+        self.image_large = pygame.image.load("resources/gameover.png").convert_alpha()
+        self.image_small = pygame.image.load("resources/gameover_small.png").convert_alpha()
 
         self.image = self.image_large
 
@@ -111,7 +111,7 @@ class GameOverScreen2(GameOverScreen):
 
         GameOverScreen.__init__(self)
 
-        self.image_large = pygame.image.load("resources/gameover2.png").convert()
-        self.image_small = pygame.image.load("resources/gameover2_small.png").convert()
+        self.image_large = pygame.image.load("resources/gameover2.png").convert_alpha()
+        self.image_small = pygame.image.load("resources/gameover2_small.png").convert_alpha()
 
         self.image = self.image_large
