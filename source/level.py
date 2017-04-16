@@ -540,21 +540,16 @@ class Level01(Level):
         self.render(level_data)
 
         # Add the level text
-        level_text = text.LevelText("Use {} and {} to walk left/right".format(
+        self.level_text.add(text.LevelText("Use {} and {} to walk left/right".format(
             pygame.key.name(self.controls["WALK_LEFT"]),
             pygame.key.name(self.controls["WALK_RIGHT"])
-        ), 36, 960)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Use {} to jump!".format(
+        ), 36, 960))
+        self.level_text.add(text.LevelText("Use {} to jump!".format(
             pygame.key.name(self.controls["JUMP"])
-        ), 36, 990)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Don't fall!", 615, 600)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Nearly there...", 975, 600)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Down we go", 1750, 450)
-        self.level_text.add(level_text)
+        ), 36, 990))
+        self.level_text.add(text.LevelText("Don't fall!", 615, 600))
+        self.level_text.add(text.LevelText("Nearly there...", 975, 600))
+        self.level_text.add(text.LevelText("Down we go", 1750, 450))
 
         # Set start position
         self.start_x = 0
