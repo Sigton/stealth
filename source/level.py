@@ -1004,10 +1004,8 @@ class Level09(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
-        level_text = text.LevelText("There are lots of guards!", 70, 1080)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You really need to be quick...", 300, 1000)
-        self.level_text.add(level_text)
+        self.level_text.add(text.LevelText("There are lots of guards!", 70, 1080))
+        self.level_text.add(text.LevelText("You really need to be quick...", 300, 1000))
 
         self.start_x = 0
         self.start_y = 719
@@ -1044,18 +1042,12 @@ class Level10(Level):
         for door in self.doors.sprites():
             door.set_keypad()
 
-        level_text = text.LevelText("Good luck!", 70, 1080)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Guards everywhere!", 200, 380)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Leap of faith", 300, 100)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Still more guards!", 1360, 750)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("This was very cruel", 1050, 1090)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You did it!", 1750, 1090)
-        self.level_text.add(level_text)
+        self.level_text.add(text.LevelText("Good luck!", 70, 1080))
+        self.level_text.add(text.LevelText("Guards everywhere!", 200, 380))
+        self.level_text.add(text.LevelText("Leap of faith", 300, 100))
+        self.level_text.add(text.LevelText("Still more guards!", 1360, 750))
+        self.level_text.add(text.LevelText("This was very cruel", 1050, 1090))
+        self.level_text.add(text.LevelText("You did it!", 1750, 1090))
 
         self.start_x = 0
         self.start_y = 719
