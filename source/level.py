@@ -717,20 +717,13 @@ class Level04(Level):
             door.set_keypad()
 
         # Add the level text
-        level_text = text.LevelText("Up we go!", 80, 1060)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Crawl through ventilation shafts", 144, 90)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Doors aren't", 664, 130)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("always vertical", 664, 155)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Slide through here!", 588, 476)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("You'll need to hang about on these ladders.", 1200, 1350)
-        self.level_text.add(level_text)
-        level_text = text.LevelText("Here's some complex jumps", 1500, 700)
-        self.level_text.add(level_text)
+        self.level_text.add(text.LevelText("Up we go!", 80, 1060))
+        self.level_text.add(text.LevelText("Crawl through ventilation shafts", 144, 90))
+        self.level_text.add(text.LevelText("Doors aren't", 664, 130))
+        self.level_text.add(text.LevelText("always vertical", 664, 155))
+        self.level_text.add(text.LevelText("Slide through here!", 588, 476))
+        self.level_text.add(text.LevelText("You'll need to hang about on these ladders.", 1200, 1350))
+        self.level_text.add(text.LevelText("Here's some complex jumps", 1500, 700))
 
         # Set the start position
         self.start_x = 0
