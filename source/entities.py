@@ -116,11 +116,15 @@ class RechargingKeypad(Keypad):
 
     def __init__(self, x, y, level):
 
+        # Constructor
+
         # Call the parents constructor
         Keypad.__init__(self, x, y, level)
 
+        # Set a reference to the sounds this sprites plays
         self.click_sound = self.level.sound_engine.click_sound
 
+        # How long between ticks
         self.timer_threshold = 70
         self.timer = self.timer_threshold
 
@@ -130,15 +134,21 @@ class RechargingKeypad(Keypad):
         if self.progress >= 10:
             self.image = self.image_on
             if not self.played_sound:
+                # If the keypad was activated then play the beep
                 self.level.sound_engine.que_sound([self.beep_sound, 0])
                 self.played_sound = True
 
+        # If the keypad is not active then it can still play the sound
         if self.progress < 10 and self.played_sound:
             self.played_sound = False
 
+        # When the keypad is off again
+        # switch back to the off image
         if self.progress == 0:
             self.image = self.image_off
 
+        # When its time for the progress to go down,
+        # reduce the progress and play the click.
         if self.timer == 0:
             if self.progress > 0:
                 self.timer = self.timer_threshold
