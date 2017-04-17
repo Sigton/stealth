@@ -96,7 +96,13 @@ class DarkScreen(pygame.sprite.Sprite):
 
 class GameOverScreen(pygame.sprite.Sprite):
 
+    # The game over screen is used
+    # when the player gets caught
+    # to tell them so.
+
     def __init__(self):
+
+        # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -107,15 +113,21 @@ class GameOverScreen(pygame.sprite.Sprite):
 
         self.image = self.image_large
 
+        # Set the images rectangle
         self.rect = self.image.get_rect()
         self.rect.center = constants.SCREEN_CENTER
 
     def draw(self, display):
 
+        # Draw its image to the display
         display.blit(self.image, (0, 0))
 
 
 class GameOverScreen2(GameOverScreen):
+
+    # This is a subclass of GameOverScreen
+    # as it is the same thing but with a different image
+    # This is used when the bombs go off.
 
     def __init__(self):
 
