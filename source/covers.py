@@ -131,8 +131,12 @@ class GameOverScreen2(GameOverScreen):
 
     def __init__(self):
 
+        # Constructor
+
+        # Call the parents constructor
         GameOverScreen.__init__(self)
 
+        # Set the image
         self.image_large = pygame.image.load("resources/gameover2.png").convert_alpha()
         self.image_small = pygame.image.load("resources/gameover2_small.png").convert_alpha()
 
