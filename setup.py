@@ -23,7 +23,8 @@ source_files = ["source/guard_parts.py",
                 "source/menu.py",
                 "source/hud.py",
                 "source/saves.py",
-                "source/sounds.py"]
+                "source/sounds.py",
+                "source/GIFImage.py"]
 
 for file in source_files:
     py_compile.compile(file, os.path.join("compiled", file[7:]+"c"))
@@ -53,6 +54,7 @@ include_files = ["source/level_data/",
                  "compiled/hud.pyc",
                  "compiled/saves.pyc",
                  "compiled/sounds.pyc",
+                 "compiled/GIFImage.pyc"
                  "source/save_data.json"]
 
 excludes = ["OpenGL",
