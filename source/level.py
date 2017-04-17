@@ -383,11 +383,10 @@ class Level:
         self.keypad_array.append(new_keypad)
 
     def create_bomb(self, x, y):
-        new_bomb = entities.Bomb(x, y)
+        new_bomb = entities.Bomb(x, y, self)
 
         new_bomb.progress_bar = progressbar.ProgressBar()
         new_bomb.progress_bar.parent = new_bomb
-        new_bomb.level = self
         new_bomb.progress_bar.level = self
 
         self.non_draw.add(new_bomb)

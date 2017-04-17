@@ -167,12 +167,15 @@ class Bomb(pygame.sprite.Sprite):
     progress_bar = None
     level = None
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, level):
 
         # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
+
+        # Set a reference to the level
+        self.level = level
 
         # Load and set the sprites images
         self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
