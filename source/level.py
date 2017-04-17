@@ -557,6 +557,9 @@ class Level01(Level):
             pygame.key.name(self.controls["JUMP"])
         ), 36, 990))
         self.level_text.add(text.LevelText("Don't fall!", 615, 600))
+        self.level_text.add(text.LevelText("Watch your stamina level", 30, 600))
+        self.level_text.add(text.LevelText("The lower it gets", 30, 625))
+        self.level_text.add(text.LevelText("the slower you move", 30, 650))
         self.level_text.add(text.LevelText("Nearly there...", 975, 600))
         self.level_text.add(text.LevelText("Down we go", 1750, 450))
 
