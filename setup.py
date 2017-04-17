@@ -71,7 +71,6 @@ packages = ["pygame",
             "json",
             "os",
             "PIL",
-            "GIFImage",
             "logging"]
 
 cx_Freeze.setup(
