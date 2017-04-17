@@ -237,7 +237,12 @@ class Bomb(pygame.sprite.Sprite):
 
 class Crosshair(pygame.sprite.Sprite):
 
+    # The crosshair is purely cosmetic
+    # It simply fits the theme better than a mouse pointer
+
     def __init__(self):
+
+        # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
@@ -247,23 +252,29 @@ class Crosshair(pygame.sprite.Sprite):
 
         self.image = sprite_sheet.get_image(0, 0, 24, 24)
 
+        # Set the rectangle
         self.rect = self.image.get_rect()
 
+        # This is where the mouse is at
         self.mouse_x = 0
         self.mouse_y = 0
 
     def update(self):
 
+        # Get the position of the mouse pointer
         self.mouse_x, self.mouse_y = pygame.mouse.get_pos()
 
+        # Then position itself relevant to that
         self.rect.x = self.mouse_x - self.rect.width/2
         self.rect.y = self.mouse_y - self.rect.height/2
 
     def draw(self, display):
 
+        # Draw off-screen where it cant be seen when the mouse is also off-screen
         if self.mouse_x <= 6 or self.mouse_x >= 954 or self.mouse_y <= 6 or self.mouse_y >= 714:
             display.blit(self.image, (-24, -24))
         else:
+            # Otherwise draw to its rect position
             display.blit(self.image, (self.rect.x, self.rect.y))
 
 
