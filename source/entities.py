@@ -161,14 +161,20 @@ class RechargingKeypad(Keypad):
 
 class Bomb(pygame.sprite.Sprite):
 
+    # Bombs are placed by the player
+    # once they are placed they can be activated
+
     progress_bar = None
     level = None
 
     def __init__(self, x, y):
 
+        # Constructor
+
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Load and set the sprites images
         self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
 
         self.image_off = self.sprite_sheet.get_image(0, 0, 24, 24)
@@ -176,6 +182,7 @@ class Bomb(pygame.sprite.Sprite):
 
         self.image = self.image_off
 
+        # Set the rectangle, position and start position
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -183,8 +190,7 @@ class Bomb(pygame.sprite.Sprite):
         self.start_x = x
         self.start_y = y
 
-        self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
-        self.beep_sound.set_volume(0.25)
+        self.beep_sound = self.level.sound_engine.beep_sound
         self.played_sound = False
 
         # How much is required for the bomb to be activated
@@ -206,7 +212,7 @@ class Bomb(pygame.sprite.Sprite):
             if self.progress >= 10:
                 if not self.played_sound:
                     self.image = self.image_on
-                    pygame.mixer.Sound.play(self.beep_sound)
+                    self.level.sound_engine.que_sound([self.beep_sound, 0])
                     self.played_sound = True
 
     def reset(self):
