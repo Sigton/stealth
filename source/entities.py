@@ -190,12 +190,14 @@ class Bomb(pygame.sprite.Sprite):
         self.start_x = x
         self.start_y = y
 
+        # A beep sound to be played when the bomb is activated
         self.beep_sound = self.level.sound_engine.beep_sound
         self.played_sound = False
 
         # How much is required for the bomb to be activated
         self.progress = 0
 
+        # Bools to control the state of the bomb
         self.placed = False
         self.has_placed = False
 
@@ -203,6 +205,10 @@ class Bomb(pygame.sprite.Sprite):
 
         if not self.has_placed:
             if self.placed:
+                # If the bomb has just been placed then
+                # remove it from the non_draw group
+                # and add it to the bombs group.
+                # It also needs to be given a progress bar bar
                 self.level.non_draw.remove(self)
                 self.level.bombs.add(self)
                 self.level.entities.add(self.progress_bar)
@@ -211,12 +217,15 @@ class Bomb(pygame.sprite.Sprite):
             # Update the image if the bomb is activated
             if self.progress >= 10:
                 if not self.played_sound:
+                    # When the bomb is activated then
+                    # set its image and play the beep sound
                     self.image = self.image_on
                     self.level.sound_engine.que_sound([self.beep_sound, 0])
                     self.played_sound = True
 
     def reset(self):
 
+        # Reset the bomb to its original inactive, unplaced state
         self.level.bombs.remove(self)
         self.level.non_draw.add(self)
         self.level.entities.remove(self.progress_bar)
