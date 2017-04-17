@@ -54,7 +54,7 @@ include_files = ["source/level_data/",
                  "compiled/hud.pyc",
                  "compiled/saves.pyc",
                  "compiled/sounds.pyc",
-                 "compiled/GIFImage.pyc"
+                 "compiled/GIFImage.pyc",
                  "source/save_data.json"]
 
 excludes = ["OpenGL",
