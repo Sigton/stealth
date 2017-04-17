@@ -8,6 +8,8 @@ import constants
 
 class Door(platforms.Platform):
 
+    # A door gets opened by keypads
+
     keypad = None
     level = None
     door_no = 0
@@ -18,17 +20,26 @@ class Door(platforms.Platform):
         platforms.Platform.__init__(self, tile, x, y, layer)
 
     def set_keypad(self):
+
         # Set the keypad that operates this door
+        # It does by finding the keypad set to this
+        # doors id in the door_linkup dictionary
+
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.door_no-1]]
 
     def update(self):
 
         # Update the status of the door
+        # If its keypad is activated then
+        # the door should be removed from the
+        # platform list. This way it is no
+        # longer drawn nor collided with
         if self.keypad.progress >= 10:
             self.level.platform_list.remove(self)
 
     def draw(self, display):
 
+        # Draw the image of the door to the display
         display.blit(self.image, (self.rect.x, self.rect.y))
 
 
