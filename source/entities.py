@@ -280,22 +280,32 @@ class Crosshair(pygame.sprite.Sprite):
 
 class ExclamationMark(pygame.sprite.Sprite):
 
+    # This appears above the guards head
+    # letting the player know that they
+    # have been caught, and which guard
+    # caught them.
+
     def __init__(self, guard):
 
+        # Constructor
+
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set an attribute referencing the guard
         self.guard = guard
 
+        # Load the image
         sprite_sheet = spritesheet.SpriteSheet("resources/exclamation.png")
         self.image = sprite_sheet.get_image_srcalpha(0, 0, 29, 43)
 
+        # Set the rect and position
         self.rect = self.image.get_rect()
         self.rect.centerx = self.guard.rect.centerx
         self.rect.y = self.guard.rect.y - 36
 
         self.start_x = self.rect.x
         self.start_y = self.rect.y
-        self.timer = 120
 
     def update(self):
 
