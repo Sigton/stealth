@@ -49,11 +49,15 @@ class Keypad(pygame.sprite.Sprite):
 
     def __init__(self, x, y, level):
 
+        # Constructor
+
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set the level the keypad is located in
         self.level = level
 
+        # Get the images for both when the keypad is active and not
         self.sprite_sheet = spritesheet.SpriteSheet("resources/keypad.png")
 
         self.image_off = self.sprite_sheet.get_image(0, 0, 12, 14)
@@ -61,17 +65,25 @@ class Keypad(pygame.sprite.Sprite):
 
         self.image = self.image_off
 
+        # Set the keypads rect and position
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
 
+        # Keep track of where it started so when
+        # we reset the level we know where to put it
         self.start_x = x
         self.start_y = y
 
+        # Set references to the sounds the keypad makes
         self.beep_sound = self.level.sound_engine.beep_sound
         self.beep_sound.set_volume(0.25)
         self.hiss_sound = self.level.sound_engine.hiss_sound
         self.hiss_sound.set_volume(0.25)
+
+        # So we don't keep on playing the sounds
+        # this is used to check whether we've not
+        # played the sound yet.
         self.played_sound = False
 
         # How much is required for the keypad to be activated
@@ -83,12 +95,17 @@ class Keypad(pygame.sprite.Sprite):
         if self.progress >= 10:
             self.image = self.image_on
             if not self.played_sound:
+                # Play the beep of the keypad activating
+                # and the hiss of the door opening
                 self.level.sound_engine.que_sound([self.beep_sound, 0])
                 self.level.sound_engine.que_sound([self.hiss_sound, 0])
+
+                # Say the keypad has played its sounds
                 self.played_sound = True
 
     def reset(self):
 
+        # Reset the keypads progress, image and progress bar
         self.progress = 0
         self.image = self.image_off
         self.played_sound = False
