@@ -84,9 +84,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
-        # Getting the events stops the window from not responding
-        pygame.event.get()
+        self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
 
         # Level 2
         self.loading_screen.draw(self.display)
@@ -94,7 +92,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 3
         self.loading_screen.draw(self.display)
@@ -102,7 +99,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level03(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 4
         self.loading_screen.draw(self.display)
@@ -110,7 +106,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level04(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 5
         self.loading_screen.draw(self.display)
@@ -118,15 +113,13 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level05(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 6
         self.loading_screen.draw(self.display)
         label.update_text("Loading Level 6...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
+        # self.level_list.append(level.Level06(self.player, True, self.fast, self.controls, self.sound_engine))
 
         # Level 7
         self.loading_screen.draw(self.display)
@@ -134,7 +127,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level07(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 8
         self.loading_screen.draw(self.display)
@@ -142,7 +134,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level08(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 9
         self.loading_screen.draw(self.display)
@@ -150,7 +141,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level09(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Level 10
         self.loading_screen.draw(self.display)
@@ -158,7 +148,6 @@ class Game:
         label.draw(self.display)
         pygame.display.flip()
         # self.level_list.append(level.Level10(self.player, True, self.fast, self.controls, self.sound_engine))
-        pygame.event.get()
 
         # Set the current level
         self.current_level_no = 0
