@@ -364,19 +364,23 @@ class Laser(pygame.sprite.Sprite):
 
     def __init__(self, camera, player):
 
+        # Constructor
+
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set references to the sprites it interacts with
         self.camera = camera
         self.player = player
 
+        # Where the laser starts and ends
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
         self.end_point = (self.camera.rect.centerx + 1, self.camera.rect.centery + 1)
 
+        # The angle the laser points at
         self.angle = 154
 
-        self.start_x = 0
-        self.start_y = 0
-
+        # The vector of the laser
         self.vector = None
 
     def update(self):
@@ -388,15 +392,21 @@ class Laser(pygame.sprite.Sprite):
         self.start_point = (self.camera.rect.centerx, self.camera.rect.centery - 5)
 
         if self.vector is None:
+            # If the vector of the laser hasn't been defined yet
+            # then find where the nearest platform along it's angle is
+
+            # Calculate the distance of
             x_angle = math.cos(math.radians(self.angle))
             y_angle = math.sin(math.radians(self.angle))
 
+            # Get a list of platforms
             platforms = [platform for platform in self.camera.level.platform_list.sprites()]
 
             # Calculate end point
             at_platform = False
             dist = 0
             while not at_platform:
+                # Increase the distance till we find a platform
                 dist += 30
                 self.end_point = (self.start_point[0] + dist * x_angle,
                                   self.start_point[1] + dist * y_angle)
@@ -405,25 +415,32 @@ class Laser(pygame.sprite.Sprite):
                     if platform.rect.collidepoint(self.end_point):
                         at_platform = True
 
+            # Set the vector
             self.vector = (self.end_point[0] - self.start_point[0],
                            self.end_point[1] - self.start_point[1])
         else:
+            # We can simply find the end point using the vector
             self.end_point = (self.start_point[0]+self.vector[0],
                               self.start_point[1]+self.vector[1])
 
+        # Check when the laser should reappear
         if self in self.camera.level.non_draw:
             if self.camera.keypad.progress == 0:
+                # Then add it back in to the lasers group
                 self.camera.level.non_draw.remove(self)
                 self.camera.level.lasers.add(self)
 
     def draw(self, display):
 
+        # Draw the line on the display
         pygame.draw.line(display, constants.RED,
                          (self.start_point[0], self.start_point[1]),
                          (self.end_point[0], self.end_point[1]), 1)
 
     def test_collision(self):
 
+        # A bit of overhead to check if the player
+        # is in range of the camera
         if self.start_point[0] - self.end_point[0] > 0:
 
             if self.start_point[0] < self.player.rect.left or self.end_point[0] > self.player.rect.right:
@@ -434,17 +451,25 @@ class Laser(pygame.sprite.Sprite):
         if self.start_point[1] > self.player.rect.bottom or self.end_point[1] < self.player.rect.top:
             return False
 
+        # repeat multiple times to make it more reliable
         for n in range(10):
             try:
+                # Get the gradients of the vector of the laser, and the vector of the laser to the player
                 line_gradient = (self.end_point[1] - self.start_point[1]) /\
                                 (self.end_point[0] - self.start_point[0])
                 player_gradient = (self.player.rect.y+self.player.rect.height*((n*10)/100) - self.start_point[1]) /\
                                   (self.player.rect.x - self.start_point[0])
             except ZeroDivisionError:
+                # Sometimes the player can be directly underneath the laser
+                # which will be calculating the gradient of a vertical line.
+                # Since this results in dividing by 0, we just return false
+                # to avoid breaking maths.
                 return False
 
+            # Get the difference between the gradients
             diff = player_gradient - line_gradient
 
+            # If they are less than a certain threshold we count that as a collision
             if abs(diff) < 0.05 - n/500:
                 return True
 
