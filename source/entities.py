@@ -478,12 +478,17 @@ class Laser(pygame.sprite.Sprite):
 
 class Sky(pygame.sprite.Sprite):
 
+    # The level the sky is in
     level = None
 
     def __init__(self, sprite_sheet_data, x, y, layer=1):
 
+        # Constructor
+
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Load the image
         sprite_sheet = spritesheet.SpriteSheet("resources/sky.png")
 
         self.full_image = sprite_sheet.get_image(sprite_sheet_data[0],
@@ -493,6 +498,7 @@ class Sky(pygame.sprite.Sprite):
 
         self.image = pygame.Surface([240, 1152]).convert()
 
+        # Set the rectangle and position
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
