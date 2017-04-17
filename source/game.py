@@ -82,7 +82,7 @@ class Game:
         label.update_text("Loading Level 1...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
+        # self.level_list.append(level.Level01(self.player, True, self.fast, self.controls, self.sound_engine))
         # Getting the events stops the window from not responding
         pygame.event.get()
 
@@ -90,7 +90,7 @@ class Game:
         label.update_text("Loading Level 2...", loading_label_x, loading_label_y)
         label.draw(self.display)
         pygame.display.flip()
-        # self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
+        self.level_list.append(level.Level02(self.player, True, self.fast, self.controls, self.sound_engine))
         pygame.event.get()
 
         self.loading_screen.draw(self.display)
