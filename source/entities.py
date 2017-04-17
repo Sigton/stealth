@@ -309,6 +309,8 @@ class ExclamationMark(pygame.sprite.Sprite):
 
     def update(self):
 
+        # Once the game has started again after the player is caught
+        # remove itself from the sprite groups.
         self.guard.level.entities.remove(self)
 
 
@@ -318,14 +320,19 @@ class Camera(pygame.sprite.Sprite):
 
     def __init__(self, x, y, image, level):
 
+        # Constructor
+
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set the image
         sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
         self.image = sprite_sheet.get_image(image[0],
                                             image[1],
                                             image[2],
                                             image[3])
 
+        # Set the image's rectangle and position
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -333,20 +340,23 @@ class Camera(pygame.sprite.Sprite):
         self.start_x = self.rect.x
         self.start_y = self.rect.y
 
+        # The level the camera is in
         self.level = level
 
+        # Different sprites the camera interacts with
         self.laser = None
         self.keypad = None
 
     def update(self):
 
-        # Update the status of the door
+        # Update the status of the camera
         if self.keypad.progress >= 10:
+            # If its keypad is active them remove the laser from the lasers group
             self.level.lasers.remove(self.laser)
             self.level.non_draw.add(self.laser)
 
     def set_keypad(self):
-        # Set the keypad that operates this door
+        # Set the keypad that operates this camera
         self.keypad = self.level.keypad_array[self.level.door_linkup[self.camera_no-1]]
 
 
