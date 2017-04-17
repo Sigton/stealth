@@ -4,6 +4,11 @@ import constants
 
 class Blackout(pygame.sprite.Sprite):
 
+    # The blackout is used to hide all of the tiles
+    # that are further away from the player.
+    # It makes the game feel like its in a warehouse
+    # environment
+
     # The player that this
     # sprite needs to follow
     player = None
@@ -65,23 +70,27 @@ class LoadingScreen(pygame.sprite.Sprite):
 
 class DarkScreen(pygame.sprite.Sprite):
 
+    # This is used to simply
+    # create smooth transitions
+    # when the player dies.
+
     def __init__(self):
+
+        # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_file = pygame.image.load("resources/darkscreen.png")
+        self.image = pygame.image.load("resources/darkscreen.png").convert_alpha()
 
-        self.image = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
-        self.image = self.image.convert_alpha()
-        self.image.blit(self.image_file, (0, 0))
-
+        # Set the images rectangle
         self.rect = self.image.get_rect()
         self.rect.center = constants.SCREEN_CENTER
 
     def draw(self, display):
 
+        # Draw its image to the display
         display.blit(self.image, (self.rect.x, self.rect.y))
 
 
