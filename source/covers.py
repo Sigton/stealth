@@ -35,30 +35,31 @@ class Blackout(pygame.sprite.Sprite):
 
 class LoadingScreen(pygame.sprite.Sprite):
 
+    # The loading screen is a simple sprite
+    # all it has is its image
+    # which is displayed while the game is loading.
+    # It's more aesthetically pleasing than a black screen.
+
     def __init__(self):
+
+        # Constructor
 
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_file_large = pygame.image.load("resources/loading_screen.png")
-        self.image_file_small = pygame.image.load("resources/loading_screen_small.png")
-
-        self.image_large = pygame.Surface([960, 720], flags=pygame.SRCALPHA)
-        self.image_large = self.image_large.convert_alpha()
-        self.image_large.blit(self.image_file_large, (0, 0))
-
-        self.image_small = pygame.Surface([720, 540], flags=pygame.SRCALPHA)
-        self.image_small = self.image_small.convert_alpha()
-        self.image_small.blit(self.image_file_small, (0, 0))
+        self.image_large = pygame.image.load("resources/loading_screen.png").convert_alpha()
+        self.image_small = pygame.image.load("resources/loading_screen_small.png").convert_alpha()
 
         self.image = self.image_large
 
+        # Set the images rectangle
         self.rect = self.image.get_rect()
         self.rect.center = constants.SCREEN_CENTER
 
     def draw(self, display):
 
+        # Draw the image fo the loading screen onto the display
         display.blit(self.image, (0, 0))
 
 
