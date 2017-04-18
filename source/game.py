@@ -855,7 +855,7 @@ class Game:
             # then show the other game over screen
             if time_up and 117 < pause < 150:
                 spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
-                                       abs(pause-100)*8)
+                                       abs(pause-150)*8)
             elif time_up and 0 < pause < 17:
                 spritesheet.blit_alpha(self.display, self.game_over2.image, (0, 0),
                                        pause*16)
