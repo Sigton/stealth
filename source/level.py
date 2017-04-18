@@ -490,7 +490,7 @@ class Level:
             elif tile_data['type'] == "Cosmetic":
                 if tile_data['tile'] == 25:
                     self.create_ladder(platforms.platforms[tile_data['tile']-1],
-                                       position[0]*24, position[1]*24, layer)
+                                       (position[0]*24)+4, position[1]*24, layer)
                 elif tile_data['tile'] == 39:
                     self.create_sky(platforms.platforms[tile_data['tile'] - 1],
                                     position[0] * 24, position[1] * 24, layer)
