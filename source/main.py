@@ -222,6 +222,12 @@ class Launcher(tk.Frame):
             code = event.keycode
         # Assign the control to the new keycode,
         # then update the labels and unbind the function
+
+        if code == 271:
+            Popup("Controls cannot be\nassigned to enter!")
+            self.controller.unbind("<KeyPress>")
+            return
+
         self.controls[control] = code
         self.update_controls()
         self.controller.unbind("<KeyPress>")
