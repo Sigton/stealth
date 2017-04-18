@@ -76,9 +76,6 @@ class Launcher(tk.Frame):
         # An instance is not created because we don't want the constructor to be ran yet
         self.game = None
 
-        # A popup in case any error messages need to be displayed
-        self.popup = None
-
         # Here the controls are loaded from the save file
         self.controls = saves.load("controls")
 
@@ -195,7 +192,7 @@ class Launcher(tk.Frame):
         # If a key occurred more than once
         if True in duplicates:
             # then create a popup
-            Popup()
+            Popup("You have multiple controls\nassigned to the same key!")
         else:
             # Otherwise start the game
 
@@ -289,7 +286,7 @@ class Popup(tk.Toplevel):
     # that serves as a popup message
     # to tell users not to have more than one control assigned to the same key
 
-    def __init__(self):
+    def __init__(self, message):
 
         # Call the parents constructor
         tk.Toplevel.__init__(self)
@@ -298,7 +295,7 @@ class Popup(tk.Toplevel):
         self.geometry("200x150")
 
         # Create the text and add it to the TopLevel
-        self.text = tk.Label(self, text="You have multiple controls\nassigned to the same key!")
+        self.text = tk.Label(self, text=message)
         self.text.place(x=100, y=50, anchor="center")
 
         # Then a button to close the widget
