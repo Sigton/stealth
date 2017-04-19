@@ -235,6 +235,7 @@ class Bomb(pygame.sprite.Sprite):
         self.progress = 0
         self.played_sound = False
         self.placed = False
+        self.has_placed = False
         self.image = self.image_off
 
 
