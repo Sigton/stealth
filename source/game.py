@@ -399,6 +399,12 @@ class Game:
 
             self.timer.set(saves.load("time_left"))
         else:
+
+            self.timer.can_update = False
+            self.timer.reset()
+            saves.save_data["time_left"] = self.timer.value
+            saves.save()
+
             pygame.mixer.music.load("resources/music.mp3")
             pygame.mixer.music.set_volume(0.75)
 
@@ -789,6 +795,9 @@ class Game:
                     pause = 150
 
                     self.timer.can_update = False
+                    self.timer.reset()
+                    saves.save_data["time_left"] = self.timer.value
+                    saves.save()
 
                     self.sound_engine.que_sound([self.sound_engine.explosion_sound, 0])
 
