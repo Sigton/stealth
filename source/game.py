@@ -919,6 +919,11 @@ class Game:
             # play the outro before returning to the menu
             self.play_intro(self.outro, self.outro_thresholds, [("thanks for playing!", 80, 649, 296)])
 
+            # And since the game is done, we want to reset
+            # anything left over from this play
+            player.health = 100
+            player.stamina = 100
+
         # Start the menu music
         # before returning to the menu
         pygame.mixer.music.load("resources/menu_music.mp3")
