@@ -869,7 +869,7 @@ class Game:
             # Then just a dark screen when the player dies
             # But this shouldn't be shown when the player is caught
             # If the player manages to get caught and die at the same time
-            if not show_caught:
+            if not (show_caught or time_up):
                 if player.dying and 16 < player.death_progress < 33:
                     spritesheet.blit_alpha(self.display, self.black_screen.image, (0, 0),
                                            (player.death_progress-16)*16)
