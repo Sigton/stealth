@@ -56,9 +56,16 @@ class HUD(pygame.sprite.Sprite):
 
     def update(self):
 
-        self.health_num.update_text("{0:.1f}%".format(round(self.player.health, 1)))
-        self.stamina_num.update_text("{0:.1f}%".format(round(self.player.stamina -
-                                                             self.player.stamina*(1-(self.player.stamina/100)), 1)))
+        if self.player.health <= 0:
+            self.health_num.update_text("0.0")
+        else:
+            self.health_num.update_text("{0:.1f}%".format(round(self.player.health, 1)))
+
+        if self.player.stamina <= 0:
+            self.stamina_num.update_text("0.0")
+        else:
+            self.stamina_num.update_text("{0:.1f}%".format(round(self.player.stamina -
+                                                                 self.player.stamina*(1-(self.player.stamina/100)), 1)))
 
         if self.player.rect.y > 200:
             self.rect.y = 0
