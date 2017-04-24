@@ -3,6 +3,7 @@ import pygame
 import spritesheet
 import text
 import constants
+import saves
 
 
 class Label(text.Text):
@@ -103,6 +104,8 @@ class Timer(Label):
 
         self.value -= 1
         self.update_text(str(self.value))
+        saves.save_data["time_left"] = self.value
+        saves.save()
 
     def reset(self):
 

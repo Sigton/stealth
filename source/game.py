@@ -397,7 +397,7 @@ class Game:
             self.timer.can_update = True
             self.timer.reset()
 
-            self.timer.set(180 - ((self.current_level_no-7)*60))
+            self.timer.set(saves.load("time_left"))
         else:
             pygame.mixer.music.load("resources/music.mp3")
             pygame.mixer.music.set_volume(0.75)
