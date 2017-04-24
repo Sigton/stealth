@@ -795,6 +795,10 @@ class Game:
             if time_up and pause == 30:
                 # If the timer is out of time then reset to level 8
 
+                # Reset the players health and stamina
+                player.health = 100
+                player.stamina = 100
+
                 self.current_level.reset_objects()
                 self.current_level.reset_world()
                 self.current_level.set_scrolling()
