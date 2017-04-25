@@ -139,7 +139,7 @@ class Player(pygame.sprite.Sprite):
         self.fall_sound = sound_engine.fall_sound
         self.jump_sound = sound_engine.jump_sound
 
-        self.jump_sound.set_volume(0.40)
+        self.jump_sound.set_volume(0.25)
 
         # How far the player has walked without stopping
         # This is used for calculating what frame in the

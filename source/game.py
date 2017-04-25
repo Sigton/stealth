@@ -390,7 +390,7 @@ class Game:
         music2_playing = False
         if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
             pygame.mixer.music.load("resources/music2.mp3")
-            pygame.mixer.music.set_volume(0.75)
+            pygame.mixer.music.set_volume(0.25)
             music2_playing = True
             self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
 
@@ -406,7 +406,7 @@ class Game:
             saves.save()
 
             pygame.mixer.music.load("resources/music.mp3")
-            pygame.mixer.music.set_volume(0.75)
+            pygame.mixer.music.set_volume(0.25)
 
         # Hide mouse pointer
         pygame.mouse.set_visible(False)
