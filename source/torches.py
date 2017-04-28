@@ -15,14 +15,17 @@ class Torch(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Set the image
         self.sprite_sheet = spritesheet.SpriteSheet("resources/light.png")
         self.image_r = self.sprite_sheet.get_image_srcalpha(0, 0, 160, 94)
         self.image_l = self.sprite_sheet.get_image_srcalpha(0, 94, 160, 94)
 
         self.image = self.image_r
 
+        # Set the position
         self.rect = self.image.get_rect()
 
+        # Create a hitmask
         self.hitmask_r = funcs.create_mask(self.image_r)
         self.hitmask_l = funcs.create_mask(self.image_l)
 

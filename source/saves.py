@@ -3,19 +3,23 @@ import json
 
 
 def save():
+    # Save all of the data into the savefile
     with open("save_data.json", "w") as outfile:
         json.dump(save_data, outfile)
 
 
 def load(x=None):
+    # Open the data
     with open("save_data.json", "r") as infile:
         data = json.load(infile)
 
+    # Return the data that's been asked for
     if x is None:
         return data
     else:
         return data[x]
 
+# Load the data
 save_data = load()
 
 # The control for each function
@@ -27,6 +31,8 @@ default_controls = {"WALK_LEFT": K_a,
                     "CROUCH": K_LCTRL,
                     "RESTART": K_r}
 
+# Pygame and tkinter have different keycodes
+# so this is used to translate
 trans_dict = {65: 97,
               66: 98,
               67: 99,

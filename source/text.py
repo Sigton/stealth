@@ -8,6 +8,8 @@ class LevelText(pygame.sprite.Sprite):
 
     def __init__(self, text, x, y):
 
+        # A bit of text to be displayed in the level
+
         pygame.sprite.Sprite.__init__(self)
 
         self.font = pygame.font.Font("resources/alienleague.ttf", 22)

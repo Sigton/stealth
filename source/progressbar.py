@@ -13,6 +13,7 @@ class ProgressBar(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
+        # Load all of the images
         self.sprite_sheet = spritesheet.SpriteSheet("resources/healthbar.png")
 
         self.images = []
@@ -60,6 +61,7 @@ class ProgressBar(pygame.sprite.Sprite):
 
     def update(self):
 
+        # Move to its required position
         self.rect.x = self.parent.rect.x + (self.parent.rect.width/2 - self.rect.width/2)
         self.rect.y = self.parent.rect.y - 20
 
@@ -67,10 +69,12 @@ class ProgressBar(pygame.sprite.Sprite):
             self.start_x = self.rect.x
             self.start_y = self.rect.y
 
+        # Update its image
         self.image = self.images[self.parent.progress]
 
         if self.parent.progress >= 10 and self.timer:
             self.timer -= 1
 
+        # When it's not needed anymore then disappear
         if not self.timer and self.parent.progress >= 10 and not isinstance(self.parent, entities.RechargingKeypad):
             self.level.entities.remove(self)

@@ -26,13 +26,16 @@ source_files = ["source/guard_parts.py",
                 "source/sounds.py",
                 "source/GIFImage.py"]
 
+# Compile each of the source files
 for file in source_files:
     py_compile.compile(file, os.path.join("compiled", file[7:]+"c"))
 
+# Set up the executable
 executables = [cx_Freeze.Executable(script="source/main.py",
                                     icon="source/resources/icon.ico",
                                     targetName="Stealth.exe")]
 
+# All of the files that need to be included
 include_files = ["source/level_data/",
                  "source/resources/",
                  "compiled/guard_parts.pyc",
@@ -57,6 +60,7 @@ include_files = ["source/level_data/",
                  "compiled/GIFImage.pyc",
                  "source/save_data.json"]
 
+# All of the packages we don't want
 excludes = ["OpenGL",
             "email",
             "html",
@@ -67,12 +71,14 @@ excludes = ["OpenGL",
             "xml",
             "socket"]
 
+# The required packages
 packages = ["pygame",
             "json",
             "os",
             "PIL",
             "logging"]
 
+# Then finally set it up
 cx_Freeze.setup(
     name="Stealth",
     options={

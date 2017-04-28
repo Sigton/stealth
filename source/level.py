@@ -334,6 +334,10 @@ class Level:
         # Delete any fired bullets
         self.entities.remove([bullet for bullet in self.entities if isinstance(bullet, guard_parts.Bullet)])
 
+    # These functions are all very similar
+    # by creating an instance of a class
+    # And adding it to the correct group.
+
     def create_platform(self, tile, x, y, layer):
         # Create a new platform
         # then add it to the list of platforms
@@ -439,6 +443,7 @@ class Level:
         sky.level = self
         self.sky.add(sky)
 
+    # This creates each tile and entity in the level
     def render(self, data):
 
         self.door_no = 0

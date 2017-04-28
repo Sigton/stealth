@@ -38,6 +38,7 @@ class SpriteSheet(object):
         return image
 
 
+# Used to blit an image at a certain opacity
 def blit_alpha(target, source, location, opacity):
     x = location[0]
     y = location[1]

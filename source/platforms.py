@@ -1,6 +1,7 @@
 import pygame
 import spritesheet
 
+# This is the location of each tile on the spritesheet
 GROUND1 = (0, 0, 24, 24)
 GROUND2 = (24, 0, 24, 24)
 GROUND3 = (48, 0, 24, 24)
@@ -46,6 +47,7 @@ MEDIUM_CRATE = (0, 120, 24, 24)
 SAND = (24, 120, 24, 24)
 SKY = (0, 0, 480, 2304)
 
+# A tuple of all the platforms
 platforms = (
     GROUND1, GROUND2, GROUND3, GROUND4, GROUND5,
     GROUND6, GROUND7, GROUND8, GROUND9, GROUND10,
@@ -129,11 +131,12 @@ class AnimatedPlatform(pygame.sprite.Sprite):
     def update(self):
 
         self.tick += 1
-
+        # Change the image when ready
         if self.tick % 10 == 0:
             self.frame = (self.frame + 1) % len(self.images)
             self.image = self.images[self.frame]
 
     def draw(self, display):
 
+        # Draw to the display
         display.blit(self.image, (self.rect.x, self.rect.y))

@@ -36,6 +36,7 @@ class LevelData:
         self.load_files1 = []
         self.load_files2 = []
 
+        # Load all of the files
         self.normal_tile_files_temp = [x for x in self.load_dir1 if x[:4] != "fast"]
         self.fast_tile_files_temp = [x for x in self.load_dir1 if x[:4] == "fast"]
         self.normal_tile_files = [pygame.image.load(os.path.join("level_data", "layouts", level, x))
@@ -78,6 +79,7 @@ class LevelData:
         load_files1 = self.fast_tile_files if fast else self.normal_tile_files
         load_files2 = self.fast_type_files if fast else self.normal_type_files
 
+        # Translate the files into a dictionary if tiles
         z = 0
         for file in load_files1:
 
