@@ -388,7 +388,7 @@ class Player(pygame.sprite.Sprite):
 
     def jump(self):
 
-        if self.touching_ladder:
+        if self.touching_ladder and not self.crouching:
             # If the player is on a ladder
             # then it will move upwards at its climbing speed
             self.yv = -self.climb_speed
