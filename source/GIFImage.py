@@ -6,6 +6,10 @@ from pygame.locals import *
 
 import time
 
+# A thank you to Mathew Roe for creating this.
+# Website: http://pygame.org/project-GIFImage-1039-.html
+
+
 class GIFImage(object):
     def __init__(self, filename):
         self.filename = filename

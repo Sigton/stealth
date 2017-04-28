@@ -83,12 +83,14 @@ class Guard(pygame.sprite.Sprite):
             self.rect.x += self.xv
             self.walk_dist += 1
 
+        # When the guard needs to turn round
         if self.at_wall() or self.on_edge():
             if self.direction == "R":
                 self.direction = "L"
             else:
                 self.direction = "R"
 
+        # The walking animation
         if self.direction == "R":
             frame = (self.walk_dist // 12) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
@@ -136,6 +138,8 @@ class Guard(pygame.sprite.Sprite):
 
     def at_wall(self):
 
+        # This checks if the guard is at a wall
+
         if self.direction == "R":
 
             self.rect.x += 24
@@ -161,6 +165,9 @@ class Guard(pygame.sprite.Sprite):
 
 class HostileGuard(pygame.sprite.Sprite):
 
+    # Hostile guards have guns,
+    # and can shoot the player!
+
     xv = 0
     direction = "R"
 
@@ -175,10 +182,14 @@ class HostileGuard(pygame.sprite.Sprite):
 
     def __init__(self, x, y, level):
 
+        # Constructor
+
+        # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
         self.level = level
 
+        # Load the image
         self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
 
         self.stand_img_r = self.sprite_sheet.get_image(0, 0, 24, 48)
@@ -213,17 +224,20 @@ class HostileGuard(pygame.sprite.Sprite):
 
     def update(self):
 
+        # Point towards the player
         if self.rect.x < self.player.rect.x:
             self.direction = "R"
         else:
             self.direction = "L"
 
+        # Walk towards the player
         if self.dist_to(self.player.rect.x, self.player.rect.y) < self.follow_dist and not self.on_edge():
             if self.direction == "R":
                 self.xv = self.speed
             else:
                 self.xv = -self.speed / 2
 
+        # Don't move if the guard is too close to the player
         if not abs(self.player.rect.x - self.rect.x) <= 5:
             if not self.at_wall():
                 self.rect.x += self.xv
@@ -231,6 +245,7 @@ class HostileGuard(pygame.sprite.Sprite):
                 if abs(self.xv) <= 0.5:
                     self.xv = 0
 
+                # Collision detection
                 block_hit_list = pygame.sprite.spritecollide(self, self.level.platform_list, False)
                 for block in block_hit_list:
                     if self.xv > 0:
@@ -244,6 +259,7 @@ class HostileGuard(pygame.sprite.Sprite):
         else:
             self.xv = 0
 
+        # Walking animation
         if abs(self.xv) > 0.5:
             if self.direction == "R":
                 frame = (self.rect.x // 15) % len(self.walking_frames_r)
@@ -259,6 +275,7 @@ class HostileGuard(pygame.sprite.Sprite):
 
     def dist_to(self, x, y):
 
+        # Get the distance to a set of coords
         dx = x - self.rect.x
         dy = y - self.rect.y
 
@@ -304,6 +321,8 @@ class HostileGuard(pygame.sprite.Sprite):
                 return True
 
     def at_wall(self):
+
+        # Check if the guard is at a wall
 
         if self.direction == "R":
 

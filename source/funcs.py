@@ -41,6 +41,10 @@ def pixel_perfect_collision(obj1_rect, obj1_hitmask, obj2_rect, obj2_hitmask):
 
 def create_mask(surface):
 
+    # Creates a mask for an image
+    # where a value of 0 is nothing
+    # and 1 is a pixel
+
     temp_mask = pygame.mask.from_surface(surface, 63)
 
     temp_mask_size = temp_mask.get_size()
