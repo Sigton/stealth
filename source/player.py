@@ -137,9 +137,6 @@ class Player(pygame.sprite.Sprite):
         # Load the players sounds and mix the volumes
         self.footstep_sound = sound_engine.footstep_sound
         self.fall_sound = sound_engine.fall_sound
-        self.jump_sound = sound_engine.jump_sound
-
-        self.jump_sound.set_volume(0.25)
 
         # How far the player has walked without stopping
         # This is used for calculating what frame in the
@@ -398,7 +395,6 @@ class Player(pygame.sprite.Sprite):
             if not self.crouching:
                 # otherwise move upwards at the players jump height
                 self.yv = -self.jump_height
-                self.sound_engine.que_sound([self.jump_sound, 0])
 
     def reset(self):
 
