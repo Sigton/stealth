@@ -1,9 +1,6 @@
 import pygame
 
-import spritesheet
-import text
-import constants
-import saves
+from src import spritesheet, text, constants, saves
 
 
 class Label(text.Text):
@@ -45,7 +42,7 @@ class HUD(pygame.sprite.Sprite):
         self.middle = 360 if small else 480
 
         # Load all of the components
-        sprite_sheet = spritesheet.SpriteSheet("resources/hud_bar.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/hud_bar.png")
         self.image = sprite_sheet.get_image(0, 0, 480, 48)
 
         self.rect = self.image.get_rect()

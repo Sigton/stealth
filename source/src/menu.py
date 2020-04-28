@@ -1,10 +1,8 @@
 import pygame
 from pygame.locals import *
 
-import game as g
-import spritesheet
-import text
-import constants
+from src import game as g
+from src import spritesheet, text, constants
 
 
 class Button(pygame.sprite.Sprite):
@@ -69,17 +67,17 @@ class Menu:
         self.clock = parent.clock
 
         # Set the background
-        self.background_large = pygame.image.load("resources/menubackground.png").convert()
-        self.background_small = pygame.image.load("resources/menubackgroundsmall.png").convert()
+        self.background_large = pygame.image.load("src/resources/menubackground.png").convert()
+        self.background_small = pygame.image.load("src/resources/menubackgroundsmall.png").convert()
 
         self.background = self.background_large
 
         # Create the content of the menu
-        self.play_button = Button("resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
+        self.play_button = Button("src/resources/menubuttons.png", ((0, 0, 360, 80), (360, 0, 360, 80)),
                                   300, 426, lambda: self.game.run(True))
-        self.quit_button = Button("resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
+        self.quit_button = Button("src/resources/menubuttons.png", ((0, 80, 360, 80), (360, 80, 360, 80)),
                                   262, 502, "quit")
-        self.continue_button = Button("resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)),
+        self.continue_button = Button("src/resources/menubuttons.png", ((0, 160, 360, 80), (360, 160, 360, 80)),
                                       338, 350, lambda: self.game.run(False))
 
         self.title_big = text.Text("Stealth", 200, 165, 100)
@@ -107,7 +105,7 @@ class Menu:
     def run(self):
 
         # Load the music
-        pygame.mixer.music.load("resources/menu_music.mp3")
+        pygame.mixer.music.load("src/resources/menu_music.mp3")
         pygame.mixer.music.set_volume(0.75)
 
         # Set the current screen

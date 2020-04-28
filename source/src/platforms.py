@@ -1,5 +1,5 @@
 import pygame
-import spritesheet
+from src import spritesheet
 
 # This is the location of each tile on the spritesheet
 GROUND1 = (0, 0, 24, 24)
@@ -69,7 +69,7 @@ class Platform(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
         self.image = sprite_sheet.get_image(sprite_sheet_data[0],
                                             sprite_sheet_data[1],
@@ -98,7 +98,7 @@ class AnimatedPlatform(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
         self.images = []
 

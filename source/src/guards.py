@@ -1,9 +1,6 @@
 import pygame
 
-import spritesheet
-import torches
-import guard_parts
-import constants
+from src import spritesheet, torches, guard_parts, constants
 import math
 
 
@@ -27,7 +24,7 @@ class Guard(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/guard.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/guard.png")
 
         # Get the standing images
         self.stand_image_r = self.sprite_sheet.get_image_srcalpha(0, 0, 24, 48)
@@ -190,7 +187,7 @@ class HostileGuard(pygame.sprite.Sprite):
         self.level = level
 
         # Load the image
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/hguard.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/hguard.png")
 
         self.stand_img_r = self.sprite_sheet.get_image(0, 0, 24, 48)
         self.stand_img_l = pygame.transform.flip(self.stand_img_r, True, False)

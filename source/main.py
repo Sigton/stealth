@@ -4,9 +4,8 @@ from pygame.locals import *
 # tkinter is used for the launcher GUI
 import tkinter as tk
 
-import menu as m
-import constants
-import saves
+from src import menu as m
+from src import constants, saves
 
 
 # Initiate pygame
@@ -327,7 +326,7 @@ class Main:
         # Set the window caption and icon
         pygame.display.set_caption("Stealth")
 
-        icon_img = pygame.image.load("resources/icon.ico")
+        icon_img = pygame.image.load("src/resources/icon.ico")
 
         icon = pygame.Surface([32, 32], flags=SRCALPHA)
         icon = icon.convert_alpha()
@@ -362,6 +361,7 @@ class Main:
 
         # It then returns a reference to the re-sized surface
         return self.game_display
+
 
 if __name__ == "__main__":
     # Open the launcher

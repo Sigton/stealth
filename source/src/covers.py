@@ -1,5 +1,5 @@
 import pygame
-import constants
+from src import constants
 
 
 class Blackout(pygame.sprite.Sprite):
@@ -21,7 +21,7 @@ class Blackout(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image = pygame.image.load("resources/blackout.png").convert_alpha()
+        self.image = pygame.image.load("src/resources/blackout.png").convert_alpha()
 
         # Set the images rectangle
         self.rect = self.image.get_rect()
@@ -53,8 +53,8 @@ class LoadingScreen(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_large = pygame.image.load("resources/loading_screen.png").convert_alpha()
-        self.image_small = pygame.image.load("resources/loading_screen_small.png").convert_alpha()
+        self.image_large = pygame.image.load("src/resources/loading_screen.png").convert_alpha()
+        self.image_small = pygame.image.load("src/resources/loading_screen_small.png").convert_alpha()
 
         self.image = self.image_large
 
@@ -82,7 +82,7 @@ class DarkScreen(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image = pygame.image.load("resources/darkscreen.png").convert_alpha()
+        self.image = pygame.image.load("src/resources/darkscreen.png").convert_alpha()
 
         # Set the images rectangle
         self.rect = self.image.get_rect()
@@ -108,8 +108,8 @@ class GameOverScreen(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.image_large = pygame.image.load("resources/gameover.png").convert_alpha()
-        self.image_small = pygame.image.load("resources/gameover_small.png").convert_alpha()
+        self.image_large = pygame.image.load("src/resources/gameover.png").convert_alpha()
+        self.image_small = pygame.image.load("src/resources/gameover_small.png").convert_alpha()
 
         self.image = self.image_large
 
@@ -137,7 +137,7 @@ class GameOverScreen2(GameOverScreen):
         GameOverScreen.__init__(self)
 
         # Set the image
-        self.image_large = pygame.image.load("resources/gameover2.png").convert_alpha()
-        self.image_small = pygame.image.load("resources/gameover2_small.png").convert_alpha()
+        self.image_large = pygame.image.load("src/resources/gameover2.png").convert_alpha()
+        self.image_small = pygame.image.load("src/resources/gameover2_small.png").convert_alpha()
 
         self.image = self.image_large

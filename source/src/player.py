@@ -1,10 +1,7 @@
 import pygame
 
 # Import the required components of the game
-import spritesheet
-import constants
-import funcs
-import entities
+from src import spritesheet, constants, funcs, entities
 
 
 class Player(pygame.sprite.Sprite):
@@ -45,7 +42,7 @@ class Player(pygame.sprite.Sprite):
         self.sound_engine = sound_engine
 
         # Load the sprite sheet to take all the images from
-        sprite_sheet = spritesheet.SpriteSheet("resources/player.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/player.png")
 
         # Get the standing image
         # for the left-facing image, simply flip the right-facing one

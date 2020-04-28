@@ -1,6 +1,5 @@
 import pygame
-import spritesheet
-import entities
+from src import spritesheet, entities
 
 
 class ProgressBar(pygame.sprite.Sprite):
@@ -14,7 +13,7 @@ class ProgressBar(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Load all of the images
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/healthbar.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/healthbar.png")
 
         self.images = []
 

@@ -2,24 +2,13 @@ import pygame
 from pygame.locals import *
 
 # Import all of the different components of the game
-import constants
-import saves
-import player as p
-import level
-import guards
-import torches
-import covers
-import entities
-import text
-import hud
-import guard_parts
-import spritesheet
-import sounds
-import funcs
+from src import constants, saves, level, guards, torches, covers, entities, text, hud, guard_parts, spritesheet
+from src import sounds, funcs
+from src import player as p
 import math
 import sys
 import os
-import GIFImage as gif
+from src import GIFImage as gif
 
 
 class Game:
@@ -186,28 +175,28 @@ class Game:
 
         # Load the parts of the intro
         if self.parent.parent.small:
-            self.intro = [gif.GIFImage(os.path.join("resources/intro/small", image))
-                          for image in os.listdir("resources/intro/small")]
+            self.intro = [gif.GIFImage(os.path.join("src/resources/intro/small", image))
+                          for image in os.listdir("src/resources/intro/small")]
         else:
-            self.intro = [gif.GIFImage(os.path.join("resources/intro/normal", image))
-                          for image in os.listdir("resources/intro/normal")]
-        self.intro_background = pygame.image.load("resources/darkscreen.png").convert()
+            self.intro = [gif.GIFImage(os.path.join("src/resources/intro/normal", image))
+                          for image in os.listdir("src/resources/intro/normal")]
+        self.intro_background = pygame.image.load("src/resources/darkscreen.png").convert()
 
         self.intro_thresholds = [156,
                                  177,
                                  181]
 
         if self.parent.parent.small:
-            self.part2_scene = [gif.GIFImage("resources/anims/part2_small.gif")]
+            self.part2_scene = [gif.GIFImage("src/resources/anims/part2_small.gif")]
         else:
-            self.part2_scene = [gif.GIFImage("resources/anims/part2.gif")]
+            self.part2_scene = [gif.GIFImage("src/resources/anims/part2.gif")]
 
         self.part2_scene_thresholds = [158]
 
         if self.parent.parent.small:
-            self.outro = [gif.GIFImage("resources/anims/outro_small.gif")]
+            self.outro = [gif.GIFImage("src/resources/anims/outro_small.gif")]
         else:
-            self.outro = [gif.GIFImage("resources/anims/outro.gif")]
+            self.outro = [gif.GIFImage("src/resources/anims/outro.gif")]
 
         self.outro_thresholds = [112]
 
@@ -389,7 +378,7 @@ class Game:
         # Then mix the volumes
         music2_playing = False
         if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
-            pygame.mixer.music.load("resources/music2.mp3")
+            pygame.mixer.music.load("src/resources/music2.mp3")
             pygame.mixer.music.set_volume(0.25)
             music2_playing = True
             self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
@@ -405,7 +394,7 @@ class Game:
             saves.save_data["time_left"] = self.timer.value
             saves.save()
 
-            pygame.mixer.music.load("resources/music.mp3")
+            pygame.mixer.music.load("src/resources/music.mp3")
             pygame.mixer.music.set_volume(0.25)
 
         # Hide mouse pointer
@@ -583,7 +572,7 @@ class Game:
 
                 if isinstance(self.current_level, (level.Level08, level.Level09, level.Level10)):
                     if not music2_playing:
-                        pygame.mixer.music.load("resources/music2.mp3")
+                        pygame.mixer.music.load("src/resources/music2.mp3")
                         pygame.mixer.music.set_volume(0.75)
                         pygame.mixer.music.play(-1)
                         self.sound_engine.que_sound([self.sound_engine.siren_sound, -1])
@@ -926,7 +915,7 @@ class Game:
 
         # Start the menu music
         # before returning to the menu
-        pygame.mixer.music.load("resources/menu_music.mp3")
+        pygame.mixer.music.load("src/resources/menu_music.mp3")
         pygame.mixer.music.set_volume(0.75)
         pygame.mixer.music.play(-1)
 

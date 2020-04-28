@@ -1,13 +1,6 @@
 import pygame
 
-import platforms
-import guards
-import entities
-import progressbar
-import guard_parts
-import text
-import constants
-import terrain
+from src import platforms, guards, entities, progressbar, guard_parts, text, constants, terrain
 import os
 import sys
 
@@ -102,8 +95,8 @@ class Level:
         self.sound_engine = sound_engine
 
         # Load the background
-        self.background = pygame.image.load("resources/background.png").convert()
-        self.fast_background = pygame.image.load("resources/background_fast.png").convert()
+        self.background = pygame.image.load("src/resources/background.png").convert()
+        self.fast_background = pygame.image.load("src/resources/background_fast.png").convert()
 
     def update(self):
 
@@ -534,9 +527,9 @@ class Level01(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        save_file = os.path.join("level_data", "level1.json")
-        tile_file = os.path.join("level_data", "layouts", "level1")
-        type_file = os.path.join("level_data", "tile_types", "level1")
+        save_file = os.path.join("src", "level_data", "level1.json")
+        tile_file = os.path.join("src", "level_data", "layouts", "level1")
+        type_file = os.path.join("src", "level_data", "tile_types", "level1")
 
         # How many layers the level has
         self.layer_range = 2
@@ -583,9 +576,9 @@ class Level02(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        save_file = os.path.join("level_data", "level2.json")
-        tile_file = os.path.join("level_data", "layouts", "level2")
-        type_file = os.path.join("level_data", "tile_types", "level2")
+        save_file = os.path.join("src", "level_data", "level2.json")
+        tile_file = os.path.join("src", "level_data", "layouts", "level2")
+        type_file = os.path.join("src", "level_data", "tile_types", "level2")
 
         # How many layers the level has
         self.layer_range = 2
@@ -644,9 +637,9 @@ class Level03(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        save_file = os.path.join("level_data", "level3.json")
-        tile_file = os.path.join("level_data", "layouts", "level3")
-        type_file = os.path.join("level_data", "tile_types", "level3")
+        save_file = os.path.join("src", "level_data", "level3.json")
+        tile_file = os.path.join("src", "level_data", "layouts", "level3")
+        type_file = os.path.join("src", "level_data", "tile_types", "level3")
 
         # How many layers the level has
         self.layer_range = 2
@@ -705,9 +698,9 @@ class Level04(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level4.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level4")
-        self.type_file = os.path.join("level_data", "tile_types", "level4")
+        self.save_file = os.path.join("src", "level_data", "level4.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level4")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level4")
 
         # How many layers the level has
         self.layer_range = 2
@@ -757,9 +750,9 @@ class Level05(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level5.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level5")
-        self.type_file = os.path.join("level_data", "tile_types", "level5")
+        self.save_file = os.path.join("src", "level_data", "level5.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level5")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level5")
 
         # How many layers the level has
         self.layer_range = 2
@@ -809,9 +802,9 @@ class Level06(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level6.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level6")
-        self.type_file = os.path.join("level_data", "tile_types", "level6")
+        self.save_file = os.path.join("src", "level_data", "level6.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level6")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level6")
 
         # How many layers the level has
         self.layer_range = 2
@@ -863,9 +856,9 @@ class Level07(Level):
         # Call the parents constructor
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level7.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level7")
-        self.type_file = os.path.join("level_data", "tile_types", "level7")
+        self.save_file = os.path.join("src", "level_data", "level7.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level7")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level7")
 
         self.layer_range = 2
 
@@ -946,9 +939,9 @@ class Level08(Level):
 
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level8.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level8")
-        self.type_file = os.path.join("level_data", "tile_types", "level8")
+        self.save_file = os.path.join("src", "level_data", "level8.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level8")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level8")
 
         self.layer_range = 2
 
@@ -998,9 +991,9 @@ class Level09(Level):
 
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level9.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level9")
-        self.type_file = os.path.join("level_data", "tile_types", "level9")
+        self.save_file = os.path.join("src", "level_data", "level9.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level9")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level9")
 
         self.layer_range = 2
 
@@ -1037,9 +1030,9 @@ class Level10(Level):
 
         Level.__init__(self, player, controls, sound_engine)
 
-        self.save_file = os.path.join("level_data", "level10.json")
-        self.tile_file = os.path.join("level_data", "layouts", "level10")
-        self.type_file = os.path.join("level_data", "tile_types", "level10")
+        self.save_file = os.path.join("src", "level_data", "level10.json")
+        self.tile_file = os.path.join("src", "level_data", "layouts", "level10")
+        self.type_file = os.path.join("src", "level_data", "tile_types", "level10")
 
         self.layer_range = 2
 

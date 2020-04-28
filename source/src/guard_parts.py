@@ -1,5 +1,5 @@
 import pygame
-import spritesheet
+from src import spritesheet
 import math
 import random
 
@@ -16,7 +16,7 @@ class Arm(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Load the image
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/arms.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/arms.png")
 
         self.arm_right = self.sprite_sheet.get_image(0, 0, 28, 12)
         self.arm_left = self.sprite_sheet.get_image(0, 12, 28, 12)
@@ -126,7 +126,7 @@ class Bullet(pygame.sprite.Sprite):
         self.direction += random.randrange(-5, 5)
 
         # Load the image
-        self.image = pygame.image.load("resources/bullet.png").convert()
+        self.image = pygame.image.load("src/resources/bullet.png").convert()
         self.image = pygame.transform.rotate(self.image, self.direction)
 
         # Position the sprite

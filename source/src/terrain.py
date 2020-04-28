@@ -39,16 +39,16 @@ class LevelData:
         # Load all of the files
         self.normal_tile_files_temp = [x for x in self.load_dir1 if x[:4] != "fast"]
         self.fast_tile_files_temp = [x for x in self.load_dir1 if x[:4] == "fast"]
-        self.normal_tile_files = [pygame.image.load(os.path.join("level_data", "layouts", level, x))
+        self.normal_tile_files = [pygame.image.load(os.path.join("src", "level_data", "layouts", level, x))
                                   for x in self.normal_tile_files_temp]
-        self.fast_tile_files = [pygame.image.load(os.path.join("level_data", "layouts", level, x))
+        self.fast_tile_files = [pygame.image.load(os.path.join("src", "level_data", "layouts", level, x))
                                 for x in self.fast_tile_files_temp]
 
         self.normal_type_files_temp = [x for x in self.load_dir2 if x[:4] != "fast"]
         self.fast_type_files_temp = [x for x in self.load_dir2 if x[:4] == "fast"]
-        self.normal_type_files = [pygame.image.load(os.path.join("level_data", "tile_types", level, x))
+        self.normal_type_files = [pygame.image.load(os.path.join("src", "level_data", "tile_types", level, x))
                                   for x in self.normal_type_files_temp]
-        self.fast_type_files = [pygame.image.load(os.path.join("level_data", "tile_types", level, x))
+        self.fast_type_files = [pygame.image.load(os.path.join("src", "level_data", "tile_types", level, x))
                                 for x in self.fast_type_files_temp]
 
         self.level_data = []

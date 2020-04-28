@@ -1,5 +1,5 @@
 import pygame
-import constants
+from src import constants
 
 
 class LevelText(pygame.sprite.Sprite):
@@ -12,7 +12,7 @@ class LevelText(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.font = pygame.font.Font("resources/alienleague.ttf", 22)
+        self.font = pygame.font.Font("src/resources/alienleague.ttf", 22)
 
         self.image = self.font.render(text, True, constants.WHITE)
 
@@ -31,7 +31,7 @@ class LoadingLabel(pygame.sprite.Sprite):
         # Call the parents constructor
         pygame.sprite.Sprite.__init__(self)
 
-        self.font = pygame.font.Font("resources/alienleague.ttf", 36)
+        self.font = pygame.font.Font("src/resources/alienleague.ttf", 36)
 
         self.image = self.font.render(text, True, constants.WHITE)
 
@@ -61,7 +61,7 @@ class Text(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the font
-        self.font = pygame.font.Font("resources/alienleague.ttf", size)
+        self.font = pygame.font.Font("src/resources/alienleague.ttf", size)
 
         # Draw the text
         self.image = self.font.render(text, True, constants.WHITE)

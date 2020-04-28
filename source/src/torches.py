@@ -1,7 +1,6 @@
 import pygame
 
-import spritesheet
-import funcs
+from src import spritesheet, funcs
 
 
 class Torch(pygame.sprite.Sprite):
@@ -16,7 +15,7 @@ class Torch(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/light.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/light.png")
         self.image_r = self.sprite_sheet.get_image_srcalpha(0, 0, 160, 94)
         self.image_l = self.sprite_sheet.get_image_srcalpha(0, 94, 160, 94)
 

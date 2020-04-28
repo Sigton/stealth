@@ -1,9 +1,7 @@
 import pygame
 
-import spritesheet
-import platforms
+from src import spritesheet, platforms, constants
 import math
-import constants
 
 
 class Door(platforms.Platform):
@@ -58,7 +56,7 @@ class Keypad(pygame.sprite.Sprite):
         self.level = level
 
         # Get the images for both when the keypad is active and not
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/keypad.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/keypad.png")
 
         self.image_off = self.sprite_sheet.get_image(0, 0, 12, 14)
         self.image_on = self.sprite_sheet.get_image(12, 0, 12, 14)
@@ -178,7 +176,7 @@ class Bomb(pygame.sprite.Sprite):
         self.level = level
 
         # Load and set the sprites images
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/bomb.png")
+        self.sprite_sheet = spritesheet.SpriteSheet("src/resources/bomb.png")
 
         self.image_off = self.sprite_sheet.get_image(0, 0, 24, 24)
         self.image_on = self.sprite_sheet.get_image(24, 0, 24, 24)
@@ -252,7 +250,7 @@ class Crosshair(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        sprite_sheet = spritesheet.SpriteSheet("resources/crosshair.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/crosshair.png")
 
         self.image = sprite_sheet.get_image(0, 0, 24, 24)
 
@@ -300,7 +298,7 @@ class ExclamationMark(pygame.sprite.Sprite):
         self.guard = guard
 
         # Load the image
-        sprite_sheet = spritesheet.SpriteSheet("resources/exclamation.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/exclamation.png")
         self.image = sprite_sheet.get_image_srcalpha(0, 0, 29, 43)
 
         # Set the rect and position
@@ -330,7 +328,7 @@ class Camera(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Set the image
-        sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
         self.image = sprite_sheet.get_image(image[0],
                                             image[1],
                                             image[2],
@@ -493,7 +491,7 @@ class Sky(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # Load the image
-        sprite_sheet = spritesheet.SpriteSheet("resources/sky.png")
+        sprite_sheet = spritesheet.SpriteSheet("src/resources/sky.png")
 
         self.image = sprite_sheet.get_image(sprite_sheet_data[0],
                                             sprite_sheet_data[1],

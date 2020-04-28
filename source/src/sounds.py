@@ -25,18 +25,18 @@ class SoundEngine:
         self.explosion_sound_channel = pygame.mixer.Channel(11)
 
         # Load all the sounds
-        self.light_sound = pygame.mixer.Sound("resources/lights.wav")
-        self.dissolve_sound = pygame.mixer.Sound("resources/dissolve.wav")
-        self.siren_sound = pygame.mixer.Sound("resources/siren.wav")
-        self.footstep_sound = pygame.mixer.Sound("resources/step.wav")
-        self.fall_sound = pygame.mixer.Sound("resources/fall.wav")
-        self.beep_sound = pygame.mixer.Sound("resources/beep.wav")
-        self.gunshot_sound = pygame.mixer.Sound("resources/gunshot.wav")
-        self.hiss_sound = pygame.mixer.Sound("resources/hiss.wav")
-        self.shell_sound = pygame.mixer.Sound("resources/shelldrop.wav")
-        self.click_sound = pygame.mixer.Sound("resources/click.wav")
-        self.keypress_sound = pygame.mixer.Sound("resources/click.wav")
-        self.explosion_sound = pygame.mixer.Sound("resources/explosion.wav")
+        self.light_sound = pygame.mixer.Sound("src/resources/lights.wav")
+        self.dissolve_sound = pygame.mixer.Sound("src/resources/dissolve.wav")
+        self.siren_sound = pygame.mixer.Sound("src/resources/siren.wav")
+        self.footstep_sound = pygame.mixer.Sound("src/resources/step.wav")
+        self.fall_sound = pygame.mixer.Sound("src/resources/fall.wav")
+        self.beep_sound = pygame.mixer.Sound("src/resources/beep.wav")
+        self.gunshot_sound = pygame.mixer.Sound("src/resources/gunshot.wav")
+        self.hiss_sound = pygame.mixer.Sound("src/resources/hiss.wav")
+        self.shell_sound = pygame.mixer.Sound("src/resources/shelldrop.wav")
+        self.click_sound = pygame.mixer.Sound("src/resources/click.wav")
+        self.keypress_sound = pygame.mixer.Sound("src/resources/click.wav")
+        self.explosion_sound = pygame.mixer.Sound("src/resources/explosion.wav")
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {self.light_sound: self.light_sound_channel,

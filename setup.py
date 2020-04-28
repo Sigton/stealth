@@ -1,10 +1,8 @@
 import cx_Freeze
-import py_compile
-import os
 
 # First of compile of the source files, since they
 # take up less storage space when compiled
-
+"""
 source_files = ["source/guard_parts.py",
                 "source/constants.py",
                 "source/covers.py",
@@ -29,36 +27,15 @@ source_files = ["source/guard_parts.py",
 # Compile each of the source files
 for file in source_files:
     py_compile.compile(file, os.path.join("compiled", file[7:]+"c"))
+"""
 
 # Set up the executable
 executables = [cx_Freeze.Executable(script="source/main.py",
-                                    icon="source/resources/icon.ico",
+                                    icon="source/src/resources/icon.ico",
                                     targetName="Stealth.exe")]
 
 # All of the files that need to be included
-include_files = ["source/level_data/",
-                 "source/resources/",
-                 "compiled/guard_parts.pyc",
-                 "compiled/constants.pyc",
-                 "compiled/covers.pyc",
-                 "compiled/entities.pyc",
-                 "compiled/guards.pyc",
-                 "compiled/progressbar.pyc",
-                 "compiled/level.pyc",
-                 "compiled/text.pyc",
-                 "compiled/platforms.pyc",
-                 "compiled/player.pyc",
-                 "compiled/spritesheet.pyc",
-                 "compiled/terrain.pyc",
-                 "compiled/torches.pyc",
-                 "compiled/funcs.pyc",
-                 "compiled/game.pyc",
-                 "compiled/menu.pyc",
-                 "compiled/hud.pyc",
-                 "compiled/saves.pyc",
-                 "compiled/sounds.pyc",
-                 "compiled/GIFImage.pyc",
-                 "source/save_data.json"]
+include_files = ["source/src"]
 
 # All of the packages we don't want
 excludes = ["OpenGL",
